@@ -95,7 +95,6 @@ class BerconTile : public Texmap, public ResourceMakerCallback {
 		RGBA EvalColor(ShadeContext& sc);
 		float EvalMono(ShadeContext& sc);
 		Point3 EvalNormalPerturb(ShadeContext& sc);
-		BOOL HandleOwnViewPerturb(ShadeContext& sc);
 		
 		int SubNumToRefNum(int subNum) { return subNum; }
 		
@@ -109,15 +108,11 @@ class BerconTile : public Texmap, public ResourceMakerCallback {
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 1; };					// Always return 1 when ParameterBlocks are used
+		int NumSubs() { return 11; }
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		int NumRefs()									// Max will handle this internally. I can confirm this method works as far back as 2016. MtlLib.h (2017+) and imtl.h (<=2016) process this internally.
-		{												// Refer to line 103 of Materials\MtlLib.h
-			int count = 0;
-			return count;
-		}
+		int NumRefs() { return 11; }
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
@@ -153,6 +148,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconTile_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _M("BerconTile"); } // returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _T("BerconTile"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

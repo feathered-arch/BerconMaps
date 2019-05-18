@@ -21,14 +21,18 @@ under the License.
 #include "istdplug.h"
 #include "icurvctl.h"
 
-// Handles basic operations on curveCtrl control
+// Handles basic operations on curve control
+
+extern TCHAR *GetString(int id);
+
+extern HINSTANCE hInstance;
 
 class CurveCtrl {
 public:	    
 	CurveCtrl() {}	
     ~CurveCtrl() {}	
 
-	static void update(ICurveCtl *curveCtrl, HWND hParent, ReferenceMaker *resMaker);
-	static void disable(ICurveCtl *curveCtrl);
-	static void init(ICurveCtl *curveCtrl);	
+	static void update(ICurveCtl *curve, HWND hParent, ReferenceMaker *resMaker);
+	static void disable(ICurveCtl *curve);
+	static void init(ICurveCtl *curve);	
 };

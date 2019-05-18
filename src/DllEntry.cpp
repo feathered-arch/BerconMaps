@@ -20,15 +20,18 @@ under the License.
 
 #ifndef COMPILE_MULTIMAP
 
+//#include "BerconWood.h"						//? Is this called instead of BerconCommon to avoid some kind of conflict?
 #include "BerconCommon.h"
 
 extern ClassDesc2* GetBerconNoiseDesc();
+/*
 extern ClassDesc2* GetBerconWoodDesc();
 extern ClassDesc2* GetBerconTileDesc();
 extern ClassDesc2* GetBerconDistortionDesc();
 extern ClassDesc2* GetBerconGradientDesc();
-extern void InitGradientControls();
 
+*/
+extern void InitGradientControls();
 HINSTANCE hInstance;
 int controlsInit = FALSE;
 
@@ -50,16 +53,16 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,ULONG fdwReason,LPVOID /*lpvReserved*/) {
 }
 
 __declspec( dllexport ) int LibNumberClasses() {
-	return 5;
+	return 1;
 }
 
 __declspec( dllexport ) ClassDesc* LibClassDesc(int i) {
 	switch(i) {
 		case 0: return GetBerconNoiseDesc();
-		case 1: return GetBerconWoodDesc();
-		case 2: return GetBerconTileDesc();
-		case 3: return GetBerconDistortionDesc();
-		case 4: return GetBerconGradientDesc();
+//		case 1: return GetBerconWoodDesc();
+//		case 2: return GetBerconTileDesc();
+//		case 3: return GetBerconDistortionDesc();
+//		case 4: return GetBerconGradientDesc();
 		default: return 0;
 	}
 }

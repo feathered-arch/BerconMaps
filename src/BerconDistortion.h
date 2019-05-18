@@ -71,7 +71,6 @@ class BerconDistortion : public Texmap {
 		RGBA EvalColor(ShadeContext& sc);
 		float EvalMono(ShadeContext& sc);
 		Point3 EvalNormalPerturb(ShadeContext& sc);
-		BOOL HandleOwnViewPerturb(ShadeContext& sc);
 
 		//XYZGen *GetTheXYZGen() { return NULL; } 
 		
@@ -88,15 +87,12 @@ class BerconDistortion : public Texmap {
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 1; };			// Always return 1 when ParameterBlocks are used
+		int NumSubs() { return 2+DIST_NSUBTEX; }
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		int NumRefs()									// Max will handle this internally. I can confirm this method works as far back as 2016. MtlLib.h (2017+) and imtl.h (<=2016) process this internally.
-		{												// Refer to line 103 of Materials\MtlLib.h
-			int count = 0;
-			return count;
-		}
+		// TODO: Maintain the number or references here 
+		int NumRefs() { return 5; }
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
@@ -122,6 +118,6 @@ public:
 	virtual Class_ID ClassID() 						{ return BerconDistortion_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
 
-	virtual const TCHAR* InternalName() 			{ return _M("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _T("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }					// returns owning module handle	
 };

@@ -17,7 +17,7 @@ under the License.
 
 #pragma once
 
-#include <cmath>
+#include "math.h"
 
 typedef float real;
 typedef double ireal;

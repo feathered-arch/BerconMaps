@@ -97,8 +97,8 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 		void gradSelKey();
 		void gradReset() { resetKeys(); }
 
-		// curveCtrl
-		ICurveCtl* bcCurve;				
+		// Curve
+		ICurveCtl* curve;				
 		BOOL p_curveOn;
 		// From ResourceMakerCallback		
 		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
@@ -150,16 +150,11 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 1; }						// Return 1 for PBlock
+		int NumSubs() { return 8+gradient->numKeys(); } // !! Update submap count !!
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 		
-		int NumRefs()									// Max will handle this internally. I can confirm this method works as far back as 2016. MtlLib.h (2017+) and imtl.h (<=2016) process this internally.
-		{												// Refer to line 103 of Materials\MtlLib.h
-			int count = 0;
-			return count;
-		}
-
+		int NumRefs() { return 8+gradient->numKeys(); } // !! Update submap count !!
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
@@ -196,6 +191,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconGradient_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _M("BerconGradient"); } // scripter-visible name
+	virtual const TCHAR* InternalName() 			{ return _T("BerconGradient"); } // scripter-visible name
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

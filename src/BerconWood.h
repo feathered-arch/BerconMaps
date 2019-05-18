@@ -29,7 +29,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 	private:
 		static const int NSUBTEX = 21;
 		static const int NCOLS = 3;
-//		static const int NUMREF = 26;
+		static const int NUMREF = 27;
 
 	public:
 		BOOL useCurve, useDistortion, lockGrain;
@@ -83,8 +83,8 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		bool mappedParameters;
 		WoodParam EvalParameters(ShadeContext& sc);
 
-		// curveCtrl
-		ICurveCtl* bcCurve;				
+		// Curve
+		ICurveCtl* curve;				
 		// From ResourceMakerCallback		
 		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
 		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
@@ -99,7 +99,6 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		// Interactive Display
 		TexHandle *texHandle;
 		Interval texHandleValid;
-
 		void DiscardTexHandle() { if (texHandle) { texHandle->DeleteThis(); texHandle = NULL; } }
 		BOOL SupportTexDisplay() { return TRUE; }
 		void ActivateTexDisplay(BOOL onoff) { if (!onoff) DiscardTexHandle(); }
@@ -122,8 +121,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		//From Texmap
 		RGBA EvalColor(ShadeContext& sc);
 		float EvalMono(ShadeContext& sc);
-		Point3 EvalNormalPerturb(ShadeContext& sc);
-		BOOL HandleOwnViewPerturb (ShadeContext& sc);
+		Point3 EvalNormalPerturb(ShadeContext& sc);	
 
 		int SubNumToRefNum(int subNum) { return subNum; }
 
@@ -137,15 +135,11 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 1; };			// Always return 1 when ParameterBlocks are used
+		int NumSubs() { return NUMREF; }
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		int NumRefs()									// Max will handle this internally. I can confirm this method works as far back as 2016. MtlLib.h (2017+) and imtl.h (<=2016) process this internally.
-		{												// Refer to line 103 of Materials\MtlLib.h
-			int count = 0;
-			return count;
-		}
+		int NumRefs() { return NUMREF; }
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
@@ -181,6 +175,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconWood_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _M("BerconWood"); } // returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _T("BerconWood"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

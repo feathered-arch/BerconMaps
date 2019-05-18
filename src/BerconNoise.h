@@ -23,7 +23,6 @@ under the License.
 
 #include "BerconCommon.h"
 
-
 extern TCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
@@ -82,8 +81,8 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		TextureOutput   *texout;
 		Interval		ivalid;
 		
-		// curveCtrl
-		ICurveCtl* bcCurve;				
+		// Curve
+		ICurveCtl* curve;				
 		BOOL useCurve;
 		// From ResourceMakerCallback		
 		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
@@ -123,7 +122,6 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		RGBA EvalColor(ShadeContext& sc);
 		float EvalMono(ShadeContext& sc);
 		Point3 EvalNormalPerturb(ShadeContext& sc);
-		BOOL HandleOwnViewPerturb(ShadeContext& sc);
 
 		XYZGen *GetTheXYZGen() { return NULL; } 
 		
@@ -139,20 +137,14 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 1; };			// Always return 1 when ParameterBlocks are used
+		int NumSubs() { return 1; }						// Set this to one when Paramblock is used
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		
-		int NumRefs()									// Max will handle this internally. I can confirm this method works as far back as 2016. MtlLib.h (2017+) and imtl.h (<=2016) process this internally.
-		{												// Refer to line 103 of Materials\MtlLib.h
-			int count = 0;
-			return count;
-		}
-
-
-		virtual RefTargetHandle GetReference(int i);
-		virtual void SetReference(int i, RefTargetHandle rtarg);
+		// TODO: Maintain the number or references here 
+		int NumRefs() { return 24; }					//	Save-on-Crash goes away if this is set to 22; BUT custom curve no longer saves its information.
+		RefTargetHandle GetReference(int i);
+		void SetReference(int i, RefTargetHandle rtarg);
 
 		int	NumParamBlocks() { return 4; }
 		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; case 1: return pbCurve; case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
@@ -186,6 +178,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconNoise_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _M("BerconNoise"); } // returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _T("BerconNoise"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

@@ -21,7 +21,6 @@ under the License.
 
 #pragma once
 
-#include <immintrin.h>
 #include <max.h>
 #include <3dsmaxdlport.h>
 #include <istdplug.h>
@@ -37,7 +36,6 @@ under the License.
 #include <maxscript/maxscript.h>
 
 #include "fractal.h"
-#include "BerconRefMaker.h"
 #include "resource.h"
 #include "curvectrl.h"
 #include "BerconSC.h"

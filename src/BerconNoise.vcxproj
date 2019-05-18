@@ -48,7 +48,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'" Label="Configuration">
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
@@ -68,7 +68,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX2|x64'" Label="Configuration">
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
@@ -149,12 +149,14 @@
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX2|x64'">
-    <CodeAnalysisRuleSet>CppCoreCheckSharedPointerRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include\Rendering;C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\samples\Include;C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\samples;C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include;$(IncludePath)</IncludePath>
+    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;$(LibraryPath)</LibraryPath>
     <CustomBuildAfterTargets />
     <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <TargetExt>.dlt</TargetExt>
+    <ExcludePath>$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'">
     <Midl>
@@ -177,6 +179,7 @@
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsCpp</CompileAs>
+      <CompileAsManaged>true</CompileAsManaged>
     </ClCompile>
     <ResourceCompile />
     <Link>
@@ -193,7 +196,6 @@
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ForceFileOutput>Enabled</ForceFileOutput>
       <AssemblyDebug>true</AssemblyDebug>
-      <CLRUnmanagedCodeCheck>true</CLRUnmanagedCodeCheck>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
@@ -230,10 +232,12 @@
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsCpp</CompileAs>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
     <ResourceCompile />
     <Link>
@@ -251,9 +255,9 @@
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ForceFileOutput>Enabled</ForceFileOutput>
       <AssemblyDebug>true</AssemblyDebug>
-      <CLRUnmanagedCodeCheck>true</CLRUnmanagedCodeCheck>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
     </Link>
     <Xdcmake />
     <Bscmake />
@@ -343,8 +347,6 @@
       <AssemblerOutput>All</AssemblerOutput>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
       <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
       <CallingConvention>Cdecl</CallingConvention>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -501,18 +503,16 @@
       <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
     </Midl>
     <ClCompile>
-      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
-      <WarningLevel>Level2</WarningLevel>
-      <AdditionalIncludeDirectories>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\howto\3dsmaxPluginWizard\Templates\1033;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>All</AssemblerOutput>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-      <EnforceTypeConversionRules>true</EnforceTypeConversionRules>
-      <CallingConvention>Cdecl</CallingConvention>
-      <CompileAs>CompileAsCpp</CompileAs>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
     </ClCompile>
     <ResourceCompile />
     <Link>
@@ -530,8 +530,11 @@
       <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
       <ForceFileOutput>Enabled</ForceFileOutput>
       <AssemblyDebug>true</AssemblyDebug>
-      <CLRUnmanagedCodeCheck>true</CLRUnmanagedCodeCheck>
-      <OptimizeReferences>true</OptimizeReferences>
+      <Version>
+      </Version>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
     </Link>
     <Xdcmake />
@@ -553,9 +556,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BerconDistortion.cpp" />
-    <ClCompile Include="BerconGradient.cpp" />
     <ClCompile Include="BerconTile.cpp" />
-    <ClCompile Include="BerconWood.cpp" />
     <ClCompile Include="curvectrl.cpp" />
     <ClCompile Include="DllEntry.cpp" />
     <ClCompile Include="BerconCommon.cpp" />
@@ -572,11 +573,9 @@
   <ItemGroup>
     <ClInclude Include="BerconCommon.h" />
     <ClInclude Include="BerconDistortion.h" />
-    <ClInclude Include="BerconGradient.h" />
     <ClInclude Include="BerconNoise.h" />
     <ClInclude Include="BerconSC.h" />
     <ClInclude Include="BerconTile.h" />
-    <ClInclude Include="BerconWood.h" />
     <ClInclude Include="curvectrl.h" />
     <ClInclude Include="fractal.h" />
     <ClInclude Include="GradientRamp.h" />
