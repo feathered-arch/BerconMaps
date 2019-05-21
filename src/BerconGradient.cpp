@@ -85,11 +85,11 @@ enum {
 	
 	pb_output,
 };
-
+/*
 enum {
 	pb_curve_on,
 	pb_curve,
-};
+};*/
 
 ParamDlg* BerconGradient::texoutDlg;
 
@@ -279,8 +279,8 @@ static ParamBlockDesc2 gradientmap_param_blk ( gradientmap_params, _T("params"),
 
 	p_end
 );
-
-static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),  0, &BerconGradientDesc, 
+/*
+ static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),  0, &BerconGradientDesc, 
 	P_AUTO_CONSTRUCT + P_AUTO_UI, CURVEPB_REF, 	
 	IDD_PANEL_CURVE, IDS_CURVEPARM, 0, 1, NULL,
 
@@ -322,7 +322,7 @@ class BerconCurveDlgProcGRADIENT : public ParamMap2UserDlgProc {
 			parentMap = (BerconGradient*)m;
 		}
 };
-
+*/
 class BerconGradientDlgProc : public ParamMap2UserDlgProc {
 	public:
 		BerconGradient *parentMap;		
@@ -494,8 +494,8 @@ BerconGradient::BerconGradient() {
 	pbXYZ = NULL;
 	//xyzGen = NULL;
 	texout = NULL;	
-	pbCurve = NULL;
-	curve = NULL;
+//	pbCurve = NULL;
+//	curve = NULL;
 	p_maptex = NULL;
 	p_distex = NULL;
 	p_node = NULL;
@@ -519,15 +519,15 @@ void BerconGradient::Reset() {
 	if (texout) texout->Reset();
 	else ReplaceReference( OUTPUT_REF, GetNewDefaultTextureOutput());
 	
-	if (curve) curve->DeleteMe();
-	curve = (ICurveCtl *) CreateInstance(REF_MAKER_CLASS_ID,CURVE_CONTROL_CLASS_ID);
+//	if (curve) curve->DeleteMe();
+//	curve = (ICurveCtl *) CreateInstance(REF_MAKER_CLASS_ID,CURVE_CONTROL_CLASS_ID);
 #if MAX_RELEASE >= 18900
-	curve->RegisterResourceMaker(static_cast<ReferenceTarget*>(this));
+//	curve->RegisterResourceMaker(static_cast<ReferenceTarget*>(this));
 #else
-	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
+//	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
 #endif
-	CurveCtrl::init(curve);
-	pbCurve->SetValue( pb_curve_on, t, FALSE);	
+//	CurveCtrl::init(curve);
+//	pbCurve->SetValue( pb_curve_on, t, FALSE);	
 
 	pblock->SetValue( pb_type,				t, 0);
 	pblock->SetValue( pb_interpolation,		t, 0);
@@ -586,7 +586,7 @@ void BerconGradient::Update(TimeValue t, Interval& valid) {
 		if (texout != NULL)
 			texout->Update(t,ivalid);
 
-		pbCurve->GetValue(pb_curve_on, t, p_curveOn, ivalid);
+//		pbCurve->GetValue(pb_curve_on, t, p_curveOn, ivalid);
 
 		// Load gradient					
 		int keys = countKeys();
@@ -836,7 +836,7 @@ ParamDlg* BerconGradient::CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp) {
 	//masterDlg->AddDlg(xyzGenDlg);	
 	masterDlg->AddDlg(texoutDlg);
 	gradientmap_param_blk.SetUserDlgProc(new BerconGradientDlgProc(this));
-	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProcGRADIENT(this));
+//	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProcGRADIENT(this));
 	xyz_blk.SetUserDlgProc(new BerconXYZDlgProc(this));
 	EnableStuff();
 	return masterDlg;
@@ -912,8 +912,8 @@ RefTargetHandle BerconGradient::GetReference(int i) {
 		case COORD_REF: return pbXYZ;
 		case PBLOCK_REF: return pblock;		
 		case OUTPUT_REF: return texout;
-		case CURVE_REF: return curve;		
-		case CURVEPB_REF: return pbCurve;
+	//	case CURVE_REF: return curve;		
+	//	case CURVEPB_REF: return pbCurve;
 		case MAPTEX_REF: return p_maptex;
 		case DISTEX_REF: return p_distex;
 		case KEYTEX_REF: return getKeyTex();		
@@ -930,8 +930,8 @@ void BerconGradient::SetReference(int i, RefTargetHandle rtarg) {
 		case COORD_REF: pbXYZ = (IParamBlock2 *)rtarg; break;			
 		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;		
 		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
-		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
-		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
+//		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
+//		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
 		case MAPTEX_REF: p_maptex = (Texmap *)rtarg; break;
 		case DISTEX_REF: p_distex = (Texmap *)rtarg; break;		
 		case KEYTEX_REF: setKeyTex((Texmap *)rtarg); break;		
@@ -962,8 +962,8 @@ RefTargetHandle BerconGradient::Clone(RemapDir &remap) {
 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
 	mnew->ReplaceReference(OUTPUT_REF,remap.CloneRef(texout));	
-	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
-	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
+//	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
+//	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
 
 	BaseClone(this, mnew, remap);
 	return (RefTargetHandle)mnew;
@@ -974,8 +974,8 @@ Animatable* BerconGradient::SubAnim(int i) {
 		case PBLOCK_REF: return pblock;
 		case COORD_REF: return pbXYZ;		
 		case OUTPUT_REF: return texout;
-		case CURVE_REF: return curve;
-		case CURVEPB_REF: return pbCurve;
+//		case CURVE_REF: return curve;
+//		case CURVEPB_REF: return pbCurve;
 		case MAPTEX_REF: return p_maptex;
 		case DISTEX_REF: return p_distex;
 		case KEYTEX_REF: return getKeyTex();		
@@ -992,8 +992,8 @@ TSTR BerconGradient::SubAnimName(int i) {
 		case PBLOCK_REF: return GetString(IDS_PARAMS);
 		case COORD_REF: return GetString(IDS_COORDS);				
 		case OUTPUT_REF: return GetString(IDS_OUTPUT);	
-		case CURVE_REF: return GetString(IDS_CURVE);
-		case CURVEPB_REF: return GetString(IDS_CURVEPB);
+//		case CURVE_REF: return GetString(IDS_CURVE);
+//		case CURVEPB_REF: return GetString(IDS_CURVEPB);
 		default: return GetSubTexmapTVName(i-REF_OFFSET);
 	}									  
 }
@@ -1006,9 +1006,9 @@ RefResult BerconGradient::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {
 				ParamID changing_param = pblock->LastNotifyParamID();
 				gradientmap_param_blk.InvalidateUI(changing_param);
 				if (changing_param != -1) DiscardTexHandle();
-			}  else if (hTarget == pbCurve) {
-				ParamID changing_param = pbCurve->LastNotifyParamID();
-				BerconCurve_param_blk.InvalidateUI(changing_param);
+	//		}  else if (hTarget == pbCurve) {
+	//			ParamID changing_param = pbCurve->LastNotifyParamID();
+	//			BerconCurve_param_blk.InvalidateUI(changing_param);
 				if (changing_param != -1) DiscardTexHandle();
 			} else if (hTarget == pbXYZ) {
 				ParamID changing_param = pbXYZ->LastNotifyParamID();
@@ -1359,7 +1359,7 @@ AColor BerconGradient::EvalColor(ShadeContext& sc) {
 	if (!limitRange(d)) return res;
 
 	// Curve
-	if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
+	//if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
 
 	// Get color from gradient
 	res = gradient->getColor(p_reverse?1.f-d:d, sc);
@@ -1403,7 +1403,7 @@ Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 	// Origin
 	float d = getGradientValueUVW(p) + dist;	
 	if (!limitRange(d)) return res;
-	if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
+//	if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
 	d = Intens(gradient->getColor(d, sc));
 
 	// Deltas
@@ -1426,8 +1426,8 @@ Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 		for (int i=0; i<3; i++) {
 			normal[i] = getGradientValueUVW(p+MP[i]) + dist;
 			if (!limitRange(normal[i])) return res;
-			if (p_curveOn) 
-				normal[i] = curve->GetControlCurve(0)->GetValue(sc.CurTime(), normal[i]);
+	//		if (p_curveOn) 
+	//			normal[i] = curve->GetControlCurve(0)->GetValue(sc.CurTime(), normal[i]);
 			normal[i] = Intens(gradient->getColor(normal[i], sc));
 			normal[i] = (normal[i] - d) / DELTA;
 		}		

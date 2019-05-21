@@ -21,22 +21,26 @@ under the License.
 
 #pragma once
 
-#include <max.h>
+#include <immintrin.h>
 #include <3dsmaxdlport.h>
+#include "resource.h"
 #include <istdplug.h>
 #include <iparamb2.h>
 #include <iparamm2.h>
+#include <maxtypes.h>
+#include <texutil.h>
+#include <shaders.h>
+#include <macrorec.h>
+#include <gport.h>
 #include <stdmat.h>
 #include <imtl.h>
-#include <macrorec.h>
-#include <texutil.h>
 #include <plugapi.h>
-#include <icurvctl.h>
+//#include <icurvctl.h>
 #include <bitmap.h>
 #include <maxscript/maxscript.h>
 
 #include "fractal.h"
-#include "resource.h"
+
 #include "curvectrl.h"
 #include "BerconSC.h"
 
@@ -80,7 +84,7 @@ under the License.
 #define D_MIRR(x) if (x<0) x = -x; int ix = (int)x; if (ix%2==0) x = x - ix; else x = 1.f - x + ix;
 #define D_STRE(x) if (x<0) x = 0.f; else if (x>1) x = 1.f;
 
-TCHAR *GetString(int id);
+MCHAR *GetString(int id);
 
  static void setSpinnerType(IParamMap2 *map, TimeValue t, int pb_id, int edit_id, int spin_id, int spinnerTypeWorld = 1, bool allowNegative = false) {
 	HWND hWnd = map->GetHWnd();

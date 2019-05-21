@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	?noise@Perlin@@SAMM@Z				; Perlin::noise
@@ -1206,7 +1206,7 @@ $unwind$?noise@Perlin@@SAMM@Z DD 051701H
 	DD	016812H
 	DD	04204H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?lerp2@@YAMMMM@Z
 _TEXT	SEGMENT
@@ -1223,7 +1223,7 @@ b$ = 24
 	ret	0
 ?lerp2@@YAMMMM@Z ENDP					; lerp2
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?point@Perlin@@CAMMMMMHHHH@Z
 _TEXT	SEGMENT
@@ -1338,7 +1338,7 @@ $LN1@point:
 	ret	0
 ?point@Perlin@@CAMMMMMHHHH@Z ENDP			; Perlin::point
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?point@Perlin@@CAMMMMHHH@Z
 _TEXT	SEGMENT
@@ -1443,7 +1443,7 @@ $LN1@point:
 	ret	0
 ?point@Perlin@@CAMMMMHHH@Z ENDP				; Perlin::point
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?point@Perlin@@CAMMMHH@Z
 _TEXT	SEGMENT
@@ -1542,7 +1542,7 @@ $LN1@point:
 	ret	0
 ?point@Perlin@@CAMMMHH@Z ENDP				; Perlin::point
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?point@Perlin@@CAMMH@Z
 _TEXT	SEGMENT
@@ -1603,7 +1603,7 @@ $LN4@point:
 	ret	0
 ?point@Perlin@@CAMMH@Z ENDP				; Perlin::point
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?grad@Perlin@@CAMHMMMM@Z
 _TEXT	SEGMENT
@@ -1662,7 +1662,7 @@ $LN14@grad:
 	ret	0
 ?grad@Perlin@@CAMHMMMM@Z ENDP				; Perlin::grad
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?grad@Perlin@@CAMHMMM@Z
 _TEXT	SEGMENT
@@ -1725,7 +1725,7 @@ $LN11@grad:
 	ret	0
 ?grad@Perlin@@CAMHMMM@Z ENDP				; Perlin::grad
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?grad@Perlin@@CAMHMM@Z
 _TEXT	SEGMENT
@@ -1781,7 +1781,7 @@ $LN9@grad:
 	ret	0
 ?grad@Perlin@@CAMHMM@Z ENDP				; Perlin::grad
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?grad@Perlin@@CAMHM@Z
 _TEXT	SEGMENT
@@ -1825,7 +1825,7 @@ $LN4@grad:
 	ret	0
 ?grad@Perlin@@CAMHM@Z ENDP				; Perlin::grad
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fsnoise4D@Perlin@@SAMMMMMM@Z
 _TEXT	SEGMENT
@@ -1891,7 +1891,7 @@ $LN1@fsnoise4D:
 	ret	0
 ?fsnoise4D@Perlin@@SAMMMMMM@Z ENDP			; Perlin::fsnoise4D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fsnoise3D@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
@@ -1951,7 +1951,7 @@ $LN1@fsnoise3D:
 	ret	0
 ?fsnoise3D@Perlin@@SAMMMMM@Z ENDP			; Perlin::fsnoise3D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fsnoise2D@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
@@ -2006,7 +2006,7 @@ $LN1@fsnoise2D:
 	ret	0
 ?fsnoise2D@Perlin@@SAMMMM@Z ENDP			; Perlin::fsnoise2D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fnoise4D@Perlin@@SAMMMMMM@Z
 _TEXT	SEGMENT
@@ -2072,7 +2072,7 @@ $LN1@fnoise4D:
 	ret	0
 ?fnoise4D@Perlin@@SAMMMMMM@Z ENDP			; Perlin::fnoise4D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fnoise3D@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
@@ -2132,7 +2132,7 @@ $LN1@fnoise3D:
 	ret	0
 ?fnoise3D@Perlin@@SAMMMMM@Z ENDP			; Perlin::fnoise3D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?fnoise2D@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
@@ -2187,7 +2187,7 @@ $LN1@fnoise2D:
 	ret	0
 ?fnoise2D@Perlin@@SAMMMM@Z ENDP				; Perlin::fnoise2D
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
@@ -2604,7 +2604,7 @@ $LN11@snoise:
 	ret	0
 ?snoise@Perlin@@SAMMMMM@Z ENDP				; Perlin::snoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
@@ -2924,7 +2924,7 @@ $LN19@snoise:
 	ret	0
 ?snoise@Perlin@@SAMMMM@Z ENDP				; Perlin::snoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMM@Z
 _TEXT	SEGMENT
@@ -3088,7 +3088,7 @@ $LN9@snoise:
 	ret	0
 ?snoise@Perlin@@SAMMM@Z ENDP				; Perlin::snoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMM@Z
 _TEXT	SEGMENT
@@ -3241,7 +3241,7 @@ $LN13@snoise:
 	ret	0
 ?snoise@Perlin@@SAMM@Z ENDP				; Perlin::snoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
@@ -4556,7 +4556,7 @@ $LN247@noise:
 	ret	0
 ?noise@Perlin@@SAMMMMM@Z ENDP				; Perlin::noise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
@@ -5256,7 +5256,7 @@ $LN111@noise:
 	ret	0
 ?noise@Perlin@@SAMMMM@Z ENDP				; Perlin::noise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMM@Z
 _TEXT	SEGMENT
@@ -5592,7 +5592,7 @@ $LN48@noise:
 	ret	0
 ?noise@Perlin@@SAMMM@Z ENDP				; Perlin::noise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMM@Z
 _TEXT	SEGMENT

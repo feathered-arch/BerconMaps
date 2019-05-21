@@ -69,7 +69,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		// Parameter block
 		IParamBlock2	*pbXYZ;		//ref 0
 		IParamBlock2	*pblock;	//ref 1
-		IParamBlock2	*pbCurve;	//ref CURVEPB_REF
+	//	IParamBlock2	*pbCurve;	//ref CURVEPB_REF
 		IParamBlock2	*pbMap;		//ref PBMAP_REF
 
 		Color			 col[NCOLS];
@@ -84,7 +84,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		WoodParam EvalParameters(ShadeContext& sc);
 
 		// Curve
-		ICurveCtl* curve;				
+	//	ICurveCtl* curve;				
 		// From ResourceMakerCallback		
 		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
 		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
@@ -144,10 +144,10 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		void SetReference(int i, RefTargetHandle rtarg);
 
 		int	NumParamBlocks() { return 4; }
-		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; case 1: return pbCurve; case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
+		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
 		IParamBlock2* GetParamBlockByID(BlockID id) { 
 			if (pblock->ID() == id) return pblock;
-			if (pbCurve->ID() == id) return pbCurve;
+		//	if (pbCurve->ID() == id) return pbCurve;
 			if (pbMap->ID() == id) return pbMap;
 			if (pbXYZ->ID() == id) return pbXYZ;			
 			return NULL;			
@@ -158,7 +158,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		//Constructor/Destructor
 		BerconWood();
 		~BerconWood();		
-
+		
 		void* GetInterface(ULONG id) {
 			if(id == I_RESMAKER_INTERFACE)
 				return (void *) (ResourceMakerCallback*) this;

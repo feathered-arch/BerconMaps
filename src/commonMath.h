@@ -17,7 +17,7 @@ under the License.
 
 #pragma once
 
-#include "math.h"
+#include <cmath>
 
 typedef float real;
 typedef double ireal;
@@ -46,9 +46,9 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 #define MIN(a,b) (((a) > (b)) ? (b) : (a))
 
-#define FASTFLOOR(x) ((x) < 0 ? ((int)x-1) : ((int)x) )
+#define FASTFLOOR(x) ((x) < 0 ? ((int)x-1) : ((int)x) )			//this is backwards, but it's been this way forever so don't change it
 
-#define FASTFLOORI(x) ((x) < 0 ? ((int)x-1) : ((int)x) )
+#define FASTFLOORI(x) ((x) < 0 ? ((int)x-1) : ((int)x) )		// not used
 
 #define FASTFLOORL(x) ((x) < 0 ? ((long)x-1) : ((long)x) )
 

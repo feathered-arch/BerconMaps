@@ -16,22 +16,21 @@ under the License.
 */
 
 
-#include "Max.h"
-#include "resource.h"
-#include "istdplug.h"
-#include "icurvctl.h"
+#pragma once
+#include <max.h>
+#include <icurvctl.h>
 
 // Handles basic operations on curve control
-
-extern TCHAR *GetString(int id);
+extern MCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
 
-class CurveCtrl {
+class CurveCtrl  {		
+
 public:	    
 	CurveCtrl() {}	
-    ~CurveCtrl() {}	
-
+    virtual ~CurveCtrl() {}
+	
 	static void update(ICurveCtl *curve, HWND hParent, ReferenceMaker *resMaker);
 	static void disable(ICurveCtl *curve);
 	static void init(ICurveCtl *curve);	

@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	?smooth@@YAMM@Z					; smooth
@@ -20,7 +20,7 @@ CONST	ENDS
 CONST	SEGMENT
 __real@3f800000 DD 03f800000r			; 1
 CONST	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\commonmath.cpp
 ;	COMDAT ?lerp@@YAMMMM@Z
 _TEXT	SEGMENT
@@ -40,7 +40,7 @@ blend$ = 24
 	ret	0
 ?lerp@@YAMMMM@Z ENDP					; lerp
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\commonmath.cpp
 ;	COMDAT ?linear@@YAMMMM@Z
 _TEXT	SEGMENT
@@ -77,7 +77,7 @@ $LN1@linear:
 	ret	0
 ?linear@@YAMMMM@Z ENDP					; linear
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\commonmath.cpp
 ;	COMDAT ?smooth@@YAMMMM@Z
 _TEXT	SEGMENT
@@ -118,7 +118,7 @@ $LN1@smooth:
 	ret	0
 ?smooth@@YAMMMM@Z ENDP					; smooth
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\commonmath.cpp
 ;	COMDAT ?smooth@@YAMM@Z
 _TEXT	SEGMENT

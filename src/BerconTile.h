@@ -148,6 +148,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconTile_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _T("BerconTile"); } // returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _M("BerconTile"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

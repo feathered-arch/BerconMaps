@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
@@ -72,12 +72,9 @@ EXTRN	?leftDown@GradientRamp@@QEAAXHH_N00@Z:PROC	; GradientRamp::leftDown
 EXTRN	?leftUp@GradientRamp@@QEAAXHH_N00@Z:PROC	; GradientRamp::leftUp
 EXTRN	?dragging@GradientRamp@@QEAAXHH_N00@Z:PROC	; GradientRamp::dragging
 EXTRN	?popup@GradientRamp@@QEAAXHHH@Z:PROC		; GradientRamp::popup
-EXTRN	__GSHandlerCheck:PROC
-EXTRN	__GSHandlerCheck_SEH:PROC
-EXTRN	__security_check_cookie:PROC
+EXTRN	__C_specific_handler:PROC
 EXTRN	?hInstance@@3PEAUHINSTANCE__@@EA:QWORD		; hInstance
 EXTRN	__imp_?thread_locals_index@@3HA:DWORD
-EXTRN	__security_cookie:QWORD
 _BSS	SEGMENT
 ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A DB 010H DUP (?) ; MaxSDK::AssetManagement::kInvalidId
 _BSS	ENDS
@@ -96,19 +93,19 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$WinbaseIsolationAwarePrivatetRgzlnPgpgk DD imagerel $LN40
-	DD	imagerel $LN40+460
+	DD	imagerel $LN40+441
 	DD	imagerel $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 DD imagerel WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0
-	DD	imagerel WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0+29
+	DD	imagerel WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0+32
 	DD	imagerel $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$IsolationAwareRegisterClassExW DD imagerel $LN43
-	DD	imagerel $LN43+298
+	DD	imagerel $LN43+270
 	DD	imagerel $unwind$IsolationAwareRegisterClassExW
 pdata	ENDS
 ;	COMDAT pdata
@@ -120,13 +117,13 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z DD imagerel $LN22
-	DD	imagerel $LN22+647
+	DD	imagerel $LN22+635
 	DD	imagerel $unwind$?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?InitGradientControls@@YAXXZ DD imagerel $LN4
-	DD	imagerel $LN4+162
+	DD	imagerel $LN4+128
 	DD	imagerel $unwind$?InitGradientControls@@YAXXZ
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -141,6 +138,18 @@ CONST	ENDS
 _DATA	SEGMENT
 ?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
 	DD	027246c55H
+?BlinnClassID@@3VClass_ID@@A DD 038H			; BlinnClassID
+	DD	00H
+?AnisoShaderClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderClassID
+	DD	00H
+?AnisoShaderDlgClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderDlgClassID
+	DD	00H
+?OrenNayarBlinnShaderClassID@@3VClass_ID@@A DD 02857f421H ; OrenNayarBlinnShaderClassID
+	DD	00H
+?OrenNayarShaderDlgClassID@@3VClass_ID@@A DD 02857f422H	; OrenNayarShaderDlgClassID
+	DD	00H
+?StraussShaderClassID@@3VClass_ID@@A DD 02857f450H	; StraussShaderClassID
+	DD	00H
 _DATA	ENDS
 ;	COMDAT ?debugString@?4??IsolationAwarePrivatenPgViNgRzlnPgpgk@@9@4QBDB
 CONST	SEGMENT
@@ -155,20 +164,18 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?InitGradientControls@@YAXXZ DD 021819H
-	DD	03002f209H
-	DD	imagerel __GSHandlerCheck
-	DD	070H
+$unwind$?InitGradientControls@@YAXXZ DD 020601H
+	DD	03002d206H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z DD 072019H
-	DD	012010eH
-	DD	07005e007H
-	DD	050036004H
-	DD	03002H
-	DD	imagerel __GSHandlerCheck
-	DD	088H
+$unwind$?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z DD 0b1d01H
+	DD	017741dH
+	DD	016641dH
+	DD	015541dH
+	DD	014341dH
+	DD	012011dH
+	DD	0e016H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -178,17 +185,16 @@ $unwind$IsolationAwareRegisterClassExW$fin$0 DD 040801H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$IsolationAwareRegisterClassExW DD 061e19H
-	DD	0c640fH
-	DD	0b340fH
-	DD	0700b720fH
-	DD	imagerel __GSHandlerCheck_SEH
+$unwind$IsolationAwareRegisterClassExW DD 060f11H
+	DD	0a640fH
+	DD	08340fH
+	DD	0700b520fH
+	DD	imagerel __C_specific_handler
 	DD	01H
-	DD	imagerel $LN43+185
-	DD	imagerel $LN43+202
+	DD	imagerel $LN43+170
+	DD	imagerel $LN43+187
 	DD	imagerel IsolationAwareRegisterClassExW$fin$0
 	DD	00H
-	DD	032H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -197,16 +203,15 @@ $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk DD 031b19H
-	DD	05e0109H
+$unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk DD 030911H
+	DD	05a0109H
 	DD	03002H
-	DD	imagerel __GSHandlerCheck_SEH
+	DD	imagerel __C_specific_handler
 	DD	01H
-	DD	imagerel $LN40+358
-	DD	imagerel $LN40+415
+	DD	imagerel $LN40+352
+	DD	imagerel $LN40+409
 	DD	imagerel WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0
 	DD	00H
-	DD	02e2H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -221,22 +226,18 @@ $unwind$??_H@YAXPEAX_K1P6APEAX0@Z@Z DD 081901H
 	DD	063419H
 	DD	070153219H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
 ;	COMDAT ?InitGradientControls@@YAXXZ
 _TEXT	SEGMENT
 wc$ = 32
-__$ArrayPad$ = 112
 ?InitGradientControls@@YAXXZ PROC			; InitGradientControls, COMDAT
 
 ; 185  : void InitGradientControls() {
 
 $LN4:
 	push	rbx
-	sub	rsp, 128				; 00000080H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 112				; 00000070H
 
 ; 186  : 	WNDCLASSEX wc;
 ; 187  : 	wc.cbClsExtra = 0;
@@ -284,15 +285,12 @@ $LN4:
 
 ; 200  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 128				; 00000080H
+	add	rsp, 112				; 00000070H
 	pop	rbx
 	ret	0
 ?InitGradientControls@@YAXXZ ENDP			; InitGradientControls
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\3dsmaxdlport.h
 ;	COMDAT ??$DLGetWindowLongPtr@PEAVIGradient@@@@YAPEAVIGradient@@PEAUHWND__@@HPEAV0@@Z
 _TEXT	SEGMENT
@@ -306,7 +304,7 @@ __formal$ = 24
 	rex_jmp	QWORD PTR __imp_GetWindowLongPtrW
 ??$DLGetWindowLongPtr@PEAVIGradient@@@@YAPEAVIGradient@@PEAUHWND__@@HPEAV0@@Z ENDP ; DLGetWindowLongPtr<IGradient * __ptr64>
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\3dsmaxdlport.h
 ;	COMDAT ??$DLSetWindowLongPtr@PEAVIGradient@@@@YAPEAVIGradient@@PEAUHWND__@@PEAV0@H@Z
 _TEXT	SEGMENT
@@ -331,7 +329,7 @@ n$ = 24
 	rex_jmp	QWORD PTR __imp_SetWindowLongPtrW
 ??$DLSetWindowLongPtr@PEAVIGradient@@@@YAPEAVIGradient@@PEAUHWND__@@PEAV0@H@Z ENDP ; DLSetWindowLongPtr<IGradient * __ptr64>
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\3dsmaxdlport.h
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
@@ -341,27 +339,23 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
 ;	COMDAT ?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z
 _TEXT	SEGMENT
-ps$1 = 48
-pt$2 = 128
-__$ArrayPad$ = 136
-hWnd$ = 192
-msg$ = 200
-wParam$ = 208
-lParam$ = 216
+pt$1 = 48
+ps$2 = 64
+hWnd$ = 160
+msg$ = 168
+wParam$ = 176
+lParam$ = 184
 ?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z PROC	; IGradient::GradientProc, COMDAT
 
 ; 39   : LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
 $LN22:
-	push	rbx
-	push	rbp
-	push	rsi
-	push	rdi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rbp
+	mov	QWORD PTR [rsp+24], rsi
+	mov	QWORD PTR [rsp+32], rdi
 	push	r14
 	sub	rsp, 144				; 00000090H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
 	mov	edi, edx
 	mov	rsi, r9
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\3dsmaxdlport.h
@@ -505,19 +499,19 @@ $LN13@GradientPr:
 ; 173  : 			PAINTSTRUCT ps;
 ; 174  : 			BeginPaint(hWnd,&ps);
 
-	lea	rdx, QWORD PTR ps$1[rsp]
+	lea	rdx, QWORD PTR ps$2[rsp]
 	mov	rcx, rbp
 	call	QWORD PTR __imp_BeginPaint
 
 ; 175  : 			grad->gradient->paint(ps.hdc);
 
-	mov	rdx, QWORD PTR ps$1[rsp]
+	mov	rdx, QWORD PTR ps$2[rsp]
 	mov	rcx, QWORD PTR [r14+16]
 	call	?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z	; GradientRamp::paint
 
 ; 176  : 			EndPaint(hWnd,&ps);
 
-	lea	rdx, QWORD PTR ps$1[rsp]
+	lea	rdx, QWORD PTR ps$2[rsp]
 	mov	rcx, rbp
 	call	QWORD PTR __imp_EndPaint
 
@@ -644,15 +638,15 @@ $LN10@GradientPr:
 
 ; 116  : 			GetCursorPos(&pt);
 
-	lea	rcx, QWORD PTR pt$2[rsp]
+	lea	rcx, QWORD PTR pt$1[rsp]
 	mov	rbx, rax
 	call	QWORD PTR __imp_GetCursorPos
 
 ; 117  : 			int sel = TrackPopupMenuEx(Popup, TPM_LEFTALIGN | TPM_RIGHTBUTTON | TPM_RETURNCMD, pt.x, pt.y, hWnd, NULL);
 
-	mov	r9d, DWORD PTR pt$2[rsp+4]
+	mov	r9d, DWORD PTR pt$1[rsp+4]
 	mov	edx, 258				; 00000102H
-	mov	r8d, DWORD PTR pt$2[rsp]
+	mov	r8d, DWORD PTR pt$1[rsp]
 	mov	rcx, rbx
 	mov	QWORD PTR [rsp+40], 0
 	mov	QWORD PTR [rsp+32], rbp
@@ -726,19 +720,17 @@ $LN1@GradientPr:
 
 ; 183  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 144				; 00000090H
+	lea	r11, QWORD PTR [rsp+144]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rbp, QWORD PTR [r11+24]
+	mov	rsi, QWORD PTR [r11+32]
+	mov	rdi, QWORD PTR [r11+40]
+	mov	rsp, r11
 	pop	r14
-	pop	rdi
-	pop	rsi
-	pop	rbp
-	pop	rbx
 	ret	0
 ?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z ENDP	; IGradient::GradientProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
 text$di	SEGMENT
@@ -754,7 +746,7 @@ text$di	SEGMENT
 	ret	0
 ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
 _TEXT	SEGMENT
@@ -769,7 +761,7 @@ this$ = 8
 	ret	0
 ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@KK@Z
 _TEXT	SEGMENT
@@ -786,7 +778,7 @@ bb$ = 24
 	ret	0
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
@@ -797,21 +789,17 @@ _TEXT	ENDS
 ;	COMDAT IsolationAwareRegisterClassExW
 _TEXT	SEGMENT
 result$ = 32
-ulpCookie$ = 40
-__$ArrayPad$ = 48
-unnamed1$ = 80
+unnamed1$ = 64
+ulpCookie$ = 72
 IsolationAwareRegisterClassExW PROC			; COMDAT
 
 ; 318  : {
 
 $LN43:
-	mov	QWORD PTR [rsp+16], rbx
+	mov	QWORD PTR [rsp+8], rbx
 	mov	QWORD PTR [rsp+24], rsi
 	push	rdi
-	sub	rsp, 64					; 00000040H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 48					; 00000030H
 	mov	rdi, rcx
 
 ; 319  :     ATOM result = 0 ;
@@ -836,8 +824,8 @@ $LN43:
 
 ; 585  :     if (WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ)
 
-	mov	ecx, DWORD PTR WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
-	test	ecx, ecx
+	mov	edx, DWORD PTR WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+	test	edx, edx
 	je	SHORT $LN23@IsolationA
 
 ; 586  :     {
@@ -847,7 +835,7 @@ $LN43:
 	lea	rcx, OFFSET FLAT:?debugString@?4??IsolationAwarePrivatenPgViNgRzlnPgpgk@@9@4QBDB ; `IsolationAwarePrivatenPgViNgRzlnPgpgk'::`5'::debugString
 	call	QWORD PTR __imp_OutputDebugStringA
 	mov	eax, DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY
-	mov	ecx, DWORD PTR WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+	mov	edx, DWORD PTR WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 $LN23@IsolationA:
 
 ; 589  :     }
@@ -865,7 +853,7 @@ $LN23@IsolationA:
 ; 597  :     /* Do not call Init if Cleanup has been called. */
 ; 598  :     if (!WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ)
 
-	test	ecx, ecx
+	test	edx, edx
 	jne	SHORT $LN27@IsolationA
 
 ; 599  :     {
@@ -985,12 +973,9 @@ $LN1@IsolationA:
 
 ; 345  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	mov	rbx, QWORD PTR [rsp+88]
-	mov	rsi, QWORD PTR [rsp+96]
-	add	rsp, 64					; 00000040H
+	mov	rbx, QWORD PTR [rsp+64]
+	mov	rsi, QWORD PTR [rsp+80]
+	add	rsp, 48					; 00000030H
 	pop	rdi
 	ret	0
 IsolationAwareRegisterClassExW ENDP
@@ -998,9 +983,8 @@ _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 result$ = 32
-ulpCookie$ = 40
-__$ArrayPad$ = 48
-unnamed1$ = 80
+unnamed1$ = 64
+ulpCookie$ = 72
 IsolationAwareRegisterClassExW$fin$0 PROC
 
 ; 330  :     }
@@ -1070,15 +1054,14 @@ $LN19@IsolationA:
 	int	3
 IsolationAwareRegisterClassExW$fin$0 ENDP
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
 ;	COMDAT text$x
 text$x	SEGMENT
 result$ = 32
-ulpCookie$ = 40
-__$ArrayPad$ = 48
-unnamed1$ = 80
+unnamed1$ = 64
+ulpCookie$ = 72
 IsolationAwareRegisterClassExW$fin$0 PROC
 
 ; 330  :     }
@@ -1147,27 +1130,23 @@ $LN19@IsolationA:
 	int	3
 IsolationAwareRegisterClassExW$fin$0 ENDP
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT WinbaseIsolationAwarePrivatetRgzlnPgpgk
 _TEXT	SEGMENT
-hmodSelf$1 = 64
-actCtxBasicInfo$ = 72
-ulpCookie$ = 88
-actCtxSectionKeyedData$2 = 96
-actCtx$3 = 96
-rgchFullModulePath$4 = 208
-__$ArrayPad$ = 736
+actCtxBasicInfo$ = 64
+actCtxSectionKeyedData$1 = 80
+actCtx$2 = 80
+rgchFullModulePath$3 = 192
+ulpCookie$ = 736
+hmodSelf$4 = 744
 WinbaseIsolationAwarePrivatetRgzlnPgpgk PROC		; COMDAT
 
 ; 396  : {
 
 $LN40:
 	push	rbx
-	sub	rsp, 752				; 000002f0H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 720				; 000002d0H
 
 ; 397  :     BOOL fResult = FALSE;
 
@@ -1247,7 +1226,7 @@ $LN40:
 ; 437  : #endif
 ; 438  :         if (!
 
-	lea	r8, QWORD PTR hmodSelf$1[rsp]
+	lea	r8, QWORD PTR hmodSelf$4[rsp]
 	lea	rdx, OFFSET FLAT:WinbaseIsolationAwarePrivateT_UnPgpgk
 	lea	ecx, QWORD PTR [rbx+6]
 	call	QWORD PTR __imp_GetModuleHandleExW
@@ -1268,8 +1247,8 @@ $LN40:
 ; 450  :         dw = GetModuleFileNameW(hmodSelf, rgchFullModulePath, WINBASE_NUMBER_OF(rgchFullModulePath));
 
 	mov	r8d, 261				; 00000105H
-	lea	rdx, QWORD PTR rgchFullModulePath$4[rsp]
-	mov	rcx, QWORD PTR hmodSelf$1[rsp]
+	lea	rdx, QWORD PTR rgchFullModulePath$3[rsp]
+	mov	rcx, QWORD PTR hmodSelf$4[rsp]
 	call	QWORD PTR __imp_GetModuleFileNameW
 
 ; 451  :         if (dw == 0)
@@ -1298,29 +1277,29 @@ $LN13@WinbaseIso:
 ; 458  : 
 ; 459  :         actCtx.cbSize = sizeof(actCtx);
 
-	mov	DWORD PTR actCtx$3[rsp], 56		; 00000038H
+	mov	DWORD PTR actCtx$2[rsp], 56		; 00000038H
 
 ; 460  :         actCtx.dwFlags = ACTCTX_FLAG_RESOURCE_NAME_VALID | ACTCTX_FLAG_HMODULE_VALID;
 
-	mov	DWORD PTR actCtx$3[rsp+4], 136		; 00000088H
+	mov	DWORD PTR actCtx$2[rsp+4], 136		; 00000088H
 
 ; 461  :         actCtx.lpSource = rgchFullModulePath;
 
-	lea	rax, QWORD PTR rgchFullModulePath$4[rsp]
-	mov	QWORD PTR actCtx$3[rsp+8], rax
+	lea	rax, QWORD PTR rgchFullModulePath$3[rsp]
+	mov	QWORD PTR actCtx$2[rsp+8], rax
 
 ; 462  :         actCtx.lpResourceName = (LPCWSTR)(ULONG_PTR)3;
 
-	mov	QWORD PTR actCtx$3[rsp+32], 3
+	mov	QWORD PTR actCtx$2[rsp+32], 3
 
 ; 463  :         actCtx.hModule = hmodSelf;
 
-	mov	rax, QWORD PTR hmodSelf$1[rsp]
-	mov	QWORD PTR actCtx$3[rsp+48], rax
+	mov	rax, QWORD PTR hmodSelf$4[rsp]
+	mov	QWORD PTR actCtx$2[rsp+48], rax
 
 ; 105  :     return CreateActCtxW(pActCtx);
 
-	lea	rcx, QWORD PTR actCtx$3[rsp]
+	lea	rcx, QWORD PTR actCtx$2[rsp]
 	call	QWORD PTR __imp_CreateActCtxW
 	mov	QWORD PTR actCtxBasicInfo$[rsp], rax
 
@@ -1390,11 +1369,11 @@ $LN8@WinbaseIso:
 ; 491  : 
 ; 492  :             actCtxSectionKeyedData.cbSize = sizeof(actCtxSectionKeyedData);
 
-	mov	DWORD PTR actCtxSectionKeyedData$2[rsp], 112 ; 00000070H
+	mov	DWORD PTR actCtxSectionKeyedData$1[rsp], 112 ; 00000070H
 
 ; 188  :     return FindActCtxSectionStringW(dwFlags,lpExtensionGuid,ulSectionId,lpStringToFind,ReturnedData);
 
-	lea	rax, QWORD PTR actCtxSectionKeyedData$2[rsp]
+	lea	rax, QWORD PTR actCtxSectionKeyedData$1[rsp]
 	mov	QWORD PTR [rsp+32], rax
 	lea	r9, OFFSET FLAT:??_C@_1BK@BFMCNHEO@?$AAC?$AAo?$AAm?$AAc?$AAt?$AAl?$AA3?$AA2?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@
 	xor	edx, edx
@@ -1445,23 +1424,19 @@ $LN22@WinbaseIso:
 
 ; 508  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 752				; 000002f0H
+	add	rsp, 720				; 000002d0H
 	pop	rbx
 	ret	0
 WinbaseIsolationAwarePrivatetRgzlnPgpgk ENDP
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
-hmodSelf$1 = 64
-actCtxBasicInfo$ = 72
-ulpCookie$ = 88
-actCtxSectionKeyedData$2 = 96
-actCtx$3 = 96
-rgchFullModulePath$4 = 208
-__$ArrayPad$ = 736
+actCtxBasicInfo$ = 64
+actCtxSectionKeyedData$1 = 80
+actCtx$2 = 80
+rgchFullModulePath$3 = 192
+ulpCookie$ = 736
+hmodSelf$4 = 744
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 PROC
 
 ; 497  :             }
@@ -1485,16 +1460,15 @@ $LN24@WinbaseIso:
 	int	3
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 ENDP
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-hmodSelf$1 = 64
-actCtxBasicInfo$ = 72
-ulpCookie$ = 88
-actCtxSectionKeyedData$2 = 96
-actCtx$3 = 96
-rgchFullModulePath$4 = 208
-__$ArrayPad$ = 736
+actCtxBasicInfo$ = 64
+actCtxSectionKeyedData$1 = 80
+actCtx$2 = 80
+rgchFullModulePath$3 = 192
+ulpCookie$ = 736
+hmodSelf$4 = 744
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 PROC
 
 ; 168  : #else
@@ -1847,7 +1821,7 @@ $LN24@WinbaseIso:
 	int	3
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 ENDP
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwareQueryActCtxW
 _TEXT	SEGMENT
@@ -1866,7 +1840,7 @@ IsolationAwareQueryActCtxW PROC				; COMDAT
 	rex_jmp	QWORD PTR __imp_QueryActCtxW
 IsolationAwareQueryActCtxW ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwareFindActCtxSectionStringW
 _TEXT	SEGMENT
@@ -1883,7 +1857,7 @@ IsolationAwareFindActCtxSectionStringW PROC		; COMDAT
 	rex_jmp	QWORD PTR __imp_FindActCtxSectionStringW
 IsolationAwareFindActCtxSectionStringW ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwareDeactivateActCtx
 _TEXT	SEGMENT
@@ -1897,7 +1871,7 @@ IsolationAwareDeactivateActCtx PROC			; COMDAT
 	rex_jmp	QWORD PTR __imp_DeactivateActCtx
 IsolationAwareDeactivateActCtx ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwareActivateActCtx
 _TEXT	SEGMENT
@@ -1911,7 +1885,7 @@ IsolationAwareActivateActCtx PROC			; COMDAT
 	rex_jmp	QWORD PTR __imp_ActivateActCtx
 IsolationAwareActivateActCtx ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwareCreateActCtxW
 _TEXT	SEGMENT
@@ -1924,7 +1898,7 @@ IsolationAwareCreateActCtxW PROC			; COMDAT
 	rex_jmp	QWORD PTR __imp_CreateActCtxW
 IsolationAwareCreateActCtxW ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
 ;	COMDAT IsolationAwarePrivatenPgViNgRzlnPgpgk
 _TEXT	SEGMENT
@@ -2054,7 +2028,7 @@ $LN19@IsolationA:
 	ret	0
 IsolationAwarePrivatenPgViNgRzlnPgpgk ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
@@ -2065,7 +2039,7 @@ __formal$ = 16
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\igradient.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
@@ -2075,7 +2049,7 @@ __formal$ = 8
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_H@YAXPEAX_K1P6APEAX0@Z@Z
 _TEXT	SEGMENT
 __t$ = 48

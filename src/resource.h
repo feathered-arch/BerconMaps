@@ -122,7 +122,6 @@
 #define IDD_PANEL_TILE                  103
 #define IDS_MAPON15                     103
 #define IDB_BITMAPLOGO                  103
-#define IDD_PANEL_CURVE                 104
 #define IDS_MAPON16                     104
 #define IDD_PANEL_WOOD_MAP              105
 #define IDS_BERCON_DIST                 105
@@ -310,7 +309,6 @@
 #define IDC_FILTERING_1                 1006
 #define IDC_DIST_UVW                    1007
 #define IDC_LOGO                        1007
-#define IDC_CURVE                       1008
 #define IDC_FILTERING_2                 1008
 #define IDC_TRUNKSTR_EDIT               1009
 #define IDC_FILTERING_3                 1009
@@ -341,7 +339,6 @@
 #define IDC_EDGEHEIGHT_SPIN             1029
 #define IDC_OFFSET_EDIT                 1030
 #define IDC_OFFSET_SPIN                 1031
-#define IDC_ENABLE                      1032
 #define IDC_OFFSET2_EDIT                1032
 #define IDC_OFFSET2_SPIN                1033
 #define IDC_MAP1                        1033
@@ -623,7 +620,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        248
+#define _APS_NEXT_RESOURCE_VALUE        250
 #define _APS_NEXT_COMMAND_VALUE         40010
 #define _APS_NEXT_CONTROL_VALUE         1079
 #define _APS_NEXT_SYMED_VALUE           101

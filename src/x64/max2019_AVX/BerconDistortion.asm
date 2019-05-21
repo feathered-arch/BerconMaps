@@ -2,28 +2,15 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
-PUBLIC	??_R1A@?0A@EA@ParamBlockDesc2@@8		; ParamBlockDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVParamBlockDesc2@@@8			; ParamBlockDesc2 `RTTI Type Descriptor'
-PUBLIC	??_R3ParamBlockDesc2@@8				; ParamBlockDesc2::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2ParamBlockDesc2@@8				; ParamBlockDesc2::`RTTI Base Class Array'
-PUBLIC	??_R4BerconDistortionClassDesc@@6B@		; BerconDistortionClassDesc::`RTTI Complete Object Locator'
-PUBLIC	??_R0?AVBerconDistortionClassDesc@@@8		; BerconDistortionClassDesc `RTTI Type Descriptor'
-PUBLIC	??_R3BerconDistortionClassDesc@@8		; BerconDistortionClassDesc::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2BerconDistortionClassDesc@@8		; BerconDistortionClassDesc::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@BerconDistortionClassDesc@@8	; BerconDistortionClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@ClassDesc2@@8			; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
-PUBLIC	??_R3ClassDesc2@@8				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2ClassDesc2@@8				; ClassDesc2::`RTTI Base Class Array'
-PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
-PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
-PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
-PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
-PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
-PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@ ; `string'
+PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
+PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
+PUBLIC	??_R0?AVClassDesc@@@8				; ClassDesc `RTTI Type Descriptor'
+PUBLIC	??_R3ClassDesc@@8				; ClassDesc::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2ClassDesc@@8				; ClassDesc::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@ClassDesc@@8			; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	?IsPublic@BerconDistortionClassDesc@@UEAAHXZ	; BerconDistortionClassDesc::IsPublic
 PUBLIC	?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z	; BerconDistortionClassDesc::Create
 PUBLIC	?ClassName@BerconDistortionClassDesc@@UEAAPEB_WXZ ; BerconDistortionClassDesc::ClassName
@@ -35,28 +22,36 @@ PUBLIC	?HInstance@BerconDistortionClassDesc@@UEAAPEAUHINSTANCE__@@XZ ; BerconDis
 PUBLIC	??_7BerconDistortionClassDesc@@6B@		; BerconDistortionClassDesc::`vftable'
 PUBLIC	??_GBerconDistortionClassDesc@@UEAAPEAXI@Z	; BerconDistortionClassDesc::`scalar deleting destructor'
 PUBLIC	??_C@_1BM@IANNOHHL@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ ; `string'
-PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
 PUBLIC	??_C@_1BM@HCNKLGAJ@?$AAu?$AAs?$AAe?$AAD?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BM@DKGEJKPL@?$AAd?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn?$AAS?$AAt?$AAr?$AA?$AA@ ; `string'
 PUBLIC	??_C@_19HFCNIFIH@?$AAm?$AAa?$AAp?$AA2?$AA?$AA@	; `string'
 PUBLIC	??_C@_19GHJICKGJ@?$AAm?$AAa?$AAp?$AA1?$AA?$AA@	; `string'
 PUBLIC	??_C@_19MNJBOCOC@?$AAm?$AAa?$AAp?$AA3?$AA?$AA@	; `string'
 PUBLIC	??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@ ; `string'
-PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
-PUBLIC	??_R4TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`RTTI Complete Object Locator'
-PUBLIC	??_R3TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@TabOutOfRangeException@Util@MaxSDK@@8 ; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R1A@?0A@EA@OutOfRangeException@Util@MaxSDK@@8 ; MaxSDK::Util::OutOfRangeException::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3OutOfRangeException@Util@MaxSDK@@8		; MaxSDK::Util::OutOfRangeException::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2OutOfRangeException@Util@MaxSDK@@8		; MaxSDK::Util::OutOfRangeException::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@Exception@Util@MaxSDK@@8		; MaxSDK::Util::Exception::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R3Exception@Util@MaxSDK@@8			; MaxSDK::Util::Exception::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2Exception@Util@MaxSDK@@8			; MaxSDK::Util::Exception::`RTTI Base Class Array'
-PUBLIC	??_R17?0A@EA@MaxHeapOperators@@8		; MaxHeapOperators::`RTTI Base Class Descriptor at (8,-1,0,64)'
-PUBLIC	??_R3MaxHeapOperators@@8			; MaxHeapOperators::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2MaxHeapOperators@@8			; MaxHeapOperators::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@MaxHeapOperators@@8		; MaxHeapOperators::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
+PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@ ; `string'
+PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
+PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
+PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	??_R4XYZ_Desc@@6B@				; XYZ_Desc::`RTTI Complete Object Locator'
+PUBLIC	??_R0?AVXYZ_Desc@@@8				; XYZ_Desc `RTTI Type Descriptor'
+PUBLIC	??_R3XYZ_Desc@@8				; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2XYZ_Desc@@8				; XYZ_Desc::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@XYZ_Desc@@8			; XYZ_Desc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@ParamBlockDesc2@@8		; ParamBlockDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R0?AVParamBlockDesc2@@@8			; ParamBlockDesc2 `RTTI Type Descriptor'
+PUBLIC	??_R3ParamBlockDesc2@@8				; ParamBlockDesc2::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2ParamBlockDesc2@@8				; ParamBlockDesc2::`RTTI Base Class Array'
+PUBLIC	??_R4BerconDistortionClassDesc@@6B@		; BerconDistortionClassDesc::`RTTI Complete Object Locator'
+PUBLIC	??_R0?AVBerconDistortionClassDesc@@@8		; BerconDistortionClassDesc `RTTI Type Descriptor'
+PUBLIC	??_R3BerconDistortionClassDesc@@8		; BerconDistortionClassDesc::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2BerconDistortionClassDesc@@8		; BerconDistortionClassDesc::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@BerconDistortionClassDesc@@8	; BerconDistortionClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@ClassDesc2@@8			; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R3ClassDesc2@@8				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2ClassDesc2@@8				; ClassDesc2::`RTTI Base Class Array'
 PUBLIC	??_C@_15CABMMOGH@?$AAt?$AAh?$AA?$AA@		; `string'
 PUBLIC	??_C@_1IA@LGDLJFJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
 PUBLIC	??_C@_1CI@OKLGNBMM@?$AAt?$AAh?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AA?9?$AA?$DO?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?$AA@ ; `string'
@@ -69,20 +64,39 @@ PUBLIC	_CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util
 PUBLIC	??_R0?AVException@Util@MaxSDK@@@8		; MaxSDK::Util::Exception `RTTI Type Descriptor'
 PUBLIC	_CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
 PUBLIC	??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAt?$AAo?$AA?5?$AAa?$AA?5?$AAM?$AAa?$AAx?$AA?5@ ; `string'
-PUBLIC	??_R1A@?0A@EA@InterfaceServer@@8		; InterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVInterfaceServer@@@8			; InterfaceServer `RTTI Type Descriptor'
-PUBLIC	??_R3InterfaceServer@@8				; InterfaceServer::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2InterfaceServer@@8				; InterfaceServer::`RTTI Base Class Array'
-PUBLIC	??_R0?AVBaseInterfaceServer@@@8			; BaseInterfaceServer `RTTI Type Descriptor'
-PUBLIC	??_R3BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@BaseInterfaceServer@@8		; BaseInterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
-PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
-PUBLIC	??_R0?AVClassDesc@@@8				; ClassDesc `RTTI Type Descriptor'
-PUBLIC	??_R3ClassDesc@@8				; ClassDesc::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2ClassDesc@@8				; ClassDesc::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@ClassDesc@@8			; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
+PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
+PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
+PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
+PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
+PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@ ; `string'
+PUBLIC	?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::BeginCreate
+PUBLIC	?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::EndCreate
+PUBLIC	?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::OkToCreate
+PUBLIC	?HasClassParams@ClassDesc@@UEAAHXZ		; ClassDesc::HasClassParams
+PUBLIC	?EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z	; ClassDesc::EditClassParams
+PUBLIC	?NumActionTables@ClassDesc@@UEAAHXZ		; ClassDesc::NumActionTables
+PUBLIC	?GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z ; ClassDesc::GetActionTable
+PUBLIC	?IsManipulator@ClassDesc@@UEAAHXZ		; ClassDesc::IsManipulator
+PUBLIC	?CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z ; ClassDesc::CanManipulate
+PUBLIC	?CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z ; ClassDesc::CanManipulateNode
+PUBLIC	?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z ; ClassDesc::CreateManipulator
+PUBLIC	?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z ; ClassDesc::CreateManipulator
+PUBLIC	?NeedsToSave@ClassDesc@@UEAAHXZ			; ClassDesc::NeedsToSave
+PUBLIC	?Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z ; ClassDesc::Save
+PUBLIC	?Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z ; ClassDesc::Load
+PUBLIC	?InitialRollupPageState@ClassDesc@@UEAAKXZ	; ClassDesc::InitialRollupPageState
+PUBLIC	?UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ ; ClassDesc::UseOnlyInternalNameForMAXScriptExposure
+PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
+PUBLIC	?GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z ; ClassDesc::GetParamMap
+PUBLIC	?GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z ; ClassDesc::GetUserDlgProc
+PUBLIC	?DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z ; ClassDesc::DrawRepresentation
+PUBLIC	?NumInterfaces@ClassDesc@@UEAAHXZ		; ClassDesc::NumInterfaces
+PUBLIC	?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z ; ClassDesc::GetInterfaceAt
+PUBLIC	??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@ ; `string'
+PUBLIC	?ClearInterfaces@ClassDesc@@UEAAXXZ		; ClassDesc::ClearInterfaces
+PUBLIC	?SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ	; ClassDesc::SubClassID
+PUBLIC	?Execute@ClassDesc@@UEAA_JH_K00@Z		; ClassDesc::Execute
 PUBLIC	??_7XYZ_Desc@@6B@				; XYZ_Desc::`vftable'
 PUBLIC	??_GXYZ_Desc@@UEAAPEAXI@Z			; XYZ_Desc::`scalar deleting destructor'
 PUBLIC	??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?$AA@ ; `string'
@@ -98,18 +112,14 @@ PUBLIC	??_C@_1BM@IBAKJNCN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA
 PUBLIC	??_C@_1BM@EKFGEOII@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA2?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BE@PALBIMHK@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAP?$AAa?$AAr?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BE@EGBDKCCD@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAO?$AAb?$AAj?$AA?$AA@ ; `string'
+PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
 PUBLIC	??_C@_1BE@DCGEPHFM@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAM?$AAa?$AAt?$AA?$AA@ ; `string'
-PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
 PUBLIC	??_C@_19HFHNPJHA@?$AAs?$AAe?$AAe?$AAd?$AA?$AA@	; `string'
 PUBLIC	??_C@_1BG@EDCBABDD@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BG@FBJEKONN@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ ; `string'
-PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
 PUBLIC	??_C@_1BG@OJCIMJLI@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ ; `string'
-PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
 PUBLIC	??_C@_1BI@LALGELMD@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ ; `string'
-PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	??_C@_1BI@KCADOECN@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ ; `string'
-PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 PUBLIC	??_C@_1BI@BKLPIDEI@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BG@MFMFKFM@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BG@BOOJPFLC@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA?$AA@ ; `string'
@@ -120,43 +130,46 @@ PUBLIC	??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA
 PUBLIC	??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ ; `string'
-PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@ ; `string'
-PUBLIC	?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::BeginCreate
-PUBLIC	?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::EndCreate
-PUBLIC	?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::OkToCreate
-PUBLIC	??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@ ; `string'
-PUBLIC	?HasClassParams@ClassDesc@@UEAAHXZ		; ClassDesc::HasClassParams
-PUBLIC	?EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z	; ClassDesc::EditClassParams
-PUBLIC	?NumActionTables@ClassDesc@@UEAAHXZ		; ClassDesc::NumActionTables
-PUBLIC	?GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z ; ClassDesc::GetActionTable
-PUBLIC	?IsManipulator@ClassDesc@@UEAAHXZ		; ClassDesc::IsManipulator
-PUBLIC	?CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z ; ClassDesc::CanManipulate
-PUBLIC	?CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z ; ClassDesc::CanManipulateNode
-PUBLIC	?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z ; ClassDesc::CreateManipulator
-PUBLIC	?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z ; ClassDesc::CreateManipulator
-PUBLIC	?NeedsToSave@ClassDesc@@UEAAHXZ			; ClassDesc::NeedsToSave
-PUBLIC	?Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z ; ClassDesc::Save
-PUBLIC	?Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z ; ClassDesc::Load
-PUBLIC	?InitialRollupPageState@ClassDesc@@UEAAKXZ	; ClassDesc::InitialRollupPageState
-PUBLIC	?UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ ; ClassDesc::UseOnlyInternalNameForMAXScriptExposure
-PUBLIC	?GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z ; ClassDesc::GetParamMap
-PUBLIC	?GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z ; ClassDesc::GetUserDlgProc
-PUBLIC	?DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z ; ClassDesc::DrawRepresentation
-PUBLIC	?NumInterfaces@ClassDesc@@UEAAHXZ		; ClassDesc::NumInterfaces
-PUBLIC	?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z ; ClassDesc::GetInterfaceAt
-PUBLIC	?ClearInterfaces@ClassDesc@@UEAAXXZ		; ClassDesc::ClearInterfaces
-PUBLIC	?SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ	; ClassDesc::SubClassID
-PUBLIC	?Execute@ClassDesc@@UEAA_JH_K00@Z		; ClassDesc::Execute
-PUBLIC	??_R4XYZ_Desc@@6B@				; XYZ_Desc::`RTTI Complete Object Locator'
-PUBLIC	??_R0?AVXYZ_Desc@@@8				; XYZ_Desc `RTTI Type Descriptor'
-PUBLIC	??_R3XYZ_Desc@@8				; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
-PUBLIC	??_R2XYZ_Desc@@8				; XYZ_Desc::`RTTI Base Class Array'
-PUBLIC	??_R1A@?0A@EA@XYZ_Desc@@8			; XYZ_Desc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
+PUBLIC	??_R4TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`RTTI Complete Object Locator'
+PUBLIC	??_R3TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@TabOutOfRangeException@Util@MaxSDK@@8 ; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R1A@?0A@EA@OutOfRangeException@Util@MaxSDK@@8 ; MaxSDK::Util::OutOfRangeException::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R3OutOfRangeException@Util@MaxSDK@@8		; MaxSDK::Util::OutOfRangeException::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2OutOfRangeException@Util@MaxSDK@@8		; MaxSDK::Util::OutOfRangeException::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@Exception@Util@MaxSDK@@8		; MaxSDK::Util::Exception::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R3Exception@Util@MaxSDK@@8			; MaxSDK::Util::Exception::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2Exception@Util@MaxSDK@@8			; MaxSDK::Util::Exception::`RTTI Base Class Array'
+PUBLIC	??_R17?0A@EA@MaxHeapOperators@@8		; MaxHeapOperators::`RTTI Base Class Descriptor at (8,-1,0,64)'
+PUBLIC	??_R3MaxHeapOperators@@8			; MaxHeapOperators::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2MaxHeapOperators@@8			; MaxHeapOperators::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@MaxHeapOperators@@8		; MaxHeapOperators::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R0?AVInterfaceServer@@@8			; InterfaceServer `RTTI Type Descriptor'
+PUBLIC	??_R3InterfaceServer@@8				; InterfaceServer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2InterfaceServer@@8				; InterfaceServer::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@InterfaceServer@@8		; InterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+PUBLIC	??_R0?AVBaseInterfaceServer@@@8			; BaseInterfaceServer `RTTI Type Descriptor'
+PUBLIC	??_R3BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Class Hierarchy Descriptor'
+PUBLIC	??_R2BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Base Class Array'
+PUBLIC	??_R1A@?0A@EA@BaseInterfaceServer@@8		; BaseInterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
+EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
+EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
+EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
+EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
+EXTRN	GUID_NULL:BYTE
+EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
+EXTRN	?hInstance@@3PEAUHINSTANCE__@@EA:QWORD		; hInstance
+EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
+EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@PEB_W@Z:PROC ; ClassDesc::GetInterface
+EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@VInterface_ID@@@Z:PROC ; ClassDesc::GetInterface
+EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
 EXTRN	??_EBerconDistortionClassDesc@@UEAAPEAXI@Z:PROC	; BerconDistortionClassDesc::`vector deleting destructor'
+EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
 EXTRN	?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC ; BaseInterfaceServer::GetInterface
 EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
 EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
+EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
 EXTRN	?ResetClassParams@ClassDesc2@@UEAAXH@Z:PROC	; ClassDesc2::ResetClassParams
 EXTRN	?GetParamBlockDescByID@ClassDesc2@@UEAAPEAVParamBlockDesc2@@F@Z:PROC ; ClassDesc2::GetParamBlockDescByID
 EXTRN	?AddParamBlockDesc@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::AddParamBlockDesc
@@ -164,21 +177,8 @@ EXTRN	?BeginEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAV
 EXTRN	?EndEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAVAnimatable@@@Z:PROC ; ClassDesc2::EndEditParams
 EXTRN	?InvalidateUI@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::InvalidateUI
 EXTRN	?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC ; ClassDesc2::MakeAutoParamBlocks
-EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
-EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
 EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
-EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
-EXTRN	GUID_NULL:BYTE
-EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
-EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
-EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
-EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
-EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
-EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@PEB_W@Z:PROC ; ClassDesc::GetInterface
-EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@VInterface_ID@@@Z:PROC ; ClassDesc::GetInterface
-EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
-EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
-EXTRN	?hInstance@@3PEAUHINSTANCE__@@EA:QWORD		; hInstance
+EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
 IsolationAwarePrivateT_SqbjaYRiRY DD 01H DUP (?)
@@ -195,302 +195,6 @@ _BSS	ENDS
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
 _BSS	ENDS
-;	COMDAT ??_R1A@?0A@EA@XYZ_Desc@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@XYZ_Desc@@8 DD imagerel ??_R0?AVXYZ_Desc@@@8 ; XYZ_Desc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	04H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	imagerel ??_R3XYZ_Desc@@8
-rdata$r	ENDS
-;	COMDAT ??_R2XYZ_Desc@@8
-rdata$r	SEGMENT
-??_R2XYZ_Desc@@8 DD imagerel ??_R1A@?0A@EA@XYZ_Desc@@8	; XYZ_Desc::`RTTI Base Class Array'
-	DD	imagerel ??_R1A@?0A@EA@ParamBlockDesc2@@8
-	DD	imagerel ??_R1A@?0A@EA@BaseInterfaceServer@@8
-	DD	imagerel ??_R1A@?0A@EA@InterfaceServer@@8
-	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
-	ORG $+3
-rdata$r	ENDS
-;	COMDAT ??_R3XYZ_Desc@@8
-rdata$r	SEGMENT
-??_R3XYZ_Desc@@8 DD 00H					; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	05H
-	DD	imagerel ??_R2XYZ_Desc@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVXYZ_Desc@@@8
-data$r	SEGMENT
-??_R0?AVXYZ_Desc@@@8 DQ FLAT:??_7type_info@@6B@		; XYZ_Desc `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVXYZ_Desc@@', 00H
-data$r	ENDS
-;	COMDAT ??_R4XYZ_Desc@@6B@
-rdata$r	SEGMENT
-??_R4XYZ_Desc@@6B@ DD 01H				; XYZ_Desc::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	imagerel ??_R0?AVXYZ_Desc@@@8
-	DD	imagerel ??_R3XYZ_Desc@@8
-	DD	imagerel ??_R4XYZ_Desc@@6B@
-rdata$r	ENDS
-;	COMDAT ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@
-CONST	SEGMENT
-??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@ DB 'T'
-	DB	00H, 'a', 00H, 'b', 00H, '<', 00H, 'c', 00H, 'l', 00H, 'a', 00H
-	DB	's', 00H, 's', 00H, ' ', 00H, 'F', 00H, 'P', 00H, 'I', 00H, 'n'
-	DB	00H, 't', 00H, 'e', 00H, 'r', 00H, 'f', 00H, 'a', 00H, 'c', 00H
-	DB	'e', 00H, ' ', 00H, '*', 00H, '>', 00H, ':', 00H, ':', 00H, 'o'
-	DB	00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H
-	DB	'r', 00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@
-CONST	SEGMENT
-??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@ DB 'i', 00H
-	DB	' ', 00H, '>', 00H, '=', 00H, ' ', 00H, '0', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ DB 'M', 00H
-	DB	'a', 00H, 'p', 00H, 'p', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp?$AA?$AA@ DB 'x', 00H
-	DB	'y', 00H, 'z', 00H, '_', 00H, 'm', 00H, 'a', 00H, 'p', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'c', 00H, 'h', 00H, 'a', 00H
-	DB	'n', 00H, 00H, 00H				; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'x', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@GNCOLHIN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@GNCOLHIN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'y', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@HPJLBIGD@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@HPJLBIGD@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'z', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@KGFFJCNH@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@KGFFJCNH@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'x', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@BOOJPFLC@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@BOOJPFLC@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'y', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@MFMFKFM@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@MFMFKFM@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'z', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@BKLPIDEI@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@BKLPIDEI@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'x', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@KCADOECN@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@KCADOECN@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'y', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@LALGELMD@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@LALGELMD@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'z', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@OJCIMJLI@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAx?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@OJCIMJLI@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
-	DB	'e', 00H, '_', 00H, 'x', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@FBJEKONN@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAy?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@FBJEKONN@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
-	DB	'e', 00H, '_', 00H, 'y', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BG@EDCBABDD@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAz?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BG@EDCBABDD@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
-	DB	'e', 00H, '_', 00H, 'z', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_19HFHNPJHA@?$AAs?$AAe?$AAe?$AAd?$AA?$AA@
-CONST	SEGMENT
-??_C@_19HFHNPJHA@?$AAs?$AAe?$AAe?$AAd?$AA?$AA@ DB 's', 00H, 'e', 00H, 'e', 00H
-	DB	'd', 00H, 00H, 00H				; `string'
-CONST	ENDS
-;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
-_DATA	SEGMENT
-WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
-_DATA	ENDS
-;	COMDAT ??_C@_1BE@DCGEPHFM@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAM?$AAa?$AAt?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BE@DCGEPHFM@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAM?$AAa?$AAt?$AA?$AA@ DB 'r'
-	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'M', 00H
-	DB	'a', 00H, 't', 00H, 00H, 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BE@EGBDKCCD@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAO?$AAb?$AAj?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BE@EGBDKCCD@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAO?$AAb?$AAj?$AA?$AA@ DB 'r'
-	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'O', 00H
-	DB	'b', 00H, 'j', 00H, 00H, 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BE@PALBIMHK@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAP?$AAa?$AAr?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BE@PALBIMHK@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAP?$AAa?$AAr?$AA?$AA@ DB 'r'
-	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'P', 00H
-	DB	'a', 00H, 'r', 00H, 00H, 00H			; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BM@EKFGEOII@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BM@EKFGEOII@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BM@IBAKJNCN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BM@IBAKJNCN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BM@HJOOPID@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BM@HJOOPID@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
-	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@IKFKDHMP@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@IKFKDHMP@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@EBAGOEGK@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@EBAGOEGK@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BI@MHJCJGME@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BI@MHJCJGME@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
-	DB	'e', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@BGDDDNAC@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@BGDDDNAC@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@NNGPOOKH@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@NNGPOOKH@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
-	DB	'l', 00H, 'e', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'l', 00H, 'o', 00H, 'c', 00H
-	DB	'k', 00H, 00H, 00H				; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?$AA@
-CONST	SEGMENT
-??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?$AA@ DB 'x'
-	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'f', 00H, 'i', 00H, 'l', 00H
-	DB	't', 00H, 'e', 00H, 'r', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
-	DB	00H						; `string'
-CONST	ENDS
-;	COMDAT ??_7XYZ_Desc@@6B@
-CONST	SEGMENT
-??_7XYZ_Desc@@6B@ DQ FLAT:??_R4XYZ_Desc@@6B@		; XYZ_Desc::`vftable'
-	DQ	FLAT:??_EXYZ_Desc@@UEAAPEAXI@Z
-	DQ	FLAT:?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z
-	DQ	FLAT:?NumInterfaces@BaseInterfaceServer@@UEBAHXZ
-	DQ	FLAT:?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z
-CONST	ENDS
-;	COMDAT ??_R1A@?0A@EA@ClassDesc@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@ClassDesc@@8 DD imagerel ??_R0?AVClassDesc@@@8 ; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	imagerel ??_R3ClassDesc@@8
-rdata$r	ENDS
-;	COMDAT ??_R2ClassDesc@@8
-rdata$r	SEGMENT
-??_R2ClassDesc@@8 DD imagerel ??_R1A@?0A@EA@ClassDesc@@8 ; ClassDesc::`RTTI Base Class Array'
-	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
-	ORG $+3
-rdata$r	ENDS
-;	COMDAT ??_R3ClassDesc@@8
-rdata$r	SEGMENT
-??_R3ClassDesc@@8 DD 00H				; ClassDesc::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	02H
-	DD	imagerel ??_R2ClassDesc@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVClassDesc@@@8
-data$r	SEGMENT
-??_R0?AVClassDesc@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVClassDesc@@', 00H
-data$r	ENDS
-;	COMDAT _CT??_R0?AVMaxHeapOperators@@@818
-xdata$x	SEGMENT
-_CT??_R0?AVMaxHeapOperators@@@818 DD 00H
-	DD	imagerel ??_R0?AVMaxHeapOperators@@@8
-	DD	08H
-	DD	0ffffffffH
-	DD	00H
-	DD	01H
-	DD	00H
-xdata$x	ENDS
-;	COMDAT ??_R0?AVMaxHeapOperators@@@8
-data$r	SEGMENT
-??_R0?AVMaxHeapOperators@@@8 DQ FLAT:??_7type_info@@6B@	; MaxHeapOperators `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVMaxHeapOperators@@', 00H
-data$r	ENDS
 ;	COMDAT ??_R1A@?0A@EA@BaseInterfaceServer@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@BaseInterfaceServer@@8 DD imagerel ??_R0?AVBaseInterfaceServer@@@8 ; BaseInterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -521,6 +225,16 @@ data$r	SEGMENT
 	DQ	0000000000000000H
 	DB	'.?AVBaseInterfaceServer@@', 00H
 data$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@InterfaceServer@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@InterfaceServer@@8 DD imagerel ??_R0?AVInterfaceServer@@@8 ; InterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3InterfaceServer@@8
+rdata$r	ENDS
 ;	COMDAT ??_R2InterfaceServer@@8
 rdata$r	SEGMENT
 ??_R2InterfaceServer@@8 DD imagerel ??_R1A@?0A@EA@InterfaceServer@@8 ; InterfaceServer::`RTTI Base Class Array'
@@ -540,116 +254,6 @@ data$r	SEGMENT
 	DQ	0000000000000000H
 	DB	'.?AVInterfaceServer@@', 00H
 data$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@InterfaceServer@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@InterfaceServer@@8 DD imagerel ??_R0?AVInterfaceServer@@@8 ; InterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	01H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	imagerel ??_R3InterfaceServer@@8
-rdata$r	ENDS
-;	COMDAT ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAt?$AAo?$AA?5?$AAa?$AA?5?$AAM?$AAa?$AAx?$AA?5@
-CONST	SEGMENT
-??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAt?$AAo?$AA?5?$AAa?$AA?5?$AAM?$AAa?$AAx?$AA?5@ DB 'I'
-	DB	00H, 'n', 00H, 'v', 00H, 'a', 00H, 'l', 00H, 'i', 00H, 'd', 00H
-	DB	' ', 00H, 'i', 00H, 'n', 00H, 'd', 00H, 'e', 00H, 'x', 00H, ' '
-	DB	00H, 'p', 00H, 'a', 00H, 's', 00H, 's', 00H, 'e', 00H, 'd', 00H
-	DB	' ', 00H, 'i', 00H, 'n', 00H, 't', 00H, 'o', 00H, ' ', 00H, 'a'
-	DB	00H, ' ', 00H, 'M', 00H, 'a', 00H, 'x', 00H, ' ', 00H, 'S', 00H
-	DB	'D', 00H, 'K', 00H, ' ', 00H, 'T', 00H, 'a', 00H, 'b', 00H, ':'
-	DB	00H, ':', 00H, 'o', 00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H
-	DB	't', 00H, 'o', 00H, 'r', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT _CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
-xdata$x	SEGMENT
-_CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
-	DD	imagerel ??_R0?AVException@Util@MaxSDK@@@8
-	DD	00H
-	DD	0ffffffffH
-	ORG $+4
-	DD	010H
-	DD	imagerel __imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z
-xdata$x	ENDS
-;	COMDAT ??_R0?AVException@Util@MaxSDK@@@8
-data$r	SEGMENT
-??_R0?AVException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::Exception `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVException@Util@MaxSDK@@', 00H
-data$r	ENDS
-;	COMDAT _CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
-xdata$x	SEGMENT
-_CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
-	DD	imagerel ??_R0?AVOutOfRangeException@Util@MaxSDK@@@8
-	DD	00H
-	DD	0ffffffffH
-	ORG $+4
-	DD	010H
-	DD	imagerel __imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
-xdata$x	ENDS
-;	COMDAT ??_R0?AVOutOfRangeException@Util@MaxSDK@@@8
-data$r	SEGMENT
-??_R0?AVOutOfRangeException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::OutOfRangeException `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVOutOfRangeException@Util@MaxSDK@@', 00H
-data$r	ENDS
-;	COMDAT _CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
-xdata$x	SEGMENT
-_CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
-	DD	imagerel ??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8
-	DD	00H
-	DD	0ffffffffH
-	ORG $+4
-	DD	010H
-	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
-xdata$x	ENDS
-;	COMDAT ??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8
-data$r	SEGMENT
-??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::TabOutOfRangeException `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVTabOutOfRangeException@Util@MaxSDK@@', 00H
-data$r	ENDS
-;	COMDAT _CTA4?AVTabOutOfRangeException@Util@MaxSDK@@
-xdata$x	SEGMENT
-_CTA4?AVTabOutOfRangeException@Util@MaxSDK@@ DD 04H
-	DD	imagerel _CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
-	DD	imagerel _CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
-	DD	imagerel _CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
-	DD	imagerel _CT??_R0?AVMaxHeapOperators@@@818
-xdata$x	ENDS
-;	COMDAT _TI4?AVTabOutOfRangeException@Util@MaxSDK@@
-xdata$x	SEGMENT
-_TI4?AVTabOutOfRangeException@Util@MaxSDK@@ DD 00H
-	DD	imagerel ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
-	DD	00H
-	DD	imagerel _CTA4?AVTabOutOfRangeException@Util@MaxSDK@@
-xdata$x	ENDS
-;	COMDAT ??_C@_1CI@OKLGNBMM@?$AAt?$AAh?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AA?9?$AA?$DO?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?$AA@
-CONST	SEGMENT
-??_C@_1CI@OKLGNBMM@?$AAt?$AAh?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AA?9?$AA?$DO?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?$AA@ DB 't'
-	DB	00H, 'h', 00H, ' ', 00H, '&', 00H, '&', 00H, ' ', 00H, 'i', 00H
-	DB	' ', 00H, '<', 00H, ' ', 00H, 't', 00H, 'h', 00H, '-', 00H, '>'
-	DB	00H, 'c', 00H, 'o', 00H, 'u', 00H, 'n', 00H, 't', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1IA@LGDLJFJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
-CONST	SEGMENT
-??_C@_1IA@LGDLJFJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
-	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
-	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
-	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
-	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
-	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
-	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 't', 00H
-	DB	'a', 00H, 'b', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_15CABMMOGH@?$AAt?$AAh?$AA?$AA@
-CONST	SEGMENT
-??_C@_15CABMMOGH@?$AAt?$AAh?$AA?$AA@ DB 't', 00H, 'h', 00H, 00H, 00H ; `string'
-CONST	ENDS
 ;	COMDAT ??_R1A@?0A@EA@MaxHeapOperators@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@MaxHeapOperators@@8 DD imagerel ??_R0?AVMaxHeapOperators@@@8 ; MaxHeapOperators::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -763,6 +367,474 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3TabOutOfRangeException@Util@MaxSDK@@8
 	DD	imagerel ??_R4TabOutOfRangeException@Util@MaxSDK@@6B@
 rdata$r	ENDS
+;	COMDAT ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@ DB 'M', 00H
+	DB	'a', 00H, 'p', 00H, 'p', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp?$AA?$AA@ DB 'x', 00H
+	DB	'y', 00H, 'z', 00H, '_', 00H, 'm', 00H, 'a', 00H, 'p', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'c', 00H, 'h', 00H, 'a', 00H
+	DB	'n', 00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'x', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@GNCOLHIN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@GNCOLHIN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'y', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@HPJLBIGD@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@HPJLBIGD@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'z', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@KGFFJCNH@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@KGFFJCNH@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'x', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@BOOJPFLC@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@BOOJPFLC@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'y', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@MFMFKFM@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@MFMFKFM@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'z', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@BKLPIDEI@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@BKLPIDEI@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'x', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@KCADOECN@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@KCADOECN@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'y', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@LALGELMD@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@LALGELMD@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'z', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@OJCIMJLI@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAx?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@OJCIMJLI@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAx?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
+	DB	'e', 00H, '_', 00H, 'x', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@FBJEKONN@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAy?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@FBJEKONN@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAy?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
+	DB	'e', 00H, '_', 00H, 'y', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BG@EDCBABDD@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAz?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BG@EDCBABDD@?$AAx?$AAy?$AAz?$AA_?$AAt?$AAi?$AAl?$AAe?$AA_?$AAz?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 't', 00H, 'i', 00H, 'l', 00H
+	DB	'e', 00H, '_', 00H, 'z', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_19HFHNPJHA@?$AAs?$AAe?$AAe?$AAd?$AA?$AA@
+CONST	SEGMENT
+??_C@_19HFHNPJHA@?$AAs?$AAe?$AAe?$AAd?$AA?$AA@ DB 's', 00H, 'e', 00H, 'e', 00H
+	DB	'd', 00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BE@DCGEPHFM@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAM?$AAa?$AAt?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BE@DCGEPHFM@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAM?$AAa?$AAt?$AA?$AA@ DB 'r'
+	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'M', 00H
+	DB	'a', 00H, 't', 00H, 00H, 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BE@EGBDKCCD@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAO?$AAb?$AAj?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BE@EGBDKCCD@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAO?$AAb?$AAj?$AA?$AA@ DB 'r'
+	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'O', 00H
+	DB	'b', 00H, 'j', 00H, 00H, 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BE@PALBIMHK@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAP?$AAa?$AAr?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BE@PALBIMHK@?$AAr?$AAa?$AAn?$AAd?$AAB?$AAy?$AAP?$AAa?$AAr?$AA?$AA@ DB 'r'
+	DB	00H, 'a', 00H, 'n', 00H, 'd', 00H, 'B', 00H, 'y', 00H, 'P', 00H
+	DB	'a', 00H, 'r', 00H, 00H, 00H			; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BM@EKFGEOII@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BM@EKFGEOII@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BM@IBAKJNCN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BM@IBAKJNCN@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BM@HJOOPID@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BM@HJOOPID@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'o', 00H, 'f', 00H, 'f', 00H
+	DB	's', 00H, 'e', 00H, 't', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@IKFKDHMP@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@IKFKDHMP@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@EBAGOEGK@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@EBAGOEGK@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BI@MHJCJGME@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BI@MHJCJGME@?$AAx?$AAy?$AAz?$AA_?$AAs?$AAi?$AAz?$AAe?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 's', 00H, 'i', 00H, 'z', 00H
+	DB	'e', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@BGDDDNAC@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@BGDDDNAC@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAx?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'x', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@NNGPOOKH@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@NNGPOOKH@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAy?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'y', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'a', 00H, 'n', 00H, 'g', 00H
+	DB	'l', 00H, 'e', 00H, '_', 00H, 'z', 00H, '2', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'l', 00H, 'o', 00H, 'c', 00H
+	DB	'k', 00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?$AA@
+CONST	SEGMENT
+??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?$AA@ DB 'x'
+	DB	00H, 'y', 00H, 'z', 00H, '_', 00H, 'f', 00H, 'i', 00H, 'l', 00H
+	DB	't', 00H, 'e', 00H, 'r', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
+	DB	00H						; `string'
+CONST	ENDS
+;	COMDAT ??_7XYZ_Desc@@6B@
+CONST	SEGMENT
+??_7XYZ_Desc@@6B@ DQ FLAT:??_R4XYZ_Desc@@6B@		; XYZ_Desc::`vftable'
+	DQ	FLAT:??_EXYZ_Desc@@UEAAPEAXI@Z
+	DQ	FLAT:?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z
+	DQ	FLAT:?NumInterfaces@BaseInterfaceServer@@UEBAHXZ
+	DQ	FLAT:?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z
+CONST	ENDS
+;	COMDAT ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@
+CONST	SEGMENT
+??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA?$CK?$AA?$DO?$AA?3?$AA?3?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt@ DB 'T'
+	DB	00H, 'a', 00H, 'b', 00H, '<', 00H, 'c', 00H, 'l', 00H, 'a', 00H
+	DB	's', 00H, 's', 00H, ' ', 00H, 'F', 00H, 'P', 00H, 'I', 00H, 'n'
+	DB	00H, 't', 00H, 'e', 00H, 'r', 00H, 'f', 00H, 'a', 00H, 'c', 00H
+	DB	'e', 00H, ' ', 00H, '*', 00H, '>', 00H, ':', 00H, ':', 00H, 'o'
+	DB	00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H
+	DB	'r', 00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@
+CONST	SEGMENT
+??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@ DB 'M'
+	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
+	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
+	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
+	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
+	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
+	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
+CONST	SEGMENT
+??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
+	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
+	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
+CONST	ENDS
+;	COMDAT ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAt?$AAo?$AA?5?$AAa?$AA?5?$AAM?$AAa?$AAx?$AA?5@
+CONST	SEGMENT
+??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp?$AAa?$AAs?$AAs?$AAe?$AAd?$AA?5?$AAi?$AAn?$AAt?$AAo?$AA?5?$AAa?$AA?5?$AAM?$AAa?$AAx?$AA?5@ DB 'I'
+	DB	00H, 'n', 00H, 'v', 00H, 'a', 00H, 'l', 00H, 'i', 00H, 'd', 00H
+	DB	' ', 00H, 'i', 00H, 'n', 00H, 'd', 00H, 'e', 00H, 'x', 00H, ' '
+	DB	00H, 'p', 00H, 'a', 00H, 's', 00H, 's', 00H, 'e', 00H, 'd', 00H
+	DB	' ', 00H, 'i', 00H, 'n', 00H, 't', 00H, 'o', 00H, ' ', 00H, 'a'
+	DB	00H, ' ', 00H, 'M', 00H, 'a', 00H, 'x', 00H, ' ', 00H, 'S', 00H
+	DB	'D', 00H, 'K', 00H, ' ', 00H, 'T', 00H, 'a', 00H, 'b', 00H, ':'
+	DB	00H, ':', 00H, 'o', 00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H
+	DB	't', 00H, 'o', 00H, 'r', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT _CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
+xdata$x	SEGMENT
+_CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
+	DD	imagerel ??_R0?AVException@Util@MaxSDK@@@8
+	DD	00H
+	DD	0ffffffffH
+	ORG $+4
+	DD	010H
+	DD	imagerel __imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z
+xdata$x	ENDS
+;	COMDAT ??_R0?AVException@Util@MaxSDK@@@8
+data$r	SEGMENT
+??_R0?AVException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::Exception `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVException@Util@MaxSDK@@', 00H
+data$r	ENDS
+;	COMDAT _CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
+xdata$x	SEGMENT
+_CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
+	DD	imagerel ??_R0?AVOutOfRangeException@Util@MaxSDK@@@8
+	DD	00H
+	DD	0ffffffffH
+	ORG $+4
+	DD	010H
+	DD	imagerel __imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
+xdata$x	ENDS
+;	COMDAT ??_R0?AVOutOfRangeException@Util@MaxSDK@@@8
+data$r	SEGMENT
+??_R0?AVOutOfRangeException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::OutOfRangeException `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVOutOfRangeException@Util@MaxSDK@@', 00H
+data$r	ENDS
+;	COMDAT _CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
+xdata$x	SEGMENT
+_CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16 DD 00H
+	DD	imagerel ??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8
+	DD	00H
+	DD	0ffffffffH
+	ORG $+4
+	DD	010H
+	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
+xdata$x	ENDS
+;	COMDAT ??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8
+data$r	SEGMENT
+??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8 DQ FLAT:??_7type_info@@6B@ ; MaxSDK::Util::TabOutOfRangeException `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVTabOutOfRangeException@Util@MaxSDK@@', 00H
+data$r	ENDS
+;	COMDAT _CTA4?AVTabOutOfRangeException@Util@MaxSDK@@
+xdata$x	SEGMENT
+_CTA4?AVTabOutOfRangeException@Util@MaxSDK@@ DD 04H
+	DD	imagerel _CT??_R0?AVTabOutOfRangeException@Util@MaxSDK@@@8??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
+	DD	imagerel _CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z16
+	DD	imagerel _CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
+	DD	imagerel _CT??_R0?AVMaxHeapOperators@@@818
+xdata$x	ENDS
+;	COMDAT _TI4?AVTabOutOfRangeException@Util@MaxSDK@@
+xdata$x	SEGMENT
+_TI4?AVTabOutOfRangeException@Util@MaxSDK@@ DD 00H
+	DD	imagerel ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
+	DD	00H
+	DD	imagerel _CTA4?AVTabOutOfRangeException@Util@MaxSDK@@
+xdata$x	ENDS
+;	COMDAT ??_C@_1CI@OKLGNBMM@?$AAt?$AAh?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AA?9?$AA?$DO?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?$AA@
+CONST	SEGMENT
+??_C@_1CI@OKLGNBMM@?$AAt?$AAh?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?5?$AA?$DM?$AA?5?$AAt?$AAh?$AA?9?$AA?$DO?$AAc?$AAo?$AAu?$AAn?$AAt?$AA?$AA@ DB 't'
+	DB	00H, 'h', 00H, ' ', 00H, '&', 00H, '&', 00H, ' ', 00H, 'i', 00H
+	DB	' ', 00H, '<', 00H, ' ', 00H, 't', 00H, 'h', 00H, '-', 00H, '>'
+	DB	00H, 'c', 00H, 'o', 00H, 'u', 00H, 'n', 00H, 't', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1IA@LGDLJFJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
+CONST	SEGMENT
+??_C@_1IA@LGDLJFJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
+	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
+	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
+	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
+	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
+	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
+	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
+	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 't', 00H
+	DB	'a', 00H, 'b', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_15CABMMOGH@?$AAt?$AAh?$AA?$AA@
+CONST	SEGMENT
+??_C@_15CABMMOGH@?$AAt?$AAh?$AA?$AA@ DB 't', 00H, 'h', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_R2ClassDesc2@@8
+rdata$r	SEGMENT
+??_R2ClassDesc2@@8 DD imagerel ??_R1A@?0A@EA@ClassDesc2@@8 ; ClassDesc2::`RTTI Base Class Array'
+	DD	imagerel ??_R1A@?0A@EA@ClassDesc@@8
+	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
+	ORG $+3
+rdata$r	ENDS
+;	COMDAT ??_R3ClassDesc2@@8
+rdata$r	SEGMENT
+??_R3ClassDesc2@@8 DD 00H				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	03H
+	DD	imagerel ??_R2ClassDesc2@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@ClassDesc2@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@ClassDesc2@@8 DD imagerel ??_R0?AVClassDesc2@@@8 ; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	02H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3ClassDesc2@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@BerconDistortionClassDesc@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@BerconDistortionClassDesc@@8 DD imagerel ??_R0?AVBerconDistortionClassDesc@@@8 ; BerconDistortionClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	03H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3BerconDistortionClassDesc@@8
+rdata$r	ENDS
+;	COMDAT ??_R2BerconDistortionClassDesc@@8
+rdata$r	SEGMENT
+??_R2BerconDistortionClassDesc@@8 DD imagerel ??_R1A@?0A@EA@BerconDistortionClassDesc@@8 ; BerconDistortionClassDesc::`RTTI Base Class Array'
+	DD	imagerel ??_R1A@?0A@EA@ClassDesc2@@8
+	DD	imagerel ??_R1A@?0A@EA@ClassDesc@@8
+	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
+	ORG $+3
+rdata$r	ENDS
+;	COMDAT ??_R3BerconDistortionClassDesc@@8
+rdata$r	SEGMENT
+??_R3BerconDistortionClassDesc@@8 DD 00H		; BerconDistortionClassDesc::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	04H
+	DD	imagerel ??_R2BerconDistortionClassDesc@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVBerconDistortionClassDesc@@@8
+data$r	SEGMENT
+??_R0?AVBerconDistortionClassDesc@@@8 DQ FLAT:??_7type_info@@6B@ ; BerconDistortionClassDesc `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVBerconDistortionClassDesc@@', 00H
+data$r	ENDS
+;	COMDAT ??_R4BerconDistortionClassDesc@@6B@
+rdata$r	SEGMENT
+??_R4BerconDistortionClassDesc@@6B@ DD 01H		; BerconDistortionClassDesc::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	imagerel ??_R0?AVBerconDistortionClassDesc@@@8
+	DD	imagerel ??_R3BerconDistortionClassDesc@@8
+	DD	imagerel ??_R4BerconDistortionClassDesc@@6B@
+rdata$r	ENDS
+;	COMDAT ??_R2ParamBlockDesc2@@8
+rdata$r	SEGMENT
+??_R2ParamBlockDesc2@@8 DD imagerel ??_R1A@?0A@EA@ParamBlockDesc2@@8 ; ParamBlockDesc2::`RTTI Base Class Array'
+	DD	imagerel ??_R1A@?0A@EA@BaseInterfaceServer@@8
+	DD	imagerel ??_R1A@?0A@EA@InterfaceServer@@8
+	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
+	ORG $+3
+rdata$r	ENDS
+;	COMDAT ??_R3ParamBlockDesc2@@8
+rdata$r	SEGMENT
+??_R3ParamBlockDesc2@@8 DD 00H				; ParamBlockDesc2::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	04H
+	DD	imagerel ??_R2ParamBlockDesc2@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVParamBlockDesc2@@@8
+data$r	SEGMENT
+??_R0?AVParamBlockDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ParamBlockDesc2 `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVParamBlockDesc2@@', 00H
+data$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@ParamBlockDesc2@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@ParamBlockDesc2@@8 DD imagerel ??_R0?AVParamBlockDesc2@@@8 ; ParamBlockDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	03H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3ParamBlockDesc2@@8
+rdata$r	ENDS
+;	COMDAT ??_R1A@?0A@EA@XYZ_Desc@@8
+rdata$r	SEGMENT
+??_R1A@?0A@EA@XYZ_Desc@@8 DD imagerel ??_R0?AVXYZ_Desc@@@8 ; XYZ_Desc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	04H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3XYZ_Desc@@8
+rdata$r	ENDS
+;	COMDAT ??_R2XYZ_Desc@@8
+rdata$r	SEGMENT
+??_R2XYZ_Desc@@8 DD imagerel ??_R1A@?0A@EA@XYZ_Desc@@8	; XYZ_Desc::`RTTI Base Class Array'
+	DD	imagerel ??_R1A@?0A@EA@ParamBlockDesc2@@8
+	DD	imagerel ??_R1A@?0A@EA@BaseInterfaceServer@@8
+	DD	imagerel ??_R1A@?0A@EA@InterfaceServer@@8
+	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
+	ORG $+3
+rdata$r	ENDS
+;	COMDAT ??_R3XYZ_Desc@@8
+rdata$r	SEGMENT
+??_R3XYZ_Desc@@8 DD 00H					; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
+	DD	00H
+	DD	05H
+	DD	imagerel ??_R2XYZ_Desc@@8
+rdata$r	ENDS
+;	COMDAT ??_R0?AVXYZ_Desc@@@8
+data$r	SEGMENT
+??_R0?AVXYZ_Desc@@@8 DQ FLAT:??_7type_info@@6B@		; XYZ_Desc `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVXYZ_Desc@@', 00H
+data$r	ENDS
+;	COMDAT ??_R4XYZ_Desc@@6B@
+rdata$r	SEGMENT
+??_R4XYZ_Desc@@6B@ DD 01H				; XYZ_Desc::`RTTI Complete Object Locator'
+	DD	00H
+	DD	00H
+	DD	imagerel ??_R0?AVXYZ_Desc@@@8
+	DD	imagerel ??_R3XYZ_Desc@@8
+	DD	imagerel ??_R4XYZ_Desc@@6B@
+rdata$r	ENDS
+;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
+_DATA	SEGMENT
+WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
+_DATA	ENDS
+;	COMDAT ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@
+CONST	SEGMENT
+??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0?$AA?$AA@ DB 'i', 00H
+	DB	' ', 00H, '>', 00H, '=', 00H, ' ', 00H, '0', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_R0?AVClassDesc2@@@8
+data$r	SEGMENT
+??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVClassDesc2@@', 00H
+data$r	ENDS
 ;	COMDAT ??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@
 CONST	SEGMENT
 ??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@ DB 'p', 00H, 'a'
@@ -859,132 +931,57 @@ CONST	SEGMENT
 	DQ	FLAT:?Execute@ClassDesc@@UEAA_JH_K00@Z
 	DQ	FLAT:?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z
 CONST	ENDS
-;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@
-CONST	SEGMENT
-??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@ DB 'M'
-	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
-	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
-	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
-	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
-	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
-	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
-CONST	SEGMENT
-??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
-	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
-	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
-CONST	ENDS
-;	COMDAT ??_R2ClassDesc2@@8
+;	COMDAT ??_R1A@?0A@EA@ClassDesc@@8
 rdata$r	SEGMENT
-??_R2ClassDesc2@@8 DD imagerel ??_R1A@?0A@EA@ClassDesc2@@8 ; ClassDesc2::`RTTI Base Class Array'
-	DD	imagerel ??_R1A@?0A@EA@ClassDesc@@8
+??_R1A@?0A@EA@ClassDesc@@8 DD imagerel ??_R0?AVClassDesc@@@8 ; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
+	DD	01H
+	DD	00H
+	DD	0ffffffffH
+	DD	00H
+	DD	040H
+	DD	imagerel ??_R3ClassDesc@@8
+rdata$r	ENDS
+;	COMDAT ??_R2ClassDesc@@8
+rdata$r	SEGMENT
+??_R2ClassDesc@@8 DD imagerel ??_R1A@?0A@EA@ClassDesc@@8 ; ClassDesc::`RTTI Base Class Array'
 	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
 	ORG $+3
 rdata$r	ENDS
-;	COMDAT ??_R3ClassDesc2@@8
+;	COMDAT ??_R3ClassDesc@@8
 rdata$r	SEGMENT
-??_R3ClassDesc2@@8 DD 00H				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
+??_R3ClassDesc@@8 DD 00H				; ClassDesc::`RTTI Class Hierarchy Descriptor'
 	DD	00H
-	DD	03H
-	DD	imagerel ??_R2ClassDesc2@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVClassDesc2@@@8
-data$r	SEGMENT
-??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVClassDesc2@@', 00H
-data$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@ClassDesc2@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@ClassDesc2@@8 DD imagerel ??_R0?AVClassDesc2@@@8 ; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
 	DD	02H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	imagerel ??_R3ClassDesc2@@8
+	DD	imagerel ??_R2ClassDesc@@8
 rdata$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@BerconDistortionClassDesc@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@BerconDistortionClassDesc@@8 DD imagerel ??_R0?AVBerconDistortionClassDesc@@@8 ; BerconDistortionClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	03H
-	DD	00H
-	DD	0ffffffffH
-	DD	00H
-	DD	040H
-	DD	imagerel ??_R3BerconDistortionClassDesc@@8
-rdata$r	ENDS
-;	COMDAT ??_R2BerconDistortionClassDesc@@8
-rdata$r	SEGMENT
-??_R2BerconDistortionClassDesc@@8 DD imagerel ??_R1A@?0A@EA@BerconDistortionClassDesc@@8 ; BerconDistortionClassDesc::`RTTI Base Class Array'
-	DD	imagerel ??_R1A@?0A@EA@ClassDesc2@@8
-	DD	imagerel ??_R1A@?0A@EA@ClassDesc@@8
-	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
-	ORG $+3
-rdata$r	ENDS
-;	COMDAT ??_R3BerconDistortionClassDesc@@8
-rdata$r	SEGMENT
-??_R3BerconDistortionClassDesc@@8 DD 00H		; BerconDistortionClassDesc::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	04H
-	DD	imagerel ??_R2BerconDistortionClassDesc@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVBerconDistortionClassDesc@@@8
+;	COMDAT ??_R0?AVClassDesc@@@8
 data$r	SEGMENT
-??_R0?AVBerconDistortionClassDesc@@@8 DQ FLAT:??_7type_info@@6B@ ; BerconDistortionClassDesc `RTTI Type Descriptor'
+??_R0?AVClassDesc@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc `RTTI Type Descriptor'
 	DQ	0000000000000000H
-	DB	'.?AVBerconDistortionClassDesc@@', 00H
+	DB	'.?AVClassDesc@@', 00H
 data$r	ENDS
-;	COMDAT ??_R4BerconDistortionClassDesc@@6B@
-rdata$r	SEGMENT
-??_R4BerconDistortionClassDesc@@6B@ DD 01H		; BerconDistortionClassDesc::`RTTI Complete Object Locator'
-	DD	00H
-	DD	00H
-	DD	imagerel ??_R0?AVBerconDistortionClassDesc@@@8
-	DD	imagerel ??_R3BerconDistortionClassDesc@@8
-	DD	imagerel ??_R4BerconDistortionClassDesc@@6B@
-rdata$r	ENDS
-;	COMDAT ??_R2ParamBlockDesc2@@8
-rdata$r	SEGMENT
-??_R2ParamBlockDesc2@@8 DD imagerel ??_R1A@?0A@EA@ParamBlockDesc2@@8 ; ParamBlockDesc2::`RTTI Base Class Array'
-	DD	imagerel ??_R1A@?0A@EA@BaseInterfaceServer@@8
-	DD	imagerel ??_R1A@?0A@EA@InterfaceServer@@8
-	DD	imagerel ??_R17?0A@EA@MaxHeapOperators@@8
-	ORG $+3
-rdata$r	ENDS
-;	COMDAT ??_R3ParamBlockDesc2@@8
-rdata$r	SEGMENT
-??_R3ParamBlockDesc2@@8 DD 00H				; ParamBlockDesc2::`RTTI Class Hierarchy Descriptor'
-	DD	00H
-	DD	04H
-	DD	imagerel ??_R2ParamBlockDesc2@@8
-rdata$r	ENDS
-;	COMDAT ??_R0?AVParamBlockDesc2@@@8
-data$r	SEGMENT
-??_R0?AVParamBlockDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ParamBlockDesc2 `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVParamBlockDesc2@@', 00H
-data$r	ENDS
-;	COMDAT ??_R1A@?0A@EA@ParamBlockDesc2@@8
-rdata$r	SEGMENT
-??_R1A@?0A@EA@ParamBlockDesc2@@8 DD imagerel ??_R0?AVParamBlockDesc2@@@8 ; ParamBlockDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
-	DD	03H
-	DD	00H
+;	COMDAT _CT??_R0?AVMaxHeapOperators@@@818
+xdata$x	SEGMENT
+_CT??_R0?AVMaxHeapOperators@@@818 DD 00H
+	DD	imagerel ??_R0?AVMaxHeapOperators@@@8
+	DD	08H
 	DD	0ffffffffH
 	DD	00H
-	DD	040H
-	DD	imagerel ??_R3ParamBlockDesc2@@8
-rdata$r	ENDS
+	DD	01H
+	DD	00H
+xdata$x	ENDS
+;	COMDAT ??_R0?AVMaxHeapOperators@@@8
+data$r	SEGMENT
+??_R0?AVMaxHeapOperators@@@8 DQ FLAT:??_7type_info@@6B@	; MaxHeapOperators `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVMaxHeapOperators@@', 00H
+data$r	ENDS
 PUBLIC	??_H@YAXPEAX_K1P6APEAX0@Z@Z			; `vector constructor iterator'
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
 PUBLIC	??_GInterfaceServer@@UEAAPEAXI@Z		; InterfaceServer::`scalar deleting destructor'
 PUBLIC	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ		; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 PUBLIC	??_GBaseInterfaceServer@@UEAAPEAXI@Z		; BaseInterfaceServer::`scalar deleting destructor'
-PUBLIC	??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z ; Tab<FPInterface * __ptr64>::operator[]
-PUBLIC	?Set@BitArray@@QEAAXH@Z				; BitArray::Set
-PUBLIC	??0AColor@@QEAA@XZ				; AColor::AColor
 PUBLIC	?FreeCaches@Animatable@@UEAAXXZ			; Animatable::FreeCaches
 PUBLIC	?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ; Animatable::BeginEditParams
 PUBLIC	?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ; Animatable::EndEditParams
@@ -1084,6 +1081,9 @@ PUBLIC	?RefDeleted@ReferenceTarget@@UEAAXXZ		; ReferenceTarget::RefDeleted
 PUBLIC	?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ	; ReferenceTarget::RefDeletedUndoRedo
 PUBLIC	?NotifyForeground@ReferenceTarget@@UEAAXH@Z	; ReferenceTarget::NotifyForeground
 PUBLIC	?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z ; ReferenceTarget::NotifyTarget
+PUBLIC	??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z ; Tab<FPInterface * __ptr64>::operator[]
+PUBLIC	?Set@BitArray@@QEAAXH@Z				; BitArray::Set
+PUBLIC	??0AColor@@QEAA@XZ				; AColor::AColor
 PUBLIC	?GetAAFilterKernel@RenderGlobalContext@@UEAAPEAVFilterKernel@@XZ ; RenderGlobalContext::GetAAFilterKernel
 PUBLIC	?GetAAFilterSize@RenderGlobalContext@@UEAAMXZ	; RenderGlobalContext::GetAAFilterSize
 PUBLIC	?NumRenderInstances@RenderGlobalContext@@UEAAHXZ ; RenderGlobalContext::NumRenderInstances
@@ -1161,6 +1161,8 @@ PUBLIC	?IsLocalOutputMeaningful@Texmap@@UEAA_NAEAVShadeContext@@@Z ; Texmap::IsL
 PUBLIC	?LoadMapFiles@Texmap@@UEAAHH@Z			; Texmap::LoadMapFiles
 PUBLIC	?IsHighDynamicRange@Texmap@@UEBAHXZ		; Texmap::IsHighDynamicRange
 PUBLIC	??1Texmap@@UEAA@XZ				; Texmap::~Texmap
+PUBLIC	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+PUBLIC	??0VertexNormalsControl@@QEAA@XZ		; VertexNormalsControl::VertexNormalsControl
 PUBLIC	??1ParamMap2UserDlgProc@@UEAA@XZ		; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 PUBLIC	?SetThing@ParamMap2UserDlgProc@@UEAAXPEAVReferenceTarget@@@Z ; ParamMap2UserDlgProc::SetThing
 PUBLIC	?Update@ParamMap2UserDlgProc@@UEAAXH@Z		; ParamMap2UserDlgProc::Update
@@ -1295,15 +1297,16 @@ PUBLIC	?Execute@BerconSC@@WCII@EAA_JH_K00@Z		; [thunk]:BerconSC::Execute`adjusto
 PUBLIC	??_EBerconDistortion@@WEA@EAAPEAXI@Z		; [thunk]:BerconDistortion::`vector deleting destructor'
 PUBLIC	??_7InterfaceServer@@6B@			; InterfaceServer::`vftable'
 PUBLIC	??_7BaseInterfaceServer@@6B@			; BaseInterfaceServer::`vftable'
-PUBLIC	??_C@_1IK@JMJDIAL@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
-PUBLIC	??_C@_1CE@GBNPOKPK@?$AAi?$AA?$DO?$AA?9?$AA1?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?$DM?$AAn?$AAu?$AAm?$AAB?$AAi?$AAt?$AAs?$AA?$AA@ ; `string'
-PUBLIC	??_C@_1BM@HADNIIA@?$AAB?$AAi?$AAt?$AAA?$AAr?$AAr?$AAa?$AAy?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AA?$AA@ ; `string'
 PUBLIC	??_C@_11LOCGONAA@?$AA?$AA@			; `string'
-PUBLIC	??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
 PUBLIC	??_C@_13COJANIEC@?$AA0?$AA?$AA@			; `string'
+PUBLIC	??_C@_1CM@HBLCKHLG@?$AAA?$AAn?$AAi?$AAm?$AAa?$AAt?$AAa?$AAb?$AAl?$AAe?$AA?3?$AA?3?$AAE?$AAd?$AAi?$AAt?$AAT?$AAr?$AAa?$AAc?$AAk?$AA?$AA@ ; `string'
+PUBLIC	??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
 PUBLIC	??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@ ; `string'
 PUBLIC	??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
+PUBLIC	??_C@_1IK@JMJDIAL@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ ; `string'
+PUBLIC	??_C@_1CE@GBNPOKPK@?$AAi?$AA?$DO?$AA?9?$AA1?$AA?5?$AA?$CG?$AA?$CG?$AA?5?$AAi?$AA?$DM?$AAn?$AAu?$AAm?$AAB?$AAi?$AAt?$AAs?$AA?$AA@ ; `string'
+PUBLIC	??_C@_1BM@HADNIIA@?$AAB?$AAi?$AAt?$AAA?$AAr?$AAr?$AAa?$AAy?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AA?$AA@ ; `string'
 PUBLIC	??_7RenderGlobalContext@@6B@			; RenderGlobalContext::`vftable'
 PUBLIC	??_7ShadeOutput@@6B@				; ShadeOutput::`vftable'
 PUBLIC	??_7ShadeContext@@6B@				; ShadeContext::`vftable'
@@ -1407,37 +1410,36 @@ EXTRN	__imp_SendMessageW:PROC
 EXTRN	__imp_GetDlgItem:PROC
 EXTRN	__imp_??2MaxHeapOperators@@SAPEAX_K@Z:PROC
 EXTRN	__imp_??3MaxHeapOperators@@SAXPEAX@Z:PROC
-EXTRN	__imp_?assert1@@YAHHPEB_W00@Z:PROC
 EXTRN	__imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC
 EXTRN	__imp_??1Exception@Util@MaxSDK@@UEAA@XZ:PROC
 EXTRN	__imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z:PROC
 EXTRN	__imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ:PROC
+EXTRN	__imp_?assert1@@YAHHPEB_W00@Z:PROC
 EXTRN	__imp_?zfree@@YAXPEAPEAX@Z:PROC
-EXTRN	__imp_??0WStr@@QEAA@PEB_W@Z:PROC
-EXTRN	__imp_??1WStr@@QEAA@XZ:PROC
-EXTRN	__imp_??4WStr@@QEAAAEAV0@PEB_W@Z:PROC
-EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
-EXTRN	__imp_?Length@@YAMAEBVPoint3@@@Z:PROC
 EXTRN	__imp_??1InterfaceServer@@UEAA@XZ:PROC
 EXTRN	??_EInterfaceServer@@UEAAPEAXI@Z:PROC		; InterfaceServer::`vector deleting destructor'
 EXTRN	__imp_??1BaseInterfaceServer@@UEAA@XZ:PROC
 EXTRN	??_EBaseInterfaceServer@@UEAAPEAXI@Z:PROC	; BaseInterfaceServer::`vector deleting destructor'
-EXTRN	__imp_?IdentityMatrix@Matrix3@@QEAAXXZ:PROC
-EXTRN	__imp__wassert:PROC
-EXTRN	__imp_?GetICustButton@@YAPEAVICustButton@@PEAUHWND__@@@Z:PROC
-EXTRN	__imp_?ReleaseICustButton@@YAXPEAVICustButton@@@Z:PROC
+EXTRN	__imp_??0WStr@@QEAA@PEB_W@Z:PROC
+EXTRN	__imp_??1WStr@@QEAA@XZ:PROC
+EXTRN	__imp_??4WStr@@QEAAAEAV0@PEB_W@Z:PROC
 EXTRN	__imp_??0Interval@@QEAA@HH@Z:PROC
 EXTRN	__imp_?InInterval@Interval@@QEBAHH@Z:PROC
 EXTRN	__imp_??IInterval@@QEBA?AV0@V0@@Z:PROC
 EXTRN	__imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z:PROC
 EXTRN	__imp_?DeleteReference@ReferenceMaker@@QEAA?AW4RefResult@@H@Z:PROC
 EXTRN	__imp_?GetInterface@ReferenceTarget@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
+EXTRN	__imp_?Length@@YAMAEBVPoint3@@@Z:PROC
+EXTRN	__imp_?IdentityMatrix@Matrix3@@QEAAXXZ:PROC
 EXTRN	??_ERenderGlobalContext@@UEAAPEAXI@Z:PROC	; RenderGlobalContext::`vector deleting destructor'
 EXTRN	??_EShadeOutput@@UEAAPEAXI@Z:PROC		; ShadeOutput::`vector deleting destructor'
 EXTRN	??_EShadeContext@@UEAAPEAXI@Z:PROC		; ShadeContext::`vector deleting destructor'
 EXTRN	__imp_?GetSubTexmapTVName@ISubMap@@QEAA?AVWStr@@H@Z:PROC
 EXTRN	__imp_??1MtlBase@@UEAA@XZ:PROC
 EXTRN	__imp_??4MtlBase@@QEAAAEAV0@AEBV0@@Z:PROC
+EXTRN	__imp_?GetICustButton@@YAPEAVICustButton@@PEAUHWND__@@@Z:PROC
+EXTRN	__imp_?ReleaseICustButton@@YAXPEAVICustButton@@@Z:PROC
 EXTRN	__imp_??0Texmap@@QEAA@XZ:PROC
 EXTRN	__imp_??0ClassDesc2@@QEAA@XZ:PROC
 EXTRN	__imp_??1ClassDesc2@@UEAA@XZ:PROC
@@ -1523,13 +1525,8 @@ EXTRN	?VectorFromNoScale@ShadeContext@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z:PROC 
 EXTRN	?VectorToNoScale@ShadeContext@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z:PROC ; ShadeContext::VectorToNoScale
 EXTRN	_CxxThrowException:PROC
 EXTRN	__CxxFrameHandler3:PROC
-EXTRN	__GSHandlerCheck:PROC
-EXTRN	__GSHandlerCheck_EH:PROC
-EXTRN	__security_check_cookie:PROC
-EXTRN	memset:PROC
 EXTRN	__imp_??_7OutOfRangeException@Util@MaxSDK@@6B@:BYTE
 EXTRN	__imp_?defaultDim@@3PEAVParamDimension@@EA:QWORD
-EXTRN	__security_cookie:QWORD
 EXTRN	_fltused:DWORD
 _BSS	SEGMENT
 ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A DB 010H DUP (?) ; MaxSDK::AssetManagement::kInvalidId
@@ -1593,24 +1590,6 @@ $pdata$??_GBaseInterfaceServer@@UEAAPEAXI@Z DD imagerel $LN9
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z DD imagerel $LN13
-	DD	imagerel $LN13+240
-	DD	imagerel $unwind$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD imagerel $LN4
-	DD	imagerel $LN4+24
-	DD	imagerel $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?Set@BitArray@@QEAAXH@Z DD imagerel $LN19
-	DD	imagerel $LN19+162
-	DD	imagerel $unwind$?Set@BitArray@@QEAAXH@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??_4Interval@@QEAAAEAV0@V0@@Z DD imagerel $LN4
 	DD	imagerel $LN4+38
 	DD	imagerel $unwind$??_4Interval@@QEAAAEAV0@V0@@Z
@@ -1632,6 +1611,24 @@ pdata	SEGMENT
 $pdata$?NotifyForeground@ReferenceTarget@@UEAAXH@Z DD imagerel $LN4
 	DD	imagerel $LN4+88
 	DD	imagerel $unwind$?NotifyForeground@ReferenceTarget@@UEAAXH@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z DD imagerel $LN13
+	DD	imagerel $LN13+240
+	DD	imagerel $unwind$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD imagerel $LN4
+	DD	imagerel $LN4+24
+	DD	imagerel $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?Set@BitArray@@QEAAXH@Z DD imagerel $LN19
+	DD	imagerel $LN19+162
+	DD	imagerel $unwind$?Set@BitArray@@QEAAXH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1719,9 +1716,15 @@ $pdata$??1Texmap@@UEAA@XZ DD imagerel $LN4
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+19
-	DD	imagerel $unwind$?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z
+$pdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+25
+	DD	imagerel $unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0VertexNormalsControl@@QEAA@XZ DD imagerel $LN6
+	DD	imagerel $LN6+36
+	DD	imagerel $unwind$??0VertexNormalsControl@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1882,7 +1885,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalEnvironMap@BerconSC@@UEAA?AVAColor@@PEAVTexmap@@VPoint3@@@Z DD imagerel $LN6
-	DD	imagerel $LN6+75
+	DD	imagerel $LN6+74
 	DD	imagerel $unwind$?EvalEnvironMap@BerconSC@@UEAA?AVAColor@@PEAVTexmap@@VPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1924,7 +1927,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z DD imagerel $LN6
-	DD	imagerel $LN6+75
+	DD	imagerel $LN6+74
 	DD	imagerel $unwind$?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1959,12 +1962,6 @@ $pdata$??1XYZ_Desc@@UEAA@XZ DD imagerel $LN4
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+19
-	DD	imagerel $unwind$?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??_GXYZ_Desc@@UEAAPEAXI@Z DD imagerel $LN11
 	DD	imagerel $LN11+85
 	DD	imagerel $unwind$??_GXYZ_Desc@@UEAAPEAXI@Z
@@ -1978,32 +1975,20 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD imagerel $LN9
-	DD	imagerel $LN9+790
+	DD	imagerel $LN9+787
 	DD	imagerel $unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD imagerel $LN9+790
-	DD	imagerel $LN9+1255
+$pdata$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD imagerel $LN9+787
+	DD	imagerel $LN9+1284
 	DD	imagerel $chain$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$2$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD imagerel $LN9+1255
-	DD	imagerel $LN9+1278
-	DD	imagerel $chain$2$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??1BerconXYZDlgProc@@UEAA@XZ DD imagerel $LN6
 	DD	imagerel $LN6+32
 	DD	imagerel $unwind$??1BerconXYZDlgProc@@UEAA@XZ
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+19
-	DD	imagerel $unwind$?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2067,8 +2052,8 @@ $pdata$1$?GetActiveTexHandle@BerconDistortion@@UEAA_KHAEAVTexHandleMaker@@@Z DD 
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z DD imagerel $LN15
-	DD	imagerel $LN15+125
+$pdata$?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z DD imagerel $LN13
+	DD	imagerel $LN13+119
 	DD	imagerel $unwind$?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2110,7 +2095,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z DD imagerel $LN8
-	DD	imagerel $LN8+105
+	DD	imagerel $LN8+76
 	DD	imagerel $unwind$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2134,19 +2119,19 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN36
-	DD	imagerel $LN36+450
+	DD	imagerel $LN36+439
 	DD	imagerel $unwind$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z DD imagerel $LN33
-	DD	imagerel $LN33+414
+	DD	imagerel $LN33+395
 	DD	imagerel $unwind$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN36
-	DD	imagerel $LN36+407
+	DD	imagerel $LN36+396
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2157,8 +2142,8 @@ $pdata$?GetClassName@BerconDistortion@@UEAAXAEAVWStr@@@Z DD imagerel $LN4
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z DD imagerel $LN18
-	DD	imagerel $LN18+324
+$pdata$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z DD imagerel $LN16
+	DD	imagerel $LN16+295
 	DD	imagerel $unwind$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2211,12 +2196,6 @@ $pdata$??1BerconDistortion@@UEAA@XZ DD imagerel $LN12
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?__autoclassinit2@BerconDistortion@@QEAAX_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+19
-	DD	imagerel $unwind$?__autoclassinit2@BerconDistortion@@QEAAX_K@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
 $pdata$??_GBerconDistortion@@UEAAPEAXI@Z DD imagerel $LN19
 	DD	imagerel $LN19+139
 	DD	imagerel $unwind$??_GBerconDistortion@@UEAAPEAXI@Z
@@ -2235,15 +2214,9 @@ $pdata$??1BerconDistortionClassDesc@@UEAA@XZ DD imagerel $LN4
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD imagerel $LN8
-	DD	imagerel $LN8+74
+$pdata$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD imagerel $LN6
+	DD	imagerel $LN6+52
 	DD	imagerel $unwind$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z DD imagerel $LN4
-	DD	imagerel $LN4+19
-	DD	imagerel $unwind$?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2254,7 +2227,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??__EBerconDistortionDesc@@YAXXZ DD imagerel ??__EBerconDistortionDesc@@YAXXZ
-	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+108
+	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+57
 	DD	imagerel $unwind$??__EBerconDistortionDesc@@YAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2266,7 +2239,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??__Exyz_blk@@YAXXZ DD imagerel ??__Exyz_blk@@YAXXZ
-	DD	imagerel ??__Exyz_blk@@YAXXZ+101
+	DD	imagerel ??__Exyz_blk@@YAXXZ+81
 	DD	imagerel $unwind$??__Exyz_blk@@YAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2278,7 +2251,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??__EBerconDistortion_param_blk@@YAXXZ DD imagerel ??__EBerconDistortion_param_blk@@YAXXZ
-	DD	imagerel ??__EBerconDistortion_param_blk@@YAXXZ+892
+	DD	imagerel ??__EBerconDistortion_param_blk@@YAXXZ+819
 	DD	imagerel $unwind$??__EBerconDistortion_param_blk@@YAXXZ
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -3312,6 +3285,26 @@ CONST	SEGMENT
 	DQ	FLAT:?ScaledToRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z
 	DQ	FLAT:?ScaleRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z
 CONST	ENDS
+_DATA	SEGMENT
+?BlinnClassID@@3VClass_ID@@A DD 038H			; BlinnClassID
+	DD	00H
+?AnisoShaderClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderClassID
+	DD	00H
+?AnisoShaderDlgClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderDlgClassID
+	DD	00H
+?OrenNayarBlinnShaderClassID@@3VClass_ID@@A DD 02857f421H ; OrenNayarBlinnShaderClassID
+	DD	00H
+?OrenNayarShaderDlgClassID@@3VClass_ID@@A DD 02857f422H	; OrenNayarShaderDlgClassID
+	DD	00H
+?StraussShaderClassID@@3VClass_ID@@A DD 02857f450H	; StraussShaderClassID
+	DD	00H
+?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
+	DD	027246c55H
+?black@@3VAColor@@A DD 000000000r		; 0	; black
+	DD	000000000r			; 0
+	DD	000000000r			; 0
+	DD	03f800000r			; 1
+_DATA	ENDS
 ;	COMDAT ??_7ParamMap2UserDlgProc@@6B@
 CONST	SEGMENT
 ??_7ParamMap2UserDlgProc@@6B@ DQ FLAT:??_R4ParamMap2UserDlgProc@@6B@ ; ParamMap2UserDlgProc::`vftable'
@@ -3323,14 +3316,6 @@ CONST	SEGMENT
 	DQ	FLAT:?Update@ParamMap2UserDlgProc@@UEAAXH@Z
 	DQ	FLAT:?SetParamBlock@ParamMap2UserDlgProc@@UEAAXPEAVIParamBlock2@@@Z
 CONST	ENDS
-_DATA	SEGMENT
-?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
-	DD	027246c55H
-?black@@3VAColor@@A DD 000000000r		; 0	; black
-	DD	000000000r			; 0
-	DD	000000000r			; 0
-	DD	03f800000r			; 1
-_DATA	ENDS
 ;	COMDAT ??_7ShadeContext@@6B@
 CONST	SEGMENT
 ??_7ShadeContext@@6B@ DQ FLAT:??_R4ShadeContext@@6B@	; ShadeContext::`vftable'
@@ -3433,57 +3418,6 @@ CONST	SEGMENT
 	DQ	FLAT:?DebugFile@RenderGlobalContext@@UEAAPEAU_iobuf@@XZ
 	DQ	FLAT:?Execute@RenderGlobalContext@@UEAA_JH_K00@Z
 CONST	ENDS
-;	COMDAT ??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
-CONST	SEGMENT
-??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
-	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
-	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
-	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
-	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
-	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
-	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'r', 00H
-	DB	'e', 00H, 'f', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@
-CONST	SEGMENT
-??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@ DB 'R'
-	DB	00H, 'e', 00H, 'f', 00H, 'e', 00H, 'r', 00H, 'e', 00H, 'n', 00H
-	DB	'c', 00H, 'e', 00H, 'M', 00H, 'a', 00H, 'k', 00H, 'e', 00H, 'r'
-	DB	00H, ':', 00H, ':', 00H, 'N', 00H, 'o', 00H, 't', 00H, 'i', 00H
-	DB	'f', 00H, 'y', 00H, 'D', 00H, 'e', 00H, 'p', 00H, 'e', 00H, 'n'
-	DB	00H, 'd', 00H, 'e', 00H, 'n', 00H, 't', 00H, 's', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@
-CONST	SEGMENT
-??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@ DB 'f', 00H, 'a', 00H
-	DB	'l', 00H, 's', 00H, 'e', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_13COJANIEC@?$AA0?$AA?$AA@
-CONST	SEGMENT
-??_C@_13COJANIEC@?$AA0?$AA?$AA@ DB '0', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
-CONST	SEGMENT
-??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
-	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
-	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
-	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
-	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
-	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
-	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
-	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
-	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'a', 00H
-	DB	'n', 00H, 'i', 00H, 'm', 00H, 'a', 00H, 't', 00H, 'a', 00H, 'b'
-	DB	00H, 'l', 00H, 'e', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
-CONST	ENDS
-;	COMDAT ??_C@_11LOCGONAA@?$AA?$AA@
-CONST	SEGMENT
-??_C@_11LOCGONAA@?$AA?$AA@ DB 00H, 00H			; `string'
-CONST	ENDS
 ;	COMDAT ??_C@_1BM@HADNIIA@?$AAB?$AAi?$AAt?$AAA?$AAr?$AAr?$AAa?$AAy?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AA?$AA@
 CONST	SEGMENT
 ??_C@_1BM@HADNIIA@?$AAB?$AAi?$AAt?$AAA?$AAr?$AAr?$AAa?$AAy?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AA?$AA@ DB 'B'
@@ -3513,6 +3447,65 @@ CONST	SEGMENT
 	DB	'i', 00H, 't', 00H, 'a', 00H, 'r', 00H, 'r', 00H, 'a', 00H, 'y'
 	DB	00H, '.', 00H, 'h', 00H, 00H, 00H		; `string'
 CONST	ENDS
+;	COMDAT ??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
+CONST	SEGMENT
+??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
+	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
+	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
+	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
+	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
+	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
+	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
+	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'r', 00H
+	DB	'e', 00H, 'f', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@
+CONST	SEGMENT
+??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@ DB 'R'
+	DB	00H, 'e', 00H, 'f', 00H, 'e', 00H, 'r', 00H, 'e', 00H, 'n', 00H
+	DB	'c', 00H, 'e', 00H, 'M', 00H, 'a', 00H, 'k', 00H, 'e', 00H, 'r'
+	DB	00H, ':', 00H, ':', 00H, 'N', 00H, 'o', 00H, 't', 00H, 'i', 00H
+	DB	'f', 00H, 'y', 00H, 'D', 00H, 'e', 00H, 'p', 00H, 'e', 00H, 'n'
+	DB	00H, 'd', 00H, 'e', 00H, 'n', 00H, 't', 00H, 's', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@
+CONST	SEGMENT
+??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@ DB 'f', 00H, 'a', 00H
+	DB	'l', 00H, 's', 00H, 'e', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
+CONST	SEGMENT
+??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@ DB 'c'
+	DB	00H, ':', 00H, '\', 00H, 'p', 00H, 'r', 00H, 'o', 00H, 'g', 00H
+	DB	'r', 00H, 'a', 00H, 'm', 00H, ' ', 00H, 'f', 00H, 'i', 00H, 'l'
+	DB	00H, 'e', 00H, 's', 00H, '\', 00H, 'a', 00H, 'u', 00H, 't', 00H
+	DB	'o', 00H, 'd', 00H, 'e', 00H, 's', 00H, 'k', 00H, '\', 00H, '3'
+	DB	00H, 'd', 00H, 's', 00H, ' ', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	' ', 00H, '2', 00H, '0', 00H, '1', 00H, '9', 00H, ' ', 00H, 's'
+	DB	00H, 'd', 00H, 'k', 00H, '\', 00H, 'm', 00H, 'a', 00H, 'x', 00H
+	DB	's', 00H, 'd', 00H, 'k', 00H, '\', 00H, 'i', 00H, 'n', 00H, 'c'
+	DB	00H, 'l', 00H, 'u', 00H, 'd', 00H, 'e', 00H, '\', 00H, 'a', 00H
+	DB	'n', 00H, 'i', 00H, 'm', 00H, 'a', 00H, 't', 00H, 'a', 00H, 'b'
+	DB	00H, 'l', 00H, 'e', 00H, '.', 00H, 'h', 00H, 00H, 00H ; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1CM@HBLCKHLG@?$AAA?$AAn?$AAi?$AAm?$AAa?$AAt?$AAa?$AAb?$AAl?$AAe?$AA?3?$AA?3?$AAE?$AAd?$AAi?$AAt?$AAT?$AAr?$AAa?$AAc?$AAk?$AA?$AA@
+CONST	SEGMENT
+??_C@_1CM@HBLCKHLG@?$AAA?$AAn?$AAi?$AAm?$AAa?$AAt?$AAa?$AAb?$AAl?$AAe?$AA?3?$AA?3?$AAE?$AAd?$AAi?$AAt?$AAT?$AAr?$AAa?$AAc?$AAk?$AA?$AA@ DB 'A'
+	DB	00H, 'n', 00H, 'i', 00H, 'm', 00H, 'a', 00H, 't', 00H, 'a', 00H
+	DB	'b', 00H, 'l', 00H, 'e', 00H, ':', 00H, ':', 00H, 'E', 00H, 'd'
+	DB	00H, 'i', 00H, 't', 00H, 'T', 00H, 'r', 00H, 'a', 00H, 'c', 00H
+	DB	'k', 00H, 00H, 00H				; `string'
+CONST	ENDS
+;	COMDAT ??_C@_13COJANIEC@?$AA0?$AA?$AA@
+CONST	SEGMENT
+??_C@_13COJANIEC@?$AA0?$AA?$AA@ DB '0', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ??_C@_11LOCGONAA@?$AA?$AA@
+CONST	SEGMENT
+??_C@_11LOCGONAA@?$AA?$AA@ DB 00H, 00H			; `string'
+CONST	ENDS
 ;	COMDAT ??_7BaseInterfaceServer@@6B@
 CONST	SEGMENT
 ??_7BaseInterfaceServer@@6B@ DQ FLAT:??_R4BaseInterfaceServer@@6B@ ; BaseInterfaceServer::`vftable'
@@ -3529,8 +3522,8 @@ CONST	SEGMENT
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??__EBerconDistortion_param_blk@@YAXXZ DD 020701H
-	DD	0510107H
+$unwind$??__EBerconDistortion_param_blk@@YAXXZ DD 020a01H
+	DD	051010aH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3601,9 +3594,9 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$??__EBerconDistortionDesc@@YAXXZ DD imagerel ??__EBerconDistortionDesc@@YAXXZ
 	DD	0ffffffffH
-	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+78
+	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+27
 	DD	00H
-	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+92
+	DD	imagerel ??__EBerconDistortionDesc@@YAXXZ+41
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -3664,16 +3657,11 @@ $unwind$??_GBerconDistortionClassDesc@@UEAAPEAXI@Z DD 041811H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z DD 010401H
-	DD	04204H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD imagerel ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z
 	DD	0ffffffffH
-	DD	imagerel ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z+34
+	DD	imagerel ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z+29
 	DD	00H
-	DD	imagerel ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z+64
+	DD	imagerel ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z+43
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -3696,8 +3684,8 @@ $cppxdata$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD 019930522H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD 020f11H
-	DD	030025206H
+$unwind$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z DD 010d11H
+	DD	06204H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z
 xdata	ENDS
@@ -3801,11 +3789,6 @@ $unwind$??_GBerconDistortion@@UEAAPEAXI@Z DD 041819H
 	DD	07006520aH
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??_GBerconDistortion@@UEAAPEAXI@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?__autoclassinit2@BerconDistortion@@QEAAX_K@Z DD 010401H
-	DD	04204H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3947,9 +3930,9 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z DD imagerel ?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z
 	DD	0ffffffffH
-	DD	imagerel ?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z+57
+	DD	imagerel ?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z+54
 	DD	00H
-	DD	imagerel ?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z+97
+	DD	imagerel ?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z+77
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -3990,13 +3973,13 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 	DD	0ffffffffH
-	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+136
+	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+126
 	DD	00H
-	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+318
+	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+308
 	DD	01H
-	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+344
+	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+336
 	DD	04H
-	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+364
+	DD	imagerel ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z+358
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -4025,32 +4008,32 @@ $cppxdata$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@
 	DD	00H
 	DD	05H
 	DD	imagerel $ip2state$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-	DD	030H
+	DD	040H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 073019H
-	DD	0860116H
+$unwind$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 092611H
+	DD	08a6426H
+	DD	0893422H
+	DD	0840115H
 	DD	07005e007H
-	DD	030036004H
-	DD	05002H
-	DD	imagerel __GSHandlerCheck_EH
+	DD	05004H
+	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-	DD	0422H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $ip2state$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z DD imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z
 	DD	0ffffffffH
-	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+128
+	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+117
 	DD	00H
-	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+310
+	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+299
 	DD	01H
-	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+336
+	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+327
 	DD	04H
-	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+356
+	DD	imagerel ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z+349
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -4079,33 +4062,33 @@ $cppxdata$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z DD 019930522H
 	DD	00H
 	DD	05H
 	DD	imagerel $ip2state$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z
-	DD	030H
+	DD	040H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z DD 093719H
-	DD	0436826H
-	DD	08e3421H
-	DD	0880114H
-	DD	060057006H
+$unwind$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z DD 0b2c11H
+	DD	042682cH
+	DD	08b7427H
+	DD	08a6423H
+	DD	089341fH
+	DD	0860112H
 	DD	05004H
-	DD	imagerel __GSHandlerCheck_EH
+	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z
-	DD	0422H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $ip2state$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 	DD	0ffffffffH
-	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+179
+	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+169
 	DD	00H
-	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+361
+	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+351
 	DD	01H
-	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+387
+	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+379
 	DD	04H
-	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+407
+	DD	imagerel ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z+401
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -4134,20 +4117,20 @@ $cppxdata$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 01
 	DD	00H
 	DD	05H
 	DD	imagerel $ip2state$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z
-	DD	030H
+	DD	040H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 073019H
-	DD	0860116H
+$unwind$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 092611H
+	DD	08a6426H
+	DD	0893422H
+	DD	0840115H
 	DD	07005e007H
-	DD	030036004H
-	DD	05002H
-	DD	imagerel __GSHandlerCheck_EH
+	DD	05004H
+	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z
-	DD	0422H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4194,11 +4177,9 @@ $unwind$?SetSubTexmap@BerconDistortion@@UEAAXHPEAVTexmap@@@Z DD 040a01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z DD 041919H
-	DD	0b340aH
-	DD	07006520aH
-	DD	imagerel __GSHandlerCheck
-	DD	028H
+$unwind$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z DD 040a01H
+	DD	07340aH
+	DD	07006320aH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4249,9 +4230,9 @@ $ip2state$?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIM
 	DD	0ffffffffH
 	DD	imagerel ?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z+58
 	DD	00H
-	DD	imagerel ?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z+79
+	DD	imagerel ?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z+73
 	DD	01H
-	DD	imagerel ?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z+93
+	DD	imagerel ?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z+87
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -4378,11 +4359,6 @@ $unwind$??_GBerconXYZDlgProc@@UEAAPEAXI@Z DD 021311H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z DD 010401H
-	DD	04204H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $ip2state$??1BerconXYZDlgProc@@UEAA@XZ DD imagerel ??1BerconXYZDlgProc@@UEAA@XZ
 	DD	0ffffffffH
 xdata	ENDS
@@ -4413,28 +4389,19 @@ $unwind$??1BerconXYZDlgProc@@UEAA@XZ DD 011111H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD 021H
+$chain$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD 040a21H
+	DD	0df40aH
+	DD	0c7405H
 	DD	imagerel $LN9
-	DD	imagerel $LN9+790
+	DD	imagerel $LN9+787
 	DD	imagerel $unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD 040d21H
-	DD	0af40dH
-	DD	0107408H
-	DD	imagerel $LN9
-	DD	imagerel $LN9+790
-	DD	imagerel $unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD 051919H
-	DD	0e006a20aH
-	DD	050036004H
-	DD	03002H
-	DD	imagerel __GSHandlerCheck
-	DD	040H
+$unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z DD 060d01H
+	DD	0e340dH
+	DD	0e009720dH
+	DD	050066007H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4500,11 +4467,6 @@ $unwind$??_GXYZ_Desc@@UEAAPEAXI@Z DD 041811H
 	DD	07006520aH
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??_GXYZ_Desc@@UEAAPEAXI@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z DD 010401H
-	DD	04204H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4903,8 +4865,58 @@ $unwind$??_GParamMap2UserDlgProc@@UEAAPEAXI@Z DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z DD 010401H
-	DD	04204H
+$ip2state$??0VertexNormalsControl@@QEAA@XZ DD imagerel ??0VertexNormalsControl@@QEAA@XZ
+	DD	0ffffffffH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$stateUnwindMap$??0VertexNormalsControl@@QEAA@XZ DD 0ffffffffH
+	DD	imagerel ?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+$cppxdata$??0VertexNormalsControl@@QEAA@XZ DD 019930522H
+	DD	01H
+	DD	imagerel $stateUnwindMap$??0VertexNormalsControl@@QEAA@XZ
+	DD	00H
+	DD	00H
+	DD	01H
+	DD	imagerel $ip2state$??0VertexNormalsControl@@QEAA@XZ
+	DD	00H
+	DD	00H
+	DD	00H
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0VertexNormalsControl@@QEAA@XZ DD 011111H
+	DD	02209H
+	DD	imagerel __CxxFrameHandler3
+	DD	imagerel $cppxdata$??0VertexNormalsControl@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD imagerel ??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+	DD	0ffffffffH
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+$cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD 019930522H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	01H
+	DD	imagerel $ip2state$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+	DD	020H
+	DD	00H
+	DD	04H
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD 010d19H
+	DD	06204H
+	DD	imagerel __CxxFrameHandler3
+	DD	imagerel $cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -5285,27 +5297,6 @@ $unwind$??0RenderGlobalContext@@QEAA@XZ DD 011111H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?NotifyForeground@ReferenceTarget@@UEAAXH@Z DD 040a01H
-	DD	0b340aH
-	DD	07006720aH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z DD 010401H
-	DD	04204H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z DD 020601H
-	DD	030023206H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$??_4Interval@@QEAAAEAV0@V0@@Z DD 020601H
-	DD	030023206H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $unwind$?Set@BitArray@@QEAAXH@Z DD 040a01H
 	DD	06340aH
 	DD	07006320aH
@@ -5349,6 +5340,27 @@ $unwind$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z DD 041411H
 	DD	070027206H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?NotifyForeground@ReferenceTarget@@UEAAXH@Z DD 040a01H
+	DD	0b340aH
+	DD	07006720aH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z DD 010401H
+	DD	04204H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??_4Interval@@QEAAAEAV0@V0@@Z DD 020601H
+	DD	030023206H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -5577,7 +5589,7 @@ CRT$XCU	ENDS
 CRT$XCU	SEGMENT
 ?BerconDistortion_param_blk$initializer$@@3P6AXXZEA DQ FLAT:??__EBerconDistortion_param_blk@@YAXXZ ; BerconDistortion_param_blk$initializer$
 CRT$XCU	ENDS
-; Function compile flags: /Odspy
+; Function compile flags: /Odsp
 ;	COMDAT ??_EBerconDistortion@@WEA@EAAPEAXI@Z
 _TEXT	SEGMENT
 ??_EBerconDistortion@@WEA@EAAPEAXI@Z PROC		; [thunk]:BerconDistortion::`vector deleting destructor', COMDAT
@@ -5585,7 +5597,7 @@ _TEXT	SEGMENT
 	jmp	??_EBerconDistortion@@UEAAPEAXI@Z
 ??_EBerconDistortion@@WEA@EAAPEAXI@Z ENDP		; [thunk]:BerconDistortion::`vector deleting destructor'
 _TEXT	ENDS
-; Function compile flags: /Odspy
+; Function compile flags: /Odsp
 ;	COMDAT ?Execute@BerconSC@@WCII@EAA_JH_K00@Z
 _TEXT	SEGMENT
 ?Execute@BerconSC@@WCII@EAA_JH_K00@Z PROC		; [thunk]:BerconSC::Execute`adjustor{648}', COMDAT
@@ -5593,7 +5605,7 @@ _TEXT	SEGMENT
 	jmp	?Execute@BerconSC@@UEAA_JH_K00@Z	; BerconSC::Execute
 ?Execute@BerconSC@@WCII@EAA_JH_K00@Z ENDP		; [thunk]:BerconSC::Execute`adjustor{648}'
 _TEXT	ENDS
-; Function compile flags: /Odspy
+; Function compile flags: /Odsp
 ;	COMDAT ?DebugFile@BerconSC@@WCII@EAAPEAU_iobuf@@XZ
 _TEXT	SEGMENT
 ?DebugFile@BerconSC@@WCII@EAAPEAU_iobuf@@XZ PROC	; [thunk]:BerconSC::DebugFile`adjustor{648}', COMDAT
@@ -5601,7 +5613,7 @@ _TEXT	SEGMENT
 	jmp	?DebugFile@BerconSC@@UEAAPEAU_iobuf@@XZ	; BerconSC::DebugFile
 ?DebugFile@BerconSC@@WCII@EAAPEAU_iobuf@@XZ ENDP	; [thunk]:BerconSC::DebugFile`adjustor{648}'
 _TEXT	ENDS
-; Function compile flags: /Odspy
+; Function compile flags: /Odsp
 ;	COMDAT ??_EBerconSC@@WCII@EAAPEAXI@Z
 _TEXT	SEGMENT
 ??_EBerconSC@@WCII@EAAPEAXI@Z PROC			; [thunk]:BerconSC::`vector deleting destructor', COMDAT
@@ -5609,7 +5621,7 @@ _TEXT	SEGMENT
 	jmp	??_EBerconSC@@UEAAPEAXI@Z
 ??_EBerconSC@@WCII@EAAPEAXI@Z ENDP			; [thunk]:BerconSC::`vector deleting destructor'
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??__FBerconDistortion_param_blk@@YAXXZ
 text$yd	SEGMENT
 ??__FBerconDistortion_param_blk@@YAXXZ PROC		; `dynamic atexit destructor for 'BerconDistortion_param_blk'', COMDAT
@@ -5617,7 +5629,7 @@ text$yd	SEGMENT
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ??__FBerconDistortion_param_blk@@YAXXZ ENDP		; `dynamic atexit destructor for 'BerconDistortion_param_blk''
 text$yd	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ??__EBerconDistortion_param_blk@@YAXXZ
 text$di	SEGMENT
@@ -5625,37 +5637,34 @@ text$di	SEGMENT
 
 ; 68   : );
 
+	mov	r11, rsp
 	sub	rsp, 648				; 00000288H
-	xor	edx, edx
-	lea	rcx, OFFSET FLAT:?BerconDistortion_param_blk@@3VParamBlockDesc2@@A
-	mov	r8d, 128				; 00000080H
-	call	memset
 
-; 38   : static ParamBlockDesc2 BerconDistortion_param_blk ( BerconDistortion_params, _T("params"),  0, &BerconDistortionDesc, 
+; 38   : static ParamBlockDesc2 BerconDistortion_param_blk ( BerconDistortion_params, _M("params"),  0, &BerconDistortionDesc, 
 
-	mov	DWORD PTR [rsp+632], -1073740800	; ffffffffc0000400H
+	mov	DWORD PTR [r11-16], -1073740800		; ffffffffc0000400H
 	lea	rax, OFFSET FLAT:??_C@_1BM@HCNKLGAJ@?$AAu?$AAs?$AAe?$AAD?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn?$AA?$AA@
-	mov	DWORD PTR [rsp+624], -1073740800	; ffffffffc0000400H
-	xor	r10d, r10d
-	mov	DWORD PTR [rsp+616], 1643		; 0000066bH
-	mov	edx, 6
-	mov	DWORD PTR [rsp+608], 2
-	mov	DWORD PTR [rsp+600], -1073741821	; ffffffffc0000003H
-	mov	QWORD PTR [rsp+592], r10
-	mov	DWORD PTR [rsp+584], -1073741824	; ffffffffc0000000H
-	mov	DWORD PTR [rsp+576], 39			; 00000027H
-	mov	QWORD PTR [rsp+568], r10
-	mov	DWORD PTR [rsp+560], 4
-	mov	QWORD PTR [rsp+552], rax
+	mov	DWORD PTR [r11-24], -1073740800		; ffffffffc0000400H
+	xor	edx, edx
+	mov	DWORD PTR [r11-32], 1643		; 0000066bH
+	mov	ecx, 6
+	mov	DWORD PTR [r11-40], 2
+	mov	DWORD PTR [r11-48], -1073741821		; ffffffffc0000003H
+	mov	QWORD PTR [r11-56], rdx
+	mov	DWORD PTR [r11-64], -1073741824		; ffffffffc0000000H
+	mov	DWORD PTR [r11-72], 39			; 00000027H
+	mov	QWORD PTR [r11-80], rdx
+	mov	DWORD PTR [r11-88], 4
+	mov	QWORD PTR [r11-96], rax
 	lea	rax, OFFSET FLAT:??_C@_1BM@DKGEJKPL@?$AAd?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn?$AAS?$AAt?$AAr?$AA?$AA@
-	mov	DWORD PTR [rsp+544], 3
-	mov	DWORD PTR [rsp+536], -1073740800	; ffffffffc0000400H
+	mov	DWORD PTR [r11-104], 3
+	mov	DWORD PTR [r11-112], -1073740800	; ffffffffc0000400H
 	vmovsd	xmm0, QWORD PTR __real@3f50624de0000000
-	vmovsd	QWORD PTR [rsp+528], xmm0
-	mov	DWORD PTR [rsp+520], 1064		; 00000428H
+	vmovsd	QWORD PTR [r11-120], xmm0
+	mov	DWORD PTR [r11-128], 1064		; 00000428H
 	mov	DWORD PTR [rsp+512], 1063		; 00000427H
 	mov	DWORD PTR [rsp+504], 1
-	mov	QWORD PTR [rsp+496], r10
+	mov	QWORD PTR [r11-152], rdx
 	mov	DWORD PTR [rsp+488], -1073741821	; ffffffffc0000003H
 	vmovsd	xmm0, QWORD PTR __real@408f400000000000
 	vmovsd	QWORD PTR [rsp+480], xmm0
@@ -5667,8 +5676,8 @@ text$di	SEGMENT
 	mov	DWORD PTR [rsp+448], -1073741824	; ffffffffc0000000H
 	mov	DWORD PTR [rsp+440], 12
 	mov	DWORD PTR [rsp+432], 1
-	mov	QWORD PTR [rsp+424], r10
-	mov	QWORD PTR [rsp+416], rax
+	mov	QWORD PTR [r11-224], rdx
+	mov	QWORD PTR [r11-232], rax
 	lea	rax, OFFSET FLAT:??_C@_19HFCNIFIH@?$AAm?$AAa?$AAp?$AA2?$AA?$AA@
 	mov	DWORD PTR [rsp+408], 4
 	mov	DWORD PTR [rsp+400], -1073740800	; ffffffffc0000400H
@@ -5682,21 +5691,21 @@ text$di	SEGMENT
 	mov	DWORD PTR [rsp+336], 38			; 00000026H
 	mov	DWORD PTR [rsp+328], 512		; 00000200H
 	mov	DWORD PTR [rsp+320], 15
-	mov	QWORD PTR [rsp+312], rax
+	mov	QWORD PTR [r11-336], rax
 	lea	rax, OFFSET FLAT:??_C@_19GHJICKGJ@?$AAm?$AAa?$AAp?$AA1?$AA?$AA@
 	mov	DWORD PTR [rsp+304], 2
 	mov	DWORD PTR [rsp+296], -1073740800	; ffffffffc0000400H
 	mov	DWORD PTR [rsp+288], 1053		; 0000041dH
 	mov	DWORD PTR [rsp+280], 8
 	mov	DWORD PTR [rsp+272], -1073741821	; ffffffffc0000003H
-	mov	QWORD PTR [rsp+264], r10
+	mov	QWORD PTR [r11-384], rdx
 	mov	DWORD PTR [rsp+256], -1073741816	; ffffffffc0000008H
 	mov	DWORD PTR [rsp+248], 1
 	mov	DWORD PTR [rsp+240], -1073741817	; ffffffffc0000007H
 	mov	DWORD PTR [rsp+232], 13
 	mov	DWORD PTR [rsp+224], 512		; 00000200H
 	mov	DWORD PTR [rsp+216], 15
-	mov	QWORD PTR [rsp+208], rax
+	mov	QWORD PTR [r11-440], rax
 	lea	rax, OFFSET FLAT:??_C@_19MNJBOCOC@?$AAm?$AAa?$AAp?$AA3?$AA?$AA@
 	mov	DWORD PTR [rsp+200], 1
 	mov	DWORD PTR [rsp+192], -1073740800	; ffffffffc0000400H
@@ -5711,19 +5720,19 @@ text$di	SEGMENT
 	mov	DWORD PTR [rsp+120], 512		; 00000200H
 	mov	DWORD PTR [rsp+112], 15
 	mov	QWORD PTR [rsp+104], rax
-	lea	r8, OFFSET FLAT:??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@
-	mov	QWORD PTR [rsp+96], r10
+	mov	QWORD PTR [rsp+96], rdx
+	mov	QWORD PTR [rsp+88], rdx
+	mov	QWORD PTR [rsp+80], rdx
+	mov	QWORD PTR [rsp+72], rdx
 	lea	rax, OFFSET FLAT:?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A
-	mov	QWORD PTR [rsp+88], r10
-	lea	rcx, OFFSET FLAT:?BerconDistortion_param_blk@@3VParamBlockDesc2@@A
-	mov	QWORD PTR [rsp+80], r10
-	xor	r9d, r9d
-	mov	QWORD PTR [rsp+72], r10
 	mov	DWORD PTR [rsp+64], 4
+	lea	r8, OFFSET FLAT:??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@
 	mov	DWORD PTR [rsp+56], 106			; 0000006aH
-	mov	QWORD PTR [rsp+48], r10
-	mov	WORD PTR [rsp+40], dx
-	movsx	edx, r10w
+	xor	r9d, r9d
+	mov	QWORD PTR [rsp+48], rdx
+	mov	WORD PTR [rsp+40], cx
+	lea	rcx, OFFSET FLAT:?BerconDistortion_param_blk@@3VParamBlockDesc2@@A
+	movsx	edx, dx
 	mov	QWORD PTR [rsp+32], rax
 	call	QWORD PTR __imp_??0ParamBlockDesc2@@QEAA@FPEB_W_JPEAVClassDesc2@@GZZ
 	lea	rcx, OFFSET FLAT:??__FBerconDistortion_param_blk@@YAXXZ ; `dynamic atexit destructor for 'BerconDistortion_param_blk''
@@ -5731,7 +5740,7 @@ text$di	SEGMENT
 	jmp	atexit
 ??__EBerconDistortion_param_blk@@YAXXZ ENDP		; `dynamic initializer for 'BerconDistortion_param_blk''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??__Fxyz_blk@@YAXXZ
 text$yd	SEGMENT
 $T1 = 32
@@ -5751,7 +5760,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA ENDP			; ``dynamic atexit destructor for 'xyz_blk'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -5760,7 +5769,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA ENDP			; ``dynamic atexit destructor for 'xyz_blk'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ??__Exyz_blk@@YAXXZ
 text$di	SEGMENT
@@ -5769,10 +5778,6 @@ text$di	SEGMENT
 ; 34   : static XYZ_Desc xyz_blk(&BerconDistortionDesc, COORD_REF, xyz_params, 0, 1, 1, 1, 0);
 
 	sub	rsp, 88					; 00000058H
-	xor	edx, edx
-	lea	rcx, OFFSET FLAT:?xyz_blk@@3VXYZ_Desc@@A
-	mov	r8d, 128				; 00000080H
-	call	memset
 	xor	eax, eax
 	lea	rdx, OFFSET FLAT:?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A
 	mov	DWORD PTR [rsp+64], eax
@@ -5789,7 +5794,7 @@ text$di	SEGMENT
 	jmp	atexit
 ??__Exyz_blk@@YAXXZ ENDP				; `dynamic initializer for 'xyz_blk''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?GetBerconDistortionDesc@@YAPEAVClassDesc2@@XZ
 _TEXT	SEGMENT
@@ -5801,7 +5806,7 @@ _TEXT	SEGMENT
 	ret	0
 ?GetBerconDistortionDesc@@YAPEAVClassDesc2@@XZ ENDP	; GetBerconDistortionDesc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ??__FBerconDistortionDesc@@YAXXZ
 text$yd	SEGMENT
@@ -5827,7 +5832,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???__FBerconDistortionDesc@@YAXXZ@4HA ENDP	; ``dynamic atexit destructor for 'BerconDistortionDesc'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -5836,7 +5841,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???__FBerconDistortionDesc@@YAXXZ@4HA ENDP	; ``dynamic atexit destructor for 'BerconDistortionDesc'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -5849,14 +5854,6 @@ $T1 = 32
 
 	sub	rsp, 56					; 00000038H
 	mov	QWORD PTR $T1[rsp], -2
-	xor	eax, eax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+8, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+16, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+24, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+32, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+40, rax
-	mov	QWORD PTR ?BerconDistortionDesc@@3VBerconDistortionClassDesc@@A+48, rax
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 
 ; 112  : 	BerconDistortionClassDesc() {}
@@ -5883,7 +5880,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???__EBerconDistortionDesc@@YAXXZ@4HA ENDP	; ``dynamic initializer for 'BerconDistortionDesc'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -5892,7 +5889,7 @@ $T1 = 32
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???__EBerconDistortionDesc@@YAXXZ@4HA ENDP	; ``dynamic initializer for 'BerconDistortionDesc'''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ??_GBerconDistortionClassDesc@@UEAAPEAXI@Z
 _TEXT	SEGMENT
@@ -5945,7 +5942,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???_GBerconDistortionClassDesc@@UEAAPEAXI@Z@4HA ENDP ; `BerconDistortionClassDesc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -5956,22 +5953,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???_GBerconDistortionClassDesc@@UEAAPEAXI@Z@4HA ENDP ; `BerconDistortionClassDesc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
-;	COMDAT ?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 48
-classSize$ = 56
-?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z PROC ; BerconDistortionClassDesc::__autoclassinit2, COMDAT
-$LN4:
-	sub	rsp, 40					; 00000028H
-	mov	r8, rdx
-	xor	edx, edx
-	call	memset
-	add	rsp, 40					; 00000028H
-	ret	0
-?__autoclassinit2@BerconDistortionClassDesc@@QEAAX_K@Z ENDP ; BerconDistortionClassDesc::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?HInstance@BerconDistortionClassDesc@@UEAAPEAUHINSTANCE__@@XZ
 _TEXT	SEGMENT
@@ -5984,20 +5966,20 @@ this$ = 8
 	ret	0
 ?HInstance@BerconDistortionClassDesc@@UEAAPEAUHINSTANCE__@@XZ ENDP ; BerconDistortionClassDesc::HInstance
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?InternalName@BerconDistortionClassDesc@@UEAAPEB_WXZ
 _TEXT	SEGMENT
 this$ = 8
 ?InternalName@BerconDistortionClassDesc@@UEAAPEB_WXZ PROC ; BerconDistortionClassDesc::InternalName, COMDAT
 
-; 121  : 	virtual const TCHAR* InternalName() 			{ return _T("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
+; 121  : 	virtual const TCHAR* InternalName() 			{ return _M("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
 
 	lea	rax, OFFSET FLAT:??_C@_1BM@IANNOHHL@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?$AA@
 	ret	0
 ?InternalName@BerconDistortionClassDesc@@UEAAPEB_WXZ ENDP ; BerconDistortionClassDesc::InternalName
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?Category@BerconDistortionClassDesc@@UEAAPEB_WXZ
 _TEXT	SEGMENT
@@ -6010,7 +5992,7 @@ this$ = 8
 	ret	0
 ?Category@BerconDistortionClassDesc@@UEAAPEB_WXZ ENDP	; BerconDistortionClassDesc::Category
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
@@ -6043,7 +6025,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?ClassID@BerconDistortionClassDesc@@UEAA?AVClass_ID@@XZ ENDP ; BerconDistortionClassDesc::ClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?SuperClassID@BerconDistortionClassDesc@@UEAAKXZ
 _TEXT	SEGMENT
@@ -6056,7 +6038,7 @@ this$ = 8
 	ret	0
 ?SuperClassID@BerconDistortionClassDesc@@UEAAKXZ ENDP	; BerconDistortionClassDesc::SuperClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?ClassName@BerconDistortionClassDesc@@UEAAPEB_WXZ
 _TEXT	SEGMENT
@@ -6069,7 +6051,7 @@ this$ = 8
 	jmp	?GetString@@YAPEA_WH@Z			; GetString
 ?ClassName@BerconDistortionClassDesc@@UEAAPEB_WXZ ENDP	; BerconDistortionClassDesc::ClassName
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z
 _TEXT	SEGMENT
@@ -6081,29 +6063,22 @@ $T2 = 80
 
 ; 115  : 	virtual void* Create(BOOL /*loading = FALSE*/) 	{ return new BerconDistortion(); }
 
-$LN8:
-	push	rbx
-	sub	rsp, 48					; 00000030H
+$LN6:
+	sub	rsp, 56					; 00000038H
 	mov	QWORD PTR $T1[rsp], -2
 	mov	ecx, 472				; 000001d8H
 	call	QWORD PTR __imp_??2MaxHeapOperators@@SAPEAX_K@Z
-	mov	rbx, rax
 	mov	QWORD PTR $T2[rsp], rax
 	test	rax, rax
 	je	SHORT $LN3@Create
-	xor	edx, edx
-	mov	r8d, 472				; 000001d8H
 	mov	rcx, rax
-	call	memset
-	mov	rcx, rbx
 	call	??0BerconDistortion@@QEAA@XZ		; BerconDistortion::BerconDistortion
 	npad	1
 	jmp	SHORT $LN4@Create
 $LN3@Create:
 	xor	eax, eax
 $LN4@Create:
-	add	rsp, 48					; 00000030H
-	pop	rbx
+	add	rsp, 56					; 00000038H
 	ret	0
 ?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z ENDP	; BerconDistortionClassDesc::Create
 _TEXT	ENDS
@@ -6118,7 +6093,7 @@ $T2 = 80
 	rex_jmp	QWORD PTR __imp_??3MaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??Create@BerconDistortionClassDesc@@UEAAPEAXH@Z@4HA ENDP ; `BerconDistortionClassDesc::Create'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6130,7 +6105,7 @@ $T2 = 80
 	rex_jmp	QWORD PTR __imp_??3MaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??Create@BerconDistortionClassDesc@@UEAAPEAXH@Z@4HA ENDP ; `BerconDistortionClassDesc::Create'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?IsPublic@BerconDistortionClassDesc@@UEAAHXZ
 _TEXT	SEGMENT
@@ -6143,7 +6118,7 @@ this$ = 8
 	ret	0
 ?IsPublic@BerconDistortionClassDesc@@UEAAHXZ ENDP	; BerconDistortionClassDesc::IsPublic
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ??1BerconDistortionClassDesc@@UEAA@XZ
 _TEXT	SEGMENT
@@ -6172,7 +6147,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???1BerconDistortionClassDesc@@UEAA@XZ@4HA ENDP ; `BerconDistortionClassDesc::~BerconDistortionClassDesc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6182,7 +6157,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???1BerconDistortionClassDesc@@UEAA@XZ@4HA ENDP ; `BerconDistortionClassDesc::~BerconDistortionClassDesc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ??0BerconDistortionClassDesc@@QEAA@XZ
 _TEXT	SEGMENT
@@ -6217,7 +6192,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???0BerconDistortionClassDesc@@QEAA@XZ@4HA ENDP ; `BerconDistortionClassDesc::BerconDistortionClassDesc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6227,7 +6202,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ClassDesc2@@UEAA@XZ
 ?dtor$0@?0???0BerconDistortionClassDesc@@QEAA@XZ@4HA ENDP ; `BerconDistortionClassDesc::BerconDistortionClassDesc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ??_GBerconDistortion@@UEAAPEAXI@Z
@@ -6304,7 +6279,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$1@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA ENDP	; `BerconDistortion::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6315,7 +6290,7 @@ __flags$ = 72
 	jmp	??1Texmap@@UEAA@XZ
 ?dtor$0@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA ENDP	; `BerconDistortion::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6326,22 +6301,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$1@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA ENDP	; `BerconDistortion::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
-;	COMDAT ?__autoclassinit2@BerconDistortion@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 48
-classSize$ = 56
-?__autoclassinit2@BerconDistortion@@QEAAX_K@Z PROC	; BerconDistortion::__autoclassinit2, COMDAT
-$LN4:
-	sub	rsp, 40					; 00000028H
-	mov	r8, rdx
-	xor	edx, edx
-	call	memset
-	add	rsp, 40					; 00000028H
-	ret	0
-?__autoclassinit2@BerconDistortion@@QEAAX_K@Z ENDP	; BerconDistortion::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -6400,7 +6360,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$1@?0???1BerconDistortion@@UEAA@XZ@4HA ENDP	; `BerconDistortion::~BerconDistortion'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6410,7 +6370,7 @@ this$ = 64
 	jmp	??1Texmap@@UEAA@XZ
 ?dtor$0@?0???1BerconDistortion@@UEAA@XZ@4HA ENDP	; `BerconDistortion::~BerconDistortion'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6420,7 +6380,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$1@?0???1BerconDistortion@@UEAA@XZ@4HA ENDP	; `BerconDistortion::~BerconDistortion'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -6553,7 +6513,7 @@ this$ = 96
 	jmp	??1Texmap@@UEAA@XZ
 ?dtor$0@?0???0BerconDistortion@@QEAA@XZ@4HA ENDP	; `BerconDistortion::BerconDistortion'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 64
@@ -6563,7 +6523,7 @@ this$ = 96
 	jmp	??1Texmap@@UEAA@XZ
 ?dtor$0@?0???0BerconDistortion@@QEAA@XZ@4HA ENDP	; `BerconDistortion::BerconDistortion'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?DeleteThis@BerconDistortion@@UEAAXXZ
 _TEXT	SEGMENT
@@ -6581,7 +6541,7 @@ $LN3@DeleteThis:
 	ret	0
 ?DeleteThis@BerconDistortion@@UEAAXXZ ENDP		; BerconDistortion::DeleteThis
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?GetParamBlockByID@BerconDistortion@@UEAAPEAVIParamBlock2@@F@Z
 _TEXT	SEGMENT
@@ -6615,7 +6575,7 @@ $LN3@GetParamBl:
 	ret	0
 ?GetParamBlockByID@BerconDistortion@@UEAAPEAVIParamBlock2@@F@Z ENDP ; BerconDistortion::GetParamBlockByID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?GetParamBlock@BerconDistortion@@UEAAPEAVIParamBlock2@@H@Z
 _TEXT	SEGMENT
@@ -6634,7 +6594,7 @@ $LN3@GetParamBl:
 	ret	0
 ?GetParamBlock@BerconDistortion@@UEAAPEAVIParamBlock2@@H@Z ENDP ; BerconDistortion::GetParamBlock
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?NumParamBlocks@BerconDistortion@@UEAAHXZ
 _TEXT	SEGMENT
@@ -6647,7 +6607,7 @@ this$ = 8
 	ret	0
 ?NumParamBlocks@BerconDistortion@@UEAAHXZ ENDP		; BerconDistortion::NumParamBlocks
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?SetReference@BerconDistortion@@UEAAXHPEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
@@ -6695,7 +6655,7 @@ $LN4@SetReferen:
 	ret	0
 ?SetReference@BerconDistortion@@UEAAXHPEAVReferenceTarget@@@Z ENDP ; BerconDistortion::SetReference
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?GetReference@BerconDistortion@@UEAAPEAVReferenceTarget@@H@Z
 _TEXT	SEGMENT
@@ -6742,7 +6702,7 @@ $LN4@GetReferen:
 	ret	0
 ?GetReference@BerconDistortion@@UEAAPEAVReferenceTarget@@H@Z ENDP ; BerconDistortion::GetReference
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?NumRefs@BerconDistortion@@UEAAHXZ
 _TEXT	SEGMENT
@@ -6755,7 +6715,7 @@ this$ = 8
 	ret	0
 ?NumRefs@BerconDistortion@@UEAAHXZ ENDP			; BerconDistortion::NumRefs
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z
 _TEXT	SEGMENT
@@ -6846,7 +6806,7 @@ $LN9@dtor$0:
 	ret	0
 ?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA ENDP ; `BerconDistortion::SubAnimName'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -6871,7 +6831,7 @@ $LN9@dtor$0:
 	ret	0
 ?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA ENDP ; `BerconDistortion::SubAnimName'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?SubAnim@BerconDistortion@@UEAAPEAVAnimatable@@H@Z
 _TEXT	SEGMENT
@@ -6918,7 +6878,7 @@ $LN4@SubAnim:
 	ret	0
 ?SubAnim@BerconDistortion@@UEAAPEAVAnimatable@@H@Z ENDP	; BerconDistortion::SubAnim
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?NumSubs@BerconDistortion@@UEAAHXZ
 _TEXT	SEGMENT
@@ -6931,7 +6891,7 @@ this$ = 8
 	ret	0
 ?NumSubs@BerconDistortion@@UEAAHXZ ENDP			; BerconDistortion::NumSubs
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -7030,7 +6990,7 @@ $LN18@NotifyRefC:
 	ret	0
 ?NotifyRefChanged@BerconDistortion@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z ENDP ; BerconDistortion::NotifyRefChanged
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -7044,7 +7004,7 @@ remap$ = 104
 
 ; 170  : RefTargetHandle BerconDistortion::Clone(RemapDir &remap) {
 
-$LN18:
+$LN16:
 	push	rsi
 	push	rdi
 	push	r12
@@ -7054,82 +7014,76 @@ $LN18:
 	mov	QWORD PTR $T1[rsp], -2
 	mov	QWORD PTR [rsp+104], rbx
 	mov	QWORD PTR [rsp+112], rbp
-	mov	rsi, rdx
-	mov	r14, rcx
+	mov	r14, rdx
+	mov	r15, rcx
 
 ; 171  : 	BerconDistortion *mnew = new BerconDistortion();
 
 	mov	ecx, 472				; 000001d8H
 	call	QWORD PTR __imp_??2MaxHeapOperators@@SAPEAX_K@Z
-	mov	rbx, rax
 	mov	QWORD PTR $T2[rsp], rax
-	xor	r12d, r12d
+	xor	ebp, ebp
 	test	rax, rax
 	je	SHORT $LN7@Clone
-	xor	edx, edx
-	mov	r8d, 472				; 000001d8H
 	mov	rcx, rax
-	call	memset
-	mov	rcx, rbx
 	call	??0BerconDistortion@@QEAA@XZ		; BerconDistortion::BerconDistortion
-	mov	rbp, rax
+	mov	rsi, rax
 	jmp	SHORT $LN8@Clone
 $LN7@Clone:
-	mov	rbp, r12
+	mov	rsi, rbp
 $LN8@Clone:
 
 ; 172  : 	*((MtlBase*)mnew) = *((MtlBase*)this); // copy superclass stuff
 
-	mov	rdx, r14
-	mov	rcx, rbp
+	mov	rdx, r15
+	mov	rcx, rsi
 	call	QWORD PTR __imp_??4MtlBase@@QEAAAEAV0@AEBV0@@Z
 
 ; 173  : 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
 
-	mov	rax, QWORD PTR [rsi]
-	mov	rdx, QWORD PTR [r14+144]
-	mov	rcx, rsi
+	mov	rax, QWORD PTR [r14]
+	mov	rdx, QWORD PTR [r15+144]
+	mov	rcx, r14
 	call	QWORD PTR [rax+8]
 	mov	r8, rax
 	xor	edx, edx
 	lea	r9d, QWORD PTR [rdx+1]
-	mov	rcx, rbp
+	mov	rcx, rsi
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
 ; 174  : 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
 
-	mov	rax, QWORD PTR [rsi]
-	mov	rdx, QWORD PTR [r14+184]
-	mov	rcx, rsi
+	mov	rax, QWORD PTR [r14]
+	mov	rdx, QWORD PTR [r15+184]
+	mov	rcx, r14
 	call	QWORD PTR [rax+8]
 	mov	r8, rax
 	mov	edx, 4
 	lea	r9d, QWORD PTR [rdx-3]
-	mov	rcx, rbp
+	mov	rcx, rsi
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	mov	DWORD PTR [rbp+176], -2147483648	; ffffffff80000000H
-	mov	DWORD PTR [rbp+180], -2147483648	; ffffffff80000000H
+	mov	DWORD PTR [rsi+176], -2147483648	; ffffffff80000000H
+	mov	DWORD PTR [rsi+180], -2147483648	; ffffffff80000000H
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
 ; 176  : 	for (int i = 0; i<DIST_NSUBTEX; i++) {
 
-	mov	edi, r12d
+	mov	edi, ebp
 
 ; 171  : 	BerconDistortion *mnew = new BerconDistortion();
 
-	lea	rbx, QWORD PTR [r14+152]
+	lea	rbx, QWORD PTR [r15+152]
 
 ; 177  : 		mnew->subtex[i] = NULL;
 
-	mov	r15, rbp
-	sub	r15, r14
-	npad	8
+	mov	r12, rsi
+	sub	r12, r15
 $LL4@Clone:
-	mov	QWORD PTR [r15+rbx], r12
+	mov	QWORD PTR [r12+rbx], rbp
 	mov	rdx, QWORD PTR [rbx]
 
 ; 178  : 		if (subtex[i])
@@ -7139,13 +7093,13 @@ $LL4@Clone:
 
 ; 179  : 			mnew->ReplaceReference(i+1,remap.CloneRef(subtex[i]));		
 
-	mov	rax, QWORD PTR [rsi]
-	mov	rcx, rsi
+	mov	rax, QWORD PTR [r14]
+	mov	rcx, r14
 	call	QWORD PTR [rax+8]
 	mov	r8, rax
 	lea	edx, DWORD PTR [rdi+1]
 	mov	r9d, 1
-	mov	rcx, rbp
+	mov	rcx, rsi
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 $LN2@Clone:
 
@@ -7159,16 +7113,16 @@ $LN2@Clone:
 ; 180  : 	}
 ; 181  : 	BaseClone(this, mnew, remap);
 
-	mov	rax, QWORD PTR [r14]
-	mov	r9, rsi
-	mov	r8, rbp
-	mov	rdx, r14
-	mov	rcx, r14
+	mov	rax, QWORD PTR [r15]
+	mov	r9, r14
+	mov	r8, rsi
+	mov	rdx, r15
+	mov	rcx, r15
 	call	QWORD PTR [rax+1320]
 
 ; 182  : 	return (RefTargetHandle)mnew;
 
-	mov	rax, rbp
+	mov	rax, rsi
 
 ; 183  : }
 
@@ -7194,7 +7148,7 @@ remap$ = 104
 	rex_jmp	QWORD PTR __imp_??3MaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA ENDP ; `BerconDistortion::Clone'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -7206,7 +7160,7 @@ remap$ = 104
 	rex_jmp	QWORD PTR __imp_??3MaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA ENDP ; `BerconDistortion::Clone'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?GetClassName@BerconDistortion@@UEAAXAEAVWStr@@@Z
 _TEXT	SEGMENT
@@ -7229,7 +7183,7 @@ $LN4:
 	rex_jmp	QWORD PTR __imp_??4WStr@@QEAAAEAV0@PEB_W@Z
 ?GetClassName@BerconDistortion@@UEAAXAEAVWStr@@@Z ENDP	; BerconDistortion::GetClassName
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?SuperClassID@BerconDistortion@@UEAAKXZ
 _TEXT	SEGMENT
@@ -7242,7 +7196,7 @@ this$ = 8
 	ret	0
 ?SuperClassID@BerconDistortion@@UEAAKXZ ENDP		; BerconDistortion::SuperClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
@@ -7275,7 +7229,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?ClassID@BerconDistortion@@UEAA?AVClass_ID@@XZ ENDP	; BerconDistortion::ClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?SubNumToRefNum@BerconDistortion@@UEAAHH@Z
 _TEXT	SEGMENT
@@ -7289,7 +7243,7 @@ subNum$ = 16
 	ret	0
 ?SubNumToRefNum@BerconDistortion@@UEAAHH@Z ENDP		; BerconDistortion::SubNumToRefNum
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -7302,33 +7256,30 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z PROC ; BerconDistortion::EvalNormalPerturb, COMDAT
 
 ; 246  : Point3 BerconDistortion::EvalNormalPerturb(ShadeContext& sc) {	
 
 $LN36:
+	mov	rax, rsp
 	push	rbp
-	push	rbx
-	push	rsi
 	push	rdi
 	push	r14
-	lea	rbp, QWORD PTR [rsp-816]
-	sub	rsp, 1072				; 00000430H
-	mov	QWORD PTR $T4[rsp], -2
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rbp-256], rax
+	lea	rbp, QWORD PTR [rax-824]
+	sub	rsp, 1056				; 00000420H
+	mov	QWORD PTR $T3[rsp], -2
+	mov	QWORD PTR [rax+16], rbx
+	mov	QWORD PTR [rax+24], rsi
 	mov	rsi, r8
 	mov	rbx, rdx
 	mov	rdi, rcx
@@ -7381,7 +7332,7 @@ $LN2@EvalNormal:
 	cmp	QWORD PTR [rdi+152], 0
 	je	SHORT $LN34@EvalNormal
 	mov	r8, rsi
-	lea	rdx, QWORD PTR $T3[rsp]
+	lea	rdx, QWORD PTR $T2[rsp]
 	mov	rcx, rdi
 	call	?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z ; BerconDistortion::getDistVector
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -7405,11 +7356,11 @@ $LN34@EvalNormal:
 $LN3@EvalNormal:
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 358  : 	int chan() { return mappingChannel; }
+; 362  : 	int chan() { return mappingChannel; }
 
 	mov	edx, DWORD PTR [rdi+196]
 
-; 357  : 	int type() { return mappingType; }
+; 361  : 	int type() { return mappingType; }
 
 	mov	ecx, DWORD PTR [rdi+192]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -7444,12 +7395,12 @@ $LN3@EvalNormal:
 	call	QWORD PTR [rax+1520]
 	npad	1
 	lea	rax, QWORD PTR $S3$[rbp+392]
-	mov	QWORD PTR this$[rsp], rax
+	mov	QWORD PTR this$[rbp-256], rax
 	lea	rcx, QWORD PTR $S3$[rbp+392]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
 	lea	rax, QWORD PTR $S3$[rbp-184]
-	mov	QWORD PTR this$2[rsp], rax
+	mov	QWORD PTR this$4[rbp-256], rax
 	lea	rcx, QWORD PTR $S3$[rbp-184]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
@@ -7460,264 +7411,248 @@ $LN35@EvalNormal:
 
 ; 254  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp-256]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 1072				; 00000430H
+	lea	r11, QWORD PTR [rsp+1056]
+	mov	rbx, QWORD PTR [r11+40]
+	mov	rsi, QWORD PTR [r11+48]
+	mov	rsp, r11
 	pop	r14
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	pop	rbp
 	ret	0
 ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z ENDP ; BerconDistortion::EvalNormalPerturb
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S3$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$0
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S3$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$1
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$2@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S3$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$2
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$3
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$4@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S3$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$4
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$5@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S3$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$5
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$6@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S3$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S3$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$2@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S3$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$4@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S3$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$5@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S3$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S3$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$6@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalNormalPerturb'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -7728,16 +7663,15 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z PROC ; BerconDistortion::EvalMono, COMDAT
 
 ; 236  : float BerconDistortion::EvalMono(ShadeContext& sc) {
@@ -7745,16 +7679,13 @@ sc$ = 1128
 $LN33:
 	mov	rax, rsp
 	push	rbp
-	push	rsi
-	push	rdi
-	lea	rbp, QWORD PTR [rax-856]
-	sub	rsp, 1088				; 00000440H
-	mov	QWORD PTR $T4[rsp], -2
-	mov	QWORD PTR [rax+24], rbx
-	vmovaps	XMMWORD PTR [rax-40], xmm6
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rbp-256], rax
+	lea	rbp, QWORD PTR [rax-824]
+	sub	rsp, 1072				; 00000430H
+	mov	QWORD PTR $T3[rsp], -2
+	mov	QWORD PTR [rax+16], rbx
+	mov	QWORD PTR [rax+24], rsi
+	mov	QWORD PTR [rax+32], rdi
+	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rdi, rdx
 	mov	rbx, rcx
 	vxorps	xmm0, xmm0, xmm0
@@ -7792,7 +7723,7 @@ $LN33:
 	cmp	QWORD PTR [rbx+152], 0
 	je	SHORT $LN32@EvalMono
 	mov	r8, rdi
-	lea	rdx, QWORD PTR $T3[rsp]
+	lea	rdx, QWORD PTR $T2[rsp]
 	mov	rcx, rbx
 	call	?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z ; BerconDistortion::getDistVector
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -7816,11 +7747,11 @@ $LN32@EvalMono:
 $LN3@EvalMono:
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 358  : 	int chan() { return mappingChannel; }
+; 362  : 	int chan() { return mappingChannel; }
 
 	mov	edx, DWORD PTR [rbx+196]
 
-; 357  : 	int type() { return mappingType; }
+; 361  : 	int type() { return mappingType; }
 
 	mov	ecx, DWORD PTR [rbx+192]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -7854,12 +7785,12 @@ $LN3@EvalMono:
 	call	QWORD PTR [rax+1512]
 	vmovaps	xmm6, xmm0
 	lea	rax, QWORD PTR $S2$[rbp+392]
-	mov	QWORD PTR this$[rsp], rax
+	mov	QWORD PTR this$[rbp-256], rax
 	lea	rcx, QWORD PTR $S2$[rbp+392]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
 	lea	rax, QWORD PTR $S2$[rbp-184]
-	mov	QWORD PTR this$2[rsp], rax
+	mov	QWORD PTR this$4[rbp-256], rax
 	lea	rcx, QWORD PTR $S2$[rbp-184]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
@@ -7870,250 +7801,234 @@ $LN1@EvalMono:
 
 ; 244  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp-256]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	mov	rbx, QWORD PTR [rsp+1136]
-	vmovaps	xmm6, XMMWORD PTR [rsp+1072]
-	add	rsp, 1088				; 00000440H
-	pop	rdi
-	pop	rsi
+	lea	r11, QWORD PTR [rsp+1072]
+	mov	rbx, QWORD PTR [r11+24]
+	mov	rsi, QWORD PTR [r11+32]
+	mov	rdi, QWORD PTR [r11+40]
+	vmovaps	xmm6, XMMWORD PTR [r11-16]
+	mov	rsp, r11
 	pop	rbp
 	ret	0
 ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z ENDP ; BerconDistortion::EvalMono
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S2$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$0
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S2$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$1
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S2$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$2
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$3@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$3
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$4@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S2$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$4
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S2$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$5
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S2$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S2$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S2$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$3@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$4@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S2$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S2$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S2$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-sc$ = 1128
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+sc$ = 1096
 ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalMono'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalMono'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -8126,33 +8041,30 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z PROC ; BerconDistortion::EvalColor, COMDAT
 
 ; 226  : AColor BerconDistortion::EvalColor(ShadeContext& sc) {
 
 $LN36:
+	mov	rax, rsp
 	push	rbp
-	push	rbx
-	push	rsi
 	push	rdi
 	push	r14
-	lea	rbp, QWORD PTR [rsp-816]
-	sub	rsp, 1072				; 00000430H
-	mov	QWORD PTR $T4[rsp], -2
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rbp-256], rax
+	lea	rbp, QWORD PTR [rax-824]
+	sub	rsp, 1056				; 00000420H
+	mov	QWORD PTR $T3[rsp], -2
+	mov	QWORD PTR [rax+16], rbx
+	mov	QWORD PTR [rax+24], rsi
 	mov	rsi, r8
 	mov	rbx, rdx
 	mov	rdi, rcx
@@ -8210,7 +8122,7 @@ $LN2@EvalColor:
 	cmp	QWORD PTR [rdi+152], 0
 	je	SHORT $LN34@EvalColor
 	mov	r8, rsi
-	lea	rdx, QWORD PTR $T3[rsp]
+	lea	rdx, QWORD PTR $T2[rsp]
 	mov	rcx, rdi
 	call	?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z ; BerconDistortion::getDistVector
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -8234,11 +8146,11 @@ $LN34@EvalColor:
 $LN3@EvalColor:
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 358  : 	int chan() { return mappingChannel; }
+; 362  : 	int chan() { return mappingChannel; }
 
 	mov	edx, DWORD PTR [rdi+196]
 
-; 357  : 	int type() { return mappingType; }
+; 361  : 	int type() { return mappingType; }
 
 	mov	ecx, DWORD PTR [rdi+192]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -8273,12 +8185,12 @@ $LN3@EvalColor:
 	call	QWORD PTR [rax+1504]
 	npad	1
 	lea	rax, QWORD PTR $S1$[rbp+392]
-	mov	QWORD PTR this$[rsp], rax
+	mov	QWORD PTR this$[rbp-256], rax
 	lea	rcx, QWORD PTR $S1$[rbp+392]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
 	lea	rax, QWORD PTR $S1$[rbp-184]
-	mov	QWORD PTR this$2[rsp], rax
+	mov	QWORD PTR this$4[rbp-256], rax
 	lea	rcx, QWORD PTR $S1$[rbp-184]
 	call	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 	npad	1
@@ -8289,264 +8201,248 @@ $LN35@EvalColor:
 
 ; 234  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp-256]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 1072				; 00000430H
+	lea	r11, QWORD PTR [rsp+1056]
+	mov	rbx, QWORD PTR [r11+40]
+	mov	rsi, QWORD PTR [r11+48]
+	mov	rsp, r11
 	pop	r14
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	pop	rbp
 	ret	0
 ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z ENDP ; BerconDistortion::EvalColor
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$0@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S1$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$0
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$1@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S1$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$1
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S1$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$2
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$3@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$3
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$4@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S1$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$4
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$5@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S1$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$5
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$6@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$0@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$0
 	lea	rcx, QWORD PTR $S1$[rdx]
 	jmp	??1BerconSC@@UEAA@XZ
 ?dtor$0@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$1@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$1
 	lea	rcx, QWORD PTR $S1$[rdx]
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$1@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$2
 	lea	rcx, QWORD PTR $S1$[rdx]
 	add	rcx, 648				; 00000288H
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$3@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$3
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$3@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$4@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$4
 	lea	rcx, QWORD PTR $S1$[rdx]
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$4@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$5@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$5
 	lea	rcx, QWORD PTR $S1$[rdx]
 	add	rcx, 72					; 00000048H
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$5@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
-$T1 = 32
-this$ = 32
-this$2 = 32
-$T3 = 32
-$T4 = 48
-p$ = 56
+p$ = 32
+$T1 = 48
+$T2 = 48
+$T3 = 64
 $S1$ = 80
-__$ArrayPad$ = 1056
-this$ = 1120
-__$ReturnUdt$ = 1128
-sc$ = 1136
+this$ = 1088
+this$4 = 1088
+this$ = 1088
+__$ReturnUdt$ = 1096
+sc$ = 1104
 ?dtor$6@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA PROC ; `BerconDistortion::EvalColor'::`1'::dtor$6
-	mov	rcx, QWORD PTR this$2[rdx]
+	mov	rcx, QWORD PTR this$4[rdx]
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$6@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA ENDP ; `BerconDistortion::EvalColor'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z
 _TEXT	SEGMENT
@@ -8576,7 +8472,7 @@ $LN13:
 	cmp	r8d, 1
 	je	SHORT $LN6@GetSubTexm
 
-; 150  : 		default: return TSTR(_T(""));
+; 150  : 		default: return TSTR(_M(""));
 
 	lea	rdx, OFFSET FLAT:??_C@_11LOCGONAA@?$AA?$AA@
 	mov	rcx, rbx
@@ -8646,7 +8542,7 @@ $LN10@dtor$0:
 	ret	0
 ?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA ENDP ; `BerconDistortion::GetSubTexmapSlotName'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -8671,7 +8567,7 @@ $LN10@dtor$0:
 	ret	0
 ?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA ENDP ; `BerconDistortion::GetSubTexmapSlotName'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
@@ -8770,7 +8666,7 @@ $LN6@SetSubTexm:
 	ret	0
 ?SetSubTexmap@BerconDistortion@@UEAAXHPEAVTexmap@@@Z ENDP ; BerconDistortion::SetSubTexmap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?GetSubTexmap@BerconDistortion@@UEAAPEAVTexmap@@H@Z
 _TEXT	SEGMENT
@@ -8785,7 +8681,7 @@ i$ = 16
 	ret	0
 ?GetSubTexmap@BerconDistortion@@UEAAPEAVTexmap@@H@Z ENDP ; BerconDistortion::GetSubTexmap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?NumSubTexmaps@BerconDistortion@@UEAAHXZ
 _TEXT	SEGMENT
@@ -8798,7 +8694,7 @@ this$ = 8
 	ret	0
 ?NumSubTexmaps@BerconDistortion@@UEAAHXZ ENDP		; BerconDistortion::NumSubTexmaps
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
@@ -8816,7 +8712,7 @@ bumpreq$ = 32
 	ja	SHORT $LN4@MappingsRe
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 350  : 	void map(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { if (mappingType==0 || mappingType==1) mapreq.Set(mappingChannel); }	
+; 354  : 	void map(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { if (mappingType==0 || mappingType==1) mapreq.Set(mappingChannel); }	
 
 	mov	edx, DWORD PTR [rcx+196]
 	mov	rcx, r8
@@ -8829,7 +8725,7 @@ $LN4@MappingsRe:
 	ret	0
 ?MappingsRequired@BerconDistortion@@UEAAXHAEAVBitArray@@0@Z ENDP ; BerconDistortion::MappingsRequired
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?LocalRequirements@BerconDistortion@@UEAAKH@Z
 _TEXT	SEGMENT
@@ -8846,7 +8742,7 @@ subMtlNum$ = 16
 	ret	0
 ?LocalRequirements@BerconDistortion@@UEAAKH@Z ENDP	; BerconDistortion::LocalRequirements
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -8854,27 +8750,23 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z
 _TEXT	SEGMENT
-v$ = 32
-__$ArrayPad$ = 40
-this$ = 64
-__$ReturnUdt$ = 72
-t$ = 80
+v$ = 48
+this$ = 48
+__$ReturnUdt$ = 56
+t$ = 64
 ?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z PROC	; BerconDistortion::Validity, COMDAT
 
 ; 115  : Interval BerconDistortion::Validity(TimeValue t) {
 
 $LN8:
-	mov	QWORD PTR [rsp+32], rbx
+	mov	QWORD PTR [rsp+16], rbx
 	push	rdi
-	sub	rsp, 48					; 00000030H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 32					; 00000020H
 
 ; 117  : 	Update(t,v);
 
-	mov	r9, QWORD PTR [rcx]
-	mov	r10d, r8d
+	mov	rax, QWORD PTR [rcx]
+	mov	r9d, r8d
 	mov	rdi, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
@@ -8895,28 +8787,25 @@ $LN8:
 
 ; 117  : 	Update(t,v);
 
-	mov	edx, r10d
+	mov	edx, r9d
 	mov	rbx, rcx
-	call	QWORD PTR [r9+1400]
+	call	QWORD PTR [rax+1400]
 
 ; 118  : 	return ivalid;
 
-	mov	rcx, QWORD PTR [rbx+176]
-	mov	rax, rdi
-	mov	QWORD PTR [rdi], rcx
+	mov	rax, QWORD PTR [rbx+176]
 
 ; 119  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	mov	rbx, QWORD PTR [rsp+88]
-	add	rsp, 48					; 00000030H
+	mov	rbx, QWORD PTR [rsp+56]
+	mov	QWORD PTR [rdi], rax
+	mov	rax, rdi
+	add	rsp, 32					; 00000020H
 	pop	rdi
 	ret	0
 ?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z ENDP	; BerconDistortion::Validity
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -8990,7 +8879,7 @@ $LL4@Reset:
 	ret	0
 ?Reset@BerconDistortion@@UEAAXXZ ENDP			; BerconDistortion::Reset
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -9123,7 +9012,7 @@ $LN1@Update:
 	ret	0
 ?Update@BerconDistortion@@UEAAXHAEAVInterval@@@Z ENDP	; BerconDistortion::Update
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?SetDlgThing@BerconDistortion@@UEAAHPEAVParamDlg@@@Z
 _TEXT	SEGMENT
@@ -9140,7 +9029,7 @@ dlg$ = 16
 	ret	0
 ?SetDlgThing@BerconDistortion@@UEAAHPEAVParamDlg@@@Z ENDP ; BerconDistortion::SetDlgThing
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
@@ -9156,7 +9045,7 @@ $T2 = 88
 
 ; 121  : ParamDlg* BerconDistortion::CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp) {	
 
-$LN15:
+$LN13:
 	push	rdi
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
@@ -9177,13 +9066,11 @@ $LN15:
 	mov	QWORD PTR $T2[rsp], rax
 	test	rax, rax
 	je	SHORT $LN4@CreatePara
-	xor	ecx, ecx
-	mov	QWORD PTR [rax+8], rcx
 	lea	rcx, OFFSET FLAT:??_7ParamMap2UserDlgProc@@6B@
 	mov	QWORD PTR [rax], rcx
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 261  : 		BerconXYZDlgProc(ReferenceTarget *m) {reftarg = m;}		
+; 265  : 		BerconXYZDlgProc(ReferenceTarget *m) {reftarg = m;}		
 
 	lea	rcx, OFFSET FLAT:??_7BerconXYZDlgProc@@6B@
 	mov	QWORD PTR [rax], rcx
@@ -9232,7 +9119,7 @@ $T2 = 88
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$1@?0??CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA ENDP ; `BerconDistortion::CreateParamDlg'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -9245,7 +9132,7 @@ $T2 = 88
 	rex_jmp	QWORD PTR __imp_??3MaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA ENDP ; `BerconDistortion::CreateParamDlg'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -9258,7 +9145,7 @@ $T2 = 88
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$1@?0??CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA ENDP ; `BerconDistortion::CreateParamDlg'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -9349,7 +9236,7 @@ $LN1@GetActiveT:
 	ret	0
 ?GetActiveTexHandle@BerconDistortion@@UEAA_KHAEAVTexHandleMaker@@@Z ENDP ; BerconDistortion::GetActiveTexHandle
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?ActivateTexDisplay@BerconDistortion@@UEAAXH@Z
 _TEXT	SEGMENT
@@ -9384,7 +9271,7 @@ $LN7@ActivateTe:
 	ret	0
 ?ActivateTexDisplay@BerconDistortion@@UEAAXH@Z ENDP	; BerconDistortion::ActivateTexDisplay
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?SupportTexDisplay@BerconDistortion@@UEAAHXZ
 _TEXT	SEGMENT
@@ -9397,7 +9284,7 @@ this$ = 8
 	ret	0
 ?SupportTexDisplay@BerconDistortion@@UEAAHXZ ENDP	; BerconDistortion::SupportTexDisplay
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.h
 ;	COMDAT ?DiscardTexHandle@BerconDistortion@@QEAAXXZ
 _TEXT	SEGMENT
@@ -9422,7 +9309,7 @@ $LN2@DiscardTex:
 	ret	0
 ?DiscardTexHandle@BerconDistortion@@QEAAXXZ ENDP	; BerconDistortion::DiscardTexHandle
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
@@ -9550,33 +9437,33 @@ $LN19@getDistVec:
 	ret	0
 ?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z ENDP ; BerconDistortion::getDistVector
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?chan@BerconXYZ@@QEAAHXZ
 _TEXT	SEGMENT
 this$ = 8
 ?chan@BerconXYZ@@QEAAHXZ PROC				; BerconXYZ::chan, COMDAT
 
-; 358  : 	int chan() { return mappingChannel; }
+; 362  : 	int chan() { return mappingChannel; }
 
 	mov	eax, DWORD PTR [rcx+4]
 	ret	0
 ?chan@BerconXYZ@@QEAAHXZ ENDP				; BerconXYZ::chan
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?type@BerconXYZ@@QEAAHXZ
 _TEXT	SEGMENT
 this$ = 8
 ?type@BerconXYZ@@QEAAHXZ PROC				; BerconXYZ::type, COMDAT
 
-; 357  : 	int type() { return mappingType; }
+; 361  : 	int type() { return mappingType; }
 
 	mov	eax, DWORD PTR [rcx]
 	ret	0
 ?type@BerconXYZ@@QEAAHXZ ENDP				; BerconXYZ::type
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?map@BerconXYZ@@QEAAXHAEAVBitArray@@0@Z
 _TEXT	SEGMENT
@@ -9586,7 +9473,7 @@ mapreq$ = 24
 bumpreq$ = 32
 ?map@BerconXYZ@@QEAAXHAEAVBitArray@@0@Z PROC		; BerconXYZ::map, COMDAT
 
-; 350  : 	void map(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { if (mappingType==0 || mappingType==1) mapreq.Set(mappingChannel); }	
+; 354  : 	void map(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { if (mappingType==0 || mappingType==1) mapreq.Set(mappingChannel); }	
 
 	cmp	DWORD PTR [rcx], 1
 	ja	SHORT $LN2@map
@@ -9597,14 +9484,14 @@ $LN2@map:
 	ret	0
 ?map@BerconXYZ@@QEAAXHAEAVBitArray@@0@Z ENDP		; BerconXYZ::map
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?req@BerconXYZ@@QEAAKXZ
 _TEXT	SEGMENT
 this$ = 8
 ?req@BerconXYZ@@QEAAKXZ PROC				; BerconXYZ::req, COMDAT
 
-; 349  : 	ULONG req() { if (mappingType==0 || mappingType==1) return MTLREQ_UV; return 0; };
+; 353  : 	ULONG req() { if (mappingType==0 || mappingType==1) return MTLREQ_UV; return 0; };
 
 	xor	edx, edx
 	mov	eax, 16
@@ -9613,19 +9500,19 @@ this$ = 8
 	ret	0
 ?req@BerconXYZ@@QEAAKXZ ENDP				; BerconXYZ::req
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ??1BerconXYZ@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 8
 ??1BerconXYZ@@QEAA@XZ PROC				; BerconXYZ::~BerconXYZ, COMDAT
 
-; 347  : 	~BerconXYZ() {}
+; 351  : 	~BerconXYZ() {}
 
 	ret	0
 ??1BerconXYZ@@QEAA@XZ ENDP				; BerconXYZ::~BerconXYZ
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
@@ -9636,7 +9523,7 @@ _TEXT	SEGMENT
 this$ = 48
 ??0BerconXYZ@@QEAA@XZ PROC				; BerconXYZ::BerconXYZ, COMDAT
 
-; 346  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
+; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
 $LN17:
 	mov	QWORD PTR [rsp+8], rbx
@@ -9645,7 +9532,7 @@ $LN17:
 	sub	rsp, 32					; 00000020H
 	mov	rsi, rcx
 
-; 337  : 	bool variance;
+; 341  : 	bool variance;
 
 	lea	rdi, QWORD PTR [rcx+120]
 	mov	ebx, 3
@@ -9663,7 +9550,7 @@ $LL4@BerconXYZ:
 	xor	eax, eax
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 346  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
+; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
 	mov	rcx, rsi
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
@@ -9674,7 +9561,7 @@ $LL4@BerconXYZ:
 	mov	QWORD PTR [rsi+256], rax
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 346  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
+; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
 	mov	QWORD PTR [rsi+8], rax
 	mov	DWORD PTR [rsi+16], eax
@@ -9687,7 +9574,7 @@ $LL4@BerconXYZ:
 	ret	0
 ??0BerconXYZ@@QEAA@XZ ENDP				; BerconXYZ::BerconXYZ
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ??_GBerconXYZDlgProc@@UEAAPEAXI@Z
 _TEXT	SEGMENT
@@ -9734,7 +9621,7 @@ __flags$ = 72
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???_GBerconXYZDlgProc@@UEAAPEAXI@Z@4HA ENDP	; `BerconXYZDlgProc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -9745,22 +9632,7 @@ __flags$ = 72
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???_GBerconXYZDlgProc@@UEAAPEAXI@Z@4HA ENDP	; `BerconXYZDlgProc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
-;	COMDAT ?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 48
-classSize$ = 56
-?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z PROC	; BerconXYZDlgProc::__autoclassinit2, COMDAT
-$LN4:
-	sub	rsp, 40					; 00000028H
-	mov	r8, rdx
-	xor	edx, edx
-	call	memset
-	add	rsp, 40					; 00000028H
-	ret	0
-?__autoclassinit2@BerconXYZDlgProc@@QEAAX_K@Z ENDP	; BerconXYZDlgProc::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ??1BerconXYZDlgProc@@UEAA@XZ
 _TEXT	SEGMENT
@@ -9789,7 +9661,7 @@ this$ = 32
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???1BerconXYZDlgProc@@UEAA@XZ@4HA ENDP	; `BerconXYZDlgProc::~BerconXYZDlgProc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -9799,7 +9671,7 @@ this$ = 32
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???1BerconXYZDlgProc@@UEAA@XZ@4HA ENDP	; `BerconXYZDlgProc::~BerconXYZDlgProc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?SetThing@BerconXYZDlgProc@@UEAAXPEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
@@ -9807,20 +9679,20 @@ this$ = 8
 m$ = 16
 ?SetThing@BerconXYZDlgProc@@UEAAXPEAVReferenceTarget@@@Z PROC ; BerconXYZDlgProc::SetThing, COMDAT
 
-; 319  : 		void SetThing(ReferenceTarget *m) { reftarg = m; }
+; 323  : 		void SetThing(ReferenceTarget *m) { reftarg = m; }
 
 	mov	QWORD PTR [rcx+8], rdx
 	ret	0
 ?SetThing@BerconXYZDlgProc@@UEAAXPEAVReferenceTarget@@@Z ENDP ; BerconXYZDlgProc::SetThing
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?DeleteThis@BerconXYZDlgProc@@UEAAXXZ
 _TEXT	SEGMENT
 this$ = 8
 ?DeleteThis@BerconXYZDlgProc@@UEAAXXZ PROC		; BerconXYZDlgProc::DeleteThis, COMDAT
 
-; 318  : 		void DeleteThis() {delete this;}
+; 322  : 		void DeleteThis() {delete this;}
 
 	test	rcx, rcx
 	je	SHORT $LN3@DeleteThis
@@ -9831,7 +9703,7 @@ $LN3@DeleteThis:
 	ret	0
 ?DeleteThis@BerconXYZDlgProc@@UEAAXXZ ENDP		; BerconXYZDlgProc::DeleteThis
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z
 _TEXT	SEGMENT
@@ -9839,32 +9711,28 @@ $T1 = 48
 $T2 = 48
 $T3 = 48
 $T4 = 48
-curIndex$5 = 56
-__$ArrayPad$ = 64
-this$ = 128
-t$ = 136
-map$ = 144
-hWnd$ = 152
-msg$ = 160
-wParam$ = 168
-lParam$ = 176
+this$ = 96
+t$ = 104
+map$ = 112
+hWnd$ = 120
+curIndex$5 = 128
+msg$ = 128
+wParam$ = 136
+lParam$ = 144
 ?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z PROC ; BerconXYZDlgProc::DlgProc, COMDAT
 
-; 262  : 		INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) {
+; 266  : 		INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) {
 
 $LN9:
-	push	rbx
+	mov	QWORD PTR [rsp+24], rbx
 	push	rbp
 	push	rsi
 	push	r14
-	sub	rsp, 88					; 00000058H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 64					; 00000040H
 
-; 263  : 			HWND hwndMap;
-; 264  : 			ICustButton* custButton;
-; 265  : 			switch (msg) {
+; 267  : 			HWND hwndMap;
+; 268  : 			ICustButton* custButton;
+; 269  : 			switch (msg) {
 
 	mov	eax, DWORD PTR msg$[rsp]
 	mov	rbp, r9
@@ -9875,16 +9743,24 @@ $LN9:
 	cmp	eax, 272				; 00000110H
 	je	SHORT $LN4@DlgProc
 
-; 312  : 					break;
-; 313  : 				case WM_DESTROY:			
-; 314  : 				default: return FALSE;
+; 316  : 					break;
+; 317  : 				case WM_DESTROY:			
+; 318  : 				default: return FALSE;
 
 	xor	eax, eax
-	jmp	$LN1@DlgProc
+
+; 321  : 		}
+
+	mov	rbx, QWORD PTR [rsp+112]
+	add	rsp, 64					; 00000040H
+	pop	r14
+	pop	rsi
+	pop	rbp
+	ret	0
 $LN4@DlgProc:
 
-; 266  : 				case WM_INITDIALOG:
-; 267  : 					custButton = GetICustButton(GetDlgItem(hWnd, IDC_LOCK));
+; 270  : 				case WM_INITDIALOG:
+; 271  : 					custButton = GetICustButton(GetDlgItem(hWnd, IDC_LOCK));
 
 	mov	edx, 1115				; 0000045bH
 	mov	rcx, rbp
@@ -9892,7 +9768,7 @@ $LN4@DlgProc:
 	mov	rcx, rax
 	call	QWORD PTR __imp_?GetICustButton@@YAPEAVICustButton@@PEAUHWND__@@@Z
 
-; 268  : 					custButton->SetText(_M("L"));
+; 272  : 					custButton->SetText(_M("L"));
 
 	lea	rdx, OFFSET FLAT:??_C@_13PHJMHGG@?$AAL?$AA?$AA@
 	mov	rcx, rax
@@ -9900,20 +9776,20 @@ $LN4@DlgProc:
 	mov	r8, QWORD PTR [rax]
 	call	QWORD PTR [r8+88]
 
-; 269  : 					ReleaseICustButton(custButton);
+; 273  : 					ReleaseICustButton(custButton);
 
 	mov	rcx, rbx
 	call	QWORD PTR __imp_?ReleaseICustButton@@YAXPEAVICustButton@@@Z
 
-; 270  : 
-; 271  : 					// UVW
-; 272  : 					hwndMap = GetDlgItem(hWnd, IDC_TYPE);  
+; 274  : 
+; 275  : 					// UVW
+; 276  : 					hwndMap = GetDlgItem(hWnd, IDC_TYPE);  
 
 	mov	edx, 1018				; 000003faH
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 273  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW));
+; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW));
 
 	mov	ecx, 217				; 000000d9H
 	mov	rbx, rax
@@ -9924,7 +9800,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 274  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW2));
+; 278  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW2));
 
 	mov	ecx, 222				; 000000deH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -9934,7 +9810,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 275  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_OBJ));
+; 279  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_OBJ));
 
 	mov	ecx, 218				; 000000daH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -9944,7 +9820,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 276  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_WOR));
+; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_WOR));
 
 	mov	ecx, 219				; 000000dbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -9954,7 +9830,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_SCR));
+; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_SCR));
 
 	mov	ecx, 220				; 000000dcH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -9964,14 +9840,14 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 278  : 
-; 279  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_X);  
+; 282  : 
+; 283  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_X);  
 
 	mov	edx, 1065				; 00000429H
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -9982,7 +9858,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 285  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -9992,7 +9868,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 282  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 286  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10002,7 +9878,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 283  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10012,7 +9888,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10022,14 +9898,14 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 285  : 
-; 286  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Y);  
+; 289  : 
+; 290  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Y);  
 
 	mov	edx, 1066				; 0000042aH
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -10040,7 +9916,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 292  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10050,7 +9926,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 289  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 293  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10060,7 +9936,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 290  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10070,7 +9946,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10080,14 +9956,14 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 292  : 
-; 293  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Z);
+; 296  : 
+; 297  : 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Z);
 
 	mov	edx, 1071				; 0000042fH
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -10098,7 +9974,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 299  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10108,7 +9984,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 296  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 300  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10118,7 +9994,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 297  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 301  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10128,7 +10004,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 302  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -10139,17 +10015,17 @@ $LN4@DlgProc:
 	call	QWORD PTR __imp_SendMessageW
 $LN5@DlgProc:
 
-; 299  : 
-; 300  : 					// NO BREAK HERE, WE WANT TO UPDATE DROPDOWN VALUES TOO
-; 301  : 				case WM_SHOWWINDOW: 
-; 302  : 					// Set correct dropdown value
-; 303  : 					int curIndex;
-; 304  : 					map->GetParamBlock()->GetValue(xyz_map, t, curIndex, FOREVER);
+; 303  : 
+; 304  : 					// NO BREAK HERE, WE WANT TO UPDATE DROPDOWN VALUES TOO
+; 305  : 				case WM_SHOWWINDOW: 
+; 306  : 					// Set correct dropdown value
+; 307  : 					int curIndex;
+; 308  : 					map->GetParamBlock()->GetValue(xyz_map, t, curIndex, FOREVER);
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
-	mov	QWORD PTR [rsp+128], rdi
-	mov	QWORD PTR [rsp+80], r15
+	mov	QWORD PTR [rsp+96], rdi
+	mov	QWORD PTR [rsp+104], r15
 	call	QWORD PTR [rax+136]
 	mov	edx, -2147483648			; ffffffff80000000H
 	lea	rcx, QWORD PTR $T4[rsp]
@@ -10166,7 +10042,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 305  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1018				; 000003faH
@@ -10178,7 +10054,7 @@ $LN5@DlgProc:
 	mov	edx, 334				; 0000014eH
 	call	QWORD PTR __imp_SendMessageW
 
-; 306  : 					map->GetParamBlock()->GetValue(xyz_tile_x, t, curIndex, FOREVER);
+; 310  : 					map->GetParamBlock()->GetValue(xyz_tile_x, t, curIndex, FOREVER);
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -10197,7 +10073,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 307  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, (WPARAM)curIndex, 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1065				; 00000429H
@@ -10209,7 +10085,7 @@ $LN5@DlgProc:
 	mov	edx, 334				; 0000014eH
 	call	QWORD PTR __imp_SendMessageW
 
-; 308  : 					map->GetParamBlock()->GetValue(xyz_tile_y, t, curIndex, FOREVER);
+; 312  : 					map->GetParamBlock()->GetValue(xyz_tile_y, t, curIndex, FOREVER);
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -10228,7 +10104,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 313  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, (WPARAM)curIndex, 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1066				; 0000042aH
@@ -10240,7 +10116,7 @@ $LN5@DlgProc:
 	mov	edx, 334				; 0000014eH
 	call	QWORD PTR __imp_SendMessageW
 
-; 310  : 					map->GetParamBlock()->GetValue(xyz_tile_z, t, curIndex, FOREVER);
+; 314  : 					map->GetParamBlock()->GetValue(xyz_tile_z, t, curIndex, FOREVER);
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -10259,7 +10135,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 315  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, (WPARAM)curIndex, 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1071				; 0000042fH
@@ -10270,29 +10146,25 @@ $LN5@DlgProc:
 	mov	rcx, rax
 	mov	edx, 334				; 0000014eH
 	call	QWORD PTR __imp_SendMessageW
-	mov	rdi, QWORD PTR [rsp+128]
+	mov	rdi, QWORD PTR [rsp+96]
 
-; 315  : 			}
-; 316  : 			return TRUE;
+; 319  : 			}
+; 320  : 			return TRUE;
 
 	lea	eax, QWORD PTR [r15+1]
-	mov	r15, QWORD PTR [rsp+80]
-$LN1@DlgProc:
+	mov	r15, QWORD PTR [rsp+104]
 
-; 317  : 		}
+; 321  : 		}
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 88					; 00000058H
+	mov	rbx, QWORD PTR [rsp+112]
+	add	rsp, 64					; 00000040H
 	pop	r14
 	pop	rsi
 	pop	rbp
-	pop	rbx
 	ret	0
 ?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z ENDP ; BerconXYZDlgProc::DlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ??0BerconXYZDlgProc@@QEAA@PEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
@@ -10301,7 +10173,7 @@ this$ = 32
 m$ = 40
 ??0BerconXYZDlgProc@@QEAA@PEAVReferenceTarget@@@Z PROC	; BerconXYZDlgProc::BerconXYZDlgProc, COMDAT
 
-; 261  : 		BerconXYZDlgProc(ReferenceTarget *m) {reftarg = m;}		
+; 265  : 		BerconXYZDlgProc(ReferenceTarget *m) {reftarg = m;}		
 
 $LN6:
 	mov	QWORD PTR [rsp+8], rcx
@@ -10327,7 +10199,7 @@ m$ = 40
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???0BerconXYZDlgProc@@QEAA@PEAVReferenceTarget@@@Z@4HA ENDP ; `BerconXYZDlgProc::BerconXYZDlgProc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -10338,7 +10210,7 @@ m$ = 40
 	jmp	??1ParamMap2UserDlgProc@@UEAA@XZ	; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 ?dtor$0@?0???0BerconXYZDlgProc@@QEAA@PEAVReferenceTarget@@@Z@4HA ENDP ; `BerconXYZDlgProc::BerconXYZDlgProc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GXYZ_Desc@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -10385,7 +10257,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4HA ENDP		; `XYZ_Desc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -10396,22 +10268,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4HA ENDP		; `XYZ_Desc::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
-;	COMDAT ?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 48
-classSize$ = 56
-?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z PROC		; XYZ_Desc::__autoclassinit2, COMDAT
-$LN4:
-	sub	rsp, 40					; 00000028H
-	mov	r8, rdx
-	xor	edx, edx
-	call	memset
-	add	rsp, 40					; 00000028H
-	ret	0
-?__autoclassinit2@XYZ_Desc@@QEAAX_K@Z ENDP		; XYZ_Desc::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1XYZ_Desc@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -10434,7 +10291,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???1XYZ_Desc@@UEAA@XZ@4HA ENDP		; `XYZ_Desc::~XYZ_Desc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -10444,7 +10301,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???1XYZ_Desc@@UEAA@XZ@4HA ENDP		; `XYZ_Desc::~XYZ_Desc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 ;	COMDAT ??0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z
 _TEXT	SEGMENT
@@ -10459,7 +10316,7 @@ z$ = 3784
 closed$ = 3792
 ??0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z PROC	; XYZ_Desc::XYZ_Desc, COMDAT
 
-; 252  : 	p_end) {}
+; 256  : 	p_end) {}
 
 $LN4:
 	mov	r11, rsp
@@ -10470,7 +10327,7 @@ $LN4:
 	mov	r10d, r9d
 	mov	rbx, rcx
 
-; 127  : 	XYZ_Desc(ClassDesc2* pointer, int ref, int blkID, int type, int x, int y, int z, int closed=1) : ParamBlockDesc2(blkID, _M("Mapping"),  0, pointer, 
+; 131  : 	XYZ_Desc(ClassDesc2* pointer, int ref, int blkID, int type, int x, int y, int z, int closed=1) : ParamBlockDesc2(blkID, _M("Mapping"),  0, pointer, 
 
 	mov	r9d, 6
 	mov	DWORD PTR [r11-32], -1073740800		; ffffffffc0000400H
@@ -10979,7 +10836,7 @@ $LN4:
 	call	QWORD PTR __imp_??0ParamBlockDesc2@@QEAA@FPEB_W_JPEAVClassDesc2@@GZZ
 	npad	1
 
-; 252  : 	p_end) {}
+; 256  : 	p_end) {}
 
 	lea	rax, OFFSET FLAT:??_7XYZ_Desc@@6B@
 	mov	QWORD PTR [rbx], rax
@@ -11005,7 +10862,7 @@ closed$ = 3792
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4HA ENDP ; `XYZ_Desc::XYZ_Desc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 this$ = 3728
@@ -11022,7 +10879,7 @@ closed$ = 3792
 	rex_jmp	QWORD PTR __imp_??1ParamBlockDesc2@@UEAA@XZ
 ?dtor$0@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4HA ENDP ; `XYZ_Desc::XYZ_Desc'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GBerconSC@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -11129,7 +10986,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$5@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11142,7 +10999,7 @@ this$ = 80
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$0@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11156,7 +11013,7 @@ this$ = 80
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$1@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11169,7 +11026,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11182,7 +11039,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$3@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11196,7 +11053,7 @@ this$ = 80
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$4@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11209,7 +11066,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$5@?0???_GBerconSC@@UEAAPEAXI@Z@4HA ENDP		; `BerconSC::`scalar deleting destructor''::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1BerconSC@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -11290,7 +11147,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$5@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11302,7 +11159,7 @@ this$ = 72
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$0@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11315,7 +11172,7 @@ this$ = 72
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$1@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11327,7 +11184,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11339,7 +11196,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$3@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11352,7 +11209,7 @@ this$ = 72
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$4@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -11364,7 +11221,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$5@?0???1BerconSC@@UEAA@XZ@4HA ENDP		; `BerconSC::~BerconSC'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ScaleRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z
 _TEXT	SEGMENT
@@ -11397,7 +11254,7 @@ $LN2@ScaleRGB:
 	ret	0
 ?ScaleRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z ENDP	; BerconSC::ScaleRGB
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ScaledToRGB@BerconSC@@UEBAPEAVToneOperator@@XZ
 _TEXT	SEGMENT
@@ -11429,7 +11286,7 @@ $LN2@ScaledToRG:
 	ret	0
 ?ScaledToRGB@BerconSC@@UEBAPEAVToneOperator@@XZ ENDP	; BerconSC::ScaledToRGB
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ScaledToRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z
 _TEXT	SEGMENT
@@ -11462,7 +11319,7 @@ $LN2@ScaledToRG:
 	ret	0
 ?ScaledToRGB@BerconSC@@UEBAPEAVToneOperator@@M@Z ENDP	; BerconSC::ScaledToRGB
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?IsPhysicalSpace@BerconSC@@UEBAPEAVToneOperator@@XZ
 _TEXT	SEGMENT
@@ -11494,7 +11351,7 @@ $LN2@IsPhysical:
 	ret	0
 ?IsPhysicalSpace@BerconSC@@UEBAPEAVToneOperator@@XZ ENDP ; BerconSC::IsPhysicalSpace
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DiffuseIllum@BerconSC@@UEAA?AVColor@@XZ
 _TEXT	SEGMENT
@@ -11517,7 +11374,7 @@ $LN4:
 	ret	0
 ?DiffuseIllum@BerconSC@@UEAA?AVColor@@XZ ENDP		; BerconSC::DiffuseIllum
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetRenderElement@BerconSC@@UEAAPEAVIRenderElement@@H@Z
 _TEXT	SEGMENT
@@ -11532,7 +11389,7 @@ n$ = 16
 	rex_jmp	QWORD PTR [rax+560]
 ?GetRenderElement@BerconSC@@UEAAPEAVIRenderElement@@H@Z ENDP ; BerconSC::GetRenderElement
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?NRenderElements@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -11546,7 +11403,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+552]
 ?NRenderElements@BerconSC@@UEAAHXZ ENDP			; BerconSC::NRenderElements
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Execute@BerconSC@@UEAA_JH_K00@Z
 _TEXT	SEGMENT
@@ -11564,7 +11421,7 @@ arg3$ = 40
 	rex_jmp	QWORD PTR [r10+544]
 ?Execute@BerconSC@@UEAA_JH_K00@Z ENDP			; BerconSC::Execute
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?TossCache@BerconSC@@UEAAXPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -11579,7 +11436,7 @@ map$ = 16
 	rex_jmp	QWORD PTR [rax+536]
 ?TossCache@BerconSC@@UEAAXPEAVTexmap@@@Z ENDP		; BerconSC::TossCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PutCache@BerconSC@@UEAAXPEAVTexmap@@AEBVPoint3@@@Z
 _TEXT	SEGMENT
@@ -11595,7 +11452,7 @@ p$ = 24
 	rex_jmp	QWORD PTR [rax+512]
 ?PutCache@BerconSC@@UEAAXPEAVTexmap@@AEBVPoint3@@@Z ENDP ; BerconSC::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PutCache@BerconSC@@UEAAXPEAVTexmap@@M@Z
 _TEXT	SEGMENT
@@ -11611,7 +11468,7 @@ f$ = 24
 	rex_jmp	QWORD PTR [rax+520]
 ?PutCache@BerconSC@@UEAAXPEAVTexmap@@M@Z ENDP		; BerconSC::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PutCache@BerconSC@@UEAAXPEAVTexmap@@AEBVAColor@@@Z
 _TEXT	SEGMENT
@@ -11627,7 +11484,7 @@ c$ = 24
 	rex_jmp	QWORD PTR [rax+528]
 ?PutCache@BerconSC@@UEAAXPEAVTexmap@@AEBVAColor@@@Z ENDP ; BerconSC::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAVPoint3@@@Z
 _TEXT	SEGMENT
@@ -11643,7 +11500,7 @@ p$ = 24
 	rex_jmp	QWORD PTR [rax+488]
 ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAVPoint3@@@Z ENDP ; BerconSC::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAM@Z
 _TEXT	SEGMENT
@@ -11659,7 +11516,7 @@ f$ = 24
 	rex_jmp	QWORD PTR [rax+496]
 ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAM@Z ENDP	; BerconSC::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAVAColor@@@Z
 _TEXT	SEGMENT
@@ -11675,7 +11532,7 @@ c$ = 24
 	rex_jmp	QWORD PTR [rax+504]
 ?GetCache@BerconSC@@UEAAHPEAVTexmap@@AEAVAColor@@@Z ENDP ; BerconSC::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -11718,16 +11575,16 @@ $LN6:
 
 ; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
-	mov	r9, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rcx]
 	lea	r8, QWORD PTR $T1[rsp]
-	call	QWORD PTR [r9+480]
+	call	QWORD PTR [rax+480]
 	mov	rax, rbx
 	add	rsp, 48					; 00000030H
 	pop	rbx
 	ret	0
 ?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z ENDP ; BerconSC::EvalGlobalEnvironMap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DebugFile@BerconSC@@UEAAPEAU_iobuf@@XZ
 _TEXT	SEGMENT
@@ -11740,7 +11597,7 @@ this$ = 8
 	ret	0
 ?DebugFile@BerconSC@@UEAAPEAU_iobuf@@XZ ENDP		; BerconSC::DebugFile
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?SetGBufferID@BerconSC@@UEAAXH@Z
 _TEXT	SEGMENT
@@ -11755,7 +11612,7 @@ gbid$ = 16
 	rex_jmp	QWORD PTR [rax+464]
 ?SetGBufferID@BerconSC@@UEAAXH@Z ENDP			; BerconSC::SetGBufferID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?VectorFromNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11780,7 +11637,7 @@ $LN4:
 	ret	0
 ?VectorFromNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::VectorFromNoScale
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?VectorToNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11805,7 +11662,7 @@ $LN4:
 	ret	0
 ?VectorToNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::VectorToNoScale
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?VectorFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11830,7 +11687,7 @@ $LN4:
 	ret	0
 ?VectorFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::VectorFrom
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?VectorTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11855,7 +11712,7 @@ $LN4:
 	ret	0
 ?VectorTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::VectorTo
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PointFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11880,7 +11737,7 @@ $LN4:
 	ret	0
 ?PointFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::PointFrom
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PointTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z
 _TEXT	SEGMENT
@@ -11905,7 +11762,7 @@ $LN4:
 	ret	0
 ?PointTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z ENDP ; BerconSC::PointTo
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?CamFarRange@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -11919,7 +11776,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+408]
 ?CamFarRange@BerconSC@@UEAAMXZ ENDP			; BerconSC::CamFarRange
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?CamNearRange@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -11933,7 +11790,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+400]
 ?CamNearRange@BerconSC@@UEAAMXZ ENDP			; BerconSC::CamNearRange
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetBGColor@BerconSC@@UEAAXAEAVColor@@0H@Z
 _TEXT	SEGMENT
@@ -11950,7 +11807,7 @@ fogBG$ = 32
 	rex_jmp	QWORD PTR [rax+392]
 ?GetBGColor@BerconSC@@UEAAXAEAVColor@@0H@Z ENDP		; BerconSC::GetBGColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -11994,16 +11851,16 @@ $LN6:
 
 ; 130  : 	AColor EvalEnvironMap(Texmap* map, Point3 view) override { return sc->EvalEnvironMap(map, view); }
 
-	mov	r10, QWORD PTR [rcx]
+	mov	rax, QWORD PTR [rcx]
 	lea	r9, QWORD PTR $T1[rsp]
-	call	QWORD PTR [r10+384]
+	call	QWORD PTR [rax+384]
 	mov	rax, rbx
 	add	rsp, 48					; 00000030H
 	pop	rbx
 	ret	0
 ?EvalEnvironMap@BerconSC@@UEAA?AVAColor@@PEAVTexmap@@VPoint3@@@Z ENDP ; BerconSC::EvalEnvironMap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?RayConeAngle@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -12017,7 +11874,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+376]
 ?RayConeAngle@BerconSC@@UEAAMXZ ENDP			; BerconSC::RayConeAngle
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?RayDiam@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -12031,7 +11888,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+368]
 ?RayDiam@BerconSC@@UEAAMXZ ENDP				; BerconSC::RayDiam
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?UVWNormal@BerconSC@@UEAA?AVPoint3@@H@Z
 _TEXT	SEGMENT
@@ -12055,7 +11912,7 @@ $LN4:
 	ret	0
 ?UVWNormal@BerconSC@@UEAA?AVPoint3@@H@Z ENDP		; BerconSC::UVWNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetSampleSizeScale@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -12069,7 +11926,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+352]
 ?GetSampleSizeScale@BerconSC@@UEAAMXZ ENDP		; BerconSC::GetSampleSizeScale
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetNSuperSample@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -12083,7 +11940,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+344]
 ?GetNSuperSample@BerconSC@@UEAAHXZ ENDP			; BerconSC::GetNSuperSample
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?IsTextureSuperSampleOn@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -12097,7 +11954,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+336]
 ?IsTextureSuperSampleOn@BerconSC@@UEAAHXZ ENDP		; BerconSC::IsTextureSuperSampleOn
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?IsSuperSampleOn@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -12111,7 +11968,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+328]
 ?IsSuperSampleOn@BerconSC@@UEAAHXZ ENDP			; BerconSC::IsSuperSampleOn
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?BumpBasisVectors@BerconSC@@UEAAHQEAVPoint3@@HH@Z
 _TEXT	SEGMENT
@@ -12128,7 +11985,7 @@ channel$ = 32
 	rex_jmp	QWORD PTR [rax+320]
 ?BumpBasisVectors@BerconSC@@UEAAHQEAVPoint3@@HH@Z ENDP	; BerconSC::BumpBasisVectors
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DPdUVW@BerconSC@@UEAAXQEAVPoint3@@H@Z
 _TEXT	SEGMENT
@@ -12144,7 +12001,7 @@ channel$ = 24
 	rex_jmp	QWORD PTR [rax+312]
 ?DPdUVW@BerconSC@@UEAAXQEAVPoint3@@H@Z ENDP		; BerconSC::DPdUVW
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DUVW@BerconSC@@UEAA?AVPoint3@@H@Z
 _TEXT	SEGMENT
@@ -12168,7 +12025,7 @@ $LN4:
 	ret	0
 ?DUVW@BerconSC@@UEAA?AVPoint3@@H@Z ENDP			; BerconSC::DUVW
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -12308,7 +12165,7 @@ $LN6@UVW:
 	ret	0
 ?UVW@BerconSC@@UEAA?AVPoint3@@H@Z ENDP			; BerconSC::UVW
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?SurfacePtScreen@BerconSC@@UEAA?AVPoint2@@XZ
 _TEXT	SEGMENT
@@ -12331,7 +12188,7 @@ $LN4:
 	ret	0
 ?SurfacePtScreen@BerconSC@@UEAA?AVPoint2@@XZ ENDP	; BerconSC::SurfacePtScreen
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ScreenCoord@BerconSC@@UEAA?AVIPoint2@@XZ
 _TEXT	SEGMENT
@@ -12354,7 +12211,7 @@ $LN4:
 	ret	0
 ?ScreenCoord@BerconSC@@UEAA?AVIPoint2@@XZ ENDP		; BerconSC::ScreenCoord
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ScreenUV@BerconSC@@UEAAXAEAVPoint2@@0@Z
 _TEXT	SEGMENT
@@ -12403,7 +12260,7 @@ $LN2@ScreenUV:
 	ret	0
 ?ScreenUV@BerconSC@@UEAAXAEAVPoint2@@0@Z ENDP		; BerconSC::ScreenUV
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DPObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12426,7 +12283,7 @@ $LN4:
 	ret	0
 ?DPObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::DPObjRelBox
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?PObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12455,7 +12312,7 @@ $LN4:
 	ret	0
 ?PObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::PObjRelBox
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ObjectBox@BerconSC@@UEAA?AVBox3@@XZ
 _TEXT	SEGMENT
@@ -12478,7 +12335,7 @@ $LN4:
 	ret	0
 ?ObjectBox@BerconSC@@UEAA?AVBox3@@XZ ENDP		; BerconSC::ObjectBox
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DPObj@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12501,7 +12358,7 @@ $LN4:
 	ret	0
 ?DPObj@BerconSC@@UEAA?AVPoint3@@XZ ENDP			; BerconSC::DPObj
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -12578,7 +12435,7 @@ $LN4@PObj:
 	ret	0
 ?PObj@BerconSC@@UEAA?AVPoint3@@XZ ENDP			; BerconSC::PObj
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DP@BerconSC@@UEAAXAEAVPoint3@@0@Z
 _TEXT	SEGMENT
@@ -12594,7 +12451,7 @@ dpdy$ = 24
 	rex_jmp	QWORD PTR [rax+216]
 ?DP@BerconSC@@UEAAXAEAVPoint3@@0@Z ENDP			; BerconSC::DP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?DP@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12617,7 +12474,7 @@ $LN4:
 	ret	0
 ?DP@BerconSC@@UEAA?AVPoint3@@XZ ENDP			; BerconSC::DP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -12694,7 +12551,7 @@ $LN4@P:
 	ret	0
 ?P@BerconSC@@UEAA?AVPoint3@@XZ ENDP			; BerconSC::P
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?CamPos@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12717,7 +12574,7 @@ $LN4:
 	ret	0
 ?CamPos@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::CamPos
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetIOR@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -12731,7 +12588,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+192]
 ?GetIOR@BerconSC@@UEAAMXZ ENDP				; BerconSC::GetIOR
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?SetIOR@BerconSC@@UEAAXM@Z
 _TEXT	SEGMENT
@@ -12746,7 +12603,7 @@ ior$ = 16
 	rex_jmp	QWORD PTR [rax+184]
 ?SetIOR@BerconSC@@UEAAXM@Z ENDP				; BerconSC::SetIOR
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?RefractVector@BerconSC@@UEAA?AVPoint3@@M@Z
 _TEXT	SEGMENT
@@ -12770,7 +12627,7 @@ $LN4:
 	ret	0
 ?RefractVector@BerconSC@@UEAA?AVPoint3@@M@Z ENDP	; BerconSC::RefractVector
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ReflectVector@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12793,7 +12650,7 @@ $LN4:
 	ret	0
 ?ReflectVector@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::ReflectVector
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?OrigView@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12816,7 +12673,7 @@ $LN4:
 	ret	0
 ?OrigView@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::OrigView
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -12863,7 +12720,7 @@ $LN6:
 	ret	0
 ?SetView@BerconSC@@UEAAXVPoint3@@@Z ENDP		; BerconSC::SetView
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?V@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12886,7 +12743,7 @@ $LN4:
 	ret	0
 ?V@BerconSC@@UEAA?AVPoint3@@XZ ENDP			; BerconSC::V
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Curve@BerconSC@@UEAAMXZ
 _TEXT	SEGMENT
@@ -12900,7 +12757,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+136]
 ?Curve@BerconSC@@UEAAMXZ ENDP				; BerconSC::Curve
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GNormal@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12923,7 +12780,7 @@ $LN4:
 	ret	0
 ?GNormal@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::GNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?OrigNormal@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -12946,7 +12803,7 @@ $LN4:
 	ret	0
 ?OrigNormal@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::OrigNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -12993,7 +12850,7 @@ $LN6:
 	ret	0
 ?SetNormal@BerconSC@@UEAAXVPoint3@@@Z ENDP		; BerconSC::SetNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Normal@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -13016,7 +12873,7 @@ $LN4:
 	ret	0
 ?Normal@BerconSC@@UEAA?AVPoint3@@XZ ENDP		; BerconSC::Normal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?FaceNumber@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13030,7 +12887,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+96]
 ?FaceNumber@BerconSC@@UEAAHXZ ENDP			; BerconSC::FaceNumber
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?BarycentricCoords@BerconSC@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -13053,7 +12910,7 @@ $LN4:
 	ret	0
 ?BarycentricCoords@BerconSC@@UEAA?AVPoint3@@XZ ENDP	; BerconSC::BarycentricCoords
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?GetEvalObject@BerconSC@@UEAAPEAVObject@@XZ
 _TEXT	SEGMENT
@@ -13067,7 +12924,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+80]
 ?GetEvalObject@BerconSC@@UEAAPEAVObject@@XZ ENDP	; BerconSC::GetEvalObject
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Node@BerconSC@@UEAAPEAVINode@@XZ
 _TEXT	SEGMENT
@@ -13081,7 +12938,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+72]
 ?Node@BerconSC@@UEAAPEAVINode@@XZ ENDP			; BerconSC::Node
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?NodeID@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13095,7 +12952,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+64]
 ?NodeID@BerconSC@@UEAAHXZ ENDP				; BerconSC::NodeID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?CurTime@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13109,7 +12966,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+56]
 ?CurTime@BerconSC@@UEAAHXZ ENDP				; BerconSC::CurTime
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Light@BerconSC@@UEAAPEAVLightDesc@@H@Z
 _TEXT	SEGMENT
@@ -13124,7 +12981,7 @@ n$ = 16
 	rex_jmp	QWORD PTR [rax+48]
 ?Light@BerconSC@@UEAAPEAVLightDesc@@H@Z ENDP		; BerconSC::Light
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?ProjType@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13138,7 +12995,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+40]
 ?ProjType@BerconSC@@UEAAHXZ ENDP			; BerconSC::ProjType
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?Antialias@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13152,7 +13009,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+32]
 ?Antialias@BerconSC@@UEAAHXZ ENDP			; BerconSC::Antialias
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?InMtlEditor@BerconSC@@UEAAHXZ
 _TEXT	SEGMENT
@@ -13166,7 +13023,7 @@ this$ = 8
 	rex_jmp	QWORD PTR [rax+24]
 ?InMtlEditor@BerconSC@@UEAAHXZ ENDP			; BerconSC::InMtlEditor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
@@ -13199,7 +13056,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?ClassID@BerconSC@@UEAA?AVClass_ID@@XZ ENDP		; BerconSC::ClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ;	COMDAT ?setParams@BerconSC@@QEAAXVPoint3@@HH@Z
 _TEXT	SEGMENT
@@ -13229,7 +13086,7 @@ chan$ = 32
 	ret	0
 ?setParams@BerconSC@@QEAAXVPoint3@@HH@Z ENDP		; BerconSC::setParams
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
@@ -13592,7 +13449,7 @@ sc$ = 40
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$1@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13605,7 +13462,7 @@ sc$ = 40
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$2@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13618,7 +13475,7 @@ sc$ = 40
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$5@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$5
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13632,7 +13489,7 @@ sc$ = 40
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$6@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$6
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13645,7 +13502,7 @@ sc$ = 40
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$4@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13659,7 +13516,7 @@ sc$ = 40
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$3@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13672,7 +13529,7 @@ sc$ = 40
 	jmp	??1ShadeContext@@UEAA@XZ
 ?dtor$0@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13685,7 +13542,7 @@ sc$ = 40
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$8@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$8
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13699,7 +13556,7 @@ sc$ = 40
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$9@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$9
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13712,7 +13569,7 @@ sc$ = 40
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$7@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$7
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -13726,7 +13583,7 @@ sc$ = 40
 	jmp	??1RenderGlobalContext@@UEAA@XZ
 ?dtor$1@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA ENDP ; `BerconSC::BerconSC'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ??_GParamMap2UserDlgProc@@UEAAPEAXI@Z
 _TEXT	SEGMENT
@@ -13761,7 +13618,7 @@ $LN9@scalar:
 	ret	0
 ??_GParamMap2UserDlgProc@@UEAAPEAXI@Z ENDP		; ParamMap2UserDlgProc::`scalar deleting destructor'
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??0ParamMap2UserDlgProc@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 8
@@ -13772,7 +13629,7 @@ this$ = 8
 	ret	0
 ??0ParamMap2UserDlgProc@@QEAA@XZ ENDP			; ParamMap2UserDlgProc::ParamMap2UserDlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ?Update@ParamMap2UserDlgProc@@UEAAXHAEAVInterval@@PEAVIParamMap2@@@Z
 _TEXT	SEGMENT
@@ -13788,7 +13645,7 @@ pmap$ = 32
 	rex_jmp	QWORD PTR [rax+40]
 ?Update@ParamMap2UserDlgProc@@UEAAXHAEAVInterval@@PEAVIParamMap2@@@Z ENDP ; ParamMap2UserDlgProc::Update
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ?SetParamBlock@ParamMap2UserDlgProc@@UEAAXPEAVIParamBlock2@@@Z
 _TEXT	SEGMENT
@@ -13801,7 +13658,7 @@ pb$ = 16
 	ret	0
 ?SetParamBlock@ParamMap2UserDlgProc@@UEAAXPEAVIParamBlock2@@@Z ENDP ; ParamMap2UserDlgProc::SetParamBlock
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ?Update@ParamMap2UserDlgProc@@UEAAXH@Z
 _TEXT	SEGMENT
@@ -13814,7 +13671,7 @@ t$ = 16
 	ret	0
 ?Update@ParamMap2UserDlgProc@@UEAAXH@Z ENDP		; ParamMap2UserDlgProc::Update
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ?SetThing@ParamMap2UserDlgProc@@UEAAXPEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
@@ -13827,7 +13684,7 @@ m$ = 16
 	ret	0
 ?SetThing@ParamMap2UserDlgProc@@UEAAXPEAVReferenceTarget@@@Z ENDP ; ParamMap2UserDlgProc::SetThing
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamm2.h
 ;	COMDAT ??1ParamMap2UserDlgProc@@UEAA@XZ
 _TEXT	SEGMENT
@@ -13841,22 +13698,7 @@ this$ = 8
 	ret	0
 ??1ParamMap2UserDlgProc@@UEAA@XZ ENDP			; ParamMap2UserDlgProc::~ParamMap2UserDlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
-;	COMDAT ?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z
-_TEXT	SEGMENT
-this$ = 48
-classSize$ = 56
-?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z PROC	; ParamBlockDesc2::__autoclassinit2, COMDAT
-$LN4:
-	sub	rsp, 40					; 00000028H
-	mov	r8, rdx
-	xor	edx, edx
-	call	memset
-	add	rsp, 40					; 00000028H
-	ret	0
-?__autoclassinit2@ParamBlockDesc2@@QEAAX_K@Z ENDP	; ParamBlockDesc2::__autoclassinit2
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ;	COMDAT ?SetUserDlgProc@ParamBlockDesc2@@QEAAXPEAVParamMap2UserDlgProc@@@Z
 _TEXT	SEGMENT
@@ -13871,7 +13713,7 @@ proc$ = 16
 	rex_jmp	QWORD PTR __imp_?SetUserDlgProc@ParamBlockDesc2@@QEAAXFPEAVParamMap2UserDlgProc@@@Z
 ?SetUserDlgProc@ParamBlockDesc2@@QEAAXPEAVParamMap2UserDlgProc@@@Z ENDP ; ParamBlockDesc2::SetUserDlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.inline.h
 ;	COMDAT ?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z
 _TEXT	SEGMENT
@@ -13894,7 +13736,7 @@ __formal$ = 56
 	ret	0
 ?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ENDP ; ClassDesc2::CreateQtWidget
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ;	COMDAT ?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z
 _TEXT	SEGMENT
@@ -13910,7 +13752,102 @@ proc$ = 24
 	rex_jmp	QWORD PTR __imp_?SetUserDlgProc@ClassDesc2@@QEAA_NPEAVParamBlockDesc2@@FPEAVParamMap2UserDlgProc@@@Z
 ?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ENDP ; ClassDesc2::SetUserDlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+;	COMDAT ??0VertexNormalsControl@@QEAA@XZ
+_TEXT	SEGMENT
+$T1 = 0
+this$ = 32
+??0VertexNormalsControl@@QEAA@XZ PROC			; VertexNormalsControl::VertexNormalsControl, COMDAT
+
+; 2949 : 	DllExport VertexNormalsControl () : mUseFaceAngles(true) { }
+
+$LN6:
+	mov	QWORD PTR [rsp+8], rcx
+	sub	rsp, 24
+	mov	QWORD PTR $T1[rsp], -2
+	mov	BYTE PTR [rcx], 1
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+
+; 186  : 		Tab() : th(NULL)
+
+	mov	QWORD PTR [rcx+8], 0
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+
+; 2949 : 	DllExport VertexNormalsControl () : mUseFaceAngles(true) { }
+
+	mov	rax, rcx
+	add	rsp, 24
+	ret	0
+??0VertexNormalsControl@@QEAA@XZ ENDP			; VertexNormalsControl::VertexNormalsControl
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 0
+this$ = 32
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA PROC	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+	mov	rcx, QWORD PTR this$[rdx]
+	add	rcx, 8
+	jmp	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA ENDP	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 0
+this$ = 32
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA PROC	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+	mov	rcx, QWORD PTR this$[rdx]
+	add	rcx, 8
+	jmp	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA ENDP	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+;	COMDAT ??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+_TEXT	SEGMENT
+$T1 = 32
+this$ = 64
+??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ PROC	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>, COMDAT
+
+; 204  : 		~Tab() {
+
+$LN3:
+	sub	rsp, 56					; 00000038H
+	mov	QWORD PTR $T1[rsp], -2
+
+; 205  : 			zfree((void**)&th); 
+
+	call	QWORD PTR __imp_?zfree@@YAXPEAPEAX@Z
+	npad	1
+
+; 206  : 		}
+
+	add	rsp, 56					; 00000038H
+	ret	0
+??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ENDP	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+;	COMDAT ??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+_TEXT	SEGMENT
+this$ = 8
+??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ PROC	; Tab<VertexNormalsCallback * __ptr64>::Tab<VertexNormalsCallback * __ptr64>, COMDAT
+
+; 186  : 		Tab() : th(NULL)
+
+	mov	QWORD PTR [rcx], 0
+
+; 188  : 			ADSK_MAXSDK_IS_PLAIN_OLD_DATA_TYPE(T);
+; 189  : 		}
+
+	mov	rax, rcx
+	ret	0
+??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ENDP	; Tab<VertexNormalsCallback * __ptr64>::Tab<VertexNormalsCallback * __ptr64>
+_TEXT	ENDS
+; Function compile flags: /Ogtp
 ;	COMDAT ??1Texmap@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -13933,7 +13870,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$0@?0???1Texmap@@UEAA@XZ@4HA ENDP			; `Texmap::~Texmap'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -13943,7 +13880,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1MtlBase@@UEAA@XZ
 ?dtor$0@?0???1Texmap@@UEAA@XZ@4HA ENDP			; `Texmap::~Texmap'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?IsHighDynamicRange@Texmap@@UEBAHXZ
 _TEXT	SEGMENT
@@ -13956,7 +13893,7 @@ this$ = 8
 	ret	0
 ?IsHighDynamicRange@Texmap@@UEBAHXZ ENDP		; Texmap::IsHighDynamicRange
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?LoadMapFiles@Texmap@@UEAAHH@Z
 _TEXT	SEGMENT
@@ -13970,7 +13907,7 @@ t$ = 16
 	ret	0
 ?LoadMapFiles@Texmap@@UEAAHH@Z ENDP			; Texmap::LoadMapFiles
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?IsLocalOutputMeaningful@Texmap@@UEAA_NAEAVShadeContext@@@Z
 _TEXT	SEGMENT
@@ -13984,7 +13921,7 @@ sc$ = 16
 	ret	0
 ?IsLocalOutputMeaningful@Texmap@@UEAA_NAEAVShadeContext@@@Z ENDP ; Texmap::IsLocalOutputMeaningful
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?SetOutputLevel@Texmap@@UEAAXHM@Z
 _TEXT	SEGMENT
@@ -13998,7 +13935,7 @@ v$ = 24
 	ret	0
 ?SetOutputLevel@Texmap@@UEAAXHM@Z ENDP			; Texmap::SetOutputLevel
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetTheXYZGen@Texmap@@UEAAPEAVXYZGen@@XZ
 _TEXT	SEGMENT
@@ -14011,7 +13948,7 @@ this$ = 8
 	ret	0
 ?GetTheXYZGen@Texmap@@UEAAPEAVXYZGen@@XZ ENDP		; Texmap::GetTheXYZGen
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetTheUVGen@Texmap@@UEAAPEAVUVGen@@XZ
 _TEXT	SEGMENT
@@ -14024,7 +13961,7 @@ this$ = 8
 	ret	0
 ?GetTheUVGen@Texmap@@UEAAPEAVUVGen@@XZ ENDP		; Texmap::GetTheUVGen
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?MapSlotType@Texmap@@UEAAHH@Z
 _TEXT	SEGMENT
@@ -14038,7 +13975,7 @@ i$ = 16
 	ret	0
 ?MapSlotType@Texmap@@UEAAHH@Z ENDP			; Texmap::MapSlotType
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?InitSlotType@Texmap@@UEAAXH@Z
 _TEXT	SEGMENT
@@ -14052,7 +13989,7 @@ sType$ = 16
 	ret	0
 ?InitSlotType@Texmap@@UEAAXH@Z ENDP			; Texmap::InitSlotType
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetMapChannel@Texmap@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14065,7 +14002,7 @@ this$ = 8
 	ret	0
 ?GetMapChannel@Texmap@@UEAAHXZ ENDP			; Texmap::GetMapChannel
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetUVWSource@Texmap@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14078,7 +14015,7 @@ this$ = 8
 	ret	0
 ?GetUVWSource@Texmap@@UEAAHXZ ENDP			; Texmap::GetUVWSource
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetTextureTiling@Texmap@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14091,7 +14028,7 @@ this$ = 8
 	ret	0
 ?GetTextureTiling@Texmap@@UEAAHXZ ENDP			; Texmap::GetTextureTiling
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?GetUVTransform@Texmap@@UEAAXAEAVMatrix3@@@Z
 _TEXT	SEGMENT
@@ -14105,7 +14042,7 @@ uvtrans$ = 16
 	rex_jmp	QWORD PTR __imp_?IdentityMatrix@Matrix3@@QEAAXXZ
 ?GetUVTransform@Texmap@@UEAAXAEAVMatrix3@@@Z ENDP	; Texmap::GetUVTransform
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\texmap.h
 ;	COMDAT ?HandleOwnViewPerturb@Texmap@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14118,7 +14055,7 @@ this$ = 8
 	ret	0
 ?HandleOwnViewPerturb@Texmap@@UEAAHXZ ENDP		; Texmap::HandleOwnViewPerturb
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?GetTransparencyHint@MtlBase@@UEAAHHAEAVInterval@@@Z
 _TEXT	SEGMENT
@@ -14133,7 +14070,7 @@ valid$ = 24
 	ret	0
 ?GetTransparencyHint@MtlBase@@UEAAHHAEAVInterval@@@Z ENDP ; MtlBase::GetTransparencyHint
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?GetRefTarget@MtlBase@@UEAAPEAVReferenceTarget@@XZ
 _TEXT	SEGMENT
@@ -14146,7 +14083,7 @@ this$ = 8
 	ret	0
 ?GetRefTarget@MtlBase@@UEAAPEAVReferenceTarget@@XZ ENDP	; MtlBase::GetRefTarget
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
@@ -14189,7 +14126,7 @@ $LN6:
 	ret	0
 ?GetInterface@MtlBase@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z ENDP ; MtlBase::GetInterface
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?SetupGfxMultiMaps@MtlBase@@UEAAXHPEAVMaterial@@AEAVMtlMakerCallback@@@Z
 _TEXT	SEGMENT
@@ -14204,7 +14141,7 @@ cb$ = 32
 	ret	0
 ?SetupGfxMultiMaps@MtlBase@@UEAAXHPEAVMaterial@@AEAVMtlMakerCallback@@@Z ENDP ; MtlBase::SetupGfxMultiMaps
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?SupportsMultiMapsInViewport@MtlBase@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14217,7 +14154,7 @@ this$ = 8
 	ret	0
 ?SupportsMultiMapsInViewport@MtlBase@@UEAAHXZ ENDP	; MtlBase::SupportsMultiMapsInViewport
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?IsMultiMtl@MtlBase@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14230,7 +14167,7 @@ this$ = 8
 	ret	0
 ?IsMultiMtl@MtlBase@@UEAAHXZ ENDP			; MtlBase::IsMultiMtl
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?LocalMappingsRequired@MtlBase@@UEAAXHAEAVBitArray@@0@Z
 _TEXT	SEGMENT
@@ -14245,7 +14182,7 @@ bumpreq$ = 32
 	ret	0
 ?LocalMappingsRequired@MtlBase@@UEAAXHAEAVBitArray@@0@Z ENDP ; MtlBase::LocalMappingsRequired
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\mtlbase.h
 ;	COMDAT ?BuildMaps@MtlBase@@UEAAHHAEAVRenderMapsContext@@@Z
 _TEXT	SEGMENT
@@ -14260,7 +14197,7 @@ rmc$ = 24
 	ret	0
 ?BuildMaps@MtlBase@@UEAAHHAEAVRenderMapsContext@@@Z ENDP ; MtlBase::BuildMaps
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\materials\isubmap.h
 ;	COMDAT ?SubTexmapOn@ISubMap@@UEAAHH@Z
 _TEXT	SEGMENT
@@ -14274,7 +14211,7 @@ i$ = 16
 	ret	0
 ?SubTexmapOn@ISubMap@@UEAAHH@Z ENDP			; ISubMap::SubTexmapOn
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GShadeContext@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -14345,7 +14282,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???_GShadeContext@@UEAAPEAXI@Z@4HA ENDP	; `ShadeContext::`scalar deleting destructor''::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14357,7 +14294,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$0@?0???_GShadeContext@@UEAAPEAXI@Z@4HA ENDP	; `ShadeContext::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14370,7 +14307,7 @@ this$ = 80
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$1@?0???_GShadeContext@@UEAAPEAXI@Z@4HA ENDP	; `ShadeContext::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14382,7 +14319,7 @@ this$ = 80
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???_GShadeContext@@UEAAPEAXI@Z@4HA ENDP	; `ShadeContext::`scalar deleting destructor''::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1ShadeContext@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -14430,7 +14367,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???1ShadeContext@@UEAA@XZ@4HA ENDP		; `ShadeContext::~ShadeContext'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14441,7 +14378,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$0@?0???1ShadeContext@@UEAA@XZ@4HA ENDP		; `ShadeContext::~ShadeContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14453,7 +14390,7 @@ this$ = 72
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$1@?0???1ShadeContext@@UEAA@XZ@4HA ENDP		; `ShadeContext::~ShadeContext'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -14464,7 +14401,7 @@ this$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???1ShadeContext@@UEAA@XZ@4HA ENDP		; `ShadeContext::~ShadeContext'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -14563,7 +14500,7 @@ this$ = 40
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$1@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -14574,7 +14511,7 @@ this$ = 40
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -14585,7 +14522,7 @@ this$ = 40
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$3@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$3
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -14597,7 +14534,7 @@ this$ = 40
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$4@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$4
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -14608,7 +14545,7 @@ this$ = 40
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$2@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -14620,7 +14557,7 @@ this$ = 40
 	jmp	??1ShadeOutput@@UEAA@XZ
 ?dtor$1@?0???0ShadeContext@@QEAA@XZ@4HA ENDP		; `ShadeContext::ShadeContext'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -14656,7 +14593,7 @@ $LN3@GetRenderE:
 	ret	0
 ?GetRenderElement@ShadeContext@@UEAAPEAVIRenderElement@@H@Z ENDP ; ShadeContext::GetRenderElement
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -14691,7 +14628,7 @@ $LN3@NRenderEle:
 	ret	0
 ?NRenderElements@ShadeContext@@UEAAHXZ ENDP		; ShadeContext::NRenderElements
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?Execute@ShadeContext@@UEAA_JH_K00@Z
 _TEXT	SEGMENT
@@ -14708,7 +14645,7 @@ arg3$ = 40
 	ret	0
 ?Execute@ShadeContext@@UEAA_JH_K00@Z ENDP		; ShadeContext::Execute
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?TossCache@ShadeContext@@UEAAXPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -14721,7 +14658,7 @@ map$ = 16
 	ret	0
 ?TossCache@ShadeContext@@UEAAXPEAVTexmap@@@Z ENDP	; ShadeContext::TossCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@AEBVPoint3@@@Z
 _TEXT	SEGMENT
@@ -14735,7 +14672,7 @@ p$ = 24
 	ret	0
 ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@AEBVPoint3@@@Z ENDP ; ShadeContext::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@M@Z
 _TEXT	SEGMENT
@@ -14749,7 +14686,7 @@ f$ = 24
 	ret	0
 ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@M@Z ENDP	; ShadeContext::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@AEBVAColor@@@Z
 _TEXT	SEGMENT
@@ -14763,7 +14700,7 @@ c$ = 24
 	ret	0
 ?PutCache@ShadeContext@@UEAAXPEAVTexmap@@AEBVAColor@@@Z ENDP ; ShadeContext::PutCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAVPoint3@@@Z
 _TEXT	SEGMENT
@@ -14778,7 +14715,7 @@ p$ = 24
 	ret	0
 ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAVPoint3@@@Z ENDP ; ShadeContext::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAM@Z
 _TEXT	SEGMENT
@@ -14793,7 +14730,7 @@ f$ = 24
 	ret	0
 ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAM@Z ENDP	; ShadeContext::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAVAColor@@@Z
 _TEXT	SEGMENT
@@ -14808,7 +14745,7 @@ c$ = 24
 	ret	0
 ?GetCache@ShadeContext@@UEAAHPEAVTexmap@@AEAVAColor@@@Z ENDP ; ShadeContext::GetCache
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -14833,7 +14770,7 @@ dir$ = 24
 	ret	0
 ?EvalGlobalEnvironMap@ShadeContext@@UEAA?AVAColor@@VPoint3@@@Z ENDP ; ShadeContext::EvalGlobalEnvironMap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?DebugFile@ShadeContext@@UEAAPEAU_iobuf@@XZ
 _TEXT	SEGMENT
@@ -14846,7 +14783,7 @@ this$ = 8
 	ret	0
 ?DebugFile@ShadeContext@@UEAAPEAU_iobuf@@XZ ENDP	; ShadeContext::DebugFile
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?SetGBufferID@ShadeContext@@UEAAXH@Z
 _TEXT	SEGMENT
@@ -14860,7 +14797,7 @@ gbid$ = 16
 	ret	0
 ?SetGBufferID@ShadeContext@@UEAAXH@Z ENDP		; ShadeContext::SetGBufferID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?CamFarRange@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -14873,7 +14810,7 @@ this$ = 8
 	ret	0
 ?CamFarRange@ShadeContext@@UEAAMXZ ENDP			; ShadeContext::CamFarRange
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?CamNearRange@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -14886,7 +14823,7 @@ this$ = 8
 	ret	0
 ?CamNearRange@ShadeContext@@UEAAMXZ ENDP		; ShadeContext::CamNearRange
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?RayConeAngle@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -14899,7 +14836,7 @@ this$ = 8
 	ret	0
 ?RayConeAngle@ShadeContext@@UEAAMXZ ENDP		; ShadeContext::RayConeAngle
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?RayDiam@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -14920,7 +14857,7 @@ $LN4:
 	ret	0
 ?RayDiam@ShadeContext@@UEAAMXZ ENDP			; ShadeContext::RayDiam
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -14945,7 +14882,7 @@ channel$ = 24
 	ret	0
 ?UVWNormal@ShadeContext@@UEAA?AVPoint3@@H@Z ENDP	; ShadeContext::UVWNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetSampleSizeScale@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -14958,7 +14895,7 @@ this$ = 8
 	ret	0
 ?GetSampleSizeScale@ShadeContext@@UEAAMXZ ENDP		; ShadeContext::GetSampleSizeScale
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetNSuperSample@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14971,7 +14908,7 @@ this$ = 8
 	ret	0
 ?GetNSuperSample@ShadeContext@@UEAAHXZ ENDP		; ShadeContext::GetNSuperSample
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?IsTextureSuperSampleOn@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14984,7 +14921,7 @@ this$ = 8
 	ret	0
 ?IsTextureSuperSampleOn@ShadeContext@@UEAAHXZ ENDP	; ShadeContext::IsTextureSuperSampleOn
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?IsSuperSampleOn@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -14997,7 +14934,7 @@ this$ = 8
 	ret	0
 ?IsSuperSampleOn@ShadeContext@@UEAAHXZ ENDP		; ShadeContext::IsSuperSampleOn
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?BumpBasisVectors@ShadeContext@@UEAAHQEAVPoint3@@HH@Z
 _TEXT	SEGMENT
@@ -15013,7 +14950,7 @@ channel$ = 32
 	ret	0
 ?BumpBasisVectors@ShadeContext@@UEAAHQEAVPoint3@@HH@Z ENDP ; ShadeContext::BumpBasisVectors
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -15036,7 +14973,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?SurfacePtScreen@ShadeContext@@UEAA?AVPoint2@@XZ ENDP	; ShadeContext::SurfacePtScreen
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?DP@ShadeContext@@UEAAXAEAVPoint3@@0@Z
 _TEXT	SEGMENT
@@ -15050,7 +14987,7 @@ dpdy$ = 24
 	ret	0
 ?DP@ShadeContext@@UEAAXAEAVPoint3@@0@Z ENDP		; ShadeContext::DP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetIOR@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -15063,7 +15000,7 @@ this$ = 8
 	ret	0
 ?GetIOR@ShadeContext@@UEAAMXZ ENDP			; ShadeContext::GetIOR
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?SetIOR@ShadeContext@@UEAAXM@Z
 _TEXT	SEGMENT
@@ -15076,7 +15013,7 @@ ior$ = 16
 	ret	0
 ?SetIOR@ShadeContext@@UEAAXM@Z ENDP			; ShadeContext::SetIOR
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?OrigView@ShadeContext@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -15098,7 +15035,7 @@ $LN4:
 	ret	0
 ?OrigView@ShadeContext@@UEAA?AVPoint3@@XZ ENDP		; ShadeContext::OrigView
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?Curve@ShadeContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -15111,7 +15048,7 @@ this$ = 8
 	ret	0
 ?Curve@ShadeContext@@UEAAMXZ ENDP			; ShadeContext::Curve
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?OrigNormal@ShadeContext@@UEAA?AVPoint3@@XZ
 _TEXT	SEGMENT
@@ -15133,7 +15070,7 @@ $LN4:
 	ret	0
 ?OrigNormal@ShadeContext@@UEAA?AVPoint3@@XZ ENDP	; ShadeContext::OrigNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?SetNormal@ShadeContext@@UEAAXVPoint3@@@Z
 _TEXT	SEGMENT
@@ -15146,7 +15083,7 @@ p$ = 16
 	ret	0
 ?SetNormal@ShadeContext@@UEAAXVPoint3@@@Z ENDP		; ShadeContext::SetNormal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -15170,7 +15107,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?BarycentricCoords@ShadeContext@@UEAA?AVPoint3@@XZ ENDP	; ShadeContext::BarycentricCoords
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?GetEvalObject@ShadeContext@@UEAAPEAVObject@@XZ
 _TEXT	SEGMENT
@@ -15183,7 +15120,7 @@ this$ = 8
 	ret	0
 ?GetEvalObject@ShadeContext@@UEAAPEAVObject@@XZ ENDP	; ShadeContext::GetEvalObject
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?Node@ShadeContext@@UEAAPEAVINode@@XZ
 _TEXT	SEGMENT
@@ -15196,7 +15133,7 @@ this$ = 8
 	ret	0
 ?Node@ShadeContext@@UEAAPEAVINode@@XZ ENDP		; ShadeContext::Node
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?NodeID@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -15209,7 +15146,7 @@ this$ = 8
 	ret	0
 ?NodeID@ShadeContext@@UEAAHXZ ENDP			; ShadeContext::NodeID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?ProjType@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -15222,7 +15159,7 @@ this$ = 8
 	ret	0
 ?ProjType@ShadeContext@@UEAAHXZ ENDP			; ShadeContext::ProjType
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ?Antialias@ShadeContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -15235,7 +15172,7 @@ this$ = 8
 	ret	0
 ?Antialias@ShadeContext@@UEAAHXZ ENDP			; ShadeContext::Antialias
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -15258,7 +15195,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?ClassID@ShadeContext@@UEAA?AVClass_ID@@XZ ENDP		; ShadeContext::ClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GShadeOutput@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -15305,7 +15242,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???_GShadeOutput@@UEAAPEAXI@Z@4HA ENDP	; `ShadeOutput::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -15316,7 +15253,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???_GShadeOutput@@UEAAPEAXI@Z@4HA ENDP	; `ShadeOutput::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1ShadeOutput@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -15339,7 +15276,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???1ShadeOutput@@UEAA@XZ@4HA ENDP		; `ShadeOutput::~ShadeOutput'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -15349,7 +15286,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???1ShadeOutput@@UEAA@XZ@4HA ENDP		; `ShadeOutput::~ShadeOutput'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ;	COMDAT ??4ShadeOutput@@QEAAAEAV0@AEBV0@@Z
 _TEXT	SEGMENT
@@ -15418,7 +15355,7 @@ $LN10@operator:
 	ret	0
 ??4ShadeOutput@@QEAAAEAV0@AEBV0@@Z ENDP			; ShadeOutput::operator=
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\shadecontext.h
@@ -15479,7 +15416,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0ShadeOutput@@QEAA@XZ@4HA ENDP		; `ShadeOutput::ShadeOutput'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15489,7 +15426,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$1@?0???0ShadeOutput@@QEAA@XZ@4HA ENDP		; `ShadeOutput::ShadeOutput'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15500,7 +15437,7 @@ this$ = 32
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$2@?0???0ShadeOutput@@QEAA@XZ@4HA ENDP		; `ShadeOutput::ShadeOutput'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15510,7 +15447,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0ShadeOutput@@QEAA@XZ@4HA ENDP		; `ShadeOutput::ShadeOutput'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GRenderGlobalContext@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -15557,7 +15494,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???_GRenderGlobalContext@@UEAAPEAXI@Z@4HA ENDP ; `RenderGlobalContext::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -15568,7 +15505,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???_GRenderGlobalContext@@UEAAPEAXI@Z@4HA ENDP ; `RenderGlobalContext::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1RenderGlobalContext@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -15591,7 +15528,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???1RenderGlobalContext@@UEAA@XZ@4HA ENDP	; `RenderGlobalContext::~RenderGlobalContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -15601,7 +15538,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???1RenderGlobalContext@@UEAA@XZ@4HA ENDP	; `RenderGlobalContext::~RenderGlobalContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?Execute@RenderGlobalContext@@UEAA_JH_K00@Z
 _TEXT	SEGMENT
@@ -15618,7 +15555,7 @@ arg3$ = 40
 	ret	0
 ?Execute@RenderGlobalContext@@UEAA_JH_K00@Z ENDP	; RenderGlobalContext::Execute
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?DebugFile@RenderGlobalContext@@UEAAPEAU_iobuf@@XZ
 _TEXT	SEGMENT
@@ -15631,7 +15568,7 @@ this$ = 8
 	ret	0
 ?DebugFile@RenderGlobalContext@@UEAAPEAU_iobuf@@XZ ENDP	; RenderGlobalContext::DebugFile
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?GetViewParams@RenderGlobalContext@@UEAAPEAVViewParams@@XZ
 _TEXT	SEGMENT
@@ -15644,7 +15581,7 @@ this$ = 8
 	ret	0
 ?GetViewParams@RenderGlobalContext@@UEAAPEAVViewParams@@XZ ENDP ; RenderGlobalContext::GetViewParams
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?IntersectWorld@RenderGlobalContext@@UEAAHAEAVRay@@HAEAUISect@@AEAVISectList@@H@Z
 _TEXT	SEGMENT
@@ -15662,7 +15599,7 @@ blurFrame$ = 48
 	ret	0
 ?IntersectWorld@RenderGlobalContext@@UEAAHAEAVRay@@HAEAUISect@@AEAVISectList@@H@Z ENDP ; RenderGlobalContext::IntersectWorld
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?IntersectRay@RenderGlobalContext@@UEAAXPEAVRenderInstance@@AEAVRay@@AEAUISect@@AEAVISectList@@H@Z
 _TEXT	SEGMENT
@@ -15679,7 +15616,7 @@ findExit$ = 48
 	ret	0
 ?IntersectRay@RenderGlobalContext@@UEAAXPEAVRenderInstance@@AEAVRay@@AEAUISect@@AEAVISectList@@H@Z ENDP ; RenderGlobalContext::IntersectRay
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
@@ -15710,7 +15647,7 @@ applyAtmos$ = 40
 	ret	0
 ?EvalGlobalEnvironMap@RenderGlobalContext@@UEAA?AVAColor@@AEAVShadeContext@@AEAVRay@@H@Z ENDP ; RenderGlobalContext::EvalGlobalEnvironMap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?GetRenderInstance@RenderGlobalContext@@UEAAPEAVRenderInstance@@H@Z
 _TEXT	SEGMENT
@@ -15724,7 +15661,7 @@ i$ = 16
 	ret	0
 ?GetRenderInstance@RenderGlobalContext@@UEAAPEAVRenderInstance@@H@Z ENDP ; RenderGlobalContext::GetRenderInstance
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?NumRenderInstances@RenderGlobalContext@@UEAAHXZ
 _TEXT	SEGMENT
@@ -15737,7 +15674,7 @@ this$ = 8
 	ret	0
 ?NumRenderInstances@RenderGlobalContext@@UEAAHXZ ENDP	; RenderGlobalContext::NumRenderInstances
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?GetAAFilterSize@RenderGlobalContext@@UEAAMXZ
 _TEXT	SEGMENT
@@ -15750,7 +15687,7 @@ this$ = 8
 	ret	0
 ?GetAAFilterSize@RenderGlobalContext@@UEAAMXZ ENDP	; RenderGlobalContext::GetAAFilterSize
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?GetAAFilterKernel@RenderGlobalContext@@UEAAPEAVFilterKernel@@XZ
 _TEXT	SEGMENT
@@ -15763,7 +15700,7 @@ this$ = 8
 	ret	0
 ?GetAAFilterKernel@RenderGlobalContext@@UEAAPEAVFilterKernel@@XZ ENDP ; RenderGlobalContext::GetAAFilterKernel
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?GetRenderElement@RenderGlobalContext@@QEAAPEAVIRenderElement@@H@Z
 _TEXT	SEGMENT
@@ -15786,7 +15723,7 @@ $LN3@GetRenderE:
 	ret	0
 ?GetRenderElement@RenderGlobalContext@@QEAAPEAVIRenderElement@@H@Z ENDP ; RenderGlobalContext::GetRenderElement
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ;	COMDAT ?NRenderElements@RenderGlobalContext@@QEAAHXZ
 _TEXT	SEGMENT
@@ -15808,7 +15745,7 @@ $LN3@NRenderEle:
 	ret	0
 ?NRenderElements@RenderGlobalContext@@QEAAHXZ ENDP	; RenderGlobalContext::NRenderElements
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\rendering\renderglobalcontext.h
@@ -15881,7 +15818,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0RenderGlobalContext@@QEAA@XZ@4HA ENDP	; `RenderGlobalContext::RenderGlobalContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15891,7 +15828,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$1@?0???0RenderGlobalContext@@QEAA@XZ@4HA ENDP	; `RenderGlobalContext::RenderGlobalContext'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15902,7 +15839,7 @@ this$ = 32
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$2@?0???0RenderGlobalContext@@QEAA@XZ@4HA ENDP	; `RenderGlobalContext::RenderGlobalContext'::`1'::dtor$2
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -15912,1659 +15849,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1BaseInterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0RenderGlobalContext@@QEAA@XZ@4HA ENDP	; `RenderGlobalContext::RenderGlobalContext'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z
-_TEXT	SEGMENT
-this$ = 8
-message$ = 16
-hMaker$ = 24
-?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z PROC ; ReferenceTarget::NotifyTarget, COMDAT
-
-; 2184 : 		virtual void NotifyTarget(int message, ReferenceMaker* hMaker) { UNUSED_PARAM(message); UNUSED_PARAM(hMaker); }
-
-	ret	0
-?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z ENDP ; ReferenceTarget::NotifyTarget
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?NotifyForeground@ReferenceTarget@@UEAAXH@Z
-_TEXT	SEGMENT
-$T1 = 80
-this$ = 80
-t$ = 88
-?NotifyForeground@ReferenceTarget@@UEAAXH@Z PROC	; ReferenceTarget::NotifyForeground, COMDAT
-
-; 2173 : 		virtual void NotifyForeground(TimeValue t) {
-
-$LN4:
-	mov	QWORD PTR [rsp+16], rbx
-	push	rdi
-	sub	rsp, 64					; 00000040H
-
-; 2174 : 			NotifyDependents(Interval(t,t),PART_PUT_IN_FG,REFMSG_FLAGDEPENDENTS);
-
-	mov	rbx, QWORD PTR [rcx]
-	mov	rdi, rcx
-	lea	rcx, QWORD PTR $T1[rsp]
-	mov	r8d, edx
-	call	QWORD PTR __imp_??0Interval@@QEAA@HH@Z
-	mov	rdx, rax
-	mov	rcx, rdi
-	xor	eax, eax
-	mov	DWORD PTR [rsp+56], eax
-	mov	QWORD PTR [rsp+48], rax
-	mov	DWORD PTR [rsp+40], 1
-	lea	r9d, QWORD PTR [rax+112]
-	mov	DWORD PTR [rsp+32], -16			; fffffff0H
-	lea	r8d, QWORD PTR [rax+1]
-	call	QWORD PTR [rbx+1200]
-
-; 2175 : 		}
-
-	mov	rbx, QWORD PTR [rsp+88]
-	add	rsp, 64					; 00000040H
-	pop	rdi
-	ret	0
-?NotifyForeground@ReferenceTarget@@UEAAXH@Z ENDP	; ReferenceTarget::NotifyForeground
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ PROC	; ReferenceTarget::RefDeletedUndoRedo, COMDAT
-
-; 1989 : 		virtual void RefDeletedUndoRedo() {}
-
-	ret	0
-?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ ENDP	; ReferenceTarget::RefDeletedUndoRedo
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?RefDeleted@ReferenceTarget@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?RefDeleted@ReferenceTarget@@UEAAXXZ PROC		; ReferenceTarget::RefDeleted, COMDAT
-
-; 1980 : 		virtual void RefDeleted() {}
-
-	ret	0
-?RefDeleted@ReferenceTarget@@UEAAXXZ ENDP		; ReferenceTarget::RefDeleted
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z
-_TEXT	SEGMENT
-this$ = 8
-rm$ = 16
-?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z PROC ; ReferenceTarget::RefAddedUndoRedo, COMDAT
-
-; 1969 : 		virtual void RefAddedUndoRedo(RefMakerHandle rm) { UNUSED_PARAM(rm); }
-
-	ret	0
-?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z ENDP ; ReferenceTarget::RefAddedUndoRedo
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?IsRefTarget@ReferenceTarget@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?IsRefTarget@ReferenceTarget@@UEAAHXZ PROC		; ReferenceTarget::IsRefTarget, COMDAT
-
-; 1908 : 		virtual BOOL IsRefTarget() { return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?IsRefTarget@ReferenceTarget@@UEAAHXZ ENDP		; ReferenceTarget::IsRefTarget
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z
-_TEXT	SEGMENT
-this$ = 8
-rtarg$ = 16
-?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::ShouldPersistWeakRef, COMDAT
-
-; 1698 : 		virtual BOOL ShouldPersistWeakRef(RefTargetHandle rtarg) { UNUSED_PARAM(rtarg); return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::ShouldPersistWeakRef
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z
-_TEXT	SEGMENT
-this$ = 8
-rtarg$ = 16
-?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::IsRealDependency, COMDAT
-
-; 1673 : 		virtual BOOL IsRealDependency(ReferenceTarget *rtarg) { UNUSED_PARAM(rtarg); return TRUE;}
-
-	mov	eax, 1
-	ret	0
-?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::IsRealDependency
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?IsRefMaker@ReferenceMaker@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?IsRefMaker@ReferenceMaker@@UEAAHXZ PROC		; ReferenceMaker::IsRefMaker, COMDAT
-
-; 1654 : 		virtual BOOL IsRefMaker() { return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?IsRefMaker@ReferenceMaker@@UEAAHXZ ENDP		; ReferenceMaker::IsRefMaker
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z
-_TEXT	SEGMENT
-this$ = 48
-changeInt$ = 56
-partID$ = 64
-message$ = 72
-sclass$ = 80
-propagate$ = 88
-hTarg$ = 96
-?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::NotifyDependents, COMDAT
-
-; 1387 : 		{
-
-$LN5:
-	sub	rsp, 40					; 00000028H
-
-; 1388 : 			UNUSED_PARAM(changeInt); UNUSED_PARAM(partID);
-; 1389 : 			UNUSED_PARAM(message); UNUSED_PARAM(sclass);
-; 1390 : 			UNUSED_PARAM(propagate); UNUSED_PARAM(hTarg);
-; 1391 : 			DbgAssert(false);
-
-	lea	r9, OFFSET FLAT:??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@
-	mov	ecx, 1391				; 0000056fH
-	lea	r8, OFFSET FLAT:??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@
-	lea	rdx, OFFSET FLAT:??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
-	call	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
-
-; 1392 : 			return REF_FAIL;
-
-	xor	eax, eax
-
-; 1393 : 		};
-
-	add	rsp, 40					; 00000028H
-	ret	0
-?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::NotifyDependents
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-iref$ = 16
-?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z PROC		; ReferenceMaker::RemapRefOnLoad, COMDAT
-
-; 1353 : 		virtual int RemapRefOnLoad(int iref) { return iref; }
-
-	mov	eax, edx
-	ret	0
-?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z ENDP		; ReferenceMaker::RemapRefOnLoad
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
-;	COMDAT ?CanTransferReference@ReferenceMaker@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?CanTransferReference@ReferenceMaker@@UEAAHH@Z PROC	; ReferenceMaker::CanTransferReference, COMDAT
-
-; 1254 : 		virtual BOOL CanTransferReference(int i) { UNUSED_PARAM(i); return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?CanTransferReference@ReferenceMaker@@UEAAHH@Z ENDP	; ReferenceMaker::CanTransferReference
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z
-_TEXT	SEGMENT
-this$ = 8
-used_as_rhs_value$ = 16
-objectSpecifiedName$ = 24
-?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z PROC ; Animatable::GetMacroRecorderName, COMDAT
-
-; 2981 : 		virtual bool GetMacroRecorderName(bool used_as_rhs_value, MSTR &objectSpecifiedName) { return false; }
-
-	xor	al, al
-	ret	0
-?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z ENDP ; Animatable::GetMacroRecorderName
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z
-_TEXT	SEGMENT
-this$ = 8
-desc$ = 16
-?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z PROC ; Animatable::IsParamBlockDesc2Used, COMDAT
-
-; 2970 : 		virtual bool IsParamBlockDesc2Used(ParamBlockDesc2 * desc) { return true; }
-
-	mov	al, 1
-	ret	0
-?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z ENDP ; Animatable::IsParamBlockDesc2Used
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z
-_TEXT	SEGMENT
-$T1 = 48
-this$ = 48
-classID$ = 56
-?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z PROC	; Animatable::IsSubClassOf, COMDAT
-
-; 2285 : 		virtual BOOL IsSubClassOf(Class_ID classID) {
-
-$LN8:
-	push	rbx
-	sub	rsp, 32					; 00000020H
-
-; 2286 : 			return (classID == ClassID());
-
-	mov	rax, QWORD PTR [rcx]
-	mov	rbx, rdx
-	lea	rdx, QWORD PTR $T1[rsp]
-	call	QWORD PTR [rax+40]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
-
-; 170  : 	bool operator==(const Class_ID& cid) const { return ((a == cid.a) && (b == cid.b)); }
-
-	mov	ecx, DWORD PTR [rax]
-	cmp	DWORD PTR [rbx], ecx
-	jne	SHORT $LN5@IsSubClass
-	mov	eax, DWORD PTR [rax+4]
-	cmp	DWORD PTR [rbx+4], eax
-	jne	SHORT $LN5@IsSubClass
-	mov	eax, 1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-
-; 2287 : 		}
-
-	add	rsp, 32					; 00000020H
-	pop	rbx
-	ret	0
-$LN5@IsSubClass:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
-
-; 170  : 	bool operator==(const Class_ID& cid) const { return ((a == cid.a) && (b == cid.b)); }
-
-	xor	eax, eax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-
-; 2286 : 			return (classID == ClassID());
-
-	movzx	eax, al
-
-; 2287 : 		}
-
-	add	rsp, 32					; 00000020H
-	pop	rbx
-	ret	0
-?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z ENDP	; Animatable::IsSubClassOf
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z
-_TEXT	SEGMENT
-this$ = 8
-nodes$ = 16
-Context$ = 24
-?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z PROC ; Animatable::GetSystemNodes, COMDAT
-
-; 2265 : 		virtual void GetSystemNodes(INodeTab &nodes, SysNodeContext Context) {}
-
-	ret	0
-?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z ENDP ; Animatable::GetSystemNodes
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?FreeAllBitmaps@Animatable@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?FreeAllBitmaps@Animatable@@UEAAXXZ PROC		; Animatable::FreeAllBitmaps, COMDAT
-
-; 2237 : 		virtual void FreeAllBitmaps() {}
-
-	ret	0
-?FreeAllBitmaps@Animatable@@UEAAXXZ ENDP		; Animatable::FreeAllBitmaps
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectSubAnim@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-?SelectSubAnim@Animatable@@UEAAHH@Z PROC		; Animatable::SelectSubAnim, COMDAT
-
-; 2163 : 		virtual BOOL SelectSubAnim(int subNum) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?SelectSubAnim@Animatable@@UEAAHH@Z ENDP		; Animatable::SelectSubAnim
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z
-_TEXT	SEGMENT
-this$ = 8
-hwnd$ = 16
-message$ = 24
-wParam$ = 32
-lParam$ = 40
-?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z PROC ; Animatable::TrackViewWinProc, COMDAT
-
-; 2146 : 			LPARAM lParam ) { return 0;}
-
-	xor	eax, eax
-	ret	0
-?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z ENDP ; Animatable::TrackViewWinProc
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z PROC ; Animatable::GetParamDimension, COMDAT
-
-; 2137 : 		virtual ParamDimension* GetParamDimension(int i) { return defaultDim; }
-
-	mov	rax, QWORD PTR __imp_?defaultDim@@3PEAVParamDimension@@EA
-	mov	rax, QWORD PTR [rax]
-	ret	0
-?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z ENDP ; Animatable::GetParamDimension
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-dim$ = 24
-min$ = 32
-max$ = 40
-flags$ = 48
-?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z PROC ; Animatable::GetSubFCurveExtents, COMDAT
-
-; 2128 : 			DWORD flags) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z ENDP ; Animatable::GetSubFCurveExtents
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-min$ = 24
-max$ = 32
-flags$ = 40
-?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z PROC ; Animatable::GetFCurveExtents, COMDAT
-
-; 2097 : 			DWORD flags) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z ENDP ; Animatable::GetFCurveExtents
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?TrackParamsType@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?TrackParamsType@Animatable@@UEAAHXZ PROC		; Animatable::TrackParamsType, COMDAT
-
-; 2069 : 		virtual int TrackParamsType() {return TRACKPARAMS_NONE;}
-
-	xor	eax, eax
-	ret	0
-?TrackParamsType@Animatable@@UEAAHXZ ENDP		; Animatable::TrackParamsType
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-dim$ = 24
-pname$ = 32
-hParent$ = 40
-ip$ = 48
-flags$ = 56
-?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z PROC ; Animatable::EditTrackParams, COMDAT
-
-; 2048 : 			DWORD flags) {}
-
-	ret	0
-?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z ENDP ; Animatable::EditTrackParams
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-dim$ = 24
-hits$ = 32
-rcHit$ = 40
-rcGraph$ = 48
-tzoom$ = 56
-tscroll$ = 64
-vzoom$ = 72
-vscroll$ = 80
-flags$ = 88
-?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::HitTestSubFCurves, COMDAT
-
-; 2013 : 			DWORD flags ) { return HITCURVE_NONE; }
-
-	mov	eax, 4
-	ret	0
-?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::HitTestSubFCurves
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-dim$ = 24
-hdc$ = 32
-rcGraph$ = 40
-rcPaint$ = 48
-tzoom$ = 56
-tscroll$ = 64
-vzoom$ = 72
-vscroll$ = 80
-flags$ = 88
-?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::PaintSubFCurves, COMDAT
-
-; 1959 : 			DWORD flags ) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::PaintSubFCurves
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-hits$ = 24
-rcHit$ = 32
-rcGraph$ = 40
-tzoom$ = 48
-tscroll$ = 56
-vzoom$ = 64
-vscroll$ = 72
-flags$ = 80
-?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::HitTestFCurves, COMDAT
-
-; 1912 : 			DWORD flags ) { return HITCURVE_NONE; }
-
-	mov	eax, 4
-	ret	0
-?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::HitTestFCurves
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-hdc$ = 24
-rcGraph$ = 32
-rcPaint$ = 40
-tzoom$ = 48
-tscroll$ = 56
-vzoom$ = 64
-vscroll$ = 72
-flags$ = 80
-?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::PaintFCurves, COMDAT
-
-; 1858 : 			DWORD flags ) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::PaintFCurves
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-dim$ = 24
-hdc$ = 32
-rcTrack$ = 40
-rcPaint$ = 48
-zoom$ = 56
-scroll$ = 64
-flags$ = 72
-?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z PROC ; Animatable::PaintSubTrack, COMDAT
-
-; 1811 : 			DWORD flags) {return TRACK_DORANGE;}
-
-	mov	eax, 2
-	ret	0
-?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z ENDP ; Animatable::PaintSubTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-hdc$ = 24
-rcTrack$ = 32
-rcPaint$ = 40
-zoom$ = 48
-scroll$ = 56
-flags$ = 64
-?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z PROC ; Animatable::PaintTrack, COMDAT
-
-; 1776 : 			DWORD flags ) { return TRACK_DORANGE; }
-
-	mov	eax, 2
-	ret	0
-?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z ENDP ; Animatable::PaintTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z
-_TEXT	SEGMENT
-this$ = 8
-hits$ = 16
-rcHit$ = 24
-rcTrack$ = 32
-zoom$ = 40
-scroll$ = 48
-flags$ = 56
-?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z PROC ; Animatable::HitTestTrack, COMDAT
-
-; 1736 : 			DWORD flags ) { return TRACK_DORANGE; }
-
-	mov	eax, 2
-	ret	0
-?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z ENDP ; Animatable::HitTestTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetTrackVSpace@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-lineHeight$ = 16
-?GetTrackVSpace@Animatable@@UEAAHH@Z PROC		; Animatable::GetTrackVSpace, COMDAT
-
-; 1694 : 		virtual int GetTrackVSpace( int lineHeight ) { return 1; }
-
-	mov	eax, 1
-	ret	0
-?GetTrackVSpace@Animatable@@UEAAHH@Z ENDP		; Animatable::GetTrackVSpace
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-cobj$ = 24
-iv$ = 32
-flags$ = 40
-?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::PasteSubTrack, COMDAT
-
-; 1685 : 		virtual void PasteSubTrack(int subNum, TrackClipObject *cobj, Interval iv, DWORD flags) {}
-
-	ret	0
-?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::PasteSubTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-iv$ = 24
-flags$ = 32
-?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z PROC ; Animatable::CopySubTrack, COMDAT
-
-; 1672 : 		virtual TrackClipObject *CopySubTrack(int subNum, Interval iv, DWORD flags) { return NULL; }
-
-	xor	eax, eax
-	ret	0
-?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z ENDP ; Animatable::CopySubTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-cobj$ = 24
-iv$ = 32
-flags$ = 40
-?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CanPasteSubTrack, COMDAT
-
-; 1657 : 		virtual BOOL CanPasteSubTrack(int subNum,TrackClipObject *cobj, Interval iv, DWORD flags) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CanPasteSubTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-iv$ = 24
-flags$ = 32
-?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z PROC	; Animatable::CanCopySubTrack, COMDAT
-
-; 1637 : 		virtual BOOL CanCopySubTrack(int subNum, Interval iv, DWORD flags) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z ENDP	; Animatable::CanCopySubTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-cobj$ = 16
-iv$ = 24
-flags$ = 32
-?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::PasteTrack, COMDAT
-
-; 1615 : 		virtual void PasteTrack(TrackClipObject *cobj, Interval iv, DWORD flags) {}
-
-	ret	0
-?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::PasteTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-iv$ = 16
-flags$ = 24
-?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CopyTrack, COMDAT
-
-; 1606 : 		virtual TrackClipObject *CopyTrack(Interval iv, DWORD flags) { return NULL; }
-
-	xor	eax, eax
-	ret	0
-?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CopyTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-cobj$ = 16
-iv$ = 24
-flags$ = 32
-?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CanPasteTrack, COMDAT
-
-; 1594 : 		virtual BOOL CanPasteTrack(TrackClipObject *cobj, Interval iv, DWORD flags) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CanPasteTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-iv$ = 16
-flags$ = 24
-?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z PROC	; Animatable::CanCopyTrack, COMDAT
-
-; 1582 : 		virtual BOOL CanCopyTrack(Interval iv, DWORD flags) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z ENDP	; Animatable::CanCopyTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?RevertSetKeyBuffer@Animatable@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?RevertSetKeyBuffer@Animatable@@UEAAXXZ PROC		; Animatable::RevertSetKeyBuffer, COMDAT
-
-; 1557 : 		virtual void RevertSetKeyBuffer() {}
-
-	ret	0
-?RevertSetKeyBuffer@Animatable@@UEAAXXZ ENDP		; Animatable::RevertSetKeyBuffer
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CommitSetKeyBuffer@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-?CommitSetKeyBuffer@Animatable@@UEAAXH@Z PROC		; Animatable::CommitSetKeyBuffer, COMDAT
-
-; 1538 : 		virtual void CommitSetKeyBuffer(TimeValue t) {}
-
-	ret	0
-?CommitSetKeyBuffer@Animatable@@UEAAXH@Z ENDP		; Animatable::CommitSetKeyBuffer
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SetKeyBufferPresent@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?SetKeyBufferPresent@Animatable@@UEAAHXZ PROC		; Animatable::SetKeyBufferPresent, COMDAT
-
-; 1517 : 		virtual BOOL SetKeyBufferPresent() { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?SetKeyBufferPresent@Animatable@@UEAAHXZ ENDP		; Animatable::SetKeyBufferPresent
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z
-_TEXT	SEGMENT
-this$ = 8
-hit$ = 16
-dim$ = 24
-angle$ = 32
-length$ = 40
-flags$ = 48
-?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z PROC ; Animatable::AdjustTangents, COMDAT
-
-; 1488 : 			DWORD flags) {};
-
-	ret	0
-?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z ENDP ; Animatable::AdjustTangents
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z
-_TEXT	SEGMENT
-this$ = 8
-hit$ = 16
-dim$ = 24
-rcGraph$ = 32
-tzoom$ = 40
-tscroll$ = 48
-vzoom$ = 56
-vscroll$ = 64
-dx$ = 72
-dy$ = 80
-flags$ = 88
-?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z PROC ; Animatable::AdjustTangents, COMDAT
-
-; 1465 : 			DWORD flags) {};
-
-	ret	0
-?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z ENDP ; Animatable::AdjustTangents
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-timeExpr$ = 24
-valExpr$ = 32
-flags$ = 40
-?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z PROC ; Animatable::SetSelKeyCoordsExpr, COMDAT
-
-; 1429 : 				return KEYCOORDS_EXPR_UNSUPPORTED;
-
-	xor	eax, eax
-
-; 1430 : 		}
-
-	ret	0
-?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z ENDP ; Animatable::SetSelKeyCoordsExpr
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SetSelKeyCoords@Animatable@@UEAAXHMK@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-val$ = 24
-flags$ = 32
-?SetSelKeyCoords@Animatable@@UEAAXHMK@Z PROC		; Animatable::SetSelKeyCoords, COMDAT
-
-; 1385 : 		virtual void SetSelKeyCoords(TimeValue t, float val,DWORD flags) {}
-
-	ret	0
-?SetSelKeyCoords@Animatable@@UEAAXHMK@Z ENDP		; Animatable::SetSelKeyCoords
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-val$ = 24
-flags$ = 32
-?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z PROC	; Animatable::GetSelKeyCoords, COMDAT
-
-; 1371 : 			return KEYS_NONESELECTED; 
-
-	mov	eax, 1
-
-; 1372 : 		}
-
-	ret	0
-?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z ENDP	; Animatable::GetSelKeyCoords
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsSubCurveSelected@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-?IsSubCurveSelected@Animatable@@UEAAHH@Z PROC		; Animatable::IsSubCurveSelected, COMDAT
-
-; 1343 : 		virtual BOOL IsSubCurveSelected(int subNum) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?IsSubCurveSelected@Animatable@@UEAAHH@Z ENDP		; Animatable::IsSubCurveSelected
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsCurveSelected@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?IsCurveSelected@Animatable@@UEAAHXZ PROC		; Animatable::IsCurveSelected, COMDAT
-
-; 1338 : 		virtual BOOL IsCurveSelected() { return FALSE; }		
-
-	xor	eax, eax
-	ret	0
-?IsCurveSelected@Animatable@@UEAAHXZ ENDP		; Animatable::IsCurveSelected
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectCurve@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-sel$ = 16
-?SelectCurve@Animatable@@UEAAXH@Z PROC			; Animatable::SelectCurve, COMDAT
-
-; 1333 : 		virtual void SelectCurve(BOOL sel) {}
-
-	ret	0
-?SelectCurve@Animatable@@UEAAXH@Z ENDP			; Animatable::SelectCurve
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-origin$ = 24
-scale$ = 32
-flags$ = 40
-?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z PROC ; Animatable::ScaleKeyValues, COMDAT
-
-; 1326 : 			DWORD flags) {}
-
-	ret	0
-?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z ENDP ; Animatable::ScaleKeyValues
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z
-_TEXT	SEGMENT
-this$ = 8
-dim$ = 16
-delta$ = 24
-flags$ = 32
-?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z PROC ; Animatable::MoveKeys, COMDAT
-
-; 1280 : 		virtual void MoveKeys(ParamDimensionBase *dim, float delta, DWORD flags) {}  
-
-	ret	0
-?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z ENDP ; Animatable::MoveKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?AddNewKey@Animatable@@UEAAXHK@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-flags$ = 24
-?AddNewKey@Animatable@@UEAAXHK@Z PROC			; Animatable::AddNewKey, COMDAT
-
-; 1256 : 		virtual void AddNewKey(TimeValue t, DWORD flags) {}
-
-	ret	0
-?AddNewKey@Animatable@@UEAAXHK@Z ENDP			; Animatable::AddNewKey
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CloneSelectedKeys@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-offset$ = 16
-?CloneSelectedKeys@Animatable@@UEAAXH@Z PROC		; Animatable::CloneSelectedKeys, COMDAT
-
-; 1245 : 		virtual void CloneSelectedKeys(BOOL offset = FALSE) {}   
-
-	ret	0
-?CloneSelectedKeys@Animatable@@UEAAXH@Z ENDP		; Animatable::CloneSelectedKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?NumSelKeys@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?NumSelKeys@Animatable@@UEAAHXZ PROC			; Animatable::NumSelKeys, COMDAT
-
-; 1239 : 		virtual int NumSelKeys() { return 0; }
-
-	xor	eax, eax
-	ret	0
-?NumSelKeys@Animatable@@UEAAHXZ ENDP			; Animatable::NumSelKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetFlagKeyIndex@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?GetFlagKeyIndex@Animatable@@UEAAHXZ PROC		; Animatable::GetFlagKeyIndex, COMDAT
-
-; 1235 : 		virtual int GetFlagKeyIndex() { return -1; } 
-
-	or	eax, -1
-	ret	0
-?GetFlagKeyIndex@Animatable@@UEAAHXZ ENDP		; Animatable::GetFlagKeyIndex
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z
-_TEXT	SEGMENT
-this$ = 8
-hit$ = 16
-?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z PROC	; Animatable::FlagKey, COMDAT
-
-; 1227 : 		virtual void FlagKey(TrackHitRecord hit) {}
-
-	ret	0
-?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z ENDP	; Animatable::FlagKey
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsKeySelected@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?IsKeySelected@Animatable@@UEAAHH@Z PROC		; Animatable::IsKeySelected, COMDAT
-
-; 1207 : 		virtual BOOL IsKeySelected(int i) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?IsKeySelected@Animatable@@UEAAHH@Z ENDP		; Animatable::IsKeySelected
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectKeyByIndex@Animatable@@UEAAXHH@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-sel$ = 24
-?SelectKeyByIndex@Animatable@@UEAAXHH@Z PROC		; Animatable::SelectKeyByIndex, COMDAT
-
-; 1201 : 		virtual void SelectKeyByIndex(int i, BOOL sel) {}
-
-	ret	0
-?SelectKeyByIndex@Animatable@@UEAAXHH@Z ENDP		; Animatable::SelectKeyByIndex
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectSubCurve@Animatable@@UEAAXHH@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-sel$ = 24
-?SelectSubCurve@Animatable@@UEAAXHH@Z PROC		; Animatable::SelectSubCurve, COMDAT
-
-; 1192 : 		virtual void SelectSubCurve(int subNum, BOOL sel) {}
-
-	ret	0
-?SelectSubCurve@Animatable@@UEAAXHH@Z ENDP		; Animatable::SelectSubCurve
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-sel$ = 24
-flags$ = 32
-?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z PROC ; Animatable::SelectSubKeys, COMDAT
-
-; 1183 : 		virtual void SelectSubKeys(int subNum, TrackHitTab& sel, DWORD flags) {} 
-
-	ret	0
-?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z ENDP ; Animatable::SelectSubKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-sel$ = 16
-flags$ = 24
-?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z PROC ; Animatable::SelectKeys, COMDAT
-
-; 1160 : 		virtual void SelectKeys(TrackHitTab& sel, DWORD flags) {}
-
-	ret	0
-?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z ENDP ; Animatable::SelectKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?DeleteKeyByIndex@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-index$ = 16
-?DeleteKeyByIndex@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteKeyByIndex, COMDAT
-
-; 1144 : 		virtual void DeleteKeyByIndex(int index) {}
-
-	ret	0
-?DeleteKeyByIndex@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteKeyByIndex
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?DeleteKeys@Animatable@@UEAAXK@Z
-_TEXT	SEGMENT
-this$ = 8
-flags$ = 16
-?DeleteKeys@Animatable@@UEAAXK@Z PROC			; Animatable::DeleteKeys, COMDAT
-
-; 1139 : 		virtual void DeleteKeys(DWORD flags) {}
-
-	ret	0
-?DeleteKeys@Animatable@@UEAAXK@Z ENDP			; Animatable::DeleteKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?SupportTimeOperations@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?SupportTimeOperations@Animatable@@UEAAHXZ PROC		; Animatable::SupportTimeOperations, COMDAT
-
-; 1107 : 		virtual BOOL SupportTimeOperations() { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?SupportTimeOperations@Animatable@@UEAAHXZ ENDP		; Animatable::SupportTimeOperations
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?InsertTime@Animatable@@UEAAXHH@Z
-_TEXT	SEGMENT
-this$ = 8
-ins$ = 16
-amount$ = 24
-?InsertTime@Animatable@@UEAAXHH@Z PROC			; Animatable::InsertTime, COMDAT
-
-; 1097 : 		virtual void InsertTime(TimeValue ins, TimeValue amount) {}
-
-	ret	0
-?InsertTime@Animatable@@UEAAXHH@Z ENDP			; Animatable::InsertTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?ScaleTime@Animatable@@UEAAXVInterval@@M@Z
-_TEXT	SEGMENT
-this$ = 8
-iv$ = 16
-s$ = 24
-?ScaleTime@Animatable@@UEAAXVInterval@@M@Z PROC		; Animatable::ScaleTime, COMDAT
-
-; 1087 : 		virtual void ScaleTime(Interval iv, float s) {}
-
-	ret	0
-?ScaleTime@Animatable@@UEAAXVInterval@@M@Z ENDP		; Animatable::ScaleTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?ReverseTime@Animatable@@UEAAXVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-iv$ = 16
-flags$ = 24
-?ReverseTime@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::ReverseTime, COMDAT
-
-; 1077 : 		virtual void ReverseTime(Interval iv, DWORD flags) {}
-
-	ret	0
-?ReverseTime@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::ReverseTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?DeleteTime@Animatable@@UEAAXVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-iv$ = 16
-flags$ = 24
-?DeleteTime@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::DeleteTime, COMDAT
-
-; 1061 : 		virtual void DeleteTime(Interval iv, DWORD flags) {}
-
-	ret	0
-?DeleteTime@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::DeleteTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-range$ = 16
-flags$ = 24
-?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::EditTimeRange, COMDAT
-
-; 1049 : 		virtual void EditTimeRange(Interval range, DWORD flags) {};
-
-	ret	0
-?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::EditTimeRange
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-sel$ = 16
-range$ = 24
-flags$ = 32
-?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z PROC ; Animatable::GetKeySelState, COMDAT
-
-; 931  : 		virtual int GetKeySelState(BitArray& sel, Interval range, DWORD flags) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z ENDP ; Animatable::GetKeySelState
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z
-_TEXT	SEGMENT
-this$ = 8
-times$ = 16
-range$ = 24
-flags$ = 32
-?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z PROC ; Animatable::GetKeyTimes, COMDAT
-
-; 913  : 		virtual int GetKeyTimes(Tab<TimeValue>& times, Interval range, DWORD flags) { return 0; }		
-
-	xor	eax, eax
-	ret	0
-?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z ENDP ; Animatable::GetKeyTimes
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?IsKeyAtTime@Animatable@@UEAAHHK@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-flags$ = 24
-?IsKeyAtTime@Animatable@@UEAAHHK@Z PROC			; Animatable::IsKeyAtTime, COMDAT
-
-; 888  : 		virtual BOOL IsKeyAtTime(TimeValue t, DWORD flags) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?IsKeyAtTime@Animatable@@UEAAHHK@Z ENDP			; Animatable::IsKeyAtTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?DeleteKeyAtTime@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-?DeleteKeyAtTime@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteKeyAtTime, COMDAT
-
-; 878  : 		virtual void DeleteKeyAtTime(TimeValue t) {}
-
-	ret	0
-?DeleteKeyAtTime@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteKeyAtTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CopyKeysFromTime@Animatable@@UEAAXHHK@Z
-_TEXT	SEGMENT
-this$ = 8
-src$ = 16
-dst$ = 24
-flags$ = 32
-?CopyKeysFromTime@Animatable@@UEAAXHHK@Z PROC		; Animatable::CopyKeysFromTime, COMDAT
-
-; 873  : 		virtual void CopyKeysFromTime(TimeValue src, TimeValue dst, DWORD flags) {} 
-
-	ret	0
-?CopyKeysFromTime@Animatable@@UEAAXHHK@Z ENDP		; Animatable::CopyKeysFromTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-flags$ = 24
-nt$ = 32
-?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z PROC		; Animatable::GetNextKeyTime, COMDAT
-
-; 862  : 		virtual BOOL GetNextKeyTime(TimeValue t, DWORD flags, TimeValue &nt) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z ENDP		; Animatable::GetNextKeyTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetKeyIndex@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-?GetKeyIndex@Animatable@@UEAAHH@Z PROC			; Animatable::GetKeyIndex, COMDAT
-
-; 841  : 		virtual int GetKeyIndex(TimeValue t) { return -1; }
-
-	or	eax, -1
-	ret	0
-?GetKeyIndex@Animatable@@UEAAHH@Z ENDP			; Animatable::GetKeyIndex
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetKeyTime@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-index$ = 16
-?GetKeyTime@Animatable@@UEAAHH@Z PROC			; Animatable::GetKeyTime, COMDAT
-
-; 835  : 		virtual TimeValue GetKeyTime(int index) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?GetKeyTime@Animatable@@UEAAHH@Z ENDP			; Animatable::GetKeyTime
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?NumKeys@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?NumKeys@Animatable@@UEAAHXZ PROC			; Animatable::NumKeys, COMDAT
-
-; 830  : 		virtual int NumKeys() { return NOT_KEYFRAMEABLE; }
-
-	or	eax, -1
-	ret	0
-?NumKeys@Animatable@@UEAAHXZ ENDP			; Animatable::NumKeys
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?EditTrack@Animatable@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?EditTrack@Animatable@@UEAAXXZ PROC			; Animatable::EditTrack, COMDAT
-
-; 821  : 		virtual void EditTrack() { assert(0); } 
-
-	mov	r8d, 821				; 00000335H
-	lea	rdx, OFFSET FLAT:??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
-	lea	rcx, OFFSET FLAT:??_C@_13COJANIEC@?$AA0?$AA?$AA@
-	rex_jmp	QWORD PTR __imp__wassert
-?EditTrack@Animatable@@UEAAXXZ ENDP			; Animatable::EditTrack
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?RenderEnd@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-?RenderEnd@Animatable@@UEAAHH@Z PROC			; Animatable::RenderEnd, COMDAT
-
-; 817  : 		virtual int RenderEnd(TimeValue t) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?RenderEnd@Animatable@@UEAAHH@Z ENDP			; Animatable::RenderEnd
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?RenderBegin@Animatable@@UEAAHHK@Z
-_TEXT	SEGMENT
-this$ = 8
-t$ = 16
-flags$ = 24
-?RenderBegin@Animatable@@UEAAHHK@Z PROC			; Animatable::RenderBegin, COMDAT
-
-; 810  : 		virtual int RenderBegin(TimeValue t, ULONG flags=0) { return 0; }
-
-	xor	eax, eax
-	ret	0
-?RenderBegin@Animatable@@UEAAHHK@Z ENDP			; Animatable::RenderBegin
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?ChildAnim@Animatable@@UEAAPEAV1@H@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?ChildAnim@Animatable@@UEAAPEAV1@H@Z PROC		; Animatable::ChildAnim, COMDAT
-
-; 757  : 		virtual Animatable* ChildAnim(int i) { return NULL; } 
-
-	xor	eax, eax
-	ret	0
-?ChildAnim@Animatable@@UEAAPEAV1@H@Z ENDP		; Animatable::ChildAnim
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?NumChildren@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?NumChildren@Animatable@@UEAAHXZ PROC			; Animatable::NumChildren, COMDAT
-
-; 754  : 		virtual	int NumChildren() { return 0; }   
-
-	xor	eax, eax
-	ret	0
-?NumChildren@Animatable@@UEAAHXZ ENDP			; Animatable::NumChildren
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanMakeUnique@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?CanMakeUnique@Animatable@@UEAAHXZ PROC			; Animatable::CanMakeUnique, COMDAT
-
-; 749  : 		virtual BOOL CanMakeUnique() { return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?CanMakeUnique@Animatable@@UEAAHXZ ENDP			; Animatable::CanMakeUnique
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanCopyAnim@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?CanCopyAnim@Animatable@@UEAAHXZ PROC			; Animatable::CanCopyAnim, COMDAT
-
-; 739  : 		virtual BOOL CanCopyAnim() { return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?CanCopyAnim@Animatable@@UEAAHXZ ENDP			; Animatable::CanCopyAnim
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?GetSubAnimCurveColor@Animatable@@UEAAKH@Z
-_TEXT	SEGMENT
-this$ = 8
-subNum$ = 16
-?GetSubAnimCurveColor@Animatable@@UEAAKH@Z PROC		; Animatable::GetSubAnimCurveColor, COMDAT
-
-; 713  : 		virtual DWORD GetSubAnimCurveColor(int subNum) { return PAINTCURVE_GENCOLOR; }
-
-	mov	eax, 16
-	ret	0
-?GetSubAnimCurveColor@Animatable@@UEAAKH@Z ENDP		; Animatable::GetSubAnimCurveColor
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?DeleteSubAnim@Animatable@@UEAAXH@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?DeleteSubAnim@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteSubAnim, COMDAT
-
-; 698  : 		virtual void DeleteSubAnim(int i) {}
-
-	ret	0
-?DeleteSubAnim@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteSubAnim
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanDeleteSubAnim@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-i$ = 16
-?CanDeleteSubAnim@Animatable@@UEAAHH@Z PROC		; Animatable::CanDeleteSubAnim, COMDAT
-
-; 692  : 		virtual BOOL CanDeleteSubAnim(int i) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?CanDeleteSubAnim@Animatable@@UEAAHH@Z ENDP		; Animatable::CanDeleteSubAnim
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?CanAssignController@Animatable@@UEAAHH@Z
-_TEXT	SEGMENT
-this$ = 8
-subAnim$ = 16
-?CanAssignController@Animatable@@UEAAHH@Z PROC		; Animatable::CanAssignController, COMDAT
-
-; 674  : 		virtual BOOL CanAssignController(int subAnim) { return TRUE; }
-
-	mov	eax, 1
-	ret	0
-?CanAssignController@Animatable@@UEAAHH@Z ENDP		; Animatable::CanAssignController
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?AssignController@Animatable@@UEAAHPEAV1@H@Z
-_TEXT	SEGMENT
-this$ = 8
-control$ = 16
-subAnim$ = 24
-?AssignController@Animatable@@UEAAHPEAV1@H@Z PROC	; Animatable::AssignController, COMDAT
-
-; 664  : 		virtual BOOL AssignController(Animatable *control,int subAnim) { return FALSE; }
-
-	xor	eax, eax
-	ret	0
-?AssignController@Animatable@@UEAAHPEAV1@H@Z ENDP	; Animatable::AssignController
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?InvisibleProperty@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?InvisibleProperty@Animatable@@UEAAHXZ PROC		; Animatable::InvisibleProperty, COMDAT
-
-; 653  : 		virtual BOOL InvisibleProperty() { return FALSE; } 
-
-	xor	eax, eax
-	ret	0
-?InvisibleProperty@Animatable@@UEAAHXZ ENDP		; Animatable::InvisibleProperty
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?BypassPropertyLevel@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?BypassPropertyLevel@Animatable@@UEAAHXZ PROC		; Animatable::BypassPropertyLevel, COMDAT
-
-; 645  : 		virtual BOOL BypassPropertyLevel() { return FALSE; } 
-
-	xor	eax, eax
-	ret	0
-?BypassPropertyLevel@Animatable@@UEAAHXZ ENDP		; Animatable::BypassPropertyLevel
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?BypassTrackBar@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?BypassTrackBar@Animatable@@UEAAHXZ PROC		; Animatable::BypassTrackBar, COMDAT
-
-; 636  : 		virtual BOOL BypassTrackBar() { return BypassTreeView(); } 
-
-	mov	rax, QWORD PTR [rcx]
-	rex_jmp	QWORD PTR [rax+128]
-?BypassTrackBar@Animatable@@UEAAHXZ ENDP		; Animatable::BypassTrackBar
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?BypassTreeView@Animatable@@UEAAHXZ
-_TEXT	SEGMENT
-this$ = 8
-?BypassTreeView@Animatable@@UEAAHXZ PROC		; Animatable::BypassTreeView, COMDAT
-
-; 626  : 		virtual BOOL BypassTreeView() { return FALSE; } 
-
-	xor	eax, eax
-	ret	0
-?BypassTreeView@Animatable@@UEAAHXZ ENDP		; Animatable::BypassTreeView
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z
-_TEXT	SEGMENT
-this$ = 8
-ip$ = 16
-flags$ = 24
-next$ = 32
-?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z PROC ; Animatable::EndEditParams, COMDAT
-
-; 414  : 		virtual void EndEditParams(IObjParam *ip, ULONG flags, Animatable *next = NULL) {} 
-
-	ret	0
-?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ENDP ; Animatable::EndEditParams
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z
-_TEXT	SEGMENT
-this$ = 8
-ip$ = 16
-flags$ = 24
-prev$ = 32
-?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z PROC ; Animatable::BeginEditParams, COMDAT
-
-; 395  : 		virtual void BeginEditParams(IObjParam *ip, ULONG flags, Animatable *prev = NULL) {} 
-
-	ret	0
-?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ENDP ; Animatable::BeginEditParams
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
-;	COMDAT ?FreeCaches@Animatable@@UEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?FreeCaches@Animatable@@UEAAXXZ PROC			; Animatable::FreeCaches, COMDAT
-
-; 353  : 		virtual void FreeCaches() {}
-
-	ret	0
-?FreeCaches@Animatable@@UEAAXXZ ENDP			; Animatable::FreeCaches
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-;	COMDAT ??_4Interval@@QEAAAEAV0@V0@@Z
-_TEXT	SEGMENT
-$T1 = 48
-this$ = 48
-i$ = 56
-??_4Interval@@QEAAAEAV0@V0@@Z PROC			; Interval::operator&=, COMDAT
-
-; 147  : 		Interval& operator&=(const Interval i) { return (*this = (*this&i)); }
-
-$LN4:
-	push	rbx
-	sub	rsp, 32					; 00000020H
-	mov	r8, rdx
-	mov	rbx, rcx
-	lea	rdx, QWORD PTR $T1[rsp]
-	call	QWORD PTR __imp_??IInterval@@QEBA?AV0@V0@@Z
-	mov	rdx, QWORD PTR [rax]
-	mov	rax, rbx
-	mov	QWORD PTR [rbx], rdx
-	add	rsp, 32					; 00000020H
-	pop	rbx
-	ret	0
-??_4Interval@@QEAAAEAV0@V0@@Z ENDP			; Interval::operator&=
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-;	COMDAT ?SetInfinite@Interval@@QEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?SetInfinite@Interval@@QEAAXXZ PROC			; Interval::SetInfinite, COMDAT
-
-; 122  : 		void SetInfinite() { start = TIME_NegInfinity; end = TIME_PosInfinity; }
-
-	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
-	mov	DWORD PTR [rcx+4], 2147483647		; 7fffffffH
-	ret	0
-?SetInfinite@Interval@@QEAAXXZ ENDP			; Interval::SetInfinite
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-;	COMDAT ?SetEmpty@Interval@@QEAAXXZ
-_TEXT	SEGMENT
-this$ = 8
-?SetEmpty@Interval@@QEAAXXZ PROC			; Interval::SetEmpty, COMDAT
-
-; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
-
-	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
-	mov	DWORD PTR [rcx+4], -2147483648		; ffffffff80000000H
-	ret	0
-?SetEmpty@Interval@@QEAAXXZ ENDP			; Interval::SetEmpty
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-;	COMDAT ??0Interval@@QEAA@XZ
-_TEXT	SEGMENT
-this$ = 8
-??0Interval@@QEAA@XZ PROC				; Interval::Interval, COMDAT
-
-; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
-
-	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
-
-; 58   : 		Interval() { SetEmpty(); } 
-
-	mov	rax, rcx
-
-; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
-
-	mov	DWORD PTR [rcx+4], -2147483648		; ffffffff80000000H
-
-; 58   : 		Interval() { SetEmpty(); } 
-
-	ret	0
-??0Interval@@QEAA@XZ ENDP				; Interval::Interval
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@AEBV0@@Z
 _TEXT	SEGMENT
@@ -17586,7 +15871,7 @@ c$ = 16
 	ret	0
 ??0AColor@@QEAA@AEBV0@@Z ENDP				; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@HHHH@Z
 _TEXT	SEGMENT
@@ -17618,7 +15903,7 @@ A$ = 40
 	ret	0
 ??0AColor@@QEAA@HHHH@Z ENDP				; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@MMMM@Z
 _TEXT	SEGMENT
@@ -17640,7 +15925,7 @@ A$ = 40
 	ret	0
 ??0AColor@@QEAA@MMMM@Z ENDP				; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@XZ
 _TEXT	SEGMENT
@@ -17653,7 +15938,7 @@ this$ = 8
 	ret	0
 ??0AColor@@QEAA@XZ ENDP					; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 ;	COMDAT ??0Color@@QEAA@XZ
 _TEXT	SEGMENT
@@ -17666,7 +15951,7 @@ this$ = 8
 	ret	0
 ??0Color@@QEAA@XZ ENDP					; Color::Color
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\bitarray.h
 ;	COMDAT ?BitMask@BitArray@@AEBA_KH@Z
 _TEXT	SEGMENT
@@ -17687,7 +15972,7 @@ $LN3@BitMask:
 	ret	0
 ?BitMask@BitArray@@AEBA_KH@Z ENDP			; BitArray::BitMask
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\bitarray.h
 ;	COMDAT ?UseLocalBits@BitArray@@AEBA_NXZ
 _TEXT	SEGMENT
@@ -17701,7 +15986,7 @@ this$ = 8
 	ret	0
 ?UseLocalBits@BitArray@@AEBA_NXZ ENDP			; BitArray::UseLocalBits
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\bitarray.h
 ;	COMDAT ?Set@BitArray@@QEAAXH@Z
 _TEXT	SEGMENT
@@ -17817,7 +16102,7 @@ $LN4@Set:
 	ret	0
 ?Set@BitArray@@QEAAXH@Z ENDP				; BitArray::Set
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ;	COMDAT ??0Matrix3@@QEAA@XZ
 _TEXT	SEGMENT
@@ -17831,7 +16116,43 @@ this$ = 8
 	ret	0
 ??0Matrix3@@QEAA@XZ ENDP				; Matrix3::Matrix3
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
+_TEXT	SEGMENT
+__$ReturnUdt$ = 8
+a$ = 16
+f$ = 24
+??D@YA?AVPoint3@@AEBV0@M@Z PROC				; operator*, COMDAT
+
+; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmulss	xmm0, xmm2, DWORD PTR [rdx]
+	vmulss	xmm1, xmm2, DWORD PTR [rdx+4]
+
+; 61   : 		 x = X; y = Y; z = Z; 
+
+	vmovss	DWORD PTR [rcx], xmm0
+
+; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmulss	xmm0, xmm2, DWORD PTR [rdx+8]
+
+; 61   : 		 x = X; y = Y; z = Z; 
+
+	vmovss	DWORD PTR [rcx+8], xmm0
+	vmovss	DWORD PTR [rcx+4], xmm1
+
+; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	mov	rax, rcx
+
+; 328  :    }
+
+	ret	0
+??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
+_TEXT	ENDS
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?Execute@ClassDesc@@UEAA_JH_K00@Z
 _TEXT	SEGMENT
@@ -17848,7 +16169,7 @@ arg3$ = 40
 	ret	0
 ?Execute@ClassDesc@@UEAA_JH_K00@Z ENDP			; ClassDesc::Execute
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
@@ -17870,7 +16191,7 @@ __$ReturnUdt$ = 16
 	ret	0
 ?SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ ENDP		; ClassDesc::SubClassID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
@@ -17897,7 +16218,7 @@ $LN4@ClearInter:
 	ret	0
 ?ClearInterfaces@ClassDesc@@UEAAXXZ ENDP		; ClassDesc::ClearInterfaces
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z
 _TEXT	SEGMENT
@@ -17917,7 +16238,7 @@ $LN4:
 	ret	0
 ?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z ENDP ; ClassDesc::GetInterfaceAt
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
@@ -17942,7 +16263,7 @@ $LN4@NumInterfa:
 	ret	0
 ?NumInterfaces@ClassDesc@@UEAAHXZ ENDP			; ClassDesc::NumInterfaces
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z
 _TEXT	SEGMENT
@@ -17958,7 +16279,7 @@ rect$ = 32
 	ret	0
 ?DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z ENDP ; ClassDesc::DrawRepresentation
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z
 _TEXT	SEGMENT
@@ -17972,7 +16293,7 @@ pbd$ = 16
 	ret	0
 ?GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z ENDP ; ClassDesc::GetUserDlgProc
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z
 _TEXT	SEGMENT
@@ -17986,7 +16307,7 @@ pbd$ = 16
 	ret	0
 ?GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z ENDP ; ClassDesc::GetParamMap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ
 _TEXT	SEGMENT
@@ -17999,7 +16320,7 @@ this$ = 8
 	ret	0
 ?UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ ENDP ; ClassDesc::UseOnlyInternalNameForMAXScriptExposure
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?InitialRollupPageState@ClassDesc@@UEAAKXZ
 _TEXT	SEGMENT
@@ -18012,7 +16333,7 @@ this$ = 8
 	ret	0
 ?InitialRollupPageState@ClassDesc@@UEAAKXZ ENDP		; ClassDesc::InitialRollupPageState
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z
 _TEXT	SEGMENT
@@ -18026,7 +16347,7 @@ iload$ = 16
 	ret	0
 ?Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z ENDP	; ClassDesc::Load
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z
 _TEXT	SEGMENT
@@ -18040,7 +16361,7 @@ isave$ = 16
 	ret	0
 ?Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z ENDP	; ClassDesc::Save
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?NeedsToSave@ClassDesc@@UEAAHXZ
 _TEXT	SEGMENT
@@ -18053,7 +16374,7 @@ this$ = 8
 	ret	0
 ?NeedsToSave@ClassDesc@@UEAAHXZ ENDP			; ClassDesc::NeedsToSave
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z
 _TEXT	SEGMENT
@@ -18067,7 +16388,7 @@ pNode$ = 16
 	ret	0
 ?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z ENDP ; ClassDesc::CreateManipulator
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z
 _TEXT	SEGMENT
@@ -18082,7 +16403,7 @@ pNode$ = 24
 	ret	0
 ?CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z ENDP ; ClassDesc::CreateManipulator
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z
 _TEXT	SEGMENT
@@ -18096,7 +16417,7 @@ pNode$ = 16
 	ret	0
 ?CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z ENDP	; ClassDesc::CanManipulateNode
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
@@ -18110,7 +16431,7 @@ hTarget$ = 16
 	ret	0
 ?CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z ENDP ; ClassDesc::CanManipulate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?IsManipulator@ClassDesc@@UEAAHXZ
 _TEXT	SEGMENT
@@ -18123,7 +16444,7 @@ this$ = 8
 	ret	0
 ?IsManipulator@ClassDesc@@UEAAHXZ ENDP			; ClassDesc::IsManipulator
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z
 _TEXT	SEGMENT
@@ -18137,7 +16458,7 @@ i$ = 16
 	ret	0
 ?GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z ENDP ; ClassDesc::GetActionTable
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?NumActionTables@ClassDesc@@UEAAHXZ
 _TEXT	SEGMENT
@@ -18150,7 +16471,7 @@ this$ = 8
 	ret	0
 ?NumActionTables@ClassDesc@@UEAAHXZ ENDP		; ClassDesc::NumActionTables
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z
 _TEXT	SEGMENT
@@ -18163,7 +16484,7 @@ hParent$ = 16
 	ret	0
 ?EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z ENDP	; ClassDesc::EditClassParams
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?HasClassParams@ClassDesc@@UEAAHXZ
 _TEXT	SEGMENT
@@ -18176,7 +16497,7 @@ this$ = 8
 	ret	0
 ?HasClassParams@ClassDesc@@UEAAHXZ ENDP			; ClassDesc::HasClassParams
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z
 _TEXT	SEGMENT
@@ -18190,7 +16511,7 @@ i$ = 16
 	ret	0
 ?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z ENDP	; ClassDesc::OkToCreate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z
 _TEXT	SEGMENT
@@ -18204,7 +16525,7 @@ i$ = 16
 	ret	0
 ?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z ENDP	; ClassDesc::EndCreate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\plugapi.h
 ;	COMDAT ?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z
 _TEXT	SEGMENT
@@ -18218,7 +16539,7 @@ i$ = 16
 	ret	0
 ?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z ENDP	; ClassDesc::BeginCreate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ??A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z
 _TEXT	SEGMENT
@@ -18337,7 +16658,7 @@ i$ = 88
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4HA ENDP ; `Tab<FPInterface * __ptr64>::operator[]'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18349,7 +16670,7 @@ i$ = 88
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4HA ENDP ; `Tab<FPInterface * __ptr64>::operator[]'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ?ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ
 _TEXT	SEGMENT
@@ -18373,7 +16694,7 @@ $LN2@ZeroCount:
 	ret	0
 ?ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ ENDP	; Tab<FPInterface * __ptr64>::ZeroCount
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ?Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ
 _TEXT	SEGMENT
@@ -18399,7 +16720,1660 @@ $LN2@Count:
 	ret	0
 ?Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ ENDP		; Tab<FPInterface * __ptr64>::Count
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z
+_TEXT	SEGMENT
+this$ = 8
+message$ = 16
+hMaker$ = 24
+?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z PROC ; ReferenceTarget::NotifyTarget, COMDAT
+
+; 2184 : 		virtual void NotifyTarget(int message, ReferenceMaker* hMaker) { UNUSED_PARAM(message); UNUSED_PARAM(hMaker); }
+
+	ret	0
+?NotifyTarget@ReferenceTarget@@UEAAXHPEAVReferenceMaker@@@Z ENDP ; ReferenceTarget::NotifyTarget
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?NotifyForeground@ReferenceTarget@@UEAAXH@Z
+_TEXT	SEGMENT
+$T1 = 80
+this$ = 80
+t$ = 88
+?NotifyForeground@ReferenceTarget@@UEAAXH@Z PROC	; ReferenceTarget::NotifyForeground, COMDAT
+
+; 2173 : 		virtual void NotifyForeground(TimeValue t) {
+
+$LN4:
+	mov	QWORD PTR [rsp+16], rbx
+	push	rdi
+	sub	rsp, 64					; 00000040H
+
+; 2174 : 			NotifyDependents(Interval(t,t),PART_PUT_IN_FG,REFMSG_FLAGDEPENDENTS);
+
+	mov	rbx, QWORD PTR [rcx]
+	mov	rdi, rcx
+	lea	rcx, QWORD PTR $T1[rsp]
+	mov	r8d, edx
+	call	QWORD PTR __imp_??0Interval@@QEAA@HH@Z
+	mov	rdx, rax
+	mov	rcx, rdi
+	xor	eax, eax
+	mov	DWORD PTR [rsp+56], eax
+	mov	QWORD PTR [rsp+48], rax
+	mov	DWORD PTR [rsp+40], 1
+	lea	r9d, QWORD PTR [rax+112]
+	mov	DWORD PTR [rsp+32], -16			; fffffff0H
+	lea	r8d, QWORD PTR [rax+1]
+	call	QWORD PTR [rbx+1200]
+
+; 2175 : 		}
+
+	mov	rbx, QWORD PTR [rsp+88]
+	add	rsp, 64					; 00000040H
+	pop	rdi
+	ret	0
+?NotifyForeground@ReferenceTarget@@UEAAXH@Z ENDP	; ReferenceTarget::NotifyForeground
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ PROC	; ReferenceTarget::RefDeletedUndoRedo, COMDAT
+
+; 1989 : 		virtual void RefDeletedUndoRedo() {}
+
+	ret	0
+?RefDeletedUndoRedo@ReferenceTarget@@UEAAXXZ ENDP	; ReferenceTarget::RefDeletedUndoRedo
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?RefDeleted@ReferenceTarget@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?RefDeleted@ReferenceTarget@@UEAAXXZ PROC		; ReferenceTarget::RefDeleted, COMDAT
+
+; 1980 : 		virtual void RefDeleted() {}
+
+	ret	0
+?RefDeleted@ReferenceTarget@@UEAAXXZ ENDP		; ReferenceTarget::RefDeleted
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z
+_TEXT	SEGMENT
+this$ = 8
+rm$ = 16
+?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z PROC ; ReferenceTarget::RefAddedUndoRedo, COMDAT
+
+; 1969 : 		virtual void RefAddedUndoRedo(RefMakerHandle rm) { UNUSED_PARAM(rm); }
+
+	ret	0
+?RefAddedUndoRedo@ReferenceTarget@@UEAAXPEAVReferenceMaker@@@Z ENDP ; ReferenceTarget::RefAddedUndoRedo
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?IsRefTarget@ReferenceTarget@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?IsRefTarget@ReferenceTarget@@UEAAHXZ PROC		; ReferenceTarget::IsRefTarget, COMDAT
+
+; 1908 : 		virtual BOOL IsRefTarget() { return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?IsRefTarget@ReferenceTarget@@UEAAHXZ ENDP		; ReferenceTarget::IsRefTarget
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z
+_TEXT	SEGMENT
+this$ = 8
+rtarg$ = 16
+?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::ShouldPersistWeakRef, COMDAT
+
+; 1698 : 		virtual BOOL ShouldPersistWeakRef(RefTargetHandle rtarg) { UNUSED_PARAM(rtarg); return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?ShouldPersistWeakRef@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::ShouldPersistWeakRef
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z
+_TEXT	SEGMENT
+this$ = 8
+rtarg$ = 16
+?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::IsRealDependency, COMDAT
+
+; 1673 : 		virtual BOOL IsRealDependency(ReferenceTarget *rtarg) { UNUSED_PARAM(rtarg); return TRUE;}
+
+	mov	eax, 1
+	ret	0
+?IsRealDependency@ReferenceMaker@@UEAAHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::IsRealDependency
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?IsRefMaker@ReferenceMaker@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?IsRefMaker@ReferenceMaker@@UEAAHXZ PROC		; ReferenceMaker::IsRefMaker, COMDAT
+
+; 1654 : 		virtual BOOL IsRefMaker() { return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?IsRefMaker@ReferenceMaker@@UEAAHXZ ENDP		; ReferenceMaker::IsRefMaker
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z
+_TEXT	SEGMENT
+this$ = 48
+changeInt$ = 56
+partID$ = 64
+message$ = 72
+sclass$ = 80
+propagate$ = 88
+hTarg$ = 96
+?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z PROC ; ReferenceMaker::NotifyDependents, COMDAT
+
+; 1387 : 		{
+
+$LN5:
+	sub	rsp, 40					; 00000028H
+
+; 1388 : 			UNUSED_PARAM(changeInt); UNUSED_PARAM(partID);
+; 1389 : 			UNUSED_PARAM(message); UNUSED_PARAM(sclass);
+; 1390 : 			UNUSED_PARAM(propagate); UNUSED_PARAM(hTarg);
+; 1391 : 			DbgAssert(false);
+
+	lea	r9, OFFSET FLAT:??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@
+	mov	ecx, 1391				; 0000056fH
+	lea	r8, OFFSET FLAT:??_C@_1EC@POJFJEHG@?$AAR?$AAe?$AAf?$AAe?$AAr?$AAe?$AAn?$AAc?$AAe?$AAM?$AAa?$AAk?$AAe?$AAr?$AA?3?$AA?3?$AAN?$AAo?$AAt?$AAi?$AAf?$AAy?$AAD?$AAe?$AAp?$AAe?$AAn?$AAd?$AAe?$AAn?$AAt?$AAs@
+	lea	rdx, OFFSET FLAT:??_C@_1IA@GJPPLCDJ@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
+	call	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
+
+; 1392 : 			return REF_FAIL;
+
+	xor	eax, eax
+
+; 1393 : 		};
+
+	add	rsp, 40					; 00000028H
+	ret	0
+?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z ENDP ; ReferenceMaker::NotifyDependents
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+iref$ = 16
+?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z PROC		; ReferenceMaker::RemapRefOnLoad, COMDAT
+
+; 1353 : 		virtual int RemapRefOnLoad(int iref) { return iref; }
+
+	mov	eax, edx
+	ret	0
+?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z ENDP		; ReferenceMaker::RemapRefOnLoad
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\ref.h
+;	COMDAT ?CanTransferReference@ReferenceMaker@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?CanTransferReference@ReferenceMaker@@UEAAHH@Z PROC	; ReferenceMaker::CanTransferReference, COMDAT
+
+; 1254 : 		virtual BOOL CanTransferReference(int i) { UNUSED_PARAM(i); return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?CanTransferReference@ReferenceMaker@@UEAAHH@Z ENDP	; ReferenceMaker::CanTransferReference
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z
+_TEXT	SEGMENT
+this$ = 8
+used_as_rhs_value$ = 16
+objectSpecifiedName$ = 24
+?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z PROC ; Animatable::GetMacroRecorderName, COMDAT
+
+; 2981 : 		virtual bool GetMacroRecorderName(bool used_as_rhs_value, MSTR &objectSpecifiedName) { return false; }
+
+	xor	al, al
+	ret	0
+?GetMacroRecorderName@Animatable@@UEAA_N_NAEAVWStr@@@Z ENDP ; Animatable::GetMacroRecorderName
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z
+_TEXT	SEGMENT
+this$ = 8
+desc$ = 16
+?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z PROC ; Animatable::IsParamBlockDesc2Used, COMDAT
+
+; 2970 : 		virtual bool IsParamBlockDesc2Used(ParamBlockDesc2 * desc) { return true; }
+
+	mov	al, 1
+	ret	0
+?IsParamBlockDesc2Used@Animatable@@UEAA_NPEAVParamBlockDesc2@@@Z ENDP ; Animatable::IsParamBlockDesc2Used
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z
+_TEXT	SEGMENT
+$T1 = 48
+this$ = 48
+classID$ = 56
+?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z PROC	; Animatable::IsSubClassOf, COMDAT
+
+; 2285 : 		virtual BOOL IsSubClassOf(Class_ID classID) {
+
+$LN8:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+
+; 2286 : 			return (classID == ClassID());
+
+	mov	rax, QWORD PTR [rcx]
+	mov	rbx, rdx
+	lea	rdx, QWORD PTR $T1[rsp]
+	call	QWORD PTR [rax+40]
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
+
+; 170  : 	bool operator==(const Class_ID& cid) const { return ((a == cid.a) && (b == cid.b)); }
+
+	mov	ecx, DWORD PTR [rax]
+	cmp	DWORD PTR [rbx], ecx
+	jne	SHORT $LN5@IsSubClass
+	mov	eax, DWORD PTR [rax+4]
+	cmp	DWORD PTR [rbx+4], eax
+	jne	SHORT $LN5@IsSubClass
+	mov	eax, 1
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+
+; 2287 : 		}
+
+	add	rsp, 32					; 00000020H
+	pop	rbx
+	ret	0
+$LN5@IsSubClass:
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
+
+; 170  : 	bool operator==(const Class_ID& cid) const { return ((a == cid.a) && (b == cid.b)); }
+
+	xor	eax, eax
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+
+; 2286 : 			return (classID == ClassID());
+
+	movzx	eax, al
+
+; 2287 : 		}
+
+	add	rsp, 32					; 00000020H
+	pop	rbx
+	ret	0
+?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z ENDP	; Animatable::IsSubClassOf
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z
+_TEXT	SEGMENT
+this$ = 8
+nodes$ = 16
+Context$ = 24
+?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z PROC ; Animatable::GetSystemNodes, COMDAT
+
+; 2265 : 		virtual void GetSystemNodes(INodeTab &nodes, SysNodeContext Context) {}
+
+	ret	0
+?GetSystemNodes@Animatable@@UEAAXAEAVINodeTab@@W4SysNodeContext@@@Z ENDP ; Animatable::GetSystemNodes
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?FreeAllBitmaps@Animatable@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?FreeAllBitmaps@Animatable@@UEAAXXZ PROC		; Animatable::FreeAllBitmaps, COMDAT
+
+; 2237 : 		virtual void FreeAllBitmaps() {}
+
+	ret	0
+?FreeAllBitmaps@Animatable@@UEAAXXZ ENDP		; Animatable::FreeAllBitmaps
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectSubAnim@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+?SelectSubAnim@Animatable@@UEAAHH@Z PROC		; Animatable::SelectSubAnim, COMDAT
+
+; 2163 : 		virtual BOOL SelectSubAnim(int subNum) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?SelectSubAnim@Animatable@@UEAAHH@Z ENDP		; Animatable::SelectSubAnim
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z
+_TEXT	SEGMENT
+this$ = 8
+hwnd$ = 16
+message$ = 24
+wParam$ = 32
+lParam$ = 40
+?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z PROC ; Animatable::TrackViewWinProc, COMDAT
+
+; 2146 : 			LPARAM lParam ) { return 0;}
+
+	xor	eax, eax
+	ret	0
+?TrackViewWinProc@Animatable@@UEAA_JPEAUHWND__@@I_K_J@Z ENDP ; Animatable::TrackViewWinProc
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z PROC ; Animatable::GetParamDimension, COMDAT
+
+; 2137 : 		virtual ParamDimension* GetParamDimension(int i) { return defaultDim; }
+
+	mov	rax, QWORD PTR __imp_?defaultDim@@3PEAVParamDimension@@EA
+	mov	rax, QWORD PTR [rax]
+	ret	0
+?GetParamDimension@Animatable@@UEAAPEAVParamDimension@@H@Z ENDP ; Animatable::GetParamDimension
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+dim$ = 24
+min$ = 32
+max$ = 40
+flags$ = 48
+?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z PROC ; Animatable::GetSubFCurveExtents, COMDAT
+
+; 2128 : 			DWORD flags) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?GetSubFCurveExtents@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAM1K@Z ENDP ; Animatable::GetSubFCurveExtents
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+min$ = 24
+max$ = 32
+flags$ = 40
+?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z PROC ; Animatable::GetFCurveExtents, COMDAT
+
+; 2097 : 			DWORD flags) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?GetFCurveExtents@Animatable@@UEAAHPEAVParamDimensionBase@@AEAM1K@Z ENDP ; Animatable::GetFCurveExtents
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?TrackParamsType@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?TrackParamsType@Animatable@@UEAAHXZ PROC		; Animatable::TrackParamsType, COMDAT
+
+; 2069 : 		virtual int TrackParamsType() {return TRACKPARAMS_NONE;}
+
+	xor	eax, eax
+	ret	0
+?TrackParamsType@Animatable@@UEAAHXZ ENDP		; Animatable::TrackParamsType
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+dim$ = 24
+pname$ = 32
+hParent$ = 40
+ip$ = 48
+flags$ = 56
+?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z PROC ; Animatable::EditTrackParams, COMDAT
+
+; 2048 : 			DWORD flags) {}
+
+	ret	0
+?EditTrackParams@Animatable@@UEAAXHPEAVParamDimensionBase@@PEB_WPEAUHWND__@@PEAVIObjParam@@K@Z ENDP ; Animatable::EditTrackParams
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+dim$ = 24
+hits$ = 32
+rcHit$ = 40
+rcGraph$ = 48
+tzoom$ = 56
+tscroll$ = 64
+vzoom$ = 72
+vscroll$ = 80
+flags$ = 88
+?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::HitTestSubFCurves, COMDAT
+
+; 2013 : 			DWORD flags ) { return HITCURVE_NONE; }
+
+	mov	eax, 4
+	ret	0
+?HitTestSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::HitTestSubFCurves
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+dim$ = 24
+hdc$ = 32
+rcGraph$ = 40
+rcPaint$ = 48
+tzoom$ = 56
+tscroll$ = 64
+vzoom$ = 72
+vscroll$ = 80
+flags$ = 88
+?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::PaintSubFCurves, COMDAT
+
+; 1959 : 			DWORD flags ) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?PaintSubFCurves@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::PaintSubFCurves
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+hits$ = 24
+rcHit$ = 32
+rcGraph$ = 40
+tzoom$ = 48
+tscroll$ = 56
+vzoom$ = 64
+vscroll$ = 72
+flags$ = 80
+?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::HitTestFCurves, COMDAT
+
+; 1912 : 			DWORD flags ) { return HITCURVE_NONE; }
+
+	mov	eax, 4
+	ret	0
+?HitTestFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@AEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::HitTestFCurves
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+hdc$ = 24
+rcGraph$ = 32
+rcPaint$ = 40
+tzoom$ = 48
+tscroll$ = 56
+vzoom$ = 64
+vscroll$ = 72
+flags$ = 80
+?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z PROC ; Animatable::PaintFCurves, COMDAT
+
+; 1858 : 			DWORD flags ) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?PaintFCurves@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHMHK@Z ENDP ; Animatable::PaintFCurves
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+dim$ = 24
+hdc$ = 32
+rcTrack$ = 40
+rcPaint$ = 48
+zoom$ = 56
+scroll$ = 64
+flags$ = 72
+?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z PROC ; Animatable::PaintSubTrack, COMDAT
+
+; 1811 : 			DWORD flags) {return TRACK_DORANGE;}
+
+	mov	eax, 2
+	ret	0
+?PaintSubTrack@Animatable@@UEAAHHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z ENDP ; Animatable::PaintSubTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+hdc$ = 24
+rcTrack$ = 32
+rcPaint$ = 40
+zoom$ = 48
+scroll$ = 56
+flags$ = 64
+?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z PROC ; Animatable::PaintTrack, COMDAT
+
+; 1776 : 			DWORD flags ) { return TRACK_DORANGE; }
+
+	mov	eax, 2
+	ret	0
+?PaintTrack@Animatable@@UEAAHPEAVParamDimensionBase@@PEAUHDC__@@AEAVBox2@@2MHK@Z ENDP ; Animatable::PaintTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z
+_TEXT	SEGMENT
+this$ = 8
+hits$ = 16
+rcHit$ = 24
+rcTrack$ = 32
+zoom$ = 40
+scroll$ = 48
+flags$ = 56
+?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z PROC ; Animatable::HitTestTrack, COMDAT
+
+; 1736 : 			DWORD flags ) { return TRACK_DORANGE; }
+
+	mov	eax, 2
+	ret	0
+?HitTestTrack@Animatable@@UEAAHAEAV?$Tab@VTrackHitRecord@@@@AEAVBox2@@1MHK@Z ENDP ; Animatable::HitTestTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetTrackVSpace@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+lineHeight$ = 16
+?GetTrackVSpace@Animatable@@UEAAHH@Z PROC		; Animatable::GetTrackVSpace, COMDAT
+
+; 1694 : 		virtual int GetTrackVSpace( int lineHeight ) { return 1; }
+
+	mov	eax, 1
+	ret	0
+?GetTrackVSpace@Animatable@@UEAAHH@Z ENDP		; Animatable::GetTrackVSpace
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+cobj$ = 24
+iv$ = 32
+flags$ = 40
+?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::PasteSubTrack, COMDAT
+
+; 1685 : 		virtual void PasteSubTrack(int subNum, TrackClipObject *cobj, Interval iv, DWORD flags) {}
+
+	ret	0
+?PasteSubTrack@Animatable@@UEAAXHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::PasteSubTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+iv$ = 24
+flags$ = 32
+?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z PROC ; Animatable::CopySubTrack, COMDAT
+
+; 1672 : 		virtual TrackClipObject *CopySubTrack(int subNum, Interval iv, DWORD flags) { return NULL; }
+
+	xor	eax, eax
+	ret	0
+?CopySubTrack@Animatable@@UEAAPEAVTrackClipObject@@HVInterval@@K@Z ENDP ; Animatable::CopySubTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+cobj$ = 24
+iv$ = 32
+flags$ = 40
+?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CanPasteSubTrack, COMDAT
+
+; 1657 : 		virtual BOOL CanPasteSubTrack(int subNum,TrackClipObject *cobj, Interval iv, DWORD flags) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?CanPasteSubTrack@Animatable@@UEAAHHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CanPasteSubTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+iv$ = 24
+flags$ = 32
+?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z PROC	; Animatable::CanCopySubTrack, COMDAT
+
+; 1637 : 		virtual BOOL CanCopySubTrack(int subNum, Interval iv, DWORD flags) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?CanCopySubTrack@Animatable@@UEAAHHVInterval@@K@Z ENDP	; Animatable::CanCopySubTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+cobj$ = 16
+iv$ = 24
+flags$ = 32
+?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::PasteTrack, COMDAT
+
+; 1615 : 		virtual void PasteTrack(TrackClipObject *cobj, Interval iv, DWORD flags) {}
+
+	ret	0
+?PasteTrack@Animatable@@UEAAXPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::PasteTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+iv$ = 16
+flags$ = 24
+?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CopyTrack, COMDAT
+
+; 1606 : 		virtual TrackClipObject *CopyTrack(Interval iv, DWORD flags) { return NULL; }
+
+	xor	eax, eax
+	ret	0
+?CopyTrack@Animatable@@UEAAPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CopyTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+cobj$ = 16
+iv$ = 24
+flags$ = 32
+?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z PROC ; Animatable::CanPasteTrack, COMDAT
+
+; 1594 : 		virtual BOOL CanPasteTrack(TrackClipObject *cobj, Interval iv, DWORD flags) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?CanPasteTrack@Animatable@@UEAAHPEAVTrackClipObject@@VInterval@@K@Z ENDP ; Animatable::CanPasteTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+iv$ = 16
+flags$ = 24
+?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z PROC	; Animatable::CanCopyTrack, COMDAT
+
+; 1582 : 		virtual BOOL CanCopyTrack(Interval iv, DWORD flags) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?CanCopyTrack@Animatable@@UEAAHVInterval@@K@Z ENDP	; Animatable::CanCopyTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?RevertSetKeyBuffer@Animatable@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?RevertSetKeyBuffer@Animatable@@UEAAXXZ PROC		; Animatable::RevertSetKeyBuffer, COMDAT
+
+; 1557 : 		virtual void RevertSetKeyBuffer() {}
+
+	ret	0
+?RevertSetKeyBuffer@Animatable@@UEAAXXZ ENDP		; Animatable::RevertSetKeyBuffer
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CommitSetKeyBuffer@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+?CommitSetKeyBuffer@Animatable@@UEAAXH@Z PROC		; Animatable::CommitSetKeyBuffer, COMDAT
+
+; 1538 : 		virtual void CommitSetKeyBuffer(TimeValue t) {}
+
+	ret	0
+?CommitSetKeyBuffer@Animatable@@UEAAXH@Z ENDP		; Animatable::CommitSetKeyBuffer
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SetKeyBufferPresent@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?SetKeyBufferPresent@Animatable@@UEAAHXZ PROC		; Animatable::SetKeyBufferPresent, COMDAT
+
+; 1517 : 		virtual BOOL SetKeyBufferPresent() { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?SetKeyBufferPresent@Animatable@@UEAAHXZ ENDP		; Animatable::SetKeyBufferPresent
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z
+_TEXT	SEGMENT
+this$ = 8
+hit$ = 16
+dim$ = 24
+angle$ = 32
+length$ = 40
+flags$ = 48
+?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z PROC ; Animatable::AdjustTangents, COMDAT
+
+; 1488 : 			DWORD flags) {};
+
+	ret	0
+?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@MMK@Z ENDP ; Animatable::AdjustTangents
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z
+_TEXT	SEGMENT
+this$ = 8
+hit$ = 16
+dim$ = 24
+rcGraph$ = 32
+tzoom$ = 40
+tscroll$ = 48
+vzoom$ = 56
+vscroll$ = 64
+dx$ = 72
+dy$ = 80
+flags$ = 88
+?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z PROC ; Animatable::AdjustTangents, COMDAT
+
+; 1465 : 			DWORD flags) {};
+
+	ret	0
+?AdjustTangents@Animatable@@UEAAXVTrackHitRecord@@PEAVParamDimensionBase@@AEAVBox2@@MHMHHHK@Z ENDP ; Animatable::AdjustTangents
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+timeExpr$ = 24
+valExpr$ = 32
+flags$ = 40
+?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z PROC ; Animatable::SetSelKeyCoordsExpr, COMDAT
+
+; 1429 : 				return KEYCOORDS_EXPR_UNSUPPORTED;
+
+	xor	eax, eax
+
+; 1430 : 		}
+
+	ret	0
+?SetSelKeyCoordsExpr@Animatable@@UEAAHPEAVParamDimension@@PEB_W1K@Z ENDP ; Animatable::SetSelKeyCoordsExpr
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SetSelKeyCoords@Animatable@@UEAAXHMK@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+val$ = 24
+flags$ = 32
+?SetSelKeyCoords@Animatable@@UEAAXHMK@Z PROC		; Animatable::SetSelKeyCoords, COMDAT
+
+; 1385 : 		virtual void SetSelKeyCoords(TimeValue t, float val,DWORD flags) {}
+
+	ret	0
+?SetSelKeyCoords@Animatable@@UEAAXHMK@Z ENDP		; Animatable::SetSelKeyCoords
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+val$ = 24
+flags$ = 32
+?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z PROC	; Animatable::GetSelKeyCoords, COMDAT
+
+; 1371 : 			return KEYS_NONESELECTED; 
+
+	mov	eax, 1
+
+; 1372 : 		}
+
+	ret	0
+?GetSelKeyCoords@Animatable@@UEAAHAEAHAEAMK@Z ENDP	; Animatable::GetSelKeyCoords
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsSubCurveSelected@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+?IsSubCurveSelected@Animatable@@UEAAHH@Z PROC		; Animatable::IsSubCurveSelected, COMDAT
+
+; 1343 : 		virtual BOOL IsSubCurveSelected(int subNum) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?IsSubCurveSelected@Animatable@@UEAAHH@Z ENDP		; Animatable::IsSubCurveSelected
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsCurveSelected@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?IsCurveSelected@Animatable@@UEAAHXZ PROC		; Animatable::IsCurveSelected, COMDAT
+
+; 1338 : 		virtual BOOL IsCurveSelected() { return FALSE; }		
+
+	xor	eax, eax
+	ret	0
+?IsCurveSelected@Animatable@@UEAAHXZ ENDP		; Animatable::IsCurveSelected
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectCurve@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+sel$ = 16
+?SelectCurve@Animatable@@UEAAXH@Z PROC			; Animatable::SelectCurve, COMDAT
+
+; 1333 : 		virtual void SelectCurve(BOOL sel) {}
+
+	ret	0
+?SelectCurve@Animatable@@UEAAXH@Z ENDP			; Animatable::SelectCurve
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+origin$ = 24
+scale$ = 32
+flags$ = 40
+?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z PROC ; Animatable::ScaleKeyValues, COMDAT
+
+; 1326 : 			DWORD flags) {}
+
+	ret	0
+?ScaleKeyValues@Animatable@@UEAAXPEAVParamDimensionBase@@MMK@Z ENDP ; Animatable::ScaleKeyValues
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z
+_TEXT	SEGMENT
+this$ = 8
+dim$ = 16
+delta$ = 24
+flags$ = 32
+?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z PROC ; Animatable::MoveKeys, COMDAT
+
+; 1280 : 		virtual void MoveKeys(ParamDimensionBase *dim, float delta, DWORD flags) {}  
+
+	ret	0
+?MoveKeys@Animatable@@UEAAXPEAVParamDimensionBase@@MK@Z ENDP ; Animatable::MoveKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?AddNewKey@Animatable@@UEAAXHK@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+flags$ = 24
+?AddNewKey@Animatable@@UEAAXHK@Z PROC			; Animatable::AddNewKey, COMDAT
+
+; 1256 : 		virtual void AddNewKey(TimeValue t, DWORD flags) {}
+
+	ret	0
+?AddNewKey@Animatable@@UEAAXHK@Z ENDP			; Animatable::AddNewKey
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CloneSelectedKeys@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+offset$ = 16
+?CloneSelectedKeys@Animatable@@UEAAXH@Z PROC		; Animatable::CloneSelectedKeys, COMDAT
+
+; 1245 : 		virtual void CloneSelectedKeys(BOOL offset = FALSE) {}   
+
+	ret	0
+?CloneSelectedKeys@Animatable@@UEAAXH@Z ENDP		; Animatable::CloneSelectedKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?NumSelKeys@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?NumSelKeys@Animatable@@UEAAHXZ PROC			; Animatable::NumSelKeys, COMDAT
+
+; 1239 : 		virtual int NumSelKeys() { return 0; }
+
+	xor	eax, eax
+	ret	0
+?NumSelKeys@Animatable@@UEAAHXZ ENDP			; Animatable::NumSelKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetFlagKeyIndex@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?GetFlagKeyIndex@Animatable@@UEAAHXZ PROC		; Animatable::GetFlagKeyIndex, COMDAT
+
+; 1235 : 		virtual int GetFlagKeyIndex() { return -1; } 
+
+	or	eax, -1
+	ret	0
+?GetFlagKeyIndex@Animatable@@UEAAHXZ ENDP		; Animatable::GetFlagKeyIndex
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z
+_TEXT	SEGMENT
+this$ = 8
+hit$ = 16
+?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z PROC	; Animatable::FlagKey, COMDAT
+
+; 1227 : 		virtual void FlagKey(TrackHitRecord hit) {}
+
+	ret	0
+?FlagKey@Animatable@@UEAAXVTrackHitRecord@@@Z ENDP	; Animatable::FlagKey
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsKeySelected@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?IsKeySelected@Animatable@@UEAAHH@Z PROC		; Animatable::IsKeySelected, COMDAT
+
+; 1207 : 		virtual BOOL IsKeySelected(int i) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?IsKeySelected@Animatable@@UEAAHH@Z ENDP		; Animatable::IsKeySelected
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectKeyByIndex@Animatable@@UEAAXHH@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+sel$ = 24
+?SelectKeyByIndex@Animatable@@UEAAXHH@Z PROC		; Animatable::SelectKeyByIndex, COMDAT
+
+; 1201 : 		virtual void SelectKeyByIndex(int i, BOOL sel) {}
+
+	ret	0
+?SelectKeyByIndex@Animatable@@UEAAXHH@Z ENDP		; Animatable::SelectKeyByIndex
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectSubCurve@Animatable@@UEAAXHH@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+sel$ = 24
+?SelectSubCurve@Animatable@@UEAAXHH@Z PROC		; Animatable::SelectSubCurve, COMDAT
+
+; 1192 : 		virtual void SelectSubCurve(int subNum, BOOL sel) {}
+
+	ret	0
+?SelectSubCurve@Animatable@@UEAAXHH@Z ENDP		; Animatable::SelectSubCurve
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+sel$ = 24
+flags$ = 32
+?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z PROC ; Animatable::SelectSubKeys, COMDAT
+
+; 1183 : 		virtual void SelectSubKeys(int subNum, TrackHitTab& sel, DWORD flags) {} 
+
+	ret	0
+?SelectSubKeys@Animatable@@UEAAXHAEAV?$Tab@VTrackHitRecord@@@@K@Z ENDP ; Animatable::SelectSubKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+sel$ = 16
+flags$ = 24
+?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z PROC ; Animatable::SelectKeys, COMDAT
+
+; 1160 : 		virtual void SelectKeys(TrackHitTab& sel, DWORD flags) {}
+
+	ret	0
+?SelectKeys@Animatable@@UEAAXAEAV?$Tab@VTrackHitRecord@@@@K@Z ENDP ; Animatable::SelectKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?DeleteKeyByIndex@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+index$ = 16
+?DeleteKeyByIndex@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteKeyByIndex, COMDAT
+
+; 1144 : 		virtual void DeleteKeyByIndex(int index) {}
+
+	ret	0
+?DeleteKeyByIndex@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteKeyByIndex
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?DeleteKeys@Animatable@@UEAAXK@Z
+_TEXT	SEGMENT
+this$ = 8
+flags$ = 16
+?DeleteKeys@Animatable@@UEAAXK@Z PROC			; Animatable::DeleteKeys, COMDAT
+
+; 1139 : 		virtual void DeleteKeys(DWORD flags) {}
+
+	ret	0
+?DeleteKeys@Animatable@@UEAAXK@Z ENDP			; Animatable::DeleteKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?SupportTimeOperations@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?SupportTimeOperations@Animatable@@UEAAHXZ PROC		; Animatable::SupportTimeOperations, COMDAT
+
+; 1107 : 		virtual BOOL SupportTimeOperations() { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?SupportTimeOperations@Animatable@@UEAAHXZ ENDP		; Animatable::SupportTimeOperations
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?InsertTime@Animatable@@UEAAXHH@Z
+_TEXT	SEGMENT
+this$ = 8
+ins$ = 16
+amount$ = 24
+?InsertTime@Animatable@@UEAAXHH@Z PROC			; Animatable::InsertTime, COMDAT
+
+; 1097 : 		virtual void InsertTime(TimeValue ins, TimeValue amount) {}
+
+	ret	0
+?InsertTime@Animatable@@UEAAXHH@Z ENDP			; Animatable::InsertTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?ScaleTime@Animatable@@UEAAXVInterval@@M@Z
+_TEXT	SEGMENT
+this$ = 8
+iv$ = 16
+s$ = 24
+?ScaleTime@Animatable@@UEAAXVInterval@@M@Z PROC		; Animatable::ScaleTime, COMDAT
+
+; 1087 : 		virtual void ScaleTime(Interval iv, float s) {}
+
+	ret	0
+?ScaleTime@Animatable@@UEAAXVInterval@@M@Z ENDP		; Animatable::ScaleTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?ReverseTime@Animatable@@UEAAXVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+iv$ = 16
+flags$ = 24
+?ReverseTime@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::ReverseTime, COMDAT
+
+; 1077 : 		virtual void ReverseTime(Interval iv, DWORD flags) {}
+
+	ret	0
+?ReverseTime@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::ReverseTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?DeleteTime@Animatable@@UEAAXVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+iv$ = 16
+flags$ = 24
+?DeleteTime@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::DeleteTime, COMDAT
+
+; 1061 : 		virtual void DeleteTime(Interval iv, DWORD flags) {}
+
+	ret	0
+?DeleteTime@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::DeleteTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+range$ = 16
+flags$ = 24
+?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z PROC	; Animatable::EditTimeRange, COMDAT
+
+; 1049 : 		virtual void EditTimeRange(Interval range, DWORD flags) {};
+
+	ret	0
+?EditTimeRange@Animatable@@UEAAXVInterval@@K@Z ENDP	; Animatable::EditTimeRange
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+sel$ = 16
+range$ = 24
+flags$ = 32
+?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z PROC ; Animatable::GetKeySelState, COMDAT
+
+; 931  : 		virtual int GetKeySelState(BitArray& sel, Interval range, DWORD flags) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?GetKeySelState@Animatable@@UEAAHAEAVBitArray@@VInterval@@K@Z ENDP ; Animatable::GetKeySelState
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z
+_TEXT	SEGMENT
+this$ = 8
+times$ = 16
+range$ = 24
+flags$ = 32
+?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z PROC ; Animatable::GetKeyTimes, COMDAT
+
+; 913  : 		virtual int GetKeyTimes(Tab<TimeValue>& times, Interval range, DWORD flags) { return 0; }		
+
+	xor	eax, eax
+	ret	0
+?GetKeyTimes@Animatable@@UEAAHAEAV?$Tab@H@@VInterval@@K@Z ENDP ; Animatable::GetKeyTimes
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?IsKeyAtTime@Animatable@@UEAAHHK@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+flags$ = 24
+?IsKeyAtTime@Animatable@@UEAAHHK@Z PROC			; Animatable::IsKeyAtTime, COMDAT
+
+; 888  : 		virtual BOOL IsKeyAtTime(TimeValue t, DWORD flags) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?IsKeyAtTime@Animatable@@UEAAHHK@Z ENDP			; Animatable::IsKeyAtTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?DeleteKeyAtTime@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+?DeleteKeyAtTime@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteKeyAtTime, COMDAT
+
+; 878  : 		virtual void DeleteKeyAtTime(TimeValue t) {}
+
+	ret	0
+?DeleteKeyAtTime@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteKeyAtTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CopyKeysFromTime@Animatable@@UEAAXHHK@Z
+_TEXT	SEGMENT
+this$ = 8
+src$ = 16
+dst$ = 24
+flags$ = 32
+?CopyKeysFromTime@Animatable@@UEAAXHHK@Z PROC		; Animatable::CopyKeysFromTime, COMDAT
+
+; 873  : 		virtual void CopyKeysFromTime(TimeValue src, TimeValue dst, DWORD flags) {} 
+
+	ret	0
+?CopyKeysFromTime@Animatable@@UEAAXHHK@Z ENDP		; Animatable::CopyKeysFromTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+flags$ = 24
+nt$ = 32
+?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z PROC		; Animatable::GetNextKeyTime, COMDAT
+
+; 862  : 		virtual BOOL GetNextKeyTime(TimeValue t, DWORD flags, TimeValue &nt) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?GetNextKeyTime@Animatable@@UEAAHHKAEAH@Z ENDP		; Animatable::GetNextKeyTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetKeyIndex@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+?GetKeyIndex@Animatable@@UEAAHH@Z PROC			; Animatable::GetKeyIndex, COMDAT
+
+; 841  : 		virtual int GetKeyIndex(TimeValue t) { return -1; }
+
+	or	eax, -1
+	ret	0
+?GetKeyIndex@Animatable@@UEAAHH@Z ENDP			; Animatable::GetKeyIndex
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetKeyTime@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+index$ = 16
+?GetKeyTime@Animatable@@UEAAHH@Z PROC			; Animatable::GetKeyTime, COMDAT
+
+; 835  : 		virtual TimeValue GetKeyTime(int index) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?GetKeyTime@Animatable@@UEAAHH@Z ENDP			; Animatable::GetKeyTime
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?NumKeys@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?NumKeys@Animatable@@UEAAHXZ PROC			; Animatable::NumKeys, COMDAT
+
+; 830  : 		virtual int NumKeys() { return NOT_KEYFRAMEABLE; }
+
+	or	eax, -1
+	ret	0
+?NumKeys@Animatable@@UEAAHXZ ENDP			; Animatable::NumKeys
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?EditTrack@Animatable@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?EditTrack@Animatable@@UEAAXXZ PROC			; Animatable::EditTrack, COMDAT
+
+; 821  : 		virtual void EditTrack() { assert(0); } 
+
+	lea	r9, OFFSET FLAT:??_C@_13COJANIEC@?$AA0?$AA?$AA@
+	mov	ecx, 821				; 00000335H
+	lea	r8, OFFSET FLAT:??_C@_1CM@HBLCKHLG@?$AAA?$AAn?$AAi?$AAm?$AAa?$AAt?$AAa?$AAb?$AAl?$AAe?$AA?3?$AA?3?$AAE?$AAd?$AAi?$AAt?$AAT?$AAr?$AAa?$AAc?$AAk?$AA?$AA@
+	lea	rdx, OFFSET FLAT:??_C@_1IO@PNJJEDOF@?$AAc?$AA?3?$AA?2?$AAp?$AAr?$AAo?$AAg?$AAr?$AAa?$AAm?$AA?5?$AAf?$AAi?$AAl?$AAe?$AAs?$AA?2?$AAa?$AAu?$AAt?$AAo?$AAd?$AAe?$AAs?$AAk?$AA?2?$AA3?$AAd?$AAs?$AA?5?$AAm?$AAa@
+	rex_jmp	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
+?EditTrack@Animatable@@UEAAXXZ ENDP			; Animatable::EditTrack
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?RenderEnd@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+?RenderEnd@Animatable@@UEAAHH@Z PROC			; Animatable::RenderEnd, COMDAT
+
+; 817  : 		virtual int RenderEnd(TimeValue t) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?RenderEnd@Animatable@@UEAAHH@Z ENDP			; Animatable::RenderEnd
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?RenderBegin@Animatable@@UEAAHHK@Z
+_TEXT	SEGMENT
+this$ = 8
+t$ = 16
+flags$ = 24
+?RenderBegin@Animatable@@UEAAHHK@Z PROC			; Animatable::RenderBegin, COMDAT
+
+; 810  : 		virtual int RenderBegin(TimeValue t, ULONG flags=0) { return 0; }
+
+	xor	eax, eax
+	ret	0
+?RenderBegin@Animatable@@UEAAHHK@Z ENDP			; Animatable::RenderBegin
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?ChildAnim@Animatable@@UEAAPEAV1@H@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?ChildAnim@Animatable@@UEAAPEAV1@H@Z PROC		; Animatable::ChildAnim, COMDAT
+
+; 757  : 		virtual Animatable* ChildAnim(int i) { return NULL; } 
+
+	xor	eax, eax
+	ret	0
+?ChildAnim@Animatable@@UEAAPEAV1@H@Z ENDP		; Animatable::ChildAnim
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?NumChildren@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?NumChildren@Animatable@@UEAAHXZ PROC			; Animatable::NumChildren, COMDAT
+
+; 754  : 		virtual	int NumChildren() { return 0; }   
+
+	xor	eax, eax
+	ret	0
+?NumChildren@Animatable@@UEAAHXZ ENDP			; Animatable::NumChildren
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanMakeUnique@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?CanMakeUnique@Animatable@@UEAAHXZ PROC			; Animatable::CanMakeUnique, COMDAT
+
+; 749  : 		virtual BOOL CanMakeUnique() { return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?CanMakeUnique@Animatable@@UEAAHXZ ENDP			; Animatable::CanMakeUnique
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanCopyAnim@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?CanCopyAnim@Animatable@@UEAAHXZ PROC			; Animatable::CanCopyAnim, COMDAT
+
+; 739  : 		virtual BOOL CanCopyAnim() { return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?CanCopyAnim@Animatable@@UEAAHXZ ENDP			; Animatable::CanCopyAnim
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?GetSubAnimCurveColor@Animatable@@UEAAKH@Z
+_TEXT	SEGMENT
+this$ = 8
+subNum$ = 16
+?GetSubAnimCurveColor@Animatable@@UEAAKH@Z PROC		; Animatable::GetSubAnimCurveColor, COMDAT
+
+; 713  : 		virtual DWORD GetSubAnimCurveColor(int subNum) { return PAINTCURVE_GENCOLOR; }
+
+	mov	eax, 16
+	ret	0
+?GetSubAnimCurveColor@Animatable@@UEAAKH@Z ENDP		; Animatable::GetSubAnimCurveColor
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?DeleteSubAnim@Animatable@@UEAAXH@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?DeleteSubAnim@Animatable@@UEAAXH@Z PROC		; Animatable::DeleteSubAnim, COMDAT
+
+; 698  : 		virtual void DeleteSubAnim(int i) {}
+
+	ret	0
+?DeleteSubAnim@Animatable@@UEAAXH@Z ENDP		; Animatable::DeleteSubAnim
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanDeleteSubAnim@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+i$ = 16
+?CanDeleteSubAnim@Animatable@@UEAAHH@Z PROC		; Animatable::CanDeleteSubAnim, COMDAT
+
+; 692  : 		virtual BOOL CanDeleteSubAnim(int i) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?CanDeleteSubAnim@Animatable@@UEAAHH@Z ENDP		; Animatable::CanDeleteSubAnim
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?CanAssignController@Animatable@@UEAAHH@Z
+_TEXT	SEGMENT
+this$ = 8
+subAnim$ = 16
+?CanAssignController@Animatable@@UEAAHH@Z PROC		; Animatable::CanAssignController, COMDAT
+
+; 674  : 		virtual BOOL CanAssignController(int subAnim) { return TRUE; }
+
+	mov	eax, 1
+	ret	0
+?CanAssignController@Animatable@@UEAAHH@Z ENDP		; Animatable::CanAssignController
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?AssignController@Animatable@@UEAAHPEAV1@H@Z
+_TEXT	SEGMENT
+this$ = 8
+control$ = 16
+subAnim$ = 24
+?AssignController@Animatable@@UEAAHPEAV1@H@Z PROC	; Animatable::AssignController, COMDAT
+
+; 664  : 		virtual BOOL AssignController(Animatable *control,int subAnim) { return FALSE; }
+
+	xor	eax, eax
+	ret	0
+?AssignController@Animatable@@UEAAHPEAV1@H@Z ENDP	; Animatable::AssignController
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?InvisibleProperty@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?InvisibleProperty@Animatable@@UEAAHXZ PROC		; Animatable::InvisibleProperty, COMDAT
+
+; 653  : 		virtual BOOL InvisibleProperty() { return FALSE; } 
+
+	xor	eax, eax
+	ret	0
+?InvisibleProperty@Animatable@@UEAAHXZ ENDP		; Animatable::InvisibleProperty
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?BypassPropertyLevel@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?BypassPropertyLevel@Animatable@@UEAAHXZ PROC		; Animatable::BypassPropertyLevel, COMDAT
+
+; 645  : 		virtual BOOL BypassPropertyLevel() { return FALSE; } 
+
+	xor	eax, eax
+	ret	0
+?BypassPropertyLevel@Animatable@@UEAAHXZ ENDP		; Animatable::BypassPropertyLevel
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?BypassTrackBar@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?BypassTrackBar@Animatable@@UEAAHXZ PROC		; Animatable::BypassTrackBar, COMDAT
+
+; 636  : 		virtual BOOL BypassTrackBar() { return BypassTreeView(); } 
+
+	mov	rax, QWORD PTR [rcx]
+	rex_jmp	QWORD PTR [rax+128]
+?BypassTrackBar@Animatable@@UEAAHXZ ENDP		; Animatable::BypassTrackBar
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?BypassTreeView@Animatable@@UEAAHXZ
+_TEXT	SEGMENT
+this$ = 8
+?BypassTreeView@Animatable@@UEAAHXZ PROC		; Animatable::BypassTreeView, COMDAT
+
+; 626  : 		virtual BOOL BypassTreeView() { return FALSE; } 
+
+	xor	eax, eax
+	ret	0
+?BypassTreeView@Animatable@@UEAAHXZ ENDP		; Animatable::BypassTreeView
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z
+_TEXT	SEGMENT
+this$ = 8
+ip$ = 16
+flags$ = 24
+next$ = 32
+?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z PROC ; Animatable::EndEditParams, COMDAT
+
+; 414  : 		virtual void EndEditParams(IObjParam *ip, ULONG flags, Animatable *next = NULL) {} 
+
+	ret	0
+?EndEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ENDP ; Animatable::EndEditParams
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z
+_TEXT	SEGMENT
+this$ = 8
+ip$ = 16
+flags$ = 24
+prev$ = 32
+?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z PROC ; Animatable::BeginEditParams, COMDAT
+
+; 395  : 		virtual void BeginEditParams(IObjParam *ip, ULONG flags, Animatable *prev = NULL) {} 
+
+	ret	0
+?BeginEditParams@Animatable@@UEAAXPEAVIObjParam@@KPEAV1@@Z ENDP ; Animatable::BeginEditParams
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\animatable.h
+;	COMDAT ?FreeCaches@Animatable@@UEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?FreeCaches@Animatable@@UEAAXXZ PROC			; Animatable::FreeCaches, COMDAT
+
+; 353  : 		virtual void FreeCaches() {}
+
+	ret	0
+?FreeCaches@Animatable@@UEAAXXZ ENDP			; Animatable::FreeCaches
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
+;	COMDAT ??_4Interval@@QEAAAEAV0@V0@@Z
+_TEXT	SEGMENT
+$T1 = 48
+this$ = 48
+i$ = 56
+??_4Interval@@QEAAAEAV0@V0@@Z PROC			; Interval::operator&=, COMDAT
+
+; 147  : 		Interval& operator&=(const Interval i) { return (*this = (*this&i)); }
+
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+	mov	r8, rdx
+	mov	rbx, rcx
+	lea	rdx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??IInterval@@QEBA?AV0@V0@@Z
+	mov	rdx, QWORD PTR [rax]
+	mov	rax, rbx
+	mov	QWORD PTR [rbx], rdx
+	add	rsp, 32					; 00000020H
+	pop	rbx
+	ret	0
+??_4Interval@@QEAAAEAV0@V0@@Z ENDP			; Interval::operator&=
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
+;	COMDAT ?SetInfinite@Interval@@QEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?SetInfinite@Interval@@QEAAXXZ PROC			; Interval::SetInfinite, COMDAT
+
+; 122  : 		void SetInfinite() { start = TIME_NegInfinity; end = TIME_PosInfinity; }
+
+	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
+	mov	DWORD PTR [rcx+4], 2147483647		; 7fffffffH
+	ret	0
+?SetInfinite@Interval@@QEAAXXZ ENDP			; Interval::SetInfinite
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
+;	COMDAT ?SetEmpty@Interval@@QEAAXXZ
+_TEXT	SEGMENT
+this$ = 8
+?SetEmpty@Interval@@QEAAXXZ PROC			; Interval::SetEmpty, COMDAT
+
+; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
+
+	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
+	mov	DWORD PTR [rcx+4], -2147483648		; ffffffff80000000H
+	ret	0
+?SetEmpty@Interval@@QEAAXXZ ENDP			; Interval::SetEmpty
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
+;	COMDAT ??0Interval@@QEAA@XZ
+_TEXT	SEGMENT
+this$ = 8
+??0Interval@@QEAA@XZ PROC				; Interval::Interval, COMDAT
+
+; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
+
+	mov	DWORD PTR [rcx], -2147483648		; ffffffff80000000H
+
+; 58   : 		Interval() { SetEmpty(); } 
+
+	mov	rax, rcx
+
+; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
+
+	mov	DWORD PTR [rcx+4], -2147483648		; ffffffff80000000H
+
+; 58   : 		Interval() { SetEmpty(); } 
+
+	ret	0
+??0Interval@@QEAA@XZ ENDP				; Interval::Interval
+_TEXT	ENDS
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
 text$di	SEGMENT
@@ -18415,7 +18389,7 @@ text$di	SEGMENT
 	ret	0
 ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
 _TEXT	SEGMENT
@@ -18430,7 +18404,7 @@ this$ = 8
 	ret	0
 ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GBaseInterfaceServer@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 this$ = 48
@@ -18465,7 +18439,7 @@ $LN7@scalar:
 	ret	0
 ??_GBaseInterfaceServer@@UEAAPEAXI@Z ENDP		; BaseInterfaceServer::`scalar deleting destructor'
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ??0BaseInterfaceServer@@QEAA@XZ
 _TEXT	SEGMENT
@@ -18505,7 +18479,7 @@ this$ = 32
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$1@?0???0BaseInterfaceServer@@QEAA@XZ@4HA ENDP	; `BaseInterfaceServer::BaseInterfaceServer'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -18515,7 +18489,7 @@ this$ = 32
 	rex_jmp	QWORD PTR __imp_??1InterfaceServer@@UEAA@XZ
 ?dtor$0@?0???0BaseInterfaceServer@@QEAA@XZ@4HA ENDP	; `BaseInterfaceServer::BaseInterfaceServer'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 0
@@ -18526,7 +18500,7 @@ this$ = 32
 	jmp	??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ	; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 ?dtor$1@?0???0BaseInterfaceServer@@QEAA@XZ@4HA ENDP	; `BaseInterfaceServer::BaseInterfaceServer'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ
 _TEXT	SEGMENT
@@ -18551,7 +18525,7 @@ $LN3:
 	ret	0
 ??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ ENDP		; Tab<BaseInterface * __ptr64>::~Tab<BaseInterface * __ptr64>
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ??0?$Tab@PEAVBaseInterface@@@@QEAA@XZ
 _TEXT	SEGMENT
@@ -18569,7 +18543,7 @@ this$ = 8
 	ret	0
 ??0?$Tab@PEAVBaseInterface@@@@QEAA@XZ ENDP		; Tab<BaseInterface * __ptr64>::Tab<BaseInterface * __ptr64>
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GInterfaceServer@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 this$ = 48
@@ -18604,7 +18578,7 @@ $LN7@scalar:
 	ret	0
 ??_GInterfaceServer@@UEAAPEAXI@Z ENDP			; InterfaceServer::`scalar deleting destructor'
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??0InterfaceServer@@QEAA@XZ
 _TEXT	SEGMENT
 this$ = 8
@@ -18615,43 +18589,7 @@ this$ = 8
 	ret	0
 ??0InterfaceServer@@QEAA@XZ ENDP			; InterfaceServer::InterfaceServer
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
-_TEXT	SEGMENT
-__$ReturnUdt$ = 8
-a$ = 16
-f$ = 24
-??D@YA?AVPoint3@@AEBV0@M@Z PROC				; operator*, COMDAT
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm2, DWORD PTR [rdx]
-	vmulss	xmm1, xmm2, DWORD PTR [rdx+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm2, DWORD PTR [rdx+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm1
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
-
-; 328  :    }
-
-	ret	0
-??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -18705,7 +18643,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
 ?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18716,7 +18654,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18727,7 +18665,7 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
 ?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 _TEXT	SEGMENT
 $T1 = 32
@@ -18769,7 +18707,7 @@ __that$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18780,7 +18718,7 @@ __that$ = 72
 	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
 ?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18791,7 +18729,7 @@ __that$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -18820,7 +18758,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
 ?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18830,7 +18768,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18840,7 +18778,7 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
 ?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
 _TEXT	SEGMENT
@@ -18859,7 +18797,7 @@ this$ = 8
 	ret	0
 ?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ENDP ; MaxSDK::Util::TabOutOfRangeException::What
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
 ;	COMDAT ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z
 _TEXT	SEGMENT
@@ -18905,7 +18843,7 @@ message$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
@@ -18916,7 +18854,7 @@ message$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Interface_ID@@QEAA@AEBV0@@Z
 _TEXT	SEGMENT
@@ -18934,7 +18872,7 @@ iid$ = 16
 	ret	0
 ??0Interface_ID@@QEAA@AEBV0@@Z ENDP			; Interface_ID::Interface_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??8Class_ID@@QEBA_NAEBV0@@Z
 _TEXT	SEGMENT
@@ -18957,7 +18895,7 @@ $LN3@operator:
 	ret	0
 ??8Class_ID@@QEBA_NAEBV0@@Z ENDP			; Class_ID::operator==
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@KK@Z
 _TEXT	SEGMENT
@@ -18974,7 +18912,7 @@ bb$ = 24
 	ret	0
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@XZ
 _TEXT	SEGMENT
@@ -18988,7 +18926,7 @@ this$ = 8
 	ret	0
 ??0Class_ID@@QEAA@XZ ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
@@ -18996,12 +18934,10 @@ __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
 
-; 255  : }
-
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
@@ -19013,7 +18949,7 @@ __formal$ = 8
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_H@YAXPEAX_K1P6APEAX0@Z@Z
 _TEXT	SEGMENT
 __t$ = 48

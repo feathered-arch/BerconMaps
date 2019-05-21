@@ -23,18 +23,21 @@ under the License.
 
 #include "BerconCommon.h"
 
-extern TCHAR *GetString(int id);
+extern MCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
 
 
 #define NOISE_NSUBTEX		18  // Number of subtextures
 
-class BerconNoise;
+//class BerconNoise;			// why is this here?
 
 class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrShaderTranslation*/ {
-	public:		
-		bool mappedParameters;
+	public:
+		
+	virtual RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
+
+		bool mappedParameters{};
 		NoiseParams EvalParameters(ShadeContext* sc);
 		
 		//void limitLevel(Point3 dp, NoiseParams &np, float nSize);
@@ -43,25 +46,25 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		//float average;
 
 		// Noise variables	
-		float size;
-		float phase;
-		float spread;
-		float F1, F2, F3, F4;				
+		float size{};
+		float phase{};
+		float spread{};
+		float F1{}, F2{}, F3{}, F4{};				
 
-		int noiseFunction;
-		int worleyFunction;
-		int fractalFunction;
+		int noiseFunction{};
+		int worleyFunction{};
+		int fractalFunction{};
 
 		// Fractal variables
-		float levels;
-		float low, high;
-		float fractalH, fractalOffset, fractalGain, fractalLacunarity;		
+		float levels{};
+		float low{}, high{};
+		float fractalH{}, fractalOffset{}, fractalGain{}, fractalLacunarity{};		
 
 		// Distortion		
-		BOOL useDistortion;
-		float distortionStr;
+		BOOL useDistortion{};
+		float distortionStr{};
 		void applyDistortion(ShadeContext& sc, Point3& p);
-		int uvwDist;		
+		int uvwDist{};		
 
 		// User Interface
 		void EnableStuff();
@@ -69,48 +72,66 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		// Parameter block
 		IParamBlock2	*pbXYZ;
 		IParamBlock2	*pblock;	//ref 0
-		IParamBlock2	*pbCurve;	//ref CURVEPB_REF
+//		IParamBlock2	*pbCurve;	//ref CURVEPB_REF
 		IParamBlock2	*pbMap;		//ref PBMAP_REF
 
 		BerconXYZ berconXYZ;
 
 		Color			 col[2];
-		Texmap			*subtex[NOISE_NSUBTEX]; //array of sub-materials
-		BOOL			mapOn[NOISE_NSUBTEX];
+		Texmap			*subtex[NOISE_NSUBTEX]{}; //array of sub-materials
+		BOOL			mapOn[NOISE_NSUBTEX]{};
 		static ParamDlg* texoutDlg;
 		TextureOutput   *texout;
 		Interval		ivalid;
 		
 		// Curve
-		ICurveCtl* curve;				
-		BOOL useCurve;
+//		ICurveCtl* curve;				
+//		BOOL useCurve{};
 		// From ResourceMakerCallback		
-		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
-		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
-		void ResetCallback(int curvenum, ICurveCtl *pCCtl) { ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); if(pCurve) { pCurve->SetNumPts(2); NewCurveCreatedCallback(curvenum, pCCtl); }}
-		void NewCurveCreatedCallback(int curvenum, ICurveCtl *pCCtl) {
-			ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); TimeValue t = GetCOREInterface()->GetTime();
-			CurvePoint pt = pCurve->GetPoint(t,0); pt.p.y = 0.f; pCurve->SetPoint(t,0,&pt);
-			pCurve->SetPenProperty( RGB(0,0,0)); pCurve->SetDisabledPenProperty( RGB(128,128,128));		
-			pt = pCurve->GetPoint(t,1); pt.p.y = 1.f; pCurve->SetPoint(t,1,&pt);
+//		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
+//		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
+
+/*		virtual void NewCurveCreatedCallback(int curvenum, ICurveCtl* pCCtl)
+		{
+			ICurve* pCurve = pCCtl->GetControlCurve(curvenum);
+			TimeValue t = GetCOREInterface()->GetTime();
+			CurvePoint pt = pCurve->GetPoint(t, 0);
+			pt.p.y = 0.f;
+			pCurve->SetPoint(t, 0, &pt);
+			pCurve->SetPenProperty(RGB(0, 0, 0));
+			pCurve->SetDisabledPenProperty(RGB(128, 128, 128));
+			pt = pCurve->GetPoint(t, 1);
+			pt.p.y = 1.f;
+			pCurve->SetPoint(t, 1, &pt);
 		}
+
+		virtual void ResetCallback(int curvenum, ICurveCtl* pCCtl)
+		{
+			ICurve* pCurve = pCCtl->GetControlCurve(curvenum);
+			if (pCurve)
+			{
+				pCurve->SetNumPts(2);
+				NewCurveCreatedCallback(curvenum, pCCtl);
+			}
+		}
+*/
 
 		// Interactive Display
 		TexHandle *texHandle;
 		Interval texHandleValid;
 		void DiscardTexHandle() { if (texHandle) { texHandle->DeleteThis(); texHandle = NULL; } }
-		BOOL SupportTexDisplay() { return TRUE; }
-		void ActivateTexDisplay(BOOL onoff) { if (!onoff) DiscardTexHandle(); }
-		DWORD_PTR GetActiveTexHandle(TimeValue t, TexHandleMaker& thmaker);
+		virtual BOOL SupportTexDisplay() { return TRUE; }
+		virtual void ActivateTexDisplay(BOOL onoff) { if (!onoff) DiscardTexHandle(); }
+		virtual DWORD_PTR GetActiveTexHandle(TimeValue t, TexHandleMaker& thmaker);
 
 		//From MtlBase
-		ParamDlg* CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp);
-		BOOL SetDlgThing(ParamDlg* dlg);
-		void Update(TimeValue t, Interval& valid);
-		void Reset();
-		Interval Validity(TimeValue t);
-		ULONG LocalRequirements(int subMtlNum) { return berconXYZ.req(); }
-		void MappingsRequired(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { berconXYZ.map(subMtlNum, mapreq, bumpreq); }
+		virtual ParamDlg* CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp);
+		virtual BOOL SetDlgThing(ParamDlg* dlg);
+		virtual void Update(TimeValue t, Interval& valid);
+		virtual void Reset();
+		virtual Interval Validity(TimeValue t);
+		virtual ULONG LocalRequirements(int subMtlNum) { return berconXYZ.req(); }
+		virtual void MappingsRequired(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { berconXYZ.map(subMtlNum, mapreq, bumpreq); }
 
 
 		int NumSubTexmaps() { return NOISE_NSUBTEX; }
@@ -119,65 +140,64 @@ class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrSha
 		TSTR GetSubTexmapSlotName(int i);
 		
 		//From Texmap
-		RGBA EvalColor(ShadeContext& sc);
-		float EvalMono(ShadeContext& sc);
-		Point3 EvalNormalPerturb(ShadeContext& sc);
+		virtual RGBA EvalColor(ShadeContext& sc);
+		virtual float EvalMono(ShadeContext& sc);
+		virtual Point3 EvalNormalPerturb(ShadeContext& sc);
 
 		XYZGen *GetTheXYZGen() { return NULL; } 
 		
 		int SubNumToRefNum(int subNum) { return subNum; }
 		
-		void ReadSXPData(TCHAR *name, void *sxpdata) { }
+//		void ReadSXPData(MCHAR *name, void *sxpdata) { }
 		
 		//From Animatable
-		Class_ID ClassID() {return BerconNoise_CLASS_ID;}		
-		SClass_ID SuperClassID() { return TEXMAP_CLASS_ID; }
-		void GetClassName(TSTR& s) {s = GetString(IDS_CLASS_NAME);}
+		virtual Class_ID ClassID() {return BerconNoise_CLASS_ID;}
+		virtual SClass_ID SuperClassID() { return TEXMAP_CLASS_ID; }
+		virtual void GetClassName(TSTR& s) {s = GetString(IDS_CLASS_NAME);}
 
-		RefTargetHandle Clone( RemapDir &remap );
-		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
+private:
+		virtual void SetReference(int i, RefTargetHandle rtarg);
+public:
+		virtual RefTargetHandle GetReference(int i);
+		
+		virtual RefTargetHandle Clone(RemapDir &remap);
 
-		int NumSubs() { return 1; }						// Set this to one when Paramblock is used
+		int NumSubs() { return 1; }						// Set this to one when Paramblock is used as per max sdk
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
 		// TODO: Maintain the number or references here 
-		int NumRefs() { return 24; }					//	Save-on-Crash goes away if this is set to 22; BUT custom curve no longer saves its information.
-		RefTargetHandle GetReference(int i);
-		void SetReference(int i, RefTargetHandle rtarg);
+		int NumRefs() { return 22; }					//d	Save-on-Crash goes away if this is set to 22; BUT custom curve no longer saves its information.
 
-		int	NumParamBlocks() { return 4; }
-		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; case 1: return pbCurve; case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
+		int	NumParamBlocks() { return 3; }
+		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 1: return pbMap; case 2: return pbXYZ;
+		default: DbgAssert(0);
+		} return NULL; }
 		IParamBlock2* GetParamBlockByID(BlockID id) { 
 			if (pblock->ID() == id) return pblock;
-			if (pbCurve->ID() == id) return pbCurve;
+	//		if (pbCurve->ID() == id) return pbCurve;
 			if (pbMap->ID() == id) return pbMap;
 			if (pbXYZ->ID() == id) return pbXYZ;
+			if (id < NULL  ) DbgAssert(0);
+			if (id > 4) DbgAssert(0);
 			return NULL;			
 		}
-
-		void DeleteThis() { delete this; }		
-		
 		//Constructor/Destructor
 		BerconNoise();
-		~BerconNoise();		
+	virtual ~BerconNoise();
 
-		void* GetInterface(ULONG id) {
-			if(id == I_RESMAKER_INTERFACE)
-				return (void *) (ResourceMakerCallback*) this;
-			else
-				return Texmap::GetInterface(id);
-		}
+	void DeleteThis() { delete this; }						//d no effect on crash
+	//dummyreftarget moved and implemented in cpp file
 };
 
 class BerconNoiseClassDesc : public ClassDesc2 {
 public:
 	virtual int IsPublic() 							{ return TRUE; }
 	virtual void* Create(BOOL)				 		{ return new BerconNoise(); }
-	virtual const TCHAR *	ClassName() 			{ return GetString(IDS_CLASS_NAME); }
+	virtual const MCHAR *	ClassName() 			{ return GetString(IDS_CLASS_NAME); }
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconNoise_CLASS_ID; }
-	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _T("BerconNoise"); } // returns fixed parsable name (scripter-visible name)
+	virtual const MCHAR* Category() 				{ return TEXMAP_CAT_3D; }
+	virtual const MCHAR* InternalName() 			{ return _M("BerconNoise"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

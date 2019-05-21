@@ -46,7 +46,7 @@ void CurveCtrl::init(ICurveCtl *curve) {
 	flags |= CC_DRAWBG;
 	flags |= CC_DRAWGRID;
 	flags |= CC_DRAWUTOOLBAR;
-	flags |= 0; //CC_DRAWLTOOLBAR;
+	flags |= CC_DRAWLTOOLBAR;		//d !! was 0
 	flags |= CC_SHOWRESET;
 	flags |= 0; //CC_DRAWSCROLLBARS;
 	flags |= 0; //CC_AUTOSCROLL;

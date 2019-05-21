@@ -118,6 +118,6 @@ public:
 	virtual Class_ID ClassID() 						{ return BerconDistortion_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
 
-	virtual const TCHAR* InternalName() 			{ return _T("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _M("BerconMapping"); }	// returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }					// returns owning module handle	
 };

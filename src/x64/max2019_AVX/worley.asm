@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	?noise@Worley@@SAXQEANHPEANH@Z			; Worley::noise
@@ -14,16 +14,13 @@ PUBLIC	__real@3ff0000000000000
 PUBLIC	__real@400417ca3f5539e6
 PUBLIC	__xmm@7fffffffffffffff7fffffffffffffff
 PUBLIC	__ymm@400417ca3f5539e6400417ca3f5539e6400417ca3f5539e6400417ca3f5539e6
-EXTRN	__GSHandlerCheck:PROC
-EXTRN	__security_check_cookie:PROC
 EXTRN	sqrt:PROC
 EXTRN	__ImageBase:BYTE
-EXTRN	__security_cookie:QWORD
 EXTRN	_fltused:DWORD
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Worley@@SAXQEANHPEANH@Z DD imagerel $LN71
-	DD	imagerel $LN71+2013
+	DD	imagerel $LN71+1991
 	DD	imagerel $unwind$?noise@Worley@@SAXQEANHPEANH@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -395,28 +392,25 @@ $unwind$?add@Worley@@CAXJJJQEANHPEANH@Z DD 051001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Worley@@SAXQEANHPEANH@Z DD 01d6c19H
-	DD	08e855H
-	DD	09d84dH
-	DD	0ac845H
-	DD	0bb83dH
-	DD	0ca835H
-	DD	0d982dH
-	DD	0e8828H
-	DD	0f7823H
-	DD	010681eH
-	DD	02a3419H
-	DD	0220119H
-	DD	0e010f012H
-	DD	0c00cd00eH
-	DD	06009700aH
-	DD	05008H
-	DD	imagerel __GSHandlerCheck
-	DD	01cH
-	DD	060H
-	DD	020H
+$unwind$?noise@Worley@@SAXQEANHPEANH@Z DD 01f6101H
+	DD	08e858H
+	DD	09d850H
+	DD	0ac848H
+	DD	0bb840H
+	DD	0ca838H
+	DD	0d9833H
+	DD	0e882eH
+	DD	0f7829H
+	DD	0106824H
+	DD	02a741fH
+	DD	029641fH
+	DD	028341fH
+	DD	022011fH
+	DD	0e016f018H
+	DD	0c012d014H
+	DD	05010H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\worley.cpp
 ;	COMDAT ?add@Worley@@CAXJJJQEANHPEANH@Z
 _TEXT	SEGMENT
@@ -852,16 +846,15 @@ $LN57@add:
 	DD	$LN20@add
 ?add@Worley@@CAXJJJQEANHPEANH@Z ENDP			; Worley::add
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\worley.cpp
 ;	COMDAT ?noise@Worley@@SAXQEANHPEANH@Z
 _TEXT	SEGMENT
 new_at$ = 0
-__$ArrayPad$ = 24
-at$ = 336
-order$ = 344
-F$ = 352
-function$ = 360
+at$ = 320
+order$ = 328
+F$ = 336
+function$ = 344
 ?noise@Worley@@SAXQEANHPEANH@Z PROC			; Worley::noise, COMDAT
 
 ; 36   : void Worley::noise(double at[3], int order, double *F, int function) {
@@ -869,28 +862,25 @@ function$ = 360
 $LN71:
 	mov	rax, rsp
 	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
+	mov	QWORD PTR [rax+24], rdi
 	push	rbp
-	push	rsi
-	push	rdi
 	push	r12
 	push	r13
 	push	r14
 	push	r15
 	sub	rsp, 272				; 00000110H
-	vmovaps	XMMWORD PTR [rax-72], xmm6
-	vmovaps	XMMWORD PTR [rax-88], xmm7
-	vmovaps	XMMWORD PTR [rax-104], xmm8
-	vmovaps	XMMWORD PTR [rax-120], xmm9
-	vmovaps	XMMWORD PTR [rax-136], xmm10
-	vmovaps	XMMWORD PTR [rax-152], xmm11
-	vmovaps	XMMWORD PTR [rax-168], xmm12
-	vmovaps	XMMWORD PTR [rax-184], xmm13
-	vmovaps	XMMWORD PTR [rax-200], xmm14
+	vmovaps	XMMWORD PTR [rax-56], xmm6
+	vmovaps	XMMWORD PTR [rax-72], xmm7
+	vmovaps	XMMWORD PTR [rax-88], xmm8
+	vmovaps	XMMWORD PTR [rax-104], xmm9
+	vmovaps	XMMWORD PTR [rax-120], xmm10
+	vmovaps	XMMWORD PTR [rax-136], xmm11
+	vmovaps	XMMWORD PTR [rax-152], xmm12
+	vmovaps	XMMWORD PTR [rax-168], xmm13
+	vmovaps	XMMWORD PTR [rax-184], xmm14
 	lea	rbp, QWORD PTR [rsp+96]
 	and	rbp, -32				; ffffffffffffffe0H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rbp], rax
 	movsxd	rsi, edx
 	mov	r13d, r9d
 	mov	rbx, r8
@@ -1439,7 +1429,7 @@ $LN69@noise:
 	mov	eax, esi
 	sub	eax, edx
 	movsxd	rdx, eax
-	npad	11
+	npad	6
 $LL10@noise:
 
 ; 91   : 		F[i] = sqrt(F[i])*(1.0/DENSITY_ADJUSTMENT);      
@@ -1524,11 +1514,10 @@ $LN62@noise:
 ; 93   : 	return;
 ; 94   : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp]
-	xor	rcx, rsp
-	call	__security_check_cookie
 	lea	r11, QWORD PTR [rsp+272]
-	mov	rbx, QWORD PTR [r11+64]
+	mov	rbx, QWORD PTR [r11+48]
+	mov	rsi, QWORD PTR [r11+56]
+	mov	rdi, QWORD PTR [r11+64]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm7, XMMWORD PTR [r11-32]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
@@ -1543,8 +1532,6 @@ $LN62@noise:
 	pop	r14
 	pop	r13
 	pop	r12
-	pop	rdi
-	pop	rsi
 	pop	rbp
 	ret	0
 ?noise@Worley@@SAXQEANHPEANH@Z ENDP			; Worley::noise

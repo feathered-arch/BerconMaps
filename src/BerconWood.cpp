@@ -285,7 +285,7 @@ static ParamBlockDesc2 BerconWood_param_blk ( BerconWood_params, _T("params"),  
 		p_end,
 	p_end
 );
-
+/*
 enum { enable_curve, curve_cont };
 
 static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),  0, &BerconWoodDesc, 
@@ -299,7 +299,7 @@ static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),
 		p_refno,		CURVE_REF, 
 		p_end,
 	p_end
-);
+);*/
 
 enum {
 	map1, map2, map3, map4, map5, map6, map7, map8, map9, map10, map11, map12, map13, map14, map15, map16,
@@ -329,7 +329,7 @@ static ParamBlockDesc2 BerconMap_param_blk ( BerconMap_params, _T("params"),  0,
 
 	p_end
 );
-
+/*
 class BerconCurveDlgProc : public ParamMap2UserDlgProc {
 	public:
 		BerconWood *berconWood;		
@@ -355,7 +355,7 @@ class BerconCurveDlgProc : public ParamMap2UserDlgProc {
 			berconWood = (BerconWood*)m;
 		}
 };
-
+*/
 //dialog stuff to get the Set Ref button
 class BerconWoodDlgProc : public ParamMap2UserDlgProc {
 	public:
@@ -407,12 +407,12 @@ BerconWood::BerconWood() {
 	for (int i=0; i<NSUBTEX; i++) subtex[i] = NULL;	
 	texHandle = NULL;
 	pblock = NULL;
-	pbCurve = NULL;
+//	pbCurve = NULL;
 	pbMap = NULL;
 	pbXYZ = NULL;
 	BerconWoodDesc.MakeAutoParamBlocks(this);	
 	texout = NULL;	
-	curve = NULL;	
+//	curve = NULL;	
 	Reset();
 }
 
@@ -425,15 +425,15 @@ void BerconWood::Reset() {
 	if (texout) texout->Reset();
 	else ReplaceReference( OUTPUT_REF, GetNewDefaultTextureOutput());
 	
-	if (curve) curve->DeleteMe();
-	curve = (ICurveCtl *) CreateInstance(REF_MAKER_CLASS_ID,CURVE_CONTROL_CLASS_ID);
+//	if (curve) curve->DeleteMe();
+//	curve = (ICurveCtl *) CreateInstance(REF_MAKER_CLASS_ID,CURVE_CONTROL_CLASS_ID);
 #if MAX_RELEASE >= 18900
-	curve->RegisterResourceMaker(static_cast<ReferenceTarget*>(this));
+//	curve->RegisterResourceMaker(static_cast<ReferenceTarget*>(this));
 #else
-	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
+//	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
 #endif
-	CurveCtrl::init(curve);
-	pbCurve->SetValue(enable_curve, t, FALSE);
+//	CurveCtrl::init(curve);
+//	pbCurve->SetValue(enable_curve, t, FALSE);
 
 	for (int i=0; i<NSUBTEX; i++) { 
 		DeleteReference(i+2);			
@@ -478,7 +478,7 @@ void BerconWood::Reset() {
 }
 
 void BerconWood::Update(TimeValue t, Interval& valid) {	
-	if (pblock == NULL || pbCurve == NULL) return;
+	if (pblock == NULL /*|| pbCurve == NULL*/) return;
 	if (!ivalid.InInterval(t)) {
 		ivalid.SetInfinite();
 
@@ -543,7 +543,7 @@ void BerconWood::Update(TimeValue t, Interval& valid) {
 				mappedParameters = true;	
 
 		// Curve
-		pbCurve->GetValue(enable_curve, t, useCurve, ivalid);
+	//	pbCurve->GetValue(enable_curve, t, useCurve, ivalid);
 
 		EnableStuff();		
 		berconXYZ.update(pbXYZ, t, ivalid);
@@ -592,7 +592,7 @@ ParamDlg* BerconWood::CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp) {
 	texoutDlg = texout->CreateParamDlg(hwMtlEdit, imp);
 	masterDlg->AddDlg(texoutDlg);
 	BerconWood_param_blk.SetUserDlgProc(new BerconWoodDlgProc(this));
-	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProc(this));
+	//BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProc(this));
 	xyz_blk.SetUserDlgProc(new BerconXYZDlgProc(this));
 	EnableStuff();
 	return masterDlg;	
@@ -665,8 +665,8 @@ RefTargetHandle BerconWood::GetReference(int i)  {
 		case COORD_REF: return pbXYZ;
 		case PBLOCK_REF: return pblock;
 		case OUTPUT_REF: return texout;
-		case CURVE_REF: return curve;
-		case CURVEPB_REF: return pbCurve;
+//		case CURVE_REF: return curve;
+//		case CURVEPB_REF: return pbCurve;
 		case PBMAP_REF: return pbMap;
 		default: return subtex[i-2];
 	}
@@ -677,8 +677,8 @@ void BerconWood::SetReference(int i, RefTargetHandle rtarg) {
 		case COORD_REF: pbXYZ = (IParamBlock2 *)rtarg; break;
 		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;
 		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
-		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
-		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
+//		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
+//		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
 		case PBMAP_REF: pbMap = (IParamBlock2 *)rtarg; break;
 		default: subtex[i-2] = (Texmap *)rtarg; break;
 	}
@@ -690,8 +690,8 @@ RefTargetHandle BerconWood::Clone(RemapDir &remap) {
 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
 	mnew->ReplaceReference(OUTPUT_REF,remap.CloneRef(texout));
 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
-	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
-	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
+//	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
+//	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
 	mnew->ReplaceReference(PBMAP_REF,remap.CloneRef(pbMap));
 	mnew->ivalid.SetEmpty();		
 	for (int i = 0; i<NSUBTEX; i++) {
@@ -708,8 +708,8 @@ Animatable* BerconWood::SubAnim(int i) {
 	switch (i) {
 		case COORD_REF: return pbXYZ;
 		case PBLOCK_REF: return pblock;
-		case CURVE_REF: return curve;
-		case CURVEPB_REF: return pbCurve;
+//		case CURVE_REF: return curve;
+//		case CURVEPB_REF: return pbCurve;
 		case OUTPUT_REF: return texout;
 		case PBMAP_REF: return pbMap;
 		default: return subtex[i-2];
@@ -831,8 +831,8 @@ AColor BerconWood::EvalColor(ShadeContext& sc) {
 	RGBA c2 = lockGrain ? c1: (mapOn[2]&&subtex[2] ? subtex[2]->EvalColor(sc): col[2]);
 	
 	// Apply curves
-	if (useCurve)
-		d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
+	//if (useCurve)
+//		d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
 
 	// Calculate color
 	c = (1.0f-d)*c0 + d*c1;
@@ -874,13 +874,13 @@ Point3 BerconWood::EvalNormalPerturb(ShadeContext& sc) {
 	Point3 np, nG, gP;
 	
 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-	if (useCurve) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
+//	if (useCurve) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
 	
 	float g = grainON ? Fractal::grain(gP, grainA, grainF): 0.f;	
 	
 	for (int i=0; i<3; i++) {		
 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-		if (useCurve) np[i] = curve->GetControlCurve(0)->GetValue(sc.CurTime(), np[i]);	
+	//	if (useCurve) np[i] = curve->GetControlCurve(0)->GetValue(sc.CurTime(), np[i]);	
 		np[i] = (np[i] - d) / DELTA;
 		if (grainON) nG[i] = Fractal::grain(gP, grainA, grainF); // gP is updated by wood()
 	}

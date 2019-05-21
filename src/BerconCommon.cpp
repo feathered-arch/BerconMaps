@@ -18,13 +18,7 @@ under the License.
 #include "BerconCommon.h"
 #include "chkmtlapi.h"
 
-TCHAR *GetString(int id) {
-	static TCHAR buf[256];
 
-	if (hInstance)
-		return LoadString(hInstance, id, buf, sizeof(buf)) ? buf : NULL;
-	return NULL;
-}
 
 void BerconXYZ::reset(IParamBlock2* pblock, Interval& ivalid, int type, int x, int y, int z) {
 	if (!pblock) return;

@@ -62,9 +62,18 @@ under the License.
 #define PBMAP_REF	23
 
 #define NAMELENGTH 64
-typedef TCHAR TChBuffer[NAMELENGTH];
+typedef MCHAR TChBuffer[NAMELENGTH];
+/*
+class DummyRefTarget : public ReferenceTarget
+{
+	virtual void GetClassName(MSTR& s) { s = _M("DummyRefTarget"); }
+	virtual void* GetInterface(ULONG id);
+	RefResult NotifyRefChanged(const Interval& changeInt, RefTargetHandle hTarget, PartID& partID, RefMessage message, BOOL propagate) { return REF_DONTCARE; }
+};
 
+static BerconNoise theBerconNoise;*/
 static BerconNoiseClassDesc BerconNoiseDesc;
+
 ClassDesc2* GetBerconNoiseDesc() { return &BerconNoiseDesc; }
 
 enum { xyz_params, berconnoise_params, BerconCurve_params, BerconMap_params };
@@ -246,12 +255,12 @@ static ParamBlockDesc2 berconnoise_param_blk ( berconnoise_params, _T("params"),
 		p_end,
 	p_end
 );
-
+/*
 enum { enable_curve, curve_cont };
 
 static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),  0, &BerconNoiseDesc, 
 	P_AUTO_CONSTRUCT + P_AUTO_UI, CURVEPB_REF, 	
-	IDD_PANEL_CURVE, IDS_CURVEPARM, 0, 1, NULL,
+	IDD_PANEL_CURVE, IDS_CURVEPARM, 0, 0, NULL,
 	enable_curve,	_T("enableCurve"), TYPE_BOOL,			0,				IDS_OUTPUT_NOISE,
 		p_default,		FALSE,
 		p_ui,			TYPE_SINGLECHEKBOX, IDC_ENABLE,
@@ -261,7 +270,7 @@ static ParamBlockDesc2 BerconCurve_param_blk ( BerconCurve_params, _T("params"),
 		p_end,
 	p_end
 );
-
+*/
 enum {
 	map1, map2, map3, map4, map5, map6, map7, map8, map9, map10, map11, map12, map13, map14,
 	mapOn1, mapOn2, mapOn3, mapOn4, mapOn5, mapOn6, mapOn7, mapOn8, mapOn9, mapOn10, mapOn11, mapOn12, mapOn13, mapOn14,
@@ -288,16 +297,17 @@ static ParamBlockDesc2 BerconMap_param_blk ( BerconMap_params, _T("params"),  0,
 
 	p_end
 );
-
+/*
 class BerconCurveDlgProcNOISE : public ParamMap2UserDlgProc {
 	public:
 		BerconNoise *berconNoise;		
-		BerconCurveDlgProcNOISE(BerconNoise *m) {berconNoise = m;}		
-		INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) {
+		BerconCurveDlgProcNOISE(BerconNoise *m) {berconNoise = m;}
+
+		virtual INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) {
 			if (berconNoise->curve->GetHWND() != GetDlgItem(hWnd, IDC_CURVE))
 				CurveCtrl::update(berconNoise->curve, GetDlgItem(hWnd, IDC_CURVE), static_cast<ReferenceMaker*>(berconNoise)); // Force update curve
 			switch (msg) {
-				case WM_INITDIALOG:
+				case WM_INITDIALOG:			//	Don't use curvectrl::init function here
 				case WM_SHOWWINDOW:
 					CurveCtrl::update(berconNoise->curve, GetDlgItem(hWnd, IDC_CURVE), static_cast<ReferenceMaker*>(berconNoise));					
 					break;
@@ -308,21 +318,24 @@ class BerconCurveDlgProcNOISE : public ParamMap2UserDlgProc {
 			}
 			return TRUE;
 		}
-		void DeleteThis() {delete this;}
-		void SetThing(ReferenceTarget *m) { 
+
+		virtual void DeleteThis() {delete this;}
+
+		virtual void SetThing(ReferenceTarget *m) { 
 			CurveCtrl::disable(berconNoise->curve); // Disable previously used curve
 			berconNoise = (BerconNoise*)m;
 		}
 };
-
+*/
 //dialog stuff to get the Set Ref button
 class BerconNoiseDlgProc : public ParamMap2UserDlgProc {
 public:
 	BerconNoise *berconNoise;		
-	BerconNoiseDlgProc(BerconNoise *m) {berconNoise = m;}		
-	INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam);		
-	void DeleteThis() {delete this;}
-	void SetThing(ReferenceTarget *m) {
+	BerconNoiseDlgProc(BerconNoise *m) {berconNoise = m;}
+	virtual INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam);
+	virtual void DeleteThis() {delete this;}
+
+	virtual void SetThing(ReferenceTarget *m) {
 		berconNoise = (BerconNoise*)m;
 		berconNoise->EnableStuff();
 	}
@@ -402,68 +415,72 @@ BerconNoise::BerconNoise() {
 	for (int i=0; i<NOISE_NSUBTEX; i++) subtex[i] = NULL;
 	texHandle = NULL;
 	pblock = NULL;
-	pbCurve = NULL;
+//	pbCurve = NULL;
 	pbMap = NULL;
 	pbXYZ = NULL;
 	BerconNoiseDesc.MakeAutoParamBlocks(this);
 	texout = NULL;	
-	curve = NULL;		
-	Reset();
+//	curve = NULL;
+	BerconNoise::Reset();
 }
 
 BerconNoise::~BerconNoise() { DiscardTexHandle(); }
 //From MtlBase
 void BerconNoise::Reset() {
+	//Init
 	TimeValue t = GetCOREInterface()->GetTime();
-
+	if (t < 0) DbgAssert(0);					//dd can delete for release
+	ivalid.SetEmpty();
 	if (texout) texout->Reset();
 	else ReplaceReference( OUTPUT_REF, GetNewDefaultTextureOutput());
+//	if (curve) curve->DeleteMe();
+//	curve = static_cast<ICurveCtl *>(CreateInstance(REF_MAKER_CLASS_ID, CURVE_CONTROL_CLASS_ID));
 
-	if (curve) curve->DeleteMe();
-	curve = (ICurveCtl *) CreateInstance(REF_MAKER_CLASS_ID,CURVE_CONTROL_CLASS_ID);
 #if MAX_RELEASE >= 18900
-	curve->RegisterResourceMaker(static_cast<ReferenceTarget*>(this));
+//	curve->RegisterResourceMaker(new DummyRefTarget);
 #else
-	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
+//	curve->RegisterResourceMaker(static_cast<ReferenceMaker*>(this));
 #endif
-	CurveCtrl::init(curve);
-	pbCurve->SetValue(enable_curve, t, FALSE);
+	//Dump maps and reset PB2s
+//	if (pbCurve)	pbCurve->SetValue(enable_curve, t, TRUE);			// check for null pointer
+	if (pblock) {														// check for null pointer
+		for (int i = 0; i < NOISE_NSUBTEX; i++)
+			DeleteReference(i + 2);
 
-	for (int i=0; i<NOISE_NSUBTEX; i++) 
-		DeleteReference(i+2);	
-
-	pblock->SetValue( noise_color1, t, Color(0.f, 0.f, 0.f));
-	pblock->SetValue( noise_color2, t, Color(1.f, 1.f, 1.f));
-	pblock->SetValue( noise_map1_on, t, TRUE);
-	pblock->SetValue( noise_map2_on, t,	TRUE);		
-	pblock->SetValue( distortion_str, t, .1f);
-	pblock->SetValue( use_distortion, t, FALSE);
-	pblock->SetValue( uvw_dist, t, 0);
-	pblock->SetValue( noise_function_type, t, 1);
-	pblock->SetValue( fractal_type, t, 0);
-	pblock->SetValue( worley_distance, t, 0);
-	pblock->SetValue( noise_lowthresh, t, 0.f);
-	pblock->SetValue( noise_hithresh, t, 1.f);
-	pblock->SetValue( worley_spread, t, 3.f);			
-	pblock->SetValue( worley_F1, t,	1.f);
-	pblock->SetValue( worley_F2, t,	0.f);
-	pblock->SetValue( worley_F3, t,	0.f);
-	pblock->SetValue( worley_F4, t,	0.f);
-	pblock->SetValue( noise_phase, t, 0.f);
-	pblock->SetValue( noise_size, t, 25.f);
-	pblock->SetValue( fractal_gain, t, 5.f);
-	pblock->SetValue( fractal_offset, t, 0.f);
-	pblock->SetValue( fractal_h, t, .5f);
-	pblock->SetValue( fractal_lacunarity, t, 2.f);
-	pblock->SetValue( fractal_levels, t, 3.f);	
-
+		pblock->SetValue(noise_color1, t, Color(0.f, 0.f, 0.f));
+		pblock->SetValue(noise_color2, t, Color(1.f, 1.f, 1.f));
+		pblock->SetValue(noise_map1_on, t, TRUE);
+		pblock->SetValue(noise_map2_on, t, TRUE);
+		pblock->SetValue(distortion_str, t, .1f);
+		pblock->SetValue(use_distortion, t, FALSE);
+		pblock->SetValue(uvw_dist, t, 0);
+		pblock->SetValue(noise_function_type, t, 1);
+		pblock->SetValue(fractal_type, t, 0);
+		pblock->SetValue(worley_distance, t, 0);
+		pblock->SetValue(noise_lowthresh, t, 0.f);
+		pblock->SetValue(noise_hithresh, t, 1.f);
+		pblock->SetValue(worley_spread, t, 3.f);
+		pblock->SetValue(worley_F1, t, 1.f);
+		pblock->SetValue(worley_F2, t, 0.f);
+		pblock->SetValue(worley_F3, t, 0.f);
+		pblock->SetValue(worley_F4, t, 0.f);
+		pblock->SetValue(noise_phase, t, 0.f);
+		pblock->SetValue(noise_size, t, 25.f);
+		pblock->SetValue(fractal_gain, t, 5.f);
+		pblock->SetValue(fractal_offset, t, 0.f);
+		pblock->SetValue(fractal_h, t, .5f);
+		pblock->SetValue(fractal_lacunarity, t, 2.f);
+		pblock->SetValue(fractal_levels, t, 3.f);
+	}
 	// Maps
-	for (int i=14; i<28; i++)
-		pbMap->SetValue(i, t, TRUE);	
-
+	if (pbMap) {														// check for null pointer
+		for (int i = 14; i < 28; i++)
+			pbMap->SetValue(i, t, TRUE);
+	}
+	//Reset these after resetting maps and PB2s
 	berconXYZ.reset(pbXYZ, ivalid, 2, 0, 0, 0);
+//	CurveCtrl::init(curve);											//#d# Access violation C05 if commented out at line 862; not called prior to abort
 
-	ivalid.SetEmpty();	
 }
 
 void BerconNoise::Update(TimeValue t, Interval& valid) {	
@@ -528,7 +545,7 @@ void BerconNoise::Update(TimeValue t, Interval& valid) {
 			pbMap->GetValue((i+14), t, mapOn[i+4], ivalid);		
 
 		// Curve
-		pbCurve->GetValue(enable_curve, t, useCurve, ivalid);
+	//	if (pbCurve) pbCurve->GetValue(enable_curve, t, useCurve, ivalid);
 
 		EnableStuff();		
 
@@ -602,7 +619,7 @@ ParamDlg* BerconNoise::CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp) {
 	texoutDlg = texout->CreateParamDlg(hwMtlEdit, imp);
 	masterDlg->AddDlg(texoutDlg);
 	berconnoise_param_blk.SetUserDlgProc(new BerconNoiseDlgProc(this));
-	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProcNOISE(this));
+//	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProcNOISE(this));				//ddd Responsible for drawing the user interface for the custom curve. Does not affect crash.
 	xyz_blk.SetUserDlgProc(new BerconXYZDlgProc(this));	
 	EnableStuff();
 	return masterDlg;	
@@ -669,8 +686,8 @@ RefTargetHandle BerconNoise::GetReference(int i)  {
 		case COORD_REF: return pbXYZ;
 		case PBLOCK_REF: return pblock;
 		case OUTPUT_REF: return texout;
-		case CURVE_REF: return curve;
-		case CURVEPB_REF: return pbCurve;
+	//	case CURVE_REF: return curve;
+	//	case CURVEPB_REF: return pbCurve;
 		case PBMAP_REF: return pbMap;
 		default: return subtex[i-2];
 	}
@@ -681,8 +698,8 @@ void BerconNoise::SetReference(int i, RefTargetHandle rtarg) {
 		case COORD_REF:  pbXYZ = (IParamBlock2 *)rtarg; break;
 		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;
 		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
-		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
-		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
+	//	case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
+	//	case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
 		case PBMAP_REF: pbMap = (IParamBlock2 *)rtarg; break;
 		default: subtex[i-2] = (Texmap *)rtarg; break;
 	}
@@ -694,8 +711,8 @@ RefTargetHandle BerconNoise::Clone(RemapDir &remap) {
 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
 	mnew->ReplaceReference(OUTPUT_REF,remap.CloneRef(texout));
 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
-	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
-	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
+//	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
+//	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
 	mnew->ReplaceReference(PBMAP_REF,remap.CloneRef(pbMap));
 	mnew->ivalid.SetEmpty();		
 	for (int i = 0; i<NOISE_NSUBTEX; i++) {
@@ -712,8 +729,8 @@ Animatable* BerconNoise::SubAnim(int i) {
 	switch (i) {
 		case COORD_REF: return pbXYZ;
 		case PBLOCK_REF: return pblock;
-		case CURVE_REF: return curve;
-		case CURVEPB_REF: return pbCurve;
+//		case CURVE_REF: return curve;
+//		case CURVEPB_REF: return pbCurve;
 		case OUTPUT_REF: return texout;
 		case PBMAP_REF: return pbMap;
 		default: return subtex[i-2];
@@ -728,11 +745,12 @@ TSTR BerconNoise::SubAnimName(int i) {
 		case CURVEPB_REF: return GetString(IDS_CURVEPB);
 		case OUTPUT_REF: return GetString(IDS_OUTPUT);
 		case PBMAP_REF: return GetString(IDS_PBMAP);
-		default: return GetSubTexmapTVName(i-2);
+		default: 
+			return GetSubTexmapTVName(i - 2);
 	}
 }
 
-RefResult BerconNoise::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {
+RefResult BerconNoise::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {				// Update the display (mtl preview, viewport, etc.)
 	switch (message) {
 		case REFMSG_CHANGE:
 			ivalid.SetEmpty();			
@@ -740,9 +758,9 @@ RefResult BerconNoise::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {
 				ParamID changing_param = pblock->LastNotifyParamID();
 				berconnoise_param_blk.InvalidateUI(changing_param);
 				if (changing_param != -1) DiscardTexHandle();
-			}  else if (hTarget == pbCurve) {
-				ParamID changing_param = pbCurve->LastNotifyParamID();
-				BerconCurve_param_blk.InvalidateUI(changing_param);
+	//		}  else if (hTarget == pbCurve) {
+	//			ParamID changing_param = pbCurve->LastNotifyParamID();
+	//			BerconCurve_param_blk.InvalidateUI(changing_param);
 				if (changing_param != -1) DiscardTexHandle();
 			}  else if (hTarget == pbXYZ) {
 				ParamID changing_param = pbXYZ->LastNotifyParamID();
@@ -771,7 +789,7 @@ void BerconNoise::applyDistortion(ShadeContext& sc, Point3& p) {
 }
 
 NoiseParams BerconNoise::EvalParameters(ShadeContext* sc) {
-	NoiseParams np;
+	NoiseParams np{};
 	np.noiseFunction = noiseFunction;
 	np.fractalFunction = fractalFunction;
 	np.worleyFunction = worleyFunction;
@@ -841,9 +859,9 @@ AColor BerconNoise::EvalColor(ShadeContext& sc) {
 	NoiseParams np = EvalParameters(&sc);
 		
 	// Caluclate noise function
-	float d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);	
-	if (useCurve)
-		d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
+	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
+//		if (useCurve)
+//	d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);			//d null check for curve
 
 	// Get colors
 	RGBA c0 = mapOn[0]&&subtex[0] ? subtex[0]->EvalColor(sc): col[0];
@@ -887,12 +905,12 @@ Point3 BerconNoise::EvalNormalPerturb(ShadeContext& sc) {
 	// Vector
 	Point3 normal;
 	float d = Noise::limitedNoise(p, np);
-	if (useCurve) {		
+	/*if (useCurve) {		
 		d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
 		normal.x = (curve->GetControlCurve(0)->GetValue(sc.CurTime(), Noise::limitedNoise(p+DELTA*M[0], np)) - d) / DELTA;
 		normal.y = (curve->GetControlCurve(0)->GetValue(sc.CurTime(), Noise::limitedNoise(p+DELTA*M[1], np)) - d) / DELTA;
 		normal.z = (curve->GetControlCurve(0)->GetValue(sc.CurTime(), Noise::limitedNoise(p+DELTA*M[2], np)) - d) / DELTA;
-	} else {
+	} else */{
 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
 		normal.z = (Noise::limitedNoise(p+DELTA*M[2], np) - d) / DELTA;
@@ -928,3 +946,12 @@ Point3 BerconNoise::EvalNormalPerturb(ShadeContext& sc) {
 
 	return texout->Filter(normal); // Does this filter actually do something?
 }
+/*
+void *DummyRefTarget::GetInterface(ULONG id)
+{
+	if (id == I_RESMAKER_INTERFACE)
+		return (void *)(ResourceMakerCallback *)&theBerconNoise;
+	else
+		return ReferenceTarget::GetInterface(id);
+}
+*/

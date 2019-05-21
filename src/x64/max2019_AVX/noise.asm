@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
@@ -91,13 +91,10 @@ EXTRN	?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z:PROC ; Fractal::fBm
 EXTRN	?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z:PROC ; Fractal::fBmTurb
 EXTRN	?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z:PROC ; Fractal::hybridMultiFractal
 EXTRN	?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z:PROC ; Fractal::ridgedMultiFractal
-EXTRN	__GSHandlerCheck:PROC
-EXTRN	__security_check_cookie:PROC
 EXTRN	cosf:PROC
 EXTRN	sinf:PROC
 EXTRN	sqrtf:PROC
 EXTRN	__ImageBase:BYTE
-EXTRN	__security_cookie:QWORD
 EXTRN	_fltused:DWORD
 _BSS	SEGMENT
 ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A DB 010H DUP (?) ; MaxSDK::AssetManagement::kInvalidId
@@ -129,7 +126,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z DD imagerel $LN17
-	DD	imagerel $LN17+272
+	DD	imagerel $LN17+260
 	DD	imagerel $unwind$?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -141,32 +138,32 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z DD imagerel $LN19
-	DD	imagerel $LN19+445
+	DD	imagerel $LN19+414
 	DD	imagerel $unwind$?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z DD imagerel $LN51
-	DD	imagerel $LN51+924
+	DD	imagerel $LN51+937
 	DD	imagerel $unwind$?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98
-	DD	imagerel $LN98+660
+	DD	imagerel $LN98+674
 	DD	imagerel $unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98+660
-	DD	imagerel $LN98+1359
-	DD	imagerel $chain$2$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
+$pdata$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98+674
+	DD	imagerel $LN98+1427
+	DD	imagerel $chain$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98+1359
-	DD	imagerel $LN98+1439
-	DD	imagerel $chain$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
+$pdata$4$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98+1427
+	DD	imagerel $LN98+1501
+	DD	imagerel $chain$4$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -183,7 +180,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z DD imagerel $LN12
-	DD	imagerel $LN12+168
+	DD	imagerel $LN12+183
 	DD	imagerel $unwind$?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -195,7 +192,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31
-	DD	imagerel $LN31+484
+	DD	imagerel $LN31+488
 	DD	imagerel $unwind$?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -282,10 +279,11 @@ $unwind$?f@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 020901H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z DD 061101H
-	DD	036811H
-	DD	070047208H
-	DD	030026003H
+$unwind$?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z DD 081801H
+	DD	036818H
+	DD	0b640fH
+	DD	0a340fH
+	DD	0700b720fH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -299,54 +297,53 @@ $unwind$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 021H
+$chain$4$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 021H
 	DD	imagerel $LN98
-	DD	imagerel $LN98+660
+	DD	imagerel $LN98+674
 	DD	imagerel $unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 062321H
-	DD	08c823H
-	DD	09b81aH
-	DD	0aa809H
+$chain$3$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 082e21H
+	DD	04f82eH
+	DD	07c820H
+	DD	08b81aH
+	DD	09a809H
 	DD	imagerel $LN98
-	DD	imagerel $LN98+660
+	DD	imagerel $LN98+674
 	DD	imagerel $unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 0164f01H
-	DD	05f84fH
-	DD	06e849H
-	DD	07d843H
-	DD	0b983aH
-	DD	0c8832H
-	DD	0d782aH
-	DD	0e6822H
-	DD	01f0112H
+$unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD 0144101H
+	DD	05e841H
+	DD	06d838H
+	DD	0a982fH
+	DD	0b8827H
+	DD	0c781fH
+	DD	0d6817H
+	DD	01d0112H
 	DD	0e009f00bH
 	DD	060067007H
 	DD	030045005H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z DD 0e5e01H
-	DD	03a85eH
-	DD	049858H
-	DD	05884fH
-	DD	067846H
-	DD	076822H
-	DD	07004f20bH
-	DD	030026003H
+$unwind$?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z DD 0106101H
+	DD	03a861H
+	DD	04985cH
+	DD	058854H
+	DD	067839H
+	DD	076829H
+	DD	0136413H
+	DD	0123413H
+	DD	0700cf213H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 041919H
-	DD	010340aH
+$unwind$?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 040a01H
+	DD	0e340aH
 	DD	07006b20aH
-	DD	imagerel __GSHandlerCheck
-	DD	058H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -381,7 +378,7 @@ $unwind$??_H@YAXPEAX_K1P6APEAX0@Z@Z DD 081901H
 	DD	063419H
 	DD	070153219H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.h
@@ -440,7 +437,7 @@ $LN31:
 ; 63   : 		switch (np.fractalFunction) {
 
 	movsxd	rax, DWORD PTR [r8+4]
-	vmovaps	xmm3, xmm1
+	vmovaps	xmm2, xmm1
 	cmp	eax, 7
 	ja	$LN2@f
 	lea	r9, OFFSET FLAT:__ImageBase
@@ -453,20 +450,21 @@ $LN4@f:
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	xmm0, DWORD PTR [rcx]
-	vmovss	xmm2, DWORD PTR [rcx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	DWORD PTR $T8[rbp-48], xmm0
 	vmovss	xmm0, DWORD PTR [rcx+8]
+	vmovss	DWORD PTR $T8[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
 ; 64   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
 
 	lea	rcx, QWORD PTR $T8[rbp-48]
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	DWORD PTR $T8[rbp-40], xmm0
-	vmovss	DWORD PTR $T8[rbp-44], xmm2
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
 ; 64   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
@@ -497,7 +495,7 @@ $LN5@f:
 ; 65   : 			case 1: return fractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T7[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -531,7 +529,7 @@ $LN6@f:
 ; 66   : 			case 2: return turbulence(p, d, np);
 
 	lea	rcx, QWORD PTR $T6[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -565,7 +563,7 @@ $LN7@f:
 ; 67   : 			case 3: return fBm(p, d, np);
 
 	lea	rcx, QWORD PTR $T5[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -599,7 +597,7 @@ $LN8@f:
 ; 68   : 			case 4: return fBmTurb(p, d, np);
 
 	lea	rcx, QWORD PTR $T4[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -667,7 +665,7 @@ $LN10@f:
 ; 70   : 			case 6: return hybridMultiFractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T2[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -701,7 +699,7 @@ $LN11@f:
 ; 71   : 			case 7: return ridgedMultiFractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T1[rbp-48]
-	vmovaps	xmm1, xmm3
+	vmovaps	xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -737,7 +735,7 @@ $LN29@f:
 	DD	$LN11@f
 ?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP	; Fractal::f
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.h
@@ -1084,7 +1082,7 @@ $LN29@f:
 	DD	$LN11@f
 ?f@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP	; Fractal::f
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -1093,26 +1091,26 @@ _TEXT	ENDS
 ;	COMDAT ?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z
 _TEXT	SEGMENT
 $T1 = 32
-p$ = 96
-dpdx$ = 104
-dpdy$ = 112
-np$ = 120
+p$ = 80
+dpdx$ = 88
+dpdy$ = 96
+np$ = 104
 ?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z PROC ; Noise::limitedNoise, COMDAT
 
 ; 211  : float Noise::limitedNoise(Point3 p, Point3 dpdx, Point3 dpdy, NoiseParams &np) {
 
 $LN12:
-	push	rbx
-	push	rsi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 	sub	rsp, 64					; 00000040H
-	mov	rdi, rcx
+	mov	rsi, rcx
 	vmovaps	XMMWORD PTR [rsp+48], xmm6
 
 ; 212  : 	float lx = dpdx.Length();
 
 	mov	rcx, rdx
-	mov	rsi, r9
+	mov	rdi, r9
 	mov	rbx, r8
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
@@ -1132,16 +1130,16 @@ $LN7@limitedNoi:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm0, DWORD PTR [rdi]
-	vmovss	xmm1, DWORD PTR [rdi+4]
+	vmovss	xmm0, DWORD PTR [rsi]
+	vmovss	xmm1, DWORD PTR [rsi+4]
 	vmovss	DWORD PTR $T1[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [rdi+8]
+	vmovss	xmm0, DWORD PTR [rsi+8]
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 215  : 	float res = Fractal::f(p, lx, np);	
 
-	mov	r8, rsi
+	mov	r8, rdi
 	lea	rcx, QWORD PTR $T1[rsp]
 	vmovaps	xmm1, xmm6
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1157,8 +1155,8 @@ $LN7@limitedNoi:
 
 ; 216  : 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
 
-	vmovss	xmm1, DWORD PTR [rsi+60]
-	vmovss	xmm2, DWORD PTR [rsi+64]
+	vmovss	xmm1, DWORD PTR [rdi+60]
+	vmovss	xmm2, DWORD PTR [rdi+64]
 	vcomiss	xmm2, xmm1
 	jbe	SHORT $LN2@limitedNoi
 	call	QWORD PTR __imp_?threshold@@YAMMMM@Z
@@ -1182,15 +1180,15 @@ $LN4@limitedNoi:
 ; 219  : 	return res;
 ; 220  : }
 
+	mov	rbx, QWORD PTR [rsp+80]
+	mov	rsi, QWORD PTR [rsp+88]
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z ENDP ; Noise::limitedNoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -1266,7 +1264,7 @@ $LN4@limitedNoi:
 	ret	0
 ?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Noise::limitedNoise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -1359,11 +1357,13 @@ $LN2@alterUVW:
 	ret	0
 ?alterUVW@Noise@@SAXAEAVPoint3@@H@Z ENDP		; Noise::alterUVW
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
+; File g:\dropbox\github\berconmaps\src\noise.cpp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -1389,17 +1389,18 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ;	COMDAT ?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z
 _TEXT	SEGMENT
-fp$1$ = 48
-fp$2$ = 52
-fp$3$ = 56
-angNoise$1$ = 60
-$T1 = 64
-$T2 = 64
-p$ = 304
-dPdx$ = 312
-dPdy$ = 320
-g$ = 328
-wp$ = 336
+$T1 = 48
+$T2 = 48
+fp$1$ = 288
+p$ = 288
+fp$2$ = 296
+dPdx$ = 296
+fp$3$ = 304
+dPdy$ = 304
+angNoise$1$ = 312
+g$ = 312
+samplesf$1$ = 320
+wp$ = 320
 ?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z PROC	; Noise::wood, COMDAT
 
 ; 143  : float Noise::wood(Point3 p, Point3 dPdx, Point3 dPdy, Point3 &g, WoodParam wp) {
@@ -1412,29 +1413,27 @@ $LN98:
 	push	rdi
 	push	r14
 	push	r15
-	sub	rsp, 248				; 000000f8H
-	mov	rsi, QWORD PTR wp$[rsp]
-	mov	rdi, rcx
+	sub	rsp, 232				; 000000e8H
 	vmovaps	XMMWORD PTR [rax-72], xmm6
+	mov	rdi, rcx
+	vmovaps	XMMWORD PTR [rax-88], xmm7
 
 ; 144  : 	// Filtered noises are only intrested in maximum change in X, Y and Z axis.
 ; 145  : 	float lx = dPdx.Length();
 
 	mov	rcx, rdx
-	vmovaps	XMMWORD PTR [rax-88], xmm7
-	mov	rbx, r9
 	vmovaps	XMMWORD PTR [rax-104], xmm8
-	mov	r14, r8
+	mov	rbx, r9
 	vmovaps	XMMWORD PTR [rax-120], xmm9
-	mov	rbp, rdx
-	vmovaps	XMMWORD PTR [rsp+112], xmm13
-	vmovaps	XMMWORD PTR [rsp+96], xmm14
-	vmovaps	XMMWORD PTR [rsp+80], xmm15
+	mov	rbp, r8
+	vmovaps	XMMWORD PTR [rsp+96], xmm13
+	mov	r14, rdx
+	vmovaps	XMMWORD PTR [rsp+80], xmm14
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
 ; 146  : 	float ly = dPdy.Length();
 
-	mov	rcx, r14
+	mov	rcx, rbp
 	vmovaps	xmm6, xmm0
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
@@ -1442,29 +1441,30 @@ $LN98:
 ; 148  : 	// Radial noise
 ; 149  : 	p.x += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f, filter*wp.radialFreq) * wp.radialStr;
 
-	vmovss	xmm5, DWORD PTR [rsi+44]
+	mov	rsi, QWORD PTR wp$[rsp]
 	vmovss	xmm7, DWORD PTR __real@3f900000
-	vmulss	xmm1, xmm5, DWORD PTR [rdi+4]
 	vmaxss	xmm8, xmm6, xmm0
+	vmovss	xmm5, DWORD PTR [rsi+44]
 	vmovss	xmm0, DWORD PTR [rsi+4]
+	vmulss	xmm1, xmm5, DWORD PTR [rdi+4]
 	vsubss	xmm3, xmm0, xmm7
-	vmovss	xmm0, DWORD PTR [rdi+8]
-	vmulss	xmm2, xmm0, DWORD PTR [rsi+48]
+	vmovss	xmm0, DWORD PTR [rsi+48]
+	vmulss	xmm2, xmm0, DWORD PTR [rdi+8]
 	vmulss	xmm0, xmm5, DWORD PTR [rdi]
 	vmulss	xmm4, xmm5, xmm8
 	vmovss	DWORD PTR [rsp+32], xmm4
 	call	?fsnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fsnoise4D
 	vmulss	xmm1, xmm0, DWORD PTR [rsi+40]
 	vaddss	xmm6, xmm1, DWORD PTR [rdi]
+	vmovss	DWORD PTR [rdi], xmm6
 
 ; 150  : 	p.y += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f, filter*wp.radialFreq) * wp.radialStr;
 
-	vmovss	xmm1, DWORD PTR [rdi+8]
-	vmovss	DWORD PTR [rdi], xmm6
 	vmovss	xmm4, DWORD PTR [rsi+44]
-	vmulss	xmm2, xmm1, DWORD PTR [rsi+48]
-	vaddss	xmm3, xmm7, DWORD PTR [rsi+4]
+	vmovss	xmm1, DWORD PTR [rsi+48]
+	vmulss	xmm2, xmm1, DWORD PTR [rdi+8]
 	vmulss	xmm1, xmm4, DWORD PTR [rdi+4]
+	vaddss	xmm3, xmm7, DWORD PTR [rsi+4]
 	vmulss	xmm5, xmm4, xmm8
 	vmulss	xmm0, xmm4, xmm6
 	vmovss	DWORD PTR [rsp+32], xmm5
@@ -1523,6 +1523,10 @@ $LN98:
 	call	?fsnoise2D@Perlin@@SAMMMM@Z		; Perlin::fsnoise2D
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmovss	xmm9, DWORD PTR __real@3f000000
+
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
 	vmulss	xmm3, xmm6, xmm0
@@ -1559,7 +1563,6 @@ $LN98:
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmovss	xmm9, DWORD PTR __real@3f000000
 	vmulss	xmm4, xmm9, DWORD PTR [rbx+8]
 	vmulss	xmm2, xmm9, DWORD PTR [rbx]
 	vmulss	xmm7, xmm0, xmm9
@@ -1621,19 +1624,12 @@ $LN98:
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm4, xmm9, DWORD PTR [rbp]
-	vmulss	xmm3, xmm9, DWORD PTR [rbp+4]
-	vmulss	xmm2, xmm9, DWORD PTR [rbp+8]
-
-; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
-
-	vmovss	xmm1, DWORD PTR [rdi+4]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm7, xmm9, DWORD PTR [r14]
-	vmulss	xmm6, xmm9, DWORD PTR [r14+4]
-	vmulss	xmm5, xmm9, DWORD PTR [r14+8]
+	vmulss	xmm4, xmm9, DWORD PTR [r14]
+	vmulss	xmm3, xmm9, DWORD PTR [r14+4]
+	vmulss	xmm2, xmm9, DWORD PTR [r14+8]
+	vmulss	xmm7, xmm9, DWORD PTR [rbp]
+	vmulss	xmm6, xmm9, DWORD PTR [rbp+4]
+	vmulss	xmm5, xmm9, DWORD PTR [rbp+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 157  : 	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
@@ -1646,20 +1642,27 @@ $LN98:
 	vmovss	xmm0, DWORD PTR [rdi]
 	vsubss	xmm4, xmm0, xmm4
 	vmovss	xmm0, DWORD PTR [rdi+8]
-	vsubss	xmm2, xmm0, xmm2
-	vsubss	xmm3, xmm1, xmm3
-	vsubss	xmm0, xmm2, xmm5
-	vxorps	xmm15, xmm15, xmm15
-	vsubss	xmm4, xmm4, xmm7
-	vsubss	xmm3, xmm3, xmm6
-	vmovss	DWORD PTR fp$3$[rsp], xmm0
-	vmovss	DWORD PTR fp$1$[rsp], xmm4
-	vmovss	DWORD PTR fp$2$[rsp], xmm3
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 159  : 	float samplesf = (float)wp.samples;
 
-	vcvtsi2ss xmm15, xmm15, eax
+	vcvtsi2ss xmm1, xmm1, eax
+	vmovss	DWORD PTR samplesf$1$[rsp], xmm1
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
+
+	vmovss	xmm1, DWORD PTR [rdi+4]
+	vsubss	xmm3, xmm1, xmm3
+	vsubss	xmm2, xmm0, xmm2
+	vsubss	xmm3, xmm3, xmm6
+	vsubss	xmm4, xmm4, xmm7
+	vsubss	xmm0, xmm2, xmm5
+	vmovss	DWORD PTR fp$2$[rsp], xmm3
+	vmovss	DWORD PTR fp$1$[rsp], xmm4
+	vmovss	DWORD PTR fp$3$[rsp], xmm0
+; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 160  : 	float total = 0.f;
 
@@ -1671,21 +1674,24 @@ $LN98:
 	test	eax, eax
 	jle	$LN3@wood
 	vmovss	xmm8, DWORD PTR __real@3f800000
-	vmovaps	XMMWORD PTR [rsp+160], xmm10
+	vmovaps	XMMWORD PTR [rsp+144], xmm10
 	vmovss	xmm10, DWORD PTR __real@3d4ccccd
-	vmovaps	XMMWORD PTR [rsp+144], xmm11
-	vmovaps	XMMWORD PTR [rsp+128], xmm12
+	vmovaps	XMMWORD PTR [rsp+128], xmm11
+	vmovaps	XMMWORD PTR [rsp+112], xmm12
 	vmovss	xmm12, DWORD PTR __real@41700000
-	npad	1
+	vmovaps	XMMWORD PTR [rsp+64], xmm15
+	vmovss	xmm15, DWORD PTR __xmm@80000000800000008000000080000000
+	npad	8
 $LL4@wood:
 	xor	ebx, ebx
 	test	eax, eax
 	jle	$LN2@wood
+	vmovss	xmm2, DWORD PTR samplesf$1$[rsp]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r15d
 	vaddss	xmm1, xmm0, xmm9
-	vdivss	xmm11, xmm1, xmm15
-	npad	3
+	vdivss	xmm11, xmm1, xmm2
+	npad	11
 $LL7@wood:
 	vxorps	xmm0, xmm0, xmm0
 
@@ -1697,21 +1703,21 @@ $LL7@wood:
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm11, DWORD PTR [rbp+8]
+	vmulss	xmm0, xmm11, DWORD PTR [r14+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 164  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
 
-	vdivss	xmm2, xmm1, xmm15
+	vdivss	xmm2, xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm5, xmm2, DWORD PTR [r14]
-	vmulss	xmm6, xmm2, DWORD PTR [r14+4]
-	vmulss	xmm7, xmm2, DWORD PTR [r14+8]
-	vmulss	xmm2, xmm11, DWORD PTR [rbp+4]
-	vmulss	xmm1, xmm11, DWORD PTR [rbp]
+	vmulss	xmm5, xmm2, DWORD PTR [rbp]
+	vmulss	xmm6, xmm2, DWORD PTR [rbp+4]
+	vmulss	xmm7, xmm2, DWORD PTR [rbp+8]
+	vmulss	xmm2, xmm11, DWORD PTR [r14+4]
+	vmulss	xmm1, xmm11, DWORD PTR [r14]
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
@@ -1762,7 +1768,7 @@ $LL7@wood:
 	vmovss	xmm6, DWORD PTR [rdi]
 	vcomiss	xmm13, xmm6
 	jbe	$LN8@wood
-	vxorps	xmm6, xmm6, DWORD PTR __xmm@80000000800000008000000080000000
+	vxorps	xmm6, xmm6, xmm15
 	jmp	$LN8@wood
 $LN12@wood:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1929,8 +1935,9 @@ $LN17@wood:
 	vsubss	xmm1, xmm8, DWORD PTR [rsi+28]
 	vaddss	xmm2, xmm4, xmm1
 	vmovss	xmm4, DWORD PTR fp$1$[rsp]
-	inc	ebx
 	vmulss	xmm0, xmm2, xmm6
+	vmovss	xmm2, DWORD PTR samplesf$1$[rsp]
+	inc	ebx
 
 ; 196  : 		// Add to total value
 ; 197  : 	 	total += dist;
@@ -1947,9 +1954,10 @@ $LN2@wood:
 	inc	r15d
 	cmp	r15d, eax
 	jl	$LL4@wood
-	vmovaps	xmm12, XMMWORD PTR [rsp+128]
-	vmovaps	xmm11, XMMWORD PTR [rsp+144]
-	vmovaps	xmm10, XMMWORD PTR [rsp+160]
+	vmovaps	xmm15, XMMWORD PTR [rsp+64]
+	vmovaps	xmm12, XMMWORD PTR [rsp+112]
+	vmovaps	xmm11, XMMWORD PTR [rsp+128]
+	vmovaps	xmm10, XMMWORD PTR [rsp+144]
 $LN3@wood:
 
 ; 198  : 	}
@@ -1960,18 +1968,17 @@ $LN3@wood:
 
 ; 201  : }
 
-	lea	r11, QWORD PTR [rsp+248]
+	lea	r11, QWORD PTR [rsp+232]
 	vmovaps	xmm6, XMMWORD PTR [r11-24]
 	vmovaps	xmm7, XMMWORD PTR [r11-40]
 	vmovaps	xmm8, XMMWORD PTR [r11-56]
 	vmovaps	xmm9, XMMWORD PTR [r11-72]
-	vmovaps	xmm13, XMMWORD PTR [rsp+112]
-	vmovaps	xmm15, XMMWORD PTR [rsp+80]
+	vmovaps	xmm13, XMMWORD PTR [rsp+96]
 	vxorps	xmm0, xmm0, xmm0
 	imul	eax, eax
 	vcvtsi2ss xmm0, xmm0, eax
 	vdivss	xmm0, xmm14, xmm0
-	vmovaps	xmm14, XMMWORD PTR [rsp+96]
+	vmovaps	xmm14, XMMWORD PTR [rsp+80]
 	mov	rsp, r11
 	pop	r15
 	pop	r14
@@ -1982,7 +1989,7 @@ $LN3@wood:
 	ret	0
 ?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z ENDP	; Noise::wood
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -2003,16 +2010,17 @@ _TEXT	ENDS
 ;	COMDAT ?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z
 _TEXT	SEGMENT
 $T1 = 32
-p$ = 160
-g$ = 168
-wp$ = 176
+p$ = 144
+g$ = 152
+wp$ = 160
 ?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z PROC	; Noise::wood, COMDAT
 
 ; 87   : float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
 
 $LN51:
-	push	rbx
-	push	rsi
+	mov	rax, rsp
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 128				; 00000080H
 
@@ -2022,19 +2030,19 @@ $LN51:
 	vmovss	xmm0, DWORD PTR [r8+4]
 	vmovss	xmm4, DWORD PTR [r8+44]
 	vmulss	xmm1, xmm4, DWORD PTR [rcx+4]
-	vmovaps	XMMWORD PTR [rsp+112], xmm6
+	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rsi, r8
 	vmovss	xmm6, DWORD PTR __real@3f900000
+	vmovaps	XMMWORD PTR [rax-40], xmm7
+	mov	rbx, rdx
 	vsubss	xmm3, xmm0, xmm6
 	vmovss	xmm0, DWORD PTR [rcx+8]
 	vmulss	xmm2, xmm0, DWORD PTR [r8+48]
 	vmulss	xmm0, xmm4, DWORD PTR [rcx]
-	vmovaps	XMMWORD PTR [rsp+96], xmm7
-	mov	rbx, rdx
-	vmovaps	XMMWORD PTR [rsp+80], xmm8
+	vmovaps	XMMWORD PTR [rax-56], xmm8
 	mov	rdi, rcx
-	vmovaps	XMMWORD PTR [rsp+64], xmm9
-	vmovaps	XMMWORD PTR [rsp+48], xmm10
+	vmovaps	XMMWORD PTR [rax-72], xmm9
+	vmovaps	XMMWORD PTR [rax-88], xmm10
 	call	?snoise@Perlin@@SAMMMMM@Z		; Perlin::snoise
 	vmulss	xmm1, xmm0, DWORD PTR [rsi+40]
 	vaddss	xmm5, xmm1, DWORD PTR [rdi]
@@ -2365,30 +2373,30 @@ $LN11@wood:
 ; 129  : }
 
 	vmovaps	xmm7, XMMWORD PTR [rsp+96]
-	vmovaps	xmm8, XMMWORD PTR [rsp+80]
+	lea	r11, QWORD PTR [rsp+128]
+	mov	rbx, QWORD PTR [r11+16]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm9
 	vsubss	xmm1, xmm10, DWORD PTR [rsi+28]
 	vmulss	xmm4, xmm2, DWORD PTR [rsi+28]
-	vmovaps	xmm9, XMMWORD PTR [rsp+64]
-	vmovaps	xmm10, XMMWORD PTR [rsp+48]
+	mov	rsi, QWORD PTR [r11+24]
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
+	vmovaps	xmm10, XMMWORD PTR [r11-80]
 	vaddss	xmm2, xmm4, xmm1
 	vmulss	xmm0, xmm2, xmm6
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
-	add	rsp, 128				; 00000080H
+	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z ENDP	; Noise::wood
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ;	COMDAT ?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z
 _TEXT	SEGMENT
-f$ = 32
-p3$ = 64
-__$ArrayPad$ = 88
+p3$ = 32
+f$ = 56
 p$ = 112
 np$ = 120
 ?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z PROC ; Noise::worleyWrapper, COMDAT
@@ -2396,12 +2404,9 @@ np$ = 120
 ; 61   : float Noise::worleyWrapper(Point3 p, NoiseParams& np) {	
 
 $LN19:
-	mov	QWORD PTR [rsp+24], rbx
+	mov	QWORD PTR [rsp+8], rbx
 	push	rdi
 	sub	rsp, 96					; 00000060H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
@@ -2412,37 +2417,37 @@ $LN19:
 ; 66   : 	// Calc order
 ; 67   : 	if (np.F4 > 0.0001f || np.F4 < -0.0001f)
 
-	vmovss	xmm2, DWORD PTR __real@38d1b717
+	vmovss	xmm2, DWORD PTR [rdx+32]
 	vcvtss2sd xmm0, xmm0, xmm0
 	vcvtss2sd xmm1, xmm1, xmm1
 	vmovsd	QWORD PTR p3$[rsp], xmm0
 	vmovss	xmm0, DWORD PTR [rcx+8]
 	vmovsd	QWORD PTR p3$[rsp+8], xmm1
-	vmovss	xmm1, DWORD PTR [rdx+32]
-	vcomiss	xmm1, xmm2
+	vmovss	xmm1, DWORD PTR __real@38d1b717
+	vcomiss	xmm2, xmm1
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmovsd	QWORD PTR p3$[rsp+16], xmm0
 	mov	rdi, rdx
 	mov	ebx, 1
 	ja	SHORT $LN6@worleyWrap
 	vmovss	xmm0, DWORD PTR __real@b8d1b717
-	vcomiss	xmm0, xmm1
+	vcomiss	xmm0, xmm2
 	ja	SHORT $LN6@worleyWrap
 
 ; 69   : 	else if (np.F3 > 0.0001f || np.F3 < -0.0001f)
 
-	vmovss	xmm1, DWORD PTR [rdx+28]
-	vcomiss	xmm1, xmm2
+	vmovss	xmm2, DWORD PTR [rdx+28]
+	vcomiss	xmm2, xmm1
 	ja	SHORT $LN9@worleyWrap
-	vcomiss	xmm0, xmm1
+	vcomiss	xmm0, xmm2
 	ja	SHORT $LN9@worleyWrap
 
 ; 71   : 	else if (np.F2 > 0.0001f || np.F2 < -0.0001f)
 
-	vmovss	xmm1, DWORD PTR [rdx+24]
-	vcomiss	xmm1, xmm2
+	vmovss	xmm2, DWORD PTR [rdx+24]
+	vcomiss	xmm2, xmm1
 	ja	SHORT $LN11@worleyWrap
-	vcomiss	xmm0, xmm1
+	vcomiss	xmm0, xmm2
 	jbe	SHORT $LN10@worleyWrap
 $LN11@worleyWrap:
 
@@ -2549,22 +2554,19 @@ $LN2@worleyWrap:
 ; 83   : 	val = val/np.spread*2.f-1.f;
 
 	vdivss	xmm0, xmm0, DWORD PTR [rdi+16]
-	vaddss	xmm1, xmm0, xmm0
-	vsubss	xmm0, xmm1, DWORD PTR __real@3f800000
 
 ; 84   : 	return val;
 ; 85   : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	mov	rbx, QWORD PTR [rsp+128]
+	mov	rbx, QWORD PTR [rsp+112]
+	vaddss	xmm1, xmm0, xmm0
+	vsubss	xmm0, xmm1, DWORD PTR __real@3f800000
 	add	rsp, 96					; 00000060H
 	pop	rdi
 	ret	0
 ?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Noise::worleyWrapper
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -2586,20 +2588,19 @@ $LN17:
 ; 49   : 	switch (np.noiseFunction) {
 
 	movsxd	rax, DWORD PTR [r8]
-	mov	rdx, rcx
 	cmp	eax, 6
 	ja	$LN11@noise
 	lea	r9, OFFSET FLAT:__ImageBase
-	mov	ecx, DWORD PTR $LN15@noise[r9+rax*4]
-	add	rcx, r9
-	jmp	rcx
+	mov	edx, DWORD PTR $LN15@noise[r9+rax*4]
+	add	rdx, r9
+	jmp	rdx
 $LN4@noise:
 
 ; 50   : 		case 0: return Perlin::fnoise2D(p.x, p.y, d);
 
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm2, xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 
 ; 57   : 		default: return 0.0f;
 ; 58   : 	}
@@ -2614,10 +2615,10 @@ $LN5@noise:
 
 ; 51   : 		case 1: return Perlin::fnoise3D(p.x, p.y, p.z, d);
 
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm3, xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 
 ; 57   : 		default: return 0.0f;
 ; 58   : 	}
@@ -2633,10 +2634,10 @@ $LN6@noise:
 ; 52   : 		case 2: return Perlin::fnoise4D(p.x, p.y, p.z, np.phase, d);		
 
 	vmovss	xmm3, DWORD PTR [r8+12]
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	DWORD PTR [rsp+32], xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 	call	?fnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fnoise4D
 
 ; 57   : 		default: return 0.0f;
@@ -2649,9 +2650,9 @@ $LN7@noise:
 
 ; 53   : 		case 3: return Perlin::fsnoise2D(p.x, p.y, d);
 
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm2, xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 
 ; 57   : 		default: return 0.0f;
 ; 58   : 	}
@@ -2666,10 +2667,10 @@ $LN8@noise:
 
 ; 54   : 		case 4: return Perlin::fsnoise3D(p.x, p.y, p.z, d);
 
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm3, xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 
 ; 57   : 		default: return 0.0f;
 ; 58   : 	}
@@ -2685,10 +2686,10 @@ $LN9@noise:
 ; 55   : 		case 5: return Perlin::fsnoise4D(p.x, p.y, p.z, np.phase, d);		
 
 	vmovss	xmm3, DWORD PTR [r8+12]
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	DWORD PTR [rsp+32], xmm1
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 	call	?fsnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fsnoise4D
 
 ; 57   : 		default: return 0.0f;
@@ -2702,16 +2703,16 @@ $LN10@noise:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm0, DWORD PTR [rdx]
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	DWORD PTR $T1[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [rdx+8]
+	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 56   : 		case 6: return worleyWrapper(p, np);
 
-	mov	rdx, r8
 	lea	rcx, QWORD PTR $T1[rsp]
+	mov	rdx, r8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -2734,6 +2735,7 @@ $LN11@noise:
 	vxorps	xmm0, xmm0, xmm0
 	add	rsp, 72					; 00000048H
 	ret	0
+	npad	3
 $LN15@noise:
 	DD	$LN4@noise
 	DD	$LN5@noise
@@ -2744,7 +2746,7 @@ $LN15@noise:
 	DD	$LN10@noise
 ?noise@Noise@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP	; Noise::noise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
@@ -2761,24 +2763,22 @@ np$ = 72
 
 $LN17:
 	sub	rsp, 56					; 00000038H
-	mov	r8, rdx
-	mov	rdx, rcx
 
 ; 36   : 	switch (np.noiseFunction) {
 
-	movsxd	rax, DWORD PTR [r8]
+	movsxd	rax, DWORD PTR [rdx]
 	cmp	eax, 6
 	ja	$LN11@noise
 	lea	r9, OFFSET FLAT:__ImageBase
-	mov	ecx, DWORD PTR $LN15@noise[r9+rax*4]
-	add	rcx, r9
-	jmp	rcx
+	mov	r8d, DWORD PTR $LN15@noise[r9+rax*4]
+	add	r8, r9
+	jmp	r8
 $LN4@noise:
 
 ; 37   : 		case 0: return Perlin::noise(p.x, p.y);
 
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2793,9 +2793,9 @@ $LN5@noise:
 
 ; 38   : 		case 1: return Perlin::noise(p.x, p.y, p.z);
 
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2810,10 +2810,10 @@ $LN6@noise:
 
 ; 39   : 		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
 
-	vmovss	xmm3, DWORD PTR [r8+12]
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm3, DWORD PTR [rdx+12]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2828,8 +2828,8 @@ $LN7@noise:
 
 ; 40   : 		case 3: return Perlin::snoise(p.x, p.y);
 
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2844,9 +2844,9 @@ $LN8@noise:
 
 ; 41   : 		case 4: return Perlin::snoise(p.x, p.y, p.z);
 
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2861,10 +2861,10 @@ $LN9@noise:
 
 ; 42   : 		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
 
-	vmovss	xmm3, DWORD PTR [r8+12]
-	vmovss	xmm2, DWORD PTR [rdx+8]
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	xmm0, DWORD PTR [rdx]
+	vmovss	xmm3, DWORD PTR [rdx+12]
+	vmovss	xmm2, DWORD PTR [rcx+8]
+	vmovss	xmm1, DWORD PTR [rcx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
 
 ; 44   : 		default: return 0.0f;
 ; 45   : 	}
@@ -2880,15 +2880,14 @@ $LN10@noise:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm0, DWORD PTR [rdx]
-	vmovss	xmm1, DWORD PTR [rdx+4]
+	vmovss	xmm0, DWORD PTR [rcx]
+	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	DWORD PTR $T1[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [rdx+8]
+	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
 ; 43   : 		case 6: return worleyWrapper(p, np);
 
-	mov	rdx, r8
 	lea	rcx, QWORD PTR $T1[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -2912,7 +2911,7 @@ $LN11@noise:
 	vxorps	xmm0, xmm0, xmm0
 	add	rsp, 56					; 00000038H
 	ret	0
-	npad	3
+	npad	1
 $LN15@noise:
 	DD	$LN4@noise
 	DD	$LN5@noise
@@ -2923,7 +2922,7 @@ $LN15@noise:
 	DD	$LN10@noise
 ?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP	; Noise::noise
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
 text$di	SEGMENT
@@ -2939,7 +2938,7 @@ text$di	SEGMENT
 	ret	0
 ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
 _TEXT	SEGMENT
@@ -2954,7 +2953,7 @@ this$ = 8
 	ret	0
 ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
 _TEXT	SEGMENT
@@ -2990,7 +2989,7 @@ f$ = 24
 	ret	0
 ??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@MAEBV0@@Z
 _TEXT	SEGMENT
@@ -3026,7 +3025,7 @@ a$ = 24
 	ret	0
 ??D@YA?AVPoint3@@MAEBV0@@Z ENDP				; operator*
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ;	COMDAT ?sqrt@@YAMM@Z
 _TEXT	SEGMENT
@@ -3048,7 +3047,7 @@ $LN4:
 	ret	0
 ?sqrt@@YAMM@Z ENDP					; sqrt
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ;	COMDAT ?sin@@YAMM@Z
 _TEXT	SEGMENT
@@ -3070,7 +3069,7 @@ $LN4:
 	ret	0
 ?sin@@YAMM@Z ENDP					; sin
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ;	COMDAT ?cos@@YAMM@Z
 _TEXT	SEGMENT
@@ -3092,7 +3091,7 @@ $LN4:
 	ret	0
 ?cos@@YAMM@Z ENDP					; cos
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@KK@Z
 _TEXT	SEGMENT
@@ -3109,7 +3108,7 @@ bb$ = 24
 	ret	0
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
@@ -3122,7 +3121,7 @@ __formal$ = 16
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
@@ -3134,7 +3133,7 @@ __formal$ = 8
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_H@YAXPEAX_K1P6APEAX0@Z@Z
 _TEXT	SEGMENT
 __t$ = 48

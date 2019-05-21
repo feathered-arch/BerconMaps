@@ -17,21 +17,32 @@ under the License.
 
 //#define COMPILE_MULTIMAP 1
 
+#include <max.h>
+#include "resource.h"
+#include <iparamb2.h>
+
+
+#define bufsize 256
+MCHAR *GetString(int id) {
+	static MCHAR buf[bufsize];
+
+	if (hInstance)
+		return LoadString(hInstance, id, buf, sizeof(buf)) ? buf : NULL;
+	return NULL;
+}
 
 #ifndef COMPILE_MULTIMAP
 
-//#include "BerconWood.h"						//? Is this called instead of BerconCommon to avoid some kind of conflict?
-#include "BerconCommon.h"
+//#include "BerconWood.h"						//? Why is this called?
+
 
 extern ClassDesc2* GetBerconNoiseDesc();
-/*
 extern ClassDesc2* GetBerconWoodDesc();
 extern ClassDesc2* GetBerconTileDesc();
 extern ClassDesc2* GetBerconDistortionDesc();
 extern ClassDesc2* GetBerconGradientDesc();
-
-*/
 extern void InitGradientControls();
+
 HINSTANCE hInstance;
 int controlsInit = FALSE;
 
@@ -41,7 +52,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,ULONG fdwReason,LPVOID /*lpvReserved*/) {
 		hInstance = hinstDLL;
 		DisableThreadLibraryCalls(hInstance);
 	}      
-	
+
 	if (!controlsInit) {
 		controlsInit = TRUE;
 		//InitCustomControls(hInstance);     // Initialize MAX's custom controls
@@ -53,16 +64,16 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,ULONG fdwReason,LPVOID /*lpvReserved*/) {
 }
 
 __declspec( dllexport ) int LibNumberClasses() {
-	return 1;
+	return 5;
 }
 
 __declspec( dllexport ) ClassDesc* LibClassDesc(int i) {
 	switch(i) {
 		case 0: return GetBerconNoiseDesc();
-//		case 1: return GetBerconWoodDesc();
-//		case 2: return GetBerconTileDesc();
-//		case 3: return GetBerconDistortionDesc();
-//		case 4: return GetBerconGradientDesc();
+		case 1: return GetBerconWoodDesc();
+		case 2: return GetBerconTileDesc();
+		case 3: return GetBerconDistortionDesc();
+		case 4: return GetBerconGradientDesc();
 		default: return 0;
 	}
 }
@@ -97,7 +108,7 @@ __declspec( dllexport ) ClassDesc* LibClassDesc(int i) {
 
 
 
-__declspec( dllexport ) const TCHAR* LibDescription()
+__declspec( dllexport ) const MCHAR* LibDescription()
 {
 	return GetString(IDS_LIBDESCRIPTION);
 }

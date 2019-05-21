@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
@@ -35,6 +35,8 @@ PUBLIC	??_H@YAXPEAX_K1P6APEAX0@Z@Z			; `vector constructor iterator'
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
 PUBLIC	??0AColor@@QEAA@XZ				; AColor::AColor
+PUBLIC	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+PUBLIC	??0VertexNormalsControl@@QEAA@XZ		; VertexNormalsControl::VertexNormalsControl
 PUBLIC	?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z	; GradientRamp::setHWND
 PUBLIC	?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z		; GradientRamp::paint
 PUBLIC	?paintArrow@GradientRamp@@QEAAXHH_NPEAUHDC__@@K@Z ; GradientRamp::paintArrow
@@ -79,10 +81,8 @@ EXTRN	__imp_GetWindowRect:PROC
 EXTRN	__imp_FillRect:PROC
 EXTRN	__imp_??_UMaxHeapOperators@@SAPEAX_K@Z:PROC
 EXTRN	__imp_??_VMaxHeapOperators@@SAXPEAX@Z:PROC
+EXTRN	__imp_?zfree@@YAXPEAPEAX@Z:PROC
 EXTRN	__CxxFrameHandler3:PROC
-EXTRN	__GSHandlerCheck:PROC
-EXTRN	__security_check_cookie:PROC
-EXTRN	__security_cookie:QWORD
 EXTRN	_fltused:DWORD
 _BSS	SEGMENT
 ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A DB 010H DUP (?) ; MaxSDK::AssetManagement::kInvalidId
@@ -107,50 +107,62 @@ $pdata$??D@YA?AVAColor@@AEBV0@M@Z DD imagerel $LN19
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
+$pdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD imagerel $LN3
+	DD	imagerel $LN3+25
+	DD	imagerel $unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0VertexNormalsControl@@QEAA@XZ DD imagerel $LN6
+	DD	imagerel $LN6+36
+	DD	imagerel $unwind$??0VertexNormalsControl@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
 $pdata$?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z DD imagerel $LN4
-	DD	imagerel $LN4+85
+	DD	imagerel $LN4+57
 	DD	imagerel $unwind$?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102
-	DD	imagerel $LN102+56
+	DD	imagerel $LN102+36
 	DD	imagerel $unwind$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+56
-	DD	imagerel $LN102+361
+$pdata$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+36
+	DD	imagerel $LN102+310
 	DD	imagerel $chain$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$7$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+361
-	DD	imagerel $LN102+554
+$pdata$7$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+310
+	DD	imagerel $LN102+509
 	DD	imagerel $chain$7$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+554
-	DD	imagerel $LN102+588
+$pdata$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+509
+	DD	imagerel $LN102+549
 	DD	imagerel $chain$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$9$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+588
+$pdata$9$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+549
 	DD	imagerel $LN102+1028
 	DD	imagerel $chain$9$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$10$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+1028
-	DD	imagerel $LN102+1173
+	DD	imagerel $LN102+1170
 	DD	imagerel $chain$10$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$11$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+1173
-	DD	imagerel $LN102+1199
+$pdata$11$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD imagerel $LN102+1170
+	DD	imagerel $LN102+1180
 	DD	imagerel $chain$11$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -282,43 +294,43 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92
-	DD	imagerel $LN92+147
+	DD	imagerel $LN92+129
 	DD	imagerel $unwind$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+147
-	DD	imagerel $LN92+260
+$pdata$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+129
+	DD	imagerel $LN92+243
 	DD	imagerel $chain$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+260
-	DD	imagerel $LN92+421
+$pdata$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+243
+	DD	imagerel $LN92+405
 	DD	imagerel $chain$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+421
-	DD	imagerel $LN92+866
+$pdata$2$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+405
+	DD	imagerel $LN92+849
 	DD	imagerel $chain$2$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+866
-	DD	imagerel $LN92+874
+$pdata$3$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+849
+	DD	imagerel $LN92+857
 	DD	imagerel $chain$3$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$4$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+874
-	DD	imagerel $LN92+880
+$pdata$4$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+857
+	DD	imagerel $LN92+863
 	DD	imagerel $chain$4$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+880
-	DD	imagerel $LN92+925
+$pdata$5$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD imagerel $LN92+863
+	DD	imagerel $LN92+898
 	DD	imagerel $chain$5$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -347,6 +359,18 @@ CONST	SEGMENT
 __real@3f800000 DD 03f800000r			; 1
 CONST	ENDS
 _DATA	SEGMENT
+?BlinnClassID@@3VClass_ID@@A DD 038H			; BlinnClassID
+	DD	00H
+?AnisoShaderClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderClassID
+	DD	00H
+?AnisoShaderDlgClassID@@3VClass_ID@@A DD 02857f460H	; AnisoShaderDlgClassID
+	DD	00H
+?OrenNayarBlinnShaderClassID@@3VClass_ID@@A DD 02857f421H ; OrenNayarBlinnShaderClassID
+	DD	00H
+?OrenNayarShaderDlgClassID@@3VClass_ID@@A DD 02857f422H	; OrenNayarShaderDlgClassID
+	DD	00H
+?StraussShaderClassID@@3VClass_ID@@A DD 02857f450H	; StraussShaderClassID
+	DD	00H
 ?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
 	DD	027246c55H
 _DATA	ENDS
@@ -354,58 +378,55 @@ _DATA	ENDS
 xdata	SEGMENT
 $chain$5$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 021H
 	DD	imagerel $LN92
-	DD	imagerel $LN92+147
+	DD	imagerel $LN92+129
 	DD	imagerel $unwind$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$4$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN92+147
-	DD	imagerel $LN92+260
+	DD	imagerel $LN92+129
+	DD	imagerel $LN92+243
 	DD	imagerel $chain$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$3$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN92+260
-	DD	imagerel $LN92+421
+	DD	imagerel $LN92+243
+	DD	imagerel $LN92+405
 	DD	imagerel $chain$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 020821H
-	DD	012f408H
-	DD	imagerel $LN92+260
-	DD	imagerel $LN92+421
+	DD	015e408H
+	DD	imagerel $LN92+243
+	DD	imagerel $LN92+405
 	DD	imagerel $chain$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$1$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 020821H
-	DD	0137408H
-	DD	imagerel $LN92+147
-	DD	imagerel $LN92+260
+	DD	0147408H
+	DD	imagerel $LN92+129
+	DD	imagerel $LN92+243
 	DD	imagerel $chain$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 020621H
-	DD	068806H
+	DD	058806H
 	DD	imagerel $LN92
-	DD	imagerel $LN92+147
+	DD	imagerel $LN92+129
 	DD	imagerel $unwind$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 0b3119H
-	DD	077823H
-	DD	08681dH
-	DD	0140114H
-	DD	0d006e008H
-	DD	030036004H
-	DD	05002H
-	DD	imagerel __GSHandlerCheck
-	DD	050H
+$unwind$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z DD 0a2a01H
+	DD	06782aH
+	DD	076819H
+	DD	0163413H
+	DD	0f009f213H
+	DD	050066007H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -599,67 +620,118 @@ xdata	ENDS
 xdata	SEGMENT
 $chain$11$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 021H
 	DD	imagerel $LN102
-	DD	imagerel $LN102+56
+	DD	imagerel $LN102+36
 	DD	imagerel $unwind$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$10$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 021H
-	DD	imagerel $LN102+554
-	DD	imagerel $LN102+588
+	DD	imagerel $LN102+509
+	DD	imagerel $LN102+549
 	DD	imagerel $chain$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$9$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 020821H
-	DD	01ed408H
-	DD	imagerel $LN102+554
-	DD	imagerel $LN102+588
+	DD	01bd408H
+	DD	imagerel $LN102+509
+	DD	imagerel $LN102+549
 	DD	imagerel $chain$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$8$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 021H
-	DD	imagerel $LN102+56
-	DD	imagerel $LN102+361
+	DD	imagerel $LN102+36
+	DD	imagerel $LN102+310
 	DD	imagerel $chain$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$7$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 041e21H
-	DD	0c781eH
-	DD	0d6809H
-	DD	imagerel $LN102+56
-	DD	imagerel $LN102+361
+	DD	0a781eH
+	DD	0b6809H
+	DD	imagerel $LN102+36
+	DD	imagerel $LN102+310
 	DD	imagerel $chain$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 0c1d21H
-	DD	0b881dH
-	DD	01cf417H
-	DD	01de413H
-	DD	01fc40fH
-	DD	020740bH
-	DD	0266404H
+$chain$5$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 0c1c21H
+	DD	09881cH
+	DD	019f417H
+	DD	01ae413H
+	DD	01cc40fH
+	DD	01d740bH
+	DD	01e6404H
 	DD	imagerel $LN102
-	DD	imagerel $LN102+56
+	DD	imagerel $LN102+36
 	DD	imagerel $unwind$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 041e19H
-	DD	021010cH
-	DD	030045005H
-	DD	imagerel __GSHandlerCheck
-	DD	0a0H
+$unwind$?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z DD 041401H
+	DD	01f0114H
+	DD	0300c500dH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z DD 021519H
-	DD	030027206H
-	DD	imagerel __GSHandlerCheck
-	DD	030H
+$unwind$?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z DD 020601H
+	DD	030025206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??0VertexNormalsControl@@QEAA@XZ DD imagerel ??0VertexNormalsControl@@QEAA@XZ
+	DD	0ffffffffH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$stateUnwindMap$??0VertexNormalsControl@@QEAA@XZ DD 0ffffffffH
+	DD	imagerel ?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+$cppxdata$??0VertexNormalsControl@@QEAA@XZ DD 019930522H
+	DD	01H
+	DD	imagerel $stateUnwindMap$??0VertexNormalsControl@@QEAA@XZ
+	DD	00H
+	DD	00H
+	DD	01H
+	DD	imagerel $ip2state$??0VertexNormalsControl@@QEAA@XZ
+	DD	00H
+	DD	00H
+	DD	00H
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0VertexNormalsControl@@QEAA@XZ DD 011111H
+	DD	02209H
+	DD	imagerel __CxxFrameHandler3
+	DD	imagerel $cppxdata$??0VertexNormalsControl@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD imagerel ??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+	DD	0ffffffffH
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+$cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD 019930522H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	01H
+	DD	imagerel $ip2state$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+	DD	020H
+	DD	00H
+	DD	04H
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD 010d19H
+	DD	06204H
+	DD	imagerel __CxxFrameHandler3
+	DD	imagerel $cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -679,7 +751,7 @@ $unwind$??_H@YAXPEAX_K1P6APEAX0@Z@Z DD 081901H
 	DD	063419H
 	DD	070153219H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
@@ -713,95 +785,90 @@ xdata	ENDS
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T1 = 32
-$T2 = 32
-$T3 = 32
-$T4 = 32
-$T5 = 32
-$T6 = 32
-$T7 = 32
-$T8 = 32
-$T9 = 48
+v1$ = 32
+$T1 = 48
 v2$ = 48
-$T10 = 48
-$T11 = 48
-$T12 = 48
-$T13 = 48
-v1$ = 64
-__$ArrayPad$ = 80
-this$ = 208
-__$ReturnUdt$ = 216
-x$ = 224
-normal$ = 232
-sc$ = 240
+$T2 = 48
+$T3 = 48
+$T4 = 48
+$T5 = 48
+$T6 = 64
+$T7 = 64
+$T8 = 64
+$T9 = 64
+$T10 = 64
+$T11 = 64
+$T12 = 64
+$T13 = 64
+this$ = 160
+__$ReturnUdt$ = 168
+x$ = 176
+normal$ = 184
+sc$ = 192
 ?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z PROC ; GradientRamp::getBump, COMDAT
 
 ; 495  : Point3 GradientRamp::getBump(float x, Point3 normal, ShadeContext& sc) {
 
 $LN92:
+	mov	QWORD PTR [rsp+24], rbx
 	push	rbp
-	push	rbx
 	push	rsi
-	push	r13
-	push	r14
-	lea	rbp, QWORD PTR [rsp-47]
-	sub	rsp, 160				; 000000a0H
-	vmovaps	XMMWORD PTR [rsp+128], xmm6
-	vmovaps	XMMWORD PTR [rsp+112], xmm7
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rbp-113], rax
-	mov	r14, QWORD PTR sc$[rbp-113]
-	mov	r13, r9
+	push	r15
+	mov	rbp, rsp
+	sub	rsp, 128				; 00000080H
+	vmovaps	XMMWORD PTR [rsp+112], xmm6
+	mov	r15, r9
 	vxorps	xmm6, xmm6, xmm6
 
 ; 496  : 	if (x<=0) return subtex[0]?subtex[0]->EvalNormalPerturb(sc):NOBUMP;
 
 	vcomiss	xmm6, xmm2
-	vmovaps	xmm7, xmm2
+	vmovaps	XMMWORD PTR [rsp+96], xmm7
 	mov	rbx, rdx
+	vmovaps	xmm7, xmm2
 	mov	rsi, rcx
 	jb	SHORT $LN2@getBump
 	mov	rcx, QWORD PTR [rcx+24]
 	cmp	QWORD PTR [rcx], 0
 	je	SHORT $LN14@getBump
 	mov	rcx, QWORD PTR [rcx]
-	lea	rdx, QWORD PTR $T8[rbp-113]
-	mov	r8, r14
+	lea	rdx, QWORD PTR $T13[rbp-128]
+	mov	r8, QWORD PTR sc$[rbp-128]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
+	mov	rcx, rax
 	jmp	SHORT $LN15@getBump
 $LN14@getBump:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T13[rbp-113], xmm6
-	vmovss	DWORD PTR $T13[rbp-109], xmm6
-	vmovss	DWORD PTR $T13[rbp-105], xmm6
+	vmovss	DWORD PTR $T5[rbp-128], xmm6
+	vmovss	DWORD PTR $T5[rbp-124], xmm6
+	vmovss	DWORD PTR $T5[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 496  : 	if (x<=0) return subtex[0]?subtex[0]->EvalNormalPerturb(sc):NOBUMP;
 
-	lea	rax, QWORD PTR $T13[rbp-113]
+	lea	rcx, QWORD PTR $T5[rbp-128]
 $LN15@getBump:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	mov	ecx, DWORD PTR [rax]
-	mov	DWORD PTR [rbx], ecx
-	mov	ecx, DWORD PTR [rax+4]
-	mov	DWORD PTR [rbx+4], ecx
-	mov	ecx, DWORD PTR [rax+8]
-	mov	DWORD PTR [rbx+8], ecx
+	mov	eax, DWORD PTR [rcx]
+	mov	DWORD PTR [rbx], eax
+	mov	eax, DWORD PTR [rcx+4]
+	mov	DWORD PTR [rbx+4], eax
+	mov	eax, DWORD PTR [rcx+8]
+	mov	DWORD PTR [rbx+8], eax
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 496  : 	if (x<=0) return subtex[0]?subtex[0]->EvalNormalPerturb(sc):NOBUMP;
 
 	jmp	$LN90@getBump
 $LN2@getBump:
-	vmovaps	XMMWORD PTR [rsp+96], xmm8
+	vmovaps	XMMWORD PTR [rsp+80], xmm8
 
 ; 497  : 	if (x>=1) return subtex[keys-1]?subtex[keys-1]->EvalNormalPerturb(sc):NOBUMP;
 
@@ -815,8 +882,8 @@ $LN2@getBump:
 	cmp	QWORD PTR [rax+rcx*8], 0
 	je	SHORT $LN16@getBump
 	mov	rcx, QWORD PTR [rax+rcx*8]
-	lea	rdx, QWORD PTR $T7[rbp-113]
-	mov	r8, r14
+	lea	rdx, QWORD PTR $T12[rbp-128]
+	mov	r8, QWORD PTR sc$[rbp-128]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 	mov	rcx, rax
@@ -826,14 +893,14 @@ $LN16@getBump:
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T12[rbp-113], xmm6
-	vmovss	DWORD PTR $T12[rbp-109], xmm6
-	vmovss	DWORD PTR $T12[rbp-105], xmm6
+	vmovss	DWORD PTR $T4[rbp-128], xmm6
+	vmovss	DWORD PTR $T4[rbp-124], xmm6
+	vmovss	DWORD PTR $T4[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 497  : 	if (x>=1) return subtex[keys-1]?subtex[keys-1]->EvalNormalPerturb(sc):NOBUMP;
 
-	lea	rcx, QWORD PTR $T12[rbp-113]
+	lea	rcx, QWORD PTR $T4[rbp-128]
 $LN17@getBump:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -856,7 +923,7 @@ $LN3@getBump:
 
 	mov	r9, QWORD PTR [rcx+32]
 	mov	r8d, DWORD PTR [rcx+56]
-	mov	QWORD PTR [rsp+152], rdi
+	mov	QWORD PTR [rsp+160], rdi
 
 ; 438  : 	int high = keys-1;
 
@@ -930,8 +997,8 @@ $LN32@getBump:
 	cmp	QWORD PTR [rax+rcx*8], 0
 	je	SHORT $LN18@getBump
 	mov	rcx, QWORD PTR [rax+rcx*8]
-	lea	rdx, QWORD PTR $T6[rbp-113]
-	mov	r8, r14
+	lea	rdx, QWORD PTR $T11[rbp-128]
+	mov	r8, QWORD PTR sc$[rbp-128]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 	mov	rcx, rax
@@ -941,14 +1008,14 @@ $LN18@getBump:
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T11[rbp-113], xmm6
-	vmovss	DWORD PTR $T11[rbp-109], xmm6
-	vmovss	DWORD PTR $T11[rbp-105], xmm6
+	vmovss	DWORD PTR $T3[rbp-128], xmm6
+	vmovss	DWORD PTR $T3[rbp-124], xmm6
+	vmovss	DWORD PTR $T3[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 499  : 	if (interpolation == 4) return subtex[high]?subtex[high]->EvalNormalPerturb(sc):NOBUMP;
 
-	lea	rcx, QWORD PTR $T11[rbp-113]
+	lea	rcx, QWORD PTR $T3[rbp-128]
 $LN19@getBump:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -966,24 +1033,24 @@ $LN19@getBump:
 
 	jmp	$LN87@getBump
 $LN4@getBump:
-	mov	QWORD PTR [rsp+144], r15
+	mov	QWORD PTR [rsp+168], r14
 
 ; 500  : 	int low = high - 1;	
 
-	lea	r15d, DWORD PTR [rdi-1]
+	lea	r14d, DWORD PTR [rdi-1]
 
 ; 501  : 	if (interpolation == 3) return subtex[low]?subtex[low]->EvalNormalPerturb(sc):NOBUMP;	
 
 	cmp	eax, 3
 	jne	SHORT $LN5@getBump
-	movsxd	rcx, r15d
+	movsxd	rcx, r14d
 $LN88@getBump:
 	mov	rax, QWORD PTR [rsi+24]
 	cmp	QWORD PTR [rax+rcx*8], 0
 	je	SHORT $LN20@getBump
 	mov	rcx, QWORD PTR [rax+rcx*8]
-	lea	rdx, QWORD PTR $T5[rbp-113]
-	mov	r8, r14
+	lea	rdx, QWORD PTR $T10[rbp-128]
+	mov	r8, QWORD PTR sc$[rbp-128]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 	mov	rcx, rax
@@ -993,14 +1060,14 @@ $LN20@getBump:
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T10[rbp-113], xmm6
-	vmovss	DWORD PTR $T10[rbp-109], xmm6
-	vmovss	DWORD PTR $T10[rbp-105], xmm6
+	vmovss	DWORD PTR $T2[rbp-128], xmm6
+	vmovss	DWORD PTR $T2[rbp-124], xmm6
+	vmovss	DWORD PTR $T2[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 501  : 	if (interpolation == 3) return subtex[low]?subtex[low]->EvalNormalPerturb(sc):NOBUMP;	
 
-	lea	rcx, QWORD PTR $T10[rbp-113]
+	lea	rcx, QWORD PTR $T2[rbp-128]
 $LN21@getBump:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -1026,13 +1093,13 @@ $LN5@getBump:
 
 ; 503  : 		int key = x-position[low]<position[high]-x?low:high;
 
-	movsxd	rax, r15d
+	movsxd	rax, r14d
 	vsubss	xmm2, xmm7, DWORD PTR [r9+rax*4]
 	movsxd	rax, edi
 	vmovss	xmm0, DWORD PTR [r9+rax*4]
 	vsubss	xmm1, xmm0, xmm7
 	vcomiss	xmm1, xmm2
-	cmova	edi, r15d
+	cmova	edi, r14d
 
 ; 504  : 		return subtex[key]?subtex[key]->EvalNormalPerturb(sc):NOBUMP;
 
@@ -1055,9 +1122,9 @@ $LN6@getBump:
 ; 511  : 		//f1 = subtex[low]->EvalMono(sc);
 ; 512  : 		v1 = subtex[low]->EvalNormalPerturb(sc);
 
-	movsxd	rax, r15d
-	lea	rdx, QWORD PTR $T4[rbp-113]
-	mov	r8, r14
+	mov	r8, QWORD PTR sc$[rbp-128]
+	lea	rdx, QWORD PTR $T9[rbp-128]
+	movsxd	rax, r14d
 	mov	rcx, QWORD PTR [rcx+rax*8]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
@@ -1076,12 +1143,12 @@ $LN7@getBump:
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T9[rbp-105], xmm6
+	vmovss	DWORD PTR $T1[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 516  : 		v1 = Point3(0.f, 0.f, 0.f);
 
-	mov	eax, DWORD PTR $T9[rbp-105]
+	mov	eax, DWORD PTR $T1[rbp-120]
 	vunpcklps xmm0, xmm6, xmm6
 $LN85@getBump:
 
@@ -1089,24 +1156,24 @@ $LN85@getBump:
 ; 518  : 	if (subtex[1]) {
 
 	mov	rcx, QWORD PTR [rsi+24]
-	mov	DWORD PTR v1$[rbp-105], eax
-	vmovsd	QWORD PTR v1$[rbp-113], xmm0
+	mov	DWORD PTR v1$[rbp-120], eax
+	vmovsd	QWORD PTR v1$[rbp-128], xmm0
 	cmp	QWORD PTR [rcx+8], 0
 	je	SHORT $LN9@getBump
 
 ; 519  : 		//f2 = subtex[high]->EvalMono(sc);
 ; 520  : 		v2 = subtex[high]->EvalNormalPerturb(sc);
 
+	mov	r8, QWORD PTR sc$[rbp-128]
+	lea	rdx, QWORD PTR $T8[rbp-128]
 	movsxd	rax, edi
-	lea	rdx, QWORD PTR $T3[rbp-113]
-	mov	r8, r14
 	mov	rcx, QWORD PTR [rcx+rax*8]
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 	vmovsd	xmm0, QWORD PTR [rax]
 	mov	eax, DWORD PTR [rax+8]
-	vmovsd	QWORD PTR v2$[rbp-113], xmm0
-	mov	DWORD PTR v2$[rbp-105], eax
+	vmovsd	QWORD PTR v2$[rbp-128], xmm0
+	mov	DWORD PTR v2$[rbp-120], eax
 
 ; 521  : 		maps = true;
 ; 522  : 	} else {
@@ -1117,15 +1184,15 @@ $LN9@getBump:
 
 ; 61   : 		 x = X; y = Y; z = Z; 
 
-	vmovss	DWORD PTR $T2[rbp-105], xmm6
+	vmovss	DWORD PTR $T7[rbp-120], xmm6
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 524  : 		v2 = Point3(0.f, 0.f, 0.f);
 
-	mov	eax, DWORD PTR $T2[rbp-105]
-	mov	DWORD PTR v2$[rbp-105], eax
+	mov	eax, DWORD PTR $T7[rbp-120]
+	mov	DWORD PTR v2$[rbp-120], eax
 	vunpcklps xmm0, xmm6, xmm6
-	vmovsd	QWORD PTR v2$[rbp-113], xmm0
+	vmovsd	QWORD PTR v2$[rbp-128], xmm0
 
 ; 525  : 	}
 ; 526  : 	
@@ -1138,24 +1205,24 @@ $LN80@getBump:
 
 ; 529  : 		float mult = interpolate(x, position[low], position[high]);
 
-	mov	r8, QWORD PTR [rsi+32]
-	mov	rcx, rsi
+	mov	rdx, QWORD PTR [rsi+32]
+	movsxd	rcx, r14d
 	movsxd	rax, edi
-	movsxd	rdx, r15d
 	vmovaps	xmm1, xmm7
-	vmovss	xmm3, DWORD PTR [r8+rax*4]
-	vmovss	xmm2, DWORD PTR [r8+rdx*4]
+	vmovss	xmm2, DWORD PTR [rdx+rcx*4]
+	vmovss	xmm3, DWORD PTR [rdx+rax*4]
+	mov	rcx, rsi
 	call	?interpolate@GradientRamp@@QEAAMMMM@Z	; GradientRamp::interpolate
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm4, xmm0, DWORD PTR v2$[rbp-113]
-	vmulss	xmm5, xmm0, DWORD PTR v2$[rbp-109]
+	vmulss	xmm4, xmm0, DWORD PTR v2$[rbp-128]
+	vmulss	xmm5, xmm0, DWORD PTR v2$[rbp-124]
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm1, xmm5, DWORD PTR [r13+4]
+	vaddss	xmm1, xmm5, DWORD PTR [r15+4]
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 530  : 		v1 = /*(f2-f1)**/ normal + mult*v2 + (1.f-mult)*v1;
@@ -1165,28 +1232,28 @@ $LN80@getBump:
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm0, DWORD PTR v2$[rbp-105]
+	vmulss	xmm0, xmm0, DWORD PTR v2$[rbp-120]
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm0, xmm0, DWORD PTR [r13+8]
+	vaddss	xmm0, xmm0, DWORD PTR [r15+8]
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm8, xmm3, DWORD PTR v1$[rbp-113]
-	vmulss	xmm7, xmm3, DWORD PTR v1$[rbp-109]
-	vmulss	xmm6, xmm3, DWORD PTR v1$[rbp-105]
+	vmulss	xmm8, xmm3, DWORD PTR v1$[rbp-128]
+	vmulss	xmm7, xmm3, DWORD PTR v1$[rbp-124]
+	vmulss	xmm6, xmm3, DWORD PTR v1$[rbp-120]
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm3, xmm4, DWORD PTR [r13]
+	vaddss	xmm3, xmm4, DWORD PTR [r15]
 	vaddss	xmm0, xmm0, xmm6
-	vmovss	DWORD PTR $T1[rbp-105], xmm0
+	vmovss	DWORD PTR $T6[rbp-120], xmm0
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 530  : 		v1 = /*(f2-f1)**/ normal + mult*v2 + (1.f-mult)*v1;
 
-	mov	eax, DWORD PTR $T1[rbp-105]
+	mov	eax, DWORD PTR $T6[rbp-120]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
@@ -1206,59 +1273,52 @@ $LN11@getBump:
 
 ; 532  : 		v1 = normal; // * (f2 - f1);
 
-	vmovsd	xmm0, QWORD PTR [r13]
-	mov	eax, DWORD PTR [r13+8]
+	vmovsd	xmm0, QWORD PTR [r15]
+	mov	eax, DWORD PTR [r15+8]
 $LN86@getBump:
-	vmovsd	QWORD PTR v1$[rbp-113], xmm0
+	vmovsd	QWORD PTR v1$[rbp-128], xmm0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm0, DWORD PTR v1$[rbp-113]
-	vmovss	xmm1, DWORD PTR v1$[rbp-109]
+	vmovss	xmm0, DWORD PTR v1$[rbp-128]
+	vmovss	xmm1, DWORD PTR v1$[rbp-124]
 	vmovss	DWORD PTR [rbx], xmm0
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
 ; 532  : 		v1 = normal; // * (f2 - f1);
 
-	mov	DWORD PTR v1$[rbp-105], eax
+	mov	DWORD PTR v1$[rbp-120], eax
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm0, DWORD PTR v1$[rbp-105]
+	vmovss	xmm0, DWORD PTR v1$[rbp-120]
 	vmovss	DWORD PTR [rbx+8], xmm0
 	vmovss	DWORD PTR [rbx+4], xmm1
 $LN84@getBump:
-	mov	r15, QWORD PTR [rsp+144]
+	mov	r14, QWORD PTR [rsp+168]
 $LN87@getBump:
-	mov	rdi, QWORD PTR [rsp+152]
+	mov	rdi, QWORD PTR [rsp+160]
 $LN89@getBump:
-	vmovaps	xmm8, XMMWORD PTR [rsp+96]
+	vmovaps	xmm8, XMMWORD PTR [rsp+80]
 $LN90@getBump:
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 
-; 535  : 	return v1;
-
-	mov	rax, rbx
-
 ; 536  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rbp-113]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	vmovaps	xmm6, XMMWORD PTR [rsp+128]
-	vmovaps	xmm7, XMMWORD PTR [rsp+112]
-	add	rsp, 160				; 000000a0H
-	pop	r14
-	pop	r13
+	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	mov	rax, rbx
+	mov	rbx, QWORD PTR [rsp+176]
+	vmovaps	xmm7, XMMWORD PTR [rsp+96]
+	add	rsp, 128				; 00000080H
+	pop	r15
 	pop	rsi
-	pop	rbx
 	pop	rbp
 	ret	0
 ?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z ENDP ; GradientRamp::getBump
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
@@ -1654,7 +1714,7 @@ $LN83@getColor:
 	ret	0
 ?getColor@GradientRamp@@QEAA?AVAColor@@MAEAVShadeContext@@@Z ENDP ; GradientRamp::getColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
@@ -1935,7 +1995,7 @@ $LN53@getColor:
 	ret	0
 ?getColor@GradientRamp@@QEAA?AVAColor@@M@Z ENDP		; GradientRamp::getColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?interpolate@GradientRamp@@QEAAMMMM@Z
 _TEXT	SEGMENT
@@ -2008,7 +2068,7 @@ $LN4@interpolat:
 	ret	0
 ?interpolate@GradientRamp@@QEAAMMMM@Z ENDP		; GradientRamp::interpolate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?findHighKey@GradientRamp@@QEAAHM@Z
 _TEXT	SEGMENT
@@ -2090,7 +2150,7 @@ $LN3@findHighKe:
 	ret	0
 ?findHighKey@GradientRamp@@QEAAHM@Z ENDP		; GradientRamp::findHighKey
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?setSubtex@GradientRamp@@QEAAXPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -2153,7 +2213,7 @@ $LN2@setSubtex:
 	ret	0
 ?setSubtex@GradientRamp@@QEAAXPEAVTexmap@@@Z ENDP	; GradientRamp::setSubtex
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?setSubtex@GradientRamp@@QEAAXHPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -2211,7 +2271,7 @@ $LN3@setSubtex:
 	ret	0
 ?setSubtex@GradientRamp@@QEAAXHPEAVTexmap@@@Z ENDP	; GradientRamp::setSubtex
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?getSubtex@GradientRamp@@QEAAPEAVTexmap@@H@Z
 _TEXT	SEGMENT
@@ -2332,7 +2392,7 @@ $LN13@getSubtex:
 	ret	0
 ?getSubtex@GradientRamp@@QEAAPEAVTexmap@@H@Z ENDP	; GradientRamp::getSubtex
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
@@ -2513,7 +2573,7 @@ $LN3@sort:
 	ret	0
 ?sort@GradientRamp@@QEAAXXZ ENDP			; GradientRamp::sort
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
@@ -2638,7 +2698,7 @@ $LN6:
 	ret	0
 ?swap@GradientRamp@@QEAAXHH@Z ENDP			; GradientRamp::swap
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?reset@GradientRamp@@QEAAXXZ
 _TEXT	SEGMENT
@@ -2733,7 +2793,7 @@ $LN5@reset:
 	ret	0
 ?reset@GradientRamp@@QEAAXXZ ENDP			; GradientRamp::reset
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?addKey@GradientRamp@@QEAAXHMVAColor@@PEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -3035,7 +3095,7 @@ sub$ = 144
 	rex_jmp	QWORD PTR __imp_??_VMaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??addKey@GradientRamp@@QEAAXHMVAColor@@PEAVTexmap@@@Z@4HA ENDP ; `GradientRamp::addKey'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 112
@@ -3049,7 +3109,7 @@ sub$ = 144
 	rex_jmp	QWORD PTR __imp_??_VMaxHeapOperators@@SAXPEAX@Z
 ?dtor$0@?0??addKey@GradientRamp@@QEAAXHMVAColor@@PEAVTexmap@@@Z@4HA ENDP ; `GradientRamp::addKey'::`1'::dtor$0
 text$x	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?selectKey@GradientRamp@@QEAAXH@Z
 _TEXT	SEGMENT
@@ -3070,7 +3130,7 @@ n$ = 16
 	rex_jmp	QWORD PTR [rax+24]
 ?selectKey@GradientRamp@@QEAAXH@Z ENDP			; GradientRamp::selectKey
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?toIndex@GradientRamp@@QEAAHH@Z
 _TEXT	SEGMENT
@@ -3123,7 +3183,7 @@ $LN8@toIndex:
 	ret	0
 ?toIndex@GradientRamp@@QEAAHH@Z ENDP			; GradientRamp::toIndex
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?popup@GradientRamp@@QEAAXHHH@Z
 _TEXT	SEGMENT
@@ -3352,7 +3412,7 @@ $LN10@popup:
 	ret	0
 ?popup@GradientRamp@@QEAAXHHH@Z ENDP			; GradientRamp::popup
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?dragging@GradientRamp@@QEAAXHH_N00@Z
 _TEXT	SEGMENT
@@ -3430,7 +3490,7 @@ $LN3@dragging:
 	ret	0
 ?dragging@GradientRamp@@QEAAXHH_N00@Z ENDP		; GradientRamp::dragging
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?leftUp@GradientRamp@@QEAAXHH_N00@Z
 _TEXT	SEGMENT
@@ -3662,7 +3722,7 @@ $LN4@leftUp:
 	ret	0
 ?leftUp@GradientRamp@@QEAAXHH_N00@Z ENDP		; GradientRamp::leftUp
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?leftDown@GradientRamp@@QEAAXHH_N00@Z
 _TEXT	SEGMENT
@@ -3788,7 +3848,7 @@ $LN4@leftDown:
 	ret	0
 ?leftDown@GradientRamp@@QEAAXHH_N00@Z ENDP		; GradientRamp::leftDown
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?toPos@GradientRamp@@QEAAMH@Z
 _TEXT	SEGMENT
@@ -3835,7 +3895,7 @@ $LN4@toPos:
 	ret	0
 ?toPos@GradientRamp@@QEAAMH@Z ENDP			; GradientRamp::toPos
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?hit@GradientRamp@@QEAAHHH_N@Z
 _TEXT	SEGMENT
@@ -3987,7 +4047,7 @@ $LN13@hit:
 	ret	0
 ?hit@GradientRamp@@QEAAHHH_N@Z ENDP			; GradientRamp::hit
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?invalidate@GradientRamp@@QEAAXXZ
 _TEXT	SEGMENT
@@ -4016,7 +4076,7 @@ $LN1@invalidate:
 	ret	0
 ?invalidate@GradientRamp@@QEAAXXZ ENDP			; GradientRamp::invalidate
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?paintArrow@GradientRamp@@QEAAXHH_NPEAUHDC__@@K@Z
 _TEXT	SEGMENT
@@ -4111,44 +4171,38 @@ $LN6@paintArrow:
 	ret	0
 ?paintArrow@GradientRamp@@QEAAXHH_NPEAUHDC__@@K@Z ENDP	; GradientRamp::paintArrow
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z
 _TEXT	SEGMENT
 tv1140 = 80
-tv1135 = 80
-sel$1$ = 84
-i$1$ = 88
-this$GSCopy$1$ = 96
-tv1139 = 104
-col$1 = 104
-hDC$GSCopy$1$ = 120
-hbm_oldBuffer$1$ = 128
-hbm_Buffer$1$ = 136
-rect$ = 144
-__$ArrayPad$ = 160
-this$ = 288
-hDC$ = 296
+tv1139 = 88
+col$1 = 88
+hbm_oldBuffer$1$ = 104
+hbm_Buffer$1$ = 112
+rect$ = 120
+this$ = 272
+hDC$ = 280
+tv1135 = 288
+sel$1$ = 288
+i$1$ = 296
 ?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z PROC		; GradientRamp::paint, COMDAT
 
 ; 42   : void GradientRamp::paint(HDC hDC) {	
 
 $LN102:
-	mov	r11, rsp
+	mov	rax, rsp
+	mov	QWORD PTR [rax+16], rdx
+	mov	QWORD PTR [rax+8], rcx
 	push	rbx
 	push	rbp
-	sub	rsp, 264				; 00000108H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 248				; 000000f8H
 
 ; 43   : 	if (m_hWnd == NULL) return;
 
 	cmp	QWORD PTR [rcx], 0
 	mov	rbx, rdx
-	mov	QWORD PTR hDC$GSCopy$1$[rsp], rdx
 	mov	rbp, rcx
-	mov	QWORD PTR this$GSCopy$1$[rsp], rcx
 	je	$LN1@paint
 
 ; 44   : 	//SetBkMode(hDC, TRANSPARENT);	
@@ -4174,13 +4228,13 @@ $LN102:
 ; 64   : 
 ; 65   : 	HDC tempHDC = CreateCompatibleDC(hDC);
 
-	mov	QWORD PTR [r11+24], rsi
+	mov	QWORD PTR [rax-24], rsi
 	mov	rcx, rdx
-	mov	QWORD PTR [r11-24], rdi
-	mov	QWORD PTR [r11-32], r12
-	mov	QWORD PTR [r11-48], r14
-	mov	QWORD PTR [r11-56], r15
-	vmovaps	XMMWORD PTR [r11-104], xmm8
+	mov	QWORD PTR [rax-32], rdi
+	mov	QWORD PTR [rax-40], r12
+	mov	QWORD PTR [rax-56], r14
+	mov	QWORD PTR [rax-64], r15
+	vmovaps	XMMWORD PTR [rax-120], xmm8
 	call	QWORD PTR __imp_CreateCompatibleDC
 
 ; 66   : 	HBITMAP hbm_Buffer = CreateCompatibleBitmap(hDC, width, height);
@@ -4283,12 +4337,12 @@ $LN102:
 	lea	r15d, DWORD PTR [rax+6]
 	cmp	r15d, esi
 	jle	$LN3@paint
-	vmovaps	XMMWORD PTR [rsp+208], xmm6
+	vmovaps	XMMWORD PTR [rsp+176], xmm6
 	add	r14d, -6
 	vmovss	xmm6, DWORD PTR __real@437f0000
-	vmovaps	XMMWORD PTR [rsp+192], xmm7
+	vmovaps	XMMWORD PTR [rsp+160], xmm7
 	vsubss	xmm7, xmm8, DWORD PTR __real@3f800000
-	npad	1
+	npad	4
 $LL4@paint:
 
 ; 87   : 		AColor col = getColor((float)(x-PADDING) / (f_Width-1.f));
@@ -4344,12 +4398,12 @@ $LN2@paint:
 ; 85   : 	// Gradient
 ; 86   : 	for (int x=PADDING; x<g_Width+PADDING; x++) {
 
-	mov	rbp, QWORD PTR this$GSCopy$1$[rsp]
+	mov	rbp, QWORD PTR this$[rsp]
 	inc	esi
 	cmp	esi, r15d
 	jl	$LL4@paint
-	vmovaps	xmm7, XMMWORD PTR [rsp+192]
-	vmovaps	xmm6, XMMWORD PTR [rsp+208]
+	vmovaps	xmm7, XMMWORD PTR [rsp+160]
+	vmovaps	xmm6, XMMWORD PTR [rsp+176]
 $LN3@paint:
 
 ; 92   : 	}
@@ -4370,10 +4424,11 @@ $LN3@paint:
 	cmp	DWORD PTR [rbp+56], edx
 	jle	$LN48@paint
 	xor	r8d, r8d
-	mov	QWORD PTR [rsp+240], r13
+	mov	QWORD PTR [rsp+216], r13
 	mov	QWORD PTR tv1139[rsp], r8
 	lea	r13d, QWORD PTR [rdx+1]
 	lea	r10d, QWORD PTR [rdx+5]
+	npad	6
 $LL10@paint:
 
 ; 99   : 		//CharStream *out = thread_local(current_stdout);
@@ -4413,7 +4468,7 @@ $LL19@paint:
 	test	esi, esi
 	jle	SHORT $LN21@paint
 	lea	ebp, DWORD PTR [rax+r14]
-	npad	2
+	npad	3
 $LL22@paint:
 
 ; 129  : 			else
@@ -4480,7 +4535,7 @@ $LN31@paint:
 ; 104  : 			paintArrow(x, yBottom, true, tempHDC, ARROWDESEL);
 ; 105  : 		} else {
 
-	mov	rbp, QWORD PTR this$GSCopy$1$[rsp]
+	mov	rbp, QWORD PTR this$[rsp]
 	mov	r10d, 5
 	mov	edx, DWORD PTR i$1$[rsp]
 	mov	r8, QWORD PTR tv1139[rsp]
@@ -4524,7 +4579,7 @@ $LN8@paint:
 
 	sub	r10d, r14d
 	mov	DWORD PTR tv1135[rsp], r10d
-	npad	4
+	npad	2
 $LL39@paint:
 
 ; 126  : 		for (int x=0;x<(y*2+1);x++) {
@@ -4562,7 +4617,7 @@ $LN41@paint:
 
 ; 111  : 		paintArrow((int)(f_Width * position[sel]) + PADDING, yBottom, true, tempHDC, ARROWSEL);	
 
-	mov	rbp, QWORD PTR this$GSCopy$1$[rsp]
+	mov	rbp, QWORD PTR this$[rsp]
 	mov	rax, QWORD PTR [rbp+32]
 	vmulss	xmm0, xmm8, DWORD PTR [rax+r15*4]
 	vcvttss2si esi, xmm0
@@ -4571,6 +4626,7 @@ $LN41@paint:
 ; 125  : 	for (int y=0;y<ARROWS;y++) {
 
 	xor	r14d, r14d
+	npad	5
 $LL49@paint:
 
 ; 126  : 		for (int x=0;x<(y*2+1);x++) {
@@ -4578,7 +4634,7 @@ $LL49@paint:
 	xor	ebx, ebx
 	test	r13d, r13d
 	jle	SHORT $LN51@paint
-	npad	4
+	npad	9
 $LL52@paint:
 
 ; 127  : 			if (up)
@@ -4605,7 +4661,7 @@ $LN51@paint:
 	cmp	r13d, 13
 	jl	SHORT $LL49@paint
 $LN100@paint:
-	mov	r13, QWORD PTR [rsp+240]
+	mov	r13, QWORD PTR [rsp+216]
 $LN48@paint:
 
 ; 112  : 	}
@@ -4617,7 +4673,7 @@ $LN48@paint:
 	xor	r8d, r8d
 	mov	r9d, DWORD PTR [rbp+16]
 	xor	edx, edx
-	mov	rcx, QWORD PTR hDC$GSCopy$1$[rsp]
+	mov	rcx, QWORD PTR hDC$[rsp]
 	mov	DWORD PTR [rsp+64], 13369376		; 00cc0020H
 	mov	DWORD PTR [rsp+56], 0
 	mov	DWORD PTR [rsp+48], 0
@@ -4642,43 +4698,36 @@ $LN48@paint:
 
 	mov	rcx, QWORD PTR hbm_Buffer$1$[rsp]
 	call	QWORD PTR __imp_DeleteObject
-	vmovaps	xmm8, XMMWORD PTR [rsp+176]
-	mov	r15, QWORD PTR [rsp+224]
-	mov	r14, QWORD PTR [rsp+232]
-	mov	r12, QWORD PTR [rsp+248]
-	mov	rdi, QWORD PTR [rsp+256]
-	mov	rsi, QWORD PTR [rsp+304]
+	vmovaps	xmm8, XMMWORD PTR [rsp+144]
+	mov	r15, QWORD PTR [rsp+200]
+	mov	r14, QWORD PTR [rsp+208]
+	mov	r12, QWORD PTR [rsp+224]
+	mov	rdi, QWORD PTR [rsp+232]
+	mov	rsi, QWORD PTR [rsp+240]
 $LN1@paint:
 
 ; 121  : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 264				; 00000108H
+	add	rsp, 248				; 000000f8H
 	pop	rbp
 	pop	rbx
 	ret	0
 ?paint@GradientRamp@@QEAAXPEAUHDC__@@@Z ENDP		; GradientRamp::paint
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z
 _TEXT	SEGMENT
 rect$ = 32
-__$ArrayPad$ = 48
-this$ = 80
-hWnd$ = 88
+this$ = 64
+hWnd$ = 72
 ?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z PROC		; GradientRamp::setHWND, COMDAT
 
 ; 30   : void GradientRamp::setHWND(HWND hWnd) {
 
 $LN4:
 	push	rbx
-	sub	rsp, 64					; 00000040H
-	mov	rax, QWORD PTR __security_cookie
-	xor	rax, rsp
-	mov	QWORD PTR __$ArrayPad$[rsp], rax
+	sub	rsp, 48					; 00000030H
 	mov	rax, rdx
 
 ; 31   : 	m_hWnd = hWnd; 
@@ -4707,15 +4756,107 @@ $LN4:
 
 ; 36   : }
 
-	mov	rcx, QWORD PTR __$ArrayPad$[rsp]
-	xor	rcx, rsp
-	call	__security_check_cookie
-	add	rsp, 64					; 00000040H
+	add	rsp, 48					; 00000030H
 	pop	rbx
 	ret	0
 ?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z ENDP		; GradientRamp::setHWND
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+;	COMDAT ??0VertexNormalsControl@@QEAA@XZ
+_TEXT	SEGMENT
+$T1 = 0
+this$ = 32
+??0VertexNormalsControl@@QEAA@XZ PROC			; VertexNormalsControl::VertexNormalsControl, COMDAT
+
+; 2949 : 	DllExport VertexNormalsControl () : mUseFaceAngles(true) { }
+
+$LN6:
+	mov	QWORD PTR [rsp+8], rcx
+	sub	rsp, 24
+	mov	QWORD PTR $T1[rsp], -2
+	mov	BYTE PTR [rcx], 1
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+
+; 186  : 		Tab() : th(NULL)
+
+	mov	QWORD PTR [rcx+8], 0
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\mesh.h
+
+; 2949 : 	DllExport VertexNormalsControl () : mUseFaceAngles(true) { }
+
+	mov	rax, rcx
+	add	rsp, 24
+	ret	0
+??0VertexNormalsControl@@QEAA@XZ ENDP			; VertexNormalsControl::VertexNormalsControl
+_TEXT	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 0
+this$ = 32
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA PROC	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+	mov	rcx, QWORD PTR this$[rdx]
+	add	rcx, 8
+	jmp	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA ENDP	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 0
+this$ = 32
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA PROC	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+	mov	rcx, QWORD PTR this$[rdx]
+	add	rcx, 8
+	jmp	??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+?dtor$0@?0???0VertexNormalsControl@@QEAA@XZ@4HA ENDP	; `VertexNormalsControl::VertexNormalsControl'::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+;	COMDAT ??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+_TEXT	SEGMENT
+$T1 = 32
+this$ = 64
+??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ PROC	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>, COMDAT
+
+; 204  : 		~Tab() {
+
+$LN3:
+	sub	rsp, 56					; 00000038H
+	mov	QWORD PTR $T1[rsp], -2
+
+; 205  : 			zfree((void**)&th); 
+
+	call	QWORD PTR __imp_?zfree@@YAXPEAPEAX@Z
+	npad	1
+
+; 206  : 		}
+
+	add	rsp, 56					; 00000038H
+	ret	0
+??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ENDP	; Tab<VertexNormalsCallback * __ptr64>::~Tab<VertexNormalsCallback * __ptr64>
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h
+;	COMDAT ??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+_TEXT	SEGMENT
+this$ = 8
+??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ PROC	; Tab<VertexNormalsCallback * __ptr64>::Tab<VertexNormalsCallback * __ptr64>, COMDAT
+
+; 186  : 		Tab() : th(NULL)
+
+	mov	QWORD PTR [rcx], 0
+
+; 188  : 			ADSK_MAXSDK_IS_PLAIN_OLD_DATA_TYPE(T);
+; 189  : 		}
+
+	mov	rax, rcx
+	ret	0
+??0?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ ENDP	; Tab<VertexNormalsCallback * __ptr64>::Tab<VertexNormalsCallback * __ptr64>
+_TEXT	ENDS
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??D@YA?AVAColor@@AEBV0@M@Z
 _TEXT	SEGMENT
@@ -4747,7 +4888,7 @@ $LN19:
 	ret	0
 ??D@YA?AVAColor@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??HAColor@@QEBA?AV0@AEBV0@@Z
 _TEXT	SEGMENT
@@ -4778,7 +4919,7 @@ $LN19:
 	ret	0
 ??HAColor@@QEBA?AV0@AEBV0@@Z ENDP			; AColor::operator+
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@AEBV0@@Z
 _TEXT	SEGMENT
@@ -4800,7 +4941,7 @@ c$ = 16
 	ret	0
 ??0AColor@@QEAA@AEBV0@@Z ENDP				; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@MMMM@Z
 _TEXT	SEGMENT
@@ -4822,7 +4963,7 @@ A$ = 40
 	ret	0
 ??0AColor@@QEAA@MMMM@Z ENDP				; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ;	COMDAT ??0AColor@@QEAA@XZ
 _TEXT	SEGMENT
@@ -4835,38 +4976,7 @@ this$ = 8
 	ret	0
 ??0AColor@@QEAA@XZ ENDP					; AColor::AColor
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
-;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
-text$di	SEGMENT
-??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ PROC	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId'', COMDAT
-
-; 29   : 			AssetId() { *static_cast<GUID*>(this) = CLSID_NULL; }
-
-	vmovups	xmm0, XMMWORD PTR GUID_NULL
-	vmovups	XMMWORD PTR ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A, xmm0
-
-; 32   : 		static AssetId kInvalidId;
-
-	ret	0
-??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
-text$di	ENDS
-; Function compile flags: /Ogtpy
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
-;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
-_TEXT	SEGMENT
-this$ = 8
-??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ PROC		; MaxSDK::AssetManagement::AssetId::AssetId, COMDAT
-
-; 29   : 			AssetId() { *static_cast<GUID*>(this) = CLSID_NULL; }
-
-	vmovups	xmm0, XMMWORD PTR GUID_NULL
-	vmovups	XMMWORD PTR [rcx], xmm0
-	mov	rax, rcx
-	ret	0
-??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
-_TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@MAEBV0@@Z
 _TEXT	SEGMENT
@@ -4902,7 +5012,38 @@ a$ = 24
 	ret	0
 ??D@YA?AVPoint3@@MAEBV0@@Z ENDP				; operator*
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
+;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
+text$di	SEGMENT
+??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ PROC	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId'', COMDAT
+
+; 29   : 			AssetId() { *static_cast<GUID*>(this) = CLSID_NULL; }
+
+	vmovups	xmm0, XMMWORD PTR GUID_NULL
+	vmovups	XMMWORD PTR ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A, xmm0
+
+; 32   : 		static AssetId kInvalidId;
+
+	ret	0
+??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
+text$di	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
+;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
+_TEXT	SEGMENT
+this$ = 8
+??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ PROC		; MaxSDK::AssetManagement::AssetId::AssetId, COMDAT
+
+; 29   : 			AssetId() { *static_cast<GUID*>(this) = CLSID_NULL; }
+
+	vmovups	xmm0, XMMWORD PTR GUID_NULL
+	vmovups	XMMWORD PTR [rcx], xmm0
+	mov	rax, rcx
+	ret	0
+??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
+_TEXT	ENDS
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@KK@Z
 _TEXT	SEGMENT
@@ -4919,7 +5060,7 @@ bb$ = 24
 	ret	0
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
@@ -4930,7 +5071,7 @@ __formal$ = 16
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\gradientramp.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
@@ -4940,7 +5081,7 @@ __formal$ = 8
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_H@YAXPEAX_K1P6APEAX0@Z@Z
 _TEXT	SEGMENT
 __t$ = 48

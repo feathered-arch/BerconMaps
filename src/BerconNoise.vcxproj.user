@@ -4,18 +4,6 @@
     <LocalDebuggerCommand>$(ADSK_3DSMAX_x64_2018)3dsmax.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'">
-    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2020\3dsmax.exe</LocalDebuggerCommand>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX2|x64'">
-    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2020\3dsmax.exe</LocalDebuggerCommand>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'">
-    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2016|x64'">
     <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2016\3dsmax.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
@@ -28,7 +16,23 @@
     <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2018\3dsmax.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX2|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX|x64'">
+    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019_AVX_debug|x64'">
+    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX|x64'">
+    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'">
+    <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'">
     <LocalDebuggerCommand>C:\Program Files\Autodesk\3ds Max 2019\3dsmax.exe</LocalDebuggerCommand>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>

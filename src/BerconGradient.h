@@ -32,7 +32,7 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 	public:
 		// Parameter block
 		IParamBlock2	*pblock;
-		IParamBlock2	*pbCurve; //ref CURVEPB_REF
+//		IParamBlock2	*pbCurve; //ref CURVEPB_REF
 		IParamBlock2	*pbXYZ; //ref COORDS
 
 		BerconXYZ berconXYZ;
@@ -98,18 +98,18 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 		void gradReset() { resetKeys(); }
 
 		// Curve
-		ICurveCtl* curve;				
-		BOOL p_curveOn;
+	//	ICurveCtl* curve;				
+	//	BOOL p_curveOn;
 		// From ResourceMakerCallback		
 		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
 		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
-		void ResetCallback(int curvenum, ICurveCtl *pCCtl) { ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); if(pCurve) { pCurve->SetNumPts(2); NewCurveCreatedCallback(curvenum, pCCtl); }}
-		void NewCurveCreatedCallback(int curvenum, ICurveCtl *pCCtl) {
-			ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); TimeValue t = GetCOREInterface()->GetTime();
-			CurvePoint pt = pCurve->GetPoint(t,0); pt.p.y = 0.f; pCurve->SetPoint(t,0,&pt);
-			pCurve->SetPenProperty( RGB(0,0,0)); pCurve->SetDisabledPenProperty( RGB(128,128,128));		
-			pt = pCurve->GetPoint(t,1); pt.p.y = 1.f; pCurve->SetPoint(t,1,&pt);
-		}
+	//	void ResetCallback(int curvenum, ICurveCtl *pCCtl) { ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); if(pCurve) { pCurve->SetNumPts(2); NewCurveCreatedCallback(curvenum, pCCtl); }}
+	//	void NewCurveCreatedCallback(int curvenum, ICurveCtl *pCCtl) {
+	//		ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); TimeValue t = GetCOREInterface()->GetTime();
+	//		CurvePoint pt = pCurve->GetPoint(t,0); pt.p.y = 0.f; pCurve->SetPoint(t,0,&pt);
+	//		pCurve->SetPenProperty( RGB(0,0,0)); pCurve->SetDisabledPenProperty( RGB(128,128,128));		
+	//		pt = pCurve->GetPoint(t,1); pt.p.y = 1.f; pCurve->SetPoint(t,1,&pt);
+	//	}
 
 		//From MtlBase
 		ParamDlg* CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp);
@@ -150,19 +150,19 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 8+gradient->numKeys(); } // !! Update submap count !!
+		int NumSubs() { return 7+gradient->numKeys(); } // !! Update submap count !!
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 		
-		int NumRefs() { return 8+gradient->numKeys(); } // !! Update submap count !!
+		int NumRefs() { return 7+gradient->numKeys(); } // !! Update submap count !!
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
-		int	NumParamBlocks() { return 3; }
-		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; case 1: return pbCurve; case 2: return pbXYZ; } return NULL; }
+		int	NumParamBlocks() { return 2; }
+		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 1: return pbXYZ; } return NULL; }
 		IParamBlock2* GetParamBlockByID(BlockID id) { 
 			if (pblock->ID() == id) return pblock;
-			if (pbCurve->ID() == id) return pbCurve;
+		//	if (pbCurve->ID() == id) return pbCurve;
 			if (pbXYZ->ID() == id) return pbXYZ;
 			return NULL;
 		}
@@ -174,7 +174,7 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 				
 		BerconGradient();
 		~BerconGradient();		
-
+		
 		void* GetInterface(ULONG id) {
 			if(id == I_RESMAKER_INTERFACE)
 				return (void *) (ResourceMakerCallback*) this;

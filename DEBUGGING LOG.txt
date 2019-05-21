@@ -1,0 +1,27 @@
+private:
+		void SetReference(int i, RefTargetHandle rtarg);
+		
+THE ABOVE APPEARS TO MAKE NO DIFFERENCE
+
+
+
+/*
+void BerconNoise::SetReference(int i, RefTargetHandle rtarg) {	
+	switch(i) {
+		case COORD_REF:  pbXYZ = (IParamBlock2 *)rtarg; break;
+		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;
+		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
+		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
+		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
+		case PBMAP_REF: pbMap = (IParamBlock2 *)rtarg; break;
+		default: subtex[i-2] = (Texmap *)rtarg; break;
+	}
+}
+*/
+
+AT LINE 680 IN BERCONNOISE.CPP COMMENTING THIS OUT RESULTS IN EXCEPTION THROWN AT LINE 409 (TEXTOUT NULL)
+
+* CRASH WHEN NESTING BERCONNOISE IN SLATE MATERIAL EDITOR AND SAVING BUT NO CRASH IF NOT NESTING (AND NO CRASH IN COMPACT MATERIAL EDITOR)
+
+* SETREFERENCE IN PROTECTED OR PRIVATE SEEMS TO HAVE NO EFFECT ON ANYTHING
+

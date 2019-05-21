@@ -2,7 +2,7 @@
 
 include listing.inc
 
-INCLUDELIB MSVCRTD
+INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
 PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
@@ -155,7 +155,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD imagerel $LN27
-	DD	imagerel $LN27+447
+	DD	imagerel $LN27+445
 	DD	imagerel $unwind$?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -245,43 +245,43 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN23
-	DD	imagerel $LN23+382
+	DD	imagerel $LN23+392
 	DD	imagerel $unwind$?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN32
-	DD	imagerel $LN32+423
+	DD	imagerel $LN32+431
 	DD	imagerel $unwind$?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN27
-	DD	imagerel $LN27+458
+	DD	imagerel $LN27+484
 	DD	imagerel $unwind$?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN29
-	DD	imagerel $LN29+558
+	DD	imagerel $LN29+579
 	DD	imagerel $unwind$?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31
-	DD	imagerel $LN31+192
+	DD	imagerel $LN31+194
 	DD	imagerel $unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31+192
-	DD	imagerel $LN31+419
+$pdata$2$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31+194
+	DD	imagerel $LN31+418
 	DD	imagerel $chain$2$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31+419
-	DD	imagerel $LN31+468
+$pdata$3$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD imagerel $LN31+418
+	DD	imagerel $LN31+474
 	DD	imagerel $chain$3$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -305,25 +305,25 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$4$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+104
-	DD	imagerel $LN19+188
+	DD	imagerel $LN19+189
 	DD	imagerel $chain$4$?fBm@Fractal@@SAMVPoint3@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+188
-	DD	imagerel $LN19+201
+$pdata$5$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+189
+	DD	imagerel $LN19+202
 	DD	imagerel $chain$5$?fBm@Fractal@@SAMVPoint3@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$6$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+201
-	DD	imagerel $LN19+242
+$pdata$6$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+202
+	DD	imagerel $LN19+243
 	DD	imagerel $chain$6$?fBm@Fractal@@SAMVPoint3@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$7$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+242
-	DD	imagerel $LN19+319
+$pdata$7$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD imagerel $LN19+243
+	DD	imagerel $LN19+320
 	DD	imagerel $chain$7$?fBm@Fractal@@SAMVPoint3@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -379,8 +379,8 @@ _DATA	SEGMENT
 _DATA	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?grain@Fractal@@SAMVPoint3@@MM@Z DD 033701H
-	DD	037837H
+$unwind$?grain@Fractal@@SAMVPoint3@@MM@Z DD 034a01H
+	DD	03784aH
 	DD	08204H
 xdata	ENDS
 ;	COMDAT xdata
@@ -407,7 +407,7 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$4$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD 020821H
-	DD	0136408H
+	DD	0126408H
 	DD	imagerel $LN19+77
 	DD	imagerel $LN19+104
 	DD	imagerel $chain$3$?fBm@Fractal@@SAMVPoint3@@MMM@Z
@@ -425,15 +425,15 @@ xdata	SEGMENT
 $chain$2$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD 060e21H
 	DD	03a80eH
 	DD	049809H
-	DD	0147404H
+	DD	0137404H
 	DD	imagerel $LN19
 	DD	imagerel $LN19+37
 	DD	imagerel $unwind$?fBm@Fractal@@SAMVPoint3@@MMM@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD 082501H
-	DD	058825H
+$unwind$?fBm@Fractal@@SAMVPoint3@@MMM@Z DD 081d01H
+	DD	05881dH
 	DD	067818H
 	DD	076810H
 	DD	03004f20bH
@@ -442,78 +442,83 @@ xdata	ENDS
 xdata	SEGMENT
 $chain$3$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 021H
 	DD	imagerel $LN31
-	DD	imagerel $LN31+192
+	DD	imagerel $LN31+194
 	DD	imagerel $unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 062021H
-	DD	05b820H
-	DD	088812H
+	DD	06a820H
+	DD	097812H
 	DD	0a6809H
 	DD	imagerel $LN31
-	DD	imagerel $LN31+192
+	DD	imagerel $LN31+194
 	DD	imagerel $unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0f4a01H
-	DD	03d84aH
-	DD	04c844H
-	DD	06a83eH
-	DD	079823H
-	DD	09781aH
-	DD	016010bH
-	DD	060037004H
-	DD	03002H
+$unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0114b01H
+	DD	03d84bH
+	DD	04c845H
+	DD	05b82eH
+	DD	079826H
+	DD	08881eH
+	DD	0196413H
+	DD	0183413H
+	DD	0160113H
+	DD	0700cH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0134f01H
-	DD	03c84fH
-	DD	04b849H
-	DD	05a832H
-	DD	06982dH
-	DD	078828H
-	DD	087820H
-	DD	096818H
-	DD	014010dH
-	DD	060057006H
-	DD	03004H
+$unwind$?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0155401H
+	DD	03c854H
+	DD	04b84fH
+	DD	05a838H
+	DD	069833H
+	DD	07882eH
+	DD	087826H
+	DD	09681eH
+	DD	0176413H
+	DD	0163413H
+	DD	0140113H
+	DD	0700cH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0c3e01H
-	DD	03983eH
-	DD	048838H
-	DD	05782fH
-	DD	066814H
-	DD	07004d208H
-	DD	030026003H
+$unwind$?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0e4501H
+	DD	039845H
+	DD	04883fH
+	DD	057836H
+	DD	06681bH
+	DD	011640fH
+	DD	010340fH
+	DD	0700bd20fH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0115b01H
-	DD	03b85bH
-	DD	04a83aH
-	DD	059835H
-	DD	068828H
-	DD	077820H
-	DD	086818H
-	DD	012010dH
-	DD	060057006H
-	DD	03004H
+$unwind$?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0136101H
+	DD	03b861H
+	DD	04a840H
+	DD	05983bH
+	DD	06882eH
+	DD	077826H
+	DD	08681eH
+	DD	0156413H
+	DD	0143413H
+	DD	0120113H
+	DD	0700cH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0e4f01H
-	DD	03a84fH
-	DD	049849H
-	DD	058829H
-	DD	067820H
-	DD	076817H
-	DD	07004f20bH
-	DD	030026003H
+$unwind$?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 0104001H
+	DD	03a840H
+	DD	04983bH
+	DD	05882eH
+	DD	067826H
+	DD	07681eH
+	DD	0136413H
+	DD	0123413H
+	DD	0700cf213H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -624,8 +629,8 @@ $unwind$?ridgedMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 0f4201H
 	DD	04b83cH
 	DD	05a833H
 	DD	07882aH
-	DD	0196412H
-	DD	0183412H
+	DD	0176412H
+	DD	0163412H
 	DD	0140112H
 	DD	0700bH
 xdata	ENDS
@@ -638,8 +643,8 @@ $unwind$?hybridMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 0134901H
 	DD	06883aH
 	DD	077832H
 	DD	08682aH
-	DD	0176413H
-	DD	0163413H
+	DD	0156413H
+	DD	0143413H
 	DD	0120113H
 	DD	0700cH
 xdata	ENDS
@@ -649,8 +654,8 @@ $unwind$?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 0c3901H
 	DD	038839H
 	DD	047830H
 	DD	056827H
-	DD	011640fH
-	DD	010340fH
+	DD	0f640fH
+	DD	0e340fH
 	DD	0700bb20fH
 xdata	ENDS
 ;	COMDAT xdata
@@ -661,8 +666,8 @@ $unwind$?fBmTurb@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 0105601H
 	DD	058842H
 	DD	067832H
 	DD	07682aH
-	DD	0156413H
-	DD	0143413H
+	DD	0136413H
+	DD	0123413H
 	DD	0700cf213H
 xdata	ENDS
 ;	COMDAT xdata
@@ -672,8 +677,8 @@ $unwind$?fBm@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z DD 0e4701H
 	DD	048841H
 	DD	057830H
 	DD	066827H
-	DD	013640fH
-	DD	012340fH
+	DD	011640fH
+	DD	010340fH
 	DD	0700bd20fH
 xdata	ENDS
 ;	COMDAT xdata
@@ -772,7 +777,7 @@ $unwind$??_H@YAXPEAX_K1P6APEAX0@Z@Z DD 081901H
 	DD	063419H
 	DD	070153219H
 xdata	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -799,8 +804,23 @@ $LN8:
 ; 271  :    x *= f;   y *= f; z *= f;
 
 	vmulss	xmm3, xmm2, DWORD PTR [rcx+4]
-	vmulss	xmm0, xmm2, DWORD PTR [rcx+8]
 	vmulss	xmm4, xmm2, DWORD PTR [rcx]
+	vmulss	xmm0, xmm2, DWORD PTR [rcx+8]
+; File g:\dropbox\github\berconmaps\src\fractal.cpp
+
+; 310  : 		p.z *= .05f;
+
+	vmulss	xmm2, xmm0, DWORD PTR __real@3d4ccccd
+	vmovss	DWORD PTR [rcx+8], xmm2
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 271  :    x *= f;   y *= f; z *= f;
+
+	vmovss	DWORD PTR [rcx+4], xmm3
+
+; 73   : 		 x = a.x; y = a.y; z = a.z; 
+
+	vmovss	DWORD PTR $T1[rsp+8], xmm2
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 311  : 		float g = (fBm(p, 4.f, 2.f, .5f)+1.f)*.5f;
@@ -810,7 +830,6 @@ $LN8:
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmovss	DWORD PTR [rcx+4], xmm3
 	vmovss	DWORD PTR [rcx], xmm4
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -822,20 +841,9 @@ $LN8:
 
 	vmovss	xmm3, DWORD PTR __real@3f000000
 	vmovaps	XMMWORD PTR [rsp+48], xmm7
-	vmovaps	xmm7, xmm1
-	vmulss	xmm1, xmm0, DWORD PTR __real@3d4ccccd
-	vmovss	DWORD PTR [rcx+8], xmm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T1[rsp+8], xmm1
-; File g:\dropbox\github\berconmaps\src\fractal.cpp
-
-; 311  : 		float g = (fBm(p, 4.f, 2.f, .5f)+1.f)*.5f;
-
-	vmovss	xmm1, DWORD PTR __real@40800000
 	lea	rcx, QWORD PTR $T1[rsp]
+	vmovaps	xmm7, xmm1
+	vmovss	xmm1, DWORD PTR __real@40800000
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
@@ -864,7 +872,7 @@ $LN8:
 	jmp	?smooth@@YAMMMM@Z			; smooth
 ?grain@Fractal@@SAMVPoint3@@MM@Z ENDP			; Fractal::grain
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -893,12 +901,12 @@ $LN19:
 	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rbx, rcx
 	vmovaps	XMMWORD PTR [rax-40], xmm7
+	vmovaps	XMMWORD PTR [rax-56], xmm8
 
 ; 292  : 	float pwr = 1.0f;
 
-	vmovss	xmm7, DWORD PTR __real@3f800000
-	vmovaps	XMMWORD PTR [rax-56], xmm8
-	mov	QWORD PTR [rax+24], rdi
+	vmovss	xmm8, DWORD PTR __real@3f800000
+	mov	QWORD PTR [rax+16], rdi
 	vmovaps	XMMWORD PTR [rax-72], xmm9
 	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vmovaps	xmm9, xmm1
@@ -918,7 +926,7 @@ $LN19:
 
 	vmovaps	xmm6, xmm10
 	vmovaps	XMMWORD PTR [rax-104], xmm11
-	vmovaps	xmm8, xmm2
+	vmovaps	xmm7, xmm2
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
@@ -940,7 +948,10 @@ $LN19:
 
 	test	edi, edi
 	jle	SHORT $LN3@fBm
-	mov	QWORD PTR [rsp+152], rsi
+
+; 291  : 	float sum = 0.0f;
+
+	mov	QWORD PTR [rsp+144], rsi
 	mov	esi, edi
 $LL4@fBm:
 
@@ -950,14 +961,14 @@ $LL4@fBm:
 	vmovss	xmm1, DWORD PTR [rbx+4]
 	vmovss	xmm0, DWORD PTR [rbx]
 	call	?noise@Perlin@@SAMMMM@Z			; Perlin::noise
-	vmulss	xmm1, xmm0, xmm7
+	vmulss	xmm1, xmm0, xmm8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmulss	xmm0, xmm8, DWORD PTR [rbx]
+	vmulss	xmm0, xmm7, DWORD PTR [rbx]
 	vmovss	DWORD PTR [rbx], xmm0
-	vmulss	xmm0, xmm8, DWORD PTR [rbx+8]
+	vmulss	xmm0, xmm7, DWORD PTR [rbx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 296  : 		sum += Perlin::noise(p.x, p.y, p.z) * pwr;
@@ -967,17 +978,17 @@ $LL4@fBm:
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmulss	xmm1, xmm8, DWORD PTR [rbx+4]
+	vmulss	xmm1, xmm7, DWORD PTR [rbx+4]
 	vmovss	DWORD PTR [rbx+8], xmm0
 	vmovss	DWORD PTR [rbx+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 297  : 		pwr *= pwHL;
 
-	vmulss	xmm7, xmm7, xmm11
+	vmulss	xmm8, xmm8, xmm11
 	sub	rsi, 1
 	jne	SHORT $LL4@fBm
-	mov	rsi, QWORD PTR [rsp+152]
+	mov	rsi, QWORD PTR [rsp+144]
 $LN3@fBm:
 
 ; 298  : 		p *= lacunarity;
@@ -990,15 +1001,15 @@ $LN3@fBm:
 	jbe	SHORT $LN7@fBm
 	dec	edi
 $LN7@fBm:
-	vxorps	xmm1, xmm1, xmm1
-	vcvtsi2ss xmm1, xmm1, edi
-	mov	rdi, QWORD PTR [rsp+160]
-	vsubss	xmm8, xmm9, xmm1
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, edi
+	mov	rdi, QWORD PTR [rsp+152]
+	vsubss	xmm7, xmm9, xmm0
 	vmovaps	xmm9, XMMWORD PTR [rsp+64]
 
 ; 302  : 	if (rmd!=0.f) sum += rmd * Perlin::noise(p.x, p.y, p.z) * pwr;
 
-	vucomiss xmm8, xmm10
+	vucomiss xmm7, xmm10
 	vmovaps	xmm10, XMMWORD PTR [rsp+48]
 	jp	SHORT $LN17@fBm
 	je	SHORT $LN5@fBm
@@ -1007,8 +1018,8 @@ $LN17@fBm:
 	vmovss	xmm1, DWORD PTR [rbx+4]
 	vmovss	xmm0, DWORD PTR [rbx]
 	call	?noise@Perlin@@SAMMMM@Z			; Perlin::noise
-	vmulss	xmm1, xmm0, xmm8
-	vmulss	xmm2, xmm1, xmm7
+	vmulss	xmm1, xmm0, xmm7
+	vmulss	xmm2, xmm1, xmm8
 	vaddss	xmm6, xmm6, xmm2
 $LN5@fBm:
 
@@ -1028,7 +1039,7 @@ $LN5@fBm:
 	ret	0
 ?fBm@Fractal@@SAMVPoint3@@MMM@Z ENDP			; Fractal::fBm
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1054,16 +1065,17 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 32
-p$ = 208
-d$ = 216
-np$ = 224
+p$ = 192
+d$ = 200
+np$ = 208
 ?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC ; Fractal::ridgedMultiFractal, COMDAT
 
 ; 262  : float Fractal::ridgedMultiFractal(Point3 p, float d, NoiseParams& np) {
 
 $LN31:
-	push	rbx
-	push	rsi
+	mov	rax, rsp
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 176				; 000000b0H
 
@@ -1071,42 +1083,42 @@ $LN31:
 ; 264  : 	float pwHL = pow(np.lacunarity, -np.H);	
 
 	vmovss	xmm0, DWORD PTR [r8+40]
-	vmovaps	XMMWORD PTR [rsp+144], xmm7
+	vmovaps	XMMWORD PTR [rax-56], xmm8
 	mov	rdi, r8
-	vmovaps	XMMWORD PTR [rsp+112], xmm9
+	vmovaps	XMMWORD PTR [rax-72], xmm9
 	mov	rbx, rcx
-	vmovaps	xmm7, xmm1
+	vmovaps	XMMWORD PTR [rax-104], xmm11
+	vmovaps	xmm8, xmm1
 	vxorps	xmm1, xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
 
 	vmovss	xmm0, DWORD PTR [r8+44]
-	vmovaps	XMMWORD PTR [rsp+96], xmm10
-	vmovaps	XMMWORD PTR [rsp+64], xmm12
+	vmovaps	XMMWORD PTR [rax-120], xmm12
 	vmovaps	XMMWORD PTR [rsp+48], xmm13
 	call	powf
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm1, DWORD PTR [rbx]
-	vmovss	xmm2, DWORD PTR [rbx+4]
-	vmovss	DWORD PTR $T1[rsp], xmm1
 	vmovss	xmm1, DWORD PTR [rbx+8]
+	vmovss	xmm2, DWORD PTR [rbx]
+	vmovss	xmm3, DWORD PTR [rbx+4]
 	vmovss	DWORD PTR $T1[rsp+8], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 269  : 	signal = np.offset - fabs(Noise::noise(p, d, np));
 
-	vmovaps	xmm1, xmm7
+	vmovaps	xmm1, xmm8
 	mov	r8, rdi
 	lea	rcx, QWORD PTR $T1[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	DWORD PTR $T1[rsp+4], xmm2
+	vmovss	DWORD PTR $T1[rsp], xmm2
+	vmovss	DWORD PTR $T1[rsp+4], xmm3
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
@@ -1116,7 +1128,7 @@ $LN31:
 
 ; 265  : 	float pwr = pwHL;
 
-	vmovaps	xmm10, xmm0
+	vmovaps	xmm11, xmm0
 
 ; 269  : 	signal = np.offset - fabs(Noise::noise(p, d, np));
 
@@ -1161,11 +1173,11 @@ $LN31:
 	cmp	eax, esi
 	jle	$LN29@ridgedMult
 	vmovaps	XMMWORD PTR [rsp+160], xmm6
-	vmovaps	XMMWORD PTR [rsp+128], xmm8
-	vmovss	xmm8, DWORD PTR __real@3f800000
-	vmovaps	XMMWORD PTR [rsp+80], xmm11
-	vxorps	xmm11, xmm11, xmm11
-	npad	11
+	vmovaps	XMMWORD PTR [rsp+144], xmm7
+	vmovss	xmm7, DWORD PTR __real@3f800000
+	vmovaps	XMMWORD PTR [rsp+96], xmm10
+	vxorps	xmm10, xmm10, xmm10
+	npad	9
 $LL4@ridgedMult:
 
 ; 275  : 		p *= np.lacunarity;
@@ -1189,13 +1201,13 @@ $LL4@ridgedMult:
 
 ; 278  : 		if (weight>1.0) weight=1.0; else if (weight<0.0) weight=0.0;
 
-	vcomiss	xmm0, xmm8
-	vmulss	xmm7, xmm7, DWORD PTR [rdi+44]
+	vcomiss	xmm0, xmm7
+	vmulss	xmm8, xmm8, DWORD PTR [rdi+44]
 	jbe	SHORT $LN5@ridgedMult
-	vmovaps	xmm6, xmm8
+	vmovaps	xmm6, xmm7
 	jmp	SHORT $LN7@ridgedMult
 $LN5@ridgedMult:
-	vmaxss	xmm6, xmm11, xmm0
+	vmaxss	xmm6, xmm10, xmm0
 $LN7@ridgedMult:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -1206,7 +1218,7 @@ $LN7@ridgedMult:
 
 ; 279  : 		signal = np.offset - fabs(Noise::noise(p, d, np));
 
-	vmovaps	xmm1, xmm7
+	vmovaps	xmm1, xmm8
 	mov	r8, rdi
 	lea	rcx, QWORD PTR $T2[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1245,17 +1257,17 @@ $LN7@ridgedMult:
 
 ; 282  : 		sum += signal * pwr;
 
-	vmulss	xmm1, xmm4, xmm10
+	vmulss	xmm1, xmm4, xmm11
 	inc	esi
 	vaddss	xmm9, xmm9, xmm1
 
 ; 283  : 		pwr *= pwHL;
 
-	vmulss	xmm10, xmm10, xmm12
+	vmulss	xmm11, xmm11, xmm12
 	cmp	esi, eax
 	jl	$LL4@ridgedMult
-	vmovaps	xmm11, XMMWORD PTR [rsp+80]
-	vmovaps	xmm8, XMMWORD PTR [rsp+128]
+	vmovaps	xmm10, XMMWORD PTR [rsp+96]
+	vmovaps	xmm7, XMMWORD PTR [rsp+144]
 	vmovaps	xmm6, XMMWORD PTR [rsp+160]
 $LN29@ridgedMult:
 
@@ -1264,20 +1276,21 @@ $LN29@ridgedMult:
 ; 286  : 	return sum;
 ; 287  : }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp+144]
-	vmovaps	xmm10, XMMWORD PTR [rsp+96]
-	vmovaps	xmm12, XMMWORD PTR [rsp+64]
-	vmovaps	xmm13, XMMWORD PTR [rsp+48]
+	lea	r11, QWORD PTR [rsp+176]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm11, XMMWORD PTR [r11-96]
+	vmovaps	xmm12, XMMWORD PTR [r11-112]
+	vmovaps	xmm13, XMMWORD PTR [r11-128]
 	vmovaps	xmm0, xmm9
-	vmovaps	xmm9, XMMWORD PTR [rsp+112]
-	add	rsp, 176				; 000000b0H
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
+	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP ; Fractal::ridgedMultiFractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1310,17 +1323,17 @@ _TEXT	SEGMENT
 $T1 = 32
 $T2 = 32
 $T3 = 32
-p$ = 192
-d$ = 200
-np$ = 208
+p$ = 176
+d$ = 184
+np$ = 192
 ?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC ; Fractal::hybridMultiFractal, COMDAT
 
 ; 234  : float Fractal::hybridMultiFractal(Point3 p, float d, NoiseParams& np) {
 
 $LN29:
 	mov	rax, rsp
-	push	rbx
-	push	rsi
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 160				; 000000a0H
 
@@ -1328,13 +1341,13 @@ $LN29:
 ; 236  : 	float pwHL = pow(np.lacunarity, -np.H);	
 
 	vmovss	xmm0, DWORD PTR [r8+40]
-	vmovaps	XMMWORD PTR [rax-40], xmm6
+	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rbx, r8
-	vmovaps	XMMWORD PTR [rax-56], xmm7
+	vmovaps	XMMWORD PTR [rax-40], xmm7
 	mov	rdi, rcx
-	vmovaps	XMMWORD PTR [rax-72], xmm8
-	vmovaps	XMMWORD PTR [rax-88], xmm9
-	vmovaps	XMMWORD PTR [rax-104], xmm10
+	vmovaps	XMMWORD PTR [rax-56], xmm8
+	vmovaps	XMMWORD PTR [rax-72], xmm9
+	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vmovaps	xmm6, xmm1
 	vxorps	xmm1, xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -1342,17 +1355,16 @@ $LN29:
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
 
 	vmovss	xmm0, DWORD PTR [r8+44]
-	vmovaps	XMMWORD PTR [rax-120], xmm11
-	vmovaps	XMMWORD PTR [rsp+48], xmm12
+	vmovaps	XMMWORD PTR [rax-104], xmm11
+	vmovaps	XMMWORD PTR [rax-120], xmm12
 	call	powf
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm1, DWORD PTR [rdi]
-	vmovss	xmm2, DWORD PTR [rdi+4]
-	vmovss	DWORD PTR $T2[rsp], xmm1
 	vmovss	xmm1, DWORD PTR [rdi+8]
+	vmovss	xmm2, DWORD PTR [rdi]
+	vmovss	xmm3, DWORD PTR [rdi+4]
 	vmovss	DWORD PTR $T2[rsp+8], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
@@ -1365,7 +1377,8 @@ $LN29:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	DWORD PTR $T2[rsp+4], xmm2
+	vmovss	DWORD PTR $T2[rsp], xmm2
+	vmovss	DWORD PTR $T2[rsp+4], xmm3
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
@@ -1427,6 +1440,7 @@ $LN29:
 
 	mov	esi, 1
 	jbe	$LN27@hybridMult
+	npad	10
 $LL4@hybridMult:
 	vcvttss2si eax, DWORD PTR [rbx+36]
 	cmp	esi, eax
@@ -1564,6 +1578,8 @@ $LN6@hybridMult:
 ; 260  : }
 
 	lea	r11, QWORD PTR [rsp+160]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm9, XMMWORD PTR [r11-64]
@@ -1575,12 +1591,10 @@ $LN6@hybridMult:
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
 	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP ; Fractal::hybridMultiFractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -1607,16 +1621,16 @@ _TEXT	SEGMENT
 $T1 = 32
 $T2 = 32
 $T3 = 32
-p$ = 144
-d$ = 152
-np$ = 160
+p$ = 128
+d$ = 136
+np$ = 144
 ?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC ; Fractal::heteroTerrain, COMDAT
 
 ; 212  : float Fractal::heteroTerrain(Point3 p, float d, NoiseParams& np) {
 
 $LN27:
-	push	rbx
-	push	rsi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 	sub	rsp, 112				; 00000070H
 
@@ -1650,9 +1664,8 @@ $LN27:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	xmm1, DWORD PTR [rbx]
-	vmovss	xmm2, DWORD PTR [rbx+4]
-	vmovss	DWORD PTR $T2[rsp], xmm1
+	vmovss	xmm2, DWORD PTR [rbx]
+	vmovss	xmm3, DWORD PTR [rbx+4]
 	vmovss	xmm1, DWORD PTR [rbx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
@@ -1664,8 +1677,9 @@ $LN27:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
+	vmovss	DWORD PTR $T2[rsp], xmm2
+	vmovss	DWORD PTR $T2[rsp+4], xmm3
 	vmovss	DWORD PTR $T2[rsp+8], xmm1
-	vmovss	DWORD PTR $T2[rsp+4], xmm2
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
@@ -1703,8 +1717,8 @@ $LN27:
 	vmulss	xmm6, xmm6, DWORD PTR [rdi+44]
 	xor	esi, esi
 	test	eax, eax
-	jle	SHORT $LN3@heteroTerr
-	npad	2
+	jle	$LN3@heteroTerr
+	npad	7
 $LL4@heteroTerr:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -1829,17 +1843,18 @@ $LN5@heteroTerr:
 ; 232  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+96]
+	lea	r11, QWORD PTR [rsp+112]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm7, XMMWORD PTR [rsp+80]
-	vmovaps	xmm8, XMMWORD PTR [rsp+64]
-	vmovaps	xmm9, XMMWORD PTR [rsp+48]
-	add	rsp, 112				; 00000070H
+	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?heteroTerrain@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP ; Fractal::heteroTerrain
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -1867,17 +1882,17 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 32
-p$ = 176
-d$ = 184
-np$ = 192
+p$ = 160
+d$ = 168
+np$ = 176
 ?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC	; Fractal::fBmTurb, COMDAT
 
 ; 194  : float Fractal::fBmTurb(Point3 p, float d, NoiseParams& np) {
 
 $LN32:
 	mov	rax, rsp
-	push	rbx
-	push	rsi
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 144				; 00000090H
 
@@ -1885,14 +1900,14 @@ $LN32:
 ; 197  : 	float pwHL = pow(np.lacunarity, -np.H);	
 
 	vmovss	xmm0, DWORD PTR [r8+40]
-	vmovaps	XMMWORD PTR [rax-40], xmm6
+	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rdi, r8
-	vmovaps	XMMWORD PTR [rax-56], xmm7
+	vmovaps	XMMWORD PTR [rax-40], xmm7
 	mov	rbx, rcx
-	vmovaps	XMMWORD PTR [rax-72], xmm8
+	vmovaps	XMMWORD PTR [rax-56], xmm8
 	vmovss	xmm8, DWORD PTR __real@3f800000
-	vmovaps	XMMWORD PTR [rax-88], xmm9
-	vmovaps	XMMWORD PTR [rax-104], xmm10
+	vmovaps	XMMWORD PTR [rax-72], xmm9
+	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vmovaps	xmm7, xmm1
 	vxorps	xmm1, xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -1906,7 +1921,7 @@ $LN32:
 ; 195  : 	float sum = 0.0f;
 
 	vmovaps	xmm6, xmm10
-	vmovaps	XMMWORD PTR [rax-120], xmm11
+	vmovaps	XMMWORD PTR [rax-104], xmm11
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
@@ -1930,7 +1945,6 @@ $LN32:
 
 	test	eax, eax
 	jle	$LN3@fBmTurb
-	npad	5
 $LL4@fBmTurb:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -2040,9 +2054,10 @@ $LN29@fBmTurb:
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	xmm0, DWORD PTR [rbx]
-	vmovss	xmm2, DWORD PTR [rbx+4]
+	vmovss	xmm1, DWORD PTR [rbx+4]
 	vmovss	DWORD PTR $T1[rsp], xmm0
 	vmovss	xmm0, DWORD PTR [rbx+8]
+	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 207  : 	if (rmd!=0.f) sum += rmd * fabs(Noise::noise(p, d, np)) * pwr;
@@ -2055,7 +2070,6 @@ $LN29@fBmTurb:
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
-	vmovss	DWORD PTR $T1[rsp+4], xmm2
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 207  : 	if (rmd!=0.f) sum += rmd * fabs(Noise::noise(p, d, np)) * pwr;
@@ -2079,20 +2093,21 @@ $LN5@fBmTurb:
 
 ; 210  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+128]
 	vmovaps	xmm7, XMMWORD PTR [rsp+112]
-	vmovaps	xmm8, XMMWORD PTR [rsp+96]
-	vmovaps	xmm9, XMMWORD PTR [rsp+80]
-	vmovaps	xmm10, XMMWORD PTR [rsp+64]
-	vmovaps	xmm11, XMMWORD PTR [rsp+48]
-	add	rsp, 144				; 00000090H
+	lea	r11, QWORD PTR [rsp+144]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
+	vmovaps	xmm6, XMMWORD PTR [r11-16]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
+	vmovaps	xmm10, XMMWORD PTR [r11-80]
+	vmovaps	xmm11, XMMWORD PTR [r11-96]
+	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP	; Fractal::fBmTurb
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -2116,16 +2131,17 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 32
-p$ = 160
-d$ = 168
-np$ = 176
+p$ = 144
+d$ = 152
+np$ = 160
 ?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC	; Fractal::fBm, COMDAT
 
 ; 176  : float Fractal::fBm(Point3 p, float d, NoiseParams& np) {
 
 $LN23:
-	push	rbx
-	push	rsi
+	mov	rax, rsp
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 128				; 00000080H
 
@@ -2133,12 +2149,14 @@ $LN23:
 ; 179  : 	float pwHL = pow(np.lacunarity, -np.H);	
 
 	vmovss	xmm0, DWORD PTR [r8+40]
-	vmovaps	XMMWORD PTR [rsp+112], xmm6
+	vmovaps	XMMWORD PTR [rax-24], xmm6
 	mov	rdi, r8
-	vmovaps	XMMWORD PTR [rsp+96], xmm7
+	vmovaps	XMMWORD PTR [rax-40], xmm7
 	mov	rbx, rcx
-	vmovaps	XMMWORD PTR [rsp+80], xmm8
+	vmovaps	XMMWORD PTR [rax-56], xmm8
 	vmovss	xmm8, DWORD PTR __real@3f800000
+	vmovaps	XMMWORD PTR [rax-72], xmm9
+	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vmovaps	xmm7, xmm1
 	vxorps	xmm1, xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -2146,8 +2164,6 @@ $LN23:
 ; 251  : 	return (_CSTD powf(_Xx, _Yx));
 
 	vmovss	xmm0, DWORD PTR [r8+44]
-	vmovaps	XMMWORD PTR [rsp+64], xmm9
-	vmovaps	XMMWORD PTR [rsp+48], xmm10
 	vxorps	xmm10, xmm10, xmm10
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
@@ -2176,7 +2192,6 @@ $LN23:
 
 	test	eax, eax
 	jle	SHORT $LN3@fBm
-	npad	3
 $LL4@fBm:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -2269,9 +2284,10 @@ $LN21@fBm:
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	xmm0, DWORD PTR [rbx]
-	vmovss	xmm2, DWORD PTR [rbx+4]
+	vmovss	xmm1, DWORD PTR [rbx+4]
 	vmovss	DWORD PTR $T1[rsp], xmm0
 	vmovss	xmm0, DWORD PTR [rbx+8]
+	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 189  : 	if (rmd!=0.f) sum += rmd * Noise::noise(p, d, np) * pwr;
@@ -2284,7 +2300,6 @@ $LN21@fBm:
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
-	vmovss	DWORD PTR $T1[rsp+4], xmm2
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 189  : 	if (rmd!=0.f) sum += rmd * Noise::noise(p, d, np) * pwr;
@@ -2304,18 +2319,19 @@ $LN5@fBm:
 ; 192  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	lea	r11, QWORD PTR [rsp+128]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
+	vmovaps	xmm10, XMMWORD PTR [r11-80]
 	vmovaps	xmm7, XMMWORD PTR [rsp+96]
-	vmovaps	xmm8, XMMWORD PTR [rsp+80]
-	vmovaps	xmm9, XMMWORD PTR [rsp+64]
-	vmovaps	xmm10, XMMWORD PTR [rsp+48]
-	add	rsp, 128				; 00000080H
+	mov	rsp, r11
 	pop	rdi
-	pop	rsi
-	pop	rbx
 	ret	0
 ?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP	; Fractal::fBm
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -2490,7 +2506,7 @@ $LN5@turbulence:
 	ret	0
 ?turbulence@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP ; Fractal::turbulence
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -2633,7 +2649,7 @@ $LN5@fractal:
 	ret	0
 ?fractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ENDP	; Fractal::fractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -2666,8 +2682,8 @@ np$ = 184
 ; 124  : float Fractal::ridgedMultiFractal(Point3 p, NoiseParams& np) {
 
 $LN31:
-	mov	QWORD PTR [rsp+24], rbx
-	mov	QWORD PTR [rsp+32], rsi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 	sub	rsp, 160				; 000000a0H
 
@@ -2765,8 +2781,8 @@ $LN31:
 ; 136  : 	for(int i=1; i<(int)np.levels; i++ ) {
 
 	mov	esi, 1
-	vmulss	xmm5, xmm1, xmm1
-	vmovaps	xmm8, xmm5
+	vmulss	xmm4, xmm1, xmm1
+	vmovaps	xmm8, xmm4
 	cmp	eax, esi
 	jle	$LN29@ridgedMult
 	vmovaps	XMMWORD PTR [rsp+144], xmm6
@@ -2784,26 +2800,26 @@ $LL4@ridgedMult:
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmulss	xmm2, xmm0, DWORD PTR [rbx]
-	vmulss	xmm3, xmm0, DWORD PTR [rbx+4]
-	vmulss	xmm4, xmm0, DWORD PTR [rbx+8]
-	vmovss	DWORD PTR [rbx], xmm2
-	vmovss	DWORD PTR [rbx+4], xmm3
-	vmovss	DWORD PTR [rbx+8], xmm4
+	vmulss	xmm1, xmm0, DWORD PTR [rbx]
+	vmulss	xmm2, xmm0, DWORD PTR [rbx+4]
+	vmulss	xmm3, xmm0, DWORD PTR [rbx+8]
+	vmovss	DWORD PTR [rbx], xmm1
+	vmovss	DWORD PTR [rbx+4], xmm2
+	vmovss	DWORD PTR [rbx+8], xmm3
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 138  : 		weight = signal * np.gain;
 
-	vmulss	xmm1, xmm5, DWORD PTR [rdi+52]
+	vmulss	xmm0, xmm4, DWORD PTR [rdi+52]
 
 ; 139  : 		if (weight>1.0) weight=1.0; else if (weight<0.0) weight=0.0;
 
-	vcomiss	xmm1, xmm7
+	vcomiss	xmm0, xmm7
 	jbe	SHORT $LN5@ridgedMult
 	vmovaps	xmm6, xmm7
 	jmp	SHORT $LN7@ridgedMult
 $LN5@ridgedMult:
-	vmaxss	xmm6, xmm9, xmm1
+	vmaxss	xmm6, xmm9, xmm0
 $LN7@ridgedMult:
 
 ; 140  : 		signal = np.offset - fabs(Noise::noise(p, np));
@@ -2814,9 +2830,9 @@ $LN7@ridgedMult:
 
 ; 73   : 		 x = a.x; y = a.y; z = a.z; 
 
-	vmovss	DWORD PTR $T2[rsp], xmm2
-	vmovss	DWORD PTR $T2[rsp+4], xmm3
-	vmovss	DWORD PTR $T2[rsp+8], xmm4
+	vmovss	DWORD PTR $T2[rsp], xmm1
+	vmovss	DWORD PTR $T2[rsp+4], xmm2
+	vmovss	DWORD PTR $T2[rsp+8], xmm3
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 
 ; 140  : 		signal = np.offset - fabs(Noise::noise(p, np));
@@ -2843,11 +2859,11 @@ $LN7@ridgedMult:
 
 ; 142  : 		signal *= weight;
 
-	vmulss	xmm5, xmm3, xmm6
+	vmulss	xmm4, xmm3, xmm6
 
 ; 143  : 		sum += signal * pwr;
 
-	vmulss	xmm1, xmm5, xmm10
+	vmulss	xmm1, xmm4, xmm10
 	inc	esi
 	vaddss	xmm8, xmm8, xmm1
 
@@ -2867,8 +2883,8 @@ $LN29@ridgedMult:
 ; 148  : }
 
 	lea	r11, QWORD PTR [rsp+160]
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rsi, QWORD PTR [r11+40]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
 	vmovaps	xmm11, XMMWORD PTR [r11-96]
 	vmovaps	xmm12, XMMWORD PTR [r11-112]
@@ -2879,7 +2895,7 @@ $LN29@ridgedMult:
 	ret	0
 ?ridgedMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Fractal::ridgedMultiFractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -2924,8 +2940,8 @@ np$ = 168
 
 $LN29:
 	mov	rax, rsp
-	mov	QWORD PTR [rax+24], rbx
-	mov	QWORD PTR [rax+32], rsi
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 144				; 00000090H
 
@@ -3176,8 +3192,8 @@ $LN6@hybridMult:
 ; 122  : }
 
 	lea	r11, QWORD PTR [rsp+144]
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rsi, QWORD PTR [r11+40]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
@@ -3191,7 +3207,7 @@ $LN6@hybridMult:
 	ret	0
 ?hybridMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Fractal::hybridMultiFractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -3225,8 +3241,8 @@ np$ = 120
 ; 78   : float Fractal::heteroTerrain(Point3 p, NoiseParams& np) {
 
 $LN27:
-	mov	QWORD PTR [rsp+24], rbx
-	mov	QWORD PTR [rsp+32], rsi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 	sub	rsp, 96					; 00000060H
 
@@ -3434,18 +3450,17 @@ $LN5@heteroTerr:
 
 ; 96   : }
 
+	mov	rbx, QWORD PTR [rsp+112]
+	mov	rsi, QWORD PTR [rsp+120]
 	vmovaps	xmm6, XMMWORD PTR [rsp+80]
-	lea	r11, QWORD PTR [rsp+96]
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rsi, QWORD PTR [r11+40]
-	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm7, XMMWORD PTR [rsp+64]
-	mov	rsp, r11
+	vmovaps	xmm8, XMMWORD PTR [rsp+48]
+	add	rsp, 96					; 00000060H
 	pop	rdi
 	ret	0
 ?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Fractal::heteroTerrain
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -3481,8 +3496,8 @@ np$ = 152
 
 $LN32:
 	mov	rax, rsp
-	mov	QWORD PTR [rax+24], rbx
-	mov	QWORD PTR [rax+32], rsi
+	mov	QWORD PTR [rax+8], rbx
+	mov	QWORD PTR [rax+16], rsi
 	push	rdi
 	sub	rsp, 128				; 00000080H
 
@@ -3683,8 +3698,8 @@ $LN5@fBmTurb:
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
 	lea	r11, QWORD PTR [rsp+128]
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rsi, QWORD PTR [r11+40]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
@@ -3694,7 +3709,7 @@ $LN5@fBmTurb:
 	ret	0
 ?fBmTurb@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP	; Fractal::fBmTurb
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -3725,8 +3740,8 @@ np$ = 136
 ; 44   : float Fractal::fBm(Point3 p, NoiseParams& np) {
 
 $LN23:
-	mov	QWORD PTR [rsp+24], rbx
-	mov	QWORD PTR [rsp+32], rsi
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 	sub	rsp, 112				; 00000070H
 
@@ -3903,8 +3918,8 @@ $LN5@fBm:
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+96]
 	lea	r11, QWORD PTR [rsp+112]
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rsi, QWORD PTR [r11+40]
+	mov	rbx, QWORD PTR [r11+16]
+	mov	rsi, QWORD PTR [r11+24]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm7, XMMWORD PTR [rsp+80]
@@ -3913,7 +3928,7 @@ $LN5@fBm:
 	ret	0
 ?fBm@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP	; Fractal::fBm
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -4082,7 +4097,7 @@ $LN5@turbulence:
 	ret	0
 ?turbulence@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP ; Fractal::turbulence
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
@@ -4219,7 +4234,7 @@ $LN5@fractal:
 	ret	0
 ?fractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ENDP	; Fractal::fractal
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ
 text$di	SEGMENT
@@ -4235,7 +4250,7 @@ text$di	SEGMENT
 	ret	0
 ??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ENDP	; MaxSDK::AssetManagement::`dynamic initializer for 'kInvalidId''
 text$di	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\assetmanagement\assetid.h
 ;	COMDAT ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ
 _TEXT	SEGMENT
@@ -4250,7 +4265,7 @@ this$ = 8
 	ret	0
 ??0AssetId@AssetManagement@MaxSDK@@QEAA@XZ ENDP		; MaxSDK::AssetManagement::AssetId::AssetId
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
 _TEXT	SEGMENT
@@ -4286,7 +4301,7 @@ f$ = 24
 	ret	0
 ??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ;	COMDAT ?pow@@YAMMM@Z
 _TEXT	SEGMENT
@@ -4309,7 +4324,7 @@ $LN4:
 	ret	0
 ?pow@@YAMMM@Z ENDP					; pow
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\math.h
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -4331,7 +4346,7 @@ _Xx$ = 8
 	ret	0
 ?fabs@@YAMM@Z ENDP					; fabs
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
 ;	COMDAT ??0Class_ID@@QEAA@KK@Z
 _TEXT	SEGMENT
@@ -4348,7 +4363,7 @@ bb$ = 24
 	ret	0
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\math.h
 ;	COMDAT fabsf
 _TEXT	SEGMENT
@@ -4366,7 +4381,7 @@ fabsf	PROC						; COMDAT
 	ret	0
 fabsf	ENDP
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX_K@Z
 _TEXT	SEGMENT
@@ -4377,7 +4392,7 @@ __formal$ = 16
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\fractal.cpp
 ;	COMDAT ?__empty_global_delete@@YAXPEAX@Z
 _TEXT	SEGMENT
@@ -4387,7 +4402,7 @@ __formal$ = 8
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete
 _TEXT	ENDS
-; Function compile flags: /Ogtpy
+; Function compile flags: /Ogtp
 ;	COMDAT ??_H@YAXPEAX_K1P6APEAX0@Z@Z
 _TEXT	SEGMENT
 __t$ = 48
