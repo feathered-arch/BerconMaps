@@ -437,7 +437,7 @@ BerconTile::BerconTile() {
 	BerconTileDesc.MakeAutoParamBlocks(this);	
 	texout = NULL;				
 	berconXYZ.mode2D = TRUE;
-	Reset();
+	BerconTile::Reset();
 }
 
 BerconTile::~BerconTile() { DiscardTexHandle(); }

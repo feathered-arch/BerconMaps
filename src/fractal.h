@@ -15,6 +15,7 @@ specific language governing permissions and limitations
 under the License.   
 */
 
+#pragma once
 #include "noise.h"
 
 class Fractal {
@@ -56,7 +57,7 @@ public:
 			case 6: return hybridMultiFractal(p, np);
 			case 7: return ridgedMultiFractal(p, np);
 		}
-		return 0.f;
+		return 0;
 	}
 
 	static float f(Point3 p, float d, NoiseParams &np) {
@@ -70,7 +71,7 @@ public:
 			case 6: return hybridMultiFractal(p, d, np);
 			case 7: return ridgedMultiFractal(p, d, np);
 		}
-		return 0.f;
+		return 0;
 	}
 };
 /*

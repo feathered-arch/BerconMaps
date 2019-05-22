@@ -18,13 +18,14 @@ under the License.
 #pragma once
 
 #include <cmath>
+#include <emmintrin.h>
 
 typedef float real;
 typedef double ireal;
 
 // Functions
 
-float smooth(float d);
+float smooth(float d);											//noise @ line 112
 
 float smooth(float d, float low, float high);
 
@@ -40,30 +41,32 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 // Macros
 
-#define SMOOTH(d) (d*d*(3.f-2.f*d))
+#define SMOOTH(d) ((d)*(d)*(3.f-2.f*(d)))								// noise for WOOD
 
-#define MAX(a,b) (((a) > (b)) ? (a) : (b))
+#define MAX(a,b) (((a) > (b)) ? (a) : (b))						// noise and tile
 
-#define MIN(a,b) (((a) > (b)) ? (b) : (a))
+//#define MIN(a,b) (((a) > (b)) ? (b) : (a))
 
-#define FASTFLOOR(x) ((x) < 0 ? ((int)x-1) : ((int)x) )			//this is backwards, but it's been this way forever so don't change it
+#define FASTFLOOR(x) ((x) < 0 ? ((int)(x)-1) : ((int)(x)) )	
 
-#define FASTFLOORI(x) ((x) < 0 ? ((int)x-1) : ((int)x) )		// not used
 
-#define FASTFLOORL(x) ((x) < 0 ? ((long)x-1) : ((long)x) )
 
-#define FADE(t) ( t * t * t * ( t * ( t * 6 - 15 ) + 10 ) )
+//#define FASTFLOORI(x) ((x) < 0 ? ((int)x-1) : ((int)x) )		// not used
 
-#define LERP(t, a, b) ((a) + (t)*((b)-(a)))
+#define FASTFLOORL(x) ((x) < 0 ? ((long)(x)-1) : ((long)(x)) )		// used in Worley
 
-#define ABS(x) ((x) < 0 ? (-x) : (x))
+#define FADE(t) ( (t) * (t) * (t) * ( (t) * ( (t) * 6 - 15 ) + 10 ) )		// used in Perlin
+
+//#define LERP(t, a, b) ((a) + (t)*((b)-(a)))
+
+// #define ABS(x) ((x) < 0 ? (-x) : (x))
 
 //#define LERP(a, b, blend) (b + blend * (a-b))
 
-#define SFRAND() ((double)rand() / (double)RAND_MAX) // Random number (0..1)
+#define SFRAND() ((double)rand() / (double)RAND_MAX)			// Random number (0..1)				// tile
 
-#define UFRAND() ((double)rand() / (double)RAND_MAX * 2. - 1.) // Random number (-1..1)
+#define UFRAND() ((double)rand() / (double)RAND_MAX * 2. - 1.)	// Random number (-1..1)			// tile
 
-#define SQRT2 1.41421356 // sqrt(2);
+#define SQRT2 1.41421356 // sqrt(2);							// Gradient
 
-#define DEG2RAD 0.0174532925f
+#define DEG2RAD 0.0174532925f									// Tile

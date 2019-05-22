@@ -15,11 +15,14 @@ specific language governing permissions and limitations
 under the License.   
 */
 
+#include <immintrin.h>	
 #include "noise.h"
 #include "fractal.h"
 
 void Noise::alterUVW(Point3& p, int type) {
 	switch (type) {
+		case 0:
+		break;
 		case 1: 
 			p.x = sqrt(p.x * p.x + p.y * p.y);
 			p.y = 0.f;
@@ -34,13 +37,13 @@ void Noise::alterUVW(Point3& p, int type) {
 
 float Noise::noise(Point3 p, NoiseParams& np) {
 	switch (np.noiseFunction) {
-		case 0: return Perlin::noise(p.x, p.y);
-		case 1: return Perlin::noise(p.x, p.y, p.z);
-		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
-		case 3: return Perlin::snoise(p.x, p.y);
-		case 4: return Perlin::snoise(p.x, p.y, p.z);
-		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
-		case 6: return worleyWrapper(p, np);
+		case 0: return Perlin::noise(p.x, p.y);						//Perlin 2d
+		case 1: return Perlin::noise(p.x, p.y, p.z);				//Perlin 3d
+		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		//Perlin 4D
+		case 3: return Perlin::snoise(p.x, p.y);					//Simplex 2D
+		case 4: return Perlin::snoise(p.x, p.y, p.z);				//Simplex 3D
+		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		//Simplex 4D
+		case 6: return worleyWrapper(p, np);						//Worley(Voronoi)
 		default: return 0.0f;
 	}
 }

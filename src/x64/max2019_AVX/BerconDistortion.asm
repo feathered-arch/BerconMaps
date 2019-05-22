@@ -153,8 +153,8 @@ PUBLIC	??_R3BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Class Hierarch
 PUBLIC	??_R2BaseInterfaceServer@@8			; BaseInterfaceServer::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@BaseInterfaceServer@@8		; BaseInterfaceServer::`RTTI Base Class Descriptor at (0,-1,0,64)'
 EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
-EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
 EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
+EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
 EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
 EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
 EXTRN	GUID_NULL:BYTE
@@ -2004,20 +2004,20 @@ $pdata$??0BerconXYZ@@QEAA@XZ DD imagerel $LN17
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN21
-	DD	imagerel $LN21+45
+$pdata$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN19
+	DD	imagerel $LN19+45
 	DD	imagerel $unwind$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN21+45
-	DD	imagerel $LN21+149
+$pdata$1$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN19+45
+	DD	imagerel $LN19+149
 	DD	imagerel $chain$1$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN21+149
-	DD	imagerel $LN21+226
+$pdata$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN19+149
+	DD	imagerel $LN19+226
 	DD	imagerel $chain$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -4299,8 +4299,8 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN21
-	DD	imagerel $LN21+45
+	DD	imagerel $LN19
+	DD	imagerel $LN19+45
 	DD	imagerel $unwind$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
@@ -4308,8 +4308,8 @@ xdata	SEGMENT
 $chain$1$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z DD 040c21H
 	DD	03880cH
 	DD	047806H
-	DD	imagerel $LN21
-	DD	imagerel $LN21+45
+	DD	imagerel $LN19
+	DD	imagerel $LN19+45
 	DD	imagerel $unwind$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
@@ -6492,7 +6492,7 @@ $LL18@BerconDist:
 	call	?reset@BerconXYZ@@QEAAXPEAVIParamBlock2@@AEAVInterval@@HHHH@Z ; BerconXYZ::reset
 	npad	1
 
-; 77   : 	Reset();
+; 77   : 	BerconDistortion::Reset();
 ; 78   : }
 
 	mov	rax, rdi
@@ -7268,7 +7268,7 @@ __$ReturnUdt$ = 1096
 sc$ = 1104
 ?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z PROC ; BerconDistortion::EvalNormalPerturb, COMDAT
 
-; 246  : Point3 BerconDistortion::EvalNormalPerturb(ShadeContext& sc) {	
+; 245  : Point3 BerconDistortion::EvalNormalPerturb(ShadeContext& sc) {	
 
 $LN36:
 	mov	rax, rsp
@@ -7284,7 +7284,7 @@ $LN36:
 	mov	rbx, rdx
 	mov	rdi, rcx
 
-; 247  : 	if (!subtex[2]) return Point3(0.f, 0.f, 0.f);
+; 246  : 	if (!subtex[2]) return Point3(0.f, 0.f, 0.f);
 
 	cmp	QWORD PTR [rcx+168], 0
 	jne	SHORT $LN2@EvalNormal
@@ -7297,7 +7297,7 @@ $LN36:
 	mov	DWORD PTR [rdx+8], eax
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 247  : 	if (!subtex[2]) return Point3(0.f, 0.f, 0.f);
+; 246  : 	if (!subtex[2]) return Point3(0.f, 0.f, 0.f);
 
 	jmp	$LN35@EvalNormal
 $LN2@EvalNormal:
@@ -7311,21 +7311,21 @@ $LN2@EvalNormal:
 	vmovss	DWORD PTR p$[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 249  : 	berconXYZ.get(sc, p);
+; 248  : 	berconXYZ.get(sc, p);
 
 	lea	r8, QWORD PTR p$[rsp]
 	mov	rdx, rsi
 	add	rcx, 192				; 000000c0H
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@@Z ; BerconXYZ::get
 
-; 250  : 	BerconSC& bsc = BerconSC(&sc);
+; 249  : 	BerconSC& bsc = BerconSC(&sc);
 
 	mov	rdx, rsi
 	lea	rcx, QWORD PTR $S3$[rsp]
 	call	??0BerconSC@@QEAA@QEAVShadeContext@@@Z	; BerconSC::BerconSC
 	npad	1
 
-; 251  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
+; 250  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
 
 	cmp	DWORD PTR [rdi+136], 0
 	je	SHORT $LN34@EvalNormal
@@ -7386,7 +7386,7 @@ $LN3@EvalNormal:
 	mov	DWORD PTR $S3$[rbp+700], edx
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 253  : 	return subtex[2]->EvalNormalPerturb(bsc);
+; 252  : 	return subtex[2]->EvalNormalPerturb(bsc);
 
 	mov	rcx, QWORD PTR [rdi+168]
 	mov	rax, QWORD PTR [rcx]
@@ -7409,7 +7409,7 @@ $LN3@EvalNormal:
 $LN35@EvalNormal:
 	mov	rax, rbx
 
-; 254  : }
+; 253  : }
 
 	lea	r11, QWORD PTR [rsp+1056]
 	mov	rbx, QWORD PTR [r11+40]
@@ -7674,7 +7674,7 @@ this$ = 1088
 sc$ = 1096
 ?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z PROC ; BerconDistortion::EvalMono, COMDAT
 
-; 236  : float BerconDistortion::EvalMono(ShadeContext& sc) {
+; 235  : float BerconDistortion::EvalMono(ShadeContext& sc) {
 
 $LN33:
 	mov	rax, rsp
@@ -7690,7 +7690,7 @@ $LN33:
 	mov	rbx, rcx
 	vxorps	xmm0, xmm0, xmm0
 
-; 237  : 	if (!subtex[2]) return 0.f;
+; 236  : 	if (!subtex[2]) return 0.f;
 
 	cmp	QWORD PTR [rcx+168], 0
 	je	$LN1@EvalMono
@@ -7703,20 +7703,20 @@ $LN33:
 	vmovss	DWORD PTR p$[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 239  : 	berconXYZ.get(sc, p);
+; 238  : 	berconXYZ.get(sc, p);
 
 	lea	r8, QWORD PTR p$[rsp]
 	add	rcx, 192				; 000000c0H
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@@Z ; BerconXYZ::get
 
-; 240  : 	BerconSC& bsc = BerconSC(&sc);
+; 239  : 	BerconSC& bsc = BerconSC(&sc);
 
 	mov	rdx, rdi
 	lea	rcx, QWORD PTR $S2$[rsp]
 	call	??0BerconSC@@QEAA@QEAVShadeContext@@@Z	; BerconSC::BerconSC
 	npad	1
 
-; 241  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
+; 240  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
 
 	cmp	DWORD PTR [rbx+136], 0
 	je	SHORT $LN32@EvalMono
@@ -7777,7 +7777,7 @@ $LN3@EvalMono:
 	mov	DWORD PTR $S2$[rbp+700], edx
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 243  : 	return subtex[2]->EvalMono(bsc);
+; 242  : 	return subtex[2]->EvalMono(bsc);
 
 	mov	rcx, QWORD PTR [rbx+168]
 	mov	rax, QWORD PTR [rcx]
@@ -7799,7 +7799,7 @@ $LN3@EvalMono:
 	vmovaps	xmm0, xmm6
 $LN1@EvalMono:
 
-; 244  : }
+; 243  : }
 
 	lea	r11, QWORD PTR [rsp+1072]
 	mov	rbx, QWORD PTR [r11+24]
@@ -8053,7 +8053,7 @@ __$ReturnUdt$ = 1096
 sc$ = 1104
 ?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z PROC ; BerconDistortion::EvalColor, COMDAT
 
-; 226  : AColor BerconDistortion::EvalColor(ShadeContext& sc) {
+; 225  : AColor BerconDistortion::EvalColor(ShadeContext& sc) {
 
 $LN36:
 	mov	rax, rsp
@@ -8069,7 +8069,7 @@ $LN36:
 	mov	rbx, rdx
 	mov	rdi, rcx
 
-; 227  : 	if (!subtex[2]) return black;	
+; 226  : 	if (!subtex[2]) return black;	
 
 	cmp	QWORD PTR [rcx+168], 0
 	jne	SHORT $LN2@EvalColor
@@ -8087,7 +8087,7 @@ $LN36:
 	vmovss	DWORD PTR [rdx+12], xmm1
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 227  : 	if (!subtex[2]) return black;	
+; 226  : 	if (!subtex[2]) return black;	
 
 	jmp	$LN35@EvalColor
 $LN2@EvalColor:
@@ -8101,21 +8101,21 @@ $LN2@EvalColor:
 	vmovss	DWORD PTR p$[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 229  : 	berconXYZ.get(sc, p);
+; 228  : 	berconXYZ.get(sc, p);
 
 	lea	r8, QWORD PTR p$[rsp]
 	mov	rdx, rsi
 	add	rcx, 192				; 000000c0H
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@@Z ; BerconXYZ::get
 
-; 230  : 	BerconSC& bsc = BerconSC(&sc);
+; 229  : 	BerconSC& bsc = BerconSC(&sc);
 
 	mov	rdx, rsi
 	lea	rcx, QWORD PTR $S1$[rsp]
 	call	??0BerconSC@@QEAA@QEAVShadeContext@@@Z	; BerconSC::BerconSC
 	npad	1
 
-; 231  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
+; 230  : 	if (useDistortion && subtex[0]) p += getDistVector(sc);
 
 	cmp	DWORD PTR [rdi+136], 0
 	je	SHORT $LN34@EvalColor
@@ -8176,7 +8176,7 @@ $LN3@EvalColor:
 	mov	DWORD PTR $S1$[rbp+700], edx
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 233  : 	return subtex[2]->EvalColor(bsc);
+; 232  : 	return subtex[2]->EvalColor(bsc);
 
 	mov	rcx, QWORD PTR [rdi+168]
 	mov	rax, QWORD PTR [rcx]
@@ -8199,7 +8199,7 @@ $LN3@EvalColor:
 $LN35@EvalColor:
 	mov	rax, rbx
 
-; 234  : }
+; 233  : }
 
 	lea	r11, QWORD PTR [rsp+1056]
 	mov	rbx, QWORD PTR [r11+40]
@@ -9329,7 +9329,7 @@ sc$ = 128
 
 ; 218  : Point3 BerconDistortion::getDistVector(ShadeContext& sc) {	
 
-$LN21:
+$LN19:
 	mov	QWORD PTR [rsp+8], rbx
 	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
@@ -9386,11 +9386,11 @@ $LN21:
 
 ; 220  : 		return subtex[0]->EvalNormalPerturb(sc)*distortionStr*subtex[1]->EvalMono(sc);
 
-	jmp	SHORT $LN19@getDistVec
+	jmp	SHORT $LN17@getDistVec
 $LN2@getDistVec:
 
 ; 221  : 	else					
-; 222  : 		return subtex[0]->EvalNormalPerturb(sc)*distortionStr;		  
+; 222  : 		return subtex[0]->EvalNormalPerturb(sc)*distortionStr;
 
 	vmovss	xmm6, DWORD PTR [rcx+140]
 	mov	rcx, QWORD PTR [rcx+152]
@@ -9414,10 +9414,10 @@ $LN2@getDistVec:
 ; 61   : 		 x = X; y = Y; z = Z; 
 
 	vmovss	DWORD PTR [rbx+4], xmm1
-$LN19@getDistVec:
+$LN17@getDistVec:
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 224  : }
+; 223  : }
 
 	mov	rsi, QWORD PTR [rsp+120]
 	mov	rax, rbx
@@ -9429,7 +9429,7 @@ $LN19@getDistVec:
 	vmovss	DWORD PTR [rbx+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercondistortion.cpp
 
-; 224  : }
+; 223  : }
 
 	mov	rbx, QWORD PTR [rsp+112]
 	add	rsp, 96					; 00000060H
@@ -11546,7 +11546,7 @@ __$ReturnUdt$ = 72
 dir$ = 80
 ?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z PROC ; BerconSC::EvalGlobalEnvironMap, COMDAT
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 $LN6:
 	push	rbx
@@ -11559,7 +11559,7 @@ $LN6:
 	vmovss	xmm1, DWORD PTR [r8+4]
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 	mov	rcx, QWORD PTR [rcx+920]
 	mov	rbx, rdx
@@ -11573,7 +11573,7 @@ $LN6:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 	mov	rax, QWORD PTR [rcx]
 	lea	r8, QWORD PTR $T1[rsp]
@@ -18944,7 +18944,7 @@ _TEXT	SEGMENT
 __formal$ = 8
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
 
-; 255  : }
+; 254  : }
 
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete

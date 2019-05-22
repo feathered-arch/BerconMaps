@@ -10540,7 +10540,7 @@ $LN62:
 	mov	QWORD PTR [rbx+144], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 132  : 	TileParam() { pattern = NULL; }
+; 133  : 	TileParam() { pattern = NULL; }
 
 	xor	edi, edi
 	mov	QWORD PTR [rbx+272], rdi
@@ -10577,7 +10577,7 @@ $LN62:
 	mov	QWORD PTR [rcx+48], rdi
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 72   : 	TilePattern() {update();}
+; 73   : 	TilePattern() {update();}
 
 	call	?update@TilePattern@@QEAAXXZ		; TilePattern::update
 	npad	1
@@ -10637,7 +10637,7 @@ $LN62:
 
 	mov	DWORD PTR [rbx+668], 1
 
-; 440  : 	Reset();
+; 440  : 	BerconTile::Reset();
 
 	mov	rcx, rbx
 	call	?Reset@BerconTile@@UEAAXXZ		; BerconTile::Reset
@@ -17766,7 +17766,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?checkValues@TileParam@@QEAAXXZ PROC			; TileParam::checkValues, COMDAT
 
-; 135  : 		if (tileHeightVar > .5f) tileHeightVar = .5f;
+; 136  : 		if (tileHeightVar > .5f) tileHeightVar = .5f;
 
 	vmovss	xmm0, DWORD PTR [rcx+20]
 	vmovss	xmm2, DWORD PTR __real@3f000000
@@ -17775,7 +17775,7 @@ this$ = 8
 	mov	DWORD PTR [rcx+20], 1056964608		; 3f000000H
 $LN2@checkValue:
 
-; 136  : 		if (tileWidthVar > .5f) tileWidthVar = .5f;		
+; 137  : 		if (tileWidthVar > .5f) tileWidthVar = .5f;		
 
 	vmovss	xmm0, DWORD PTR [rcx+24]
 	vcomiss	xmm0, xmm2
@@ -17783,7 +17783,7 @@ $LN2@checkValue:
 	mov	DWORD PTR [rcx+24], 1056964608		; 3f000000H
 $LN3@checkValue:
 
-; 137  : 		if (edgeHeightVar > 1.f) edgeHeightVar = 1.f;		
+; 138  : 		if (edgeHeightVar > 1.f) edgeHeightVar = 1.f;		
 
 	vmovss	xmm0, DWORD PTR [rcx+28]
 	vmovss	xmm4, DWORD PTR __real@3f800000
@@ -17792,7 +17792,7 @@ $LN3@checkValue:
 	mov	DWORD PTR [rcx+28], 1065353216		; 3f800000H
 $LN4@checkValue:
 
-; 138  : 		if (edgeWidthVar > 1.f) edgeWidthVar = 1.f;
+; 139  : 		if (edgeWidthVar > 1.f) edgeWidthVar = 1.f;
 
 	vmovss	xmm0, DWORD PTR [rcx+32]
 	vcomiss	xmm0, xmm4
@@ -17800,33 +17800,33 @@ $LN4@checkValue:
 	mov	DWORD PTR [rcx+32], 1065353216		; 3f800000H
 $LN5@checkValue:
 
-; 139  : 
-; 140  : 		if (tilingType == 1) { // Herringbond can't have variation in these
+; 140  : 
+; 141  : 		if (tilingType == 1) { // Herringbond can't have variation in these
 
 	cmp	DWORD PTR [rcx], 1
 	jne	SHORT $LN6@checkValue
 
-; 141  : 			tileMaxHeight = tileWidth * .5f;
+; 142  : 			tileMaxHeight = tileWidth * .5f;
 
 	vmovss	xmm1, DWORD PTR [rcx+8]
 	vmulss	xmm0, xmm2, xmm1
 	vmovss	DWORD PTR [rcx+120], xmm0
 
-; 142  : 			tileMaxWidth = tileWidth;
+; 143  : 			tileMaxWidth = tileWidth;
 
 	vmovss	DWORD PTR [rcx+124], xmm1
 
-; 143  : 		} else {
+; 144  : 		} else {
 
 	jmp	SHORT $LN7@checkValue
 $LN6@checkValue:
 
-; 144  : 			tileMaxHeight = tileHeight * (1.f + tileHeightVar * 2.f);
+; 145  : 			tileMaxHeight = tileHeight * (1.f + tileHeightVar * 2.f);
 
 	vmovss	xmm0, DWORD PTR [rcx+20]
 	vaddss	xmm1, xmm0, xmm0
 
-; 145  : 			tileMaxWidth = tileWidth * (1.f + tileWidthVar * 2.f);
+; 146  : 			tileMaxWidth = tileWidth * (1.f + tileWidthVar * 2.f);
 
 	vmovss	xmm0, DWORD PTR [rcx+24]
 	vaddss	xmm2, xmm1, xmm4
@@ -17838,22 +17838,22 @@ $LN6@checkValue:
 	vmovss	DWORD PTR [rcx+124], xmm3
 $LN7@checkValue:
 
-; 146  : 		}
-; 147  : 
-; 148  : 		eW_var = edgeWidthVar > 0.0001f;
+; 147  : 		}
+; 148  : 
+; 149  : 		eW_var = edgeWidthVar > 0.0001f;
 
 	vmovss	xmm1, DWORD PTR __real@38d1b717
 	vmovss	xmm0, DWORD PTR [rcx+32]
 	vcomiss	xmm0, xmm1
 
-; 149  : 		eH_var = edgeHeightVar > 0.0001f;
+; 150  : 		eH_var = edgeHeightVar > 0.0001f;
 
 	vmovss	xmm0, DWORD PTR [rcx+28]
 	seta	al
 	vcomiss	xmm0, xmm1
 
-; 150  : 		
-; 151  : 		randScale  = randSX > 0.0001f || randSY > 0.0001f;
+; 151  : 		
+; 152  : 		randScale  = randSX > 0.0001f || randSY > 0.0001f;
 
 	vmovss	xmm0, DWORD PTR [rcx+72]
 	mov	BYTE PTR [rcx+36], al
@@ -17870,7 +17870,7 @@ $LN9@checkValue:
 	mov	eax, 1
 $LN10@checkValue:
 
-; 152  : 		randOffset = randX  > 0.0001f || randY  > 0.0001f;
+; 153  : 		randOffset = randX  > 0.0001f || randY  > 0.0001f;
 
 	vmovss	xmm0, DWORD PTR [rcx+64]
 	vcomiss	xmm0, xmm1
@@ -17881,16 +17881,16 @@ $LN10@checkValue:
 	ja	SHORT $LN11@checkValue
 	mov	BYTE PTR [rcx+129], 0
 
-; 153  : 	}
+; 154  : 	}
 
 	ret	0
 $LN11@checkValue:
 
-; 152  : 		randOffset = randX  > 0.0001f || randY  > 0.0001f;
+; 153  : 		randOffset = randX  > 0.0001f || randY  > 0.0001f;
 
 	mov	BYTE PTR [rcx+129], 1
 
-; 153  : 	}
+; 154  : 	}
 
 	ret	0
 ?checkValues@TileParam@@QEAAXXZ ENDP			; TileParam::checkValues
@@ -17902,7 +17902,7 @@ _TEXT	SEGMENT
 this$ = 8
 ??0TileParam@@QEAA@XZ PROC				; TileParam::TileParam, COMDAT
 
-; 132  : 	TileParam() { pattern = NULL; }
+; 133  : 	TileParam() { pattern = NULL; }
 
 	mov	QWORD PTR [rcx+112], 0
 	mov	rax, rcx
@@ -17932,19 +17932,19 @@ _TEXT	SEGMENT
 this$ = 16
 ?update@TilePattern@@QEAAXXZ PROC			; TilePattern::update, COMDAT
 
-; 81   : 	void update() {
+; 82   : 	void update() {
 
 $LN72:
 	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 
-; 82   : 		totalHeight = 0.f;
+; 83   : 		totalHeight = 0.f;
 
 	xor	esi, esi
 	mov	r11, rcx
 	mov	DWORD PTR [rcx], esi
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	mov	edi, esi
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -17956,7 +17956,7 @@ $LN72:
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	test	rax, rax
 	je	$LN3@update
@@ -17972,7 +17972,7 @@ $LL4@update:
 	mov	r8, QWORD PTR [r11+32]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	mov	r10d, esi
 	mov	DWORD PTR [rdx+r8+4], esi
@@ -17985,12 +17985,12 @@ $LL4@update:
 	sar	rax, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	test	rax, rax
 	je	SHORT $LN30@update
 
-; 66   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tiles[i];
 
 	mov	r9, QWORD PTR [rdx+r8+8]
 	vxorps	xmm0, xmm0, xmm0
@@ -18005,7 +18005,7 @@ $LL31@update:
 	mov	rcx, QWORD PTR [rdx+r8+16]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	lea	r9, QWORD PTR [r9+4]
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -18015,7 +18015,7 @@ $LL31@update:
 	sub	rcx, QWORD PTR [rdx+r8+8]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	inc	r10d
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -18025,15 +18025,15 @@ $LL31@update:
 	sar	rcx, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	movsxd	rax, r10d
 	cmp	rax, rcx
 	jb	SHORT $LL31@update
 $LN30@update:
 
-; 84   : 			rows[i].update();
-; 85   : 			totalHeight += heights[i];
+; 85   : 			rows[i].update();
+; 86   : 			totalHeight += heights[i];
 
 	mov	rax, QWORD PTR [r11+8]
 	inc	edi
@@ -18048,7 +18048,7 @@ $LN30@update:
 	mov	rcx, QWORD PTR [r11+40]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	add	rbx, 4
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -18059,7 +18059,7 @@ $LN30@update:
 	sar	rcx, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	movsxd	rax, edi
 	cmp	rax, rcx
@@ -18067,8 +18067,8 @@ $LN30@update:
 	mov	rbx, QWORD PTR [rsp+16]
 $LN3@update:
 
-; 86   : 		}
-; 87   : 	}
+; 87   : 		}
+; 88   : 	}
 
 	mov	rsi, QWORD PTR [rsp+24]
 	pop	rdi
@@ -18754,7 +18754,7 @@ $T2 = 64
 this$ = 64
 ??1TilePattern@@QEAA@XZ PROC				; TilePattern::~TilePattern, COMDAT
 
-; 73   : 	~TilePattern() {}
+; 74   : 	~TilePattern() {}
 
 $LN143:
 	mov	QWORD PTR [rsp+8], rcx
@@ -18845,7 +18845,7 @@ $LN8@TilePatter:
 $LN81@TilePatter:
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 73   : 	~TilePattern() {}
+; 74   : 	~TilePattern() {}
 
 	mov	rbx, QWORD PTR [rsp+72]
 	mov	rsi, QWORD PTR [rsp+80]
@@ -18907,7 +18907,7 @@ $T1 = 32
 this$ = 64
 ??0TilePattern@@QEAA@XZ PROC				; TilePattern::TilePattern, COMDAT
 
-; 72   : 	TilePattern() {update();}
+; 73   : 	TilePattern() {update();}
 
 $LN21:
 	mov	QWORD PTR [rsp+8], rcx
@@ -18943,7 +18943,7 @@ $LN21:
 	mov	QWORD PTR [rcx+48], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 72   : 	TilePattern() {update();}
+; 73   : 	TilePattern() {update();}
 
 	call	?update@TilePattern@@QEAAXXZ		; TilePattern::update
 	npad	1
@@ -19181,7 +19181,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?update@TileRow@@QEAAXXZ PROC				; TileRow::update, COMDAT
 
-; 64   : 		totalWidth = 0.f;
+; 65   : 		totalWidth = 0.f;
 
 	xor	r8d, r8d
 	mov	rdx, rcx
@@ -19195,7 +19195,7 @@ this$ = 8
 	sar	rax, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	test	rax, rax
 	je	SHORT $LN3@update
@@ -19209,7 +19209,7 @@ this$ = 8
 $LL4@update:
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 66   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tiles[i];
 
 	vaddss	xmm0, xmm0, DWORD PTR [r9]
 	vmovss	DWORD PTR [rdx+4], xmm0
@@ -19220,7 +19220,7 @@ $LL4@update:
 	mov	rcx, QWORD PTR [rdx+16]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	lea	r9, QWORD PTR [r9+4]
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -19230,7 +19230,7 @@ $LL4@update:
 	sub	rcx, QWORD PTR [rdx+8]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	inc	r8d
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -19240,14 +19240,14 @@ $LL4@update:
 	sar	rcx, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	movsxd	rax, r8d
 	cmp	rax, rcx
 	jb	SHORT $LL4@update
 $LN3@update:
 
-; 67   : 	}
+; 68   : 	}
 
 	ret	0
 ?update@TileRow@@QEAAXXZ ENDP				; TileRow::update
@@ -26454,7 +26454,7 @@ __$ReturnUdt$ = 72
 dir$ = 80
 ?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z PROC ; BerconSC::EvalGlobalEnvironMap, COMDAT
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 $LN6:
 	push	rbx
@@ -26467,7 +26467,7 @@ $LN6:
 	vmovss	xmm1, DWORD PTR [r8+4]
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 	mov	rcx, QWORD PTR [rcx+920]
 	mov	rbx, rdx
@@ -26481,7 +26481,7 @@ $LN6:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\berconsc.h
 
-; 142  : 	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+; 142  : 	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 
 	mov	rax, QWORD PTR [rcx]
 	lea	r8, QWORD PTR $T1[rsp]

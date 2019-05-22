@@ -74,7 +74,7 @@ __declspec( dllexport ) ClassDesc* LibClassDesc(int i) {
 		case 2: return GetBerconTileDesc();
 		case 3: return GetBerconDistortionDesc();
 		case 4: return GetBerconGradientDesc();
-		default: return 0;
+		default: DbgAssert(0); return 0;
 	}
 }
 

@@ -44,6 +44,9 @@ PUBLIC	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNois
 PUBLIC	?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z ; Noise::limitedNoise
 PUBLIC	?f@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z	; Fractal::f
 PUBLIC	?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z	; Fractal::f
+PUBLIC	??_C@_13COJANIEC@?$AA0?$AA?$AA@			; `string'
+PUBLIC	??_C@_1CA@JEJEHLAF@?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAa?$AAl?$AAt?$AAe?$AAr?$AAU?$AAV?$AAW?$AA?$AA@ ; `string'
+PUBLIC	??_C@_1FG@DGBAILKP@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh?$AAu?$AAb?$AA?2?$AAb?$AAe?$AAr?$AAc?$AAo?$AAn?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAr?$AAc@ ; `string'
 PUBLIC	__real@38d1b717
 PUBLIC	__real@3d4ccccd
 PUBLIC	__real@3f000000
@@ -60,6 +63,7 @@ PUBLIC	__real@41700000
 PUBLIC	__real@439d1127
 PUBLIC	__real@b8d1b717
 PUBLIC	__xmm@80000000800000008000000080000000
+EXTRN	__imp_?assert1@@YAHHPEB_W00@Z:PROC
 EXTRN	__imp_?Length@Point3@@QEBAMXZ:PROC
 EXTRN	__imp_?threshold@@YAMMMM@Z:PROC
 EXTRN	?noise@Worley@@SAXQEANHPEANH@Z:PROC		; Worley::noise
@@ -167,8 +171,8 @@ $pdata$4$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z DD imagerel $LN98+1427
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z DD imagerel $LN13
-	DD	imagerel $LN13+115
+$pdata$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z DD imagerel $LN15
+	DD	imagerel $LN15+153
 	DD	imagerel $unwind$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -263,10 +267,32 @@ CONST	ENDS
 CONST	SEGMENT
 __real@38d1b717 DD 038d1b717r			; 0.0001
 CONST	ENDS
+;	COMDAT ??_C@_1FG@DGBAILKP@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh?$AAu?$AAb?$AA?2?$AAb?$AAe?$AAr?$AAc?$AAo?$AAn?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAr?$AAc@
+CONST	SEGMENT
+??_C@_1FG@DGBAILKP@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh?$AAu?$AAb?$AA?2?$AAb?$AAe?$AAr?$AAc?$AAo?$AAn?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAr?$AAc@ DB 'g'
+	DB	00H, ':', 00H, '\', 00H, 'd', 00H, 'r', 00H, 'o', 00H, 'p', 00H
+	DB	'b', 00H, 'o', 00H, 'x', 00H, '\', 00H, 'g', 00H, 'i', 00H, 't'
+	DB	00H, 'h', 00H, 'u', 00H, 'b', 00H, '\', 00H, 'b', 00H, 'e', 00H
+	DB	'r', 00H, 'c', 00H, 'o', 00H, 'n', 00H, 'm', 00H, 'a', 00H, 'p'
+	DB	00H, 's', 00H, '\', 00H, 's', 00H, 'r', 00H, 'c', 00H, '\', 00H
+	DB	'n', 00H, 'o', 00H, 'i', 00H, 's', 00H, 'e', 00H, '.', 00H, 'c'
+	DB	00H, 'p', 00H, 'p', 00H, 00H, 00H		; `string'
+CONST	ENDS
+;	COMDAT ??_C@_1CA@JEJEHLAF@?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAa?$AAl?$AAt?$AAe?$AAr?$AAU?$AAV?$AAW?$AA?$AA@
+CONST	SEGMENT
+??_C@_1CA@JEJEHLAF@?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAa?$AAl?$AAt?$AAe?$AAr?$AAU?$AAV?$AAW?$AA?$AA@ DB 'N'
+	DB	00H, 'o', 00H, 'i', 00H, 's', 00H, 'e', 00H, ':', 00H, ':', 00H
+	DB	'a', 00H, 'l', 00H, 't', 00H, 'e', 00H, 'r', 00H, 'U', 00H, 'V'
+	DB	00H, 'W', 00H, 00H, 00H			; `string'
+CONST	ENDS
 _DATA	SEGMENT
 ?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
 	DD	027246c55H
 _DATA	ENDS
+;	COMDAT ??_C@_13COJANIEC@?$AA0?$AA?$AA@
+CONST	SEGMENT
+??_C@_13COJANIEC@?$AA0?$AA?$AA@ DB '0', 00H, 00H, 00H	; `string'
+CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z DD 020901H
@@ -427,14 +453,14 @@ d$ = 72
 np$ = 80
 ?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC	; Fractal::f, COMDAT
 
-; 62   : 	static float f(Point3 p, float d, NoiseParams &np) {
+; 63   : 	static float f(Point3 p, float d, NoiseParams &np) {
 
 $LN31:
 	push	rbp
 	mov	rbp, rsp
 	sub	rsp, 48					; 00000030H
 
-; 63   : 		switch (np.fractalFunction) {
+; 64   : 		switch (np.fractalFunction) {
 
 	movsxd	rax, DWORD PTR [r8+4]
 	vmovaps	xmm2, xmm1
@@ -456,7 +482,7 @@ $LN4@f:
 	vmovss	DWORD PTR $T8[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 64   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
+; 65   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
 
 	lea	rcx, QWORD PTR $T8[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -467,15 +493,15 @@ $LN4@f:
 	vmovss	DWORD PTR $T8[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 64   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
+; 65   : 			case 0: return (1.0f + Noise::noise(p, d, np)) * .5f;
 
 	call	?noise@Noise@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Noise::noise
 	vaddss	xmm1, xmm0, DWORD PTR __real@3f800000
 	vmulss	xmm0, xmm1, DWORD PTR __real@3f000000
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -492,7 +518,7 @@ $LN5@f:
 	vmovss	DWORD PTR $T7[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 65   : 			case 1: return fractal(p, d, np);
+; 66   : 			case 1: return fractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T7[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -503,13 +529,13 @@ $LN5@f:
 	vmovss	DWORD PTR $T7[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 65   : 			case 1: return fractal(p, d, np);
+; 66   : 			case 1: return fractal(p, d, np);
 
 	call	?fractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::fractal
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -526,7 +552,7 @@ $LN6@f:
 	vmovss	DWORD PTR $T6[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 66   : 			case 2: return turbulence(p, d, np);
+; 67   : 			case 2: return turbulence(p, d, np);
 
 	lea	rcx, QWORD PTR $T6[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -537,13 +563,13 @@ $LN6@f:
 	vmovss	DWORD PTR $T6[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 66   : 			case 2: return turbulence(p, d, np);
+; 67   : 			case 2: return turbulence(p, d, np);
 
 	call	?turbulence@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::turbulence
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -560,7 +586,7 @@ $LN7@f:
 	vmovss	DWORD PTR $T5[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 67   : 			case 3: return fBm(p, d, np);
+; 68   : 			case 3: return fBm(p, d, np);
 
 	lea	rcx, QWORD PTR $T5[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -571,13 +597,13 @@ $LN7@f:
 	vmovss	DWORD PTR $T5[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 67   : 			case 3: return fBm(p, d, np);
+; 68   : 			case 3: return fBm(p, d, np);
 
 	call	?fBm@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::fBm
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -594,7 +620,7 @@ $LN8@f:
 	vmovss	DWORD PTR $T4[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 68   : 			case 4: return fBmTurb(p, d, np);
+; 69   : 			case 4: return fBmTurb(p, d, np);
 
 	lea	rcx, QWORD PTR $T4[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -605,13 +631,13 @@ $LN8@f:
 	vmovss	DWORD PTR $T4[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 68   : 			case 4: return fBmTurb(p, d, np);
+; 69   : 			case 4: return fBmTurb(p, d, np);
 
 	call	?fBmTurb@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::fBmTurb
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -627,7 +653,7 @@ $LN9@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 69   : 			case 5: return heteroTerrain(p, np);
+; 70   : 			case 5: return heteroTerrain(p, np);
 
 	lea	rcx, QWORD PTR $T3[rbp-48]
 	mov	rdx, r8
@@ -639,13 +665,13 @@ $LN9@f:
 	vmovss	DWORD PTR $T3[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 69   : 			case 5: return heteroTerrain(p, np);
+; 70   : 			case 5: return heteroTerrain(p, np);
 
 	call	?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::heteroTerrain
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -662,7 +688,7 @@ $LN10@f:
 	vmovss	DWORD PTR $T2[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 70   : 			case 6: return hybridMultiFractal(p, d, np);
+; 71   : 			case 6: return hybridMultiFractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T2[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -673,13 +699,13 @@ $LN10@f:
 	vmovss	DWORD PTR $T2[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 70   : 			case 6: return hybridMultiFractal(p, d, np);
+; 71   : 			case 6: return hybridMultiFractal(p, d, np);
 
 	call	?hybridMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::hybridMultiFractal
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -696,7 +722,7 @@ $LN11@f:
 	vmovss	DWORD PTR $T1[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 71   : 			case 7: return ridgedMultiFractal(p, d, np);
+; 72   : 			case 7: return ridgedMultiFractal(p, d, np);
 
 	lea	rcx, QWORD PTR $T1[rbp-48]
 	vmovaps	xmm1, xmm2
@@ -707,13 +733,13 @@ $LN11@f:
 	vmovss	DWORD PTR $T1[rbp-40], xmm0
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 71   : 			case 7: return ridgedMultiFractal(p, d, np);
+; 72   : 			case 7: return ridgedMultiFractal(p, d, np);
 
 	call	?ridgedMultiFractal@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::ridgedMultiFractal
 
-; 72   : 		}
-; 73   : 		return 0.f;
-; 74   : 	}
+; 73   : 		}
+; 74   : 		return 0;
+; 75   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -783,14 +809,14 @@ p$ = 64
 np$ = 72
 ?f@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z PROC	; Fractal::f, COMDAT
 
-; 48   : 	static float f(Point3 p, NoiseParams &np) {
+; 49   : 	static float f(Point3 p, NoiseParams &np) {
 
 $LN31:
 	push	rbp
 	mov	rbp, rsp
 	sub	rsp, 48					; 00000030H
 
-; 49   : 		switch (np.fractalFunction) {
+; 50   : 		switch (np.fractalFunction) {
 
 	movsxd	rax, DWORD PTR [rdx+4]
 	cmp	eax, 7
@@ -810,7 +836,7 @@ $LN4@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 50   : 			case 0: return (1.0f + Noise::noise(p, np)) * .5f;
+; 51   : 			case 0: return (1.0f + Noise::noise(p, np)) * .5f;
 
 	lea	rcx, QWORD PTR $T8[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -821,15 +847,15 @@ $LN4@f:
 	vmovss	DWORD PTR $T8[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 50   : 			case 0: return (1.0f + Noise::noise(p, np)) * .5f;
+; 51   : 			case 0: return (1.0f + Noise::noise(p, np)) * .5f;
 
 	call	?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::noise
 	vaddss	xmm1, xmm0, DWORD PTR __real@3f800000
 	vmulss	xmm0, xmm1, DWORD PTR __real@3f000000
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -845,7 +871,7 @@ $LN5@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 51   : 			case 1: return fractal(p, np);
+; 52   : 			case 1: return fractal(p, np);
 
 	lea	rcx, QWORD PTR $T7[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -856,13 +882,13 @@ $LN5@f:
 	vmovss	DWORD PTR $T7[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 51   : 			case 1: return fractal(p, np);
+; 52   : 			case 1: return fractal(p, np);
 
 	call	?fractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::fractal
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -878,7 +904,7 @@ $LN6@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 52   : 			case 2: return turbulence(p, np);
+; 53   : 			case 2: return turbulence(p, np);
 
 	lea	rcx, QWORD PTR $T6[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -889,13 +915,13 @@ $LN6@f:
 	vmovss	DWORD PTR $T6[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 52   : 			case 2: return turbulence(p, np);
+; 53   : 			case 2: return turbulence(p, np);
 
 	call	?turbulence@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::turbulence
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -911,7 +937,7 @@ $LN7@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 53   : 			case 3: return fBm(p, np);
+; 54   : 			case 3: return fBm(p, np);
 
 	lea	rcx, QWORD PTR $T5[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -922,13 +948,13 @@ $LN7@f:
 	vmovss	DWORD PTR $T5[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 53   : 			case 3: return fBm(p, np);
+; 54   : 			case 3: return fBm(p, np);
 
 	call	?fBm@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::fBm
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -944,7 +970,7 @@ $LN8@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 54   : 			case 4: return fBmTurb(p, np);
+; 55   : 			case 4: return fBmTurb(p, np);
 
 	lea	rcx, QWORD PTR $T4[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -955,13 +981,13 @@ $LN8@f:
 	vmovss	DWORD PTR $T4[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 54   : 			case 4: return fBmTurb(p, np);
+; 55   : 			case 4: return fBmTurb(p, np);
 
 	call	?fBmTurb@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::fBmTurb
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -977,7 +1003,7 @@ $LN9@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 55   : 			case 5: return heteroTerrain(p, np);
+; 56   : 			case 5: return heteroTerrain(p, np);
 
 	lea	rcx, QWORD PTR $T3[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -988,13 +1014,13 @@ $LN9@f:
 	vmovss	DWORD PTR $T3[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 55   : 			case 5: return heteroTerrain(p, np);
+; 56   : 			case 5: return heteroTerrain(p, np);
 
 	call	?heteroTerrain@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::heteroTerrain
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -1010,7 +1036,7 @@ $LN10@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 56   : 			case 6: return hybridMultiFractal(p, np);
+; 57   : 			case 6: return hybridMultiFractal(p, np);
 
 	lea	rcx, QWORD PTR $T2[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1021,13 +1047,13 @@ $LN10@f:
 	vmovss	DWORD PTR $T2[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 56   : 			case 6: return hybridMultiFractal(p, np);
+; 57   : 			case 6: return hybridMultiFractal(p, np);
 
 	call	?hybridMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::hybridMultiFractal
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -1043,7 +1069,7 @@ $LN11@f:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 57   : 			case 7: return ridgedMultiFractal(p, np);
+; 58   : 			case 7: return ridgedMultiFractal(p, np);
 
 	lea	rcx, QWORD PTR $T1[rbp-48]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1054,13 +1080,13 @@ $LN11@f:
 	vmovss	DWORD PTR $T1[rbp-44], xmm1
 ; File g:\dropbox\github\berconmaps\src\fractal.h
 
-; 57   : 			case 7: return ridgedMultiFractal(p, np);
+; 58   : 			case 7: return ridgedMultiFractal(p, np);
 
 	call	?ridgedMultiFractal@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::ridgedMultiFractal
 
-; 58   : 		}
-; 59   : 		return 0.f;
-; 60   : 	}
+; 59   : 		}
+; 60   : 		return 0;
+; 61   : 	}
 
 	add	rsp, 48					; 00000030H
 	pop	rbp
@@ -1097,7 +1123,7 @@ dpdy$ = 96
 np$ = 104
 ?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z PROC ; Noise::limitedNoise, COMDAT
 
-; 211  : float Noise::limitedNoise(Point3 p, Point3 dpdx, Point3 dpdy, NoiseParams &np) {
+; 213  : float Noise::limitedNoise(Point3 p, Point3 dpdx, Point3 dpdy, NoiseParams &np) {
 
 $LN12:
 	mov	QWORD PTR [rsp+8], rbx
@@ -1107,20 +1133,20 @@ $LN12:
 	mov	rsi, rcx
 	vmovaps	XMMWORD PTR [rsp+48], xmm6
 
-; 212  : 	float lx = dpdx.Length();
+; 214  : 	float lx = dpdx.Length();
 
 	mov	rcx, rdx
 	mov	rdi, r9
 	mov	rbx, r8
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
-; 213  : 	float ly = dpdy.Length();
+; 215  : 	float ly = dpdy.Length();
 
 	mov	rcx, rbx
 	vmovaps	xmm6, xmm0
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
-; 214  : 	lx = MAX(lx, ly);
+; 216  : 	lx = MAX(lx, ly);
 
 	vcomiss	xmm6, xmm0
 	ja	SHORT $LN7@limitedNoi
@@ -1137,7 +1163,7 @@ $LN7@limitedNoi:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 215  : 	float res = Fractal::f(p, lx, np);	
+; 217  : 	float res = Fractal::f(p, lx, np);	
 
 	mov	r8, rdi
 	lea	rcx, QWORD PTR $T1[rsp]
@@ -1149,11 +1175,11 @@ $LN7@limitedNoi:
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 215  : 	float res = Fractal::f(p, lx, np);	
+; 217  : 	float res = Fractal::f(p, lx, np);	
 
 	call	?f@Fractal@@SAMVPoint3@@MAEAVNoiseParams@@@Z ; Fractal::f
 
-; 216  : 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
+; 218  : 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
 
 	vmovss	xmm1, DWORD PTR [rdi+60]
 	vmovss	xmm2, DWORD PTR [rdi+64]
@@ -1163,12 +1189,12 @@ $LN7@limitedNoi:
 $LN2@limitedNoi:
 	vxorps	xmm1, xmm1, xmm1
 
-; 217  : 	if (res < 0) return 0.0f;
+; 219  : 	if (res < 0) return 0.0f;
 
 	vcomiss	xmm1, xmm0
 	ja	SHORT $LN10@limitedNoi
 
-; 218  : 	if (res > 1) return 1.0f;
+; 220  : 	if (res > 1) return 1.0f;
 
 	vmovss	xmm1, DWORD PTR __real@3f800000
 	vcomiss	xmm0, xmm1
@@ -1177,8 +1203,8 @@ $LN10@limitedNoi:
 	vmovaps	xmm0, xmm1
 $LN4@limitedNoi:
 
-; 219  : 	return res;
-; 220  : }
+; 221  : 	return res;
+; 222  : }
 
 	mov	rbx, QWORD PTR [rsp+80]
 	mov	rsi, QWORD PTR [rsp+88]
@@ -1201,7 +1227,7 @@ p$ = 64
 np$ = 72
 ?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z PROC ; Noise::limitedNoise, COMDAT
 
-; 203  : float Noise::limitedNoise(Point3 p, NoiseParams &np) {
+; 205  : float Noise::limitedNoise(Point3 p, NoiseParams &np) {
 
 $LN10:
 	push	rbx
@@ -1216,7 +1242,7 @@ $LN10:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 204  : 	float res = Fractal::f(p, np);	
+; 206  : 	float res = Fractal::f(p, np);	
 
 	lea	rcx, QWORD PTR $T1[rsp]
 	mov	rbx, rdx
@@ -1228,11 +1254,11 @@ $LN10:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 204  : 	float res = Fractal::f(p, np);	
+; 206  : 	float res = Fractal::f(p, np);	
 
 	call	?f@Fractal@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Fractal::f
 
-; 205  : 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
+; 207  : 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
 
 	vmovss	xmm1, DWORD PTR [rbx+60]
 	vmovss	xmm2, DWORD PTR [rbx+64]
@@ -1242,12 +1268,12 @@ $LN10:
 $LN2@limitedNoi:
 	vxorps	xmm1, xmm1, xmm1
 
-; 206  : 	if (res < 0) return 0.0f;
+; 208  : 	if (res < 0) return 0.0f;
 
 	vcomiss	xmm1, xmm0
 	ja	SHORT $LN8@limitedNoi
 
-; 207  : 	if (res > 1) return 1.0f;
+; 209  : 	if (res > 1) return 1.0f;
 
 	vmovss	xmm1, DWORD PTR __real@3f800000
 	vcomiss	xmm0, xmm1
@@ -1256,8 +1282,8 @@ $LN8@limitedNoi:
 	vmovaps	xmm0, xmm1
 $LN4@limitedNoi:
 
-; 208  : 	return res;
-; 209  : }
+; 210  : 	return res;
+; 211  : }
 
 	add	rsp, 48					; 00000030H
 	pop	rbx
@@ -1276,23 +1302,45 @@ p$ = 48
 type$ = 56
 ?alterUVW@Noise@@SAXAEAVPoint3@@H@Z PROC		; Noise::alterUVW, COMDAT
 
-; 21   : void Noise::alterUVW(Point3& p, int type) {
+; 22   : void Noise::alterUVW(Point3& p, int type) {
 
-$LN13:
+$LN15:
 	push	rbx
 	sub	rsp, 32					; 00000020H
 	mov	rbx, rcx
 
-; 22   : 	switch (type) {
+; 23   : 	switch (type) {
 
 	sub	edx, 1
 	je	SHORT $LN4@alterUVW
 	cmp	edx, 1
-	jne	SHORT $LN2@alterUVW
+	je	SHORT $LN5@alterUVW
 
-; 26   : 			break;
-; 27   : 		case 2:	
-; 28   : 			p.x = sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
+; 31   : 			p.z = 0.f;
+; 32   : 			break;
+; 33   : 		default: DbgAssert(0);
+
+	lea	r9, OFFSET FLAT:??_C@_13COJANIEC@?$AA0?$AA?$AA@
+	mov	ecx, 33					; 00000021H
+	lea	r8, OFFSET FLAT:??_C@_1CA@JEJEHLAF@?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAa?$AAl?$AAt?$AAe?$AAr?$AAU?$AAV?$AAW?$AA?$AA@
+	lea	rdx, OFFSET FLAT:??_C@_1FG@DGBAILKP@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh?$AAu?$AAb?$AA?2?$AAb?$AAe?$AAr?$AAc?$AAo?$AAn?$AAm?$AAa?$AAp?$AAs?$AA?2?$AAs?$AAr?$AAc@
+
+; 34   : 	}
+; 35   : }
+
+	add	rsp, 32					; 00000020H
+	pop	rbx
+
+; 31   : 			p.z = 0.f;
+; 32   : 			break;
+; 33   : 		default: DbgAssert(0);
+
+	rex_jmp	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
+$LN5@alterUVW:
+
+; 27   : 			break;
+; 28   : 		case 2:	
+; 29   : 			p.x = sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
 
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	xmm2, DWORD PTR [rcx+4]
@@ -1309,24 +1357,22 @@ $LN13:
 	call	sqrtf
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 29   : 			p.y = 0.f;			
+; 30   : 			p.y = 0.f;			
 
 	xor	eax, eax
 	mov	QWORD PTR [rbx+4], rax
 	vmovss	DWORD PTR [rbx], xmm0
 
-; 30   : 			p.z = 0.f;
-; 31   : 			break;
-; 32   : 	}
-; 33   : }
+; 34   : 	}
+; 35   : }
 
 	add	rsp, 32					; 00000020H
 	pop	rbx
 	ret	0
 $LN4@alterUVW:
 
-; 23   : 		case 1: 
-; 24   : 			p.x = sqrt(p.x * p.x + p.y * p.y);
+; 24   : 		case 1: 
+; 25   : 			p.x = sqrt(p.x * p.x + p.y * p.y);
 
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	xmm1, DWORD PTR [rcx+4]
@@ -1340,17 +1386,14 @@ $LN4@alterUVW:
 	call	sqrtf
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 25   : 			p.y = 0.f;
+; 26   : 			p.y = 0.f;
 
 	xor	eax, eax
 	mov	DWORD PTR [rbx+4], eax
 	vmovss	DWORD PTR [rbx], xmm0
-$LN2@alterUVW:
 
-; 30   : 			p.z = 0.f;
-; 31   : 			break;
-; 32   : 	}
-; 33   : }
+; 34   : 	}
+; 35   : }
 
 	add	rsp, 32					; 00000020H
 	pop	rbx
@@ -1403,7 +1446,7 @@ samplesf$1$ = 320
 wp$ = 320
 ?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z PROC	; Noise::wood, COMDAT
 
-; 143  : float Noise::wood(Point3 p, Point3 dPdx, Point3 dPdy, Point3 &g, WoodParam wp) {
+; 145  : float Noise::wood(Point3 p, Point3 dPdx, Point3 dPdy, Point3 &g, WoodParam wp) {
 
 $LN98:
 	mov	rax, rsp
@@ -1418,8 +1461,8 @@ $LN98:
 	mov	rdi, rcx
 	vmovaps	XMMWORD PTR [rax-88], xmm7
 
-; 144  : 	// Filtered noises are only intrested in maximum change in X, Y and Z axis.
-; 145  : 	float lx = dPdx.Length();
+; 146  : 	// Filtered noises are only intrested in maximum change in X, Y and Z axis.
+; 147  : 	float lx = dPdx.Length();
 
 	mov	rcx, rdx
 	vmovaps	XMMWORD PTR [rax-104], xmm8
@@ -1431,15 +1474,15 @@ $LN98:
 	vmovaps	XMMWORD PTR [rsp+80], xmm14
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
-; 146  : 	float ly = dPdy.Length();
+; 148  : 	float ly = dPdy.Length();
 
 	mov	rcx, rbp
 	vmovaps	xmm6, xmm0
 	call	QWORD PTR __imp_?Length@Point3@@QEBAMXZ
 
-; 147  : 	float filter = MAX(lx, ly);
-; 148  : 	// Radial noise
-; 149  : 	p.x += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f, filter*wp.radialFreq) * wp.radialStr;
+; 149  : 	float filter = MAX(lx, ly);
+; 150  : 	// Radial noise
+; 151  : 	p.x += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f, filter*wp.radialFreq) * wp.radialStr;
 
 	mov	rsi, QWORD PTR wp$[rsp]
 	vmovss	xmm7, DWORD PTR __real@3f900000
@@ -1458,7 +1501,7 @@ $LN98:
 	vaddss	xmm6, xmm1, DWORD PTR [rdi]
 	vmovss	DWORD PTR [rdi], xmm6
 
-; 150  : 	p.y += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f, filter*wp.radialFreq) * wp.radialStr;
+; 152  : 	p.y += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f, filter*wp.radialFreq) * wp.radialStr;
 
 	vmovss	xmm4, DWORD PTR [rsi+44]
 	vmovss	xmm1, DWORD PTR [rsi+48]
@@ -1473,15 +1516,15 @@ $LN98:
 	vaddss	xmm2, xmm1, DWORD PTR [rdi+4]
 	vmovss	DWORD PTR [rdi+4], xmm2
 
-; 151  : 	g = p; // Store radial component for gain
+; 153  : 	g = p; // Store radial component for gain
 
 	vmovsd	xmm0, QWORD PTR [rdi]
 	vmovsd	QWORD PTR [rbx], xmm0
 	mov	eax, DWORD PTR [rdi+8]
 	mov	DWORD PTR [rbx+8], eax
 
-; 152  : 	// Trunk wobble		
-; 153  : 	float angle = Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed+3.f, filter*wp.trunkFreq) * (float)pi;
+; 154  : 	// Trunk wobble		
+; 155  : 	float angle = Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed+3.f, filter*wp.trunkFreq) * (float)pi;
 
 	vmovss	xmm0, DWORD PTR [rsi+4]
 	vmovss	xmm3, DWORD PTR [rsi+36]
@@ -1504,7 +1547,7 @@ $LN98:
 	call	sinf
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 154  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
+; 156  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
 
 	vmovss	xmm3, DWORD PTR [rsi+36]
 	vmovss	xmm1, DWORD PTR [rsi+4]
@@ -1516,7 +1559,7 @@ $LN98:
 	vmovaps	xmm6, xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 154  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
+; 156  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
 
 	vmulss	xmm0, xmm3, DWORD PTR [rdi+8]
 	vmulss	xmm2, xmm8, xmm3
@@ -1535,7 +1578,7 @@ $LN98:
 	vmulss	xmm1, xmm0, xmm13
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 154  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
+; 156  : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
 
 	vmovss	xmm0, DWORD PTR [rsi+32]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1576,7 +1619,7 @@ $LN98:
 	vmovss	DWORD PTR $T2[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 155  : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
+; 157  : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
 
 	mov	eax, DWORD PTR $T2[rsp+8]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1593,13 +1636,13 @@ $LN98:
 	vaddss	xmm5, xmm2, xmm5
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 155  : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
+; 157  : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
 
 	vunpcklps xmm0, xmm5, xmm1
 	vmovsd	QWORD PTR [rbx], xmm0
 	mov	DWORD PTR [rbx+8], eax
 
-; 157  : 	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
+; 159  : 	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
 
 	vmovss	xmm4, DWORD PTR [rsi+56]
 	vmulss	xmm1, xmm4, DWORD PTR [rdi+8]
@@ -1612,12 +1655,12 @@ $LN98:
 	vmovss	DWORD PTR [rsp+32], xmm5
 	call	?fnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fnoise4D
 
-; 159  : 	float samplesf = (float)wp.samples;
+; 161  : 	float samplesf = (float)wp.samples;
 
 	mov	eax, DWORD PTR [rsi+8]
 
-; 161  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
-; 162  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
+; 163  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
+; 164  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
 
 	xor	r15d, r15d
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1632,7 +1675,7 @@ $LN98:
 	vmulss	xmm5, xmm9, DWORD PTR [rbp+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 157  : 	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
+; 159  : 	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
 
 	vmovss	DWORD PTR angNoise$1$[rsp], xmm0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1645,7 +1688,7 @@ $LN98:
 	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 159  : 	float samplesf = (float)wp.samples;
+; 161  : 	float samplesf = (float)wp.samples;
 
 	vcvtsi2ss xmm1, xmm1, eax
 	vmovss	DWORD PTR samplesf$1$[rsp], xmm1
@@ -1664,12 +1707,12 @@ $LN98:
 	vmovss	DWORD PTR fp$3$[rsp], xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 160  : 	float total = 0.f;
+; 162  : 	float total = 0.f;
 
 	vmovaps	xmm14, xmm13
 
-; 161  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
-; 162  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
+; 163  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
+; 164  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
 
 	test	eax, eax
 	jle	$LN3@wood
@@ -1695,7 +1738,7 @@ $LL4@wood:
 $LL7@wood:
 	vxorps	xmm0, xmm0, xmm0
 
-; 164  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
+; 166  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
 
 	vcvtsi2ss xmm0, xmm0, ebx
 	vaddss	xmm1, xmm0, xmm9
@@ -1706,7 +1749,7 @@ $LL7@wood:
 	vmulss	xmm0, xmm11, DWORD PTR [r14+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 164  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
+; 166  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
 
 	vdivss	xmm2, xmm1, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1730,7 +1773,7 @@ $LL7@wood:
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 164  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
+; 166  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
 
 	mov	eax, DWORD PTR $T1[rsp+8]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -1742,15 +1785,15 @@ $LL7@wood:
 	vaddss	xmm5, xmm1, xmm5
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 164  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
+; 166  : 		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
 
 	vunpcklps xmm0, xmm5, xmm2
 	vmovsd	QWORD PTR [rdi], xmm0
 	mov	DWORD PTR [rdi+8], eax
 
-; 165  : 		// Distance	
-; 166  : 		float dist = 0.f;	
-; 167  : 		switch (wp.woodType) {
+; 167  : 		// Distance	
+; 168  : 		float dist = 0.f;	
+; 169  : 		switch (wp.woodType) {
 
 	mov	ecx, DWORD PTR [rsi]
 	vmovaps	xmm6, xmm13
@@ -1763,7 +1806,7 @@ $LL7@wood:
 	cmp	ecx, 1
 	jne	$LN8@wood
 
-; 171  : 			case 3: dist = p.x<0.f?-p.x:p.x; break;
+; 173  : 			case 3: dist = p.x<0.f?-p.x:p.x; break;
 
 	vmovss	xmm6, DWORD PTR [rdi]
 	vcomiss	xmm13, xmm6
@@ -1783,7 +1826,7 @@ $LN12@wood:
 	vmovss	DWORD PTR [rdi+8], xmm2
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 170  : 			case 2: p*=.05f; dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed+3.15f)+1.f) / .5f * 15.f; break;
+; 172  : 			case 2: p*=.05f; dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed+3.15f)+1.f) / .5f * 15.f; break;
 
 	vmovss	xmm3, DWORD PTR [rsi+4]
 	vaddss	xmm3, xmm3, DWORD PTR __real@4049999a
@@ -1805,7 +1848,7 @@ $LN11@wood:
 	vmovss	DWORD PTR [rdi+8], xmm2
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 169  : 			case 1: p*=.05f; dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed-7.1f)+1.f) / .5f * 15.f; break;
+; 171  : 			case 1: p*=.05f; dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed-7.1f)+1.f) / .5f * 15.f; break;
 
 	vmovss	xmm3, DWORD PTR [rsi+4]
 	vsubss	xmm3, xmm3, DWORD PTR __real@40e33333
@@ -1816,7 +1859,7 @@ $LN11@wood:
 	jmp	SHORT $LN8@wood
 $LN10@wood:
 
-; 168  : 			case 0: dist = sqrt(p.x*p.x+p.y*p.y); break;
+; 170  : 			case 0: dist = sqrt(p.x*p.x+p.y*p.y); break;
 
 	vmovss	xmm0, DWORD PTR [rdi]
 	vmovss	xmm1, DWORD PTR [rdi+4]
@@ -1832,7 +1875,7 @@ $LN10@wood:
 $LN8@wood:
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 174  : 		dist += Perlin::snoise(dist+wp.randSeed*2.f) * wp.widthVar; // We need FAST and continous random function here, 1D Simplex does fairly well
+; 176  : 		dist += Perlin::snoise(dist+wp.randSeed*2.f) * wp.widthVar; // We need FAST and continous random function here, 1D Simplex does fairly well
 
 	vmovss	xmm1, DWORD PTR [rsi+4]
 	vaddss	xmm2, xmm1, xmm1
@@ -1843,10 +1886,10 @@ $LN8@wood:
 	vaddss	xmm5, xmm6, xmm1
 	vminss	xmm2, xmm4, xmm5
 
-; 175  : 		// Angular noise
-; 176  : 		float d = dist;
-; 177  : 		if (d > wp.angleRad) d = wp.angleRad;	
-; 178  : 		dist += SMOOTH(d/wp.angleRad) * angNoise * wp.angleStr;
+; 177  : 		// Angular noise
+; 178  : 		float d = dist;
+; 179  : 		if (d > wp.angleRad) d = wp.angleRad;	
+; 180  : 		dist += SMOOTH(d/wp.angleRad) * angNoise * wp.angleStr;
 
 	vaddss	xmm0, xmm2, xmm2
 	vdivss	xmm1, xmm0, xmm4
@@ -1859,11 +1902,11 @@ $LN8@wood:
 	vmulss	xmm0, xmm3, DWORD PTR angNoise$1$[rsp]
 	vmulss	xmm1, xmm0, DWORD PTR [rsi+52]
 
-; 179  : 		// Mod
-; 180  : 		float ipart = (float)(int)dist;		
-; 181  : 		dist -= ipart;
-; 182  : 		// Skew
-; 183  : 		if (dist < wp.skew)
+; 181  : 		// Mod
+; 182  : 		float ipart = (float)(int)dist;		
+; 183  : 		dist -= ipart;
+; 184  : 		// Skew
+; 185  : 		if (dist < wp.skew)
 
 	vmovss	xmm3, DWORD PTR [rsi+20]
 	vaddss	xmm2, xmm5, xmm1
@@ -1874,17 +1917,17 @@ $LN8@wood:
 	vcomiss	xmm3, xmm4
 	jbe	SHORT $LN15@wood
 
-; 184  : 			dist *= .5f / wp.skew;
+; 186  : 			dist *= .5f / wp.skew;
 
 	vdivss	xmm0, xmm9, xmm3
 	vmulss	xmm1, xmm4, xmm0
 
-; 185  : 		else
+; 187  : 		else
 
 	jmp	SHORT $LN16@wood
 $LN15@wood:
 
-; 186  : 			dist = dist * .5f / (1.f-wp.skew) - wp.skew * (.5f/(1.f-wp.skew)) + .5f;	
+; 188  : 			dist = dist * .5f / (1.f-wp.skew) - wp.skew * (.5f/(1.f-wp.skew)) + .5f;	
 
 	vsubss	xmm1, xmm8, xmm3
 	vmulss	xmm0, xmm4, xmm9
@@ -1895,31 +1938,31 @@ $LN15@wood:
 	vaddss	xmm1, xmm2, xmm9
 $LN16@wood:
 
-; 187  : 		// Reverse
-; 188  : 		dist *= 2.f;
+; 189  : 		// Reverse
+; 190  : 		dist *= 2.f;
 
 	vaddss	xmm0, xmm1, xmm1
 
-; 189  : 		if (dist > 1.f)
+; 191  : 		if (dist > 1.f)
 
 	vcomiss	xmm0, xmm8
 	jbe	SHORT $LN17@wood
 
-; 190  : 			dist = 2.f - dist;
+; 192  : 			dist = 2.f - dist;
 
 	vmovss	xmm1, DWORD PTR __real@40000000
 	vsubss	xmm0, xmm1, xmm0
 $LN17@wood:
 
-; 191  : 		// Smooth and scale
-; 192  : 		dist = smooth(dist, wp.lowTresh, wp.highTresh);	
+; 193  : 		// Smooth and scale
+; 194  : 		dist = smooth(dist, wp.lowTresh, wp.highTresh);	
 
 	vmovss	xmm2, DWORD PTR [rsi+16]
 	vmovss	xmm1, DWORD PTR [rsi+12]
 	call	?smooth@@YAMMMM@Z			; smooth
 
-; 193  : 		// Gain variation				
-; 194  : 		float gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f; // Again we need FAST random function, in this case it doesn't have to be continous		
+; 195  : 		// Gain variation				
+; 196  : 		float gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f; // Again we need FAST random function, in this case it doesn't have to be continous		
 
 	vaddss	xmm1, xmm7, DWORD PTR [rsi+4]
 	vmovaps	xmm6, xmm0
@@ -1929,7 +1972,7 @@ $LN17@wood:
 	vaddss	xmm1, xmm0, xmm8
 	vmulss	xmm2, xmm1, xmm9
 
-; 195  : 		dist *= (1.f-wp.gainVar) + gain * wp.gainVar;
+; 197  : 		dist *= (1.f-wp.gainVar) + gain * wp.gainVar;
 
 	vmulss	xmm4, xmm2, DWORD PTR [rsi+28]
 	vsubss	xmm1, xmm8, DWORD PTR [rsi+28]
@@ -1939,16 +1982,16 @@ $LN17@wood:
 	vmovss	xmm2, DWORD PTR samplesf$1$[rsp]
 	inc	ebx
 
-; 196  : 		// Add to total value
-; 197  : 	 	total += dist;
+; 198  : 		// Add to total value
+; 199  : 	 	total += dist;
 
 	vaddss	xmm14, xmm14, xmm0
 	cmp	ebx, DWORD PTR [rsi+8]
 	jl	$LL7@wood
 $LN2@wood:
 
-; 161  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
-; 162  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
+; 163  : 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
+; 164  : 	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
 
 	mov	eax, DWORD PTR [rsi+8]
 	inc	r15d
@@ -1960,13 +2003,13 @@ $LN2@wood:
 	vmovaps	xmm10, XMMWORD PTR [rsp+144]
 $LN3@wood:
 
-; 198  : 	}
-; 199  : 	// Return final value, just need to divide sum with number of samples taken
-; 200  : 	return total / (float)(wp.samples * wp.samples);
+; 200  : 	}
+; 201  : 	// Return final value, just need to divide sum with number of samples taken
+; 202  : 	return total / (float)(wp.samples * wp.samples);
 
 	mov	eax, DWORD PTR [rsi+8]
 
-; 201  : }
+; 203  : }
 
 	lea	r11, QWORD PTR [rsp+232]
 	vmovaps	xmm6, XMMWORD PTR [r11-24]
@@ -2015,7 +2058,7 @@ g$ = 152
 wp$ = 160
 ?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z PROC	; Noise::wood, COMDAT
 
-; 87   : float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
+; 89   : float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
 
 $LN51:
 	mov	rax, rsp
@@ -2024,8 +2067,8 @@ $LN51:
 	push	rdi
 	sub	rsp, 128				; 00000080H
 
-; 88   : 	// Radial noise
-; 89   : 	p.x += Perlin::snoise(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f) * wp.radialStr;
+; 90   : 	// Radial noise
+; 91   : 	p.x += Perlin::snoise(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f) * wp.radialStr;
 
 	vmovss	xmm0, DWORD PTR [r8+4]
 	vmovss	xmm4, DWORD PTR [r8+44]
@@ -2047,7 +2090,7 @@ $LN51:
 	vmulss	xmm1, xmm0, DWORD PTR [rsi+40]
 	vaddss	xmm5, xmm1, DWORD PTR [rdi]
 
-; 90   : 	p.y += Perlin::snoise(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f) * wp.radialStr;
+; 92   : 	p.y += Perlin::snoise(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f) * wp.radialStr;
 
 	vmovss	xmm1, DWORD PTR [rdi+8]
 	vmovss	DWORD PTR [rdi], xmm5
@@ -2061,15 +2104,15 @@ $LN51:
 	vaddss	xmm2, xmm1, DWORD PTR [rdi+4]
 	vmovss	DWORD PTR [rdi+4], xmm2
 
-; 91   : 	g = p; // Store radial component for gain
+; 93   : 	g = p; // Store radial component for gain
 
 	vmovsd	xmm0, QWORD PTR [rdi]
 	vmovsd	QWORD PTR [rbx], xmm0
 	mov	eax, DWORD PTR [rdi+8]
 	mov	DWORD PTR [rbx+8], eax
 
-; 92   : 	// Trunk wobble		
-; 93   : 	float angle = Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed+3.f) * (float)pi; // Offset so we dont get the same value as below
+; 94   : 	// Trunk wobble		
+; 95   : 	float angle = Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed+3.f) * (float)pi; // Offset so we dont get the same value as below
 
 	vmovss	xmm0, DWORD PTR [rsi+4]
 	vmovss	xmm2, DWORD PTR [rdi+8]
@@ -2091,7 +2134,7 @@ $LN51:
 	call	sinf
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 94   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
+; 96   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
 
 	vmovss	xmm1, DWORD PTR [rsi+4]
 	vmovss	xmm2, DWORD PTR [rdi+8]
@@ -2103,7 +2146,7 @@ $LN51:
 	vmovaps	xmm6, xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 94   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
+; 96   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
 
 	vmulss	xmm0, xmm2, DWORD PTR [rsi+36]
 	call	?snoise@Perlin@@SAMMM@Z			; Perlin::snoise
@@ -2121,7 +2164,7 @@ $LN51:
 	vmulss	xmm2, xmm0, xmm8
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 94   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
+; 96   : 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
 
 	vmovss	xmm0, DWORD PTR [rsi+32]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -2164,7 +2207,7 @@ $LN51:
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 95   : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
+; 97   : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
 
 	mov	eax, DWORD PTR $T1[rsp+8]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -2179,15 +2222,15 @@ $LN51:
 	vaddss	xmm1, xmm6, xmm3
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 95   : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
+; 97   : 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
 
 	vunpcklps xmm0, xmm5, xmm1
 	vmovsd	QWORD PTR [rbx], xmm0
 	mov	DWORD PTR [rbx+8], eax
 
-; 96   : 	// Distance
-; 97   : 	float dist = 0.f;
-; 98   : 	switch (wp.woodType) {
+; 98   : 	// Distance
+; 99   : 	float dist = 0.f;
+; 100  : 	switch (wp.woodType) {
 
 	mov	ecx, DWORD PTR [rsi]
 	vmovss	xmm10, DWORD PTR __real@3f800000
@@ -2200,7 +2243,7 @@ $LN51:
 	cmp	ecx, 1
 	jne	$LN2@wood
 
-; 102  : 		case 3: dist = p.x<0.f?-p.x:p.x; break;
+; 104  : 		case 3: dist = p.x<0.f?-p.x:p.x; break;
 
 	vmovss	xmm0, DWORD PTR [rdi]
 	vcomiss	xmm8, xmm0
@@ -2221,7 +2264,7 @@ $LN6@wood:
 	vmovss	DWORD PTR [rdi+8], xmm2
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 101  : 		case 2: p*=.05f; dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed+3.15f)+1.f) / .5f * 15.f; break;
+; 103  : 		case 2: p*=.05f; dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed+3.15f)+1.f) / .5f * 15.f; break;
 
 	vmovss	xmm3, DWORD PTR [rsi+4]
 	vaddss	xmm3, xmm3, DWORD PTR __real@4049999a
@@ -2241,7 +2284,7 @@ $LN5@wood:
 	vmovss	DWORD PTR [rdi+8], xmm2
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 100  : 		case 1: p*=.05f; dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed-7.1f)+1.f) / .5f * 15.f; break;
+; 102  : 		case 1: p*=.05f; dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed-7.1f)+1.f) / .5f * 15.f; break;
 
 	vmovss	xmm3, DWORD PTR [rsi+4]
 	vsubss	xmm3, xmm3, DWORD PTR __real@40e33333
@@ -2253,7 +2296,7 @@ $LN49@wood:
 	jmp	SHORT $LN2@wood
 $LN4@wood:
 
-; 99   : 		case 0: dist = sqrt(p.x*p.x+p.y*p.y); break;
+; 101  : 		case 0: dist = sqrt(p.x*p.x+p.y*p.y); break;
 
 	vmovss	xmm0, DWORD PTR [rdi]
 	vmovss	xmm1, DWORD PTR [rdi+4]
@@ -2270,7 +2313,7 @@ $LN13@wood:
 $LN2@wood:
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 105  : 	dist += Perlin::snoise(dist+wp.randSeed*2.f) * wp.widthVar;
+; 107  : 	dist += Perlin::snoise(dist+wp.randSeed*2.f) * wp.widthVar;
 
 	vmovss	xmm1, DWORD PTR [rsi+4]
 	vaddss	xmm2, xmm1, xmm1
@@ -2278,10 +2321,10 @@ $LN2@wood:
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 	vmulss	xmm1, xmm0, DWORD PTR [rsi+24]
 
-; 106  : 	// Angular noise
-; 107  : 	float d = dist;
-; 108  : 	if (d > wp.angleRad) d = wp.angleRad;	
-; 109  : 	dist += smooth(d/wp.angleRad) * Perlin::noise(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f) * wp.angleStr;
+; 108  : 	// Angular noise
+; 109  : 	float d = dist;
+; 110  : 	if (d > wp.angleRad) d = wp.angleRad;	
+; 111  : 	dist += smooth(d/wp.angleRad) * Perlin::noise(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f) * wp.angleStr;
 
 	vmovss	xmm4, DWORD PTR [rsi+56]
 	vmovss	xmm0, DWORD PTR [rsi+60]
@@ -2298,11 +2341,11 @@ $LN2@wood:
 	vdivss	xmm0, xmm7, DWORD PTR [rsi+60]
 	call	?smooth@@YAMM@Z				; smooth
 
-; 110  : 	// Mod
-; 111  : 	float ipart = (float)(int)dist;		
-; 112  : 	dist -= ipart;
-; 113  : 	// Skew
-; 114  : 	if (dist < wp.skew)
+; 112  : 	// Mod
+; 113  : 	float ipart = (float)(int)dist;		
+; 114  : 	dist -= ipart;
+; 115  : 	// Skew
+; 116  : 	if (dist < wp.skew)
 
 	vmovss	xmm3, DWORD PTR [rsi+20]
 	vmulss	xmm1, xmm6, xmm0
@@ -2315,17 +2358,17 @@ $LN2@wood:
 	vcomiss	xmm3, xmm2
 	jbe	SHORT $LN9@wood
 
-; 115  : 		dist *= .5f / wp.skew;
+; 117  : 		dist *= .5f / wp.skew;
 
 	vdivss	xmm0, xmm9, xmm3
 	vmulss	xmm1, xmm2, xmm0
 
-; 116  : 	else
+; 118  : 	else
 
 	jmp	SHORT $LN10@wood
 $LN9@wood:
 
-; 117  : 		dist = dist * .5f / (1.f-wp.skew) - wp.skew * (.5f/(1.f-wp.skew)) + .5f;	
+; 119  : 		dist = dist * .5f / (1.f-wp.skew) - wp.skew * (.5f/(1.f-wp.skew)) + .5f;	
 
 	vmulss	xmm0, xmm2, xmm9
 	vsubss	xmm1, xmm10, xmm3
@@ -2336,41 +2379,41 @@ $LN9@wood:
 	vaddss	xmm1, xmm2, xmm9
 $LN10@wood:
 
-; 118  : 	// Reverse
-; 119  : 	dist *= 2.f;
+; 120  : 	// Reverse
+; 121  : 	dist *= 2.f;
 
 	vaddss	xmm0, xmm1, xmm1
 
-; 120  : 	if (dist > 1.f)
+; 122  : 	if (dist > 1.f)
 
 	vcomiss	xmm0, xmm10
 	jbe	SHORT $LN11@wood
 
-; 121  : 		dist = 2.f-dist;
+; 123  : 		dist = 2.f-dist;
 
 	vmovss	xmm1, DWORD PTR __real@40000000
 	vsubss	xmm0, xmm1, xmm0
 $LN11@wood:
 
-; 122  : 	// Smooth and scale
-; 123  : 	dist = smooth(dist, wp.lowTresh, wp.highTresh);	
+; 124  : 	// Smooth and scale
+; 125  : 	dist = smooth(dist, wp.lowTresh, wp.highTresh);	
 
 	vmovss	xmm2, DWORD PTR [rsi+16]
 	vmovss	xmm1, DWORD PTR [rsi+12]
 	call	?smooth@@YAMMMM@Z			; smooth
 
-; 124  : 	// Gain variation		
-; 125  : 	float gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f;
+; 126  : 	// Gain variation		
+; 127  : 	float gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f;
 
 	vaddss	xmm1, xmm7, DWORD PTR [rsi+4]
 	vmovaps	xmm6, xmm0
 	vmulss	xmm0, xmm1, DWORD PTR __real@439d1127
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 126  : 	dist *= (1.f-wp.gainVar) + gain * wp.gainVar;
-; 127  : 	// Return	
-; 128  : 	return dist;
-; 129  : }
+; 128  : 	dist *= (1.f-wp.gainVar) + gain * wp.gainVar;
+; 129  : 	// Return	
+; 130  : 	return dist;
+; 131  : }
 
 	vmovaps	xmm7, XMMWORD PTR [rsp+96]
 	lea	r11, QWORD PTR [rsp+128]
@@ -2401,7 +2444,7 @@ p$ = 112
 np$ = 120
 ?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z PROC ; Noise::worleyWrapper, COMDAT
 
-; 61   : float Noise::worleyWrapper(Point3 p, NoiseParams& np) {	
+; 63   : float Noise::worleyWrapper(Point3 p, NoiseParams& np) {	
 
 $LN19:
 	mov	QWORD PTR [rsp+8], rbx
@@ -2410,12 +2453,12 @@ $LN19:
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
-; 62   : 	float val;
-; 63   : 	double p3[3] = {(double)p.x, (double)p.y, (double)p.z};
-; 64   : 	double f[4];
-; 65   : 	int order = 1;
-; 66   : 	// Calc order
-; 67   : 	if (np.F4 > 0.0001f || np.F4 < -0.0001f)
+; 64   : 	float val;
+; 65   : 	double p3[3] = {(double)p.x, (double)p.y, (double)p.z};
+; 66   : 	double f[4];
+; 67   : 	int order = 1;
+; 68   : 	// Calc order
+; 69   : 	if (np.F4 > 0.0001f || np.F4 < -0.0001f)
 
 	vmovss	xmm2, DWORD PTR [rdx+32]
 	vcvtss2sd xmm0, xmm0, xmm0
@@ -2434,7 +2477,7 @@ $LN19:
 	vcomiss	xmm0, xmm2
 	ja	SHORT $LN6@worleyWrap
 
-; 69   : 	else if (np.F3 > 0.0001f || np.F3 < -0.0001f)
+; 71   : 	else if (np.F3 > 0.0001f || np.F3 < -0.0001f)
 
 	vmovss	xmm2, DWORD PTR [rdx+28]
 	vcomiss	xmm2, xmm1
@@ -2442,7 +2485,7 @@ $LN19:
 	vcomiss	xmm0, xmm2
 	ja	SHORT $LN9@worleyWrap
 
-; 71   : 	else if (np.F2 > 0.0001f || np.F2 < -0.0001f)
+; 73   : 	else if (np.F2 > 0.0001f || np.F2 < -0.0001f)
 
 	vmovss	xmm2, DWORD PTR [rdx+24]
 	vcomiss	xmm2, xmm1
@@ -2451,25 +2494,25 @@ $LN19:
 	jbe	SHORT $LN10@worleyWrap
 $LN11@worleyWrap:
 
-; 72   : 		order = 2;
+; 74   : 		order = 2;
 
 	mov	ebx, 2
 	jmp	SHORT $LN10@worleyWrap
 $LN9@worleyWrap:
 
-; 70   : 		order = 3;
+; 72   : 		order = 3;
 
 	mov	ebx, 3
 	jmp	SHORT $LN10@worleyWrap
 $LN6@worleyWrap:
 
-; 68   : 		order = 4;
+; 70   : 		order = 4;
 
 	mov	ebx, 4
 $LN10@worleyWrap:
 
-; 73   : 	// Worley
-; 74   : 	Worley::noise(p3, order, f, np.worleyFunction);	
+; 75   : 	// Worley
+; 76   : 	Worley::noise(p3, order, f, np.worleyFunction);	
 
 	mov	r9d, DWORD PTR [rdx+8]
 	lea	r8, QWORD PTR f$[rsp]
@@ -2477,8 +2520,8 @@ $LN10@worleyWrap:
 	lea	rcx, QWORD PTR p3$[rsp]
 	call	?noise@Worley@@SAXQEANHPEANH@Z		; Worley::noise
 
-; 75   : 	// Return value
-; 76   : 	switch (order) {
+; 77   : 	// Return value
+; 78   : 	switch (order) {
 
 	sub	ebx, 1
 	je	$LN12@worleyWrap
@@ -2490,14 +2533,14 @@ $LN10@worleyWrap:
 	je	SHORT $LN15@worleyWrap
 	vxorps	xmm0, xmm0, xmm0
 
-; 81   : 		default: val = 0.0f;
+; 83   : 		default: val = 0.0f;
 
 	jmp	$LN2@worleyWrap
 $LN15@worleyWrap:
 	vmovsd	xmm0, QWORD PTR f$[rsp]
 	vmovsd	xmm1, QWORD PTR f$[rsp+8]
 
-; 80   : 		case 4: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3 + (float)f[3]*np.F4; break;
+; 82   : 		case 4: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3 + (float)f[3]*np.F4; break;
 
 	vcvtpd2ps xmm0, xmm0
 	vmulss	xmm2, xmm0, DWORD PTR [rdi+20]
@@ -2517,7 +2560,7 @@ $LN14@worleyWrap:
 	vmovsd	xmm0, QWORD PTR f$[rsp]
 	vmovsd	xmm1, QWORD PTR f$[rsp+8]
 
-; 79   : 		case 3: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3; break;
+; 81   : 		case 3: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3; break;
 
 	vcvtpd2ps xmm0, xmm0
 	vmulss	xmm2, xmm0, DWORD PTR [rdi+20]
@@ -2533,7 +2576,7 @@ $LN13@worleyWrap:
 	vmovsd	xmm0, QWORD PTR f$[rsp]
 	vmovsd	xmm1, QWORD PTR f$[rsp+8]
 
-; 78   : 		case 2: val = (float)f[0]*np.F1 + (float)f[1]*np.F2; break;
+; 80   : 		case 2: val = (float)f[0]*np.F1 + (float)f[1]*np.F2; break;
 
 	vcvtpd2ps xmm0, xmm0
 	vmulss	xmm2, xmm0, DWORD PTR [rdi+20]
@@ -2544,19 +2587,19 @@ $LN13@worleyWrap:
 $LN12@worleyWrap:
 	vmovsd	xmm0, QWORD PTR f$[rsp]
 
-; 77   : 		case 1: val = (float)f[0]*np.F1; break;
+; 79   : 		case 1: val = (float)f[0]*np.F1; break;
 
 	vcvtpd2ps xmm0, xmm0
 	vmulss	xmm0, xmm0, DWORD PTR [rdi+20]
 $LN2@worleyWrap:
 
-; 82   : 	}
-; 83   : 	val = val/np.spread*2.f-1.f;
+; 84   : 	}
+; 85   : 	val = val/np.spread*2.f-1.f;
 
 	vdivss	xmm0, xmm0, DWORD PTR [rdi+16]
 
-; 84   : 	return val;
-; 85   : }
+; 86   : 	return val;
+; 87   : }
 
 	mov	rbx, QWORD PTR [rsp+112]
 	vaddss	xmm1, xmm0, xmm0
@@ -2580,12 +2623,12 @@ d$ = 88
 np$ = 96
 ?noise@Noise@@SAMVPoint3@@MAEAVNoiseParams@@@Z PROC	; Noise::noise, COMDAT
 
-; 48   : float Noise::noise(Point3 p, float d, NoiseParams& np) {
+; 50   : float Noise::noise(Point3 p, float d, NoiseParams& np) {
 
 $LN17:
 	sub	rsp, 72					; 00000048H
 
-; 49   : 	switch (np.noiseFunction) {
+; 51   : 	switch (np.noiseFunction) {
 
 	movsxd	rax, DWORD PTR [r8]
 	cmp	eax, 6
@@ -2596,42 +2639,42 @@ $LN17:
 	jmp	rdx
 $LN4@noise:
 
-; 50   : 		case 0: return Perlin::fnoise2D(p.x, p.y, d);
+; 52   : 		case 0: return Perlin::fnoise2D(p.x, p.y, d);
 
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm2, xmm1
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 
-; 50   : 		case 0: return Perlin::fnoise2D(p.x, p.y, d);
+; 52   : 		case 0: return Perlin::fnoise2D(p.x, p.y, d);
 
 	jmp	?fnoise2D@Perlin@@SAMMMM@Z		; Perlin::fnoise2D
 $LN5@noise:
 
-; 51   : 		case 1: return Perlin::fnoise3D(p.x, p.y, p.z, d);
+; 53   : 		case 1: return Perlin::fnoise3D(p.x, p.y, p.z, d);
 
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm3, xmm1
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 
-; 51   : 		case 1: return Perlin::fnoise3D(p.x, p.y, p.z, d);
+; 53   : 		case 1: return Perlin::fnoise3D(p.x, p.y, p.z, d);
 
 	jmp	?fnoise3D@Perlin@@SAMMMMM@Z		; Perlin::fnoise3D
 $LN6@noise:
 
-; 52   : 		case 2: return Perlin::fnoise4D(p.x, p.y, p.z, np.phase, d);		
+; 54   : 		case 2: return Perlin::fnoise4D(p.x, p.y, p.z, np.phase, d);		
 
 	vmovss	xmm3, DWORD PTR [r8+12]
 	vmovss	xmm2, DWORD PTR [rcx+8]
@@ -2640,50 +2683,50 @@ $LN6@noise:
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	call	?fnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fnoise4D
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 	ret	0
 $LN7@noise:
 
-; 53   : 		case 3: return Perlin::fsnoise2D(p.x, p.y, d);
+; 55   : 		case 3: return Perlin::fsnoise2D(p.x, p.y, d);
 
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm2, xmm1
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 
-; 53   : 		case 3: return Perlin::fsnoise2D(p.x, p.y, d);
+; 55   : 		case 3: return Perlin::fsnoise2D(p.x, p.y, d);
 
 	jmp	?fsnoise2D@Perlin@@SAMMMM@Z		; Perlin::fsnoise2D
 $LN8@noise:
 
-; 54   : 		case 4: return Perlin::fsnoise3D(p.x, p.y, p.z, d);
+; 56   : 		case 4: return Perlin::fsnoise3D(p.x, p.y, p.z, d);
 
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm0, DWORD PTR [rcx]
 	vmovaps	xmm3, xmm1
 	vmovss	xmm1, DWORD PTR [rcx+4]
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 
-; 54   : 		case 4: return Perlin::fsnoise3D(p.x, p.y, p.z, d);
+; 56   : 		case 4: return Perlin::fsnoise3D(p.x, p.y, p.z, d);
 
 	jmp	?fsnoise3D@Perlin@@SAMMMMM@Z		; Perlin::fsnoise3D
 $LN9@noise:
 
-; 55   : 		case 5: return Perlin::fsnoise4D(p.x, p.y, p.z, np.phase, d);		
+; 57   : 		case 5: return Perlin::fsnoise4D(p.x, p.y, p.z, np.phase, d);		
 
 	vmovss	xmm3, DWORD PTR [r8+12]
 	vmovss	xmm2, DWORD PTR [rcx+8]
@@ -2692,9 +2735,9 @@ $LN9@noise:
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	call	?fsnoise4D@Perlin@@SAMMMMMM@Z		; Perlin::fsnoise4D
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 	ret	0
@@ -2709,7 +2752,7 @@ $LN10@noise:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 56   : 		case 6: return worleyWrapper(p, np);
+; 58   : 		case 6: return worleyWrapper(p, np);
 
 	lea	rcx, QWORD PTR $T1[rsp]
 	mov	rdx, r8
@@ -2721,13 +2764,13 @@ $LN10@noise:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 56   : 		case 6: return worleyWrapper(p, np);
+; 58   : 		case 6: return worleyWrapper(p, np);
 
 	call	?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::worleyWrapper
 
-; 57   : 		default: return 0.0f;
-; 58   : 	}
-; 59   : }
+; 59   : 		default: return 0.0f;
+; 60   : 	}
+; 61   : }
 
 	add	rsp, 72					; 00000048H
 	ret	0
@@ -2759,12 +2802,12 @@ p$ = 64
 np$ = 72
 ?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z PROC	; Noise::noise, COMDAT
 
-; 35   : float Noise::noise(Point3 p, NoiseParams& np) {
+; 37   : float Noise::noise(Point3 p, NoiseParams& np) {
 
 $LN17:
 	sub	rsp, 56					; 00000038H
 
-; 36   : 	switch (np.noiseFunction) {
+; 38   : 	switch (np.noiseFunction) {
 
 	movsxd	rax, DWORD PTR [rdx]
 	cmp	eax, 6
@@ -2775,104 +2818,104 @@ $LN17:
 	jmp	r8
 $LN4@noise:
 
-; 37   : 		case 0: return Perlin::noise(p.x, p.y);
+; 39   : 		case 0: return Perlin::noise(p.x, p.y);
 
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 37   : 		case 0: return Perlin::noise(p.x, p.y);
+; 39   : 		case 0: return Perlin::noise(p.x, p.y);
 
 	jmp	?noise@Perlin@@SAMMM@Z			; Perlin::noise
 $LN5@noise:
 
-; 38   : 		case 1: return Perlin::noise(p.x, p.y, p.z);
+; 40   : 		case 1: return Perlin::noise(p.x, p.y, p.z);
 
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 38   : 		case 1: return Perlin::noise(p.x, p.y, p.z);
+; 40   : 		case 1: return Perlin::noise(p.x, p.y, p.z);
 
 	jmp	?noise@Perlin@@SAMMMM@Z			; Perlin::noise
 $LN6@noise:
 
-; 39   : 		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
+; 41   : 		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
 
 	vmovss	xmm3, DWORD PTR [rdx+12]
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 39   : 		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
+; 41   : 		case 2: return Perlin::noise(p.x, p.y, p.z, np.phase);		
 
 	jmp	?noise@Perlin@@SAMMMMM@Z		; Perlin::noise
 $LN7@noise:
 
-; 40   : 		case 3: return Perlin::snoise(p.x, p.y);
+; 42   : 		case 3: return Perlin::snoise(p.x, p.y);
 
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 40   : 		case 3: return Perlin::snoise(p.x, p.y);
+; 42   : 		case 3: return Perlin::snoise(p.x, p.y);
 
 	jmp	?snoise@Perlin@@SAMMM@Z			; Perlin::snoise
 $LN8@noise:
 
-; 41   : 		case 4: return Perlin::snoise(p.x, p.y, p.z);
+; 43   : 		case 4: return Perlin::snoise(p.x, p.y, p.z);
 
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 41   : 		case 4: return Perlin::snoise(p.x, p.y, p.z);
+; 43   : 		case 4: return Perlin::snoise(p.x, p.y, p.z);
 
 	jmp	?snoise@Perlin@@SAMMMM@Z		; Perlin::snoise
 $LN9@noise:
 
-; 42   : 		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
+; 44   : 		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
 
 	vmovss	xmm3, DWORD PTR [rdx+12]
 	vmovss	xmm2, DWORD PTR [rcx+8]
 	vmovss	xmm1, DWORD PTR [rcx+4]
 	vmovss	xmm0, DWORD PTR [rcx]
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 
-; 42   : 		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
+; 44   : 		case 5: return Perlin::snoise(p.x, p.y, p.z, np.phase);		
 
 	jmp	?snoise@Perlin@@SAMMMMM@Z		; Perlin::snoise
 $LN10@noise:
@@ -2886,7 +2929,7 @@ $LN10@noise:
 	vmovss	xmm0, DWORD PTR [rcx+8]
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 43   : 		case 6: return worleyWrapper(p, np);
+; 45   : 		case 6: return worleyWrapper(p, np);
 
 	lea	rcx, QWORD PTR $T1[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -2897,13 +2940,13 @@ $LN10@noise:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\noise.cpp
 
-; 43   : 		case 6: return worleyWrapper(p, np);
+; 45   : 		case 6: return worleyWrapper(p, np);
 
 	call	?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::worleyWrapper
 
-; 44   : 		default: return 0.0f;
-; 45   : 	}
-; 46   : }
+; 46   : 		default: return 0.0f;
+; 47   : 	}
+; 48   : }
 
 	add	rsp, 56					; 00000038H
 	ret	0
@@ -3116,8 +3159,6 @@ __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
 
-; 221  : }
-
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete
 _TEXT	ENDS
@@ -3128,7 +3169,7 @@ _TEXT	SEGMENT
 __formal$ = 8
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
 
-; 221  : }
+; 223  : }
 
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete

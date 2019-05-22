@@ -17,6 +17,8 @@ under the License.
 
 #include "tile.h"
 #include "perlin.h"
+#include "immintrin.h"
+#include "intrin.h"
 
 inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
@@ -140,7 +142,6 @@ inline static float getAngle(int type, float amount) {
 		default: // Amount	
 			return UFRAND() * amount;
 	}
-	return 0.f;
 }
 
 /*
@@ -323,10 +324,10 @@ TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir
 }
 
 static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
-	int num = arr.size();
+	float num = arr.size();
 	float h = total * size;
 	float y = pos / h;
-	float yi = (float)FASTFLOOR(y); // group ID
+	float yi = float(FASTFLOOR(y)); // group ID
 	y = pos - yi * h; // pos within group
 
 	float sumY = 0.f;

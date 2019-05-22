@@ -16,6 +16,7 @@ under the License.
 */
 
 #include "commonMath.h"
+#include <immintrin.h>
 
 float smooth(float d) { 
 	return (d*d*(3.f-2.f*d));

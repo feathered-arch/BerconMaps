@@ -20,7 +20,7 @@ under the License.
 #include "BerconCommon.h"
 #include "tile.h"
 
-extern TCHAR *GetString(int id);
+extern MCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
 
@@ -108,11 +108,11 @@ class BerconTile : public Texmap, public ResourceMakerCallback {
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return 11; }
+		int NumSubs() { return 1; }			// Use 1 for parameter block tracked subs
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		int NumRefs() { return 11; }
+		int NumRefs() { return 9; }			// Was 11. Curve is gone, so minus two.
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
@@ -131,9 +131,9 @@ class BerconTile : public Texmap, public ResourceMakerCallback {
 		~BerconTile();		
 
 		void* GetInterface(ULONG id) {
-			if(id == I_RESMAKER_INTERFACE)
+		/*	if(id == I_RESMAKER_INTERFACE)
 				return (void *) (ResourceMakerCallback*) this;
-			else
+			else*/
 				return Texmap::GetInterface(id);
 		}
 };

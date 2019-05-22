@@ -19,7 +19,7 @@ under the License.
 
 #include "BerconCommon.h"
 
-extern TCHAR *GetString(int id);
+extern MCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
 
@@ -29,10 +29,10 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 	private:
 		static const int NSUBTEX = 21;
 		static const int NCOLS = 3;
-		static const int NUMREF = 27;
+		static const int NUMREF = 25; //changed to 25 from 27 because Curve is gone
 
 	public:
-		BOOL useCurve, useDistortion, lockGrain;
+		BOOL /*useCurve,*/ useDistortion, lockGrain;
 		float woodSize;
 		float grainAmount, grainFreq;
 
@@ -86,7 +86,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		// Curve
 	//	ICurveCtl* curve;				
 		// From ResourceMakerCallback		
-		BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
+	/*	BOOL SetCustomImageList(HIMAGELIST &hCTools,ICurveCtl *pCCtl) { return TRUE; };
 		BOOL GetToolTip(int iButton, TSTR &ToolTip,ICurveCtl *pCCtl) { return TRUE; };
 		void ResetCallback(int curvenum, ICurveCtl *pCCtl) { ICurve *pCurve = NULL; pCurve = pCCtl->GetControlCurve(curvenum); if(pCurve) { pCurve->SetNumPts(2); NewCurveCreatedCallback(curvenum, pCCtl); }}
 		void NewCurveCreatedCallback(int curvenum, ICurveCtl *pCCtl) {
@@ -94,7 +94,7 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 			CurvePoint pt = pCurve->GetPoint(t,0); pt.p.y = 0.f; pCurve->SetPoint(t,0,&pt);
 			pCurve->SetPenProperty( RGB(0,0,0)); pCurve->SetDisabledPenProperty( RGB(128,128,128));		
 			pt = pCurve->GetPoint(t,1); pt.p.y = 1.f; pCurve->SetPoint(t,1,&pt);
-		}
+		}*/
 
 		// Interactive Display
 		TexHandle *texHandle;
@@ -135,15 +135,15 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		RefTargetHandle Clone( RemapDir &remap );
 		RefResult NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS);
 
-		int NumSubs() { return NUMREF; }
+		int NumSubs() { return 1; }					// We return one when paramblocks are in use
 		Animatable* SubAnim(int i); 
 		TSTR SubAnimName(int i);
 
-		int NumRefs() { return NUMREF; }
+		int NumRefs() { return NUMREF-2; }			// Minus two for custom curve being gone
 		RefTargetHandle GetReference(int i);
 		void SetReference(int i, RefTargetHandle rtarg);
 
-		int	NumParamBlocks() { return 4; }
+		int	NumParamBlocks() { return 3; }
 		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
 		IParamBlock2* GetParamBlockByID(BlockID id) { 
 			if (pblock->ID() == id) return pblock;
@@ -160,10 +160,10 @@ class BerconWood : public Texmap, public ResourceMakerCallback {
 		~BerconWood();		
 		
 		void* GetInterface(ULONG id) {
-			if(id == I_RESMAKER_INTERFACE)
-				return (void *) (ResourceMakerCallback*) this;
-			else
-				return Texmap::GetInterface(id);
+			/*	if(id == I_RESMAKER_INTERFACE)
+					return (void *) (ResourceMakerCallback*) this;
+				else*/
+			return Texmap::GetInterface(id);
 		}
 };
 
@@ -175,6 +175,6 @@ public:
 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
 	virtual Class_ID ClassID() 						{ return BerconWood_CLASS_ID; }
 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
-	virtual const TCHAR* InternalName() 			{ return _T("BerconWood"); } // returns fixed parsable name (scripter-visible name)
+	virtual const TCHAR* InternalName() 			{ return _M("BerconWood"); } // returns fixed parsable name (scripter-visible name)
 	virtual HINSTANCE HInstance() 					{ return hInstance; }
 };

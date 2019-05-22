@@ -12241,7 +12241,7 @@ this$24 = 1104
 i$1$ = 1112
 ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z PROC ; parsePattern, COMDAT
 
-; 524  : static int parsePattern(std::wstring str, TilePattern* pat) {
+; 523  : static int parsePattern(std::wstring str, TilePattern* pat) {
 
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
@@ -12263,7 +12263,7 @@ i$1$ = 1112
 	mov	r15d, r12d
 	mov	DWORD PTR $T1[rsp], r12d
 
-; 525  : 	pat->rows.clear();
+; 524  : 	pat->rows.clear();
 
 	lea	rsi, QWORD PTR [rdx+32]
 	mov	QWORD PTR this$1$[rbp-256], rsi
@@ -12284,7 +12284,7 @@ i$1$ = 1112
 	mov	QWORD PTR [rsi+8], rax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 526  : 	pat->heights.clear();
+; 525  : 	pat->heights.clear();
 
 	lea	rax, QWORD PTR [rbx+8]
 	mov	QWORD PTR this$1$[rbp-256], rax
@@ -12333,7 +12333,7 @@ i$1$ = 1112
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 529  : 	tokenize(str, rowStrings, L"/");
+; 528  : 	tokenize(str, rowStrings, L"/");
 
 	lea	r8, QWORD PTR $T3[rsp]
 	lea	rdx, QWORD PTR rowStrings$[rsp]
@@ -12381,7 +12381,7 @@ $LN182@parsePatte:
 	mov	WORD PTR $T3[rsp], r12w
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 531  : 	for (int i=0; i<rowStrings.size(); i++) {		
+; 530  : 	for (int i=0; i<rowStrings.size(); i++) {		
 
 	mov	DWORD PTR i$1$[rbp-256], r12d
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -12396,7 +12396,7 @@ $LN182@parsePatte:
 	mov	QWORD PTR tv6005[rbp-256], rax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 531  : 	for (int i=0; i<rowStrings.size(); i++) {		
+; 530  : 	for (int i=0; i<rowStrings.size(); i++) {		
 
 	test	rax, rax
 	je	$LN3@parsePatte
@@ -12451,7 +12451,7 @@ $LN2369@parsePatte:
 	lea	rcx, QWORD PTR [rsi+rdi]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 533  : 		tokenize(rowStrings[i], row, L",");
+; 532  : 		tokenize(rowStrings[i], row, L",");
 
 	lea	r8, QWORD PTR $T5[rsp]
 	lea	rdx, QWORD PTR row$4[rsp]
@@ -12579,7 +12579,7 @@ $LN457@parsePatte:
 	sar	r13, 5
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 535  : 		if (row.size() < 3)
+; 534  : 		if (row.size() < 3)
 
 	cmp	r13, 3
 	jb	$LN2349@parsePatte
@@ -12907,7 +12907,7 @@ $LN793@parsePatte:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 540  : 		s0 >> offset;
+; 539  : 		s0 >> offset;
 
 	lea	rdx, QWORD PTR offset$6[rbp-256]
 	lea	rcx, QWORD PTR s0$12[rbp-256]
@@ -13237,15 +13237,15 @@ $LN841@parsePatte:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 542  : 		s1 >> height;
+; 541  : 		s1 >> height;
 
 	lea	rdx, QWORD PTR height$8[rbp-256]
 	lea	rcx, QWORD PTR s1$11[rbp-256]
 	call	QWORD PTR __imp_??5?$basic_istream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@AEAN@Z
 	vmovsd	xmm6, QWORD PTR offset$6[rbp-256]
 
-; 543  : 
-; 544  : 		TileRow r = TileRow(offset);
+; 542  : 
+; 543  : 		TileRow r = TileRow(offset);
 
 	vcvtpd2ps xmm6, xmm6
 	vpxor	xmm0, xmm0, xmm0
@@ -13259,12 +13259,12 @@ $LN841@parsePatte:
 	mov	QWORD PTR r$2[rsp+24], r8
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 57   : 	TileRow(float offset) {this->offset = offset;}
+; 58   : 	TileRow(float offset) {this->offset = offset;}
 
 	vmovss	DWORD PTR r$2[rsp], xmm6
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 546  : 		for (int j=2; j<row.size(); j++) {
+; 545  : 		for (int j=2; j<row.size(); j++) {
 
 	mov	esi, 2
 	mov	DWORD PTR j$1$[rbp-256], esi
@@ -13275,7 +13275,7 @@ $LN841@parsePatte:
 	mov	r15, QWORD PTR r$2[rsp+8]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 546  : 		for (int j=2; j<row.size(); j++) {
+; 545  : 		for (int j=2; j<row.size(); j++) {
 
 	cmp	r13, rsi
 	jbe	$LN6@parsePatte
@@ -13610,15 +13610,15 @@ $LN914@parsePatte:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 548  : 			sn >> width;
+; 547  : 			sn >> width;
 
 	lea	rdx, QWORD PTR width$7[rbp-256]
 	lea	rcx, QWORD PTR sn$9[rbp-256]
 	call	QWORD PTR __imp_??5?$basic_istream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@AEAN@Z
 	vmovsd	xmm6, QWORD PTR width$7[rbp-256]
 
-; 549  : 
-; 550  : 			r.tiles.push_back(width);
+; 548  : 
+; 549  : 			r.tiles.push_back(width);
 
 	vcvtpd2ps xmm6, xmm6
 	vmovss	DWORD PTR $T21[rbp-256], xmm6
@@ -14020,7 +14020,7 @@ $LN1299@parsePatte:
 	call	QWORD PTR __imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 546  : 		for (int j=2; j<row.size(); j++) {
+; 545  : 		for (int j=2; j<row.size(); j++) {
 
 	inc	esi
 	mov	DWORD PTR j$1$[rbp-256], esi
@@ -14244,7 +14244,7 @@ $LN2368@parsePatte:
 	vmovsd	xmm6, QWORD PTR height$8[rbp-256]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 554  : 		pat->heights.push_back((float)height);
+; 553  : 		pat->heights.push_back((float)height);
 
 	vcvtpd2ps xmm6, xmm6
 	vmovss	DWORD PTR $T20[rbp-256], xmm6
@@ -14539,7 +14539,7 @@ $LN2030@parsePatte:
 	mov	QWORD PTR row$4[rsp+16], 0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 531  : 	for (int i=0; i<rowStrings.size(); i++) {		
+; 530  : 	for (int i=0; i<rowStrings.size(); i++) {		
 
 	mov	r12d, DWORD PTR i$1$[rbp-256]
 	inc	r12d
@@ -14988,7 +14988,7 @@ $LN743@parsePatte:
 	mov	WORD PTR [r14], bx
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 536  : 			return FALSE;	
+; 535  : 			return FALSE;	
 
 	xor	eax, eax
 	jmp	SHORT $LN1@parsePatte
@@ -15082,12 +15082,12 @@ $LN2325@parsePatte:
 	mov	WORD PTR [r14], r12w
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 557  : 	return TRUE;
+; 556  : 	return TRUE;
 
 	mov	eax, 1
 $LN1@parsePatte:
 
-; 558  : }
+; 557  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+992]
 	add	rsp, 1016				; 000003f8H
@@ -19818,7 +19818,7 @@ tokens$ = 136
 delimiters$ = 144
 ?tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z PROC ; tokenize, COMDAT
 
-; 513  : static void tokenize(const std::wstring& str, std::vector<std::wstring>& tokens, const std::wstring& delimiters) {
+; 512  : static void tokenize(const std::wstring& str, std::vector<std::wstring>& tokens, const std::wstring& delimiters) {
 
 	mov	rax, rsp
 	push	rdi
@@ -19835,14 +19835,14 @@ delimiters$ = 144
 	mov	rbx, rdx
 	mov	rbp, rcx
 
-; 514  : 	std::wstring::size_type lastPos = str.find_first_not_of(delimiters, 0);
+; 513  : 	std::wstring::size_type lastPos = str.find_first_not_of(delimiters, 0);
 
 	xor	r8d, r8d
 	mov	rdx, r14
 	call	?find_first_not_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::find_first_not_of
 	mov	rdi, rax
 
-; 515  : 	std::wstring::size_type pos = str.find_first_of(delimiters, lastPos);
+; 514  : 	std::wstring::size_type pos = str.find_first_of(delimiters, lastPos);
 
 	mov	r8, rax
 	mov	rdx, r14
@@ -19854,8 +19854,8 @@ delimiters$ = 144
 $LN662@tokenize:
 	mov	rsi, rax
 
-; 516  : 	
-; 517  : 	while (std::wstring::npos != pos || std::wstring::npos != lastPos) {
+; 515  : 	
+; 516  : 	while (std::wstring::npos != pos || std::wstring::npos != lastPos) {
 
 	cmp	rax, -1
 	jne	SHORT $LN4@tokenize
@@ -19863,7 +19863,7 @@ $LN662@tokenize:
 	je	$LN3@tokenize
 $LN4@tokenize:
 
-; 518  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
+; 517  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
 
 	mov	r9, rsi
 	sub	r9, rdi
@@ -20175,7 +20175,7 @@ $LN620@tokenize:
 	mov	WORD PTR $T1[rsp], r15w
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 519  : 		lastPos = str.find_first_not_of(delimiters, pos);
+; 518  : 		lastPos = str.find_first_not_of(delimiters, pos);
 
 	mov	r8, rsi
 	mov	rdx, r14
@@ -20183,14 +20183,14 @@ $LN620@tokenize:
 	call	?find_first_not_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::find_first_not_of
 	mov	rdi, rax
 
-; 520  : 		pos = str.find_first_of(delimiters, lastPos);
+; 519  : 		pos = str.find_first_of(delimiters, lastPos);
 
 	mov	r8, rax
 	mov	rdx, r14
 	mov	rcx, rbp
 	call	?find_first_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::find_first_of
 
-; 521  : 	}
+; 520  : 	}
 
 	jmp	$LN662@tokenize
 $LN647@tokenize:
@@ -20257,7 +20257,7 @@ $LN649@tokenize:
 $LN3@tokenize:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 522  : }
+; 521  : }
 
 	lea	r11, QWORD PTR [rsp+80]
 	mov	rbx, QWORD PTR [r11+48]
@@ -20322,7 +20322,7 @@ var$ = 296
 rand$ = 304
 ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z PROC ; rowcol, COMDAT
 
-; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 324  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
 	mov	QWORD PTR [rsp+24], rbx
 	push	rbp
@@ -20338,14 +20338,14 @@ rand$ = 304
 	mov	r14, QWORD PTR arr$[rsp]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 324  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
 	mov	rbp, rcx
 	vmovaps	XMMWORD PTR [rsp+160], xmm7
 	mov	r12, r8
 
-; 326  : 	int num = arr.size();
-; 327  : 	float h = total * size;
+; 325  : 	int num = arr.size();
+; 326  : 	float h = total * size;
 
 	vmovss	xmm7, DWORD PTR size$[rsp]
 	vmulss	xmm2, xmm7, DWORD PTR total$[rsp]
@@ -20356,7 +20356,7 @@ rand$ = 304
 	mov	rax, QWORD PTR [r14]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 324  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
 	mov	rsi, rdx
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -20368,7 +20368,7 @@ rand$ = 304
 	vmovaps	XMMWORD PTR [rsp+48], xmm14
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 328  : 	float y = pos / h;
+; 327  : 	float y = pos / h;
 
 	vdivss	xmm1, xmm3, xmm2
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -20379,7 +20379,7 @@ rand$ = 304
 	vxorps	xmm14, xmm14, xmm14
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 329  : 	float yi = (float)FASTFLOOR(y); // group ID
+; 328  : 	float yi = (float)FASTFLOOR(y); // group ID
 
 	vcomiss	xmm14, xmm1
 	vmovaps	XMMWORD PTR [rsp+32], xmm15
@@ -20391,11 +20391,11 @@ $LN15@rowcol:
 	vxorps	xmm4, xmm4, xmm4
 	vcvtsi2ss xmm4, xmm4, ecx
 
-; 330  : 	y = pos - yi * h; // pos within group
-; 331  : 
-; 332  : 	float sumY = 0.f;
-; 333  : 	float tileHeight = 0.f;
-; 334  : 	int cur = 0;	
+; 329  : 	y = pos - yi * h; // pos within group
+; 330  : 
+; 331  : 	float sumY = 0.f;
+; 332  : 	float tileHeight = 0.f;
+; 333  : 	int cur = 0;	
 
 	xor	ebx, ebx
 	vmovaps	XMMWORD PTR [rsp+176], xmm6
@@ -20403,7 +20403,7 @@ $LN15@rowcol:
 	vsubss	xmm1, xmm15, xmm5
 	vmovaps	xmm3, xmm14
 
-; 335  : 	while (cur < num) {		
+; 334  : 	while (cur < num) {		
 
 	test	edi, edi
 	jle	$LN6@rowcol
@@ -20412,19 +20412,19 @@ $LN15@rowcol:
 	npad	1
 $LL2@rowcol:
 
-; 336  : 		tileHeight = arr[cur] * size;
+; 335  : 		tileHeight = arr[cur] * size;
 
 	vmulss	xmm6, xmm7, DWORD PTR [rax]
 
-; 337  : 		if (y < sumY + tileHeight)
+; 336  : 		if (y < sumY + tileHeight)
 
 	vaddss	xmm0, xmm6, xmm3
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN102@rowcol
 
-; 338  : 			break;		
-; 339  : 		sumY += tileHeight;
-; 340  : 		cur++;
+; 337  : 			break;		
+; 338  : 		sumY += tileHeight;
+; 339  : 		cur++;
 
 	inc	ebx
 	inc	rcx
@@ -20434,30 +20434,30 @@ $LL2@rowcol:
 	jl	SHORT $LL2@rowcol
 $LN102@rowcol:
 
-; 341  : 	}
-; 342  : 	if (cur < 0 || cur >= num) // Necessary due floating point error
+; 340  : 	}
+; 341  : 	if (cur < 0 || cur >= num) // Necessary due floating point error
 
 	test	ebx, ebx
 	js	$LN6@rowcol
 	cmp	ebx, edi
 	jge	$LN6@rowcol
 
-; 344  : 
-; 345  : 	id = yi * num + cur;
-; 346  : 
-; 347  : 	// Variance
-; 348  : 	// ----------- To determine max var
-; 349  : 	// ----------- If we rose
-; 350  : 	// ----------- eTop -> neTop
-; 351  : 	//    x
-; 352  : 	// ----------- eBot -> neBot
-; 353  : 	// ----------- If we droped
-; 354  : 	// ----------- To determine max var
-; 355  : 
-; 356  : 	float eBot = yi * h + sumY;	
-; 357  : 	float eTop = eBot + tileHeight;
-; 358  : 
-; 359  : 	if (var > 0.0001f) {
+; 343  : 
+; 344  : 	id = yi * num + cur;
+; 345  : 
+; 346  : 	// Variance
+; 347  : 	// ----------- To determine max var
+; 348  : 	// ----------- If we rose
+; 349  : 	// ----------- eTop -> neTop
+; 350  : 	//    x
+; 351  : 	// ----------- eBot -> neBot
+; 352  : 	// ----------- If we droped
+; 353  : 	// ----------- To determine max var
+; 354  : 
+; 355  : 	float eBot = yi * h + sumY;	
+; 356  : 	float eTop = eBot + tileHeight;
+; 357  : 
+; 358  : 	if (var > 0.0001f) {
 
 	mov	QWORD PTR [rsp+240], r13
 	mov	QWORD PTR [rsp+248], r15
@@ -20495,9 +20495,9 @@ $LN102@rowcol:
 	mov	r13d, r15d
 	cmovns	r13d, eax
 
-; 360  : 		float n;
-; 361  : 		
-; 362  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
+; 359  : 		float n;
+; 360  : 		
+; 361  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
 
 	movsxd	rax, r13d
 
@@ -20507,9 +20507,9 @@ $LN102@rowcol:
 	vmulsd	xmm1, xmm0, QWORD PTR __real@403f666666666666
 	vmovss	xmm0, DWORD PTR rand$[rsp]
 
-; 360  : 		float n;
-; 361  : 		
-; 362  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
+; 359  : 		float n;
+; 360  : 		
+; 361  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
 
 	vmulss	xmm11, xmm7, DWORD PTR [rcx+rax*4]
 
@@ -20536,7 +20536,7 @@ $LN102@rowcol:
 
 	mov	DWORD PTR tv734[rsp], eax
 
-; 363  : 		float tTileHeight = arr[STEPUP(cur, num)]*size;
+; 362  : 		float tTileHeight = arr[STEPUP(cur, num)]*size;
 
 	vmulss	xmm13, xmm7, DWORD PTR [rcx+rax*4]
 
@@ -20544,9 +20544,9 @@ $LN102@rowcol:
 
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 364  : 
-; 365  : 		n = noise(eBot, rand);
-; 366  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
+; 363  : 
+; 364  : 		n = noise(eBot, rand);
+; 365  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
 
 	vcomiss	xmm0, xmm14
 	jbe	SHORT $LN16@rowcol
@@ -20565,9 +20565,9 @@ $LN17@rowcol:
 	vcvtss2sd xmm2, xmm10, xmm10
 	vmulsd	xmm3, xmm2, QWORD PTR __real@403f666666666666
 
-; 364  : 
-; 365  : 		n = noise(eBot, rand);
-; 366  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
+; 363  : 
+; 364  : 		n = noise(eBot, rand);
+; 365  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
 
 	vaddss	xmm12, xmm1, xmm9
 
@@ -20577,16 +20577,16 @@ $LN17@rowcol:
 	vcvtsd2ss xmm0, xmm1, xmm1
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 367  : 		n = noise(eTop, rand);
-; 368  : 		float neTop = eTop + (n<0 ? tileHeight : tTileHeight) * n * var;
+; 366  : 		n = noise(eTop, rand);
+; 367  : 		float neTop = eTop + (n<0 ? tileHeight : tTileHeight) * n * var;
 
 	vcomiss	xmm14, xmm0
 	ja	SHORT $LN19@rowcol
 	vmovaps	xmm6, xmm13
 $LN19@rowcol:
 
-; 369  : 
-; 370  : 		if (pos < neBot) { // We droped one cur down
+; 368  : 
+; 369  : 		if (pos < neBot) { // We droped one cur down
 
 	vcomiss	xmm12, xmm15
 	vmulss	xmm0, xmm6, xmm0
@@ -20594,13 +20594,13 @@ $LN19@rowcol:
 	vaddss	xmm6, xmm1, xmm10
 	jbe	SHORT $LN9@rowcol
 
-; 371  : 			id--;
+; 370  : 			id--;
 
 	dec	DWORD PTR [r12]
 	vmovss	xmm1, DWORD PTR rand$[rsp]
 
-; 372  : 			cur = STEPDOWN(cur, num);
-; 373  : 			low = eBot-bTileHeight;
+; 371  : 			cur = STEPDOWN(cur, num);
+; 372  : 			low = eBot-bTileHeight;
 
 	vsubss	xmm0, xmm9, xmm11
 	vmovss	DWORD PTR [rbp], xmm0
@@ -20614,8 +20614,8 @@ $LN19@rowcol:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 374  : 			n = noise(low, rand);
-; 375  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
+; 373  : 			n = noise(low, rand);
+; 374  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
 
 	vcomiss	xmm0, xmm14
 	ja	SHORT $LN21@rowcol
@@ -20626,8 +20626,8 @@ $LN19@rowcol:
 	test	eax, eax
 	cmovns	r15d, eax
 
-; 374  : 			n = noise(low, rand);
-; 375  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
+; 373  : 			n = noise(low, rand);
+; 374  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
 
 	mov	rax, QWORD PTR [r14]
 	movsxd	rcx, r15d
@@ -20638,29 +20638,29 @@ $LN21@rowcol:
 	vaddss	xmm2, xmm1, DWORD PTR [rbp]
 	vmovss	DWORD PTR [rbp], xmm2
 
-; 376  : 			high = neBot;				
+; 375  : 			high = neBot;				
 
 	vmovss	DWORD PTR [rsi], xmm12
 	mov	ebx, r13d
 	jmp	$LN8@rowcol
 $LN9@rowcol:
 
-; 377  : 
-; 378  : 		} else if (pos > neTop) { // We rose one cur up
+; 376  : 
+; 377  : 		} else if (pos > neTop) { // We rose one cur up
 
 	vcomiss	xmm15, xmm6
 	jbe	SHORT $LN11@rowcol
 
-; 379  : 			id++;
+; 378  : 			id++;
 
 	inc	DWORD PTR [r12]
 	vmovss	xmm1, DWORD PTR rand$[rsp]
 
-; 380  : 			cur = STEPUP(cur, num);
+; 379  : 			cur = STEPUP(cur, num);
 
 	mov	ebx, DWORD PTR tv734[rsp]
 
-; 381  : 			high = eTop+tTileHeight;
+; 380  : 			high = eTop+tTileHeight;
 
 	vaddss	xmm0, xmm13, xmm10
 	vmovss	DWORD PTR [rsi], xmm0
@@ -20674,8 +20674,8 @@ $LN9@rowcol:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 382  : 			n = noise(high, rand);
-; 383  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
+; 381  : 			n = noise(high, rand);
+; 382  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
 
 	vcomiss	xmm14, xmm0
 	ja	SHORT $LN23@rowcol
@@ -20686,8 +20686,8 @@ $LN9@rowcol:
 	cdq
 	idiv	edi
 
-; 382  : 			n = noise(high, rand);
-; 383  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
+; 381  : 			n = noise(high, rand);
+; 382  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
 
 	mov	rax, QWORD PTR [r14]
 	movsxd	rcx, edx
@@ -20698,42 +20698,42 @@ $LN23@rowcol:
 	vaddss	xmm2, xmm1, DWORD PTR [rsi]
 	vmovss	DWORD PTR [rsi], xmm2
 
-; 384  : 			low = neTop;		
+; 383  : 			low = neTop;		
 
 	vmovss	DWORD PTR [rbp], xmm6
 
-; 385  : 
-; 386  : 		} else { // Still in the same cur
+; 384  : 
+; 385  : 		} else { // Still in the same cur
 
 	jmp	SHORT $LN8@rowcol
 $LN11@rowcol:
 
-; 387  : 			low = neBot;
+; 386  : 			low = neBot;
 
 	vmovss	DWORD PTR [rbp], xmm12
 
-; 388  : 			high = neTop;				
+; 387  : 			high = neTop;				
 
 	vmovss	DWORD PTR [rsi], xmm6
 
-; 389  : 		}
-; 390  : 	} else {
+; 388  : 		}
+; 389  : 	} else {
 
 	jmp	SHORT $LN8@rowcol
 $LN7@rowcol:
 
-; 391  : 		low = eBot;
+; 390  : 		low = eBot;
 
 	vmovss	DWORD PTR [rbp], xmm9
 
-; 392  : 		high = eTop;
+; 391  : 		high = eTop;
 
 	vmovss	DWORD PTR [rsi], xmm10
 $LN8@rowcol:
 
-; 393  : 	}
-; 394  : 
-; 395  : 	return cur;
+; 392  : 	}
+; 393  : 
+; 394  : 	return cur;
 
 	vmovaps	xmm13, XMMWORD PTR [rsp+64]
 	mov	eax, ebx
@@ -20747,13 +20747,13 @@ $LN8@rowcol:
 	jmp	SHORT $LN1@rowcol
 $LN6@rowcol:
 
-; 343  : 		return -1;
+; 342  : 		return -1;
 
 	or	eax, -1
 $LN1@rowcol:
 	vmovaps	xmm6, XMMWORD PTR [rsp+176]
 
-; 396  : }
+; 395  : }
 
 	mov	rbx, QWORD PTR [rsp+256]
 	vmovaps	xmm7, XMMWORD PTR [rsp+160]
@@ -20777,27 +20777,27 @@ x$ = 16
 y$ = 24
 ?offsetEdges@@YAXQEAMMM@Z PROC				; offsetEdges, COMDAT
 
-; 261  : 	edges[0] += x;
+; 260  : 	edges[0] += x;
 
 	vaddss	xmm0, xmm1, DWORD PTR [rcx]
 	vmovss	DWORD PTR [rcx], xmm0
 
-; 262  : 	edges[2] += x;
+; 261  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm1, DWORD PTR [rcx+8]
 	vmovss	DWORD PTR [rcx+8], xmm0
 
-; 263  : 	edges[3] += y;
+; 262  : 	edges[3] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rcx+12]
 	vmovss	DWORD PTR [rcx+12], xmm0
 
-; 264  : 	edges[1] += y;
+; 263  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rcx+4]
 	vmovss	DWORD PTR [rcx+4], xmm0
 
-; 265  : }
+; 264  : }
 
 	ret	0
 ?offsetEdges@@YAXQEAMMM@Z ENDP				; offsetEdges
@@ -20853,8 +20853,7 @@ $LN17@getAngle:
 	vmovss	xmm0, DWORD PTR __real@4096cbe4
 
 ; 142  : 	}
-; 143  : 	return 0.f;
-; 144  : }
+; 143  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
@@ -20869,8 +20868,7 @@ $LN11@getAngle:
 	vmovss	xmm0, DWORD PTR __real@3fc90fdb
 
 ; 142  : 	}
-; 143  : 	return 0.f;
-; 144  : }
+; 143  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
@@ -20892,8 +20890,7 @@ $LN4@getAngle:
 	vcvtsd2ss xmm0, xmm1, xmm1
 
 ; 142  : 	}
-; 143  : 	return 0.f;
-; 144  : }
+; 143  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
@@ -20921,8 +20918,7 @@ $LN12@getAngle:
 	vmovss	xmm0, DWORD PTR __real@40490fdb
 
 ; 142  : 	}
-; 143  : 	return 0.f;
-; 144  : }
+; 143  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
@@ -21062,13 +21058,13 @@ p$ = 72
 t$ = 80
 ?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::draw, COMDAT
 
-; 507  : TilePoint Tile::draw(Point3 p, TileParam& t) {	
+; 506  : TilePoint Tile::draw(Point3 p, TileParam& t) {	
 
 $LN10:
 	push	rbx
 	sub	rsp, 48					; 00000030H
 
-; 508  : 	if (t.tilingType == 1)
+; 507  : 	if (t.tilingType == 1)
 
 	cmp	DWORD PTR [r8], 1
 	mov	rbx, rcx
@@ -21084,29 +21080,29 @@ $LN10:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 509  : 		return pat_herring(p, t);
+; 508  : 		return pat_herring(p, t);
 
 	lea	rdx, QWORD PTR $T1[rsp]
 	jne	SHORT $LN2@draw
 	call	?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z ; Tile::pat_herring
 
-; 510  : 	return pat_xBond(p, t);
+; 509  : 	return pat_xBond(p, t);
 
 	mov	rax, rbx
 
-; 511  : }
+; 510  : }
 
 	add	rsp, 48					; 00000030H
 	pop	rbx
 	ret	0
 $LN2@draw:
 
-; 510  : 	return pat_xBond(p, t);
+; 509  : 	return pat_xBond(p, t);
 
 	call	?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z ; Tile::pat_xBond
 	mov	rax, rbx
 
-; 511  : }
+; 510  : }
 
 	add	rsp, 48					; 00000030H
 	pop	rbx
@@ -21128,7 +21124,7 @@ p$ = 152
 t$ = 160
 ?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::pat_herring, COMDAT
 
-; 457  : TilePoint Tile::pat_herring(Point3 p, TileParam& t) {
+; 456  : TilePoint Tile::pat_herring(Point3 p, TileParam& t) {
 
 $LN21:
 	mov	QWORD PTR [rsp+8], rbx
@@ -21136,17 +21132,17 @@ $LN21:
 	push	rdi
 	sub	rsp, 128				; 00000080H
 
-; 458  : 	float s = t.tileWidth * 2.f;	
+; 457  : 	float s = t.tileWidth * 2.f;	
 
 	vmovss	xmm4, DWORD PTR [r8+8]
 
-; 459  : 	float h = t.tileWidth * .5f;
+; 458  : 	float h = t.tileWidth * .5f;
 
 	vmulss	xmm5, xmm4, DWORD PTR __real@3f000000
 	vmovaps	XMMWORD PTR [rsp+112], xmm6
 	mov	rbx, r8
 
-; 460  : 	float x = p.x / s;
+; 459  : 	float x = p.x / s;
 
 	vmovss	xmm6, DWORD PTR [rdx]
 	vaddss	xmm2, xmm4, xmm4
@@ -21154,12 +21150,12 @@ $LN21:
 	vmovaps	XMMWORD PTR [rsp+96], xmm7
 	mov	rdi, rcx
 
-; 461  : 	float y = p.y / s;
+; 460  : 	float y = p.y / s;
 
 	vmovss	xmm7, DWORD PTR [rdx+4]
 	vxorps	xmm3, xmm3, xmm3
 
-; 462  : 	int xi = FASTFLOOR(x);
+; 461  : 	int xi = FASTFLOOR(x);
 
 	vcomiss	xmm3, xmm1
 	vmovaps	XMMWORD PTR [rsp+80], xmm8
@@ -21169,7 +21165,7 @@ $LN21:
 	dec	r9d
 $LN6@pat_herrin:
 
-; 463  : 	int yi = FASTFLOOR(y);
+; 462  : 	int yi = FASTFLOOR(y);
 
 	vcomiss	xmm3, xmm0
 	vcvttss2si r8d, xmm0
@@ -21178,18 +21174,18 @@ $LN6@pat_herrin:
 $LN8@pat_herrin:
 	vxorps	xmm0, xmm0, xmm0
 
-; 464  : 	x = xi * s;
+; 463  : 	x = xi * s;
 
 	vcvtsi2ss xmm0, xmm0, r9d
 	vmulss	xmm3, xmm0, xmm2
 	vxorps	xmm1, xmm1, xmm1
 
-; 465  : 	y = yi * s;
+; 464  : 	y = yi * s;
 
 	vcvtsi2ss xmm1, xmm1, r8d
 	vmulss	xmm8, xmm1, xmm2
 
-; 467  : 	int y_id = (int)((p.y - y) / h) % 4;	
+; 466  : 	int y_id = (int)((p.y - y) / h) % 4;	
 
 	vsubss	xmm0, xmm7, xmm8
 	vdivss	xmm2, xmm0, xmm5
@@ -21201,7 +21197,7 @@ $LN8@pat_herrin:
 	inc	ecx
 $LN18@pat_herrin:
 
-; 466  : 	int x_id = (int)((p.x - x) / h) % 4;
+; 465  : 	int x_id = (int)((p.x - x) / h) % 4;
 
 	vsubss	xmm0, xmm6, xmm3
 	vdivss	xmm1, xmm0, xmm5
@@ -21213,22 +21209,22 @@ $LN18@pat_herrin:
 	inc	eax
 $LN17@pat_herrin:
 
-; 468  : 	int id = x_id + 4 * y_id;
+; 467  : 	int id = x_id + 4 * y_id;
 
 	lea	eax, DWORD PTR [rax+rcx*4]
 
-; 469  : 
-; 470  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
-; 471  : 
-; 472  : 	float edges[4];
-; 473  : 
-; 474  : 	if (!pat_herring_dir[id]) {
+; 468  : 
+; 469  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
+; 470  : 
+; 471  : 	float edges[4];
+; 472  : 
+; 473  : 	if (!pat_herring_dir[id]) {
 
 	movsxd	rcx, eax
 	lea	rsi, OFFSET FLAT:__ImageBase
 	movzx	eax, BYTE PTR ?pat_herring_dir@@3PAEA[rcx+rsi]
 
-; 475  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
+; 474  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
 
 	vmovss	xmm0, DWORD PTR ?pat_herring_x@@3PAMA[rsi+rcx*4]
 	test	al, al
@@ -21237,12 +21233,12 @@ $LN17@pat_herrin:
 	vmulss	xmm2, xmm1, xmm5
 	vaddss	xmm3, xmm2, xmm3
 
-; 476  : 		edges[2] = edges[0] + t.tileWidth;
+; 475  : 		edges[2] = edges[0] + t.tileWidth;
 
 	vaddss	xmm0, xmm4, xmm3
 	vmovss	DWORD PTR edges$[rsp+8], xmm0
 
-; 477  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
+; 476  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
 
 	vmovss	xmm0, DWORD PTR ?pat_herring_y@@3PAMA[rsi+rcx*4]
 	vsubss	xmm1, xmm0, DWORD PTR __real@3f000000
@@ -21250,27 +21246,27 @@ $LN17@pat_herrin:
 	vmovss	DWORD PTR edges$[rsp], xmm3
 	vaddss	xmm3, xmm2, xmm8
 
-; 478  : 		edges[1] = edges[3] + h;
+; 477  : 		edges[1] = edges[3] + h;
 
 	vaddss	xmm0, xmm3, xmm5
 
-; 479  : 	} else {
+; 478  : 	} else {
 
 	jmp	SHORT $LN19@pat_herrin
 $LN2@pat_herrin:
 
-; 480  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
+; 479  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
 
 	vsubss	xmm1, xmm0, DWORD PTR __real@3f000000
 	vmulss	xmm2, xmm1, xmm5
 	vaddss	xmm3, xmm2, xmm3
 
-; 481  : 		edges[2] = edges[0] + h;
+; 480  : 		edges[2] = edges[0] + h;
 
 	vaddss	xmm0, xmm3, xmm5
 	vmovss	DWORD PTR edges$[rsp+8], xmm0
 
-; 482  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
+; 481  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
 
 	vmovss	xmm0, DWORD PTR ?pat_herring_y@@3PAMA[rsi+rcx*4]
 	vsubss	xmm1, xmm0, DWORD PTR __real@3f800000
@@ -21278,14 +21274,14 @@ $LN2@pat_herrin:
 	vmovss	DWORD PTR edges$[rsp], xmm3
 	vaddss	xmm3, xmm2, xmm8
 
-; 483  : 		edges[1] = edges[3] + t.tileWidth;	
+; 482  : 		edges[1] = edges[3] + t.tileWidth;	
 
 	vaddss	xmm0, xmm4, xmm3
 $LN19@pat_herrin:
 
-; 484  : 	}
-; 485  : 
-; 486  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
+; 483  : 	}
+; 484  : 
+; 485  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
 
 	xor	r10d, r10d
 	vmovss	DWORD PTR edges$[rsp+4], xmm0
@@ -21308,7 +21304,7 @@ $LN12@pat_herrin:
 	vmovss	xmm0, DWORD PTR [rdx+8]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 488  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	movzx	edx, al
 	lea	eax, DWORD PTR [r8*4-101]
@@ -21319,7 +21315,7 @@ $LN12@pat_herrin:
 
 	imul	ecx, eax, 250				; 000000faH
 
-; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 488  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	lea	r8, QWORD PTR edges$[rsp]
 	lea	rdx, QWORD PTR $T1[rsp]
@@ -21332,7 +21328,7 @@ $LN12@pat_herrin:
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 488  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	add	ecx, r9d
 	mov	r9, rbx
@@ -21341,13 +21337,13 @@ $LN12@pat_herrin:
 
 	lea	eax, DWORD PTR [r10+rcx*4]
 
-; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 488  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	mov	rcx, rdi
 	mov	DWORD PTR [rsp+32], eax
 	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
 
-; 490  : }
+; 489  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
 	lea	r11, QWORD PTR [rsp+128]
@@ -21393,7 +21389,7 @@ t$ = 176
 id2$ = 184
 ?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::pat_xBond, COMDAT
 
-; 398  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
+; 397  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
 
 $LN57:
 	mov	QWORD PTR [rsp+8], rbx
@@ -21403,7 +21399,7 @@ $LN57:
 	push	r14
 	sub	rsp, 128				; 00000080H
 
-; 399  : 	TilePattern* pat = t.pattern;
+; 398  : 	TilePattern* pat = t.pattern;
 
 	mov	rbp, QWORD PTR [r8+112]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -21413,13 +21409,13 @@ $LN57:
 	xor	edi, edi
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 398  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
+; 397  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
 
 	mov	rsi, r8
 	mov	r14, rdx
 	mov	rbx, rcx
 
-; 401  : 	if (!pat) return TilePoint();
+; 400  : 	if (!pat) return TilePoint();
 
 	test	rbp, rbp
 	jne	SHORT $LN2@pat_xBond
@@ -21432,24 +21428,24 @@ $LN57:
 	mov	QWORD PTR [rcx+16], rdi
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 401  : 	if (!pat) return TilePoint();
+; 400  : 	if (!pat) return TilePoint();
 
 	jmp	$LN55@pat_xBond
 $LN2@pat_xBond:
 
-; 402  : 
-; 403  : 	float edges[4];
-; 404  : 	int id = 0;
-; 405  : 	int id2 = 0;
-; 406  : 	
-; 407  : 	// Tile top and bottom
-; 408  : 	float rand = 3.14f;
-; 409  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
+; 401  : 
+; 402  : 	float edges[4];
+; 403  : 	int id = 0;
+; 404  : 	int id2 = 0;
+; 405  : 	
+; 406  : 	// Tile top and bottom
+; 407  : 	float rand = 3.14f;
+; 408  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
 
 	vmovss	xmm1, DWORD PTR [r8+20]
 	vmovss	xmm0, DWORD PTR __real@4048f5c3
@@ -21469,7 +21465,7 @@ $LN2@pat_xBond:
 	vmovss	DWORD PTR [rsp+32], xmm1
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 410  : 	if (row == -1) return TilePoint();
+; 409  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
 	jne	SHORT $LN3@pat_xBond
@@ -21482,30 +21478,30 @@ $LN2@pat_xBond:
 	mov	QWORD PTR [rbx+16], rdi
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 410  : 	if (row == -1) return TilePoint();
+; 409  : 	if (row == -1) return TilePoint();
 
 	jmp	$LN55@pat_xBond
 $LN3@pat_xBond:
 
-; 411  : 
-; 412  : 	// Tile sides
-; 413  : 	rand = edges[3] * 1.325f + 31.41213f;
+; 410  : 
+; 411  : 	// Tile sides
+; 412  : 	rand = edges[3] * 1.325f + 31.41213f;
 
 	vmovss	xmm0, DWORD PTR edges$[rsp+12]
 	vmulss	xmm1, xmm0, DWORD PTR __real@3fa9999a
 
-; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 413  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
 	mov	rdx, QWORD PTR [rbp+32]
 	vaddss	xmm2, xmm1, DWORD PTR __real@41fb4c0b
 	vmovss	xmm1, DWORD PTR [rsi+8]
 
-; 415  : 	if (offset < 0) offset *= -id;
+; 414  : 	if (offset < 0) offset *= -id;
 
 	mov	ebp, DWORD PTR id$[rsp]
 	movsxd	rcx, eax
@@ -21518,11 +21514,11 @@ $LN3@pat_xBond:
 	vxorps	xmm0, xmm0, xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 413  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
 	vmulss	xmm6, xmm1, DWORD PTR [rcx+rdx]
 
-; 415  : 	if (offset < 0) offset *= -id;
+; 414  : 	if (offset < 0) offset *= -id;
 
 	vcomiss	xmm0, xmm6
 	jbe	SHORT $LN4@pat_xBond
@@ -21533,8 +21529,8 @@ $LN3@pat_xBond:
 	vmulss	xmm6, xmm6, xmm0
 $LN4@pat_xBond:
 
-; 416  : 
-; 417  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
+; 415  : 
+; 416  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
 
 	vmovss	xmm0, DWORD PTR [rsi+24]
 	vaddss	xmm3, xmm6, DWORD PTR [r14]
@@ -21551,7 +21547,7 @@ $LN4@pat_xBond:
 	vmovss	DWORD PTR [rsp+32], xmm0
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 418  : 	if (row == -1) return TilePoint();
+; 417  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
 	jne	SHORT $LN5@pat_xBond
@@ -21564,22 +21560,22 @@ $LN4@pat_xBond:
 	mov	QWORD PTR [rbx+16], rdi
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 418  : 	if (row == -1) return TilePoint();
+; 417  : 	if (row == -1) return TilePoint();
 
 	jmp	SHORT $LN54@pat_xBond
 $LN5@pat_xBond:
 
-; 419  : 
-; 420  : 	edges[0] -= offset;
+; 418  : 
+; 419  : 	edges[0] -= offset;
 
 	vmovss	xmm0, DWORD PTR edges$[rsp]
 
-; 421  : 	edges[2] -= offset;
+; 420  : 	edges[2] -= offset;
 
 	vmovss	xmm2, DWORD PTR edges$[rsp+8]
 	vsubss	xmm1, xmm0, xmm6
@@ -21592,11 +21588,11 @@ $LN5@pat_xBond:
 	vmovss	xmm0, DWORD PTR [r14]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 423  : 	id = generateID(id2, id);
+; 422  : 	id = generateID(id2, id);
 
 	lea	eax, DWORD PTR [rbp-101]
 
-; 426  : 	return drawTile(p, edges, t, id);	
+; 425  : 	return drawTile(p, edges, t, id);	
 
 	mov	DWORD PTR [rsp+40], edi
 
@@ -21604,7 +21600,7 @@ $LN5@pat_xBond:
 
 	imul	ecx, eax, 1000				; 000003e8H
 
-; 426  : 	return drawTile(p, edges, t, id);	
+; 425  : 	return drawTile(p, edges, t, id);	
 
 	lea	r8, QWORD PTR edges$[rsp]
 	vmovss	DWORD PTR edges$[rsp], xmm1
@@ -21621,7 +21617,7 @@ $LN5@pat_xBond:
 
 	add	ecx, DWORD PTR id2$[rsp]
 
-; 426  : 	return drawTile(p, edges, t, id);	
+; 425  : 	return drawTile(p, edges, t, id);	
 
 	lea	rdx, QWORD PTR $T1[rsp]
 	mov	DWORD PTR [rsp+32], ecx
@@ -21635,14 +21631,14 @@ $LN5@pat_xBond:
 	vmovss	DWORD PTR $T1[rsp+8], xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 426  : 	return drawTile(p, edges, t, id);	
+; 425  : 	return drawTile(p, edges, t, id);	
 
 	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
 $LN54@pat_xBond:
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
 $LN55@pat_xBond:
 
-; 427  : }
+; 426  : }
 
 	lea	r11, QWORD PTR [rsp+128]
 	mov	rax, rbx
@@ -21691,7 +21687,7 @@ id$ = 256
 dir$ = 264
 ?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z PROC ; Tile::drawTile, COMDAT
 
-; 267  : TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir) {
+; 266  : TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir) {
 
 $LN127:
 	mov	rax, rsp
@@ -21705,15 +21701,15 @@ $LN127:
 	lea	rbp, QWORD PTR [rax-79]
 	sub	rsp, 192				; 000000c0H
 
-; 268  : 	float hEdgeW = t.edgeWidth * .5f;
-; 269  : 	float hEdgeH = t.edgeHeight * .5f;
-; 270  : 			
-; 271  : 	float randomSeed = (float)id * 1.23f + 0.1234f;
+; 267  : 	float hEdgeW = t.edgeWidth * .5f;
+; 268  : 	float hEdgeH = t.edgeHeight * .5f;
+; 269  : 			
+; 270  : 	float randomSeed = (float)id * 1.23f + 0.1234f;
 
 	mov	r12d, DWORD PTR id$[rbp-137]
 	mov	rsi, r9
 
-; 272  : 	if (dir) {
+; 271  : 	if (dir) {
 
 	mov	r15d, DWORD PTR dir$[rbp-137]
 	mov	rdi, r8
@@ -21729,7 +21725,7 @@ $LN127:
 	vmulss	xmm6, xmm11, DWORD PTR [r9+16]
 	vmulss	xmm7, xmm11, DWORD PTR [r9+12]
 
-; 273  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 272  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	vmovss	xmm10, DWORD PTR __real@3f800000
 	vmovsd	xmm9, QWORD PTR __real@403f666666666666
@@ -21752,7 +21748,7 @@ $LN127:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 273  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 272  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+28]
 	vaddss	xmm1, xmm0, xmm10
@@ -21764,7 +21760,7 @@ $LN18@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rdi]
 	vmovss	DWORD PTR [rdi], xmm0
 
-; 274  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 273  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	cmp	BYTE PTR [rsi+37], 0
 	je	SHORT $LN19@drawTile
@@ -21779,7 +21775,7 @@ $LN18@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 274  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 273  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+28]
 	vaddss	xmm1, xmm0, xmm10
@@ -21789,7 +21785,7 @@ $LN19@drawTile:
 	vsubss	xmm1, xmm0, xmm7
 	vmovss	DWORD PTR [rdi+8], xmm1
 
-; 275  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 274  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	cmp	BYTE PTR [rsi+36], 0
 	je	SHORT $LN21@drawTile
@@ -21804,7 +21800,7 @@ $LN19@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 275  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 274  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+32]
 	vaddss	xmm1, xmm0, xmm10
@@ -21816,7 +21812,7 @@ $LN22@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rdi+12]
 	vmovss	DWORD PTR [rdi+12], xmm0
 
-; 276  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 275  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	cmp	BYTE PTR [rsi+36], 0
 	je	SHORT $LN23@drawTile
@@ -21831,7 +21827,7 @@ $LN22@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 276  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 275  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+32]
 	vaddss	xmm1, xmm0, xmm10
@@ -21840,12 +21836,12 @@ $LN23@drawTile:
 	vmovss	xmm0, DWORD PTR [rdi+4]
 	vsubss	xmm1, xmm0, xmm6
 
-; 277  : 	} else {
+; 276  : 	} else {
 
 	jmp	$LN124@drawTile
 $LN2@drawTile:
 
-; 278  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 277  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	cmp	BYTE PTR [r9+36], 0
 	je	SHORT $LN25@drawTile
@@ -21860,7 +21856,7 @@ $LN2@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 278  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 277  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+32]
 	vaddss	xmm1, xmm0, xmm10
@@ -21872,7 +21868,7 @@ $LN26@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rdi]
 	vmovss	DWORD PTR [rdi], xmm0
 
-; 279  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 278  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	cmp	BYTE PTR [rsi+36], 0
 	je	SHORT $LN27@drawTile
@@ -21887,7 +21883,7 @@ $LN26@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 279  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 278  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+32]
 	vaddss	xmm1, xmm0, xmm10
@@ -21897,7 +21893,7 @@ $LN27@drawTile:
 	vsubss	xmm1, xmm0, xmm6
 	vmovss	DWORD PTR [rdi+8], xmm1
 
-; 280  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 279  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	cmp	BYTE PTR [rsi+37], 0
 	je	SHORT $LN29@drawTile
@@ -21912,7 +21908,7 @@ $LN27@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 280  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 279  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+28]
 	vaddss	xmm1, xmm0, xmm10
@@ -21924,7 +21920,7 @@ $LN30@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rdi+12]
 	vmovss	DWORD PTR [rdi+12], xmm0
 
-; 281  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 280  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	cmp	BYTE PTR [rsi+37], 0
 	je	SHORT $LN31@drawTile
@@ -21939,7 +21935,7 @@ $LN30@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 281  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 280  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	vmulss	xmm0, xmm0, DWORD PTR [rsi+28]
 	vaddss	xmm1, xmm0, xmm10
@@ -21952,42 +21948,42 @@ $LN124@drawTile:
 	vmovaps	xmm9, XMMWORD PTR [rsp+128]
 	vmovss	DWORD PTR [rdi+4], xmm1
 
-; 282  : 	}
-; 283  : 
-; 284  : 	if (p.x < edges[0]) return TilePoint();
+; 281  : 	}
+; 282  : 
+; 283  : 	if (p.x < edges[0]) return TilePoint();
 
 	vmovss	xmm0, DWORD PTR [r14]
 	vmovss	xmm1, DWORD PTR [rdi]
 	vcomiss	xmm1, xmm0
 	ja	$LN9@drawTile
 
-; 285  : 	if (p.x > edges[2]) return TilePoint();
+; 284  : 	if (p.x > edges[2]) return TilePoint();
 
 	vmovss	xmm4, DWORD PTR [rdi+8]
 	vcomiss	xmm0, xmm4
 	ja	$LN9@drawTile
 
-; 286  : 	if (p.y < edges[3]) return TilePoint();
+; 285  : 	if (p.y < edges[3]) return TilePoint();
 
 	vmovss	xmm2, DWORD PTR [r14+4]
 	vmovss	xmm3, DWORD PTR [rdi+12]
 	vcomiss	xmm3, xmm2
 	ja	$LN9@drawTile
 
-; 287  : 	if (p.y > edges[1]) return TilePoint();
+; 286  : 	if (p.y > edges[1]) return TilePoint();
 
 	vmovss	xmm5, DWORD PTR [rdi+4]
 	vcomiss	xmm2, xmm5
 	ja	$LN9@drawTile
 
-; 288  : 
-; 289  : 	float width = edges[2] - edges[0];
+; 287  : 
+; 288  : 	float width = edges[2] - edges[0];
 
 	vsubss	xmm6, xmm4, xmm1
 	vxorps	xmm7, xmm7, xmm7
 
-; 290  : 	float height = edges[1] - edges[3];
-; 291  : 	if (width < 0 || height < 0) return TilePoint();
+; 289  : 	float height = edges[1] - edges[3];
+; 290  : 	if (width < 0 || height < 0) return TilePoint();
 
 	vcomiss	xmm7, xmm6
 	vsubss	xmm4, xmm5, xmm3
@@ -21995,8 +21991,8 @@ $LN124@drawTile:
 	vcomiss	xmm7, xmm4
 	ja	$LN9@drawTile
 
-; 292  : 
-; 293  : 	TilePoint tp = corner(p.x - edges[0], p.y - edges[3], width, height, t);	
+; 291  : 
+; 292  : 	TilePoint tp = corner(p.x - edges[0], p.y - edges[3], width, height, t);	
 
 	vsubss	xmm2, xmm2, xmm3
 	vmovaps	xmm3, xmm6
@@ -22006,7 +22002,7 @@ $LN124@drawTile:
 	vmovss	DWORD PTR [rsp+32], xmm4
 	call	?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z ; Tile::corner
 
-; 294  : 	if (tp.d < 0) return tp; // On edge
+; 293  : 	if (tp.d < 0) return tp; // On edge
 
 	vmovss	xmm6, DWORD PTR tp$[rbp-113]
 	vcomiss	xmm7, xmm6
@@ -22026,16 +22022,16 @@ $LN124@drawTile:
 	mov	DWORD PTR [rbx+28], eax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 294  : 	if (tp.d < 0) return tp; // On edge
+; 293  : 	if (tp.d < 0) return tp; // On edge
 
 	jmp	$LN125@drawTile
 $LN10@drawTile:
 
-; 295  : 
-; 296  : 	//if (t.tileID || t.mapUV)
-; 297  : 		tp.id = id;
-; 298  : 
-; 299  : 	if (t.center || (t.mapUV && dir))
+; 294  : 
+; 295  : 	//if (t.tileID || t.mapUV)
+; 296  : 		tp.id = id;
+; 297  : 
+; 298  : 	if (t.center || (t.mapUV && dir))
 
 	cmp	DWORD PTR [rsi+104], 0
 	vmovss	xmm8, DWORD PTR __xmm@80000000800000008000000080000000
@@ -22047,7 +22043,7 @@ $LN10@drawTile:
 	je	$LN123@drawTile
 $LN12@drawTile:
 
-; 300  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
+; 299  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
 
 	vmovss	xmm0, DWORD PTR [rdi+8]
 	vsubss	xmm1, xmm0, DWORD PTR [rdi]
@@ -22063,7 +22059,7 @@ $LN12@drawTile:
 	vmovss	DWORD PTR $T2[rbp-129], xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 300  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
+; 299  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
 
 	mov	eax, DWORD PTR $T2[rbp-129]
 	vmulss	xmm2, xmm1, xmm11
@@ -22073,14 +22069,14 @@ $LN12@drawTile:
 	mov	DWORD PTR tp$[rbp-129], eax
 $LN11@drawTile:
 
-; 301  : 		                   edges[3] + (edges[1] - edges[3]) * .5f, p.z);
-; 302  : 
-; 303  : 	if (dir) {
+; 300  : 		                   edges[3] + (edges[1] - edges[3]) * .5f, p.z);
+; 301  : 
+; 302  : 	if (dir) {
 
 	test	r15d, r15d
 	je	$LN123@drawTile
 
-; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 303  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vmovss	xmm5, DWORD PTR tp$[rbp-137]
 	vmovss	xmm4, DWORD PTR tp$[rbp-133]
@@ -22091,24 +22087,24 @@ $LN11@drawTile:
 	vmovss	xmm7, DWORD PTR tp$[rbp-129]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 303  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vxorps	xmm0, xmm5, xmm8
 
-; 261  : 	edges[0] += x;
+; 260  : 	edges[0] += x;
 
 	vaddss	xmm3, xmm0, DWORD PTR [rdi]
 
-; 262  : 	edges[2] += x;
+; 261  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm0, DWORD PTR [rdi+8]
 	vmovss	DWORD PTR [rdi+8], xmm0
 
-; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 303  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vxorps	xmm2, xmm4, xmm8
 
-; 264  : 	edges[1] += y;
+; 263  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rdi+4]
 	vaddss	xmm1, xmm2, DWORD PTR [rdi+12]
@@ -22125,16 +22121,16 @@ $LN11@drawTile:
 	vxorps	xmm0, xmm0, xmm8
 	vmovss	DWORD PTR [rdi+8], xmm0
 
-; 261  : 	edges[0] += x;
+; 260  : 	edges[0] += x;
 
 	vaddss	xmm1, xmm5, DWORD PTR [rdi]
 
-; 262  : 	edges[2] += x;
+; 261  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm5, DWORD PTR [rdi+8]
 	vmovss	DWORD PTR [rdi+8], xmm0
 
-; 264  : 	edges[1] += y;
+; 263  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm4, DWORD PTR [rdi+4]
 	vmovss	DWORD PTR [rdi], xmm1
@@ -22175,7 +22171,7 @@ $LN123@drawTile:
 $LN13@drawTile:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 311  : 	if (t.mapUV)
+; 310  : 	if (t.mapUV)
 
 	cmp	DWORD PTR [rsi+60], 0
 	je	SHORT $LN14@drawTile
@@ -22189,7 +22185,7 @@ $LN13@drawTile:
 	vmovss	xmm0, DWORD PTR [r14+8]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 312  : 		uvMapping(tp, p, edges, t, dir);
+; 311  : 		uvMapping(tp, p, edges, t, dir);
 
 	mov	r9, rsi
 	mov	DWORD PTR [rsp+32], r15d
@@ -22204,7 +22200,7 @@ $LN13@drawTile:
 	vmovss	DWORD PTR $T1[rbp-133], xmm1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 312  : 		uvMapping(tp, p, edges, t, dir);
+; 311  : 		uvMapping(tp, p, edges, t, dir);
 
 	call	?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z ; Tile::uvMapping
 	vmovss	xmm4, DWORD PTR tp$[rbp-133]
@@ -22214,31 +22210,31 @@ $LN13@drawTile:
 	vmovss	xmm7, DWORD PTR tp$[rbp-129]
 $LN14@drawTile:
 
-; 313  : 
-; 314  : 	if (dir) {
+; 312  : 
+; 313  : 	if (dir) {
 
 	test	r15d, r15d
 	je	$LN15@drawTile
 
-; 315  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 314  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vxorps	xmm0, xmm5, xmm8
 
-; 261  : 	edges[0] += x;
+; 260  : 	edges[0] += x;
 
 	vaddss	xmm3, xmm0, DWORD PTR [rdi]
 
-; 262  : 	edges[2] += x;
+; 261  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm0, DWORD PTR [rdi+8]
 	vmovss	DWORD PTR [rdi+8], xmm0
 	vmovss	DWORD PTR [rdi], xmm3
 
-; 315  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 314  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vxorps	xmm2, xmm4, xmm8
 
-; 264  : 	edges[1] += y;
+; 263  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rdi+4]
 	vaddss	xmm1, xmm2, DWORD PTR [rdi+12]
@@ -22257,21 +22253,21 @@ $LN14@drawTile:
 	vxorps	xmm0, xmm0, xmm8
 	vmovss	DWORD PTR [rdi+4], xmm0
 
-; 261  : 	edges[0] += x;
+; 260  : 	edges[0] += x;
 
 	vaddss	xmm1, xmm5, DWORD PTR [rdi]
 
-; 262  : 	edges[2] += x;
+; 261  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm5, DWORD PTR [rdi+8]
 	vmovss	DWORD PTR [rdi], xmm1
 
-; 263  : 	edges[3] += y;
+; 262  : 	edges[3] += y;
 
 	vaddss	xmm1, xmm4, DWORD PTR [rdi+12]
 	vmovss	DWORD PTR [rdi+8], xmm0
 
-; 264  : 	edges[1] += y;
+; 263  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm4, DWORD PTR [rdi+4]
 	vmovss	DWORD PTR [rdi+12], xmm1
@@ -22324,7 +22320,7 @@ $LN15@drawTile:
 	mov	DWORD PTR [rbx+28], r12d
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 322  : 	return tp;	
+; 321  : 	return tp;	
 
 	jmp	SHORT $LN125@drawTile
 $LN9@drawTile:
@@ -22338,13 +22334,13 @@ $LN9@drawTile:
 	mov	QWORD PTR [rbx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
 $LN125@drawTile:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 323  : }
+; 322  : }
 
 	lea	r11, QWORD PTR [rsp+192]
 	mov	rax, rbx
@@ -22383,7 +22379,7 @@ t$ = 232
 dir$ = 240
 ?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z PROC ; Tile::uvMapping, COMDAT
 
-; 162  : void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int dir) {
+; 161  : void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int dir) {
 
 $LN49:
 	mov	rax, rsp
@@ -22392,11 +22388,11 @@ $LN49:
 	push	rdi
 	sub	rsp, 192				; 000000c0H
 
-; 163  : 	float w = edges[2] - edges[0];
+; 162  : 	float w = edges[2] - edges[0];
 
 	vmovss	xmm0, DWORD PTR [r8+8]
 
-; 164  : 	float h = edges[1] - edges[3];
+; 163  : 	float h = edges[1] - edges[3];
 
 	vmovss	xmm1, DWORD PTR [r8+4]
 	vmovaps	XMMWORD PTR [rax-24], xmm6
@@ -22408,15 +22404,15 @@ $LN49:
 	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vsubss	xmm10, xmm0, DWORD PTR [r8]
 
-; 165  : 		
-; 166  : 	// Center uvw
-; 167  : 	Point3 uvw;
-; 168  : 	uvw.x = p.x - edges[0] - w * .5f;
+; 164  : 		
+; 165  : 	// Center uvw
+; 166  : 	Point3 uvw;
+; 167  : 	uvw.x = p.x - edges[0] - w * .5f;
 
 	vmovss	xmm0, DWORD PTR [rdx]
 	vsubss	xmm2, xmm0, DWORD PTR [r8]
 
-; 169  : 	uvw.y = p.y - edges[3] - h * .5f;
+; 168  : 	uvw.y = p.y - edges[3] - h * .5f;
 
 	vmovss	xmm0, DWORD PTR [rdx+4]
 	vmovaps	XMMWORD PTR [rax-104], xmm11
@@ -22427,13 +22423,13 @@ $LN49:
 	vsubss	xmm8, xmm2, xmm1
 	vsubss	xmm2, xmm0, DWORD PTR [r8+12]
 
-; 170  : 	uvw.z = p.z;
+; 169  : 	uvw.z = p.z;
 
 	vmovss	xmm0, DWORD PTR [rdx+8]
 
-; 171  : 
-; 172  : 	// Prime randomness
-; 173  : 	srand(tp.id*(tp.id*tp.id*15731 + 789221));
+; 170  : 
+; 171  : 	// Prime randomness
+; 172  : 	srand(tp.id*(tp.id*tp.id*15731 + 789221));
 
 	mov	edx, DWORD PTR [rcx+28]
 	mov	eax, edx
@@ -22450,18 +22446,18 @@ $LN49:
 	imul	ecx, edx
 	call	QWORD PTR __imp_srand
 
-; 174  : 
-; 175  : 	// Angle
-; 176  : 	float angle = getAngle(t.rotUV, t.randRot);
+; 173  : 
+; 174  : 	// Angle
+; 175  : 	float angle = getAngle(t.rotUV, t.randRot);
 
 	vmovss	xmm1, DWORD PTR [rbx+88]
 	mov	ecx, DWORD PTR [rbx+84]
 	call	?getAngle@@YAMHM@Z			; getAngle
 
-; 177  : 
-; 178  : 	// Random scale
-; 179  : 	float scaleX = 0, scaleY = 0;			//avoid error C4701
-; 180  : 	switch (t.autoScale) {
+; 176  : 
+; 177  : 	// Random scale
+; 178  : 	float scaleX = 0, scaleY = 0;			//avoid error C4701
+; 179  : 	switch (t.autoScale) {
 
 	mov	edi, DWORD PTR [rbx+56]
 	mov	ecx, edi
@@ -22480,10 +22476,10 @@ $LN49:
 	cmp	ecx, 1
 	jne	SHORT $LN2@uvMapping
 
-; 195  : 		case 5: { // UV Norm. Keep aspect
-; 196  : 			float s = MAX(t.tileMaxWidth, t.tileMaxHeight);		
-; 197  : 			scaleX = s;
-; 198  : 			scaleY = s;
+; 194  : 		case 5: { // UV Norm. Keep aspect
+; 195  : 			float s = MAX(t.tileMaxWidth, t.tileMaxHeight);		
+; 196  : 			scaleX = s;
+; 197  : 			scaleY = s;
 
 	vmovss	xmm0, DWORD PTR [rbx+124]
 	vmaxss	xmm6, xmm0, DWORD PTR [rbx+120]
@@ -22491,38 +22487,38 @@ $LN49:
 	jmp	SHORT $LN2@uvMapping
 $LN7@uvMapping:
 
-; 191  : 		case 4: { // UV Norm.
-; 192  : 			scaleX = t.tileMaxWidth;
+; 190  : 		case 4: { // UV Norm.
+; 191  : 			scaleX = t.tileMaxWidth;
 
 	vmovss	xmm6, DWORD PTR [rbx+124]
 
-; 193  : 			scaleY = t.tileMaxHeight;
+; 192  : 			scaleY = t.tileMaxHeight;
 
 	vmovss	xmm9, DWORD PTR [rbx+120]
 
-; 194  : 			break; }
+; 193  : 			break; }
 
 	jmp	SHORT $LN2@uvMapping
 $LN6@uvMapping:
 	vmaxss	xmm6, xmm10, xmm11
 
-; 183  : 			break; }		
-; 184  : 		case 2: { // UV Fit
-; 185  : 			scaleX = w; scaleY = h; // Same as UV, but with additiona scaling below
-; 186  : 			break; }
-; 187  : 		case 3: { // UV Fit Keep aspect
-; 188  : 			float s = MAX(w, h);		
-; 189  : 			scaleX = s; scaleY = s;
+; 182  : 			break; }		
+; 183  : 		case 2: { // UV Fit
+; 184  : 			scaleX = w; scaleY = h; // Same as UV, but with additiona scaling below
+; 185  : 			break; }
+; 186  : 		case 3: { // UV Fit Keep aspect
+; 187  : 			float s = MAX(w, h);		
+; 188  : 			scaleX = s; scaleY = s;
 
 	vmovaps	xmm9, xmm6
 
-; 190  : 			break; }
+; 189  : 			break; }
 
 	jmp	SHORT $LN2@uvMapping
 $LN4@uvMapping:
 
-; 181  : 		case 1: { // UV
-; 182  : 			scaleX = w; scaleY = h;
+; 180  : 		case 1: { // UV
+; 181  : 			scaleX = w; scaleY = h;
 
 	vmovaps	xmm9, xmm11
 	vmovaps	xmm6, xmm10
@@ -22532,16 +22528,16 @@ $LN2@uvMapping:
 	cmp	eax, 1
 	ja	SHORT $LN9@uvMapping
 
-; 199  : 			break; }		
-; 200  : 	}
-; 201  : 
-; 202  : 	// Calculate scaling required to fit UVs tightly around the tile
-; 203  : 	if ((t.autoScale == 2 || t.autoScale == 3) && t.rotUV) { // Scale based on rotation so whole tile stays inside 0..1 space
+; 198  : 			break; }		
+; 199  : 	}
+; 200  : 
+; 201  : 	// Calculate scaling required to fit UVs tightly around the tile
+; 202  : 	if ((t.autoScale == 2 || t.autoScale == 3) && t.rotUV) { // Scale based on rotation so whole tile stays inside 0..1 space
 
 	cmp	DWORD PTR [rbx+84], 0
 	je	SHORT $LN9@uvMapping
 
-; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 203  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vandps	xmm0, xmm13, DWORD PTR __xmm@7fffffff7fffffff7fffffff7fffffff
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -22551,7 +22547,7 @@ $LN2@uvMapping:
 	vmovss	xmm1, DWORD PTR __real@3fc90fdb
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 203  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vxorps	xmm0, xmm0, xmm10
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -22561,7 +22557,7 @@ $LN2@uvMapping:
 	call	fmodf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 203  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vaddss	xmm0, xmm0, DWORD PTR __real@3f490fdb
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -22571,42 +22567,42 @@ $LN2@uvMapping:
 	call	cosf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 203  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vmulss	xmm1, xmm0, DWORD PTR __real@3fb504f3
 
-; 205  : 		scaleX *= scale;
+; 204  : 		scaleX *= scale;
 
 	vmulss	xmm6, xmm6, xmm1
 
-; 206  : 		scaleY *= scale;
+; 205  : 		scaleY *= scale;
 
 	vmulss	xmm9, xmm9, xmm1
 $LN9@uvMapping:
 
-; 207  : 	}	
-; 208  : 
-; 209  : 	// Apply auto scale
-; 210  : 	if (t.autoScale) {
+; 206  : 	}	
+; 207  : 
+; 208  : 	// Apply auto scale
+; 209  : 	if (t.autoScale) {
 
 	test	edi, edi
 	je	SHORT $LN11@uvMapping
 
-; 211  : 		uvw.x /= scaleX;
+; 210  : 		uvw.x /= scaleX;
 
 	vdivss	xmm8, xmm8, xmm6
 
-; 212  : 		uvw.y /= scaleY;
+; 211  : 		uvw.y /= scaleY;
 
 	vdivss	xmm7, xmm7, xmm9
 	vmovss	DWORD PTR uvw$[rsp], xmm8
 	vmovss	DWORD PTR uvw$[rsp+4], xmm7
 $LN11@uvMapping:
 
-; 213  : 	}
-; 214  : 
-; 215  : 	// Flip
-; 216  : 	if (t.flipX) if (rand() % 2) uvw.x = -uvw.x;
+; 212  : 	}
+; 213  : 
+; 214  : 	// Flip
+; 215  : 	if (t.flipX) if (rand() % 2) uvw.x = -uvw.x;
 
 	cmp	DWORD PTR [rbx+92], 0
 	je	SHORT $LN13@uvMapping
@@ -22623,7 +22619,7 @@ $LN47@uvMapping:
 	vmovss	DWORD PTR uvw$[rsp], xmm8
 $LN13@uvMapping:
 
-; 217  : 	if (t.flipY) if (rand() % 2) uvw.y = -uvw.y;
+; 216  : 	if (t.flipY) if (rand() % 2) uvw.y = -uvw.y;
 
 	cmp	DWORD PTR [rbx+96], 0
 	je	SHORT $LN15@uvMapping
@@ -22640,21 +22636,21 @@ $LN46@uvMapping:
 	vmovss	DWORD PTR uvw$[rsp+4], xmm7
 $LN15@uvMapping:
 
-; 218  : 	
-; 219  : 	// Random scale
-; 220  : 	if (t.randScale) {
+; 217  : 	
+; 218  : 	// Random scale
+; 219  : 	if (t.randScale) {
 
 	cmp	BYTE PTR [rbx+128], 0
 	vmovsd	xmm6, QWORD PTR __real@40dfffc000000000
 	vmovsd	xmm9, QWORD PTR __real@3ff0000000000000
 	je	$LN16@uvMapping
 
-; 221  : 		if (t.lock) {
+; 220  : 		if (t.lock) {
 
 	cmp	DWORD PTR [rbx+80], 0
 	je	SHORT $LN17@uvMapping
 
-; 222  : 			float s = 1.f + SFRAND() * t.randSX;
+; 221  : 			float s = 1.f + SFRAND() * t.randSX;
 
 	call	QWORD PTR __imp_rand
 	vmovss	xmm1, DWORD PTR [rbx+72]
@@ -22666,17 +22662,17 @@ $LN15@uvMapping:
 	vaddsd	xmm0, xmm2, xmm9
 	vcvtsd2ss xmm10, xmm0, xmm0
 
-; 223  : 			scaleX = s;
-; 224  : 			scaleY = s;
+; 222  : 			scaleX = s;
+; 223  : 			scaleY = s;
 
 	vmovaps	xmm1, xmm10
 
-; 225  : 		} else {
+; 224  : 		} else {
 
 	jmp	SHORT $LN18@uvMapping
 $LN17@uvMapping:
 
-; 226  : 			scaleX = 1.f + SFRAND() * t.randSX;
+; 225  : 			scaleX = 1.f + SFRAND() * t.randSX;
 
 	call	QWORD PTR __imp_rand
 	vmovss	xmm1, DWORD PTR [rbx+72]
@@ -22688,7 +22684,7 @@ $LN17@uvMapping:
 	vaddsd	xmm0, xmm2, xmm9
 	vcvtsd2ss xmm10, xmm0, xmm0
 
-; 227  : 			scaleY = 1.f + SFRAND() * t.randSY;
+; 226  : 			scaleY = 1.f + SFRAND() * t.randSY;
 
 	call	QWORD PTR __imp_rand
 	vmovss	xmm1, DWORD PTR [rbx+76]
@@ -22701,33 +22697,33 @@ $LN17@uvMapping:
 	vcvtsd2ss xmm1, xmm0, xmm0
 $LN18@uvMapping:
 
-; 228  : 		}
-; 229  : 
-; 230  : 		if (scaleX < 0) scaleX = 0.f;
-; 231  : 		if (scaleY < 0) scaleY = 0.f;
-; 232  : 
-; 233  : 		uvw.x /= scaleX;	 
+; 227  : 		}
+; 228  : 
+; 229  : 		if (scaleX < 0) scaleX = 0.f;
+; 230  : 		if (scaleY < 0) scaleY = 0.f;
+; 231  : 
+; 232  : 		uvw.x /= scaleX;	 
 
 	vmaxss	xmm0, xmm14, xmm10
 	vdivss	xmm8, xmm8, xmm0
 	vmaxss	xmm0, xmm14, xmm1
 
-; 234  : 		uvw.y /= scaleY;
+; 233  : 		uvw.y /= scaleY;
 
 	vdivss	xmm7, xmm7, xmm0
 	vmovss	DWORD PTR uvw$[rsp+4], xmm7
 	vmovss	DWORD PTR uvw$[rsp], xmm8
 $LN16@uvMapping:
 
-; 235  : 	}
-; 236  : 
-; 237  : 	// Offset
-; 238  : 	if (t.randOffset) {
+; 234  : 	}
+; 235  : 
+; 236  : 	// Offset
+; 237  : 	if (t.randOffset) {
 
 	cmp	BYTE PTR [rbx+129], 0
 	je	SHORT $LN21@uvMapping
 
-; 239  : 		uvw.x += UFRAND() * t.randX;
+; 238  : 		uvw.x += UFRAND() * t.randX;
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
@@ -22743,7 +22739,7 @@ $LN16@uvMapping:
 	vcvtsd2ss xmm8, xmm2, xmm2
 	vmovss	DWORD PTR uvw$[rsp], xmm8
 
-; 240  : 		uvw.y += UFRAND() * t.randY;
+; 239  : 		uvw.y += UFRAND() * t.randY;
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
@@ -22760,10 +22756,10 @@ $LN16@uvMapping:
 	vmovss	DWORD PTR uvw$[rsp+4], xmm7
 $LN21@uvMapping:
 
-; 241  : 	}
-; 242  : 
-; 243  : 	// Rotate
-; 244  : 	if (t.rotUV)
+; 240  : 	}
+; 241  : 
+; 242  : 	// Rotate
+; 243  : 	if (t.rotUV)
 
 	cmp	DWORD PTR [rbx+84], 0
 	je	SHORT $LN22@uvMapping
@@ -22798,34 +22794,34 @@ $LN21@uvMapping:
 	vmovaps	xmm7, xmm4
 $LN22@uvMapping:
 
-; 245  : 		rotatePoint2(uvw, angle);
-; 246  : 
-; 247  : 	// Offset to 0..1
-; 248  : 	if (t.autoScale) {
+; 244  : 		rotatePoint2(uvw, angle);
+; 245  : 
+; 246  : 	// Offset to 0..1
+; 247  : 	if (t.autoScale) {
 
 	cmp	DWORD PTR [rbx+56], 0
 	je	SHORT $LN23@uvMapping
 
-; 249  : 		uvw.x += .5f;
+; 248  : 		uvw.x += .5f;
 
 	vaddss	xmm0, xmm8, xmm12
 
-; 250  : 		uvw.y += .5f;
+; 249  : 		uvw.y += .5f;
 
 	vaddss	xmm1, xmm7, xmm12
 	vmovss	DWORD PTR uvw$[rsp], xmm0
 	vmovss	DWORD PTR uvw$[rsp+4], xmm1
 $LN23@uvMapping:
 
-; 251  : 	}
-; 252  : 
-; 253  : 	// Return
-; 254  : 	tp.uvw = uvw;
+; 250  : 	}
+; 251  : 
+; 252  : 	// Return
+; 253  : 	tp.uvw = uvw;
 
 	vmovsd	xmm0, QWORD PTR uvw$[rsp]
 	mov	eax, DWORD PTR uvw$[rsp+8]
 
-; 255  : }
+; 254  : }
 
 	lea	r11, QWORD PTR [rsp+192]
 	mov	rbx, QWORD PTR [r11+16]
@@ -23121,7 +23117,7 @@ $LN11@corner:
 	mov	QWORD PTR [rcx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
@@ -23211,7 +23207,7 @@ $LN34@corner:
 	mov	QWORD PTR [rbx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	vmovss	DWORD PTR [rbx+24], xmm3
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
@@ -23297,7 +23293,7 @@ $LN82@corner:
 	vmovss	DWORD PTR $T2[rbp-97], xmm11
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	mov	eax, DWORD PTR $T2[rbp-97]
 	mov	DWORD PTR $T4[rbp-85], eax
@@ -23317,7 +23313,7 @@ $LN82@corner:
 	vdivss	xmm2, xmm7, xmm9
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	vunpcklps xmm2, xmm3, xmm2
 	vmovsd	QWORD PTR $T4[rbp-93], xmm2
@@ -23332,7 +23328,7 @@ $LN24@corner:
 	vdivss	xmm1, xmm7, xmm9
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	vunpcklps xmm1, xmm2, xmm1
 	vmovsd	QWORD PTR $T3[rbp-93], xmm1
@@ -23382,7 +23378,7 @@ $LN22@corner:
 	mov	QWORD PTR [rbx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	mov	DWORD PTR [rbx+24], 1065353216		; 3f800000H
 $LN86@corner:
@@ -23394,7 +23390,7 @@ $LN86@corner:
 	vdivss	xmm1, xmm8, xmm10
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	vunpcklps xmm0, xmm1, xmm0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -23404,7 +23400,7 @@ $LN86@corner:
 	vmovss	DWORD PTR $T1[rbp-97], xmm11
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	mov	eax, DWORD PTR $T1[rbp-97]
 	vmovsd	QWORD PTR [rbx+12], xmm0
@@ -23545,7 +23541,7 @@ y$ = 24
 	mov	QWORD PTR [rcx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 167  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
 	vmovsd	xmm0, QWORD PTR [rdx]
 	vmovsd	QWORD PTR [rcx+12], xmm0
@@ -23574,7 +23570,7 @@ this$ = 8
 	mov	QWORD PTR [rcx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 164  : 	TilePoint() {d = -1.f;}	
+; 165  : 	TilePoint() {d = -1.f;}	
 
 	mov	rax, rcx
 	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
@@ -23650,11 +23646,11 @@ $T20 = 112
 $T21 = 112
 ?setPreset@TilePattern@@QEAAXH@Z PROC			; TilePattern::setPreset, COMDAT
 
-; 492  : void TilePattern::setPreset(int preset) {
+; 491  : void TilePattern::setPreset(int preset) {
 
 $LN928:
 
-; 493  : 	switch (preset) {
+; 492  : 	switch (preset) {
 
 	cmp	edx, 9
 	ja	$LN926@setPreset
@@ -23664,11 +23660,11 @@ $LN928:
 	mov	QWORD PTR $T1[rbp-80], -2
 	mov	QWORD PTR [rsp+96], rbx
 
-; 492  : void TilePattern::setPreset(int preset) {
+; 491  : void TilePattern::setPreset(int preset) {
 
 	mov	rbx, rcx
 
-; 493  : 	switch (preset) {
+; 492  : 	switch (preset) {
 
 	movsxd	rax, edx
 	lea	rcx, OFFSET FLAT:__ImageBase
@@ -23677,7 +23673,7 @@ $LN928:
 	jmp	rdx
 $LN4@setPreset:
 
-; 494  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
+; 493  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
 
 	lea	rax, QWORD PTR $T11[rbp-80]
 	mov	QWORD PTR $T21[rbp-80], rax
@@ -23707,12 +23703,12 @@ $LN4@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 494  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
+; 493  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
 
 	jmp	$LN927@setPreset
 $LN5@setPreset:
 
-; 495  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
+; 494  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
 
 	lea	rax, QWORD PTR $T10[rbp-80]
 	mov	QWORD PTR $T20[rbp-80], rax
@@ -23742,12 +23738,12 @@ $LN5@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 495  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
+; 494  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
 
 	jmp	$LN927@setPreset
 $LN6@setPreset:
 
-; 496  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
+; 495  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
 
 	lea	rax, QWORD PTR $T9[rbp-80]
 	mov	QWORD PTR $T19[rbp-80], rax
@@ -23777,12 +23773,12 @@ $LN6@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 496  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
+; 495  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
 
 	jmp	$LN927@setPreset
 $LN7@setPreset:
 
-; 497  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
+; 496  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
 
 	lea	rax, QWORD PTR $T8[rbp-80]
 	mov	QWORD PTR $T18[rbp-80], rax
@@ -23812,12 +23808,12 @@ $LN7@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 497  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
+; 496  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
 
 	jmp	$LN927@setPreset
 $LN8@setPreset:
 
-; 498  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
+; 497  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
 
 	lea	rax, QWORD PTR $T7[rbp-80]
 	mov	QWORD PTR $T17[rbp-80], rax
@@ -23847,12 +23843,12 @@ $LN8@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 498  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
+; 497  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
 
 	jmp	$LN927@setPreset
 $LN9@setPreset:
 
-; 499  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
+; 498  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
 
 	lea	rax, QWORD PTR $T6[rbp-80]
 	mov	QWORD PTR $T16[rbp-80], rax
@@ -23882,12 +23878,12 @@ $LN9@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 499  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
+; 498  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
 
 	jmp	$LN927@setPreset
 $LN10@setPreset:
 
-; 500  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
+; 499  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
 
 	lea	rax, QWORD PTR $T5[rbp-80]
 	mov	QWORD PTR $T15[rbp-80], rax
@@ -23917,12 +23913,12 @@ $LN10@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 500  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
+; 499  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
 
 	jmp	$LN927@setPreset
 $LN11@setPreset:
 
-; 501  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
+; 500  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
 
 	lea	rax, QWORD PTR $T4[rbp-80]
 	mov	QWORD PTR $T14[rbp-80], rax
@@ -23952,12 +23948,12 @@ $LN11@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 501  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
+; 500  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
 
 	jmp	SHORT $LN927@setPreset
 $LN12@setPreset:
 
-; 502  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
+; 501  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
 
 	lea	rax, QWORD PTR $T3[rbp-80]
 	mov	QWORD PTR $T13[rbp-80], rax
@@ -23987,12 +23983,12 @@ $LN12@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 502  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
+; 501  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
 
 	jmp	SHORT $LN927@setPreset
 $LN13@setPreset:
 
-; 503  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
+; 502  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
 
 	lea	rax, QWORD PTR $T2[rbp-80]
 	mov	QWORD PTR $T12[rbp-80], rax
@@ -24023,15 +24019,15 @@ $LN13@setPreset:
 $LN927@setPreset:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 503  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
+; 502  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
 
 	lea	rdx, QWORD PTR $T2[rbp-80]
 	mov	rcx, rbx
 	call	?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z ; TilePattern::setPattern
 $LN2@setPreset:
 
-; 504  : 	}
-; 505  : }
+; 503  : 	}
+; 504  : }
 
 	mov	rbx, QWORD PTR [rsp+96]
 	add	rsp, 80					; 00000050H
@@ -24658,19 +24654,19 @@ _TEXT	SEGMENT
 this$ = 16
 ?update@TilePattern@@QEAAXXZ PROC			; TilePattern::update, COMDAT
 
-; 81   : 	void update() {
+; 82   : 	void update() {
 
 $LN72:
 	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
 
-; 82   : 		totalHeight = 0.f;
+; 83   : 		totalHeight = 0.f;
 
 	xor	esi, esi
 	mov	r11, rcx
 	mov	DWORD PTR [rcx], esi
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	mov	edi, esi
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -24682,7 +24678,7 @@ $LN72:
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	test	rax, rax
 	je	$LN3@update
@@ -24698,7 +24694,7 @@ $LL4@update:
 	mov	r8, QWORD PTR [r11+32]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	mov	r10d, esi
 	mov	DWORD PTR [rdx+r8+4], esi
@@ -24711,12 +24707,12 @@ $LL4@update:
 	sar	rax, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	test	rax, rax
 	je	SHORT $LN30@update
 
-; 66   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tiles[i];
 
 	mov	r9, QWORD PTR [rdx+r8+8]
 	vxorps	xmm0, xmm0, xmm0
@@ -24731,7 +24727,7 @@ $LL31@update:
 	mov	rcx, QWORD PTR [rdx+r8+16]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	lea	r9, QWORD PTR [r9+4]
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -24741,7 +24737,7 @@ $LL31@update:
 	sub	rcx, QWORD PTR [rdx+r8+8]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	inc	r10d
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -24751,15 +24747,15 @@ $LL31@update:
 	sar	rcx, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	movsxd	rax, r10d
 	cmp	rax, rcx
 	jb	SHORT $LL31@update
 $LN30@update:
 
-; 84   : 			rows[i].update();
-; 85   : 			totalHeight += heights[i];
+; 85   : 			rows[i].update();
+; 86   : 			totalHeight += heights[i];
 
 	mov	rax, QWORD PTR [r11+8]
 	inc	edi
@@ -24774,7 +24770,7 @@ $LN30@update:
 	mov	rcx, QWORD PTR [r11+40]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	add	rbx, 4
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -24785,7 +24781,7 @@ $LN30@update:
 	sar	rcx, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 83   : 		for (int i=0; i<rows.size(); i++) {
+; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	movsxd	rax, edi
 	cmp	rax, rcx
@@ -24793,8 +24789,8 @@ $LN30@update:
 	mov	rbx, QWORD PTR [rsp+16]
 $LN3@update:
 
-; 86   : 		}
-; 87   : 	}
+; 87   : 		}
+; 88   : 	}
 
 	mov	rsi, QWORD PTR [rsp+24]
 	pop	rdi
@@ -24823,7 +24819,7 @@ s$ = 104
 $T2 = 112
 ?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z PROC ; TilePattern::setPattern, COMDAT
 
-; 560  : void TilePattern::setPattern(std::wstring s) {
+; 559  : void TilePattern::setPattern(std::wstring s) {
 
 $LN181:
 	mov	r11, rsp
@@ -24836,7 +24832,7 @@ $LN181:
 	mov	rdi, rdx
 	mov	rbx, rcx
 
-; 561  : 	parsePattern(s, this);
+; 560  : 	parsePattern(s, this);
 
 	lea	rax, QWORD PTR [r11-48]
 	mov	QWORD PTR [r11+24], rax
@@ -24866,13 +24862,13 @@ $LN181:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 561  : 	parsePattern(s, this);
+; 560  : 	parsePattern(s, this);
 
 	mov	rdx, rbx
 	lea	rcx, QWORD PTR $T1[rsp]
 	call	?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z ; parsePattern
 
-; 562  : 	update();
+; 561  : 	update();
 
 	mov	rcx, rbx
 	call	?update@TilePattern@@QEAAXXZ		; TilePattern::update
@@ -24940,7 +24936,7 @@ $LN175@setPattern:
 $LN176@setPattern:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 563  : }
+; 562  : }
 
 	mov	rbx, QWORD PTR [rsp+96]
 	mov	rsi, QWORD PTR [rsp+120]
@@ -26782,7 +26778,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?update@TileRow@@QEAAXXZ PROC				; TileRow::update, COMDAT
 
-; 64   : 		totalWidth = 0.f;
+; 65   : 		totalWidth = 0.f;
 
 	xor	r8d, r8d
 	mov	rdx, rcx
@@ -26796,7 +26792,7 @@ this$ = 8
 	sar	rax, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	test	rax, rax
 	je	SHORT $LN3@update
@@ -26810,7 +26806,7 @@ this$ = 8
 $LL4@update:
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 66   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tiles[i];
 
 	vaddss	xmm0, xmm0, DWORD PTR [r9]
 	vmovss	DWORD PTR [rdx+4], xmm0
@@ -26821,7 +26817,7 @@ $LL4@update:
 	mov	rcx, QWORD PTR [rdx+16]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	lea	r9, QWORD PTR [r9+4]
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -26831,7 +26827,7 @@ $LL4@update:
 	sub	rcx, QWORD PTR [rdx+8]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	inc	r8d
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\vector
@@ -26841,14 +26837,14 @@ $LL4@update:
 	sar	rcx, 2
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 65   : 		for (int i=0; i<tiles.size(); i++)
+; 66   : 		for (int i=0; i<tiles.size(); i++)
 
 	movsxd	rax, r8d
 	cmp	rax, rcx
 	jb	SHORT $LL4@update
 $LN3@update:
 
-; 67   : 	}
+; 68   : 	}
 
 	ret	0
 ?update@TileRow@@QEAAXXZ ENDP				; TileRow::update
@@ -29225,7 +29221,7 @@ this$ = 32
 offset$ = 40
 ??0TileRow@@QEAA@M@Z PROC				; TileRow::TileRow, COMDAT
 
-; 57   : 	TileRow(float offset) {this->offset = offset;}
+; 58   : 	TileRow(float offset) {this->offset = offset;}
 
 $LN12:
 	mov	QWORD PTR [rsp+8], rcx
@@ -29247,7 +29243,7 @@ $LN12:
 	mov	QWORD PTR [rcx+24], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 57   : 	TileRow(float offset) {this->offset = offset;}
+; 58   : 	TileRow(float offset) {this->offset = offset;}
 
 	vmovss	DWORD PTR [rcx], xmm1
 	mov	rax, rcx

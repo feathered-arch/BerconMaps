@@ -74,7 +74,7 @@ BerconDistortion::BerconDistortion() {
 	pblock = NULL;
 	pbXYZ = NULL;
 	BerconDistortionDesc.MakeAutoParamBlocks(this);
-	Reset();
+	BerconDistortion::Reset();
 }
 
 BerconDistortion::~BerconDistortion() { DiscardTexHandle(); }
@@ -219,8 +219,7 @@ Point3 BerconDistortion::getDistVector(ShadeContext& sc) {
 	if (subtex[1])
 		return subtex[0]->EvalNormalPerturb(sc)*distortionStr*subtex[1]->EvalMono(sc);
 	else					
-		return subtex[0]->EvalNormalPerturb(sc)*distortionStr;		  
-	return Point3(0.f, 0.f, 0.f);
+		return subtex[0]->EvalNormalPerturb(sc)*distortionStr;
 }
 
 AColor BerconDistortion::EvalColor(ShadeContext& sc) {

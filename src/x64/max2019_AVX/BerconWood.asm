@@ -7158,7 +7158,7 @@ $LL32@BerconWood:
 	mov	QWORD PTR [rbx+832], rdi
 
 ; 415  : //	curve = NULL;	
-; 416  : 	Reset();
+; 416  : 	BerconWood::Reset();
 
 	mov	rcx, rbx
 	call	?Reset@BerconWood@@UEAAXXZ		; BerconWood::Reset
@@ -18161,6 +18161,8 @@ _TEXT	SEGMENT
 __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
+
+; 937  : }
 
 	ret	0
 ?__empty_global_delete@@YAXPEAX_K@Z ENDP		; __empty_global_delete

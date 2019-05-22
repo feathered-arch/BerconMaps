@@ -19,7 +19,7 @@ under the License.
 
 #include "BerconCommon.h"
 
-extern TCHAR *GetString(int id);
+extern MCHAR *GetString(int id);
 
 extern HINSTANCE hInstance;
 

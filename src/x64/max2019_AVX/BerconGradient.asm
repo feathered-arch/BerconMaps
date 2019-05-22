@@ -36,11 +36,6 @@ PUBLIC	??_R0?AVClassDesc@@@8				; ClassDesc `RTTI Type Descriptor'
 PUBLIC	??_R3ClassDesc@@8				; ClassDesc::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2ClassDesc@@8				; ClassDesc::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@ClassDesc@@8			; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
-PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
-PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 PUBLIC	?texoutDlg@BerconGradient@@2PEAVParamDlg@@EA	; BerconGradient::texoutDlg
 PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
 PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
@@ -51,9 +46,14 @@ PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$
 PUBLIC	?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::BeginCreate
 PUBLIC	?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::EndCreate
 PUBLIC	?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::OkToCreate
+PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
 PUBLIC	?HasClassParams@ClassDesc@@UEAAHXZ		; ClassDesc::HasClassParams
 PUBLIC	?EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z	; ClassDesc::EditClassParams
+PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
+PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	?NumActionTables@ClassDesc@@UEAAHXZ		; ClassDesc::NumActionTables
+PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 PUBLIC	?GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z ; ClassDesc::GetActionTable
 PUBLIC	?IsManipulator@ClassDesc@@UEAAHXZ		; ClassDesc::IsManipulator
 PUBLIC	?CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z ; ClassDesc::CanManipulate
@@ -173,7 +173,6 @@ PUBLIC	??_C@_19EFANFLCA@?$AAn?$AAo?$AAd?$AAe?$AA?$AA@	; `string'
 PUBLIC	??_C@_1O@HHADDHBD@?$AAm?$AAa?$AAp?$AAT?$AAe?$AAx?$AA?$AA@ ; `string'
 PUBLIC	??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@ ; `string'
 EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
-EXTRN	GUID_NULL:BYTE
 EXTRN	?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC ; BaseInterfaceServer::GetInterface
 EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
 EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
@@ -197,8 +196,12 @@ EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@VInterface_ID@@@Z:PROC ; Cla
 EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
 EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
 EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
+EXTRN	GUID_NULL:BYTE
 EXTRN	??_EBerconGradientClassDesc@@UEAAPEAXI@Z:PROC	; BerconGradientClassDesc::`vector deleting destructor'
 EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
+_BSS	SEGMENT
+?texoutDlg@BerconGradient@@2PEAVParamDlg@@EA DQ 01H DUP (?) ; BerconGradient::texoutDlg
+_BSS	ENDS
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
 IsolationAwarePrivateT_SqbjaYRiRY DD 01H DUP (?)
@@ -214,9 +217,6 @@ _BSS	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
-_BSS	ENDS
-_BSS	SEGMENT
-?texoutDlg@BerconGradient@@2PEAVParamDlg@@EA DQ 01H DUP (?) ; BerconGradient::texoutDlg
 _BSS	ENDS
 ;	COMDAT ??_C@_1O@FEMBPDGM@?$AAp?$AAa?$AAr?$AAa?$AAm?$AAs?$AA?$AA@
 CONST	SEGMENT
@@ -845,6 +845,10 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3XYZ_Desc@@8
 	DD	imagerel ??_R4XYZ_Desc@@6B@
 rdata$r	ENDS
+;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
+_DATA	SEGMENT
+WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
+_DATA	ENDS
 ;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@
 CONST	SEGMENT
 ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT?$AAa?$AAb?$AAO?$AAu?$AAt?$AAO?$AAf?$AAR?$AAa?$AAn?$AAg?$AAe?$AAE?$AAx?$AAc?$AAe?$AAp@ DB 'M'
@@ -861,10 +865,6 @@ CONST	SEGMENT
 	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
 CONST	ENDS
-;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
-_DATA	SEGMENT
-WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
-_DATA	ENDS
 ;	COMDAT ??_R1A@?0A@EA@ClassDesc@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@ClassDesc@@8 DD imagerel ??_R0?AVClassDesc@@@8 ; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -8390,7 +8390,7 @@ $LN6@BerconGrad:
 
 	mov	DWORD PTR [rdi+428], 1
 
-; 506  : 	Reset();	
+; 506  : 	BerconGradient::Reset();	
 
 	mov	rcx, rdi
 	call	?Reset@BerconGradient@@UEAAXXZ		; BerconGradient::Reset
@@ -8624,7 +8624,7 @@ i$ = 72
 rtarg$ = 80
 ?SetReference@BerconGradient@@UEAAXHPEAVReferenceTarget@@@Z PROC ; BerconGradient::SetReference, COMDAT
 
-; 928  : void BerconGradient::SetReference(int i, RefTargetHandle rtarg) {
+; 927  : void BerconGradient::SetReference(int i, RefTargetHandle rtarg) {
 
 $LN18:
 	mov	QWORD PTR [rsp+16], rbx
@@ -8633,7 +8633,7 @@ $LN18:
 	mov	rdi, r8
 	mov	rbx, rcx
 
-; 929  : 	switch(i) {		
+; 928  : 	switch(i) {		
 
 	cmp	edx, 7
 	ja	$LN10@SetReferen
@@ -8644,13 +8644,13 @@ $LN18:
 	jmp	r9
 $LN4@SetReferen:
 
-; 930  : 		case COORD_REF: pbXYZ = (IParamBlock2 *)rtarg; break;			
+; 929  : 		case COORD_REF: pbXYZ = (IParamBlock2 *)rtarg; break;			
 
 	mov	QWORD PTR [rbx+160], rdi
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8658,13 +8658,13 @@ $LN4@SetReferen:
 	ret	0
 $LN5@SetReferen:
 
-; 931  : 		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;		
+; 930  : 		case PBLOCK_REF: pblock = (IParamBlock2 *)rtarg; break;		
 
 	mov	QWORD PTR [rbx+152], rdi
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8672,13 +8672,13 @@ $LN5@SetReferen:
 	ret	0
 $LN6@SetReferen:
 
-; 932  : 		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
+; 931  : 		case OUTPUT_REF: texout = (TextureOutput *)rtarg; break;
 
 	mov	QWORD PTR [rbx+432], rdi
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8686,15 +8686,15 @@ $LN6@SetReferen:
 	ret	0
 $LN7@SetReferen:
 
-; 933  : //		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
-; 934  : //		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
-; 935  : 		case MAPTEX_REF: p_maptex = (Texmap *)rtarg; break;
+; 932  : //		case CURVE_REF: curve = (ICurveCtl *)rtarg; break;
+; 933  : //		case CURVEPB_REF: pbCurve = (IParamBlock2 *)rtarg; break;
+; 934  : 		case MAPTEX_REF: p_maptex = (Texmap *)rtarg; break;
 
 	mov	QWORD PTR [rbx+536], rdi
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8702,13 +8702,13 @@ $LN7@SetReferen:
 	ret	0
 $LN8@SetReferen:
 
-; 936  : 		case DISTEX_REF: p_distex = (Texmap *)rtarg; break;		
+; 935  : 		case DISTEX_REF: p_distex = (Texmap *)rtarg; break;		
 
 	mov	QWORD PTR [rbx+544], rdi
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8716,20 +8716,20 @@ $LN8@SetReferen:
 	ret	0
 $LN9@SetReferen:
 
-; 937  : 		case KEYTEX_REF: setKeyTex((Texmap *)rtarg); break;		
+; 936  : 		case KEYTEX_REF: setKeyTex((Texmap *)rtarg); break;		
 
 	mov	rdx, rdi
 	mov	rcx, rbx
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
 	pop	rdi
 
-; 937  : 		case KEYTEX_REF: setKeyTex((Texmap *)rtarg); break;		
+; 936  : 		case KEYTEX_REF: setKeyTex((Texmap *)rtarg); break;		
 
 	jmp	?setKeyTex@BerconGradient@@QEAAXPEAVTexmap@@@Z ; BerconGradient::setKeyTex
 $LN10@SetReferen:
@@ -8741,21 +8741,21 @@ $LN10@SetReferen:
 	mov	QWORD PTR [rsp+64], rsi
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 939  : 			int k = i-REF_OFFSET-SUBMAPCOUNT;
+; 938  : 			int k = i-REF_OFFSET-SUBMAPCOUNT;
 
 	lea	esi, DWORD PTR [rdx-8]
 
-; 940  : 			if (k >= gradient->numKeys()) return;
+; 939  : 			if (k >= gradient->numKeys()) return;
 
 	cmp	esi, DWORD PTR [rcx+56]
 	jge	SHORT $LN16@SetReferen
 
-; 941  : 			gradient->setSubtex(k, (Texmap *)rtarg);
+; 940  : 			gradient->setSubtex(k, (Texmap *)rtarg);
 
 	mov	edx, esi
 	call	?setSubtex@GradientRamp@@QEAAXHPEAVTexmap@@@Z ; GradientRamp::setSubtex
 
-; 942  : 			pblock->SetValue(pb_submaps, 0, (Texmap *)rtarg, k);
+; 941  : 			pblock->SetValue(pb_submaps, 0, (Texmap *)rtarg, k);
 
 	mov	rcx, QWORD PTR [rbx+152]
 	xor	edx, edx
@@ -8767,9 +8767,9 @@ $LN10@SetReferen:
 $LN16@SetReferen:
 	mov	rsi, QWORD PTR [rsp+64]
 
-; 943  : 			break;
-; 944  : 	}
-; 945  : }
+; 942  : 			break;
+; 943  : 	}
+; 944  : }
 
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -8813,8 +8813,7 @@ $LN4@GetReferen:
 	mov	rax, QWORD PTR [rcx+160]
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 $LN5@GetReferen:
@@ -8824,8 +8823,7 @@ $LN5@GetReferen:
 	mov	rax, QWORD PTR [rcx+152]
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 $LN6@GetReferen:
@@ -8835,8 +8833,7 @@ $LN6@GetReferen:
 	mov	rax, QWORD PTR [rcx+432]
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 $LN7@GetReferen:
@@ -8848,8 +8845,7 @@ $LN7@GetReferen:
 	mov	rax, QWORD PTR [rcx+536]
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 $LN8@GetReferen:
@@ -8859,8 +8855,7 @@ $LN8@GetReferen:
 	mov	rax, QWORD PTR [rcx+544]
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 $LN9@GetReferen:
@@ -8893,8 +8888,7 @@ $LN10@GetReferen:
 	xor	eax, eax
 
 ; 924  : 	}
-; 925  : 	return NULL;
-; 926  : }
+; 925  : }
 
 	ret	0
 	npad	2
@@ -8935,7 +8929,7 @@ __$ReturnUdt$ = 72
 i$ = 80
 ?SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z PROC	; BerconGradient::SubAnimName, COMDAT
 
-; 990  : TSTR BerconGradient::SubAnimName(int i) {
+; 988  : TSTR BerconGradient::SubAnimName(int i) {
 
 $LN13:
 	mov	QWORD PTR [rsp+16], rdx
@@ -8945,7 +8939,7 @@ $LN13:
 	mov	rbx, rdx
 	mov	DWORD PTR $T1[rsp], 0
 
-; 991  : 	switch (i) {
+; 989  : 	switch (i) {
 
 	mov	edx, r8d
 	test	r8d, r8d
@@ -8955,9 +8949,9 @@ $LN13:
 	cmp	edx, 1
 	je	SHORT $LN6@SubAnimNam
 
-; 995  : //		case CURVE_REF: return GetString(IDS_CURVE);
-; 996  : //		case CURVEPB_REF: return GetString(IDS_CURVEPB);
-; 997  : 		default: return GetSubTexmapTVName(i-REF_OFFSET);
+; 993  : //		case CURVE_REF: return GetString(IDS_CURVE);
+; 994  : //		case CURVEPB_REF: return GetString(IDS_CURVEPB);
+; 995  : 		default: return GetSubTexmapTVName(i-REF_OFFSET);
 
 	add	r8d, -5
 	add	rcx, 64					; 00000040H
@@ -8966,13 +8960,13 @@ $LN13:
 	jmp	SHORT $LN11@SubAnimNam
 $LN6@SubAnimNam:
 
-; 994  : 		case OUTPUT_REF: return GetString(IDS_OUTPUT);	
+; 992  : 		case OUTPUT_REF: return GetString(IDS_OUTPUT);	
 
 	mov	ecx, 8
 	jmp	SHORT $LN12@SubAnimNam
 $LN4@SubAnimNam:
 
-; 992  : 		case PBLOCK_REF: return GetString(IDS_PARAMS);
+; 990  : 		case PBLOCK_REF: return GetString(IDS_PARAMS);
 
 	mov	ecx, 4
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -8982,7 +8976,7 @@ $LN4@SubAnimNam:
 	jmp	SHORT $LN11@SubAnimNam
 $LN5@SubAnimNam:
 
-; 993  : 		case COORD_REF: return GetString(IDS_COORDS);				
+; 991  : 		case COORD_REF: return GetString(IDS_COORDS);				
 
 	mov	ecx, 7
 $LN12@SubAnimNam:
@@ -8995,8 +8989,8 @@ $LN11@SubAnimNam:
 	mov	DWORD PTR $T1[rsp], 1
 	mov	rax, rbx
 
-; 998  : 	}									  
-; 999  : }
+; 996  : 	}									  
+; 997  : }
 
 	add	rsp, 48					; 00000030H
 	pop	rbx
@@ -9063,7 +9057,7 @@ this$ = 8
 i$ = 16
 ?SubAnim@BerconGradient@@UEAAPEAVAnimatable@@H@Z PROC	; BerconGradient::SubAnim, COMDAT
 
-; 973  : 	switch (i) {		
+; 972  : 	switch (i) {		
 
 	cmp	edx, 7
 	ja	SHORT $LN10@SubAnim
@@ -9074,59 +9068,54 @@ i$ = 16
 	jmp	r8
 $LN4@SubAnim:
 
-; 974  : 		case PBLOCK_REF: return pblock;
+; 973  : 		case PBLOCK_REF: return pblock;
 
 	mov	rax, QWORD PTR [rcx+152]
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 $LN5@SubAnim:
 
-; 975  : 		case COORD_REF: return pbXYZ;		
+; 974  : 		case COORD_REF: return pbXYZ;		
 
 	mov	rax, QWORD PTR [rcx+160]
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 $LN6@SubAnim:
 
-; 976  : 		case OUTPUT_REF: return texout;
+; 975  : 		case OUTPUT_REF: return texout;
 
 	mov	rax, QWORD PTR [rcx+432]
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 $LN7@SubAnim:
 
-; 977  : //		case CURVE_REF: return curve;
-; 978  : //		case CURVEPB_REF: return pbCurve;
-; 979  : 		case MAPTEX_REF: return p_maptex;
+; 976  : //		case CURVE_REF: return curve;
+; 977  : //		case CURVEPB_REF: return pbCurve;
+; 978  : 		case MAPTEX_REF: return p_maptex;
 
 	mov	rax, QWORD PTR [rcx+536]
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 $LN8@SubAnim:
 
-; 980  : 		case DISTEX_REF: return p_distex;
+; 979  : 		case DISTEX_REF: return p_distex;
 
 	mov	rax, QWORD PTR [rcx+544]
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 $LN9@SubAnim:
@@ -9137,7 +9126,7 @@ $LN9@SubAnim:
 	or	edx, -1
 $LN11@SubAnim:
 
-; 985  : 			return gradient->getSubtex(k);
+; 984  : 			return gradient->getSubtex(k);
 
 	jmp	?getSubtex@GradientRamp@@QEAAPEAVTexmap@@H@Z ; GradientRamp::getSubtex
 $LN10@SubAnim:
@@ -9148,19 +9137,18 @@ $LN10@SubAnim:
 	mov	rcx, QWORD PTR [rcx+448]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 983  : 			int k = i-REF_OFFSET-SUBMAPCOUNT;
+; 982  : 			int k = i-REF_OFFSET-SUBMAPCOUNT;
 
 	add	edx, -8
 
-; 984  : 			if (k >= gradient->numKeys()) return NULL;		
+; 983  : 			if (k >= gradient->numKeys()) return NULL;		
 
 	cmp	edx, DWORD PTR [rcx+56]
 	jl	SHORT $LN11@SubAnim
 	xor	eax, eax
 
-; 986  : 	}
-; 987  : 	return NULL;
-; 988  : }
+; 985  : 	}
+; 986  : }
 
 	ret	0
 	npad	2
@@ -9214,13 +9202,13 @@ message$ = 80
 propagate$ = 88
 ?NotifyRefChanged@BerconGradient@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z PROC ; BerconGradient::NotifyRefChanged, COMDAT
 
-; 1001 : RefResult BerconGradient::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {	
+; 999  : RefResult BerconGradient::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {	
 
 $LN31:
 	push	rdi
 	sub	rsp, 32					; 00000020H
 
-; 1002 : 	switch (message) {
+; 1000 : 	switch (message) {
 
 	cmp	DWORD PTR message$[rsp], 80		; 00000050H
 	mov	rdi, rcx
@@ -9233,14 +9221,14 @@ $LN31:
 	mov	DWORD PTR [rcx+444], -2147483648	; ffffffff80000000H
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1005 : 			if (hTarget == pblock) {
+; 1003 : 			if (hTarget == pblock) {
 
 	mov	rcx, QWORD PTR [rcx+152]
 	mov	QWORD PTR [rsp+48], rbx
 	cmp	r8, rcx
 	jne	SHORT $LN5@NotifyRefC
 
-; 1006 : 				ParamID changing_param = pblock->LastNotifyParamID();
+; 1004 : 				ParamID changing_param = pblock->LastNotifyParamID();
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
@@ -9254,7 +9242,7 @@ $LN31:
 	or	r9d, -1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1006 : 				ParamID changing_param = pblock->LastNotifyParamID();
+; 1004 : 				ParamID changing_param = pblock->LastNotifyParamID();
 
 	movzx	ebx, ax
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
@@ -9264,7 +9252,7 @@ $LN31:
 	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1008 : 				if (changing_param != -1) DiscardTexHandle();
+; 1006 : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
 	je	$LN24@NotifyRefC
@@ -9288,29 +9276,29 @@ $LN17@NotifyRefC:
 	mov	QWORD PTR [rdi+560], rbx
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1020 : 	return(REF_SUCCEED);
+; 1018 : 	return(REF_SUCCEED);
 
 	mov	eax, 1
 	mov	rbx, QWORD PTR [rsp+48]
 
-; 1021 : }
+; 1019 : }
 
 	add	rsp, 32					; 00000020H
 	pop	rdi
 	ret	0
 $LN5@NotifyRefC:
 
-; 1009 : 	//		}  else if (hTarget == pbCurve) {
-; 1010 : 	//			ParamID changing_param = pbCurve->LastNotifyParamID();
-; 1011 : 	//			BerconCurve_param_blk.InvalidateUI(changing_param);
-; 1012 : 				if (changing_param != -1) DiscardTexHandle();
-; 1013 : 			} else if (hTarget == pbXYZ) {
+; 1007 : 	//		}  else if (hTarget == pbCurve) {
+; 1008 : 	//			ParamID changing_param = pbCurve->LastNotifyParamID();
+; 1009 : 	//			BerconCurve_param_blk.InvalidateUI(changing_param);
+; 1010 : 				if (changing_param != -1) DiscardTexHandle();
+; 1011 : 			} else if (hTarget == pbXYZ) {
 
 	mov	rcx, QWORD PTR [rdi+160]
 	cmp	r8, rcx
 	jne	SHORT $LN24@NotifyRefC
 
-; 1014 : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
+; 1012 : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
@@ -9324,7 +9312,7 @@ $LN5@NotifyRefC:
 	or	r9d, -1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1014 : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
+; 1012 : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
 
 	movzx	ebx, ax
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
@@ -9334,7 +9322,7 @@ $LN5@NotifyRefC:
 	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1016 : 				if (changing_param != -1) DiscardTexHandle();
+; 1014 : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
 	je	SHORT $LN24@NotifyRefC
@@ -9344,11 +9332,11 @@ $LN24@NotifyRefC:
 	mov	rbx, QWORD PTR [rsp+48]
 $LN26@NotifyRefC:
 
-; 1020 : 	return(REF_SUCCEED);
+; 1018 : 	return(REF_SUCCEED);
 
 	mov	eax, 1
 
-; 1021 : }
+; 1019 : }
 
 	add	rsp, 32					; 00000020H
 	pop	rdi
@@ -9367,7 +9355,7 @@ this$ = 80
 remap$ = 88
 ?Clone@BerconGradient@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z PROC ; BerconGradient::Clone, COMDAT
 
-; 947  : RefTargetHandle BerconGradient::Clone(RemapDir &remap) {	
+; 946  : RefTargetHandle BerconGradient::Clone(RemapDir &remap) {	
 
 $LN15:
 	push	rdi
@@ -9381,13 +9369,13 @@ $LN15:
 	mov	rsi, rdx
 	mov	r14, rcx
 
-; 948  : 	int keys = countKeys();
+; 947  : 	int keys = countKeys();
 
 	call	?countKeys@BerconGradient@@QEAAHXZ	; BerconGradient::countKeys
 	mov	r15d, eax
 
-; 949  : 
-; 950  : 	BerconGradient *mnew = new BerconGradient();
+; 948  : 
+; 949  : 	BerconGradient *mnew = new BerconGradient();
 
 	mov	ecx, 576				; 00000240H
 	call	QWORD PTR __imp_??2MaxHeapOperators@@SAPEAX_K@Z
@@ -9403,14 +9391,14 @@ $LN6@Clone:
 	mov	rbp, rbx
 $LN7@Clone:
 
-; 951  : 	*((MtlBase*)mnew) = *((MtlBase*)this);	
+; 950  : 	*((MtlBase*)mnew) = *((MtlBase*)this);	
 
 	mov	rdx, r14
 	mov	rcx, rbp
 	call	QWORD PTR __imp_??4MtlBase@@QEAAAEAV0@AEBV0@@Z
 
-; 952  : 
-; 953  : 	mnew->pblock->SetCount(pb_submaps, keys);		
+; 951  : 
+; 952  : 	mnew->pblock->SetCount(pb_submaps, keys);		
 
 	mov	rcx, QWORD PTR [rbp+152]
 	mov	rax, QWORD PTR [rcx]
@@ -9418,14 +9406,14 @@ $LN7@Clone:
 	mov	r8d, r15d
 	call	QWORD PTR [rax+1880]
 
-; 954  : 	for (int i = 0; i<keys; i++) {		
+; 953  : 	for (int i = 0; i<keys; i++) {		
 
 	test	r15d, r15d
 	jle	SHORT $LN3@Clone
 	npad	3
 $LL4@Clone:
 
-; 955  : 		mnew->ReplaceReference(i+REF_OFFSET+SUBMAPCOUNT, remap.CloneRef(gradient->getSubtex(i)));
+; 954  : 		mnew->ReplaceReference(i+REF_OFFSET+SUBMAPCOUNT, remap.CloneRef(gradient->getSubtex(i)));
 
 	mov	rdi, QWORD PTR [rsi]
 	mov	edx, ebx
@@ -9440,16 +9428,16 @@ $LL4@Clone:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
-; 954  : 	for (int i = 0; i<keys; i++) {		
+; 953  : 	for (int i = 0; i<keys; i++) {		
 
 	inc	ebx
 	cmp	ebx, r15d
 	jl	SHORT $LL4@Clone
 $LN3@Clone:
 
-; 956  : 	}
-; 957  : 
-; 958  : 	mnew->ReplaceReference(MAPTEX_REF, remap.CloneRef(p_maptex));
+; 955  : 	}
+; 956  : 
+; 957  : 	mnew->ReplaceReference(MAPTEX_REF, remap.CloneRef(p_maptex));
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rdx, QWORD PTR [r14+536]
@@ -9461,7 +9449,7 @@ $LN3@Clone:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
-; 959  : 	mnew->ReplaceReference(DISTEX_REF, remap.CloneRef(p_distex));
+; 958  : 	mnew->ReplaceReference(DISTEX_REF, remap.CloneRef(p_distex));
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rdx, QWORD PTR [r14+544]
@@ -9480,7 +9468,7 @@ $LN3@Clone:
 	mov	DWORD PTR [rbp+444], -2147483648	; ffffffff80000000H
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 962  : 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
+; 961  : 	mnew->ReplaceReference(PBLOCK_REF,remap.CloneRef(pblock));
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rdx, QWORD PTR [r14+152]
@@ -9492,7 +9480,7 @@ $LN3@Clone:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
-; 963  : 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
+; 962  : 	mnew->ReplaceReference(COORD_REF,remap.CloneRef(pbXYZ));
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rdx, QWORD PTR [r14+160]
@@ -9504,7 +9492,7 @@ $LN3@Clone:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
-; 964  : 	mnew->ReplaceReference(OUTPUT_REF,remap.CloneRef(texout));	
+; 963  : 	mnew->ReplaceReference(OUTPUT_REF,remap.CloneRef(texout));	
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rdx, QWORD PTR [r14+432]
@@ -9516,10 +9504,10 @@ $LN3@Clone:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?ReplaceReference@ReferenceMaker@@QEAA?AW4RefResult@@HPEAVReferenceTarget@@H@Z
 
-; 965  : //	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
-; 966  : //	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
-; 967  : 
-; 968  : 	BaseClone(this, mnew, remap);
+; 964  : //	mnew->ReplaceReference(CURVE_REF,remap.CloneRef(curve));
+; 965  : //	mnew->ReplaceReference(CURVEPB_REF,remap.CloneRef(pbCurve));
+; 966  : 
+; 967  : 	BaseClone(this, mnew, remap);
 
 	mov	rax, QWORD PTR [r14]
 	mov	r9, rsi
@@ -9528,11 +9516,11 @@ $LN3@Clone:
 	mov	rcx, r14
 	call	QWORD PTR [rax+1320]
 
-; 969  : 	return (RefTargetHandle)mnew;
+; 968  : 	return (RefTargetHandle)mnew;
 
 	mov	rax, rbp
 
-; 970  : }
+; 969  : }
 
 	mov	rbx, QWORD PTR [rsp+88]
 	mov	rbp, QWORD PTR [rsp+96]
@@ -9888,7 +9876,7 @@ __$ReturnUdt$ = 360
 sc$ = 368
 ?EvalNormalPerturb@BerconGradient@@UEAA?AVPoint3@@AEAVShadeContext@@@Z PROC ; BerconGradient::EvalNormalPerturb, COMDAT
 
-; 1383 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
+; 1379 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 
 $LN105:
 	push	rbp
@@ -9905,7 +9893,7 @@ $LN105:
 	xor	r12d, r12d
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1383 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
+; 1379 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 
 	mov	r13, r8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -9915,7 +9903,7 @@ $LN105:
 	mov	QWORD PTR [rdx], r12
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1383 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
+; 1379 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 
 	mov	r15, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -9925,20 +9913,20 @@ $LN105:
 	mov	DWORD PTR [rdx+8], r12d
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1383 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
+; 1379 : Point3 BerconGradient::EvalNormalPerturb(ShadeContext& sc) {
 
 	mov	rsi, rcx
 
-; 1384 : 	// Returned vector
-; 1385 : 	Point3 res(0.0f,0.0f,0.0f);
-; 1386 : 	if (p_type != 0) return res; // Bump only works for UVW, otherwise we don't really know the derivative of the gradient
+; 1380 : 	// Returned vector
+; 1381 : 	Point3 res(0.0f,0.0f,0.0f);
+; 1382 : 	if (p_type != 0) return res; // Bump only works for UVW, otherwise we don't really know the derivative of the gradient
 
 	cmp	DWORD PTR [rcx+472], r12d
 	jne	$LN101@EvalNormal
 
-; 1387 : 	
-; 1388 : 	// Use cache
-; 1389 : 	if (sc.GetCache(this,res)) 
+; 1383 : 	
+; 1384 : 	// Use cache
+; 1385 : 	if (sc.GetCache(this,res)) 
 
 	mov	rax, QWORD PTR [r8]
 	mov	r8, rdx
@@ -9948,8 +9936,8 @@ $LN105:
 	test	eax, eax
 	jne	$LN101@EvalNormal
 
-; 1390 : 		return res;
-; 1391 : 	if (gbufID) sc.SetGBufferID(gbufID);
+; 1386 : 		return res;
+; 1387 : 	if (gbufID) sc.SetGBufferID(gbufID);
 
 	mov	edx, DWORD PTR [rsi+120]
 	mov	QWORD PTR [rsp+360], rbx
@@ -9963,7 +9951,7 @@ $LN105:
 	call	QWORD PTR [rax+464]
 $LN7@EvalNormal:
 
-; 1395 : 	Point3 M[3];
+; 1391 : 	Point3 M[3];
 
 	vxorps	xmm6, xmm6, xmm6
 	mov	r14d, 3
@@ -9977,7 +9965,7 @@ $LN7@EvalNormal:
 	vmovss	DWORD PTR p$[rsp+8], xmm6
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1395 : 	Point3 M[3];
+; 1391 : 	Point3 M[3];
 
 	mov	ebx, r14d
 	npad	8
@@ -9988,8 +9976,8 @@ $LL22@EvalNormal:
 	sub	rbx, 1
 	jne	SHORT $LL22@EvalNormal
 
-; 1396 : 
-; 1397 : 	if (!berconXYZ.get(sc, p, M)) return res;
+; 1392 : 
+; 1393 : 	if (!berconXYZ.get(sc, p, M)) return res;
 
 	lea	rcx, QWORD PTR [rsi+168]
 	mov	rdx, r13
@@ -10000,10 +9988,10 @@ $LL22@EvalNormal:
 	test	eax, eax
 	je	$LN103@EvalNormal
 
-; 1398 : 	
-; 1399 : 	// Distortion
-; 1400 : 	float dist = 0.f;
-; 1401 : 	if (p_disOn && p_distex) dist = (1.f - p_distex->EvalMono(sc) * 2.f) * p_disStr;
+; 1394 : 	
+; 1395 : 	// Distortion
+; 1396 : 	float dist = 0.f;
+; 1397 : 	if (p_disOn && p_distex) dist = (1.f - p_distex->EvalMono(sc) * 2.f) * p_disStr;
 
 	vmovaps	XMMWORD PTR [rsp+272], xmm7
 	vmovaps	XMMWORD PTR [rsp+192], xmm12
@@ -10031,7 +10019,7 @@ $LN9@EvalNormal:
 	vmovss	xmm0, DWORD PTR p$[rsp+8]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1404 : 	float d = getGradientValueUVW(p) + dist;	
+; 1400 : 	float d = getGradientValueUVW(p) + dist;	
 
 	lea	rdx, QWORD PTR $T1[rsp]
 	mov	rcx, rsi
@@ -10043,12 +10031,12 @@ $LN9@EvalNormal:
 	vmovss	DWORD PTR $T1[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1404 : 	float d = getGradientValueUVW(p) + dist;	
+; 1400 : 	float d = getGradientValueUVW(p) + dist;	
 
 	call	?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z ; BerconGradient::getGradientValueUVW
 	vaddss	xmm1, xmm0, xmm7
 
-; 1405 : 	if (!limitRange(d)) return res;
+; 1401 : 	if (!limitRange(d)) return res;
 
 	lea	rdx, QWORD PTR d$[rbp-256]
 	mov	rcx, rsi
@@ -10057,8 +10045,8 @@ $LN9@EvalNormal:
 	test	eax, eax
 	je	$LN102@EvalNormal
 
-; 1406 : //	if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
-; 1407 : 	d = Intens(gradient->getColor(d, sc));
+; 1402 : //	if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
+; 1403 : 	d = Intens(gradient->getColor(d, sc));
 
 	vmovss	xmm2, DWORD PTR d$[rbp-256]
 	mov	rcx, QWORD PTR [rsi+448]
@@ -10075,7 +10063,7 @@ $LN9@EvalNormal:
 	vmovss	xmm9, DWORD PTR __real@40400000
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1424 : 		Point3 MP[3];
+; 1420 : 		Point3 MP[3];
 
 	lea	rbx, QWORD PTR MP$[rbp-256]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
@@ -10105,7 +10093,7 @@ $LL32@EvalNormal:
 	vmovss	xmm8, DWORD PTR __real@3a83126f
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1425 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
+; 1421 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
 
 	vunpcklps xmm0, xmm8, xmm6
 	vmovsd	QWORD PTR MP$[rbp-256], xmm0
@@ -10116,7 +10104,7 @@ $LL32@EvalNormal:
 	vmovss	DWORD PTR $T9[rsp+8], xmm6
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1425 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
+; 1421 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
 
 	mov	eax, DWORD PTR $T9[rsp+8]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -10126,7 +10114,7 @@ $LL32@EvalNormal:
 	lea	rbx, QWORD PTR MP$[rbp-248]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1425 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
+; 1421 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
 
 	vunpcklps xmm0, xmm6, xmm8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -10136,7 +10124,7 @@ $LL32@EvalNormal:
 	vmovss	DWORD PTR $T8[rsp+8], xmm6
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1425 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
+; 1421 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
 
 	mov	DWORD PTR MP$[rbp-248], eax
 	mov	eax, DWORD PTR $T8[rsp+8]
@@ -10149,7 +10137,7 @@ $LL32@EvalNormal:
 	vmovss	DWORD PTR $T7[rsp+8], xmm6
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1425 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
+; 1421 : 		MP[0] = Point3(DELTA,0.f,0.f); MP[1] = Point3(0.f,DELTA,0.f); MP[2] = Point3(0.f,DELTA,0.f);
 
 	mov	DWORD PTR MP$[rbp-236], eax
 	mov	eax, DWORD PTR $T7[rsp+8]
@@ -10169,7 +10157,7 @@ $LL4@EvalNormal:
 	vaddss	xmm2, xmm1, DWORD PTR [rbx]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1427 : 			normal[i] = getGradientValueUVW(p+MP[i]) + dist;
+; 1423 : 			normal[i] = getGradientValueUVW(p+MP[i]) + dist;
 
 	lea	rdx, QWORD PTR $T6[rsp]
 	mov	rcx, rsi
@@ -10181,7 +10169,7 @@ $LL4@EvalNormal:
 	vmovss	DWORD PTR $T6[rsp+4], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1427 : 			normal[i] = getGradientValueUVW(p+MP[i]) + dist;
+; 1423 : 			normal[i] = getGradientValueUVW(p+MP[i]) + dist;
 
 	call	?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z ; BerconGradient::getGradientValueUVW
 	mov	edx, r12d
@@ -10189,7 +10177,7 @@ $LL4@EvalNormal:
 	vaddss	xmm6, xmm0, xmm7
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
 
-; 1428 : 			if (!limitRange(normal[i])) return res;
+; 1424 : 			if (!limitRange(normal[i])) return res;
 
 	mov	edx, r12d
 	lea	rcx, QWORD PTR normal$[rsp]
@@ -10201,7 +10189,7 @@ $LL4@EvalNormal:
 	test	eax, eax
 	je	$LN80@EvalNormal
 
-; 1431 : 			normal[i] = Intens(gradient->getColor(normal[i], sc));
+; 1427 : 			normal[i] = Intens(gradient->getColor(normal[i], sc));
 
 	mov	edx, r12d
 	lea	rcx, QWORD PTR normal$[rsp]
@@ -10223,11 +10211,11 @@ $LL4@EvalNormal:
 	vdivss	xmm6, xmm2, xmm9
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1431 : 			normal[i] = Intens(gradient->getColor(normal[i], sc));
+; 1427 : 			normal[i] = Intens(gradient->getColor(normal[i], sc));
 
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
 
-; 1432 : 			normal[i] = (normal[i] - d) / DELTA;
+; 1428 : 			normal[i] = (normal[i] - d) / DELTA;
 
 	mov	edx, r12d
 	lea	rcx, QWORD PTR normal$[rsp]
@@ -10257,7 +10245,7 @@ $LL4@EvalNormal:
 	vmulss	xmm6, xmm3, DWORD PTR M$[rbp-240]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	mov	ecx, DWORD PTR [rsi+508]
 	vmovaps	XMMWORD PTR [rsp+224], xmm10
@@ -10285,7 +10273,7 @@ $LL4@EvalNormal:
 	vmovss	DWORD PTR normal$[rsp+4], xmm5
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	test	ecx, ecx
 	je	SHORT $LN13@EvalNormal
@@ -10309,7 +10297,7 @@ $LN13@EvalNormal:
 $LN100@EvalNormal:
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	lea	rax, QWORD PTR $T4[rsp]
 	test	ecx, ecx
@@ -10324,7 +10312,7 @@ $LN15@EvalNormal:
 	vmovss	xmm1, DWORD PTR [rax+4]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	mov	rcx, QWORD PTR [rsi+448]
 	lea	r9, QWORD PTR $T11[rsp]
@@ -10336,7 +10324,7 @@ $LN15@EvalNormal:
 	vmovss	xmm0, DWORD PTR [rax+8]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	vmovaps	xmm2, xmm11
 	lea	rdx, QWORD PTR $T3[rsp]
@@ -10349,11 +10337,11 @@ $LN15@EvalNormal:
 	vmovss	DWORD PTR $T11[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1441 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
+; 1437 : 	res = gradient->getBump(p_reverse?1.f-d:d, p_reverse?normal:-normal, sc);
 
 	call	?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z ; GradientRamp::getBump
 
-; 1444 : 	res = texout->Filter(res);
+; 1440 : 	res = texout->Filter(res);
 
 	lea	r8, QWORD PTR $T10[rsp]
 	lea	rdx, QWORD PTR $T2[rsp]
@@ -10368,7 +10356,7 @@ $LN15@EvalNormal:
 	vmovss	xmm0, DWORD PTR [r15]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1444 : 	res = texout->Filter(res);
+; 1440 : 	res = texout->Filter(res);
 
 	mov	rcx, QWORD PTR [rsi+432]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -10382,14 +10370,14 @@ $LN15@EvalNormal:
 	vmovss	DWORD PTR $T10[rsp+4], xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1444 : 	res = texout->Filter(res);
+; 1440 : 	res = texout->Filter(res);
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1504]
 
-; 1445 : 
-; 1446 : 	// Shading ready, return results	
-; 1447 : 	sc.PutCache(this,res);
+; 1441 : 
+; 1442 : 	// Shading ready, return results	
+; 1443 : 	sc.PutCache(this,res);
 
 	mov	r8, r15
 	mov	rdx, rsi
@@ -10413,12 +10401,12 @@ $LN103@EvalNormal:
 	vmovaps	xmm6, XMMWORD PTR [rsp+288]
 $LN101@EvalNormal:
 
-; 1428 : 			if (!limitRange(normal[i])) return res;
+; 1424 : 			if (!limitRange(normal[i])) return res;
 
 	mov	rax, r15
 
-; 1448 : 	return res;
-; 1449 : }
+; 1444 : 	return res;
+; 1445 : }
 
 	add	rsp, 304				; 00000130H
 	pop	r15
@@ -10440,12 +10428,12 @@ this$ = 64
 sc$ = 72
 ?EvalMono@BerconGradient@@UEAAMAEAVShadeContext@@@Z PROC ; BerconGradient::EvalMono, COMDAT
 
-; 1377 : float BerconGradient::EvalMono(ShadeContext& sc) {
+; 1373 : float BerconGradient::EvalMono(ShadeContext& sc) {
 
 $LN6:
 	sub	rsp, 56					; 00000038H
 
-; 1378 : 	return Intens(EvalColor(sc));
+; 1374 : 	return Intens(EvalColor(sc));
 
 	mov	rax, QWORD PTR [rcx]
 	mov	r8, rdx
@@ -10461,7 +10449,7 @@ $LN6:
 	vdivss	xmm0, xmm2, DWORD PTR __real@40400000
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1379 : }
+; 1375 : }
 
 	add	rsp, 56					; 00000038H
 	ret	0
@@ -10496,7 +10484,7 @@ __$ReturnUdt$ = 136
 sc$ = 144
 ?EvalColor@BerconGradient@@UEAA?AVAColor@@AEAVShadeContext@@@Z PROC ; BerconGradient::EvalColor, COMDAT
 
-; 1335 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
+; 1331 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
 
 $LN28:
 	mov	QWORD PTR [rsp+8], rbx
@@ -10512,7 +10500,7 @@ $LN28:
 	xor	eax, eax
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1335 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
+; 1331 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
 
 	mov	rsi, r8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
@@ -10522,7 +10510,7 @@ $LN28:
 	mov	QWORD PTR [rdx], rax
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1335 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
+; 1331 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
 
 	mov	rdi, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
@@ -10532,20 +10520,20 @@ $LN28:
 	mov	QWORD PTR [rdx+8], rax
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1335 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
+; 1331 : AColor BerconGradient::EvalColor(ShadeContext& sc) {
 
 	mov	rbx, rcx
 
-; 1336 : 	// Initialize returned color
-; 1337 : 	AColor res(0.0f,0.0f,0.0f,0.0f);
-; 1338 : 	if (!sc.doMaps) return res;
+; 1332 : 	// Initialize returned color
+; 1333 : 	AColor res(0.0f,0.0f,0.0f,0.0f);
+; 1334 : 	if (!sc.doMaps) return res;
 
 	cmp	DWORD PTR [r8+12], eax
 	je	$LN25@EvalColor
 
-; 1339 : 
-; 1340 : 	// Use cache
-; 1341 : 	if (sc.GetCache(this,res)) 
+; 1335 : 
+; 1336 : 	// Use cache
+; 1337 : 	if (sc.GetCache(this,res)) 
 
 	mov	rax, QWORD PTR [r8]
 	mov	r8, rdx
@@ -10555,8 +10543,8 @@ $LN28:
 	test	eax, eax
 	jne	$LN25@EvalColor
 
-; 1342 : 		return res; 	
-; 1343 : 	if (gbufID) sc.SetGBufferID(gbufID);		
+; 1338 : 		return res; 	
+; 1339 : 	if (gbufID) sc.SetGBufferID(gbufID);		
 
 	mov	edx, DWORD PTR [rbx+120]
 	test	edx, edx
@@ -10566,14 +10554,14 @@ $LN28:
 	call	QWORD PTR [rax+464]
 $LN4@EvalColor:
 
-; 1344 : 	
-; 1345 : 	// Function type
-; 1346 : 	float d;
-; 1347 : 	if (p_type == 0) {// UVW
+; 1340 : 	
+; 1341 : 	// Function type
+; 1342 : 	float d;
+; 1343 : 	if (p_type == 0) {// UVW
 
 	cmp	DWORD PTR [rbx+472], 0
 
-; 1349 : 		if (!berconXYZ.get(sc, p)) return res;
+; 1345 : 		if (!berconXYZ.get(sc, p)) return res;
 
 	mov	rdx, rsi
 	vmovaps	XMMWORD PTR [rsp+96], xmm6
@@ -10590,7 +10578,7 @@ $LN4@EvalColor:
 	vmovss	DWORD PTR p$2[rbp-104], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1349 : 		if (!berconXYZ.get(sc, p)) return res;
+; 1345 : 		if (!berconXYZ.get(sc, p)) return res;
 
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@@Z ; BerconXYZ::get
 	test	eax, eax
@@ -10605,7 +10593,7 @@ $LN4@EvalColor:
 	vmovss	xmm0, DWORD PTR p$2[rbp-104]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1350 : 		d = getGradientValueUVW(p);
+; 1346 : 		d = getGradientValueUVW(p);
 
 	lea	rdx, QWORD PTR $T3[rbp-112]
 	mov	rcx, rbx
@@ -10617,25 +10605,25 @@ $LN4@EvalColor:
 	vmovss	DWORD PTR $T3[rbp-108], xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1350 : 		d = getGradientValueUVW(p);
+; 1346 : 		d = getGradientValueUVW(p);
 
 	call	?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z ; BerconGradient::getGradientValueUVW
 
-; 1351 : 	} else { // Others
+; 1347 : 	} else { // Others
 
 	jmp	SHORT $LN23@EvalColor
 $LN5@EvalColor:
 
-; 1352 : 		d = getGradientValue(sc);
+; 1348 : 		d = getGradientValue(sc);
 
 	mov	rcx, rbx
 	call	?getGradientValue@BerconGradient@@QEAAMAEAVShadeContext@@@Z ; BerconGradient::getGradientValue
 $LN23@EvalColor:
 
-; 1353 : 	}		 
-; 1354 : 
-; 1355 : 	// Distortion
-; 1356 : 	if (p_disOn && p_distex) d += (1.f - p_distex->EvalMono(sc) * 2.f) * p_disStr;
+; 1349 : 	}		 
+; 1350 : 
+; 1351 : 	// Distortion
+; 1352 : 	if (p_disOn && p_distex) d += (1.f - p_distex->EvalMono(sc) * 2.f) * p_disStr;
 
 	cmp	DWORD PTR [rbx+524], 0
 	vmovaps	XMMWORD PTR [rsp+80], xmm7
@@ -10656,9 +10644,9 @@ $LN23@EvalColor:
 	vmovss	DWORD PTR d$[rbp-112], xmm1
 $LN8@EvalColor:
 
-; 1357 : 
-; 1358 : 	// Limit range
-; 1359 : 	if (!limitRange(d)) return res;
+; 1353 : 
+; 1354 : 	// Limit range
+; 1355 : 	if (!limitRange(d)) return res;
 
 	lea	rdx, QWORD PTR d$[rbp-112]
 	mov	rcx, rbx
@@ -10666,12 +10654,12 @@ $LN8@EvalColor:
 	test	eax, eax
 	je	SHORT $LN24@EvalColor
 
-; 1360 : 
-; 1361 : 	// Curve
-; 1362 : 	//if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
-; 1363 : 
-; 1364 : 	// Get color from gradient
-; 1365 : 	res = gradient->getColor(p_reverse?1.f-d:d, sc);
+; 1356 : 
+; 1357 : 	// Curve
+; 1358 : 	//if (p_curveOn) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);		
+; 1359 : 
+; 1360 : 	// Get color from gradient
+; 1361 : 	res = gradient->getColor(p_reverse?1.f-d:d, sc);
 
 	cmp	DWORD PTR [rbx+508], 0
 	je	SHORT $LN11@EvalColor
@@ -10685,7 +10673,7 @@ $LN12@EvalColor:
 	mov	r9, rsi
 	call	?getColor@GradientRamp@@QEAA?AVAColor@@MAEAVShadeContext@@@Z ; GradientRamp::getColor
 
-; 1368 : 	res = texout->Filter(res);
+; 1364 : 	res = texout->Filter(res);
 
 	lea	r8, QWORD PTR $T1[rbp-112]
 	lea	rdx, QWORD PTR $T4[rbp-112]
@@ -10699,14 +10687,14 @@ $LN12@EvalColor:
 	vmovups	XMMWORD PTR $T1[rbp-112], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1368 : 	res = texout->Filter(res);
+; 1364 : 	res = texout->Filter(res);
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 
-; 1369 : 
-; 1370 : 	// Shading ready, return results
-; 1371 : 	sc.PutCache(this,res);
+; 1365 : 
+; 1366 : 	// Shading ready, return results
+; 1367 : 	sc.PutCache(this,res);
 
 	mov	r8, rdi
 	mov	rdx, rbx
@@ -10721,8 +10709,8 @@ $LN26@EvalColor:
 	vmovaps	xmm6, XMMWORD PTR [rsp+96]
 $LN25@EvalColor:
 
-; 1372 : 	return res;
-; 1373 : }
+; 1368 : 	return res;
+; 1369 : }
 
 	lea	r11, QWORD PTR [rsp+112]
 	mov	rax, rdi
@@ -13409,7 +13397,7 @@ this$ = 128
 sc$ = 136
 ?getGradientValue@BerconGradient@@QEAAMAEAVShadeContext@@@Z PROC ; BerconGradient::getGradientValue, COMDAT
 
-; 1242 : float BerconGradient::getGradientValue(ShadeContext& sc) {
+; 1239 : float BerconGradient::getGradientValue(ShadeContext& sc) {
 
 $LN43:
 	mov	QWORD PTR [rsp+8], rbx
@@ -13418,7 +13406,7 @@ $LN43:
 	push	rdi
 	sub	rsp, 112				; 00000070H
 
-; 1243 : 	switch (p_type) {
+; 1240 : 	switch (p_type) {
 
 	mov	eax, DWORD PTR [rcx+472]
 	mov	rdi, rdx
@@ -13433,11 +13421,11 @@ $LN43:
 	jmp	r8
 $LN7@getGradien:
 
-; 1244 : 		case 0: { // UVW
-; 1245 : 			break; // Handled in main evaluation
-; 1246 : 		}
-; 1247 : 		case 1: { // Normal
-; 1248 : 			switch (p_normalFunction) {
+; 1241 : 		case 0: { // UVW
+; 1242 : 			break; // Handled in main evaluation
+; 1243 : 		}
+; 1244 : 		case 1: { // Normal
+; 1245 : 			switch (p_normalFunction) {
 
 	mov	ecx, DWORD PTR [rbx+516]
 	test	ecx, ecx
@@ -13447,13 +13435,13 @@ $LN7@getGradien:
 	cmp	ecx, 1
 	jne	$LN4@getGradien
 
-; 1254 : 				}
-; 1255 : 				case 2: { // Fresnel
-; 1256 : 					// NOTE: Should this get IOR from sc.GetIOR()?
-; 1257 : 					//		 I think not since its just a map, not material.
-; 1258 : 					//		 You get more predictable behaviour with constant 1.f.
-; 1259 : 					static float n1 = 1.0f;								
-; 1260 : 					float cti = fabs(getGradientValueNormal(sc));					
+; 1251 : 				}
+; 1252 : 				case 2: { // Fresnel
+; 1253 : 					// NOTE: Should this get IOR from sc.GetIOR()?
+; 1254 : 					//		 I think not since its just a map, not material.
+; 1255 : 					//		 You get more predictable behaviour with constant 1.f.
+; 1256 : 					static float n1 = 1.0f;								
+; 1257 : 					float cti = fabs(getGradientValueNormal(sc));					
 
 	vmovaps	XMMWORD PTR [rsp+96], xmm6
 	mov	rcx, rbx
@@ -13462,7 +13450,7 @@ $LN7@getGradien:
 	vmovaps	XMMWORD PTR [rsp+48], xmm9
 	call	?getGradientValueNormal@BerconGradient@@QEAAMAEAVShadeContext@@@Z ; BerconGradient::getGradientValueNormal
 
-; 1261 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
+; 1258 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
 
 	vmovss	xmm9, DWORD PTR __real@3f800000
 	vmovss	xmm7, DWORD PTR [rbx+520]
@@ -13475,7 +13463,7 @@ $LN7@getGradien:
 	vcvtsd2ss xmm8, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1261 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
+; 1258 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
 
 	vmulss	xmm0, xmm8, xmm8
 	vsubss	xmm0, xmm9, xmm0
@@ -13486,13 +13474,13 @@ $LN7@getGradien:
 	call	sqrtf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1261 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
+; 1258 : 					float stt = (n1 / p_ior) * sqrt(1 - cti * cti);
 
 	vmovss	xmm6, DWORD PTR ?n1@?L@??getGradientValue@BerconGradient@@QEAAMAEAVShadeContext@@@Z@4MA
 	vdivss	xmm1, xmm6, xmm7
 	vmulss	xmm0, xmm0, xmm1
 
-; 1262 : 					float ctt = sqrt(1 - stt * stt);
+; 1259 : 					float ctt = sqrt(1 - stt * stt);
 
 	vmulss	xmm2, xmm0, xmm0
 	vsubss	xmm0, xmm9, xmm2
@@ -13503,12 +13491,12 @@ $LN7@getGradien:
 	call	sqrtf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1263 : 					float rs = (p_ior * ctt - n1 * cti ) / (p_ior * ctt + n1 * cti);
+; 1260 : 					float rs = (p_ior * ctt - n1 * cti ) / (p_ior * ctt + n1 * cti);
 
 	vmulss	xmm3, xmm7, xmm0
 
-; 1264 : 					rs = rs * rs;
-; 1265 : 					float rp = (n1 * ctt - p_ior * cti ) / (n1 * ctt + p_ior * cti);
+; 1261 : 					rs = rs * rs;
+; 1262 : 					float rp = (n1 * ctt - p_ior * cti ) / (n1 * ctt + p_ior * cti);
 
 	vmulss	xmm4, xmm6, xmm0
 	vmulss	xmm1, xmm6, xmm8
@@ -13523,12 +13511,12 @@ $LN7@getGradien:
 	vaddss	xmm0, xmm0, xmm4
 	vdivss	xmm1, xmm1, xmm0
 
-; 1266 : 					rp = rp * rp;
+; 1263 : 					rp = rp * rp;
 
 	vmulss	xmm3, xmm1, xmm1
 	vmulss	xmm2, xmm5, xmm5
 
-; 1267 : 					return 1.f - 0.5f * (rs + rp);				
+; 1264 : 					return 1.f - 0.5f * (rs + rp);				
 
 	vaddss	xmm0, xmm3, xmm2
 	vmulss	xmm1, xmm0, DWORD PTR __real@3f000000
@@ -13537,9 +13525,9 @@ $LN7@getGradien:
 	jmp	$LN1@getGradien
 $LN9@getGradien:
 
-; 1251 : 				}
-; 1252 : 				case 1: { // Towards / Away
-; 1253 : 					return (getGradientValueNormal(sc) + 1.f) / 2.f;	
+; 1248 : 				}
+; 1249 : 				case 1: { // Towards / Away
+; 1250 : 					return (getGradientValueNormal(sc) + 1.f) / 2.f;	
 
 	mov	rcx, rbx
 	call	?getGradientValueNormal@BerconGradient@@QEAAMAEAVShadeContext@@@Z ; BerconGradient::getGradientValueNormal
@@ -13548,7 +13536,7 @@ $LN9@getGradien:
 	jmp	$LN1@getGradien
 $LN8@getGradien:
 
-; 1250 : 					return fabs(getGradientValueNormal(sc));
+; 1247 : 					return fabs(getGradientValueNormal(sc));
 
 	mov	rcx, rbx
 	call	?getGradientValueNormal@BerconGradient@@QEAAMAEAVShadeContext@@@Z ; BerconGradient::getGradientValueNormal
@@ -13561,23 +13549,23 @@ $LN8@getGradien:
 	vcvtsd2ss xmm0, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1250 : 					return fabs(getGradientValueNormal(sc));
+; 1247 : 					return fabs(getGradientValueNormal(sc));
 
 	jmp	$LN1@getGradien
 $LN4@getGradien:
 
-; 1268 : 				}
-; 1269 : 			}
-; 1270 : 		}
-; 1271 : 		case 2: { // Distance
-; 1272 : 			return getGradientValueDist(sc);		
+; 1265 : 				}
+; 1266 : 			}
+; 1267 : 		}
+; 1268 : 		case 2: { // Distance
+; 1269 : 			return getGradientValueDist(sc);		
 
 	mov	rcx, rbx
 	call	?getGradientValueDist@BerconGradient@@QEAAMAEAVShadeContext@@@Z ; BerconGradient::getGradientValueDist
 	jmp	$LN1@getGradien
 $LN12@getGradien:
 
-; 1275 : 			return Intens(sc.DiffuseIllum());
+; 1272 : 			return Intens(sc.DiffuseIllum());
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rdi
@@ -13593,14 +13581,14 @@ $LN12@getGradien:
 	vdivss	xmm0, xmm2, DWORD PTR __real@40400000
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1275 : 			return Intens(sc.DiffuseIllum());
+; 1272 : 			return Intens(sc.DiffuseIllum());
 
 	jmp	$LN1@getGradien
 $LN13@getGradien:
 
-; 1276 : 		}
-; 1277 : 		case 4: { // Map			
-; 1278 : 			return p_maptex?p_maptex->EvalMono(sc):0.f; // TODO: Evaluate submaps color, bump is tougher DELTA shift with BerconSC?
+; 1273 : 		}
+; 1274 : 		case 4: { // Map			
+; 1275 : 			return p_maptex?p_maptex->EvalMono(sc):0.f; // TODO: Evaluate submaps color, bump is tougher DELTA shift with BerconSC?
 
 	mov	rcx, QWORD PTR [rbx+536]
 	test	rcx, rcx
@@ -13610,14 +13598,14 @@ $LN13@getGradien:
 	jmp	$LN1@getGradien
 $LN14@getGradien:
 
-; 1279 : 		}
-; 1280 : 		case 5: { // Random
-; 1281 : 			seedRandomGen(sc);
+; 1276 : 		}
+; 1277 : 		case 5: { // Random
+; 1278 : 			seedRandomGen(sc);
 
 	mov	rcx, rbx
 	call	?seedRandomGen@BerconGradient@@QEAAXAEAVShadeContext@@@Z ; BerconGradient::seedRandomGen
 
-; 1282 : 			return (float)sfrand();		
+; 1279 : 			return (float)sfrand();
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
@@ -13627,17 +13615,16 @@ $LN14@getGradien:
 	jmp	$LN1@getGradien
 $LN15@getGradien:
 
-; 1283 : 			break;
-; 1284 : 		}
-; 1285 : 		case 6: { // Particle age
-; 1286 : 			Object *ob = sc.GetEvalObject();		
+; 1280 : 		}
+; 1281 : 		case 6: { // Particle age
+; 1282 : 			Object *ob = sc.GetEvalObject();		
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rdi
 	call	QWORD PTR [rax+80]
 	mov	rsi, rax
 
-; 1287 : 			if (ob && ob->IsParticleSystem()) {				
+; 1283 : 			if (ob && ob->IsParticleSystem()) {				
 
 	test	rax, rax
 	je	$LN21@getGradien
@@ -13647,14 +13634,14 @@ $LN15@getGradien:
 	test	eax, eax
 	je	$LN21@getGradien
 
-; 1288 : 				ParticleObject *obj = (ParticleObject*)ob;
-; 1289 : 				TimeValue t = sc.CurTime();
+; 1284 : 				ParticleObject *obj = (ParticleObject*)ob;
+; 1285 : 				TimeValue t = sc.CurTime();
 
 	mov	rdx, QWORD PTR [rdi]
 	mov	rcx, rdi
 	call	QWORD PTR [rdx+56]
 
-; 1290 : 				TimeValue age  = obj->ParticleAge(t,sc.mtlNum);
+; 1286 : 				TimeValue age  = obj->ParticleAge(t,sc.mtlNum);
 
 	mov	r9, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -13663,7 +13650,7 @@ $LN15@getGradien:
 	mov	ebx, eax
 	call	QWORD PTR [r9+2464]
 
-; 1291 : 				TimeValue life = obj->ParticleLife(t,sc.mtlNum);
+; 1287 : 				TimeValue life = obj->ParticleLife(t,sc.mtlNum);
 
 	mov	r9, QWORD PTR [rsi]
 	mov	edx, ebx
@@ -13672,14 +13659,14 @@ $LN15@getGradien:
 	mov	ebp, eax
 	call	QWORD PTR [r9+2472]
 
-; 1292 : 				if (age>=0 && life>=0) 
+; 1288 : 				if (age>=0 && life>=0) 
 
 	test	ebp, ebp
 	js	$LN21@getGradien
 	test	eax, eax
 	js	$LN21@getGradien
 
-; 1293 : 					return float(age)/float(life);
+; 1289 : 					return float(age)/float(life);
 
 	vxorps	xmm0, xmm0, xmm0
 	vxorps	xmm1, xmm1, xmm1
@@ -13689,18 +13676,18 @@ $LN15@getGradien:
 	jmp	$LN1@getGradien
 $LN18@getGradien:
 
-; 1294 : 			}
-; 1295 : 			break;
-; 1296 : 		}
-; 1297 : 		case 7: { // Particle speed
-; 1298 : 			Object *ob = sc.GetEvalObject();		
+; 1290 : 			}
+; 1291 : 			break;
+; 1292 : 		}
+; 1293 : 		case 7: { // Particle speed
+; 1294 : 			Object *ob = sc.GetEvalObject();		
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rdi
 	call	QWORD PTR [rax+80]
 	mov	rsi, rax
 
-; 1299 : 			if (ob && ob->IsParticleSystem()) {
+; 1295 : 			if (ob && ob->IsParticleSystem()) {
 
 	test	rax, rax
 	je	SHORT $LN21@getGradien
@@ -13710,12 +13697,12 @@ $LN18@getGradien:
 	test	eax, eax
 	je	SHORT $LN21@getGradien
 
-; 1300 : 				ParticleObject *obj = (ParticleObject*)ob; 
-; 1301 : 				/*IChkMtlAPI* chkMtlAPI = static_cast<IChkMtlAPI*>(obj->GetInterface(I_NEWMTLINTERFACE));
-; 1302 : 				if ((chkMtlAPI&&chkMtlAPI->SupportsParticleIDbyFace()))
-; 1303 : 					return (Length(obj->ParticleVelocity(sc.CurTime(),chkMtlAPI->GetParticleFromFace(sc.FaceNumber()))) - p_rangeMin) / (p_rangeMax - p_rangeMin);
-; 1304 : 				else*/
-; 1305 : 					return Length(obj->ParticleVelocity(sc.CurTime(),sc.mtlNum));
+; 1296 : 				ParticleObject *obj = (ParticleObject*)ob; 
+; 1297 : 				/*IChkMtlAPI* chkMtlAPI = static_cast<IChkMtlAPI*>(obj->GetInterface(I_NEWMTLINTERFACE));
+; 1298 : 				if ((chkMtlAPI&&chkMtlAPI->SupportsParticleIDbyFace()))
+; 1299 : 					return (Length(obj->ParticleVelocity(sc.CurTime(),chkMtlAPI->GetParticleFromFace(sc.FaceNumber()))) - p_rangeMin) / (p_rangeMax - p_rangeMin);
+; 1300 : 				else*/
+; 1301 : 					return Length(obj->ParticleVelocity(sc.CurTime(),sc.mtlNum));
 
 	mov	rdx, QWORD PTR [rdi]
 	mov	rcx, rdi
@@ -13731,18 +13718,18 @@ $LN18@getGradien:
 	jmp	SHORT $LN1@getGradien
 $LN20@getGradien:
 
-; 1306 : 			}									
-; 1307 : 			break;
-; 1308 : 		}
-; 1309 : 		case 8: { // Particle size
-; 1310 : 			Object *ob = sc.GetEvalObject();		
+; 1302 : 			}									
+; 1303 : 			break;
+; 1304 : 		}
+; 1305 : 		case 8: { // Particle size
+; 1306 : 			Object *ob = sc.GetEvalObject();		
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rdi
 	call	QWORD PTR [rax+80]
 	mov	rsi, rax
 
-; 1311 : 			if (ob && ob->IsParticleSystem()) {
+; 1307 : 			if (ob && ob->IsParticleSystem()) {
 
 	test	rax, rax
 	je	SHORT $LN21@getGradien
@@ -13752,8 +13739,8 @@ $LN20@getGradien:
 	test	eax, eax
 	je	SHORT $LN21@getGradien
 
-; 1312 : 				ParticleObject *obj = (ParticleObject*)ob;
-; 1313 : 				return obj->ParticleSize(sc.CurTime(),sc.mtlNum);
+; 1308 : 				ParticleObject *obj = (ParticleObject*)ob;
+; 1309 : 				return obj->ParticleSize(sc.CurTime(),sc.mtlNum);
 
 	mov	rdx, QWORD PTR [rdi]
 	mov	rcx, rdi
@@ -13768,14 +13755,14 @@ $LN21@getGradien:
 	vxorps	xmm0, xmm0, xmm0
 $LN1@getGradien:
 
-; 1314 : 			}									
-; 1315 : 			break;
-; 1316 : 		}
-; 1317 : 		default:
-; 1318 : 			break;
-; 1319 : 	}
-; 1320 : 	return 0.f;
-; 1321 : }
+; 1310 : 			}									
+; 1311 : 			break;
+; 1312 : 		}
+; 1313 : 		default:
+; 1314 : 			break;
+; 1315 : 	}
+; 1316 : 	return 0.f;
+; 1317 : }
 
 	lea	r11, QWORD PTR [rsp+112]
 	mov	rbx, QWORD PTR [r11+16]
@@ -13847,7 +13834,7 @@ this$ = 160
 sc$ = 168
 ?getGradientValueNormal@BerconGradient@@QEAAMAEAVShadeContext@@@Z PROC ; BerconGradient::getGradientValueNormal, COMDAT
 
-; 1195 : float BerconGradient::getGradientValueNormal(ShadeContext& sc) {
+; 1192 : float BerconGradient::getGradientValueNormal(ShadeContext& sc) {
 
 $LN62:
 	mov	QWORD PTR [rsp+8], rbx
@@ -13857,7 +13844,7 @@ $LN62:
 	lea	rbp, QWORD PTR [rsp-87]
 	sub	rsp, 144				; 00000090H
 
-; 1196 : 	switch (p_normalType) {	 
+; 1193 : 	switch (p_normalType) {	 
 
 	movsxd	rax, DWORD PTR [rcx+512]
 	mov	rsi, rdx
@@ -13870,7 +13857,7 @@ $LN62:
 	jmp	r8
 $LN4@getGradien:
 
-; 1198 : 			return -DotProd(sc.Normal(), sc.V());
+; 1195 : 			return -DotProd(sc.Normal(), sc.V());
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13897,15 +13884,15 @@ $LN60@getGradien:
 	vaddss	xmm2, xmm4, xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1198 : 			return -DotProd(sc.Normal(), sc.V());
+; 1195 : 			return -DotProd(sc.Normal(), sc.V());
 
 	vxorps	xmm0, xmm2, DWORD PTR __xmm@80000000800000008000000080000000
 	jmp	$LN1@getGradien
 $LN5@getGradien:
 
-; 1199 : 		}
-; 1200 : 		case 1: { // Local X
-; 1201 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).x;
+; 1196 : 		}
+; 1197 : 		case 1: { // Local X
+; 1198 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).x;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13921,9 +13908,9 @@ $LN55@getGradien:
 	jmp	$LN1@getGradien
 $LN6@getGradien:
 
-; 1202 : 		}
-; 1203 : 		case 2: { // Local Y
-; 1204 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).y;
+; 1199 : 		}
+; 1200 : 		case 2: { // Local Y
+; 1201 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).y;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13939,9 +13926,9 @@ $LN56@getGradien:
 	jmp	$LN1@getGradien
 $LN7@getGradien:
 
-; 1205 : 		}
-; 1206 : 		case 3: { // Local Z
-; 1207 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).z;
+; 1202 : 		}
+; 1203 : 		case 3: { // Local Z
+; 1204 : 			return (sc.VectorTo(sc.Normal(), REF_OBJECT)).z;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13957,9 +13944,9 @@ $LN57@getGradien:
 	jmp	$LN1@getGradien
 $LN8@getGradien:
 
-; 1208 : 		}
-; 1209 : 		case 4: { // World X
-; 1210 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).x;
+; 1205 : 		}
+; 1206 : 		case 4: { // World X
+; 1207 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).x;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13969,9 +13956,9 @@ $LN8@getGradien:
 	jmp	$LN55@getGradien
 $LN9@getGradien:
 
-; 1211 : 		}
-; 1212 : 		case 5: { // World Y
-; 1213 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).y;
+; 1208 : 		}
+; 1209 : 		case 5: { // World Y
+; 1210 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).y;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13981,9 +13968,9 @@ $LN9@getGradien:
 	jmp	SHORT $LN56@getGradien
 $LN10@getGradien:
 
-; 1214 : 		}
-; 1215 : 		case 6: { // World Z
-; 1216 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).z;
+; 1211 : 		}
+; 1212 : 		case 6: { // World Z
+; 1213 : 			return (sc.VectorTo(sc.Normal(), REF_WORLD)).z;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -13993,9 +13980,9 @@ $LN10@getGradien:
 	jmp	SHORT $LN57@getGradien
 $LN11@getGradien:
 
-; 1217 : 		}
-; 1218 : 		case 7: { // Camera X
-; 1219 : 			return sc.Normal().x; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).x;
+; 1214 : 		}
+; 1215 : 		case 7: { // Camera X
+; 1216 : 			return sc.Normal().x; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).x;
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14005,9 +13992,9 @@ $LN11@getGradien:
 	jmp	$LN1@getGradien
 $LN12@getGradien:
 
-; 1220 : 		}
-; 1221 : 		case 8: { // Camera Y
-; 1222 : 			return sc.Normal().y; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).y;
+; 1217 : 		}
+; 1218 : 		case 8: { // Camera Y
+; 1219 : 			return sc.Normal().y; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).y;
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14017,9 +14004,9 @@ $LN12@getGradien:
 	jmp	$LN1@getGradien
 $LN13@getGradien:
 
-; 1223 : 		}
-; 1224 : 		case 9: { // Camera Z
-; 1225 : 			return sc.Normal().z; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).z;
+; 1220 : 		}
+; 1221 : 		case 9: { // Camera Z
+; 1222 : 			return sc.Normal().z; //(sc.VectorTo(sc.Normal(), REF_CAMERA)).z;
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14029,9 +14016,9 @@ $LN13@getGradien:
 	jmp	$LN1@getGradien
 $LN14@getGradien:
 
-; 1226 : 		}
-; 1227 : 		case 10: { // To Object
-; 1228 : 			if (sc.InMtlEditor() || !p_node)
+; 1223 : 		}
+; 1224 : 		case 10: { // To Object
+; 1225 : 			if (sc.InMtlEditor() || !p_node)
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14042,7 +14029,7 @@ $LN14@getGradien:
 	test	rbx, rbx
 	je	$LN16@getGradien
 
-; 1230 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
+; 1227 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -14066,7 +14053,7 @@ $LN14@getGradien:
 	lea	r8, QWORD PTR [rbx+36]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1230 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
+; 1227 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
 
 	mov	r9d, 1
 	lea	rdx, QWORD PTR $T27[rbp-57]
@@ -14093,7 +14080,7 @@ $LN14@getGradien:
 	vmovss	DWORD PTR $T2[rbp-49], xmm4
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1230 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
+; 1227 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
 
 	call	QWORD PTR __imp_?FNormalize@@YA?AVPoint3@@AEBV1@@Z
 	lea	rdx, QWORD PTR $T24[rbp-57]
@@ -14116,12 +14103,12 @@ $LN59@getGradien:
 	vaddss	xmm0, xmm4, xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1230 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
+; 1227 : 			return DotProd(sc.Normal(), FNormalize(sc.PointFrom((p_node->GetNodeTM(sc.CurTime())).GetTrans(),REF_WORLD) - sc.P()));							
 
 	jmp	$LN1@getGradien
 $LN16@getGradien:
 
-; 1229 : 				return -DotProd(sc.Normal(), sc.V());												
+; 1226 : 				return -DotProd(sc.Normal(), sc.V());												
 
 	mov	rax, QWORD PTR [rsi]
 	lea	rdx, QWORD PTR $T25[rbp-57]
@@ -14131,9 +14118,9 @@ $LN16@getGradien:
 	jmp	$LN58@getGradien
 $LN17@getGradien:
 
-; 1231 : 		}
-; 1232 : 		case 11: { // Object Z			
-; 1233 : 			if (sc.InMtlEditor() || !p_node)
+; 1228 : 		}
+; 1229 : 		case 11: { // Object Z			
+; 1230 : 			if (sc.InMtlEditor() || !p_node)
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14144,7 +14131,7 @@ $LN17@getGradien:
 	test	rbx, rbx
 	je	SHORT $LN19@getGradien
 
-; 1235 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
+; 1232 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -14170,7 +14157,7 @@ $LN17@getGradien:
 	vmovss	xmm0, DWORD PTR [rax+32]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1235 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
+; 1232 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
 
 	mov	rax, QWORD PTR [rsi]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14180,7 +14167,7 @@ $LN17@getGradien:
 	vmovss	DWORD PTR $T1[rbp-49], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1235 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
+; 1232 : 			return DotProd(sc.Normal(), FNormalize(sc.VectorFrom(p_node->GetNodeTM(sc.CurTime()).GetRow(2),REF_WORLD)));			
 
 	call	QWORD PTR [rax+440]
 	mov	rdx, rax
@@ -14190,7 +14177,7 @@ $LN17@getGradien:
 	jmp	$LN59@getGradien
 $LN19@getGradien:
 
-; 1234 : 				return -DotProd(sc.Normal(), sc.V());				
+; 1231 : 				return -DotProd(sc.Normal(), sc.V());				
 
 	mov	rax, QWORD PTR [rsi]
 	lea	rdx, QWORD PTR $T23[rbp-57]
@@ -14209,17 +14196,17 @@ $LN19@getGradien:
 	vmulss	xmm2, xmm1, DWORD PTR [rax]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1234 : 				return -DotProd(sc.Normal(), sc.V());				
+; 1231 : 				return -DotProd(sc.Normal(), sc.V());				
 
 	jmp	$LN60@getGradien
 $LN2@getGradien:
 	vxorps	xmm0, xmm0, xmm0
 $LN1@getGradien:
 
-; 1236 : 		}
-; 1237 : 	}
-; 1238 : 	return 0.f;
-; 1239 : }
+; 1233 : 		}
+; 1234 : 	}
+; 1235 : 	return 0.f;
+; 1236 : }
 
 	lea	r11, QWORD PTR [rsp+144]
 	mov	rbx, QWORD PTR [r11+16]
@@ -14287,7 +14274,7 @@ this$ = 192
 sc$ = 200
 ?getGradientValueDist@BerconGradient@@QEAAMAEAVShadeContext@@@Z PROC ; BerconGradient::getGradientValueDist, COMDAT
 
-; 1146 : float BerconGradient::getGradientValueDist(ShadeContext& sc) {
+; 1143 : float BerconGradient::getGradientValueDist(ShadeContext& sc) {
 
 $LN56:
 	mov	QWORD PTR [rsp+8], rbx
@@ -14297,7 +14284,7 @@ $LN56:
 	lea	rbp, QWORD PTR [rsp-87]
 	sub	rsp, 176				; 000000b0H
 
-; 1147 : 	switch (p_normalType) {	 
+; 1144 : 	switch (p_normalType) {	 
 
 	movsxd	rax, DWORD PTR [rcx+512]
 	mov	rsi, rdx
@@ -14310,8 +14297,8 @@ $LN56:
 	jmp	r8
 $LN4@getGradien:
 
-; 1148 : 		case 0: { // View			 
-; 1149 : 			return -sc.P().z; //Length(sc.OrigView()); //(sc.PointTo(sc.P(), REF_CAMERA)).z;
+; 1145 : 		case 0: { // View			 
+; 1146 : 			return -sc.P().z; //Length(sc.OrigView()); //(sc.PointTo(sc.P(), REF_CAMERA)).z;
 
 	mov	rax, QWORD PTR [rdx]
 	lea	rdx, QWORD PTR $T17[rbp-89]
@@ -14323,9 +14310,9 @@ $LN46@getGradien:
 	jmp	$LN1@getGradien
 $LN5@getGradien:
 
-; 1150 : 		}
-; 1151 : 		case 1: { // Local X
-; 1152 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).x;
+; 1147 : 		}
+; 1148 : 		case 1: { // Local X
+; 1149 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).x;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14341,9 +14328,9 @@ $LN52@getGradien:
 	jmp	$LN1@getGradien
 $LN6@getGradien:
 
-; 1153 : 		}
-; 1154 : 		case 2: { // Local Y
-; 1155 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).y;
+; 1150 : 		}
+; 1151 : 		case 2: { // Local Y
+; 1152 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).y;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14359,9 +14346,9 @@ $LN53@getGradien:
 	jmp	$LN1@getGradien
 $LN7@getGradien:
 
-; 1156 : 		}
-; 1157 : 		case 3: { // Local Z
-; 1158 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).z;
+; 1153 : 		}
+; 1154 : 		case 3: { // Local Z
+; 1155 : 			return (sc.PointTo(sc.P(), REF_OBJECT)).z;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14377,9 +14364,9 @@ $LN54@getGradien:
 	jmp	$LN1@getGradien
 $LN8@getGradien:
 
-; 1159 : 		}
-; 1160 : 		case 4: { // World X
-; 1161 : 			return (sc.PointTo(sc.P(), REF_WORLD)).x;
+; 1156 : 		}
+; 1157 : 		case 4: { // World X
+; 1158 : 			return (sc.PointTo(sc.P(), REF_WORLD)).x;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14389,9 +14376,9 @@ $LN8@getGradien:
 	jmp	$LN52@getGradien
 $LN9@getGradien:
 
-; 1162 : 		}
-; 1163 : 		case 5: { // World Y
-; 1164 : 			return (sc.PointTo(sc.P(), REF_WORLD)).y;
+; 1159 : 		}
+; 1160 : 		case 5: { // World Y
+; 1161 : 			return (sc.PointTo(sc.P(), REF_WORLD)).y;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14401,9 +14388,9 @@ $LN9@getGradien:
 	jmp	SHORT $LN53@getGradien
 $LN10@getGradien:
 
-; 1165 : 		}
-; 1166 : 		case 6: { // World Z
-; 1167 : 			return (sc.PointTo(sc.P(), REF_WORLD)).z;
+; 1162 : 		}
+; 1163 : 		case 6: { // World Z
+; 1164 : 			return (sc.PointTo(sc.P(), REF_WORLD)).z;
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14413,9 +14400,9 @@ $LN10@getGradien:
 	jmp	SHORT $LN54@getGradien
 $LN11@getGradien:
 
-; 1168 : 		}
-; 1169 : 		case 7: { // Camera X
-; 1170 : 			return sc.P().x; //(sc.PointTo(sc.P(), REF_CAMERA)).x;
+; 1165 : 		}
+; 1166 : 		case 7: { // Camera X
+; 1167 : 			return sc.P().x; //(sc.PointTo(sc.P(), REF_CAMERA)).x;
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14425,9 +14412,9 @@ $LN11@getGradien:
 	jmp	$LN1@getGradien
 $LN12@getGradien:
 
-; 1171 : 		}
-; 1172 : 		case 8: { // Camera Y
-; 1173 : 			return sc.P().y; //(sc.PointTo(sc.P(), REF_CAMERA)).y;
+; 1168 : 		}
+; 1169 : 		case 8: { // Camera Y
+; 1170 : 			return sc.P().y; //(sc.PointTo(sc.P(), REF_CAMERA)).y;
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14437,12 +14424,12 @@ $LN12@getGradien:
 	jmp	$LN1@getGradien
 $LN14@getGradien:
 
+; 1171 : 		}
+; 1172 : 		case 9: { // Camera Z
+; 1173 : 			return -sc.P().z; //-(sc.PointTo(sc.P(), REF_CAMERA)).z;
 ; 1174 : 		}
-; 1175 : 		case 9: { // Camera Z
-; 1176 : 			return -sc.P().z; //-(sc.PointTo(sc.P(), REF_CAMERA)).z;
-; 1177 : 		}
-; 1178 : 		case 10: { // To Object
-; 1179 : 			if (sc.InMtlEditor() || !p_node)
+; 1175 : 		case 10: { // To Object
+; 1176 : 			if (sc.InMtlEditor() || !p_node)
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14453,7 +14440,7 @@ $LN14@getGradien:
 	test	rbx, rbx
 	je	$LN16@getGradien
 
-; 1181 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
+; 1178 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -14482,7 +14469,7 @@ $LN14@getGradien:
 	vmovss	xmm1, DWORD PTR [rdi+40]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1181 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
+; 1178 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
 
 	lea	rcx, QWORD PTR $T2[rbp-89]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14501,22 +14488,22 @@ $LN14@getGradien:
 	vmovss	DWORD PTR $T2[rbp-81], xmm4
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1181 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
+; 1178 : 			return Length((p_node->GetNodeTM(sc.CurTime())).GetTrans() - sc.PointTo(sc.P(), REF_WORLD));
 
 	call	QWORD PTR __imp_?Length@@YAMAEBVPoint3@@@Z
 	jmp	$LN1@getGradien
 $LN16@getGradien:
 
-; 1180 : 				return -sc.P().z; //(sc.PointTo(sc.P(), REF_CAMERA)).z;			
+; 1177 : 				return -sc.P().z; //(sc.PointTo(sc.P(), REF_CAMERA)).z;			
 
 	mov	rax, QWORD PTR [rsi]
 	lea	rdx, QWORD PTR $T20[rbp-89]
 	jmp	$LN46@getGradien
 $LN17@getGradien:
 
-; 1182 : 		}
-; 1183 : 		case 11: { // Object Z			
-; 1184 : 			if (sc.InMtlEditor() || !p_node)
+; 1179 : 		}
+; 1180 : 		case 11: { // Object Z			
+; 1181 : 			if (sc.InMtlEditor() || !p_node)
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -14527,8 +14514,8 @@ $LN17@getGradien:
 	test	rbx, rbx
 	je	SHORT $LN16@getGradien
 
-; 1185 : 				return -sc.P().z; //(sc.PointTo(sc.P(), REF_CAMERA)).z;			
-; 1186 : 			Matrix3 tm = p_node->GetNodeTM(sc.CurTime());
+; 1182 : 				return -sc.P().z; //(sc.PointTo(sc.P(), REF_CAMERA)).z;			
+; 1183 : 			Matrix3 tm = p_node->GetNodeTM(sc.CurTime());
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -14543,7 +14530,7 @@ $LN17@getGradien:
 	xor	r9d, r9d
 	call	QWORD PTR [rbx+1376]
 
-; 1187 : 			Point3 a = tm.GetTrans() - sc.PointTo(sc.P(), REF_WORLD);
+; 1184 : 			Point3 a = tm.GetTrans() - sc.PointTo(sc.P(), REF_WORLD);
 
 	mov	rbx, QWORD PTR [rsi]
 	lea	rdx, QWORD PTR $T18[rbp-89]
@@ -14562,7 +14549,7 @@ $LN17@getGradien:
 	vmovss	xmm1, DWORD PTR tm$21[rbp-49]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1188 : 			Point3 b = FNormalize(tm.GetRow(2));
+; 1185 : 			Point3 b = FNormalize(tm.GetRow(2));
 
 	lea	rdx, QWORD PTR $T6[rbp-89]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14582,7 +14569,7 @@ $LN17@getGradien:
 	vmovss	xmm1, DWORD PTR tm$21[rbp-57]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1188 : 			Point3 b = FNormalize(tm.GetRow(2));
+; 1185 : 			Point3 b = FNormalize(tm.GetRow(2));
 
 	lea	rcx, QWORD PTR b$1[rbp-89]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14593,7 +14580,7 @@ $LN17@getGradien:
 	vmovss	DWORD PTR $T6[rbp-85], xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1188 : 			Point3 b = FNormalize(tm.GetRow(2));
+; 1185 : 			Point3 b = FNormalize(tm.GetRow(2));
 
 	call	QWORD PTR __imp_?FNormalize@@YA?AVPoint3@@AEBV1@@Z
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14606,7 +14593,7 @@ $LN17@getGradien:
 	vaddss	xmm4, xmm3, xmm2
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1189 : 			return (-DotProd(b, a) / Length(b));
+; 1186 : 			return (-DotProd(b, a) / Length(b));
 
 	lea	rcx, QWORD PTR b$1[rbp-89]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -14616,7 +14603,7 @@ $LN17@getGradien:
 	vaddss	xmm6, xmm4, xmm1
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1189 : 			return (-DotProd(b, a) / Length(b));
+; 1186 : 			return (-DotProd(b, a) / Length(b));
 
 	call	QWORD PTR __imp_?Length@@YAMAEBVPoint3@@@Z
 	vmovaps	xmm8, XMMWORD PTR [rsp+128]
@@ -14629,10 +14616,10 @@ $LN2@getGradien:
 	vxorps	xmm0, xmm0, xmm0
 $LN1@getGradien:
 
-; 1190 : 		}
-; 1191 : 	}
-; 1192 : 	return 0.f;
-; 1193 : }
+; 1187 : 		}
+; 1188 : 	}
+; 1189 : 	return 0.f;
+; 1190 : }
 
 	lea	r11, QWORD PTR [rsp+176]
 	mov	rbx, QWORD PTR [r11+16]
@@ -14692,14 +14679,14 @@ this$ = 80
 p$ = 88
 ?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z PROC ; BerconGradient::getGradientValueUVW, COMDAT
 
-; 1049 : float BerconGradient::getGradientValueUVW(Point3 p) {
+; 1047 : float BerconGradient::getGradientValueUVW(Point3 p) {
 
 $LN73:
 	push	rbx
 	sub	rsp, 64					; 00000040H
 
-; 1050 : 	// NOTE! Asumes the values are scaled to [0..1, 0..1, 0..1] space
-; 1051 : 	switch (p_uvwType) {
+; 1048 : 	// NOTE! Asumes the values are scaled to [0..1, 0..1, 0..1] space
+; 1049 : 	switch (p_uvwType) {
 
 	movsxd	rax, DWORD PTR [rcx+504]
 	mov	rbx, rdx
@@ -14712,17 +14699,16 @@ $LN73:
 	jmp	rcx
 $LN4@getGradien:
 
-; 1052 : 		case 0: { // 1D Linear
-; 1053 : 			return p.x;
+; 1050 : 		case 0: { // 1D Linear
+; 1051 : 			return p.x;
 
 	vmovss	xmm0, DWORD PTR [rbx]
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14730,16 +14716,16 @@ $LN4@getGradien:
 	ret	0
 $LN5@getGradien:
 
-; 1054 : 		}
-; 1055 : 		case 1: { // 2D Radial
-; 1056 : 			p.x -= .5f; p.y -= .5f;
+; 1052 : 		}
+; 1053 : 		case 1: { // 2D Radial
+; 1054 : 			p.x -= .5f; p.y -= .5f;
 
 	vmovss	xmm0, DWORD PTR [rbx]
 	vsubss	xmm3, xmm0, DWORD PTR __real@3f000000
 	vmovss	xmm0, DWORD PTR [rbx+4]
 	vsubss	xmm1, xmm0, DWORD PTR __real@3f000000
 
-; 1057 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y) * 2.f;			
+; 1055 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y) * 2.f;			
 
 	vmulss	xmm2, xmm1, xmm1
 	vmulss	xmm0, xmm3, xmm3
@@ -14755,18 +14741,17 @@ $LN71@getGradien:
 $LN70@getGradien:
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1057 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y) * 2.f;			
+; 1055 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y) * 2.f;			
 
 	vmovss	xmm1, DWORD PTR __real@3f800000
 	vaddss	xmm2, xmm0, xmm0
 	vsubss	xmm0, xmm1, xmm2
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14774,9 +14759,9 @@ $LN70@getGradien:
 	ret	0
 $LN6@getGradien:
 
-; 1058 : 		}
-; 1059 : 		case 2: { // 2D Rectangle
-; 1060 : 			p.x -= .5f; p.y -= .5f;
+; 1056 : 		}
+; 1057 : 		case 2: { // 2D Rectangle
+; 1058 : 			p.x -= .5f; p.y -= .5f;
 
 	vmovss	xmm0, DWORD PTR [rbx]
 	vsubss	xmm2, xmm0, DWORD PTR __real@3f000000
@@ -14797,12 +14782,12 @@ $LN6@getGradien:
 	vmovss	DWORD PTR [rbx], xmm2
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1062 : 			return 1.f - (p.x>p.y?p.x:p.y) * 2.f;		
+; 1060 : 			return 1.f - (p.x>p.y?p.x:p.y) * 2.f;		
 
 	jmp	SHORT $LN70@getGradien
 $LN7@getGradien:
 
-; 1065 : 			return 1.f - fabs(p.x - p.y); // / SQRT2 / 2.f;					
+; 1063 : 			return 1.f - fabs(p.x - p.y); // / SQRT2 / 2.f;					
 
 	vmovss	xmm0, DWORD PTR [rbx]
 	vsubss	xmm1, xmm0, DWORD PTR [rbx+4]
@@ -14816,16 +14801,15 @@ $LN7@getGradien:
 	vcvtsd2ss xmm3, xmm2, xmm2
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1065 : 			return 1.f - fabs(p.x - p.y); // / SQRT2 / 2.f;					
+; 1063 : 			return 1.f - fabs(p.x - p.y); // / SQRT2 / 2.f;					
 
 	vsubss	xmm0, xmm0, xmm3
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14833,10 +14817,10 @@ $LN7@getGradien:
 	ret	0
 $LN8@getGradien:
 
-; 1066 : 		}
-; 1067 : 		case 4: { // 2D Pong
-; 1068 : 			p.z = 0;
-; 1069 : 			p = Normalize(p);
+; 1064 : 		}
+; 1065 : 		case 4: { // 2D Pong
+; 1066 : 			p.z = 0;
+; 1067 : 			p = Normalize(p);
 
 	mov	rdx, rbx
 	mov	DWORD PTR [rbx+8], 0
@@ -14854,7 +14838,7 @@ $LN8@getGradien:
 	call	acosf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1071 : 			if (a > pi / 4.f) a = (float)pi / 2.f - a;
+; 1069 : 			if (a > pi / 4.f) a = (float)pi / 2.f - a;
 
 	vcvtss2sd xmm1, xmm0, xmm0
 	vcomisd	xmm1, QWORD PTR __real@3fe921fb54442d18
@@ -14863,17 +14847,16 @@ $LN8@getGradien:
 	vsubss	xmm0, xmm1, xmm0
 $LN9@getGradien:
 
-; 1072 : 			return a / (float)pi * 4.f;
+; 1070 : 			return a / (float)pi * 4.f;
 
 	vdivss	xmm0, xmm0, DWORD PTR __real@40490fdb
 	vmulss	xmm0, xmm0, DWORD PTR __real@40800000
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14881,9 +14864,9 @@ $LN9@getGradien:
 	ret	0
 $LN10@getGradien:
 
-; 1073 : 		}	
-; 1074 : 		case 5: { // 2D Spiral
-; 1075 : 			p.x -= .5f; p.y -= .5f;	p.z = 0;
+; 1071 : 		}	
+; 1072 : 		case 5: { // 2D Spiral
+; 1073 : 			p.x -= .5f; p.y -= .5f;	p.z = 0;
 
 	vmovss	xmm0, DWORD PTR [rbx]
 	vmovss	xmm1, DWORD PTR [rbx+4]
@@ -14892,7 +14875,7 @@ $LN10@getGradien:
 	vmovss	DWORD PTR [rbx], xmm0
 	vsubss	xmm0, xmm1, xmm6
 
-; 1076 : 			p = Normalize(p);
+; 1074 : 			p = Normalize(p);
 
 	mov	rdx, rbx
 	mov	DWORD PTR [rbx+8], 0
@@ -14904,7 +14887,7 @@ $LN10@getGradien:
 	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR [rbx+8], eax
 
-; 1077 : 			if (p.x > 0)
+; 1075 : 			if (p.x > 0)
 
 	vmovss	xmm1, DWORD PTR [rbx]
 	vxorps	xmm0, xmm0, xmm0
@@ -14916,7 +14899,7 @@ $LN10@getGradien:
 	vmovss	xmm0, DWORD PTR [rbx+4]
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1077 : 			if (p.x > 0)
+; 1075 : 			if (p.x > 0)
 
 	jbe	SHORT $LN11@getGradien
 ; File c:\program files (x86)\microsoft visual studio 14.0\vc\include\cmath
@@ -14926,17 +14909,16 @@ $LN10@getGradien:
 	call	acosf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1078 : 				return acos(p.y) / (float)pi / 2.f;
+; 1076 : 				return acos(p.y) / (float)pi / 2.f;
 
 	vdivss	xmm1, xmm0, DWORD PTR __real@40490fdb
 	vmulss	xmm0, xmm1, xmm6
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14950,19 +14932,18 @@ $LN11@getGradien:
 	call	acosf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1080 : 				return 1.f - acos(p.y) / (float)pi / 2.f;
+; 1078 : 				return 1.f - acos(p.y) / (float)pi / 2.f;
 
 	vdivss	xmm1, xmm0, DWORD PTR __real@40490fdb
 	vmovss	xmm2, DWORD PTR __real@3f800000
 	vmulss	xmm3, xmm1, xmm6
 	vsubss	xmm0, xmm2, xmm3
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -14970,10 +14951,10 @@ $LN11@getGradien:
 	ret	0
 $LN12@getGradien:
 
-; 1081 : 		}	
-; 1082 : 		case 6: { // 2D Sweep
-; 1083 : 			p.z = 0;
-; 1084 : 			p = Normalize(p);
+; 1079 : 		}	
+; 1080 : 		case 6: { // 2D Sweep
+; 1081 : 			p.z = 0;
+; 1082 : 			p = Normalize(p);
 
 	mov	rdx, rbx
 	mov	DWORD PTR [rbx+8], 0
@@ -14991,17 +14972,16 @@ $LN12@getGradien:
 	call	acosf
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1085 : 			return acos(p.y) / (float)pi * 2.f;
+; 1083 : 			return acos(p.y) / (float)pi * 2.f;
 
 	vdivss	xmm1, xmm0, DWORD PTR __real@40490fdb
 	vaddss	xmm0, xmm1, xmm1
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -15009,9 +14989,9 @@ $LN12@getGradien:
 	ret	0
 $LN14@getGradien:
 
-; 1086 : 		}	
-; 1087 : 		case 7: { // 2D Tartan
-; 1088 : 			p.x -= .5f; p.y -= .5f;
+; 1084 : 		}	
+; 1085 : 		case 7: { // 2D Tartan
+; 1086 : 			p.x -= .5f; p.y -= .5f;
 
 	vmovss	xmm0, DWORD PTR [rbx]
 	vsubss	xmm2, xmm0, DWORD PTR __real@3f000000
@@ -15032,14 +15012,14 @@ $LN14@getGradien:
 	vmovss	DWORD PTR [rbx], xmm2
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1090 : 			return 1.f - (p.x<p.y?p.x:p.y)*2.f;		
+; 1088 : 			return 1.f - (p.x<p.y?p.x:p.y)*2.f;		
 
 	jmp	$LN70@getGradien
 $LN15@getGradien:
 
-; 1091 : 		}
-; 1092 : 		case 8: { // 3D Spherical
-; 1093 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
+; 1089 : 		}
+; 1090 : 		case 8: { // 3D Spherical
+; 1091 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
 
 	vmovss	xmm1, DWORD PTR __real@3f000000
 	vmovss	xmm0, DWORD PTR [rbx]
@@ -15049,7 +15029,7 @@ $LN15@getGradien:
 	vmovss	xmm0, DWORD PTR [rbx+8]
 	vsubss	xmm3, xmm0, xmm1
 
-; 1094 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y + p.z*p.z) * 2.f;
+; 1092 : 			return 1.f - sqrt(p.x*p.x + p.y*p.y + p.z*p.z) * 2.f;
 
 	vmulss	xmm1, xmm4, xmm4
 	vmulss	xmm0, xmm2, xmm2
@@ -15062,7 +15042,7 @@ $LN15@getGradien:
 	jmp	$LN71@getGradien
 $LN16@getGradien:
 
-; 1097 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
+; 1095 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
 
 	vmovss	xmm2, DWORD PTR __real@3f000000
 	vmovss	xmm0, DWORD PTR [rbx]
@@ -15073,7 +15053,7 @@ $LN16@getGradien:
 	vmovsd	xmm5, QWORD PTR __xmm@7fffffffffffffff7fffffffffffffff
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1097 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
+; 1095 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
 
 	vmovss	xmm1, DWORD PTR [rbx+8]
 	vsubss	xmm3, xmm0, xmm2
@@ -15088,7 +15068,7 @@ $LN16@getGradien:
 	vcvtsd2ss xmm6, xmm0, xmm0
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1097 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
+; 1095 : 			p.x -= .5f; p.y -= .5f; p.z -= .5f;
 
 	vsubss	xmm1, xmm1, xmm2
 ; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\math.h
@@ -15106,26 +15086,25 @@ $LN16@getGradien:
 	vmovss	DWORD PTR [rbx+4], xmm3
 ; File g:\dropbox\github\berconmaps\src\bercongradient.cpp
 
-; 1098 : 			p.x = fabs(p.x); p.y = fabs(p.y); p.z = fabs(p.z);
+; 1096 : 			p.x = fabs(p.x); p.y = fabs(p.y); p.z = fabs(p.z);
 
 	vmovss	DWORD PTR [rbx+8], xmm2
 
-; 1099 : 			float largest = p.x;
-; 1100 : 			if (largest < p.y) largest = p.y;
-; 1101 : 			if (largest < p.z) largest = p.z;
-; 1102 : 			return 1.f - largest * 2.f;													
+; 1097 : 			float largest = p.x;
+; 1098 : 			if (largest < p.y) largest = p.y;
+; 1099 : 			if (largest < p.z) largest = p.z;
+; 1100 : 			return 1.f - largest * 2.f;													
 
 	vmovss	xmm2, DWORD PTR __real@3f800000
 	vaddss	xmm3, xmm1, xmm1
 	vsubss	xmm0, xmm2, xmm3
 	vmovss	DWORD PTR [rbx], xmm6
 
-; 1103 : 		}
-; 1104 : 		default:
-; 1105 : 			return 0.f;
-; 1106 : 	}
-; 1107 : 	return 0.f;
-; 1108 : }
+; 1101 : 		}
+; 1102 : 		default:
+; 1103 : 			return 0.f;
+; 1104 : 	}
+; 1105 : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 	add	rsp, 64					; 00000040H
@@ -15472,7 +15451,7 @@ this$ = 8
 d$ = 16
 ?limitRange@BerconGradient@@QEAAHAEAM@Z PROC		; BerconGradient::limitRange, COMDAT
 
-; 1324 : 	d = (d - p_rangeMin) / (p_rangeMax - p_rangeMin);
+; 1320 : 	d = (d - p_rangeMin) / (p_rangeMax - p_rangeMin);
 
 	vmovss	xmm2, DWORD PTR [rcx+492]
 	vmovss	xmm0, DWORD PTR [rdx]
@@ -15482,7 +15461,7 @@ d$ = 16
 	vdivss	xmm4, xmm3, xmm2
 	vmovss	DWORD PTR [rdx], xmm4
 
-; 1325 : 	switch (p_rangeLoop) {
+; 1321 : 	switch (p_rangeLoop) {
 
 	mov	r8d, DWORD PTR [rcx+500]
 	test	r8d, r8d
@@ -15496,19 +15475,19 @@ d$ = 16
 	vxorps	xmm0, xmm0, xmm0
 $LN13@limitRange:
 
-; 1329 : 		case 3: {if (d<0||d>1) return FALSE;}		
+; 1325 : 		case 3: {if (d<0||d>1) return FALSE;}		
 
 	xor	eax, eax
 
-; 1330 : 	}
-; 1331 : 	return FALSE;
-; 1332 : }
+; 1326 : 	}
+; 1327 : 	return FALSE;
+; 1328 : }
 
 	ret	0
 $LN7@limitRange:
 	vxorps	xmm0, xmm0, xmm0
 
-; 1328 : 		case 2: {D_MIRR(d) return TRUE;}
+; 1324 : 		case 2: {D_MIRR(d) return TRUE;}
 
 	vcomiss	xmm0, xmm4
 	jbe	SHORT $LN8@limitRange
@@ -15525,14 +15504,14 @@ $LN8@limitRange:
 	vmovss	DWORD PTR [rdx], xmm1
 	mov	eax, 1
 
-; 1330 : 	}
-; 1331 : 	return FALSE;
-; 1332 : }
+; 1326 : 	}
+; 1327 : 	return FALSE;
+; 1328 : }
 
 	ret	0
 $LN9@limitRange:
 
-; 1328 : 		case 2: {D_MIRR(d) return TRUE;}
+; 1324 : 		case 2: {D_MIRR(d) return TRUE;}
 
 	vmovss	xmm0, DWORD PTR __real@3f800000
 	vsubss	xmm2, xmm0, xmm1
@@ -15542,14 +15521,14 @@ $LN9@limitRange:
 	vmovss	DWORD PTR [rdx], xmm2
 	mov	eax, 1
 
-; 1330 : 	}
-; 1331 : 	return FALSE;
-; 1332 : }
+; 1326 : 	}
+; 1327 : 	return FALSE;
+; 1328 : }
 
 	ret	0
 $LN5@limitRange:
 
-; 1327 : 		case 1: {D_LOOP(d) return TRUE;}
+; 1323 : 		case 1: {D_LOOP(d) return TRUE;}
 
 	vcvttss2si eax, xmm4
 	vxorps	xmm0, xmm0, xmm0
@@ -15563,13 +15542,13 @@ $LN5@limitRange:
 	vmovss	DWORD PTR [rdx], xmm0
 $LN4@limitRange:
 
-; 1326 : 		case 0: return TRUE; // Gradient handles the stretching by itself
+; 1322 : 		case 0: return TRUE; // Gradient handles the stretching by itself
 
 	mov	eax, 1
 
-; 1330 : 	}
-; 1331 : 	return FALSE;
-; 1332 : }
+; 1326 : 	}
+; 1327 : 	return FALSE;
+; 1328 : }
 
 	ret	0
 ?limitRange@BerconGradient@@QEAAHAEAM@Z ENDP		; BerconGradient::limitRange
@@ -15583,7 +15562,7 @@ this$ = 64
 sc$ = 72
 ?seedRandomGen@BerconGradient@@QEAAXAEAVShadeContext@@@Z PROC ; BerconGradient::seedRandomGen, COMDAT
 
-; 1111 : void BerconGradient::seedRandomGen(ShadeContext& sc) {
+; 1108 : void BerconGradient::seedRandomGen(ShadeContext& sc) {
 
 $LN14:
 	mov	QWORD PTR [rsp+24], rbp
@@ -15591,8 +15570,8 @@ $LN14:
 	push	rdi
 	sub	rsp, 48					; 00000030H
 
-; 1112 : 	int seed = 1;
-; 1113 : 	if (previewMatIDMode) {
+; 1109 : 	int seed = 1;
+; 1110 : 	if (previewMatIDMode) {
 
 	cmp	DWORD PTR [rcx+532], 0
 	mov	rsi, rdx
@@ -15600,35 +15579,35 @@ $LN14:
 	mov	edi, 1
 	je	SHORT $LN2@seedRandom
 
-; 1114 : 		seed = sc.mtlNum;
+; 1111 : 		seed = sc.mtlNum;
 
 	mov	edi, DWORD PTR [rdx+28]
 
-; 1115 : 	} else {
+; 1112 : 	} else {
 
 	jmp	$LN10@seedRandom
 $LN2@seedRandom:
 
-; 1116 : 		if (p_randMat) { 		
+; 1113 : 		if (p_randMat) { 		
 
 	cmp	DWORD PTR [rcx+480], 0
 	je	SHORT $LN4@seedRandom
 
-; 1117 : 			seed += sc.mtlNum;
+; 1114 : 			seed += sc.mtlNum;
 
 	mov	edi, DWORD PTR [rdx+28]
 	inc	edi
 $LN4@seedRandom:
 
-; 1118 : 		}
-; 1119 : 		if (p_randObj) {
+; 1115 : 		}
+; 1116 : 		if (p_randObj) {
 
 	cmp	DWORD PTR [rcx+476], 0
 	mov	QWORD PTR [rsp+64], rbx
 	je	SHORT $LN5@seedRandom
 
-; 1120 : 			int hand = 0;
-; 1121 : 			if (sc.Node())
+; 1117 : 			int hand = 0;
+; 1118 : 			if (sc.Node())
 
 	mov	rax, QWORD PTR [rdx]
 	mov	rcx, rsi
@@ -15637,7 +15616,7 @@ $LN4@seedRandom:
 	test	rax, rax
 	je	SHORT $LN6@seedRandom
 
-; 1122 : 				hand = (int)sc.Node()->GetHandle();
+; 1119 : 				hand = (int)sc.Node()->GetHandle();
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -15648,8 +15627,8 @@ $LN4@seedRandom:
 	mov	ebx, eax
 $LN6@seedRandom:
 
-; 1123 : 
-; 1124 : 			seed += hand*(hand*hand*15731 + 789221);
+; 1120 : 
+; 1121 : 			seed += hand*(hand*hand*15731 + 789221);
 
 	mov	ecx, ebx
 	imul	ecx, ebx
@@ -15659,20 +15638,20 @@ $LN6@seedRandom:
 	add	edi, edx
 $LN5@seedRandom:
 
-; 1125 : 		}
-; 1126 : 		if (p_randPar) {
+; 1122 : 		}
+; 1123 : 		if (p_randPar) {
 
 	cmp	DWORD PTR [rbp+484], 0
 	je	SHORT $LN9@seedRandom
 
-; 1127 : 			Object *ob = sc.GetEvalObject();		
+; 1124 : 			Object *ob = sc.GetEvalObject();		
 
 	mov	rax, QWORD PTR [rsi]
 	mov	rcx, rsi
 	call	QWORD PTR [rax+80]
 	mov	rbx, rax
 
-; 1128 : 			if (ob && ob->IsParticleSystem()) {
+; 1125 : 			if (ob && ob->IsParticleSystem()) {
 
 	test	rax, rax
 	je	SHORT $LN9@seedRandom
@@ -15682,8 +15661,8 @@ $LN5@seedRandom:
 	test	eax, eax
 	je	SHORT $LN9@seedRandom
 
-; 1129 : 				ParticleObject *obj = (ParticleObject*)ob;
-; 1130 : 				IChkMtlAPI* chkMtlAPI = static_cast<IChkMtlAPI*>(obj->GetInterface(I_NEWMTLINTERFACE));
+; 1126 : 				ParticleObject *obj = (ParticleObject*)ob;
+; 1127 : 				IChkMtlAPI* chkMtlAPI = static_cast<IChkMtlAPI*>(obj->GetInterface(I_NEWMTLINTERFACE));
 
 	mov	r8, QWORD PTR [rbx]
 	mov	edx, 4752				; 00001290H
@@ -15692,7 +15671,7 @@ $LN5@seedRandom:
 	call	QWORD PTR [r8+72]
 	mov	r14, rax
 
-; 1131 : 				if ((chkMtlAPI && chkMtlAPI->SupportsParticleIDbyFace())) {
+; 1128 : 				if ((chkMtlAPI && chkMtlAPI->SupportsParticleIDbyFace())) {
 
 	test	rax, rax
 	je	SHORT $LN12@seedRandom
@@ -15702,7 +15681,7 @@ $LN5@seedRandom:
 	test	eax, eax
 	je	SHORT $LN12@seedRandom
 
-; 1132 : 					int id = chkMtlAPI->GetParticleFromFace(sc.FaceNumber());
+; 1129 : 					int id = chkMtlAPI->GetParticleFromFace(sc.FaceNumber());
 
 	mov	rdx, QWORD PTR [rsi]
 	mov	rcx, rsi
@@ -15712,7 +15691,7 @@ $LN5@seedRandom:
 	mov	rcx, r14
 	call	QWORD PTR [rbx+8]
 
-; 1133 : 					seed += id*(id*id*571 + 789221);
+; 1130 : 					seed += id*(id*id*571 + 789221);
 
 	mov	ecx, eax
 	imul	ecx, eax
@@ -15724,16 +15703,16 @@ $LN12@seedRandom:
 	mov	r14, QWORD PTR [rsp+72]
 $LN9@seedRandom:
 
-; 1134 : 				}			
-; 1135 : 			}
-; 1136 : 		}
-; 1137 : 		if (p_randTile) {
+; 1131 : 				}			
+; 1132 : 			}
+; 1133 : 		}
+; 1134 : 		if (p_randTile) {
 
 	cmp	DWORD PTR [rbp+488], 0
 	mov	rbx, QWORD PTR [rsp+64]
 	je	SHORT $LN10@seedRandom
 
-; 1138 : 			seed += (int)(sc.UVW(99).z);
+; 1135 : 			seed += (int)(sc.UVW(99).z);
 
 	mov	rax, QWORD PTR [rsi]
 	lea	rdx, QWORD PTR $T1[rsp]
@@ -15744,14 +15723,14 @@ $LN9@seedRandom:
 	add	edi, ecx
 $LN10@seedRandom:
 
-; 1139 : 		}
-; 1140 : 	}
-; 1141 : 
-; 1142 : 	seed *= p_seed;
+; 1136 : 		}
+; 1137 : 	}
+; 1138 : 
+; 1139 : 	seed *= p_seed;
 
 	imul	edi, DWORD PTR [rbp+468]
 
-; 1143 : 	srand(seed*(seed*seed*15731 + 789221));	
+; 1140 : 	srand(seed*(seed*seed*15731 + 789221));	
 
 	mov	eax, edi
 	imul	eax, edi
@@ -15759,14 +15738,14 @@ $LN10@seedRandom:
 	add	ecx, 789221				; 000c0ae5H
 	imul	ecx, edi
 
-; 1144 : }
+; 1141 : }
 
 	mov	rbp, QWORD PTR [rsp+80]
 	mov	rsi, QWORD PTR [rsp+88]
 	add	rsp, 48					; 00000030H
 	pop	rdi
 
-; 1143 : 	srand(seed*(seed*seed*15731 + 789221));	
+; 1140 : 	srand(seed*(seed*seed*15731 + 789221));	
 
 	rex_jmp	QWORD PTR __imp_srand
 ?seedRandomGen@BerconGradient@@QEAAXAEAVShadeContext@@@Z ENDP ; BerconGradient::seedRandomGen

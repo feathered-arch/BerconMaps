@@ -79,7 +79,7 @@ public:
 		this->val = val;
 		useMultiTexture = true;
 	}
-
+	
 	void ResetOutput(int n) { sc->ResetOutput(n); }
 	Class_ID ClassID() override { return BERCON_SHADE_CONTEXT_CLASS_ID; }
 	BOOL InMtlEditor() override { return sc->InMtlEditor(); }
@@ -139,7 +139,7 @@ public:
 	Point3 VectorFromNoScale(const Point3& p, RefFrame ifrom) override { return sc->VectorFromNoScale(p, ifrom); }
 	void SetGBufferID(int gbid) override { sc->SetGBufferID(gbid); }
 	FILE* DebugFile() override { return 0; }																//	This is only used internally by ShadeContext anyway. But virtualize this because SC is virtual.
-	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 	BOOL GetCache(Texmap* map, AColor& c) override { return sc->GetCache(map, c); }
 	BOOL GetCache(Texmap* map, float& f) override { return sc->GetCache(map, f); }
 	BOOL GetCache(Texmap* map, Point3& p) override { return sc->GetCache(map, p); }
