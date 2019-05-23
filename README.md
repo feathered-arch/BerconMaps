@@ -10,7 +10,9 @@ RELEASE NOTES
 Version 3.04 (kentebird fork 0.9b):
 
 -- Fix Crash on Save
--- Removed outdated custom control curve
+
+-- Removed outdated custom control curve (not the gradient -- the other one...)
+
 -- Cleaned up the code a little bit.. very slight performance gain (almost not noticeable, lol)
 
 FORK INFORMATION
