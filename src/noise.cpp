@@ -63,7 +63,7 @@ float Noise::noise(Point3 p, float d, NoiseParams& np) {
 
 float Noise::worleyWrapper(Point3 p, NoiseParams& np) {	
 	float val;
-	double p3[3] = {(double)p.x, (double)p.y, (double)p.z};
+	double p3[3] = {double(p.x), double(p.y), double(p.z)};
 	double f[4];
 	int order = 1;
 	// Calc order
@@ -77,10 +77,10 @@ float Noise::worleyWrapper(Point3 p, NoiseParams& np) {
 	Worley::noise(p3, order, f, np.worleyFunction);	
 	// Return value
 	switch (order) {
-		case 1: val = (float)f[0]*np.F1; break;
-		case 2: val = (float)f[0]*np.F1 + (float)f[1]*np.F2; break;
-		case 3: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3; break;
-		case 4: val = (float)f[0]*np.F1 + (float)f[1]*np.F2 + (float)f[2]*np.F3 + (float)f[3]*np.F4; break;
+		case 1: val = float(f[0])*np.F1; break;
+		case 2: val = float(f[0])*np.F1 + (float)f[1]*np.F2; break;
+		case 3: val = float(f[0])*np.F1 + float(f[1])*np.F2 + float(f[2])*np.F3; break;
+		case 4: val = float(f[0])*np.F1 + float(f[1])*np.F2 + float(f[2])*np.F3 + float(f[3])*np.F4; break;
 		default: val = 0.0f;
 	}
 	val = val/np.spread*2.f-1.f;
@@ -93,7 +93,7 @@ float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
 	p.y += Perlin::snoise(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f) * wp.radialStr;
 	g = p; // Store radial component for gain
 	// Trunk wobble		
-	float angle = Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed+3.f) * (float)pi; // Offset so we dont get the same value as below
+	float angle = Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed+3.f) * float(pi); // Offset so we dont get the same value as below
 	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::snoise(p.z*wp.trunkFreq, wp.randSeed-5.5f) * wp.trunkStr;		
 	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
 	// Distance
@@ -111,7 +111,7 @@ float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
 	if (d > wp.angleRad) d = wp.angleRad;	
 	dist += smooth(d/wp.angleRad) * Perlin::noise(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f) * wp.angleStr;
 	// Mod
-	float ipart = (float)(int)dist;		
+	auto ipart = (float)(int)dist;		
 	dist -= ipart;
 	// Skew
 	if (dist < wp.skew)
@@ -143,62 +143,78 @@ float Noise::wood(Point3 p, Point3 &g, WoodParam &wp) {
 	samples x samples x 2 x 1D Simplex 
 */
 
-float Noise::wood(Point3 p, Point3 dPdx, Point3 dPdy, Point3 &g, WoodParam wp) {
+float Noise::wood(Point3 p, Point3 dPdx, Point3 dPdy, Point3& g, WoodParam wp)
+{
 	// Filtered noises are only intrested in maximum change in X, Y and Z axis.
 	float lx = dPdx.Length();
 	float ly = dPdy.Length();
-	float filter = MAX(lx, ly);
+	float filter = fmax(lx, ly);
 	// Radial noise
-	p.x += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed-1.125f, filter*wp.radialFreq) * wp.radialStr;
-	p.y += Perlin::fsnoise4D(p.x*wp.radialFreq, p.y*wp.radialFreq, p.z*wp.radialZ, wp.randSeed+1.125f, filter*wp.radialFreq) * wp.radialStr;
+	p.x += Perlin::fsnoise4D(p.x * wp.radialFreq, p.y * wp.radialFreq, p.z * wp.radialZ, wp.randSeed - 1.125f,
+	                         filter * wp.radialFreq) * wp.radialStr;
+	p.y += Perlin::fsnoise4D(p.x * wp.radialFreq, p.y * wp.radialFreq, p.z * wp.radialZ, wp.randSeed + 1.125f,
+	                         filter * wp.radialFreq) * wp.radialStr;
 	g = p; // Store radial component for gain
 	// Trunk wobble		
-	float angle = Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed+3.f, filter*wp.trunkFreq) * (float)pi;
-	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z*wp.trunkFreq, wp.randSeed-5.5f, filter*wp.trunkFreq) * wp.trunkStr;		
-	g = .5f*g + .5f*p; // We don't want trunk wobble to affect too much to grain
+	float angle = Perlin::fsnoise2D(p.z * wp.trunkFreq, wp.randSeed + 3.f, filter * wp.trunkFreq) * (float)pi;
+	p += Point3(cos(angle), sin(angle), 0.f) * Perlin::fsnoise2D(p.z * wp.trunkFreq, wp.randSeed - 5.5f,
+	                                                             filter * wp.trunkFreq) * wp.trunkStr;
+	g = .5f * g + .5f * p; // We don't want trunk wobble to affect too much to grain
 	// Angular noise (applied inside super sampled code, but not dependant on it)
-	float angNoise = Perlin::fnoise4D(p.x*wp.angleFreq, p.y*wp.angleFreq, p.z*wp.angleFreq*.5f, wp.randSeed+10.6f, filter*wp.angleFreq);	
+	float angNoise = Perlin::fnoise4D(p.x * wp.angleFreq, p.y * wp.angleFreq, p.z * wp.angleFreq * .5f,
+	                                  wp.randSeed + 10.6f, filter * wp.angleFreq);
 	// Super sampling the mod function and functions dependant on it starts here
-	float samplesf = (float)wp.samples;
+	auto samplesf = (float)wp.samples;
 	float total = 0.f;
 	Point3 fp = p - dPdx * .5f - dPdy * .5f;
-	for (int i=0; i<wp.samples; i++) for (int j=0; j<wp.samples; j++) {
-		// Compute sample location
-		p = fp + dPdx * (((float)i + .5f) / samplesf) + dPdy * (((float)j + .5f) / samplesf);
-		// Distance	
-		float dist = 0.f;	
-		switch (wp.woodType) {
-			case 0: dist = sqrt(p.x*p.x+p.y*p.y); break;
-			case 1: p*=.05f; dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed-7.1f)+1.f) / .5f * 15.f; break;
-			case 2: p*=.05f; dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed+3.15f)+1.f) / .5f * 15.f; break;
-			case 3: dist = p.x<0.f?-p.x:p.x; break;
+	for (int i = 0; i < wp.samples; i++)
+		for (int j = 0; j < wp.samples; j++)
+		{
+			// Compute sample location
+			p = fp + dPdx * ((float(i) + .5f) / samplesf) + dPdy * ((float(j) + .5f) / samplesf);
+			// Distance	
+			float dist = 0.f;
+			switch (wp.woodType)
+			{
+			case 0: dist = sqrt(p.x * p.x + p.y * p.y);
+				break;
+			case 1: p *= .05f;
+				dist = (Perlin::noise(p.x, p.y, p.z, wp.randSeed - 7.1f) + 1.f) / .5f * 15.f;
+				break;
+			case 2: p *= .05f;
+				dist = (Perlin::snoise(p.x, p.y, p.z, wp.randSeed + 3.15f) + 1.f) / .5f * 15.f;
+				break;
+			case 3: dist = p.x < 0.f ? -p.x : p.x;
+				break;
+			}
+			// Width variation
+			dist += Perlin::snoise(dist + wp.randSeed * 2.f) * wp.widthVar;
+			// We need FAST and continous random function here, 1D Simplex does fairly well
+			// Angular noise
+			float d = dist;
+			if (d > wp.angleRad) d = wp.angleRad;
+			dist += smooth(d / wp.angleRad) * angNoise * wp.angleStr;
+			// Mod
+			auto ipart = float(int(dist));
+			dist -= ipart;
+			// Skew
+			if (dist < wp.skew)
+				dist *= .5f / wp.skew;
+			else
+				dist = dist * .5f / (1.f - wp.skew) - wp.skew * (.5f / (1.f - wp.skew)) + .5f;
+			// Reverse
+			dist *= 2.f;
+			if (dist > 1.f)
+				dist = 2.f - dist;
+			// Smooth and scale
+			dist = smooth(dist, wp.lowTresh, wp.highTresh);
+			// Gain variation				
+			float const gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f;
+			// Again we need FAST random function, in this case it doesn't have to be continous		
+			dist *= (1.f - wp.gainVar) + gain * wp.gainVar;
+			// Add to total value
+			total += dist;
 		}
-		// Width variation
-		dist += Perlin::snoise(dist+wp.randSeed*2.f) * wp.widthVar; // We need FAST and continous random function here, 1D Simplex does fairly well
-		// Angular noise
-		float d = dist;
-		if (d > wp.angleRad) d = wp.angleRad;	
-		dist += SMOOTH(d/wp.angleRad) * angNoise * wp.angleStr;
-		// Mod
-		float ipart = (float)(int)dist;		
-		dist -= ipart;
-		// Skew
-		if (dist < wp.skew)
-			dist *= .5f / wp.skew;
-		else
-			dist = dist * .5f / (1.f-wp.skew) - wp.skew * (.5f/(1.f-wp.skew)) + .5f;	
-		// Reverse
-		dist *= 2.f;
-		if (dist > 1.f)
-			dist = 2.f - dist;
-		// Smooth and scale
-		dist = smooth(dist, wp.lowTresh, wp.highTresh);	
-		// Gain variation				
-		float gain = (Perlin::snoise((ipart + wp.randSeed) * 314.134f) + 1.f) * .5f; // Again we need FAST random function, in this case it doesn't have to be continous		
-		dist *= (1.f-wp.gainVar) + gain * wp.gainVar;
-		// Add to total value
-	 	total += dist;
-	}
 	// Return final value, just need to divide sum with number of samples taken
 	return total / (float)(wp.samples * wp.samples);
 }
@@ -214,7 +230,7 @@ float Noise::limitedNoise(Point3 p, NoiseParams &np) {
 float Noise::limitedNoise(Point3 p, Point3 dpdx, Point3 dpdy, NoiseParams &np) {
 	float lx = dpdx.Length();
 	float ly = dpdy.Length();
-	lx = MAX(lx, ly);
+	lx = fmax(lx, ly);
 	float res = Fractal::f(p, lx, np);	
 	if (np.low<np.high) res = threshold(res,np.low,np.high);		
 	if (res < 0) return 0.0f;

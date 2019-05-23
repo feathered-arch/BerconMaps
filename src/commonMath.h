@@ -18,7 +18,7 @@ under the License.
 #pragma once
 
 #include <cmath>
-#include <emmintrin.h>
+
 
 typedef float real;
 typedef double ireal;
@@ -28,10 +28,16 @@ typedef double ireal;
 float smooth(float d);											//noise @ line 112
 
 float smooth(float d, float low, float high);
+#if MAX_RELEASE >= 20900
+constexpr float linear(float d, float low, float high);
 
+constexpr float lerp(float a, float b, float blend);
+#else
 float linear(float d, float low, float high);
 
 float lerp(float a, float b, float blend);
+#endif
+
 
 inline float avg(float a, float b) { return (a + b) / 2.f; }
 inline float avg(float a, float b, float c) { return (a + b + c) / 3.f; }
@@ -41,19 +47,19 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 // Macros
 
-#define SMOOTH(d) ((d)*(d)*(3.f-2.f*(d)))								// noise for WOOD
+//#define SMOOTH(d) ((d)*(d)*(3.f-2.f*(d)))							
 
-#define MAX(a,b) (((a) > (b)) ? (a) : (b))						// noise and tile
+//#define MAX(a,b) (((a) > (b)) ? (a) : (b))						
 
 //#define MIN(a,b) (((a) > (b)) ? (b) : (a))
 
-#define FASTFLOOR(x) ((x) < 0 ? ((int)(x)-1) : ((int)(x)) )	
+#define FASTFLOOR(x) ((x) < 0 ? ((int)(x)-1) : ((int)(x)) )			//nearest integer less than or equal to x -- used where we deal with INT to avoid conversion penalty
 
 
 
 //#define FASTFLOORI(x) ((x) < 0 ? ((int)x-1) : ((int)x) )		// not used
 
-#define FASTFLOORL(x) ((x) < 0 ? ((long)(x)-1) : ((long)(x)) )		// used in Worley
+//#define FASTFLOORL(x) ((x) < 0 ? ((long)(x)-1) : ((long)(x)) )		// used in Worley (but redefined there, so not used HERE)
 
 #define FADE(t) ( (t) * (t) * (t) * ( (t) * ( (t) * 6 - 15 ) + 10 ) )		// used in Perlin
 
@@ -67,6 +73,6 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 #define UFRAND() ((double)rand() / (double)RAND_MAX * 2. - 1.)	// Random number (-1..1)			// tile
 
-#define SQRT2 1.41421356 // sqrt(2);							// Gradient
+//#define SQRT2 1.41421356 // sqrt(2);							
 
 #define DEG2RAD 0.0174532925f									// Tile

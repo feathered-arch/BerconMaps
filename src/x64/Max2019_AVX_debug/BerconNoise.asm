@@ -5,11 +5,10 @@ include listing.inc
 INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
-PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
-PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
-PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ ; `string'
-PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
-PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
+PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
+PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
+PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
+PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
 PUBLIC	?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::BeginCreate
 PUBLIC	?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::EndCreate
 PUBLIC	?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::OkToCreate
@@ -35,15 +34,67 @@ PUBLIC	?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z ; ClassDesc::GetInter
 PUBLIC	?ClearInterfaces@ClassDesc@@UEAAXXZ		; ClassDesc::ClearInterfaces
 PUBLIC	?SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ	; ClassDesc::SubClassID
 PUBLIC	?Execute@ClassDesc@@UEAA_JH_K00@Z		; ClassDesc::Execute
-PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
-PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
-PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
-PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
-PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
-PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ ; `string'
-PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
-PUBLIC	??_7XYZ_Desc@@6B@				; XYZ_Desc::`vftable'
+PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
+PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
 PUBLIC	??_GXYZ_Desc@@UEAAPEAXI@Z			; XYZ_Desc::`scalar deleting destructor'
+PUBLIC	?IsPublic@BerconNoiseClassDesc@@UEAAHXZ		; BerconNoiseClassDesc::IsPublic
+PUBLIC	?Create@BerconNoiseClassDesc@@UEAAPEAXH@Z	; BerconNoiseClassDesc::Create
+PUBLIC	?ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::ClassName
+PUBLIC	?SuperClassID@BerconNoiseClassDesc@@UEAAKXZ	; BerconNoiseClassDesc::SuperClassID
+PUBLIC	?ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ ; BerconNoiseClassDesc::ClassID
+PUBLIC	?Category@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::Category
+PUBLIC	?InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::InternalName
+PUBLIC	?HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ ; BerconNoiseClassDesc::HInstance
+PUBLIC	??_GBerconNoiseClassDesc@@UEAAPEAXI@Z		; BerconNoiseClassDesc::`scalar deleting destructor'
+PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
+PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
+PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
+PUBLIC	?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA ; `MaxSDK::Util::TabOutOfRangeException::What'::`1'::__LINE__Var
+PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ ; `string'
+PUBLIC	?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::BeginCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::EndCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::OkToCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::HasClassParams'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA ; `ClassDesc::EditClassParams'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NumActionTables'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA ; `ClassDesc::GetActionTable'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::IsManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA ; `ClassDesc::CanManipulate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA ; `ClassDesc::CanManipulateNode'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NeedsToSave'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA ; `ClassDesc::Save'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA ; `ClassDesc::Load'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA ; `ClassDesc::InitialRollupPageState'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA ; `ClassDesc::UseOnlyInternalNameForMAXScriptExposure'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA ; `ClassDesc::GetParamMap'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA ; `ClassDesc::GetUserDlgProc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA ; `ClassDesc::DrawRepresentation'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NumInterfaces'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA ; `ClassDesc::GetInterfaceAt'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA ; `ClassDesc::ClearInterfaces'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA ; `ClassDesc::SubClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA ; `ClassDesc::Execute'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0Color@@QEAA@NNN@Z@4JA	; `Color::Color'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0Color@@QEAA@HHH@Z@4JA	; `Color::Color'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA ; `ClassDesc2::SetUserDlgProc'::`1'::__LINE__Var
+PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ ; `string'
+PUBLIC	?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA ; `ClassDesc2::CreateQtWidget'::`1'::__LINE__Var
+PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
+PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
+PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
+PUBLIC	??_7XYZ_Desc@@6B@				; XYZ_Desc::`vftable'
+PUBLIC	?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA ; `XYZ_Desc::XYZ_Desc'::`1'::__LINE__Var
 PUBLIC	??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg@ ; `string'
 PUBLIC	??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk@ ; `string'
 PUBLIC	??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2@ ; `string'
@@ -74,18 +125,22 @@ PUBLIC	??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA
 PUBLIC	??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn@ ; `string'
 PUBLIC	??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp@ ; `string'
 PUBLIC	??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@ ; `string'
+PUBLIC	?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA	; `XYZ_Desc::`scalar deleting destructor''::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA	; `XYZ_Desc::~XYZ_Desc'::`1'::__LINE__Var
 PUBLIC	?texoutDlg@BerconNoise@@2PEAVParamDlg@@EA	; BerconNoise::texoutDlg
-PUBLIC	?IsPublic@BerconNoiseClassDesc@@UEAAHXZ		; BerconNoiseClassDesc::IsPublic
-PUBLIC	?Create@BerconNoiseClassDesc@@UEAAPEAXH@Z	; BerconNoiseClassDesc::Create
-PUBLIC	?ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::ClassName
-PUBLIC	?SuperClassID@BerconNoiseClassDesc@@UEAAKXZ	; BerconNoiseClassDesc::SuperClassID
-PUBLIC	?ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ ; BerconNoiseClassDesc::ClassID
-PUBLIC	?Category@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::Category
-PUBLIC	?InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ	; BerconNoiseClassDesc::InternalName
-PUBLIC	?HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ ; BerconNoiseClassDesc::HInstance
 PUBLIC	??_7BerconNoiseClassDesc@@6B@			; BerconNoiseClassDesc::`vftable'
-PUBLIC	??_GBerconNoiseClassDesc@@UEAAPEAXI@Z		; BerconNoiseClassDesc::`scalar deleting destructor'
+PUBLIC	?__LINE__Var@?0??IsPublic@BerconNoiseClassDesc@@UEAAHXZ@4JA ; `BerconNoiseClassDesc::IsPublic'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Create@BerconNoiseClassDesc@@UEAAPEAXH@Z@4JA ; `BerconNoiseClassDesc::Create'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA ; `BerconNoiseClassDesc::ClassName'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SuperClassID@BerconNoiseClassDesc@@UEAAKXZ@4JA ; `BerconNoiseClassDesc::SuperClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ@4JA ; `BerconNoiseClassDesc::ClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Category@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA ; `BerconNoiseClassDesc::Category'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA ; `BerconNoiseClassDesc::InternalName'::`1'::__LINE__Var
 PUBLIC	??_C@_1BI@OFHJLFOO@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe@ ; `string'
+PUBLIC	?__LINE__Var@?0??HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA ; `BerconNoiseClassDesc::HInstance'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0BerconNoiseClassDesc@@QEAA@XZ@4JA ; `BerconNoiseClassDesc::BerconNoiseClassDesc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1BerconNoiseClassDesc@@UEAA@XZ@4JA ; `BerconNoiseClassDesc::~BerconNoiseClassDesc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???_GBerconNoiseClassDesc@@UEAAPEAXI@Z@4JA ; `BerconNoiseClassDesc::`scalar deleting destructor''::`1'::__LINE__Var
 PUBLIC	??_C@_1O@KEKEFEMI@?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt@ ; `string'
 PUBLIC	??_C@_1BM@NGCAEKNK@?$AAU?$AAV?$AAW?$AAd?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn@ ; `string'
 PUBLIC	??_C@_1BM@HCNKLGAJ@?$AAu?$AAs?$AAe?$AAD?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn@ ; `string'
@@ -156,7 +211,11 @@ PUBLIC	_CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util
 PUBLIC	??_R0?AVException@Util@MaxSDK@@@8		; MaxSDK::Util::Exception `RTTI Type Descriptor'
 PUBLIC	_CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
 PUBLIC	??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@ ; `string'
+PUBLIC	?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA ; `Tab<FPInterface *>::operator[]'::`1'::__LINE__Var
 PUBLIC	??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@ ; `string'
+PUBLIC	?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA ; `Tab<FPInterface *>::ZeroCount'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA ; `Tab<FPInterface *>::Count'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
 PUBLIC	??_R4TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`RTTI Complete Object Locator'
 PUBLIC	??_R3TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Array'
@@ -183,11 +242,6 @@ PUBLIC	??_R0?AVClassDesc@@@8				; ClassDesc `RTTI Type Descriptor'
 PUBLIC	??_R3ClassDesc@@8				; ClassDesc::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2ClassDesc@@8				; ClassDesc::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@ClassDesc@@8			; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
-PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
-PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 PUBLIC	??_R4XYZ_Desc@@6B@				; XYZ_Desc::`RTTI Complete Object Locator'
 PUBLIC	??_R0?AVXYZ_Desc@@@8				; XYZ_Desc `RTTI Type Descriptor'
 PUBLIC	??_R3XYZ_Desc@@8				; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
@@ -205,36 +259,33 @@ PUBLIC	??_R1A@?0A@EA@BerconNoiseClassDesc@@8		; BerconNoiseClassDesc::`RTTI Base
 PUBLIC	??_R1A@?0A@EA@ClassDesc2@@8			; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3ClassDesc2@@8				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2ClassDesc2@@8				; ClassDesc2::`RTTI Base Class Array'
-EXTRN	?ResetClassParams@ClassDesc2@@UEAAXH@Z:PROC	; ClassDesc2::ResetClassParams
-EXTRN	?GetParamBlockDescByID@ClassDesc2@@UEAAPEAVParamBlockDesc2@@F@Z:PROC ; ClassDesc2::GetParamBlockDescByID
+EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
+EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
+EXTRN	??_EBerconNoiseClassDesc@@UEAAPEAXI@Z:PROC	; BerconNoiseClassDesc::`vector deleting destructor'
+EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
+EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
+EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
 EXTRN	?AddParamBlockDesc@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::AddParamBlockDesc
 EXTRN	?BeginEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAVAnimatable@@@Z:PROC ; ClassDesc2::BeginEditParams
 EXTRN	?EndEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAVAnimatable@@@Z:PROC ; ClassDesc2::EndEditParams
-EXTRN	?InvalidateUI@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::InvalidateUI
-EXTRN	?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC ; ClassDesc2::MakeAutoParamBlocks
 EXTRN	?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC ; BaseInterfaceServer::GetInterface
-EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
-EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
-EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
-EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
-EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
-EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
-EXTRN	GUID_NULL:BYTE
-EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
-EXTRN	??_EBerconNoiseClassDesc@@UEAAPEAXI@Z:PROC	; BerconNoiseClassDesc::`vector deleting destructor'
-EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
-EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
-EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
-EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
-EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
 EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@PEB_W@Z:PROC ; ClassDesc::GetInterface
 EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@VInterface_ID@@@Z:PROC ; ClassDesc::GetInterface
-EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
-EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
+EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
+EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
+EXTRN	?GetParamBlockDescByID@ClassDesc2@@UEAAPEAVParamBlockDesc2@@F@Z:PROC ; ClassDesc2::GetParamBlockDescByID
+EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
+EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
+EXTRN	?InvalidateUI@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::InvalidateUI
+EXTRN	?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC ; ClassDesc2::MakeAutoParamBlocks
+EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
+EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
+EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
+EXTRN	?ResetClassParams@ClassDesc2@@UEAAXH@Z:PROC	; ClassDesc2::ResetClassParams
+EXTRN	GUID_NULL:BYTE
+EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
+EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
 EXTRN	?hInstance@@3PEAUHINSTANCE__@@EA:QWORD		; hInstance
-_BSS	SEGMENT
-?texoutDlg@BerconNoise@@2PEAVParamDlg@@EA DQ 01H DUP (?) ; BerconNoise::texoutDlg
-_BSS	ENDS
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
 IsolationAwarePrivateT_SqbjaYRiRY DD 01H DUP (?)
@@ -250,6 +301,9 @@ _BSS	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
+_BSS	ENDS
+_BSS	SEGMENT
+?texoutDlg@BerconNoise@@2PEAVParamDlg@@EA DQ 01H DUP (?) ; BerconNoise::texoutDlg
 _BSS	ENDS
 ;	COMDAT ??_R2ClassDesc2@@8
 rdata$r	SEGMENT
@@ -387,10 +441,6 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3XYZ_Desc@@8
 	DD	imagerel ??_R4XYZ_Desc@@6B@
 rdata$r	ENDS
-;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
-_DATA	SEGMENT
-WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
-_DATA	ENDS
 ;	COMDAT ??_R1A@?0A@EA@ClassDesc@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@ClassDesc@@8 DD imagerel ??_R0?AVClassDesc@@@8 ; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -592,6 +642,18 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3TabOutOfRangeException@Util@MaxSDK@@8
 	DD	imagerel ??_R4TabOutOfRangeException@Util@MaxSDK@@6B@
 rdata$r	ENDS
+;	COMDAT ?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA DD 03beH ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA DD 0dcH ; `Tab<FPInterface *>::Count'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA DD 0e8H ; `Tab<FPInterface *>::ZeroCount'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@
 CONST	SEGMENT
 ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@ DB 'T'
@@ -602,6 +664,10 @@ CONST	SEGMENT
 	DB	00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H
 	DB	'r', 00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA DD 0165H ; `Tab<FPInterface *>::operator[]'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@
 CONST	SEGMENT
 ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@ DB 'I'
@@ -1030,12 +1096,56 @@ CONST	SEGMENT
 ??_C@_1O@KEKEFEMI@?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt@ DB 'o', 00H, 'u', 00H, 't'
 	DB	00H, 'p', 00H, 'u', 00H, 't', 00H, 00H, 00H	; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???_GBerconNoiseClassDesc@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GBerconNoiseClassDesc@@UEAAPEAXI@Z@4JA DD 04bH ; `BerconNoiseClassDesc::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???1BerconNoiseClassDesc@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1BerconNoiseClassDesc@@UEAA@XZ@4JA DD 04bH ; `BerconNoiseClassDesc::~BerconNoiseClassDesc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0BerconNoiseClassDesc@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0BerconNoiseClassDesc@@QEAA@XZ@4JA DD 04bH ; `BerconNoiseClassDesc::BerconNoiseClassDesc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA DD 0ebH ; `BerconNoiseClassDesc::HInstance'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1BI@OFHJLFOO@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe@
 CONST	SEGMENT
 ??_C@_1BI@OFHJLFOO@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe@ DB 'B'
 	DB	00H, 'e', 00H, 'r', 00H, 'c', 00H, 'o', 00H, 'n', 00H, 'N', 00H
 	DB	'o', 00H, 'i', 00H, 's', 00H, 'e', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA DD 0e9H ; `BerconNoiseClassDesc::InternalName'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Category@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Category@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA DD 0e8H ; `BerconNoiseClassDesc::Category'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ@4JA DD 0e7H ; `BerconNoiseClassDesc::ClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??SuperClassID@BerconNoiseClassDesc@@UEAAKXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SuperClassID@BerconNoiseClassDesc@@UEAAKXZ@4JA DD 0e6H ; `BerconNoiseClassDesc::SuperClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ@4JA DD 0e5H ; `BerconNoiseClassDesc::ClassName'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Create@BerconNoiseClassDesc@@UEAAPEAXH@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Create@BerconNoiseClassDesc@@UEAAPEAXH@Z@4JA DD 0e4H ; `BerconNoiseClassDesc::Create'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??IsPublic@BerconNoiseClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??IsPublic@BerconNoiseClassDesc@@UEAAHXZ@4JA DD 0e3H ; `BerconNoiseClassDesc::IsPublic'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_7BerconNoiseClassDesc@@6B@
 CONST	SEGMENT
 ??_7BerconNoiseClassDesc@@6B@ DQ FLAT:??_R4BerconNoiseClassDesc@@6B@ ; BerconNoiseClassDesc::`vftable'
@@ -1091,6 +1201,14 @@ CONST	SEGMENT
 	DQ	FLAT:?Execute@ClassDesc@@UEAA_JH_K00@Z
 	DQ	FLAT:?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA DD 0101H	; `XYZ_Desc::~XYZ_Desc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA DD 0101H	; `XYZ_Desc::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@
 CONST	SEGMENT
 ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@ DB 'M', 00H, 'a', 00H
@@ -1272,6 +1390,10 @@ CONST	SEGMENT
 	DB	't', 00H, 'e', 00H, 'r', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
 	DB	00H						; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA DD 083H ; `XYZ_Desc::XYZ_Desc'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_7XYZ_Desc@@6B@
 CONST	SEGMENT
 ??_7XYZ_Desc@@6B@ DQ FLAT:??_R4XYZ_Desc@@6B@		; XYZ_Desc::`vftable'
@@ -1279,28 +1401,6 @@ CONST	SEGMENT
 	DQ	FLAT:?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z
 	DQ	FLAT:?NumInterfaces@BaseInterfaceServer@@UEBAHXZ
 	DQ	FLAT:?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z
-CONST	ENDS
-;	COMDAT ??_R0?AVClassDesc2@@@8
-data$r	SEGMENT
-??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVClassDesc2@@', 00H
-data$r	ENDS
-;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@
-CONST	SEGMENT
-??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ DB 'M'
-	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
-	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
-	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
-	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
-	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
-	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
-CONST	SEGMENT
-??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
-	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
-	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
 CONST	ENDS
 ;	COMDAT _CT??_R0?AVMaxHeapOperators@@@818
 xdata$x	SEGMENT
@@ -1318,11 +1418,181 @@ data$r	SEGMENT
 	DQ	0000000000000000H
 	DB	'.?AVMaxHeapOperators@@', 00H
 data$r	ENDS
+;	COMDAT ??_R0?AVClassDesc2@@@8
+data$r	SEGMENT
+??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVClassDesc2@@', 00H
+data$r	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA DD 0122H ; `ClassDesc2::CreateQtWidget'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@
 CONST	SEGMENT
 ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ DB 'i', 00H, ' '
 	DB	00H, '>', 00H, '=', 00H, ' ', 00H, '0', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA DD 0a5eH ; `ClassDesc2::SetUserDlgProc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Color@@QEAA@HHH@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Color@@QEAA@HHH@Z@4JA DD 071H	; `Color::Color'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Color@@QEAA@NNN@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Color@@QEAA@NNN@Z@4JA DD 067H	; `Color::Color'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA DD 059aH ; `ClassDesc::Execute'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA DD 058cH ; `ClassDesc::SubClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA DD 0583H ; `ClassDesc::ClearInterfaces'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA DD 0572H ; `ClassDesc::GetInterfaceAt'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA DD 056fH ; `ClassDesc::NumInterfaces'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA DD 0569H ; `ClassDesc::DrawRepresentation'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA DD 055dH ; `ClassDesc::GetUserDlgProc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA DD 054cH ; `ClassDesc::GetParamMap'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA DD 04faH ; `ClassDesc::UseOnlyInternalNameForMAXScriptExposure'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA DD 04efH ; `ClassDesc::InitialRollupPageState'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA DD 04e0H ; `ClassDesc::Load'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA DD 04d9H ; `ClassDesc::Save'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA DD 04d3H ; `ClassDesc::NeedsToSave'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA DD 04caH ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA DD 04c2H ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA DD 04b0H ; `ClassDesc::CanManipulateNode'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA DD 04a9H ; `ClassDesc::CanManipulate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA DD 04a0H ; `ClassDesc::IsManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA DD 0499H ; `ClassDesc::GetActionTable'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA DD 0492H ; `ClassDesc::NumActionTables'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA DD 0479H ; `ClassDesc::EditClassParams'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA DD 0472H ; `ClassDesc::HasClassParams'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 0426H ; `ClassDesc::OkToCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 0405H ; `ClassDesc::EndCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 03fbH ; `ClassDesc::BeginCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA DD 066H ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA DD 066H ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@
+CONST	SEGMENT
+??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ DB 'M'
+	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
+	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
+	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
+	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
+	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
+	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA DD 063H ; `MaxSDK::Util::TabOutOfRangeException::What'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA DD 05eH ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
+CONST	SEGMENT
+??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
+	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
+	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA DD 091H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
+_DATA	SEGMENT
+WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
+_DATA	ENDS
 PUBLIC	??_H@YAXPEAX_K1P6APEAX0@Z@Z			; `vector constructor iterator'
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -1536,6 +1806,7 @@ PUBLIC	??_7BerconNoise@@6BReferenceTarget@@@		; BerconNoise::`vftable'
 PUBLIC	??_7BerconNoise@@6BISubMap@@@			; BerconNoise::`vftable'
 PUBLIC	??_7BerconNoise@@6B@				; BerconNoise::`vftable'
 PUBLIC	??_7BerconNoiseDlgProc@@6B@			; BerconNoiseDlgProc::`vftable'
+PUBLIC	?__LINE__Var@?0??Reset@BerconNoise@@UEAAXXZ@4JA	; `BerconNoise::Reset'::`1'::__LINE__Var
 PUBLIC	??_C@_1CG@JEPHKPPG@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAR?$AAe@ ; `string'
 PUBLIC	??_C@_1GC@JFMJJLAB@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh@ ; `string'
 PUBLIC	??_R1A@?0A@EA@ReferenceTarget@@8		; ReferenceTarget::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -1620,7 +1891,6 @@ PUBLIC	__real@41c80000
 PUBLIC	__real@bff0000000000000
 PUBLIC	__real@c08f400000000000
 PUBLIC	__real@c12e848000000000
-PUBLIC	__xmm@80000000800000008000000080000000
 EXTRN	_purecall:PROC
 EXTRN	?__global_delete@@YAXPEAX_K@Z:PROC		; __global_delete
 EXTRN	atexit:PROC
@@ -1628,10 +1898,9 @@ EXTRN	__imp_SendMessageW:PROC
 EXTRN	__imp_GetDlgItem:PROC
 EXTRN	__imp_??2MaxHeapOperators@@SAPEAX_K@Z:PROC
 EXTRN	__imp_??3MaxHeapOperators@@SAXPEAX@Z:PROC
-EXTRN	__imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC
-EXTRN	__imp_??1Exception@Util@MaxSDK@@UEAA@XZ:PROC
 EXTRN	__imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z:PROC
 EXTRN	__imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ:PROC
+EXTRN	__imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC
 EXTRN	__imp_?assert1@@YAHHPEB_W00@Z:PROC
 EXTRN	__imp_?zfree@@YAXPEAPEAX@Z:PROC
 EXTRN	__imp_??0WStr@@QEAA@PEB_W@Z:PROC
@@ -1645,6 +1914,10 @@ EXTRN	__imp_?DeleteReference@ReferenceMaker@@QEAA?AW4RefResult@@H@Z:PROC
 EXTRN	__imp_?GetInterface@ReferenceTarget@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC
 EXTRN	__imp_?GetCOREInterface@@YAPEAVInterface@@XZ:PROC
 EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
+EXTRN	__imp_??0Point3@@QEAA@MMM@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@HHH@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@AEBV0@@Z:PROC
+EXTRN	__imp_??GPoint3@@QEBA?AV0@XZ:PROC
 EXTRN	__imp_?IdentityMatrix@Matrix3@@QEAAXXZ:PROC
 EXTRN	__imp_?ClampMinMax@Color@@QEAAXXZ:PROC
 EXTRN	__imp_?GetSubTexmapTVName@ISubMap@@QEAA?AVWStr@@H@Z:PROC
@@ -1657,12 +1930,12 @@ EXTRN	__imp_??0Texmap@@QEAA@XZ:PROC
 EXTRN	__imp_?GetNewDefaultTextureOutput@@YAPEAVTextureOutput@@XZ:PROC
 EXTRN	__imp_??0ClassDesc2@@QEAA@XZ:PROC
 EXTRN	__imp_??1ClassDesc2@@UEAA@XZ:PROC
-EXTRN	__imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z:PROC
 EXTRN	__imp_?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC
 EXTRN	__imp_?SetUserDlgProc@ClassDesc2@@QEAA_NPEAVParamBlockDesc2@@FPEAVParamMap2UserDlgProc@@@Z:PROC
 EXTRN	__imp_?CreateParamDlgs@ClassDesc2@@QEAAPEAVIAutoMParamDlg@@PEAUHWND__@@PEAVIMtlParams@@PEAVReferenceTarget@@@Z:PROC
 EXTRN	__imp_??0ParamBlockDesc2@@QEAA@FPEB_W_JPEAVClassDesc2@@GZZ:PROC
 EXTRN	__imp_??1ParamBlockDesc2@@UEAA@XZ:PROC
+EXTRN	__imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z:PROC
 EXTRN	__imp_?SetUserDlgProc@ParamBlockDesc2@@QEAAXFPEAVParamMap2UserDlgProc@@@Z:PROC
 EXTRN	??_EParamMap2UserDlgProc@@UEAAPEAXI@Z:PROC	; ParamMap2UserDlgProc::`vector deleting destructor'
 EXTRN	?alterUVW@Noise@@SAXAEAVPoint3@@H@Z:PROC	; Noise::alterUVW
@@ -1738,7 +2011,6 @@ EXTRN	?SvTraverseAnimGraph@Texmap@@UEAA?AVSvGraphNodeReference@@PEAVIGraphObject
 EXTRN	_CxxThrowException:PROC
 EXTRN	__CxxFrameHandler3:PROC
 EXTRN	memset:PROC
-EXTRN	__imp_??_7OutOfRangeException@Util@MaxSDK@@6B@:BYTE
 EXTRN	__imp_?defaultDim@@3PEAVParamDimension@@EA:QWORD
 EXTRN	__ImageBase:BYTE
 EXTRN	_fltused:DWORD
@@ -1764,20 +2036,20 @@ $pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z DD imagerel $LN6
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD imagerel $LN9
-	DD	imagerel $LN9+29
+$pdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD imagerel $LN6
+	DD	imagerel $LN6+29
 	DD	imagerel $unwind$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel $LN9
-	DD	imagerel $LN9+58
+$pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel $LN6
+	DD	imagerel $LN6+48
 	DD	imagerel $unwind$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD imagerel $LN16
-	DD	imagerel $LN16+97
+$pdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD imagerel $LN13
+	DD	imagerel $LN13+97
 	DD	imagerel $unwind$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1815,6 +2087,18 @@ pdata	SEGMENT
 $pdata$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD imagerel $LN14
 	DD	imagerel $LN14+214
 	DD	imagerel $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??D@YA?AVPoint3@@MAEBV0@@Z DD imagerel $LN4
+	DD	imagerel $LN4+41
+	DD	imagerel $unwind$??D@YA?AVPoint3@@MAEBV0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??D@YA?AVPoint3@@AEBV0@M@Z DD imagerel $LN4
+	DD	imagerel $LN4+42
+	DD	imagerel $unwind$??D@YA?AVPoint3@@AEBV0@M@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1903,31 +2187,31 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??0BerconXYZ@@QEAA@XZ DD imagerel $LN17
-	DD	imagerel $LN17+100
+	DD	imagerel $LN17+158
 	DD	imagerel $unwind$??0BerconXYZ@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN32
-	DD	imagerel $LN32+47
+$pdata$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN28
+	DD	imagerel $LN28+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN32+47
-	DD	imagerel $LN32+172
+$pdata$0$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN28+47
+	DD	imagerel $LN28+160
 	DD	imagerel $chain$0$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN32+172
-	DD	imagerel $LN32+245
+$pdata$2$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN28+160
+	DD	imagerel $LN28+225
 	DD	imagerel $chain$2$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN32+245
-	DD	imagerel $LN32+256
+$pdata$3$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN28+225
+	DD	imagerel $LN28+236
 	DD	imagerel $chain$3$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1938,33 +2222,21 @@ $pdata$?EvalParameters@BerconNoise@@QEAA?AVNoiseParams@@PEAVShadeContext@@@Z DD 
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24
-	DD	imagerel $LN24+59
+$pdata$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+59
-	DD	imagerel $LN24+82
+$pdata$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19+59
+	DD	imagerel $LN19+229
 	DD	imagerel $chain$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+82
-	DD	imagerel $LN24+209
-	DD	imagerel $chain$3$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$4$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+209
-	DD	imagerel $LN24+268
-	DD	imagerel $chain$4$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$5$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+268
-	DD	imagerel $LN24+286
-	DD	imagerel $chain$5$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
+$pdata$1$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19+229
+	DD	imagerel $LN19+245
+	DD	imagerel $chain$1$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2077,18 +2349,18 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?Reset@BerconNoise@@UEAAXXZ DD imagerel $LN30
-	DD	imagerel $LN30+168
+	DD	imagerel $LN30+172
 	DD	imagerel $unwind$?Reset@BerconNoise@@UEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?Reset@BerconNoise@@UEAAXXZ DD imagerel $LN30+168
-	DD	imagerel $LN30+1092
+$pdata$2$?Reset@BerconNoise@@UEAAXXZ DD imagerel $LN30+172
+	DD	imagerel $LN30+1095
 	DD	imagerel $chain$2$?Reset@BerconNoise@@UEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?Reset@BerconNoise@@UEAAXXZ DD imagerel $LN30+1092
+$pdata$3$?Reset@BerconNoise@@UEAAXXZ DD imagerel $LN30+1095
 	DD	imagerel $LN30+1213
 	DD	imagerel $chain$3$?Reset@BerconNoise@@UEAAXXZ
 pdata	ENDS
@@ -2100,8 +2372,8 @@ $pdata$?Validity@BerconNoise@@UEAA?AVInterval@@H@Z DD imagerel $LN8
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z DD imagerel $LN34
-	DD	imagerel $LN34+202
+$pdata$?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z DD imagerel $LN24
+	DD	imagerel $LN24+162
 	DD	imagerel $unwind$?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2118,21 +2390,33 @@ $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA DD ima
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN80
-	DD	imagerel $LN80+224
+$pdata$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN64
+	DD	imagerel $LN64+193
 	DD	imagerel $unwind$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN80+224
-	DD	imagerel $LN80+1049
+$pdata$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN64+193
+	DD	imagerel $LN64+498
 	DD	imagerel $chain$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$6$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN80+1049
-	DD	imagerel $LN80+1087
-	DD	imagerel $chain$6$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+$pdata$7$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN64+498
+	DD	imagerel $LN64+601
+	DD	imagerel $chain$7$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$8$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN64+601
+	DD	imagerel $LN64+1039
+	DD	imagerel $chain$8$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$9$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN64+1039
+	DD	imagerel $LN64+1074
+	DD	imagerel $chain$9$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2142,33 +2426,33 @@ $pdata$?EvalMono@BerconNoise@@UEAAMAEAVShadeContext@@@Z DD imagerel $LN6
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN110
-	DD	imagerel $LN110+51
+$pdata$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN59
+	DD	imagerel $LN59+50
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN110+51
-	DD	imagerel $LN110+229
+$pdata$0$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN59+50
+	DD	imagerel $LN59+191
+	DD	imagerel $chain$0$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN59+191
+	DD	imagerel $LN59+198
 	DD	imagerel $chain$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN110+229
-	DD	imagerel $LN110+236
-	DD	imagerel $chain$2$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+$pdata$4$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN59+198
+	DD	imagerel $LN59+1415
+	DD	imagerel $chain$4$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN110+236
-	DD	imagerel $LN110+1307
+$pdata$5$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN59+1415
+	DD	imagerel $LN59+1460
 	DD	imagerel $chain$5$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$6$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN110+1307
-	DD	imagerel $LN110+1349
-	DD	imagerel $chain$6$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2203,7 +2487,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??0BerconNoise@@QEAA@XZ DD imagerel $LN66
-	DD	imagerel $LN66+558
+	DD	imagerel $LN66+609
 	DD	imagerel $unwind$??0BerconNoise@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2305,11 +2589,6 @@ pdata	ENDS
 CRT$XCU	SEGMENT
 ?kInvalidId$initializer$@AssetManagement@MaxSDK@@3P6AXXZEA DQ FLAT:??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ; MaxSDK::AssetManagement::kInvalidId$initializer$
 CRT$XCU	ENDS
-;	COMDAT __xmm@80000000800000008000000080000000
-CONST	SEGMENT
-__xmm@80000000800000008000000080000000 DB 00H, 00H, 00H, 080H, 00H, 00H, 00H
-	DB	080H, 00H, 00H, 00H, 080H, 00H, 00H, 00H, 080H
-CONST	ENDS
 ;	COMDAT __real@c12e848000000000
 CONST	SEGMENT
 __real@c12e848000000000 DQ 0c12e848000000000r	; -1e+06
@@ -2933,6 +3212,10 @@ CONST	SEGMENT
 	DB	'o', 00H, 'i', 00H, 's', 00H, 'e', 00H, ':', 00H, ':', 00H, 'R'
 	DB	00H, 'e', 00H, 's', 00H, 'e', 00H, 't', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??Reset@BerconNoise@@UEAAXXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Reset@BerconNoise@@UEAAXXZ@4JA DD 01adH ; `BerconNoise::Reset'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_7BerconNoiseDlgProc@@6B@
 CONST	SEGMENT
 ??_7BerconNoiseDlgProc@@6B@ DQ FLAT:??_R4BerconNoiseDlgProc@@6B@ ; BerconNoiseDlgProc::`vftable'
@@ -3740,7 +4023,7 @@ $ip2state$??0BerconNoise@@QEAA@XZ DD imagerel ??0BerconNoise@@QEAA@XZ
 	DD	0ffffffffH
 	DD	imagerel ??0BerconNoise@@QEAA@XZ+42
 	DD	00H
-	DD	imagerel ??0BerconNoise@@QEAA@XZ+536
+	DD	imagerel ??0BerconNoise@@QEAA@XZ+587
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -3864,45 +4147,44 @@ $unwind$?GetClassName@BerconNoise@@UEAAXAEAVWStr@@@Z DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$6$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN110+229
-	DD	imagerel $LN110+236
-	DD	imagerel $chain$2$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+$chain$5$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN59+191
+	DD	imagerel $LN59+198
+	DD	imagerel $chain$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$5$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 069b21H
-	DD	013889bH
-	DD	0129812H
-	DD	0156809H
-	DD	imagerel $LN110+229
-	DD	imagerel $LN110+236
-	DD	imagerel $chain$2$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+$chain$4$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 069b21H
+	DD	016789bH
+	DD	0158812H
+	DD	0176809H
+	DD	imagerel $LN59+191
+	DD	imagerel $LN59+198
+	DD	imagerel $chain$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN110
-	DD	imagerel $LN110+51
+$chain$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN59
+	DD	imagerel $LN59+50
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 040821H
-	DD	0317408H
-	DD	0306404H
-	DD	imagerel $LN110
-	DD	imagerel $LN110+51
+$chain$0$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 020821H
+	DD	0346408H
+	DD	imagerel $LN59
+	DD	imagerel $LN59+50
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 092401H
-	DD	0147824H
-	DD	0323417H
-	DD	02c0117H
-	DD	0e00af00cH
-	DD	05008H
+$unwind$?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 091b01H
+	DD	036741bH
+	DD	035341bH
+	DD	030011bH
+	DD	0e00df00fH
+	DD	0500bH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3911,10 +4193,26 @@ $unwind$?EvalMono@BerconNoise@@UEAAMAEAVShadeContext@@@Z DD 010401H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$6$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN80
-	DD	imagerel $LN80+224
+$chain$9$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN64
+	DD	imagerel $LN64+193
 	DD	imagerel $unwind$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$8$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN64+193
+	DD	imagerel $LN64+498
+	DD	imagerel $chain$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$7$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 041921H
+	DD	0317419H
+	DD	0303408H
+	DD	imagerel $LN64+193
+	DD	imagerel $LN64+498
+	DD	imagerel $chain$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3925,18 +4223,17 @@ $chain$5$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 0c3621H
 	DD	013881bH
 	DD	0147812H
 	DD	0156809H
-	DD	imagerel $LN80
-	DD	imagerel $LN80+224
+	DD	imagerel $LN64
+	DD	imagerel $LN64+193
 	DD	imagerel $unwind$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 091c01H
-	DD	030741cH
-	DD	02f641cH
-	DD	02e341cH
-	DD	02c011cH
-	DD	05010H
+$unwind$?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 071601H
+	DD	0326416H
+	DD	02c0116H
+	DD	0e008f00aH
+	DD	05006H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3995,7 +4292,7 @@ xdata	ENDS
 xdata	SEGMENT
 $chain$3$?Reset@BerconNoise@@UEAAXXZ DD 021H
 	DD	imagerel $LN30
-	DD	imagerel $LN30+168
+	DD	imagerel $LN30+172
 	DD	imagerel $unwind$?Reset@BerconNoise@@UEAAXXZ
 xdata	ENDS
 ;	COMDAT xdata
@@ -4005,7 +4302,7 @@ $chain$2$?Reset@BerconNoise@@UEAAXXZ DD 061721H
 	DD	067811H
 	DD	0123408H
 	DD	imagerel $LN30
-	DD	imagerel $LN30+168
+	DD	imagerel $LN30+172
 	DD	imagerel $unwind$?Reset@BerconNoise@@UEAAXXZ
 xdata	ENDS
 ;	COMDAT xdata
@@ -4195,42 +4492,25 @@ $unwind$?EnableStuff@BerconNoise@@QEAAXXZ DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$5$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
-	DD	imagerel $LN24
-	DD	imagerel $LN24+59
+$chain$1$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
+	DD	imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$4$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
-	DD	imagerel $LN24+59
-	DD	imagerel $LN24+82
-	DD	imagerel $chain$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$3$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 061221H
-	DD	048812H
-	DD	05780cH
-	DD	066806H
-	DD	imagerel $LN24+59
-	DD	imagerel $LN24+82
-	DD	imagerel $chain$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $chain$0$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 020621H
-	DD	039806H
-	DD	imagerel $LN24
-	DD	imagerel $LN24+59
+	DD	056806H
+	DD	imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 060f01H
-	DD	011640fH
-	DD	010340fH
-	DD	0700bd20fH
+	DD	0f640fH
+	DD	0e340fH
+	DD	0700bb20fH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4242,24 +4522,24 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$3$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 021H
-	DD	imagerel $LN32
-	DD	imagerel $LN32+47
+	DD	imagerel $LN28
+	DD	imagerel $LN28+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 020021H
 	DD	063400H
-	DD	imagerel $LN32
-	DD	imagerel $LN32+47
+	DD	imagerel $LN28
+	DD	imagerel $LN28+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 020521H
 	DD	063405H
-	DD	imagerel $LN32
-	DD	imagerel $LN32+47
+	DD	imagerel $LN28
+	DD	imagerel $LN28+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
@@ -4269,10 +4549,11 @@ $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVRefe
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0BerconXYZ@@QEAA@XZ DD 060f01H
-	DD	07640fH
-	DD	06340fH
-	DD	0700b320fH
+$unwind$??0BerconXYZ@@QEAA@XZ DD 081401H
+	DD	086414H
+	DD	075414H
+	DD	063414H
+	DD	070103214H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4583,6 +4864,16 @@ $unwind$?Set@BitArray@@QEAAXH@Z DD 040a01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??D@YA?AVPoint3@@AEBV0@M@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??D@YA?AVPoint3@@MAEBV0@@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD 040a01H
 	DD	08340aH
 	DD	07006520aH
@@ -4623,13 +4914,11 @@ xdata	ENDS
 xdata	SEGMENT
 $stateUnwindMap$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD 0ffffffffH
 	DD	imagerel ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA
-	DD	0ffffffffH
-	DD	imagerel ?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 	DD	00H
 	DD	00H
@@ -4654,25 +4943,21 @@ $ip2state$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel ??0
 	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+29
 	DD	00H
 	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+39
-	DD	01H
-	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+49
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $stateUnwindMap$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD 0ffffffffH
-	DD	imagerel ?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA
-	DD	0ffffffffH
 	DD	imagerel ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	DD	00H
 	DD	00H
-	DD	04H
+	DD	03H
 	DD	imagerel $ip2state$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	DD	020H
 	DD	00H
@@ -4694,13 +4979,11 @@ xdata	ENDS
 xdata	SEGMENT
 $stateUnwindMap$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD 0ffffffffH
 	DD	imagerel ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA
-	DD	0ffffffffH
-	DD	imagerel ?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
 	DD	00H
 	DD	00H
@@ -6681,7 +6964,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?HInstance@BerconNoiseClassDesc@@UEAAPEAUHINSTANCE__@@XZ PROC ; BerconNoiseClassDesc::HInstance, COMDAT
 
-; 234  : 	HINSTANCE HInstance() override			{ return hInstance; }
+; 235  : 	HINSTANCE HInstance() override			{ return hInstance; }
 
 	mov	rax, QWORD PTR ?hInstance@@3PEAUHINSTANCE__@@EA ; hInstance
 	ret	0
@@ -6694,7 +6977,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?InternalName@BerconNoiseClassDesc@@UEAAPEB_WXZ PROC	; BerconNoiseClassDesc::InternalName, COMDAT
 
-; 232  : 	const MCHAR* InternalName() override	{ return _M("BerconNoise"); }
+; 233  : 	const MCHAR* InternalName() override	{ return _M("BerconNoise"); }
 
 	lea	rax, OFFSET FLAT:??_C@_1BI@OFHJLFOO@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe@
 	ret	0
@@ -6707,7 +6990,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?Category@BerconNoiseClassDesc@@UEAAPEB_WXZ PROC	; BerconNoiseClassDesc::Category, COMDAT
 
-; 231  : 	const MCHAR* Category() override		{ return TEXMAP_CAT_3D; }
+; 232  : 	const MCHAR* Category() override		{ return TEXMAP_CAT_3D; }
 
 	mov	rax, QWORD PTR __imp_?TEXMAP_CAT_3D@@3PA_WA
 	ret	0
@@ -6731,7 +7014,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx], 710826357		; 2a5e5975H
 ; File g:\dropbox\github\berconmaps\src\berconnoise.h
 
-; 230  : 	Class_ID ClassID() override				{ return BerconNoise_CLASS_ID; }
+; 231  : 	Class_ID ClassID() override				{ return BerconNoise_CLASS_ID; }
 
 	mov	rax, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
@@ -6741,7 +7024,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx+4], 2075492926		; 7bb5823eH
 ; File g:\dropbox\github\berconmaps\src\berconnoise.h
 
-; 230  : 	Class_ID ClassID() override				{ return BerconNoise_CLASS_ID; }
+; 231  : 	Class_ID ClassID() override				{ return BerconNoise_CLASS_ID; }
 
 	ret	0
 ?ClassID@BerconNoiseClassDesc@@UEAA?AVClass_ID@@XZ ENDP	; BerconNoiseClassDesc::ClassID
@@ -6753,7 +7036,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?SuperClassID@BerconNoiseClassDesc@@UEAAKXZ PROC	; BerconNoiseClassDesc::SuperClassID, COMDAT
 
-; 229  : 	SClass_ID SuperClassID() override		{ return TEXMAP_CLASS_ID; }
+; 230  : 	SClass_ID SuperClassID() override		{ return TEXMAP_CLASS_ID; }
 
 	mov	eax, 3088				; 00000c10H
 	ret	0
@@ -6766,7 +7049,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?ClassName@BerconNoiseClassDesc@@UEAAPEB_WXZ PROC	; BerconNoiseClassDesc::ClassName, COMDAT
 
-; 228  : 	const MCHAR* ClassName() override		{ return GetString(IDS_CLASS_NAME); }
+; 229  : 	const MCHAR* ClassName() override		{ return GetString(IDS_CLASS_NAME); }
 
 	mov	ecx, 3
 	jmp	?GetString@@YAPEA_WH@Z			; GetString
@@ -6782,7 +7065,7 @@ __formal$ = 72
 $T2 = 80
 ?Create@BerconNoiseClassDesc@@UEAAPEAXH@Z PROC		; BerconNoiseClassDesc::Create, COMDAT
 
-; 227  : 	void* Create(BOOL) override				{ return new BerconNoise(); }
+; 228  : 	void* Create(BOOL) override				{ return new BerconNoise(); }
 
 $LN8:
 	sub	rsp, 56					; 00000038H
@@ -6833,7 +7116,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?IsPublic@BerconNoiseClassDesc@@UEAAHXZ PROC		; BerconNoiseClassDesc::IsPublic, COMDAT
 
-; 226  : 	int IsPublic() override					{ return TRUE; }
+; 227  : 	int IsPublic() override					{ return TRUE; }
 
 	mov	eax, 1
 	ret	0
@@ -6962,10 +7245,10 @@ this$ = 8
 id$ = 16
 ?GetInterface@BerconNoise@@UEAAPEAXK@Z PROC		; BerconNoise::GetInterface, COMDAT
 
-; 216  : 		/*	if(id == I_RESMAKER_INTERFACE)
-; 217  : 				return (void *) (ResourceMakerCallback*) this;
-; 218  : 			else*/
-; 219  : 		return Texmap::GetInterface(id);
+; 217  : 		/*	if(id == I_RESMAKER_INTERFACE)
+; 218  : 				return (void *) (ResourceMakerCallback*) this;
+; 219  : 			else*/
+; 220  : 		return Texmap::GetInterface(id);
 
 	rex_jmp	QWORD PTR __imp_?GetInterface@MtlBase@@UEAAPEAXK@Z
 ?GetInterface@BerconNoise@@UEAAPEAXK@Z ENDP		; BerconNoise::GetInterface
@@ -7177,37 +7460,81 @@ $LN66:
 
 ; 414  : BerconNoise::BerconNoise() {	
 
-	lea	rbp, QWORD PTR [rdi+264]
+	lea	rbx, QWORD PTR [rdi+264]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 341  : 	bool variance;
+; 328  : 	int mappingType{}, mappingChannel{};
 
-	lea	rbx, QWORD PTR [rbp+120]
+	mov	QWORD PTR [rbx], r14
+
+; 329  : 	float offX, offY, offZ;
+; 330  : 	float sizeX{}, sizeY{}, sizeZ{};
+
+	mov	QWORD PTR [rbx+20], r14
+	mov	QWORD PTR [rbx+28], r14
+
+; 331  : 	float angX{}, angY{}, angZ{};
+
+	mov	QWORD PTR [rbx+36], r14
+
+; 332  : 	int tileX{}, tileY{}, tileZ{};
+
+	mov	QWORD PTR [rbx+44], r14
+	mov	QWORD PTR [rbx+52], r14
+
+; 333  : 	float offX2{}, offY2{}, offZ2{};
+
+	mov	QWORD PTR [rbx+60], r14
+
+; 334  : 	float sizeX2{}, sizeY2{}, sizeZ2{};
+
+	mov	QWORD PTR [rbx+68], r14
+	mov	QWORD PTR [rbx+76], r14
+
+; 335  : 	float angX2{}, angY2{}, angZ2{};
+
+	mov	QWORD PTR [rbx+84], r14
+
+; 336  : 	int p_seed{}, p_randObj{}, p_randMat{}, p_randPar{};
+
+	mov	QWORD PTR [rbx+92], r14
+	mov	QWORD PTR [rbx+100], r14
+
+; 337  : 	float filtering{};
+
+	mov	QWORD PTR [rbx+108], r14
+
+; 338  : 
+; 339  : 	BOOL lock{};
+; 340  : 
+; 341  : 	bool variance{};
+
+	mov	BYTE PTR [rbx+116], r14b
+	lea	rsi, QWORD PTR [rbx+120]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 414  : BerconNoise::BerconNoise() {	
 
-	lea	esi, QWORD PTR [r14+3]
-	npad	4
+	lea	ebp, QWORD PTR [r14+3]
 $LL12@BerconNois:
-	mov	rcx, rbx
+	mov	rcx, rsi
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
-	add	rbx, 12
-	sub	rsi, 1
+	add	rsi, 12
+	sub	rbp, 1
 	jne	SHORT $LL12@BerconNois
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	mov	DWORD PTR [rbp+204], r14d
-	mov	QWORD PTR [rbp+256], r14
+	mov	DWORD PTR [rbx+204], r14d
+	mov	QWORD PTR [rbx+256], r14
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	QWORD PTR [rbp+8], r14
-	mov	DWORD PTR [rbp+16], r14d
-	mov	rcx, rbp
+	mov	QWORD PTR [rbx+8], r14
+	mov	DWORD PTR [rbx+16], r14d
+	mov	rcx, rbx
 	call	?update@BerconXYZ@@QEAAXXZ		; BerconXYZ::update
 ; File g:\dropbox\github\berconmaps\src\berconnoise.h
 
@@ -8226,40 +8553,9 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
@@ -8269,141 +8565,135 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ;	COMDAT ?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T3 = 48
-v1$ = 48
-$T4 = 48
-$T5 = 48
-$T6 = 48
-$T7 = 48
-$T8 = 48
-p$ = 64
-normal$ = 80
+p$ = 48
+normal$ = 64
+$T1 = 80
+$T2 = 80
+$T3 = 80
+$T4 = 80
+$T5 = 96
+$T6 = 96
+$T7 = 96
+$T8 = 96
 $T9 = 96
-v2$ = 96
-$T10 = 112
-$T11 = 112
-$T12 = 112
-$T13 = 112
-$T14 = 112
-dpdy$ = 128
-dpdx$ = 144
-M$ = 160
-np$ = 208
-this$ = 384
-__$ReturnUdt$ = 392
-sc$ = 400
+$T10 = 96
+$T11 = 96
+$T12 = 96
+$T13 = 96
+$T14 = 96
+$T15 = 96
+v1$ = 112
+v2$ = 128
+$T16 = 144
+$T17 = 144
+$T18 = 156
+$T19 = 168
+M$ = 184
+dpdy$ = 224
+dpdx$ = 240
+np$ = 256
+this$ = 416
+__$ReturnUdt$ = 424
+sc$ = 432
 ?EvalNormalPerturb@BerconNoise@@UEAA?AVPoint3@@AEAVShadeContext@@@Z PROC ; BerconNoise::EvalNormalPerturb, COMDAT
 
 ; 888  : Point3 BerconNoise::EvalNormalPerturb(ShadeContext& sc) {		
 
-$LN110:
-	mov	rax, rsp
-	mov	QWORD PTR [rax+24], rbx
+$LN59:
+	mov	QWORD PTR [rsp+16], rbx
+	mov	QWORD PTR [rsp+24], rdi
 	push	rbp
 	push	r14
 	push	r15
-	lea	rbp, QWORD PTR [rax-120]
-	sub	rsp, 352				; 00000160H
+	lea	rbp, QWORD PTR [rsp-128]
+	sub	rsp, 384				; 00000180H
 
 ; 889  : 	if (!sc.doMaps) return Point3(0,0,0);
 
 	cmp	DWORD PTR [r8+12], 0
 	mov	r14, r8
-	vmovaps	XMMWORD PTR [rax-56], xmm7
 	mov	r15, rdx
-	mov	rbx, rcx
-	je	$LN105@EvalNormal
+	mov	rdi, rcx
+	je	$LN55@EvalNormal
 
 ; 890  : 	if (gbufID) sc.SetGBufferID(gbufID);
 
 	mov	edx, DWORD PTR [rcx+120]
-	mov	QWORD PTR [rax+8], rsi
-	mov	QWORD PTR [rax+16], rdi
+	mov	QWORD PTR [rsp+416], rsi
 	test	edx, edx
 	je	SHORT $LN3@EvalNormal
 	mov	rax, QWORD PTR [r8]
 	mov	rcx, r8
 	call	QWORD PTR [rax+464]
 $LN3@EvalNormal:
-	vxorps	xmm7, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 891  : 
+; 892  : 	// UVW and Distortion
+; 893  : 	Point3 p, dpdx, dpdy;
 
-	vmovss	DWORD PTR p$[rsp], xmm7
-	vmovss	DWORD PTR p$[rsp+4], xmm7
-	vmovss	DWORD PTR p$[rsp+8], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-256], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-252], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-248], xmm7
-	vmovss	DWORD PTR dpdy$[rbp-256], xmm7
-	vmovss	DWORD PTR dpdy$[rbp-252], xmm7
-	vmovss	DWORD PTR dpdy$[rbp-248], xmm7
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	lea	rcx, QWORD PTR p$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdx$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdy$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 
 ; 894  : 	Point3 M[3];
 
-	lea	rdi, QWORD PTR M$[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
+	lea	rbx, QWORD PTR M$[rbp-256]
 	mov	esi, 3
-	npad	8
-$LL24@EvalNormal:
-	mov	rcx, rdi
+$LL16@EvalNormal:
+	mov	rcx, rbx
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
-	add	rdi, 12
+	add	rbx, 12
 	sub	rsi, 1
-	jne	SHORT $LL24@EvalNormal
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	jne	SHORT $LL16@EvalNormal
 
 ; 895  : 	if (!berconXYZ.get(sc, p, dpdx, dpdy, M)) return Point3(0,0,0);
 
 	lea	rax, QWORD PTR M$[rbp-256]
 	mov	rdx, r14
 	mov	QWORD PTR [rsp+40], rax
-	lea	rcx, QWORD PTR [rbx+264]
+	lea	rcx, QWORD PTR [rdi+264]
 	lea	rax, QWORD PTR dpdy$[rbp-256]
 	lea	r9, QWORD PTR dpdx$[rbp-256]
 	mov	QWORD PTR [rsp+32], rax
 	lea	r8, QWORD PTR p$[rsp]
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@11PEAV3@@Z ; BerconXYZ::get
-	mov	rdi, QWORD PTR [rsp+392]
-	mov	rsi, QWORD PTR [rsp+384]
+	mov	rsi, QWORD PTR [rsp+416]
 	test	eax, eax
-	je	$LN105@EvalNormal
+	je	$LN55@EvalNormal
 
 ; 896  : 
 ; 897  : 	if (useDistortion)
 
-	cmp	DWORD PTR [rbx+224], 0
-	vmovaps	XMMWORD PTR [rsp+336], xmm6
-	vmovaps	XMMWORD PTR [rsp+288], xmm9
+	cmp	DWORD PTR [rdi+224], 0
+	vmovaps	XMMWORD PTR [rsp+368], xmm6
+	vmovaps	XMMWORD PTR [rsp+336], xmm8
 	je	SHORT $LN5@EvalNormal
 
 ; 898  : 		applyDistortion(sc,p);	
 
 	lea	r8, QWORD PTR p$[rsp]
 	mov	rdx, r14
-	mov	rcx, rbx
+	mov	rcx, rdi
 	call	?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ; BerconNoise::applyDistortion
 $LN5@EvalNormal:
 
 ; 899  : 	float nSize = (mapOn[4] && subtex[4]) ? subtex[4]->EvalMono(sc)*size : size;
 
-	cmp	DWORD PTR [rbx+712], 0
+	cmp	DWORD PTR [rdi+712], 0
 	je	SHORT $LN13@EvalNormal
-	mov	rcx, QWORD PTR [rbx+584]
+	mov	rcx, QWORD PTR [rdi+584]
 	test	rcx, rcx
 	je	SHORT $LN13@EvalNormal
 	mov	rax, QWORD PTR [rcx]
 	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm3, xmm0, DWORD PTR [rbx+156]
+	vmulss	xmm3, xmm0, DWORD PTR [rdi+156]
 	jmp	SHORT $LN14@EvalNormal
 $LN13@EvalNormal:
-	vmovss	xmm3, DWORD PTR [rbx+156]
+	vmovss	xmm3, DWORD PTR [rdi+156]
 $LN14@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -8415,7 +8705,7 @@ $LN14@EvalNormal:
 
 ; 901  : 	Noise::alterUVW(p, uvwDist);
 
-	mov	edx, DWORD PTR [rbx+232]
+	mov	edx, DWORD PTR [rdi+232]
 	lea	rcx, QWORD PTR p$[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -8428,7 +8718,7 @@ $LN14@EvalNormal:
 	vdivss	xmm2, xmm1, xmm3
 	vmovss	DWORD PTR p$[rsp+8], xmm2
 	vmovss	DWORD PTR p$[rsp+4], xmm0
-	vmovaps	XMMWORD PTR [rsp+304], xmm8
+	vmovaps	XMMWORD PTR [rsp+352], xmm7
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 901  : 	Noise::alterUVW(p, uvwDist);
@@ -8440,112 +8730,77 @@ $LN14@EvalNormal:
 
 	mov	r8, r14
 	lea	rdx, QWORD PTR np$[rbp-256]
-	mov	rcx, rbx
+	mov	rcx, rdi
 	call	?EvalParameters@BerconNoise@@QEAA?AVNoiseParams@@PEAVShadeContext@@@Z ; BerconNoise::EvalParameters
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 904  : 
+; 905  : 	// Vector
+; 906  : 	Point3 normal;
 
-	vmovsd	xmm0, QWORD PTR p$[rsp]
-	mov	eax, DWORD PTR p$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	lea	rcx, QWORD PTR normal$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 
 ; 907  : 	float d = Noise::limitedNoise(p, np);
 
+	lea	rdx, QWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T15[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
 	lea	rdx, QWORD PTR np$[rbp-256]
-	lea	rcx, QWORD PTR $T8[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	DWORD PTR $T8[rsp+8], eax
-	vmovsd	QWORD PTR $T8[rsp], xmm0
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR normal$[rsp], xmm7
-	vmovss	DWORD PTR normal$[rsp+4], xmm7
-	vmovss	DWORD PTR normal$[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 907  : 	float d = Noise::limitedNoise(p, np);
-
 	call	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNoise
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
 	vmovss	xmm6, DWORD PTR __real@3a83126f
-	vmulss	xmm2, xmm6, DWORD PTR M$[rbp-256]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm3, xmm2, DWORD PTR p$[rsp]
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
+	vmulss	xmm3, xmm6, DWORD PTR M$[rbp-248]
 	vmulss	xmm2, xmm6, DWORD PTR M$[rbp-252]
+	vmulss	xmm1, xmm6, DWORD PTR M$[rbp-256]
+	lea	rcx, QWORD PTR $T4[rsp]
+; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 907  : 	float d = Noise::limitedNoise(p, np);
 
-	vmovss	DWORD PTR $T7[rsp], xmm3
-	vaddss	xmm3, xmm2, DWORD PTR p$[rsp+4]
+	vmovaps	xmm8, xmm0
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm2, xmm6, DWORD PTR M$[rbp-248]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vmovss	DWORD PTR $T7[rsp+4], xmm3
-	vaddss	xmm3, xmm2, DWORD PTR p$[rsp+8]
+	vmovss	xmm1, DWORD PTR $T4[rsp+8]
+	vaddss	xmm3, xmm1, DWORD PTR p$[rsp+8]
+	vmovss	xmm1, DWORD PTR $T4[rsp]
+	vmovss	xmm2, DWORD PTR $T4[rsp+4]
+	vaddss	xmm1, xmm1, DWORD PTR p$[rsp]
+	vaddss	xmm2, xmm2, DWORD PTR p$[rsp+4]
+	lea	rcx, QWORD PTR $T14[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 914  : 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
 
 	lea	rdx, QWORD PTR np$[rbp-256]
-	lea	rcx, QWORD PTR $T7[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T7[rsp+8], xmm3
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 907  : 	float d = Noise::limitedNoise(p, np);
-
-	vmovaps	xmm9, xmm0
-
-; 914  : 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
-
+	lea	rcx, QWORD PTR $T14[rsp]
 	call	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNoise
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm3, xmm6, DWORD PTR M$[rbp-244]
-	vmulss	xmm4, xmm6, DWORD PTR M$[rbp-240]
-	vmulss	xmm5, xmm6, DWORD PTR M$[rbp-236]
+	vmulss	xmm3, xmm6, DWORD PTR M$[rbp-236]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 914  : 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
 
-	vsubss	xmm1, xmm0, xmm9
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vaddss	xmm0, xmm5, DWORD PTR p$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 914  : 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
-
+	vsubss	xmm1, xmm0, xmm8
 	vdivss	xmm2, xmm1, xmm6
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vaddss	xmm1, xmm4, DWORD PTR p$[rsp+4]
+	vmulss	xmm1, xmm6, DWORD PTR M$[rbp-244]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 914  : 		normal.x = (Noise::limitedNoise(p+DELTA*M[0], np) - d) / DELTA;
@@ -8553,54 +8808,45 @@ $LN14@EvalNormal:
 	vmovss	DWORD PTR normal$[rsp], xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmulss	xmm2, xmm6, DWORD PTR M$[rbp-240]
+	lea	rcx, QWORD PTR $T3[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm2, xmm3, DWORD PTR p$[rsp]
+	vmovss	xmm0, DWORD PTR $T3[rsp+8]
+	vmovss	xmm1, DWORD PTR $T3[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR p$[rsp+8]
+	vmovss	xmm0, DWORD PTR $T3[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR p$[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T13[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 915  : 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
 
 	lea	rdx, QWORD PTR np$[rbp-256]
-	lea	rcx, QWORD PTR $T6[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vmovss	DWORD PTR $T6[rsp], xmm2
-	vmovss	DWORD PTR $T6[rsp+4], xmm1
-	vmovss	DWORD PTR $T6[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 915  : 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
-
+	lea	rcx, QWORD PTR $T13[rsp]
 	call	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNoise
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm3, xmm6, DWORD PTR M$[rbp-232]
-	vmulss	xmm4, xmm6, DWORD PTR M$[rbp-228]
-	vmulss	xmm5, xmm6, DWORD PTR M$[rbp-224]
+	vmulss	xmm3, xmm6, DWORD PTR M$[rbp-224]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 915  : 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
 
-	vsubss	xmm1, xmm0, xmm9
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vaddss	xmm0, xmm5, DWORD PTR p$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 915  : 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
-
+	vsubss	xmm1, xmm0, xmm8
 	vdivss	xmm2, xmm1, xmm6
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vaddss	xmm1, xmm4, DWORD PTR p$[rsp+4]
+	vmulss	xmm1, xmm6, DWORD PTR M$[rbp-232]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 915  : 		normal.y = (Noise::limitedNoise(p+DELTA*M[1], np) - d) / DELTA;
@@ -8608,73 +8854,66 @@ $LN14@EvalNormal:
 	vmovss	DWORD PTR normal$[rsp+4], xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmulss	xmm2, xmm6, DWORD PTR M$[rbp-228]
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm2, xmm3, DWORD PTR p$[rsp]
+	vmovss	xmm0, DWORD PTR $T2[rsp+8]
+	vmovss	xmm1, DWORD PTR $T2[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR p$[rsp+8]
+	vmovss	xmm0, DWORD PTR $T2[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR p$[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T12[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 916  : 		normal.z = (Noise::limitedNoise(p+DELTA*M[2], np) - d) / DELTA;
 
 	lea	rdx, QWORD PTR np$[rbp-256]
-	lea	rcx, QWORD PTR $T5[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vmovss	DWORD PTR $T5[rsp], xmm2
-	vmovss	DWORD PTR $T5[rsp+4], xmm1
-	vmovss	DWORD PTR $T5[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 916  : 		normal.z = (Noise::limitedNoise(p+DELTA*M[2], np) - d) / DELTA;
-
+	lea	rcx, QWORD PTR $T12[rsp]
 	call	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNoise
 
+; 917  : 	}	
 ; 918  : 	normal = -sc.VectorFromNoScale(normal, REF_OBJECT);
 
 	mov	rax, QWORD PTR [r14]
 	lea	r8, QWORD PTR normal$[rsp]
-	vsubss	xmm1, xmm0, xmm9
+	vsubss	xmm1, xmm0, xmm8
 	vdivss	xmm2, xmm1, xmm6
 	mov	r9d, 2
-	lea	rdx, QWORD PTR $T14[rsp]
+	lea	rdx, QWORD PTR $T11[rsp]
 	mov	rcx, r14
 	vmovss	DWORD PTR normal$[rsp+8], xmm2
 	call	QWORD PTR [rax+456]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	mov	rcx, rax
+	lea	rdx, QWORD PTR $T17[rbp-256]
+	call	QWORD PTR __imp_??GPoint3@@QEBA?AV0@XZ
 
-; 111  : 		 return(Point3(-x,-y,-z)); 
+; 919  : 
+; 920  : 	// Eval sub maps
+; 921  : 	float f1, f2;
+; 922  : 	Point3 v1, v2;
 
-	vmovss	xmm0, DWORD PTR [rax]
-	vmovss	xmm1, DWORD PTR [rax+8]
-	vmovss	xmm2, DWORD PTR __xmm@80000000800000008000000080000000
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 924  : 	if (subtex[0]) {
-
-	mov	rcx, QWORD PTR [rbx+552]
-	xor	dl, dl
-	vmovss	xmm6, DWORD PTR __real@40400000
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vxorps	xmm4, xmm0, xmm2
-	vmovss	xmm0, DWORD PTR [rax+4]
-	vxorps	xmm3, xmm0, xmm2
-	vxorps	xmm2, xmm1, xmm2
-	vmovss	DWORD PTR $T4[rsp+8], xmm2
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 918  : 	normal = -sc.VectorFromNoScale(normal, REF_OBJECT);
-
-	mov	eax, DWORD PTR $T4[rsp+8]
-	mov	DWORD PTR normal$[rsp+8], eax
-	vunpcklps xmm0, xmm4, xmm3
+	lea	rcx, QWORD PTR v1$[rsp]
+	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR normal$[rsp], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR normal$[rsp+8], eax
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR v2$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 
+; 923  : 	bool maps = false;
 ; 924  : 	if (subtex[0]) {
 
+	mov	rcx, QWORD PTR [rdi+552]
+	xor	bl, bl
+	vmovss	xmm6, DWORD PTR __real@40400000
 	test	rcx, rcx
 	je	SHORT $LN6@EvalNormal
 
@@ -8686,62 +8925,49 @@ $LN14@EvalNormal:
 
 ; 926  : 		v1 = subtex[0]->EvalNormalPerturb(sc);
 
-	mov	rcx, QWORD PTR [rbx+552]
-	lea	rdx, QWORD PTR $T13[rsp]
+	mov	rcx, QWORD PTR [rdi+552]
+	lea	rdx, QWORD PTR $T10[rsp]
 	mov	r8, r14
-	vmovaps	xmm8, xmm0
+	vmovaps	xmm7, xmm0
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 
 ; 927  : 		maps = true;
 
-	mov	dl, 1
+	mov	bl, 1
 	vmovsd	xmm1, QWORD PTR [rax]
-	mov	eax, DWORD PTR [rax+8]
 	vmovsd	QWORD PTR v1$[rsp], xmm1
 
 ; 928  : 	} else {
 
-	jmp	SHORT $LN106@EvalNormal
+	jmp	SHORT $LN56@EvalNormal
 $LN6@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 
 ; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
 
-	vmovss	xmm0, DWORD PTR [rbx+532]
-	vaddss	xmm1, xmm0, DWORD PTR [rbx+528]
-	vaddss	xmm2, xmm1, DWORD PTR [rbx+536]
+	vmovss	xmm0, DWORD PTR [rdi+532]
+	vaddss	xmm1, xmm0, DWORD PTR [rdi+528]
+	vaddss	xmm2, xmm1, DWORD PTR [rdi+536]
+	vdivss	xmm7, xmm2, xmm6
+	vxorps	xmm2, xmm2, xmm2
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 930  : 		v1 = Point3(0.f, 0.f, 0.f);
 
-	vunpcklps xmm0, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T9[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 930  : 		v1 = Point3(0.f, 0.f, 0.f);
-
-	mov	eax, DWORD PTR $T9[rsp+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-
-; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
-
-	vdivss	xmm8, xmm2, xmm6
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 930  : 		v1 = Point3(0.f, 0.f, 0.f);
-
+	lea	rcx, QWORD PTR $T9[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR v1$[rsp], xmm0
-$LN106@EvalNormal:
+$LN56@EvalNormal:
 
 ; 931  : 	}
 ; 932  : 	if (subtex[1]) {
 
-	mov	rcx, QWORD PTR [rbx+560]
+	mov	rcx, QWORD PTR [rdi+560]
+	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR v1$[rsp+8], eax
 	test	rcx, rcx
 	je	SHORT $LN8@EvalNormal
@@ -8754,193 +8980,167 @@ $LN106@EvalNormal:
 
 ; 934  : 		v2 = subtex[1]->EvalNormalPerturb(sc);
 
-	mov	rcx, QWORD PTR [rbx+560]
-	lea	rdx, QWORD PTR $T12[rsp]
+	mov	rcx, QWORD PTR [rdi+560]
+	lea	rdx, QWORD PTR $T8[rsp]
 	mov	r8, r14
 	vmovaps	xmm6, xmm0
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
-
-; 939  : 	}
-; 940  : 	
-; 941  : 	// Calculate vector
-; 942  : 	if (maps)
-
-	vsubss	xmm8, xmm6, xmm8
 	vmovsd	xmm1, QWORD PTR [rax]
+	vmovsd	QWORD PTR v2$[rbp-256], xmm1
 	mov	eax, DWORD PTR [rax+8]
-	vmovsd	QWORD PTR v2$[rsp], xmm1
-	mov	DWORD PTR v2$[rsp+8], eax
-	jmp	SHORT $LN104@EvalNormal
+	mov	DWORD PTR v2$[rbp-248], eax
+
+; 935  : 		maps = true;
+; 936  : 	} else {
+
+	jmp	SHORT $LN54@EvalNormal
 $LN8@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 
 ; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
 
-	vmovss	xmm0, DWORD PTR [rbx+544]
-	vaddss	xmm1, xmm0, DWORD PTR [rbx+540]
-	vaddss	xmm2, xmm1, DWORD PTR [rbx+548]
-	vdivss	xmm3, xmm2, xmm6
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T11[rsp+8], xmm7
+	vmovss	xmm0, DWORD PTR [rdi+544]
+	vaddss	xmm2, xmm0, DWORD PTR [rdi+540]
+	vaddss	xmm3, xmm2, DWORD PTR [rdi+548]
+	vdivss	xmm6, xmm3, xmm6
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm2, xmm2, xmm2
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 938  : 		v2 = Point3(0.f, 0.f, 0.f);
 
-	mov	eax, DWORD PTR $T11[rsp+8]
-	mov	DWORD PTR v2$[rsp+8], eax
-	vunpcklps xmm0, xmm7, xmm7
+	lea	rcx, QWORD PTR $T7[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR v2$[rbp-256], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR v2$[rbp-248], eax
 
 ; 939  : 	}
 ; 940  : 	
 ; 941  : 	// Calculate vector
 ; 942  : 	if (maps)
 
-	vsubss	xmm8, xmm3, xmm8
-	vmovsd	QWORD PTR v2$[rsp], xmm0
-	test	dl, dl
-	je	SHORT $LN10@EvalNormal
-$LN104@EvalNormal:
+	test	bl, bl
+	je	$LN10@EvalNormal
+$LN54@EvalNormal:
 
 ; 943  : 		normal = (f2-f1)*normal + d*v2 + (1.f-d)*v1;
 
 	vmovss	xmm0, DWORD PTR __real@3f800000
+	vsubss	xmm4, xmm0, xmm8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm2, xmm9, DWORD PTR v2$[rsp]
-	vmulss	xmm1, xmm8, DWORD PTR normal$[rsp+4]
+	vmulss	xmm3, xmm4, DWORD PTR v1$[rsp+8]
+	vmulss	xmm2, xmm4, DWORD PTR v1$[rsp+4]
+	vmulss	xmm1, xmm4, DWORD PTR v1$[rsp]
+	lea	rcx, QWORD PTR $T19[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmulss	xmm3, xmm8, DWORD PTR v2$[rbp-248]
+	vmulss	xmm2, xmm8, DWORD PTR v2$[rbp-252]
+	vmulss	xmm1, xmm8, DWORD PTR v2$[rbp-256]
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 943  : 		normal = (f2-f1)*normal + d*v2 + (1.f-d)*v1;
 
-	vsubss	xmm7, xmm0, xmm9
+	vsubss	xmm0, xmm6, xmm7
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm8, DWORD PTR normal$[rsp]
+	vmulss	xmm3, xmm0, DWORD PTR normal$[rsp+8]
+	vmulss	xmm2, xmm0, DWORD PTR normal$[rsp+4]
+	vmulss	xmm1, xmm0, DWORD PTR normal$[rsp]
+	lea	rcx, QWORD PTR $T18[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm3, xmm2, xmm0
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm8, DWORD PTR normal$[rsp+8]
-	vmulss	xmm2, xmm7, DWORD PTR v1$[rsp]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm6, xmm3, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm3, xmm9, DWORD PTR v2$[rsp+4]
-	vmulss	xmm2, xmm7, DWORD PTR v1$[rsp+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm4, xmm3, xmm1
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmovss	xmm1, DWORD PTR v2$[rsp+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm5, xmm4, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm2, xmm7, DWORD PTR v1$[rsp+8]
-	vmulss	xmm3, xmm1, xmm9
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm4, xmm3, xmm0
-	vaddss	xmm0, xmm4, xmm2
-	vmovss	DWORD PTR $T10[rsp+8], xmm0
+	vmovss	xmm0, DWORD PTR $T1[rsp+8]
+	vmovss	xmm1, DWORD PTR $T1[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR $T18[rbp-248]
+	vmovss	xmm0, DWORD PTR $T1[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR $T18[rbp-252]
+	vaddss	xmm1, xmm0, DWORD PTR $T18[rbp-256]
+	lea	rcx, QWORD PTR $T16[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovss	xmm0, DWORD PTR $T19[rbp-248]
+	vmovss	xmm1, DWORD PTR $T19[rbp-252]
+	vaddss	xmm3, xmm0, DWORD PTR $T16[rbp-248]
+	vmovss	xmm0, DWORD PTR $T19[rbp-256]
+	vaddss	xmm2, xmm1, DWORD PTR $T16[rbp-252]
+	vaddss	xmm1, xmm0, DWORD PTR $T16[rbp-256]
+	lea	rcx, QWORD PTR $T6[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 943  : 		normal = (f2-f1)*normal + d*v2 + (1.f-d)*v1;
 
-	mov	eax, DWORD PTR $T10[rsp+8]
+	vmovsd	xmm0, QWORD PTR $T6[rsp]
+	mov	eax, DWORD PTR $T6[rsp+8]
+	vmovsd	QWORD PTR normal$[rsp], xmm0
 	mov	DWORD PTR normal$[rsp+8], eax
-	vunpcklps xmm1, xmm6, xmm5
 
 ; 944  : 	else
 
-	jmp	SHORT $LN107@EvalNormal
+	jmp	SHORT $LN11@EvalNormal
 $LN10@EvalNormal:
+
+; 945  : 		normal *= f2 - f1;
+
+	vsubss	xmm3, xmm6, xmm7
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmovss	xmm0, DWORD PTR normal$[rsp]
-	vmulss	xmm2, xmm8, DWORD PTR normal$[rsp+8]
-	vmulss	xmm4, xmm8, DWORD PTR normal$[rsp+4]
-	vmulss	xmm3, xmm0, xmm8
-	vmovsd	xmm0, QWORD PTR normal$[rsp]
-	vmovss	xmm0, xmm0, xmm3
+	vmulss	xmm1, xmm3, DWORD PTR normal$[rsp]
+	vmulss	xmm0, xmm3, DWORD PTR normal$[rsp+4]
+	vmulss	xmm2, xmm3, DWORD PTR normal$[rsp+8]
+	vmovss	DWORD PTR normal$[rsp], xmm1
+	vmovss	DWORD PTR normal$[rsp+4], xmm0
 	vmovss	DWORD PTR normal$[rsp+8], xmm2
-	mov	eax, DWORD PTR normal$[rsp+8]
-	vinsertps xmm1, xmm0, xmm4, 16
-$LN107@EvalNormal:
+$LN11@EvalNormal:
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 947  : 	return texout->Filter(normal); // Does this filter actually do something?
 
-	mov	rcx, QWORD PTR [rbx+768]
-	lea	r8, QWORD PTR $T3[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR normal$[rsp], xmm1
-	vmovsd	QWORD PTR $T3[rsp], xmm1
-	mov	DWORD PTR $T3[rsp+8], eax
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 947  : 	return texout->Filter(normal); // Does this filter actually do something?
-
+	mov	rax, QWORD PTR [rdi+768]
+	lea	rdx, QWORD PTR normal$[rsp]
+	lea	rcx, QWORD PTR $T5[rsp]
+	mov	rbx, QWORD PTR [rax]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, QWORD PTR [rdi+768]
 	mov	rdx, r15
-	mov	rax, QWORD PTR [rcx]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	mov	r8, rax
+	call	QWORD PTR [rbx+1504]
+	vmovaps	xmm8, XMMWORD PTR [rsp+336]
+	vmovaps	xmm7, XMMWORD PTR [rsp+352]
+	vmovaps	xmm6, XMMWORD PTR [rsp+368]
+	jmp	SHORT $LN57@EvalNormal
+$LN55@EvalNormal:
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 895  : 	if (!berconXYZ.get(sc, p, dpdx, dpdy, M)) return Point3(0,0,0);
 
-	vmovaps	xmm3, xmm1
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 947  : 	return texout->Filter(normal); // Does this filter actually do something?
-
-	call	QWORD PTR [rax+1504]
-	vmovaps	xmm9, XMMWORD PTR [rsp+288]
-	vmovaps	xmm8, XMMWORD PTR [rsp+304]
-	vmovaps	xmm6, XMMWORD PTR [rsp+336]
-	jmp	SHORT $LN108@EvalNormal
-$LN105@EvalNormal:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 69   : 		 x = (float)X; y = (float)Y; z = (float)Z; 
-
-	xor	eax, eax
-	mov	QWORD PTR [r15], rax
-	mov	DWORD PTR [r15+8], eax
-$LN108@EvalNormal:
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	xor	r9d, r9d
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, r15
+	call	QWORD PTR __imp_??0Point3@@QEAA@HHH@Z
+$LN57@EvalNormal:
 
 ; 948  : }
 
-	mov	rbx, QWORD PTR [rsp+400]
+	lea	r11, QWORD PTR [rsp+384]
 	mov	rax, r15
-	vmovaps	xmm7, XMMWORD PTR [rsp+320]
-	add	rsp, 352				; 00000160H
+	mov	rbx, QWORD PTR [r11+40]
+	mov	rdi, QWORD PTR [r11+48]
+	mov	rsp, r11
 	pop	r15
 	pop	r14
 	pop	rbp
@@ -8990,23 +9190,7 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
@@ -9025,41 +9209,41 @@ _TEXT	ENDS
 ;	COMDAT ?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
 p$ = 48
-dpdy$ = 64
-dpdx$ = 80
-$T1 = 96
-$T2 = 96
-$T3 = 96
-$T4 = 96
-$T5 = 96
-$T6 = 96
+$T1 = 64
+$T2 = 64
+$T3 = 64
+$T4 = 64
+$T5 = 64
+$T6 = 64
+dpdy$ = 80
+dpdx$ = 96
 c$ = 112
 $T7 = 128
 $T8 = 128
 $T9 = 144
 $T10 = 160
 np$ = 176
-this$ = 368
-__$ReturnUdt$ = 376
-sc$ = 384
+this$ = 384
+__$ReturnUdt$ = 392
+sc$ = 400
 ?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z PROC ; BerconNoise::EvalColor, COMDAT
 
 ; 841  : AColor BerconNoise::EvalColor(ShadeContext& sc) {
 
-$LN80:
-	mov	QWORD PTR [rsp+8], rbx
-	mov	QWORD PTR [rsp+16], rsi
-	mov	QWORD PTR [rsp+24], rdi
+$LN64:
+	mov	QWORD PTR [rsp+24], rsi
 	push	rbp
+	push	r14
+	push	r15
 	lea	rbp, QWORD PTR [rsp-96]
 	sub	rsp, 352				; 00000160H
 
 ; 842  : 	if (!sc.doMaps) return black;
 
 	cmp	DWORD PTR [r8+12], 0
-	mov	rsi, r8
-	mov	rdi, rdx
-	mov	rbx, rcx
+	mov	r15, r8
+	mov	r14, rdx
+	mov	rsi, rcx
 	jne	SHORT $LN2@EvalColor
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
@@ -9071,7 +9255,7 @@ $LN80:
 
 ; 842  : 	if (!sc.doMaps) return black;
 
-	jmp	$LN76@EvalColor
+	jmp	$LN60@EvalColor
 $LN2@EvalColor:
 
 ; 843  : 	
@@ -9079,50 +9263,43 @@ $LN2@EvalColor:
 ; 845  : 	if (sc.GetCache(this,c)) 
 
 	mov	rax, QWORD PTR [r8]
-	mov	rdx, rbx
+	mov	rdx, rsi
 	lea	r8, QWORD PTR c$[rsp]
-	mov	rcx, rsi
+	mov	rcx, r15
 	call	QWORD PTR [rax+504]
 	test	eax, eax
-	jne	$LN77@EvalColor
+	jne	$LN61@EvalColor
 
 ; 846  : 		return c; 	
 ; 847  : 	if (gbufID) sc.SetGBufferID(gbufID);
 
-	mov	edx, DWORD PTR [rbx+120]
+	mov	edx, DWORD PTR [rsi+120]
 	test	edx, edx
 	je	SHORT $LN4@EvalColor
-	mov	rax, QWORD PTR [rsi]
-	mov	rcx, rsi
+	mov	rax, QWORD PTR [r15]
+	mov	rcx, r15
 	call	QWORD PTR [rax+464]
 $LN4@EvalColor:
 
+; 848  : 
+; 849  : 	// UVW and Distortion
+; 850  : 	Point3 p, dpdx, dpdy;	
+
+	lea	rcx, QWORD PTR p$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdx$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdy$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
 ; 851  : 	if(!berconXYZ.get(sc, p, dpdx, dpdy)) return AColor(0,0,0,0);
 
-	vxorps	xmm0, xmm0, xmm0
 	lea	rax, QWORD PTR dpdy$[rsp]
-	mov	rdx, rsi
-	lea	rcx, QWORD PTR [rbx+264]
+	mov	rdx, r15
+	lea	rcx, QWORD PTR [rsi+264]
 	mov	QWORD PTR [rsp+32], rax
 	lea	r9, QWORD PTR dpdx$[rsp]
 	lea	r8, QWORD PTR p$[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR p$[rsp], xmm0
-	vmovss	DWORD PTR p$[rsp+4], xmm0
-	vmovss	DWORD PTR p$[rsp+8], xmm0
-	vmovss	DWORD PTR dpdx$[rsp], xmm0
-	vmovss	DWORD PTR dpdx$[rsp+4], xmm0
-	vmovss	DWORD PTR dpdx$[rsp+8], xmm0
-	vmovss	DWORD PTR dpdy$[rsp], xmm0
-	vmovss	DWORD PTR dpdy$[rsp+4], xmm0
-	vmovss	DWORD PTR dpdy$[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 851  : 	if(!berconXYZ.get(sc, p, dpdx, dpdy)) return AColor(0,0,0,0);
-
 	call	?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@11@Z ; BerconXYZ::get
 	test	eax, eax
 	jne	SHORT $LN5@EvalColor
@@ -9130,19 +9307,19 @@ $LN4@EvalColor:
 
 ; 52   : 		r = (float)R; g = (float)G; b = (float)B; a = (float)A; }
 
-	mov	QWORD PTR [rdi], rax
-	mov	QWORD PTR [rdi+8], rax
+	mov	QWORD PTR [r14], rax
+	mov	QWORD PTR [r14+8], rax
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 851  : 	if(!berconXYZ.get(sc, p, dpdx, dpdy)) return AColor(0,0,0,0);
 
-	jmp	$LN76@EvalColor
+	jmp	$LN60@EvalColor
 $LN5@EvalColor:
 
 ; 852  : 
 ; 853  : 	if (useDistortion)
 
-	cmp	DWORD PTR [rbx+224], 0
+	cmp	DWORD PTR [rsi+224], 0
 	vmovaps	XMMWORD PTR [rsp+336], xmm6
 	vmovaps	XMMWORD PTR [rsp+320], xmm7
 	vmovaps	XMMWORD PTR [rsp+304], xmm8
@@ -9154,25 +9331,25 @@ $LN5@EvalColor:
 ; 854  : 		applyDistortion(sc,p);	
 
 	lea	r8, QWORD PTR p$[rsp]
-	mov	rdx, rsi
-	mov	rcx, rbx
+	mov	rdx, r15
+	mov	rcx, rsi
 	call	?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ; BerconNoise::applyDistortion
 $LN6@EvalColor:
 
 ; 855  : 	float nSize = (mapOn[4] && subtex[4]) ? subtex[4]->EvalMono(sc)*size : size;
 
-	cmp	DWORD PTR [rbx+712], 0
+	cmp	DWORD PTR [rsi+712], 0
 	je	SHORT $LN8@EvalColor
-	mov	rcx, QWORD PTR [rbx+584]
+	mov	rcx, QWORD PTR [rsi+584]
 	test	rcx, rcx
 	je	SHORT $LN8@EvalColor
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, rsi
+	mov	rdx, r15
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm3, xmm0, DWORD PTR [rbx+156]
+	vmulss	xmm3, xmm0, DWORD PTR [rsi+156]
 	jmp	SHORT $LN9@EvalColor
 $LN8@EvalColor:
-	vmovss	xmm3, DWORD PTR [rbx+156]
+	vmovss	xmm3, DWORD PTR [rsi+156]
 $LN9@EvalColor:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -9184,7 +9361,7 @@ $LN9@EvalColor:
 
 ; 858  : 	Noise::alterUVW(p, uvwDist);
 
-	mov	edx, DWORD PTR [rbx+232]
+	mov	edx, DWORD PTR [rsi+232]
 	lea	rcx, QWORD PTR p$[rsp]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
@@ -9223,111 +9400,59 @@ $LN9@EvalColor:
 
 ; 859  : 	NoiseParams np = EvalParameters(&sc);
 
-	mov	r8, rsi
+	mov	r8, r15
 	lea	rdx, QWORD PTR np$[rbp-256]
-	mov	rcx, rbx
+	mov	rcx, rsi
 	call	?EvalParameters@BerconNoise@@QEAA?AVNoiseParams@@PEAVShadeContext@@@Z ; BerconNoise::EvalParameters
 
+; 860  : 		
+; 861  : 	// Caluclate noise function
 ; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
 
-	cmp	DWORD PTR [rsi+16], 0
+	cmp	DWORD PTR [r15+16], 0
 	je	SHORT $LN10@EvalColor
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR dpdy$[rsp]
-	mov	eax, DWORD PTR dpdy$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
-	lea	r9, QWORD PTR np$[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T9[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR dpdx$[rsp]
-	mov	DWORD PTR $T9[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
-	lea	r8, QWORD PTR $T9[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdx$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
-	lea	rdx, QWORD PTR $T10[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T10[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR p$[rsp]
-	mov	DWORD PTR $T10[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
+	mov	QWORD PTR [rsp+384], rbx
+	lea	rdx, QWORD PTR dpdy$[rsp]
+	lea	rcx, QWORD PTR $T9[rbp-256]
+	mov	QWORD PTR [rsp+392], rdi
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR dpdx$[rsp]
+	mov	rdi, rax
+	lea	rcx, QWORD PTR $T10[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR p$[rsp]
+	mov	rbx, rax
 	lea	rcx, QWORD PTR $T8[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR p$[rsp+8]
-	vmovsd	QWORD PTR $T8[rbp-256], xmm0
-	mov	DWORD PTR $T8[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	r9, QWORD PTR np$[rbp-256]
+	mov	r8, rdi
+	mov	rcx, rax
+	mov	rdx, rbx
 	call	?limitedNoise@Noise@@SAMVPoint3@@00AEAVNoiseParams@@@Z ; Noise::limitedNoise
-	jmp	SHORT $LN78@EvalColor
+	mov	rdi, QWORD PTR [rsp+392]
+	mov	rbx, QWORD PTR [rsp+384]
+	jmp	SHORT $LN62@EvalColor
 $LN10@EvalColor:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR p$[rsp]
-	mov	eax, DWORD PTR p$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
-	lea	rdx, QWORD PTR np$[rbp-256]
+	lea	rdx, QWORD PTR p$[rsp]
 	lea	rcx, QWORD PTR $T6[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	DWORD PTR $T6[rsp+8], eax
-	vmovsd	QWORD PTR $T6[rsp], xmm0
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 862  : 	auto d = sc.filterMaps ? Noise::limitedNoise(p, dpdx, dpdy, np) : Noise::limitedNoise(p, np);
-
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
+	lea	rdx, QWORD PTR np$[rbp-256]
 	call	?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z ; Noise::limitedNoise
-$LN78@EvalColor:
+$LN62@EvalColor:
 
 ; 867  : 	RGBA c0 = mapOn[0]&&subtex[0] ? subtex[0]->EvalColor(sc): col[0];
 
-	cmp	DWORD PTR [rbx+696], 0
+	cmp	DWORD PTR [rsi+696], 0
 	vmovss	xmm6, DWORD PTR __real@3f800000
 	vmovaps	xmm8, xmm0
 	je	SHORT $LN12@EvalColor
-	mov	rcx, QWORD PTR [rbx+552]
+	mov	rcx, QWORD PTR [rsi+552]
 	test	rcx, rcx
 	je	SHORT $LN12@EvalColor
 	mov	rax, QWORD PTR [rcx]
 	lea	rdx, QWORD PTR $T5[rsp]
-	mov	r8, rsi
+	mov	r8, r15
 	call	QWORD PTR [rax+1504]
 	vmovss	xmm7, DWORD PTR [rax]
 	jmp	SHORT $LN13@EvalColor
@@ -9336,9 +9461,9 @@ $LN12@EvalColor:
 
 ; 57   : 	AColor(const Color& c, float alph=1.0f) { r = c.r; g = c.g; b = c.b; a = alph; } 
 
-	vmovss	xmm7, DWORD PTR [rbx+528]
-	vmovss	xmm0, DWORD PTR [rbx+532]
-	vmovss	xmm1, DWORD PTR [rbx+536]
+	vmovss	xmm7, DWORD PTR [rsi+528]
+	vmovss	xmm0, DWORD PTR [rsi+532]
+	vmovss	xmm1, DWORD PTR [rsi+536]
 	vmovss	DWORD PTR $T4[rsp], xmm7
 	vmovss	DWORD PTR $T4[rsp+4], xmm0
 	vmovss	DWORD PTR $T4[rsp+8], xmm1
@@ -9352,7 +9477,7 @@ $LN13@EvalColor:
 
 ; 868  : 	RGBA c1 = mapOn[1]&&subtex[1] ? subtex[1]->EvalColor(sc): col[1];				
 
-	cmp	DWORD PTR [rbx+700], 0
+	cmp	DWORD PTR [rsi+700], 0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 54   : 	AColor(const AColor& c) { r = c.r; g = c.g; b = c.b; a = c.a; } 
@@ -9365,12 +9490,12 @@ $LN13@EvalColor:
 ; 868  : 	RGBA c1 = mapOn[1]&&subtex[1] ? subtex[1]->EvalColor(sc): col[1];				
 
 	je	SHORT $LN14@EvalColor
-	mov	rcx, QWORD PTR [rbx+560]
+	mov	rcx, QWORD PTR [rsi+560]
 	test	rcx, rcx
 	je	SHORT $LN14@EvalColor
 	mov	rax, QWORD PTR [rcx]
 	lea	rdx, QWORD PTR $T3[rsp]
-	mov	r8, rsi
+	mov	r8, r15
 	call	QWORD PTR [rax+1504]
 	vmovss	xmm2, DWORD PTR [rax]
 	jmp	SHORT $LN15@EvalColor
@@ -9379,9 +9504,9 @@ $LN14@EvalColor:
 
 ; 57   : 	AColor(const Color& c, float alph=1.0f) { r = c.r; g = c.g; b = c.b; a = alph; } 
 
-	vmovss	xmm2, DWORD PTR [rbx+540]
-	vmovss	xmm0, DWORD PTR [rbx+544]
-	vmovss	xmm1, DWORD PTR [rbx+548]
+	vmovss	xmm2, DWORD PTR [rsi+540]
+	vmovss	xmm0, DWORD PTR [rsi+544]
+	vmovss	xmm1, DWORD PTR [rsi+548]
 	vmovss	DWORD PTR $T2[rsp], xmm2
 	vmovss	DWORD PTR $T2[rsp+4], xmm0
 	vmovss	DWORD PTR $T2[rsp+8], xmm1
@@ -9395,7 +9520,7 @@ $LN15@EvalColor:
 
 ; 869  : 	c = texout->Filter((1.f-d)*c0 + d*c1);
 
-	mov	rcx, QWORD PTR [rbx+768]
+	mov	rcx, QWORD PTR [rsi+768]
 	lea	r8, QWORD PTR $T7[rbp-256]
 	vsubss	xmm0, xmm6, xmm8
 	vmulss	xmm1, xmm0, xmm7
@@ -9448,10 +9573,10 @@ $LN15@EvalColor:
 ; 872  : 	sc.PutCache(this,c); 
 
 	lea	r8, QWORD PTR c$[rsp]
-	mov	rdx, rbx
-	mov	rcx, rsi
+	mov	rdx, rsi
+	mov	rcx, r15
 	vmovups	xmm0, XMMWORD PTR [rax]
-	mov	rax, QWORD PTR [rsi]
+	mov	rax, QWORD PTR [r15]
 	vmovups	XMMWORD PTR c$[rsp], xmm0
 	call	QWORD PTR [rax+528]
 
@@ -9463,19 +9588,18 @@ $LN15@EvalColor:
 	vmovaps	xmm8, XMMWORD PTR [rsp+304]
 	vmovaps	xmm7, XMMWORD PTR [rsp+320]
 	vmovaps	xmm6, XMMWORD PTR [rsp+336]
-$LN77@EvalColor:
+$LN61@EvalColor:
 
 ; 874  : }
 
 	vmovups	xmm0, XMMWORD PTR c$[rsp]
-	vmovups	XMMWORD PTR [rdi], xmm0
-$LN76@EvalColor:
-	lea	r11, QWORD PTR [rsp+352]
-	mov	rax, rdi
-	mov	rbx, QWORD PTR [r11+16]
-	mov	rsi, QWORD PTR [r11+24]
-	mov	rdi, QWORD PTR [r11+32]
-	mov	rsp, r11
+	vmovups	XMMWORD PTR [r14], xmm0
+$LN60@EvalColor:
+	mov	rsi, QWORD PTR [rsp+400]
+	mov	rax, r14
+	add	rsp, 352				; 00000160H
+	pop	r15
+	pop	r14
 	pop	rbp
 	ret	0
 ?EvalColor@BerconNoise@@UEAA?AVAColor@@AEAVShadeContext@@@Z ENDP ; BerconNoise::EvalColor
@@ -9751,20 +9875,11 @@ $LN25@dtor$0:
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ;	COMDAT ?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -9775,7 +9890,7 @@ m$ = 64
 
 ; 636  : void BerconNoise::SetSubTexmap(int i, Texmap *m)  {
 
-$LN34:
+$LN24:
 	mov	QWORD PTR [rsp+8], rbx
 	push	rdi
 	sub	rsp, 32					; 00000020H
@@ -9793,18 +9908,16 @@ $LN34:
 
 	test	ebx, ebx
 	jne	SHORT $LN2@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 639  : 		berconnoise_param_blk.InvalidateUI(noise_map1);
 
-	mov	rcx, QWORD PTR ?berconnoise_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+22]
-	lea	rdx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+22]
+	lea	rcx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN32@SetSubTexm
+	jmp	SHORT $LN22@SetSubTexm
 $LN2@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
@@ -9812,18 +9925,16 @@ $LN2@SetSubTexm:
 
 	cmp	ebx, 1
 	jne	SHORT $LN4@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 642  : 		berconnoise_param_blk.InvalidateUI(noise_map2);
 
-	mov	rcx, QWORD PTR ?berconnoise_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+22]
-	lea	rdx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+22]
+	lea	rcx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN32@SetSubTexm
+	jmp	SHORT $LN22@SetSubTexm
 $LN4@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
@@ -9831,18 +9942,16 @@ $LN4@SetSubTexm:
 
 	cmp	ebx, 2
 	jne	SHORT $LN6@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 645  : 		berconnoise_param_blk.InvalidateUI(distortion_map);
 
-	mov	rcx, QWORD PTR ?berconnoise_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+6]
-	lea	rdx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+6]
+	lea	rcx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN32@SetSubTexm
+	jmp	SHORT $LN22@SetSubTexm
 $LN6@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
@@ -9850,44 +9959,35 @@ $LN6@SetSubTexm:
 
 	cmp	ebx, 3
 	jne	SHORT $LN8@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 648  : 		berconnoise_param_blk.InvalidateUI(distortion_map2);
 
-	mov	rcx, QWORD PTR ?berconnoise_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+6]
-	lea	rdx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	lea	edx, QWORD PTR [rbx+6]
+	lea	rcx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
 
+; 649  : 		ivalid.SetEmpty();
+; 650  : 	}
+; 651  : 
 ; 652  : 	if (BMAP1_NUM <= i && i <= BMAP14_NUM) {
 
-	jmp	SHORT $LN32@SetSubTexm
+	jmp	SHORT $LN22@SetSubTexm
 $LN8@SetSubTexm:
 	lea	eax, DWORD PTR [rbx-4]
 	cmp	eax, 13
 	ja	SHORT $LN9@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	mov	rcx, QWORD PTR ?BerconMap_param_blk@@3VParamBlockDesc2@@A+24
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 653  : 		BerconMap_param_blk.InvalidateUI(i-BMAP1_NUM);
 
-	lea	r8d, DWORD PTR [rbx-4]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
+	lea	edx, DWORD PTR [rbx-4]
+	lea	rcx, OFFSET FLAT:?BerconMap_param_blk@@3VParamBlockDesc2@@A
+$LN22@SetSubTexm:
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	lea	rdx, OFFSET FLAT:?BerconMap_param_blk@@3VParamBlockDesc2@@A
-$LN32@SetSubTexm:
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
+; 654  : 		ivalid.SetEmpty();
+; 655  : 	}
 ; 656  : }
 
-	mov	r9d, -1
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
+	mov	r8d, -1
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 	mov	DWORD PTR [rdi+716], -2147483648	; ffffffff80000000H
 	mov	DWORD PTR [rdi+712], -2147483648	; ffffffff80000000H
 $LN9@SetSubTexm:
@@ -10081,8 +10181,9 @@ $LN30:
 
 	test	eax, eax
 	jns	SHORT $LN14@Reset
+	mov	ecx, DWORD PTR ?__LINE__Var@?0??Reset@BerconNoise@@UEAAXXZ@4JA
 	lea	r9, OFFSET FLAT:??_C@_13COJANIEC@?$AA0@
-	mov	ecx, 432				; 000001b0H
+	add	ecx, 3
 	lea	r8, OFFSET FLAT:??_C@_1CG@JEPHKPPG@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAN?$AAo?$AAi?$AAs?$AAe?$AA?3?$AA?3?$AAR?$AAe@
 	lea	rdx, OFFSET FLAT:??_C@_1GC@JFMJJLAB@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh@
 	call	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
@@ -10138,7 +10239,6 @@ $LN10@Reset:
 	mov	ebx, r15d
 	vmovaps	XMMWORD PTR [rsp+96], xmm7
 	vmovaps	XMMWORD PTR [rsp+80], xmm8
-	npad	1
 $LL4@Reset:
 
 ; 448  : 			DeleteReference(i + 2);
@@ -10429,7 +10529,6 @@ $LN11@Reset:
 
 	cmp	QWORD PTR [rsi+256], r15
 	je	SHORT $LN6@Reset
-	npad	3
 $LL7@Reset:
 
 ; 477  : 		for (int i = 14; i < 28; i++)
@@ -11882,23 +11981,23 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ;	COMDAT ?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 _TEXT	SEGMENT
 $T1 = 32
-this$ = 128
-sc$ = 136
-p$ = 144
+$T2 = 44
+$T3 = 56
+this$ = 112
+sc$ = 120
+p$ = 128
 ?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z PROC ; BerconNoise::applyDistortion, COMDAT
 
 ; 783  : void BerconNoise::applyDistortion(ShadeContext& sc, Point3& p) {
 
-$LN24:
+$LN19:
 	mov	QWORD PTR [rsp+8], rbx
 	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
-	sub	rsp, 112				; 00000070H
+	sub	rsp, 96					; 00000060H
 	mov	rdi, rcx
 	mov	rbx, r8
 
@@ -11914,89 +12013,44 @@ $LN24:
 	cmp	QWORD PTR [rdi+576], 0
 	mov	r8, rdx
 	mov	rax, QWORD PTR [rcx]
-	lea	rdx, QWORD PTR $T1[rsp]
-	vmovaps	XMMWORD PTR [rsp+48], xmm9
-	vmovss	xmm9, DWORD PTR [rdi+228]
+	lea	rdx, QWORD PTR $T3[rsp]
+	vmovaps	XMMWORD PTR [rsp+80], xmm6
+	vmovss	xmm6, DWORD PTR [rdi+228]
 	mov	r9, QWORD PTR [rax+1520]
 	je	SHORT $LN3@applyDisto
 
 ; 786  : 			p += subtex[2]->EvalNormalPerturb(sc)*distortionStr*subtex[3]->EvalMono(sc);
 
-	vmovaps	XMMWORD PTR [rsp+96], xmm6
-	vmovaps	XMMWORD PTR [rsp+80], xmm7
-	vmovaps	XMMWORD PTR [rsp+64], xmm8
 	call	r9
-	mov	rcx, QWORD PTR [rdi+576]
-	mov	rdx, rsi
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmovss	xmm6, DWORD PTR [rax]
-	vmovss	xmm7, DWORD PTR [rax+4]
-	vmovss	xmm8, DWORD PTR [rax+8]
+	lea	rcx, QWORD PTR $T1[rsp]
+	vmulss	xmm3, xmm6, DWORD PTR [rax+8]
+	vmulss	xmm2, xmm6, DWORD PTR [rax+4]
+	vmulss	xmm1, xmm6, DWORD PTR [rax]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 786  : 			p += subtex[2]->EvalNormalPerturb(sc)*distortionStr*subtex[3]->EvalMono(sc);
 
+	mov	rcx, QWORD PTR [rdi+576]
+	mov	rdx, rsi
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1512]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm1, xmm9, xmm6
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm6, XMMWORD PTR [rsp+96]
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 786  : 			p += subtex[2]->EvalNormalPerturb(sc)*distortionStr*subtex[3]->EvalMono(sc);
-
-	vmulss	xmm2, xmm1, xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vaddss	xmm3, xmm2, DWORD PTR [rbx]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm9, xmm7
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm7, XMMWORD PTR [rsp+80]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm2, xmm1, xmm0
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm9, xmm8
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm8, XMMWORD PTR [rsp+64]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm0, xmm1, xmm0
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovss	DWORD PTR [rbx], xmm3
-	vaddss	xmm3, xmm2, DWORD PTR [rbx+4]
-	vaddss	xmm2, xmm0, DWORD PTR [rbx+8]
-	vmovss	DWORD PTR [rbx+8], xmm2
-	vmovss	DWORD PTR [rbx+4], xmm3
+	vmulss	xmm3, xmm0, DWORD PTR $T1[rsp+8]
+	vmulss	xmm2, xmm0, DWORD PTR $T1[rsp+4]
+	vmulss	xmm1, xmm0, DWORD PTR $T1[rsp]
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 787  : 		else					
 
-	jmp	SHORT $LN22@applyDisto
+	jmp	SHORT $LN17@applyDisto
 $LN3@applyDisto:
 
 ; 788  : 			p += subtex[2]->EvalNormalPerturb(sc)*distortionStr;
@@ -12006,43 +12060,33 @@ $LN3@applyDisto:
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm9, DWORD PTR [rax]
-	vmovss	xmm2, DWORD PTR [rax+4]
+	vmulss	xmm3, xmm6, DWORD PTR [rax+8]
+	vmulss	xmm2, xmm6, DWORD PTR [rax+4]
+	vmulss	xmm1, xmm6, DWORD PTR [rax]
+$LN17@applyDisto:
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
 ; 266  :    x += a.x;   y += a.y;   z += a.z;
 
+	vmovss	xmm0, DWORD PTR $T2[rsp]
 	vaddss	xmm1, xmm0, DWORD PTR [rbx]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmovss	xmm3, DWORD PTR [rax+8]
-	vmulss	xmm0, xmm9, xmm2
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
+	vmovss	xmm0, DWORD PTR $T2[rsp+4]
+	vmovaps	xmm6, XMMWORD PTR [rsp+80]
 	vmovss	DWORD PTR [rbx], xmm1
 	vaddss	xmm1, xmm0, DWORD PTR [rbx+4]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm9, xmm3
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
+	vmovss	xmm0, DWORD PTR $T2[rsp+8]
 	vmovss	DWORD PTR [rbx+4], xmm1
 	vaddss	xmm1, xmm0, DWORD PTR [rbx+8]
 	vmovss	DWORD PTR [rbx+8], xmm1
-$LN22@applyDisto:
-	vmovaps	xmm9, XMMWORD PTR [rsp+48]
 $LN4@applyDisto:
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 
 ; 789  : }
 
-	lea	r11, QWORD PTR [rsp+112]
-	mov	rbx, QWORD PTR [r11+16]
-	mov	rsi, QWORD PTR [r11+24]
-	mov	rsp, r11
+	mov	rbx, QWORD PTR [rsp+112]
+	mov	rsi, QWORD PTR [rsp+120]
+	add	rsp, 96					; 00000060H
 	pop	rdi
 	ret	0
 ?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ENDP ; BerconNoise::applyDistortion
@@ -12402,15 +12446,7 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ; File g:\dropbox\github\berconmaps\src\berconnoise.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
 ;	COMDAT ?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 _TEXT	SEGMENT
@@ -12424,7 +12460,7 @@ propagate$ = 88
 
 ; 753  : RefResult BerconNoise::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {				// Update the display (mtl preview, viewport, etc.)
 
-$LN32:
+$LN28:
 	push	rdi
 	sub	rsp, 32					; 00000020H
 
@@ -12432,7 +12468,7 @@ $LN32:
 
 	cmp	DWORD PTR message$[rsp], 80		; 00000050H
 	mov	rdi, rcx
-	jne	$LN26@NotifyRefC
+	jne	$LN22@NotifyRefC
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
@@ -12460,30 +12496,19 @@ $LN32:
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 759  : 				berconnoise_param_blk.InvalidateUI(changing_param);
 
-	mov	rcx, QWORD PTR ?berconnoise_param_blk@@3VParamBlockDesc2@@A+24
-	lea	rdx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
-	movzx	r8d, ax
-	mov	r9d, -1
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 758  : 				ParamID changing_param = pblock->LastNotifyParamID();
-
+	mov	r8d, -1
+	lea	rcx, OFFSET FLAT:?berconnoise_param_blk@@3VParamBlockDesc2@@A
+	movzx	edx, ax
 	movzx	ebx, ax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 
 ; 760  : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
-	je	$LN24@NotifyRefC
+	je	SHORT $LN20@NotifyRefC
 ; File g:\dropbox\github\berconmaps\src\berconnoise.h
 
 ; 126  : 		if (texHandle)
@@ -12491,7 +12516,7 @@ $LN32:
 	mov	rcx, QWORD PTR [rdi+784]
 	xor	ebx, ebx
 	test	rcx, rcx
-	je	SHORT $LN24@NotifyRefC
+	je	SHORT $LN20@NotifyRefC
 
 ; 127  : 		{
 ; 128  : 			texHandle->DeleteThis();
@@ -12507,7 +12532,7 @@ $LN32:
 ; 126  : 		if (texHandle)
 
 	test	rbx, rbx
-	je	SHORT $LN24@NotifyRefC
+	je	SHORT $LN20@NotifyRefC
 
 ; 127  : 		{
 ; 128  : 			texHandle->DeleteThis();
@@ -12537,41 +12562,30 @@ $LN5@NotifyRefC:
 
 	mov	rcx, QWORD PTR [rdi+240]
 	cmp	r8, rcx
-	jne	SHORT $LN24@NotifyRefC
+	jne	SHORT $LN20@NotifyRefC
 
 ; 766  : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 767  : 				xyz_blk.InvalidateUI(changing_param);
 
-	mov	rcx, QWORD PTR ?xyz_blk@@3VXYZ_Desc@@A+24
-	lea	rdx, OFFSET FLAT:?xyz_blk@@3VXYZ_Desc@@A
-	movzx	r8d, ax
-	mov	r9d, -1
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
-
-; 766  : 				ParamID changing_param = pbXYZ->LastNotifyParamID();
-
+	mov	r8d, -1
+	lea	rcx, OFFSET FLAT:?xyz_blk@@3VXYZ_Desc@@A
+	movzx	edx, ax
 	movzx	ebx, ax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
-; File g:\dropbox\github\berconmaps\src\berconnoise.cpp
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 
 ; 768  : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
-	je	SHORT $LN24@NotifyRefC
+	je	SHORT $LN20@NotifyRefC
 	mov	rcx, rdi
 	call	?DiscardTexHandle@BerconNoise@@QEAAXXZ	; BerconNoise::DiscardTexHandle
-$LN24@NotifyRefC:
+$LN20@NotifyRefC:
 	mov	rbx, QWORD PTR [rsp+48]
-$LN26@NotifyRefC:
+$LN22@NotifyRefC:
 
 ; 773  : }
 
@@ -12645,48 +12659,78 @@ this$ = 48
 
 $LN17:
 	mov	QWORD PTR [rsp+8], rbx
-	mov	QWORD PTR [rsp+16], rsi
+	mov	QWORD PTR [rsp+16], rbp
+	mov	QWORD PTR [rsp+24], rsi
 	push	rdi
 	sub	rsp, 32					; 00000020H
-	mov	rsi, rcx
 
-; 341  : 	bool variance;
+; 328  : 	int mappingType{}, mappingChannel{};
 
-	lea	rbx, QWORD PTR [rcx+120]
-	mov	edi, 3
-	npad	5
+	xor	ebp, ebp
+
+; 329  : 	float offX, offY, offZ;
+; 330  : 	float sizeX{}, sizeY{}, sizeZ{};
+; 331  : 	float angX{}, angY{}, angZ{};
+; 332  : 	int tileX{}, tileY{}, tileZ{};
+; 333  : 	float offX2{}, offY2{}, offZ2{};
+; 334  : 	float sizeX2{}, sizeY2{}, sizeZ2{};
+; 335  : 	float angX2{}, angY2{}, angZ2{};
+; 336  : 	int p_seed{}, p_randObj{}, p_randMat{}, p_randPar{};
+; 337  : 	float filtering{};
+; 338  : 
+; 339  : 	BOOL lock{};
+; 340  : 
+; 341  : 	bool variance{};
+
+	lea	rdi, QWORD PTR [rcx+120]
+	mov	rbx, rcx
+	mov	QWORD PTR [rcx], rbp
+	mov	QWORD PTR [rcx+20], rbp
+	mov	QWORD PTR [rcx+28], rbp
+	lea	esi, QWORD PTR [rbp+3]
+	mov	QWORD PTR [rcx+36], rbp
+	mov	QWORD PTR [rcx+44], rbp
+	mov	QWORD PTR [rcx+52], rbp
+	mov	QWORD PTR [rcx+60], rbp
+	mov	QWORD PTR [rcx+68], rbp
+	mov	QWORD PTR [rcx+76], rbp
+	mov	QWORD PTR [rcx+84], rbp
+	mov	QWORD PTR [rcx+92], rbp
+	mov	QWORD PTR [rcx+100], rbp
+	mov	QWORD PTR [rcx+108], rbp
+	mov	BYTE PTR [rcx+116], bpl
 $LL4@BerconXYZ:
-	mov	rcx, rbx
+	mov	rcx, rdi
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
-	add	rbx, 12
-	sub	rdi, 1
+	add	rdi, 12
+	sub	rsi, 1
 	jne	SHORT $LL4@BerconXYZ
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	xor	eax, eax
+	mov	DWORD PTR [rbx+204], ebp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	rcx, rsi
+	mov	rcx, rbx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	mov	DWORD PTR [rsi+204], eax
-	mov	QWORD PTR [rsi+256], rax
+	mov	QWORD PTR [rbx+256], rbp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	QWORD PTR [rsi+8], rax
-	mov	DWORD PTR [rsi+16], eax
+	mov	QWORD PTR [rbx+8], rbp
+	mov	DWORD PTR [rbx+16], ebp
 	call	?update@BerconXYZ@@QEAAXXZ		; BerconXYZ::update
+	mov	rbp, QWORD PTR [rsp+56]
+	mov	rax, rbx
 	mov	rbx, QWORD PTR [rsp+48]
-	mov	rax, rsi
-	mov	rsi, QWORD PTR [rsp+56]
+	mov	rsi, QWORD PTR [rsp+64]
 	add	rsp, 32					; 00000020H
 	pop	rdi
 	ret	0
@@ -12910,7 +12954,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW));
+; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW)));
 
 	mov	ecx, 217				; 000000d9H
 	mov	rbx, rax
@@ -12921,7 +12965,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 278  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW2));
+; 278  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW2)));
 
 	mov	ecx, 222				; 000000deH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12931,7 +12975,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 279  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_OBJ));
+; 279  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_OBJ)));
 
 	mov	ecx, 218				; 000000daH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12941,7 +12985,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_WOR));
+; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_WOR)));
 
 	mov	ecx, 219				; 000000dbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12951,7 +12995,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_SCR));
+; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_SCR)));
 
 	mov	ecx, 220				; 000000dcH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12968,7 +13012,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -12979,7 +13023,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 285  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 285  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12989,7 +13033,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 286  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 286  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -12999,7 +13043,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13009,7 +13053,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13026,7 +13070,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -13037,7 +13081,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 292  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 292  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13047,7 +13091,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 293  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 293  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13057,7 +13101,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13067,7 +13111,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13084,7 +13128,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -13095,7 +13139,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 299  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 299  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13105,7 +13149,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 300  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 300  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13115,7 +13159,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 301  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 301  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13125,7 +13169,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 302  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 302  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13163,7 +13207,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1018				; 000003faH
@@ -13194,7 +13238,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1065				; 00000429H
@@ -13225,7 +13269,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 313  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 313  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1066				; 0000042aH
@@ -13256,7 +13300,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 315  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 315  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1071				; 0000042fH
@@ -15126,35 +15170,31 @@ _TEXT	ENDS
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
 _TEXT	SEGMENT
-__$ReturnUdt$ = 8
-a$ = 16
-f$ = 24
+__$ReturnUdt$ = 48
+a$ = 56
+f$ = 64
 ??D@YA?AVPoint3@@AEBV0@M@Z PROC				; operator*, COMDAT
 
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+; 326  : __forceinline Point3 operator*(const Point3& a, float f) {
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx]
-	vmulss	xmm1, xmm2, DWORD PTR [rdx+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm1
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
+	vmulss	xmm3, xmm2, DWORD PTR [rdx+8]
+	vmovaps	xmm0, xmm2
+	vmulss	xmm1, xmm0, DWORD PTR [rdx]
+	vmulss	xmm2, xmm2, DWORD PTR [rdx+4]
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rax, rbx
 
 ; 328  :    }
 
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS
@@ -15162,35 +15202,30 @@ _TEXT	ENDS
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@MAEBV0@@Z
 _TEXT	SEGMENT
-__$ReturnUdt$ = 8
-f$ = 16
-a$ = 24
+__$ReturnUdt$ = 48
+f$ = 56
+a$ = 64
 ??D@YA?AVPoint3@@MAEBV0@@Z PROC				; operator*, COMDAT
 
+; 320  : __forceinline Point3 operator*(float f, const Point3& a) {
+
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm1, DWORD PTR [r8]
+	vmulss	xmm3, xmm1, DWORD PTR [r8+8]
 	vmulss	xmm2, xmm1, DWORD PTR [r8+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm1, DWORD PTR [r8+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
+	vmulss	xmm1, xmm1, DWORD PTR [r8]
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rax, rbx
 
 ; 322  :    }
 
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??D@YA?AVPoint3@@MAEBV0@@Z ENDP				; operator*
 _TEXT	ENDS
@@ -17497,7 +17532,7 @@ $T1 = 32
 this$ = 64
 __flags$ = 72
 ??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z PROC ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor', COMDAT
-$LN16:
+$LN13:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rdi
 	sub	rsp, 48					; 00000030H
@@ -17505,10 +17540,10 @@ $LN16:
 	mov	QWORD PTR [rsp+72], rbx
 	mov	edi, edx
 	mov	rbx, rcx
-	call	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
+	call	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 	npad	1
 	test	dil, 1
-	je	SHORT $LN13@scalar
+	je	SHORT $LN10@scalar
 	mov	rcx, rbx
 	test	dil, 4
 	jne	SHORT $LN3@scalar
@@ -17523,7 +17558,7 @@ $LN3@scalar:
 	mov	edx, 16
 	call	?__global_delete@@YAXPEAX_K@Z		; __global_delete
 	npad	1
-$LN13@scalar:
+$LN10@scalar:
 	mov	rax, rbx
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -17541,16 +17576,6 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__flags$ = 72
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -17563,33 +17588,20 @@ __flags$ = 72
 ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__flags$ = 72
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-text$x	ENDS
-; Function compile flags: /Ogtp
 ;	COMDAT ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 _TEXT	SEGMENT
 $T1 = 32
 this$ = 64
 __that$ = 72
 ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z PROC ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException, COMDAT
-$LN9:
+$LN6:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbx
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
 	mov	rbx, rcx
-	call	QWORD PTR __imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z
+	call	QWORD PTR __imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	npad	1
-	mov	rax, QWORD PTR __imp_??_7OutOfRangeException@Util@MaxSDK@@6B@
-	mov	QWORD PTR [rbx], rax
 	lea	rax, OFFSET FLAT:??_7TabOutOfRangeException@Util@MaxSDK@@6B@
 	mov	QWORD PTR [rbx], rax
 	mov	rax, rbx
@@ -17603,31 +17615,10 @@ text$x	SEGMENT
 $T1 = 32
 this$ = 64
 __that$ = 72
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__that$ = 72
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__that$ = 72
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
@@ -17646,12 +17637,12 @@ _TEXT	SEGMENT
 $T1 = 32
 this$ = 64
 ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ PROC	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException, COMDAT
-$LN9:
+$LN6:
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
 	mov	QWORD PTR $T1[rsp], -2
 	add	rsp, 56					; 00000038H
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
+	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ ENDP	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -17663,15 +17654,6 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -17681,16 +17663,6 @@ this$ = 64
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h

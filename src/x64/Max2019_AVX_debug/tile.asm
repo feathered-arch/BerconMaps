@@ -10,6 +10,8 @@ PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
 PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
 EXTRN	GUID_NULL:BYTE
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
@@ -27,6 +29,14 @@ _BSS	ENDS
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
 _BSS	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
 _DATA	SEGMENT
 WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
@@ -56,6 +66,8 @@ PUBLIC	?_Destroy@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXPEAV
 PUBLIC	?_Xlength@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@CAXXZ ; std::vector<TileRow,std::allocator<TileRow> >::_Xlength
 PUBLIC	?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z ; TilePattern::setPattern
 PUBLIC	?setPreset@TilePattern@@QEAAXH@Z		; TilePattern::setPreset
+PUBLIC	??0TilePoint@@QEAA@XZ				; TilePoint::TilePoint
+PUBLIC	??0TilePoint@@QEAA@VPoint3@@M@Z			; TilePoint::TilePoint
 PUBLIC	?edgeBlur@Tile@@CAMMMH@Z			; Tile::edgeBlur
 PUBLIC	?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z ; Tile::corner
 PUBLIC	?rotatePoint2@Tile@@CAXAEAVPoint3@@M@Z		; Tile::rotatePoint2
@@ -70,7 +82,6 @@ PUBLIC	??1?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@s
 PUBLIC	?_Destroy@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAAXPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@0@Z ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Destroy
 PUBLIC	?_Xlength@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@CAXXZ ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Xlength
 PUBLIC	??1?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
-PUBLIC	??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 PUBLIC	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 PUBLIC	?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::overflow
 PUBLIC	?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::pbackfail
@@ -175,19 +186,29 @@ EXTRN	??3@YAXPEAX_K@Z:PROC				; operator delete
 EXTRN	__imp__invalid_parameter_noinfo_noreturn:PROC
 EXTRN	__imp_srand:PROC
 EXTRN	__imp_rand:PROC
+EXTRN	__imp_fmaxf:PROC
 EXTRN	?_Xbad_alloc@std@@YAXXZ:PROC			; std::_Xbad_alloc
 EXTRN	?_Xlength_error@std@@YAXPEBD@Z:PROC		; std::_Xlength_error
 EXTRN	?_Xout_of_range@std@@YAXPEBD@Z:PROC		; std::_Xout_of_range
-EXTRN	__imp_??1ios_base@std@@UEAA@XZ:PROC
-EXTRN	__imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z:PROC
 EXTRN	__imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ:PROC
 EXTRN	__imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ:PROC
+EXTRN	__imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ:PROC
+EXTRN	__imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ:PROC
+EXTRN	__imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ:PROC
+EXTRN	__imp_?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ:PROC
+EXTRN	__imp_?gbump@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXH@Z:PROC
+EXTRN	__imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z:PROC
+EXTRN	__imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ:PROC
+EXTRN	__imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W0@Z:PROC
+EXTRN	__imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z:PROC
 EXTRN	__imp_?_Pninc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAPEA_WXZ:PROC
 EXTRN	__imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ:PROC
 EXTRN	__imp_??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ:PROC
 EXTRN	__imp_??5?$basic_istream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@AEAN@Z:PROC
 EXTRN	__imp_??0?$basic_iostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@@Z:PROC
 EXTRN	__imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ:PROC
+EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
+EXTRN	__imp_??0Point3@@QEAA@MMM@Z:PROC
 EXTRN	__imp_??0Point3@@QEAA@AEBV0@@Z:PROC
 EXTRN	?smooth@@YAMMMM@Z:PROC				; smooth
 EXTRN	?snoise@Perlin@@SAMM@Z:PROC			; Perlin::snoise
@@ -205,6 +226,7 @@ EXTRN	?xsputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEB_W_J@Z:P
 EXTRN	_CxxThrowException:PROC
 EXTRN	__CxxFrameHandler3:PROC
 EXTRN	cosf:PROC
+EXTRN	floorf:PROC
 EXTRN	fmodf:PROC
 EXTRN	memcpy:PROC
 EXTRN	memmove:PROC
@@ -212,8 +234,6 @@ EXTRN	memset:PROC
 EXTRN	sinf:PROC
 EXTRN	sqrtf:PROC
 EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
-EXTRN	__imp_??_7ios_base@std@@6B@:BYTE
-EXTRN	__imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@:BYTE
 EXTRN	__ImageBase:BYTE
 EXTRN	_fltused:DWORD
 _BSS	SEGMENT
@@ -230,6 +250,12 @@ pdata	SEGMENT
 $pdata$wmemcpy DD imagerel $LN4
 	DD	imagerel $LN4+26
 	DD	imagerel $unwind$wmemcpy
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?fmax@@YAMMM@Z DD imagerel $LN5
+	DD	imagerel $LN5+25
+	DD	imagerel $unwind$?fmax@@YAMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -485,27 +511,27 @@ $pdata$?_Xlength@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@CAXXZ DD 
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z DD imagerel $LN164
-	DD	imagerel $LN164+393
+$pdata$?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z DD imagerel $LN156
+	DD	imagerel $LN156+373
 	DD	imagerel $unwind$?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?update@TilePattern@@QEAAXXZ DD imagerel $LN74
-	DD	imagerel $LN74+39
+$pdata$?update@TilePattern@@QEAAXXZ DD imagerel $LN66
+	DD	imagerel $LN66+39
 	DD	imagerel $unwind$?update@TilePattern@@QEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?update@TilePattern@@QEAAXXZ DD imagerel $LN74+39
-	DD	imagerel $LN74+218
-	DD	imagerel $chain$1$?update@TilePattern@@QEAAXXZ
+$pdata$0$?update@TilePattern@@QEAAXXZ DD imagerel $LN66+39
+	DD	imagerel $LN66+192
+	DD	imagerel $chain$0$?update@TilePattern@@QEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?update@TilePattern@@QEAAXXZ DD imagerel $LN74+218
-	DD	imagerel $LN74+225
-	DD	imagerel $chain$2$?update@TilePattern@@QEAAXXZ
+$pdata$1$?update@TilePattern@@QEAAXXZ DD imagerel $LN66+192
+	DD	imagerel $LN66+199
+	DD	imagerel $chain$1$?update@TilePattern@@QEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -515,9 +541,39 @@ $pdata$?setPreset@TilePattern@@QEAAXH@Z DD imagerel $LN270
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD imagerel $LN90
-	DD	imagerel $LN90+748
+$pdata$??0TilePoint@@QEAA@XZ DD imagerel $LN4
+	DD	imagerel $LN4+41
+	DD	imagerel $unwind$??0TilePoint@@QEAA@XZ
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0TilePoint@@QEAA@VPoint3@@M@Z DD imagerel $LN4
+	DD	imagerel $LN4+92
+	DD	imagerel $unwind$??0TilePoint@@QEAA@VPoint3@@M@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??0TilePoint@@QEAA@$$QEAV0@@Z DD imagerel $LN4
+	DD	imagerel $LN4+62
+	DD	imagerel $unwind$??0TilePoint@@QEAA@$$QEAV0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD imagerel $LN64
+	DD	imagerel $LN64+839
 	DD	imagerel $unwind$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$0$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD imagerel $LN64+839
+	DD	imagerel $LN64+905
+	DD	imagerel $chain$0$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$1$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD imagerel $LN64+905
+	DD	imagerel $LN64+955
+	DD	imagerel $chain$1$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -527,117 +583,123 @@ $pdata$?rotatePoint2@Tile@@CAXAEAVPoint3@@M@Z DD imagerel $LN12
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67
-	DD	imagerel $LN67+55
+$pdata$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68
+	DD	imagerel $LN68+40
 	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+$pdata$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+40
+	DD	imagerel $LN68+55
+	DD	imagerel $chain$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$8$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+62
-	DD	imagerel $LN67+703
-	DD	imagerel $chain$8$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$9$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+703
-	DD	imagerel $LN67+753
-	DD	imagerel $chain$9$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$10$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+753
-	DD	imagerel $LN67+998
+$pdata$10$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+55
+	DD	imagerel $LN68+262
 	DD	imagerel $chain$10$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$11$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+998
-	DD	imagerel $LN67+1128
+$pdata$11$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+262
+	DD	imagerel $LN68+577
 	DD	imagerel $chain$11$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$12$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+1128
-	DD	imagerel $LN67+1225
+$pdata$12$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+577
+	DD	imagerel $LN68+650
 	DD	imagerel $chain$12$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$13$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN67+1225
-	DD	imagerel $LN67+1296
+$pdata$13$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+650
+	DD	imagerel $LN68+787
 	DD	imagerel $chain$13$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN130
-	DD	imagerel $LN130+140
+$pdata$14$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+787
+	DD	imagerel $LN68+976
+	DD	imagerel $chain$14$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$15$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+976
+	DD	imagerel $LN68+1120
+	DD	imagerel $chain$15$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$16$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+1120
+	DD	imagerel $LN68+1214
+	DD	imagerel $chain$16$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$17$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD imagerel $LN68+1214
+	DD	imagerel $LN68+1275
+	DD	imagerel $chain$17$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN95
+	DD	imagerel $LN95+97
 	DD	imagerel $unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN130+140
-	DD	imagerel $LN130+720
-	DD	imagerel $chain$0$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$1$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN130+720
-	DD	imagerel $LN130+1621
+$pdata$1$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN95+97
+	DD	imagerel $LN95+729
 	DD	imagerel $chain$1$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN57
-	DD	imagerel $LN57+237
+$pdata$2$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD imagerel $LN95+729
+	DD	imagerel $LN95+1534
+	DD	imagerel $chain$2$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN42
+	DD	imagerel $LN42+453
 	DD	imagerel $unwind$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN57+237
-	DD	imagerel $LN57+492
-	DD	imagerel $chain$0$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$1$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN57+492
-	DD	imagerel $LN57+519
-	DD	imagerel $chain$1$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN21
-	DD	imagerel $LN21+515
+$pdata$?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN19
+	DD	imagerel $LN19+499
 	DD	imagerel $unwind$?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN82
-	DD	imagerel $LN82+101
+$pdata$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN61
+	DD	imagerel $LN61+46
 	DD	imagerel $unwind$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN82+101
-	DD	imagerel $LN82+480
+$pdata$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN61+46
+	DD	imagerel $LN61+55
 	DD	imagerel $chain$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN82+480
-	DD	imagerel $LN82+877
+$pdata$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN61+55
+	DD	imagerel $LN61+220
+	DD	imagerel $chain$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$2$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN61+220
+	DD	imagerel $LN61+490
 	DD	imagerel $chain$2$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN82+877
-	DD	imagerel $LN82+923
-	DD	imagerel $chain$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
+$pdata$3$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD imagerel $LN61+490
+	DD	imagerel $LN61+901
+	DD	imagerel $chain$3$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -648,20 +710,20 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
-	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+245
+	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+198
 	DD	imagerel $unwind$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$8$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+245
-	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+813
-	DD	imagerel $chain$8$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
+$pdata$6$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+198
+	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+796
+	DD	imagerel $chain$6$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$9$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+813
-	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+869
-	DD	imagerel $chain$9$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
+$pdata$7$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+796
+	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+853
+	DD	imagerel $chain$7$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -768,7 +830,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z DD imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2345
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2704
 	DD	imagerel $unwind$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -779,20 +841,20 @@ $pdata$?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD imagerel ?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	imagerel ?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA+49
-	DD	imagerel $unwind$?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+$pdata$?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD imagerel ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	imagerel ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA+49
+	DD	imagerel $unwind$?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD imagerel ?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	imagerel ?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA+49
-	DD	imagerel $unwind$?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+$pdata$?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD imagerel ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	imagerel ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA+49
+	DD	imagerel $unwind$?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel $LN15
-	DD	imagerel $LN15+208
+$pdata$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel $LN64
+	DD	imagerel $LN64+430
 	DD	imagerel $unwind$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -803,92 +865,86 @@ $pdata$?dtor$0@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??1?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD imagerel $LN15
-	DD	imagerel $LN15+100
+$pdata$??1?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD imagerel $LN7
+	DD	imagerel $LN7+100
 	DD	imagerel $unwind$??1?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel $LN62
-	DD	imagerel $LN62+365
+$pdata$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel $LN56
+	DD	imagerel $LN56+320
 	DD	imagerel $unwind$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD imagerel $LN49
-	DD	imagerel $LN49+208
+$pdata$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD imagerel $LN36
+	DD	imagerel $LN36+234
 	DD	imagerel $unwind$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD imagerel $LN66
-	DD	imagerel $LN66+204
+$pdata$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD imagerel $LN49
+	DD	imagerel $LN49+377
 	DD	imagerel $unwind$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD imagerel $LN66+204
-	DD	imagerel $LN66+375
-	DD	imagerel $chain$0$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
+$pdata$?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD imagerel $LN31
+	DD	imagerel $LN31+145
+	DD	imagerel $unwind$?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD imagerel $LN66+375
-	DD	imagerel $LN66+419
-	DD	imagerel $chain$1$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
+$pdata$?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ DD imagerel $LN21
+	DD	imagerel $LN21+197
+	DD	imagerel $unwind$?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z DD imagerel $LN45
-	DD	imagerel $LN45+344
+$pdata$?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z DD imagerel $LN33
+	DD	imagerel $LN33+357
 	DD	imagerel $unwind$?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN32
-	DD	imagerel $LN32+115
+$pdata$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN20
+	DD	imagerel $LN20+140
 	DD	imagerel $unwind$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN32+115
-	DD	imagerel $LN32+214
+$pdata$0$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN20+140
+	DD	imagerel $LN20+221
 	DD	imagerel $chain$0$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN32+214
-	DD	imagerel $LN32+244
+$pdata$1$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD imagerel $LN20+221
+	DD	imagerel $LN20+261
 	DD	imagerel $chain$1$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN26
-	DD	imagerel $LN26+62
+$pdata$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN20
+	DD	imagerel $LN20+73
 	DD	imagerel $unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN26+62
-	DD	imagerel $LN26+127
+$pdata$0$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN20+73
+	DD	imagerel $LN20+201
+	DD	imagerel $chain$0$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$1$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN20+201
+	DD	imagerel $LN20+240
 	DD	imagerel $chain$1$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN26+127
-	DD	imagerel $LN26+253
-	DD	imagerel $chain$2$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$3$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD imagerel $LN26+253
-	DD	imagerel $LN26+285
-	DD	imagerel $chain$3$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ DD imagerel $LN45
-	DD	imagerel $LN45+171
+$pdata$?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ DD imagerel $LN31
+	DD	imagerel $LN31+195
 	DD	imagerel $unwind$?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -905,15 +961,15 @@ $pdata$??_G?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD imagerel $LN22
-	DD	imagerel $LN22+139
+$pdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD imagerel $LN9
+	DD	imagerel $LN9+115
 	DD	imagerel $unwind$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z DD imagerel $LN120
+$pdata$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z DD imagerel $LN120
 	DD	imagerel $LN120+78
-	DD	imagerel $unwind$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
+	DD	imagerel $unwind$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -929,15 +985,15 @@ $pdata$?catch$3@?0???$_Emplace_reallocate@V?$basic_string@_WU?$char_traits@_W@st
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z DD imagerel $LN81
+$pdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z DD imagerel $LN81
 	DD	imagerel $LN81+86
-	DD	imagerel $unwind$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+	DD	imagerel $unwind$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z DD imagerel $LN54
+$pdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z DD imagerel $LN54
 	DD	imagerel $LN54+62
-	DD	imagerel $unwind$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+	DD	imagerel $unwind$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2555,63 +2611,63 @@ $unwind$??$construct@VTileRow@@AEBV1@@?$_Default_allocator_traits@V?$allocator@V
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z DD imagerel ??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+$ip2state$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z DD imagerel ??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z DD 0ffffffffH
-	DD	imagerel ?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z@4HA
+$stateUnwindMap$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z DD 0ffffffffH
+	DD	imagerel ?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
-$cppxdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z DD 019930522H
+$cppxdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z DD 019930522H
 	DD	01H
-	DD	imagerel $stateUnwindMap$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+	DD	imagerel $stateUnwindMap$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 	DD	00H
 	DD	00H
 	DD	01H
-	DD	imagerel $ip2state$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+	DD	imagerel $ip2state$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 	DD	020H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z DD 020f11H
+$unwind$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z DD 020f11H
 	DD	030025206H
 	DD	imagerel __CxxFrameHandler3
-	DD	imagerel $cppxdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+	DD	imagerel $cppxdata$??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$ip2state$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z DD imagerel ??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+$ip2state$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z DD imagerel ??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$stateUnwindMap$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z DD 0ffffffffH
-	DD	imagerel ?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z@4HA
+$stateUnwindMap$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z DD 0ffffffffH
+	DD	imagerel ?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
-$cppxdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z DD 019930522H
+$cppxdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z DD 019930522H
 	DD	01H
-	DD	imagerel $stateUnwindMap$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+	DD	imagerel $stateUnwindMap$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 	DD	00H
 	DD	00H
 	DD	01H
-	DD	imagerel $ip2state$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+	DD	imagerel $ip2state$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 	DD	020H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z DD 020f11H
+$unwind$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z DD 020f11H
 	DD	030025206H
 	DD	imagerel __CxxFrameHandler3
-	DD	imagerel $cppxdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+	DD	imagerel $cppxdata$??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -2700,16 +2756,16 @@ $unwind$??$_Emplace_reallocate@V?$basic_string@_WU?$char_traits@_W@std@@V?$alloc
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z DD 010401H
+$unwind$??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z DD 010401H
 	DD	04204H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $ip2state$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD imagerel ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
 	DD	0ffffffffH
-	DD	imagerel ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ+77
+	DD	imagerel ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ+79
 	DD	00H
-	DD	imagerel ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ+87
+	DD	imagerel ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ+89
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -2718,13 +2774,11 @@ $stateUnwindMap$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_
 	DD	imagerel ?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA
 	DD	00H
 	DD	imagerel ?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA
-	DD	0ffffffffH
-	DD	imagerel ?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD 019930522H
-	DD	03H
+	DD	02H
 	DD	imagerel $stateUnwindMap$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
 	DD	00H
 	DD	00H
@@ -2736,7 +2790,7 @@ $cppxdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@s
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD 020f19H
+$unwind$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ DD 020f11H
 	DD	030025206H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -2755,104 +2809,101 @@ $unwind$??_G?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@U
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ DD 020601H
-	DD	030023206H
+$unwind$?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ DD 060f01H
+	DD	07640fH
+	DD	06340fH
+	DD	0700b320fH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$3$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 021H
-	DD	imagerel $LN26
-	DD	imagerel $LN26+62
+$chain$1$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 021H
+	DD	imagerel $LN20
+	DD	imagerel $LN20+73
 	DD	imagerel $unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 020021H
-	DD	095400H
-	DD	imagerel $LN26
-	DD	imagerel $LN26+62
+$chain$0$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 020521H
+	DD	065405H
+	DD	imagerel $LN20
+	DD	imagerel $LN20+73
 	DD	imagerel $unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 041121H
-	DD	095411H
-	DD	083405H
-	DD	imagerel $LN26
-	DD	imagerel $LN26+62
-	DD	imagerel $unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 060e01H
-	DD	0a640eH
-	DD	0f00a320eH
-	DD	07006e008H
+$unwind$?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z DD 081501H
+	DD	097415H
+	DD	086415H
+	DD	073415H
+	DD	0e0113215H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$1$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD 021H
-	DD	imagerel $LN32
-	DD	imagerel $LN32+115
+	DD	imagerel $LN20
+	DD	imagerel $LN20+140
 	DD	imagerel $unwind$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD 020521H
-	DD	027405H
-	DD	imagerel $LN32
-	DD	imagerel $LN32+115
+	DD	0ac405H
+	DD	imagerel $LN20
+	DD	imagerel $LN20+140
 	DD	imagerel $unwind$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD 050c01H
-	DD	04640cH
-	DD	03340cH
-	DD	0e00cH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z DD 0a1801H
-	DD	067418H
-	DD	056418H
-	DD	045418H
-	DD	033418H
-	DD	0e016f018H
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$1$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD 021H
-	DD	imagerel $LN66
-	DD	imagerel $LN66+204
-	DD	imagerel $unwind$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$0$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD 020521H
-	DD	0ae405H
-	DD	imagerel $LN66
-	DD	imagerel $LN66+204
-	DD	imagerel $unwind$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD 0a1601H
+$unwind$?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z DD 0a1601H
 	DD	0c5416H
 	DD	0b3416H
 	DD	0f0123216H
-	DD	0c00ed010H
+	DD	0d00ee010H
+	DD	0600b700cH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z DD 0a1c01H
+	DD	0d541cH
+	DD	0b341cH
+	DD	0f018321cH
+	DD	0d014e016H
+	DD	06010c012H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ DD 060f01H
+	DD	07640fH
+	DD	06340fH
+	DD	0700b320fH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD 081401H
+	DD	086414H
+	DD	075414H
+	DD	063414H
+	DD	070103214H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z DD 0cd601H
+	DD	0ad4d6H
+	DD	0c5416H
+	DD	0b3416H
+	DD	0f0123216H
+	DD	0c00ee010H
 	DD	0600b700cH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $ip2state$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ
 	DD	0ffffffffH
-	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+32
+	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+42
 	DD	00H
-	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+186
+	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+202
 	DD	0ffffffffH
-	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+201
+	DD	imagerel ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ+227
 	DD	00H
 xdata	ENDS
 ;	COMDAT xdata
@@ -2875,8 +2926,10 @@ $cppxdata$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD 021319H
-	DD	03006520aH
+$unwind$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ DD 061d19H
+	DD	0a641dH
+	DD	093418H
+	DD	07006520aH
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ
 xdata	ENDS
@@ -2884,11 +2937,11 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 	DD	0ffffffffH
-	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+54
+	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+48
 	DD	00H
-	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+331
+	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+292
 	DD	0ffffffffH
-	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+359
+	DD	imagerel ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+314
 	DD	00H
 xdata	ENDS
 ;	COMDAT xdata
@@ -2911,12 +2964,11 @@ $cppxdata$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD 0a2611H
-	DD	0d6426H
-	DD	0c5421H
-	DD	0b341cH
-	DD	0f00a520eH
-	DD	07006e008H
+$unwind$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD 082011H
+	DD	0c5420H
+	DD	0b341bH
+	DD	0e009520dH
+	DD	060067007H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 xdata	ENDS
@@ -2965,24 +3017,26 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 	DD	0ffffffffH
-	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+99
+	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+85
 	DD	00H
-	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+109
+	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+113
 	DD	01H
-	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+131
+	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+164
 	DD	02H
-	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+184
+	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+404
 	DD	0ffffffffH
+	DD	imagerel ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z+424
+	DD	02H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $stateUnwindMap$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD 0ffffffffH
-	DD	imagerel ?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA
-	DD	0ffffffffH
 	DD	imagerel ?dtor$0@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA
-	DD	01H
+	DD	00H
 	DD	imagerel ?dtor$1@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA
-	DD	02H
+	DD	01H
+	DD	imagerel ?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA
+	DD	01H
 	DD	imagerel ?dtor$2@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
@@ -2992,7 +3046,7 @@ $cppxdata$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@st
 	DD	imagerel $stateUnwindMap$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 	DD	00H
 	DD	00H
-	DD	05H
+	DD	06H
 	DD	imagerel $ip2state$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 	DD	028H
 	DD	00H
@@ -3000,22 +3054,22 @@ $cppxdata$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@st
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD 082211H
-	DD	0d6422H
-	DD	0c541dH
-	DD	0b3418H
-	DD	07006720aH
+$unwind$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z DD 081e11H
+	DD	0e341eH
+	DD	0f00c5210H
+	DD	07008e00aH
+	DD	050066007H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD 020601H
+$unwind$?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD 020601H
 	DD	050023206H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD 020601H
+$unwind$?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA DD 020601H
 	DD	050023206H
 xdata	ENDS
 ;	COMDAT xdata
@@ -3027,78 +3081,90 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z DD imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
 	DD	0ffffffffH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+57
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+54
 	DD	00H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+151
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+145
 	DD	02H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+201
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+195
 	DD	03H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+220
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+214
 	DD	02H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+367
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+362
 	DD	04H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+421
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+416
 	DD	05H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+449
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+435
 	DD	04H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+604
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+583
 	DD	06H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+637
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+618
 	DD	07H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+704
-	DD	09H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+771
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+689
+	DD	08H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+853
 	DD	0aH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+804
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+924
 	DD	0bH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+872
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+955
+	DD	0cH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1026
 	DD	0dH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+914
-	DD	0eH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+920
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1190
 	DD	0fH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1009
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1235
 	DD	010H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1036
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1241
 	DD	011H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1088
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1333
+	DD	012H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1358
 	DD	013H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1165
-	DD	0fH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1207
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1418
 	DD	014H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1217
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1557
+	DD	016H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1634
+	DD	011H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1683
+	DD	017H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1693
+	DD	011H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1886
 	DD	0fH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1444
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1896
+	DD	0aH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1960
+	DD	01bH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1973
+	DD	0aH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2000
+	DD	04H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2057
+	DD	01dH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2070
+	DD	04H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2097
+	DD	02H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2254
+	DD	00H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2360
+	DD	04H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2367
+	DD	02H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2497
+	DD	00H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2614
+	DD	0ffffffffH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2630
+	DD	00H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2653
+	DD	0ffffffffH
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2686
+	DD	08H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2692
+	DD	014H
+	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2698
 	DD	0dH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1454
-	DD	09H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1518
-	DD	019H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1531
-	DD	09H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1600
-	DD	04H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1657
-	DD	01cH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1670
-	DD	04H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1739
-	DD	02H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+1909
-	DD	00H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2018
-	DD	04H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2025
-	DD	02H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2149
-	DD	00H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2273
-	DD	0ffffffffH
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2289
-	DD	00H
-	DD	imagerel ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z+2312
-	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3119,50 +3185,50 @@ $stateUnwindMap$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$al
 	DD	06H
 	DD	imagerel ?dtor$11@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	07H
+	DD	imagerel ?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	07H
 	DD	imagerel ?dtor$12@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	04H
 	DD	imagerel ?dtor$5@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	09H
-	DD	imagerel ?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	0aH
 	DD	imagerel ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	0bH
 	DD	imagerel ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	09H
-	DD	imagerel ?dtor$6@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0dH
-	DD	imagerel ?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0dH
-	DD	imagerel ?dtor$7@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0fH
+	DD	0cH
 	DD	imagerel ?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	010H
+	DD	0cH
+	DD	imagerel ?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	0aH
+	DD	imagerel ?dtor$6@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	0fH
 	DD	imagerel ?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	0fH
+	DD	imagerel ?dtor$7@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	011H
 	DD	imagerel ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0fH
-	DD	imagerel ?dtor$8@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0fH
+	DD	012H
 	DD	imagerel ?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	014H
-	DD	imagerel ?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0fH
+	DD	013H
 	DD	imagerel ?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0fH
+	DD	013H
+	DD	imagerel ?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	011H
+	DD	imagerel ?dtor$8@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	011H
 	DD	imagerel ?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	0dH
+	DD	017H
 	DD	imagerel ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	09H
+	DD	011H
 	DD	imagerel ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	019H
+	DD	0fH
 	DD	imagerel ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	09H
+	DD	0aH
 	DD	imagerel ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	04H
+	DD	01bH
 	DD	imagerel ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
-	DD	01cH
-	DD	imagerel ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 	DD	04H
+	DD	imagerel ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
+	DD	01dH
 	DD	imagerel ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
@@ -3172,16 +3238,16 @@ $cppxdata$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocato
 	DD	imagerel $stateUnwindMap$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
 	DD	00H
 	DD	00H
-	DD	025H
+	DD	02bH
 	DD	imagerel $ip2state$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
-	DD	0b8H
+	DD	0c0H
 	DD	00H
 	DD	00H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z DD 0a2811H
-	DD	0790120H
+	DD	07b0120H
 	DD	0e00ff011H
 	DD	0c00bd00dH
 	DD	060087009H
@@ -3436,38 +3502,38 @@ $unwind$?tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$9$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 021H
+$chain$7$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 021H
 	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
-	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+245
+	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+198
 	DD	imagerel $unwind$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$8$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 0105821H
-	DD	02f858H
-	DD	03e852H
-	DD	04d83cH
-	DD	05c836H
-	DD	07a81fH
-	DD	089819H
-	DD	020d410H
-	DD	01e5408H
+$chain$6$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 0e7421H
+	DD	02f874H
+	DD	04d86bH
+	DD	05c851H
+	DD	01ed44bH
+	DD	06b818H
+	DD	089812H
+	DD	098809H
 	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
-	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+245
+	DD	imagerel ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z+198
 	DD	imagerel $unwind$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 0119101H
-	DD	01fc491H
-	DD	06b841H
-	DD	098831H
-	DD	0a7829H
-	DD	0b6821H
-	DD	0180111H
-	DD	0e008f00aH
-	DD	060057006H
-	DD	03004H
+$unwind$?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z DD 0135e01H
+	DD	03e85eH
+	DD	07a855H
+	DD	0a7832H
+	DD	0b682aH
+	DD	020541aH
+	DD	01f341aH
+	DD	018011aH
+	DD	0e011f013H
+	DD	0700dc00fH
+	DD	0600cH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3477,94 +3543,83 @@ $unwind$?getAngle@@YAMHM@Z DD 030a01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 021H
-	DD	imagerel $LN82
-	DD	imagerel $LN82+101
+$chain$3$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 021H
+	DD	imagerel $LN61
+	DD	imagerel $LN61+46
 	DD	imagerel $unwind$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 020821H
-	DD	01ce408H
-	DD	imagerel $LN82+877
-	DD	imagerel $LN82+923
-	DD	imagerel $chain$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
+$chain$2$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 021H
+	DD	imagerel $LN61+46
+	DD	imagerel $LN61+55
+	DD	imagerel $chain$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$1$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 020521H
+	DD	088805H
+	DD	imagerel $LN61+46
+	DD	imagerel $LN61+55
+	DD	imagerel $chain$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 020521H
-	DD	07b805H
-	DD	imagerel $LN82
-	DD	imagerel $LN82+101
+	DD	097805H
+	DD	imagerel $LN61
+	DD	imagerel $LN61+46
 	DD	imagerel $unwind$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 0f3c01H
-	DD	08983cH
-	DD	098832H
-	DD	0a7829H
-	DD	0b6821H
-	DD	01d3415H
-	DD	0180115H
+$unwind$?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 0b2501H
+	DD	0a6825H
+	DD	01c3419H
+	DD	0160119H
+	DD	0e00cf00eH
 	DD	06009700aH
 	DD	05008H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 0f5201H
-	DD	05a852H
-	DD	06983eH
-	DD	077824H
-	DD	086818H
-	DD	0156413H
-	DD	0143413H
-	DD	0120113H
-	DD	0700cH
+$unwind$?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 0e4e01H
+	DD	05884eH
+	DD	06782fH
+	DD	076826H
+	DD	0146417H
+	DD	0135417H
+	DD	0123417H
+	DD	07010f217H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 021H
-	DD	imagerel $LN57
-	DD	imagerel $LN57+237
-	DD	imagerel $unwind$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
+$unwind$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 081e01H
+	DD	07681eH
+	DD	0143411H
+	DD	0700af211H
+	DD	050086009H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$0$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 020621H
-	DD	076806H
-	DD	imagerel $LN57
-	DD	imagerel $LN57+237
-	DD	imagerel $unwind$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z DD 081501H
-	DD	0155415H
-	DD	0143415H
-	DD	0e00ef215H
-	DD	0600b700cH
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$1$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 021H
-	DD	imagerel $LN130
-	DD	imagerel $LN130+140
+$chain$2$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 021H
+	DD	imagerel $LN95
+	DD	imagerel $LN95+97
 	DD	imagerel $unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$0$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 020521H
-	DD	07a805H
-	DD	imagerel $LN130
-	DD	imagerel $LN130+140
+$chain$1$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 043021H
+	DD	07a830H
+	DD	089805H
+	DD	imagerel $LN95
+	DD	imagerel $LN95+97
 	DD	imagerel $unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 0175b01H
-	DD	06b85bH
-	DD	08984dH
+$unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 0154e01H
+	DD	06b84eH
 	DD	098845H
 	DD	0a783dH
 	DD	0b6835H
@@ -3578,85 +3633,123 @@ $unwind$?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z DD 0175
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$13$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 021H
-	DD	imagerel $LN67
-	DD	imagerel $LN67+55
+$chain$17$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 021H
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
 	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$12$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 040021H
-	DD	07a800H
+$chain$16$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 060021H
+	DD	098800H
 	DD	0b6800H
-	DD	imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+	DD	01b6400H
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
+	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$11$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 060021H
-	DD	03f800H
-	DD	07a800H
-	DD	0b6800H
-	DD	imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$10$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0a0021H
-	DD	03f800H
+$chain$15$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0a0021H
+	DD	04d800H
 	DD	05c800H
-	DD	07a800H
+	DD	098800H
+	DD	0b6800H
+	DD	01b6400H
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
+	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$14$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0e0021H
+	DD	04d800H
+	DD	05c800H
+	DD	089800H
+	DD	098800H
 	DD	0a7800H
 	DD	0b6800H
-	DD	imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+	DD	01b6400H
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
+	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$9$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0c0021H
-	DD	03f800H
+$chain$13$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0100021H
+	DD	04d800H
+	DD	05c800H
+	DD	07a800H
+	DD	089800H
+	DD	098800H
+	DD	0a7800H
+	DD	0b6800H
+	DD	01b6400H
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
+	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$12$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0e0021H
+	DD	04d800H
+	DD	05c800H
+	DD	07a800H
+	DD	089800H
+	DD	098800H
+	DD	0a7800H
+	DD	0b6800H
+	DD	imagerel $LN68+40
+	DD	imagerel $LN68+55
+	DD	imagerel $chain$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$11$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0100021H
+	DD	04d800H
 	DD	05c800H
 	DD	06b800H
 	DD	07a800H
+	DD	089800H
+	DD	098800H
 	DD	0a7800H
 	DD	0b6800H
-	DD	imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+	DD	imagerel $LN68+40
+	DD	imagerel $LN68+55
+	DD	imagerel $chain$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$8$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0107221H
-	DD	03f872H
-	DD	04e823H
-	DD	05c81dH
-	DD	06b818H
-	DD	07a813H
-	DD	0a780eH
-	DD	0b6809H
-	DD	01b7404H
-	DD	imagerel $LN67+55
-	DD	imagerel $LN67+62
-	DD	imagerel $chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
+$chain$10$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 0123e21H
+	DD	04d83eH
+	DD	05c838H
+	DD	06b82dH
+	DD	07a823H
+	DD	08981eH
+	DD	098819H
+	DD	0a7814H
+	DD	0b680cH
+	DD	01c7404H
+	DD	imagerel $LN68+40
+	DD	imagerel $LN68+55
+	DD	imagerel $chain$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$0$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 020421H
+$chain$1$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 040c21H
+	DD	01b640cH
 	DD	01a3404H
-	DD	imagerel $LN67
-	DD	imagerel $LN67+55
+	DD	imagerel $LN68
+	DD	imagerel $LN68+40
 	DD	imagerel $unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 072401H
-	DD	089824H
-	DD	09881cH
-	DD	018010bH
-	DD	06004H
+$unwind$?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z DD 072501H
+	DD	03f825H
+	DD	01de413H
+	DD	0180113H
+	DD	05008H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3668,17 +3761,49 @@ $unwind$?rotatePoint2@Tile@@CAXAEAVPoint3@@M@Z DD 081f01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD 0134501H
-	DD	05b845H
-	DD	06a840H
-	DD	079836H
-	DD	08882dH
-	DD	097828H
-	DD	0a6823H
-	DD	0197417H
-	DD	0183417H
-	DD	0160117H
-	DD	0500cH
+$chain$1$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD 021H
+	DD	imagerel $LN64
+	DD	imagerel $LN64+839
+	DD	imagerel $unwind$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$0$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD 020821H
+	DD	01c7408H
+	DD	imagerel $LN64
+	DD	imagerel $LN64+839
+	DD	imagerel $unwind$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z DD 0f4001H
+	DD	08a840H
+	DD	099832H
+	DD	0a8829H
+	DD	0b7824H
+	DD	0c681fH
+	DD	01d340fH
+	DD	01a010fH
+	DD	06008H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0TilePoint@@QEAA@$$QEAV0@@Z DD 040a01H
+	DD	06340aH
+	DD	07006320aH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0TilePoint@@QEAA@VPoint3@@M@Z DD 081501H
+	DD	026815H
+	DD	09640fH
+	DD	08340fH
+	DD	0700b520fH
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??0TilePoint@@QEAA@XZ DD 020601H
+	DD	030023206H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3773,25 +3898,24 @@ $unwind$?setPreset@TilePattern@@QEAAXH@Z DD 041e11H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$2$?update@TilePattern@@QEAAXXZ DD 021H
-	DD	imagerel $LN74
-	DD	imagerel $LN74+39
+$chain$1$?update@TilePattern@@QEAAXXZ DD 021H
+	DD	imagerel $LN66
+	DD	imagerel $LN66+39
 	DD	imagerel $unwind$?update@TilePattern@@QEAAXXZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?update@TilePattern@@QEAAXXZ DD 040d21H
-	DD	03640dH
-	DD	023405H
-	DD	imagerel $LN74
-	DD	imagerel $LN74+39
+$chain$0$?update@TilePattern@@QEAAXXZ DD 020521H
+	DD	027405H
+	DD	imagerel $LN66
+	DD	imagerel $LN66+39
 	DD	imagerel $unwind$?update@TilePattern@@QEAAXXZ
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?update@TilePattern@@QEAAXXZ DD 030601H
-	DD	045406H
-	DD	07006H
+	DD	033406H
+	DD	06006H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -3799,7 +3923,7 @@ $ip2state$?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@
 	DD	0ffffffffH
 	DD	imagerel ?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z+36
 	DD	00H
-	DD	imagerel ?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z+366
+	DD	imagerel ?setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z+346
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -4449,6 +4573,31 @@ xdata	ENDS
 xdata	SEGMENT
 $unwind$?copy@?$_WChar_traits@_W@std@@SAPEA_WQEA_WQEB_W_K@Z DD 020601H
 	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$ip2state$?fmax@@YAMMM@Z DD imagerel ?fmax@@YAMMM@Z
+	DD	0ffffffffH
+xdata	ENDS
+;	COMDAT CONST
+CONST	SEGMENT
+$cppxdata$?fmax@@YAMMM@Z DD 019930522H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	00H
+	DD	01H
+	DD	imagerel $ip2state$?fmax@@YAMMM@Z
+	DD	020H
+	DD	00H
+	DD	04H
+CONST	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?fmax@@YAMMM@Z DD 010d19H
+	DD	06204H
+	DD	imagerel __CxxFrameHandler3
+	DD	imagerel $cppxdata$?fmax@@YAMMM@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -5321,11 +5470,11 @@ __formal$ = 24
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
-;	COMDAT ??$_Idl_distance@PEAMPEAM@std@@YA_JAEBQEAM0@Z
+;	COMDAT ??$_Idl_distance@PEAMPEAM@std@@YA@AEBQEAM0@Z
 _TEXT	SEGMENT
 _First$ = 8
 _Last$ = 16
-??$_Idl_distance@PEAMPEAM@std@@YA_JAEBQEAM0@Z PROC	; std::_Idl_distance<float *,float *>, COMDAT
+??$_Idl_distance@PEAMPEAM@std@@YA@AEBQEAM0@Z PROC	; std::_Idl_distance<float *,float *>, COMDAT
 
 ; 968  : 	return (static_cast<_Iter_diff_t<_Checked>>(_Last - _First));
 
@@ -5337,7 +5486,7 @@ _Last$ = 16
 ; 976  : 	}
 
 	ret	0
-??$_Idl_distance@PEAMPEAM@std@@YA_JAEBQEAM0@Z ENDP	; std::_Idl_distance<float *,float *>
+??$_Idl_distance@PEAMPEAM@std@@YA@AEBQEAM0@Z ENDP	; std::_Idl_distance<float *,float *>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
@@ -5644,11 +5793,11 @@ __formal$ = 24
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
-;	COMDAT ??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA_JAEBQEAVTileRow@@0@Z
+;	COMDAT ??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA@AEBQEAVTileRow@@0@Z
 _TEXT	SEGMENT
 _First$ = 8
 _Last$ = 16
-??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA_JAEBQEAVTileRow@@0@Z PROC ; std::_Idl_distance<TileRow *,TileRow *>, COMDAT
+??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA@AEBQEAVTileRow@@0@Z PROC ; std::_Idl_distance<TileRow *,TileRow *>, COMDAT
 
 ; 968  : 	return (static_cast<_Iter_diff_t<_Checked>>(_Last - _First));
 
@@ -5660,7 +5809,7 @@ _Last$ = 16
 ; 976  : 	}
 
 	ret	0
-??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA_JAEBQEAVTileRow@@0@Z ENDP ; std::_Idl_distance<TileRow *,TileRow *>
+??$_Idl_distance@PEAVTileRow@@PEAV1@@std@@YA@AEBQEAVTileRow@@0@Z ENDP ; std::_Idl_distance<TileRow *,TileRow *>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
@@ -5899,11 +6048,11 @@ __formal$ = 24
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
-;	COMDAT ??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA_JAEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z
+;	COMDAT ??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA@AEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z
 _TEXT	SEGMENT
 _First$ = 8
 _Last$ = 16
-??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA_JAEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z PROC ; std::_Idl_distance<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *>, COMDAT
+??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA@AEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z PROC ; std::_Idl_distance<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *>, COMDAT
 
 ; 968  : 	return (static_cast<_Iter_diff_t<_Checked>>(_Last - _First));
 
@@ -5915,7 +6064,7 @@ _Last$ = 16
 ; 976  : 	}
 
 	ret	0
-??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA_JAEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z ENDP ; std::_Idl_distance<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *>
+??$_Idl_distance@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@@std@@YA@AEBQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@0@Z ENDP ; std::_Idl_distance<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *,std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > *>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xutility
@@ -7298,11 +7447,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -7395,9 +7544,9 @@ $LN24@Reallocate:
 ; 3901 : 		_My_data._Myres = _New_capacity;
 
 	mov	QWORD PTR [rdi+24], rbx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	rdx, r15
 	lea	rbx, QWORD PTR [r14+r14]
@@ -7406,9 +7555,9 @@ $LN24@Reallocate:
 ; 3900 : 		_My_data._Mysize = _New_size;
 
 	mov	QWORD PTR [rdi+16], r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	r8, rbx
 	mov	rcx, rax
@@ -7417,9 +7566,9 @@ $LN24@Reallocate:
 ; 3898 : 		const pointer _New_ptr = _Al.allocate(_New_capacity + 1); // throws
 
 	mov	rbp, rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	call	memcpy
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
@@ -7518,7 +7667,7 @@ $LN92@Reallocate:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??R<lambda_3fa8b2c8193a0f3144fc4b1b8f243931>@@QEBAXQEA_W_KQEB_W@Z
@@ -7536,9 +7685,9 @@ $LN10:
 	push	rdi
 	sub	rsp, 32					; 00000020H
 	mov	rdi, rdx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	rbx, QWORD PTR [r8+r8]
 	mov	r8, rbx
@@ -7918,7 +8067,7 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??$_Traits_find_first_of@U?$char_traits@_W@std@@@std@@YA_KQEB_W_K101U?$integral_constant@_N$0A@@0@@Z
 _TEXT	SEGMENT
@@ -7962,21 +8111,21 @@ $LL4@Traits_fin:
 
 	mov	rcx, r10
 	mov	rax, r9
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r10, r10
 	je	SHORT $LN12@Traits_fin
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	r8d, WORD PTR [rdx]
 $LL13@Traits_fin:
 	cmp	WORD PTR [rax], r8w
 	je	SHORT $LN19@Traits_fin
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -8023,7 +8172,7 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??$_Traits_find_first_of@U?$char_traits@_W@std@@@std@@YA_KQEB_W_K101U?$integral_constant@_N$00@0@@Z
 _TEXT	SEGMENT
@@ -8175,21 +8324,21 @@ $LL20@Traits_fin:
 
 	mov	rcx, rbx
 	mov	rax, r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	rbx, rbx
 	je	SHORT $LN28@Traits_fin
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	r8d, WORD PTR [rdx]
 $LL29@Traits_fin:
 	cmp	WORD PTR [rax], r8w
 	je	SHORT $LN42@Traits_fin
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -8243,7 +8392,7 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??$_Traits_find_first_not_of@U?$char_traits@_W@std@@@std@@YA_KQEB_W_K101U?$integral_constant@_N$0A@@0@@Z
 _TEXT	SEGMENT
@@ -8286,14 +8435,14 @@ $LL4@Traits_fin:
 
 	mov	rdx, r10
 	mov	rax, r9
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r10, r10
 	je	SHORT $LN19@Traits_fin
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	ecx, WORD PTR [r8]
 	npad	1
@@ -8301,7 +8450,7 @@ $LL13@Traits_fin:
 	cmp	WORD PTR [rax], cx
 	je	SHORT $LN18@Traits_fin
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rdx, 1
@@ -8348,7 +8497,7 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??$_Traits_find_first_not_of@U?$char_traits@_W@std@@@std@@YA_KQEB_W_K101U?$integral_constant@_N$00@0@@Z
 _TEXT	SEGMENT
@@ -8495,21 +8644,21 @@ $LL20@Traits_fin:
 
 	mov	rcx, r11
 	mov	rax, rsi
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r11, r11
 	je	SHORT $LN42@Traits_fin
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	r8d, WORD PTR [rdx]
 $LL29@Traits_fin:
 	cmp	WORD PTR [rax], r8w
 	je	SHORT $LN41@Traits_fin
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -8865,11 +9014,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAAXAEBM@Z
+;	COMDAT ??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAA@AEBM@Z
 _TEXT	SEGMENT
 this$ = 8
 <_Val_0>$ = 16
-??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAAXAEBM@Z PROC ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float const &>, COMDAT
+??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAA@AEBM@Z PROC ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float const &>, COMDAT
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 
 ; 346  : 	return (_Ptr);
@@ -8896,7 +9045,7 @@ this$ = 8
 ; 911  : 		}
 
 	ret	0
-??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAAXAEBM@Z ENDP ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float const &>
+??$_Emplace_back_with_unused_capacity@AEBM@?$vector@MV?$allocator@M@std@@@std@@AEAA@AEBM@Z ENDP ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float const &>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -8920,11 +9069,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAXAEBM@Z
+;	COMDAT ??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBM@Z
 _TEXT	SEGMENT
 this$ = 8
 <_Val_0>$ = 16
-??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAXAEBM@Z PROC ; std::vector<float,std::allocator<float> >::emplace_back<float const &>, COMDAT
+??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBM@Z PROC ; std::vector<float,std::allocator<float> >::emplace_back<float const &>, COMDAT
 
 ; 916  : 		{	// insert by perfectly forwarding into element at end, provide strong guarantee
 
@@ -8967,7 +9116,7 @@ $LN2@emplace_ba:
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	jmp	??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z ; std::vector<float,std::allocator<float> >::_Emplace_reallocate<float const &>
-??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAXAEBM@Z ENDP ; std::vector<float,std::allocator<float> >::emplace_back<float const &>
+??$emplace_back@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBM@Z ENDP ; std::vector<float,std::allocator<float> >::emplace_back<float const &>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
@@ -9290,11 +9439,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAAX$$QEAM@Z
+;	COMDAT ??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAA@$$QEAM@Z
 _TEXT	SEGMENT
 this$ = 8
 <_Val_0>$ = 16
-??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAAX$$QEAM@Z PROC ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float>, COMDAT
+??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAA@$$QEAM@Z PROC ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float>, COMDAT
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 
 ; 346  : 	return (_Ptr);
@@ -9321,7 +9470,7 @@ this$ = 8
 ; 911  : 		}
 
 	ret	0
-??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAAX$$QEAM@Z ENDP ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float>
+??$_Emplace_back_with_unused_capacity@M@?$vector@MV?$allocator@M@std@@@std@@AEAA@$$QEAM@Z ENDP ; std::vector<float,std::allocator<float> >::_Emplace_back_with_unused_capacity<float>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -9345,11 +9494,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAAX$$QEAM@Z
+;	COMDAT ??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAA@$$QEAM@Z
 _TEXT	SEGMENT
 this$ = 8
 <_Val_0>$ = 16
-??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAAX$$QEAM@Z PROC ; std::vector<float,std::allocator<float> >::emplace_back<float>, COMDAT
+??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAA@$$QEAM@Z PROC ; std::vector<float,std::allocator<float> >::emplace_back<float>, COMDAT
 
 ; 916  : 		{	// insert by perfectly forwarding into element at end, provide strong guarantee
 
@@ -9392,7 +9541,7 @@ $LN2@emplace_ba:
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	jmp	??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z ; std::vector<float,std::allocator<float> >::_Emplace_reallocate<float>
-??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAAX$$QEAM@Z ENDP ; std::vector<float,std::allocator<float> >::emplace_back<float>
+??$emplace_back@M@?$vector@MV?$allocator@M@std@@@std@@QEAA@$$QEAM@Z ENDP ; std::vector<float,std::allocator<float> >::emplace_back<float>
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -10077,13 +10226,13 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z
+;	COMDAT ??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z PROC ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>, COMDAT
+??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z PROC ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>, COMDAT
 
 ; 900  : 		{	// insert by perfectly forwarding into element at end, provide strong guarantee
 
@@ -10122,7 +10271,7 @@ $LN54:
 	add	rsp, 48					; 00000030H
 	pop	rbx
 	ret	0
-??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z ENDP ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>
+??$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z ENDP ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -10130,11 +10279,11 @@ $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
 	mov	rcx, QWORD PTR $T2[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
@@ -10143,11 +10292,11 @@ $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
 	mov	rcx, QWORD PTR $T2[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXAEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$_Emplace_back_with_unused_capacity@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAA@AEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::_Emplace_back_with_unused_capacity<TileRow const &>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -10169,13 +10318,13 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z
+;	COMDAT ??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z PROC ; std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>, COMDAT
+??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z PROC ; std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>, COMDAT
 
 ; 916  : 		{	// insert by perfectly forwarding into element at end, provide strong guarantee
 
@@ -10250,7 +10399,7 @@ $LN2@emplace_ba:
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	jmp	??$_Emplace_reallocate@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAPEAVTileRow@@QEAV2@AEBV2@@Z ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_reallocate<TileRow const &>
-??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z ENDP ; std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>
+??$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z ENDP ; std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -10258,11 +10407,11 @@ $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
 	mov	rcx, QWORD PTR $T2[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
@@ -10271,11 +10420,11 @@ $T1 = 32
 $T2 = 64
 this$ = 64
 <_Val_0>$ = 72
-?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z@4HA PROC ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
 	mov	rcx, QWORD PTR $T2[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAXAEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
+?dtor$0@?0???$emplace_back@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@AEBVTileRow@@@Z@4HA ENDP ; `std::vector<TileRow,std::allocator<TileRow> >::emplace_back<TileRow const &>'::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
@@ -11387,11 +11536,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
+;	COMDAT ??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
 _TEXT	SEGMENT
 this$ = 8
 <_Val_0>$ = 16
-??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Emplace_back_with_unused_capacity<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >, COMDAT
+??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Emplace_back_with_unused_capacity<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >, COMDAT
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
@@ -11440,7 +11589,7 @@ this$ = 8
 ; 911  : 		}
 
 	ret	0
-??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Emplace_back_with_unused_capacity<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >
+??$_Emplace_back_with_unused_capacity@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@AEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Emplace_back_with_unused_capacity<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -11463,11 +11612,11 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-;	COMDAT ??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
+;	COMDAT ??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z
 _TEXT	SEGMENT
 this$ = 48
 <_Val_0>$ = 56
-??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::emplace_back<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >, COMDAT
+??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::emplace_back<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >, COMDAT
 
 ; 916  : 		{	// insert by perfectly forwarding into element at end, provide strong guarantee
 
@@ -11547,7 +11696,7 @@ $LN2@emplace_ba:
 
 	add	rsp, 40					; 00000028H
 	ret	0
-??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAX$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::emplace_back<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >
+??$emplace_back@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@$$QEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@@Z ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::emplace_back<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > >
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits
@@ -11567,22 +11716,18 @@ _Arg$ = 8
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
 ;	COMDAT ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
 _TEXT	SEGMENT
 $T1 = 32
 this$ = 64
 this$ = 64
-this$ = 64
 ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ PROC ; std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor', COMDAT
-$LN22:
+$LN9:
 	push	rbx
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
 	lea	rbx, QWORD PTR [rcx+152]
 	mov	QWORD PTR this$[rsp], rbx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 711  : 		{	// destroy the object
 
@@ -11591,9 +11736,9 @@ $LN22:
 	lea	rax, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
 	mov	QWORD PTR [rcx+rbx-152], rax
 	mov	rax, QWORD PTR [rbx-152]
-	movsxd	rcx, DWORD PTR [rax+4]
-	lea	edx, DWORD PTR [rcx-152]
-	mov	DWORD PTR [rcx+rbx-156], edx
+	movsxd	rdx, DWORD PTR [rax+4]
+	lea	r8d, DWORD PTR [rdx-152]
+	mov	DWORD PTR [rdx+rbx-156], r8d
 
 ; 712  : 		}
 
@@ -11603,28 +11748,10 @@ $LN22:
 	lea	rcx, QWORD PTR [rbx-120]
 	call	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 	npad	1
-	mov	QWORD PTR this$[rsp], rbx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-
-; 38   : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@
-	mov	QWORD PTR [rbx], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-
-; 533  : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7ios_base@std@@6B@
-	mov	QWORD PTR [rbx], rax
-
-; 534  : 		_Ios_base_dtor(this);
-
 	mov	rcx, rbx
-	call	QWORD PTR __imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z
-	npad	1
 	add	rsp, 48					; 00000030H
 	pop	rbx
-	ret	0
+	rex_jmp	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ ENDP ; std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor'
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -11632,7 +11759,6 @@ text$x	SEGMENT
 $T1 = 32
 this$ = 64
 this$ = 64
-this$ = 64
 ?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
@@ -11643,46 +11769,6 @@ text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
-this$ = 64
-this$ = 64
-this$ = 64
-?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
-?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$1
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-this$ = 64
-this$ = 64
-?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$4
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$4
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-this$ = 64
-this$ = 64
-?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$0
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
 this$ = 64
 this$ = 64
 ?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$1
@@ -11698,11 +11784,25 @@ text$x	SEGMENT
 $T1 = 32
 this$ = 64
 this$ = 64
-this$ = 64
-?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$4
+?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$4
+	sub	rcx, 152				; 00000098H
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$0@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$0
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+this$ = 64
+this$ = 64
+?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$1
+	mov	rcx, QWORD PTR this$[rdx]
+	sub	rcx, 152				; 00000098H
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+?dtor$1@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::`vbase destructor''::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT ??_G?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAAPEAXI@Z
@@ -11820,14 +11920,7 @@ _Mode$ = 8
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
@@ -11838,75 +11931,53 @@ this$ = 48
 
 ; 401  : 		{	// discard any allocated buffer and clear pointers
 
-$LN45:
-	push	rbx
+$LN31:
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
+	push	rdi
 	sub	rsp, 32					; 00000020H
 
 ; 402  : 		if (_Mystate & _Allocated)
 
 	test	BYTE PTR [rcx+112], 1
 	mov	rbx, rcx
-	je	SHORT $LN35@Tidy
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	je	SHORT $LN25@Tidy
 
-; 235  : 		return (*_IPnext);
-
-	mov	rax, QWORD PTR [rcx+64]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 403  : 			{
 ; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
 
-	mov	rcx, QWORD PTR [rax]
-	test	rcx, rcx
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rcx, rbx
+	test	rax, rax
 	je	SHORT $LN4@Tidy
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 258  : 		return (*_IPnext + *_IPcount);
-
-	mov	rax, QWORD PTR [rbx+88]
-	movsxd	rdx, DWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
-
-	jmp	SHORT $LN43@Tidy
+	call	QWORD PTR __imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	jmp	SHORT $LN29@Tidy
 $LN4@Tidy:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 240  : 		return (*_IGnext + *_IGcount);
-
-	mov	rax, QWORD PTR [rbx+80]
-	movsxd	rdx, DWORD PTR [rax]
-	mov	rax, QWORD PTR [rbx+56]
-	mov	rcx, QWORD PTR [rax]
-$LN43@Tidy:
-
-; 220  : 		return (*_IGfirst);
-
-	mov	rax, QWORD PTR [rbx+24]
-	lea	rdx, QWORD PTR [rcx+rdx*2]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
-
-	mov	rcx, QWORD PTR [rax]
-	sub	rdx, rcx
-	sar	rdx, 1
+	call	QWORD PTR __imp_?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+$LN29@Tidy:
+	mov	rcx, rbx
+	mov	rdi, rax
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rcx, rbx
+	mov	rsi, rax
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	sub	rdi, rax
+	sar	rdi, 1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 992  : 		_Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
 
-	add	rdx, rdx
+	add	rdi, rdi
 
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
-	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN34@Tidy
+	cmp	rdi, 4096				; 00001000H
+	jb	SHORT $LN24@Tidy
 
 ; 118  : 	const uintptr_t _Ptr_container = _Ptr_user[-1];
 
-	mov	r8, QWORD PTR [rcx-8]
-	add	rdx, 39					; 00000027H
+	mov	rcx, QWORD PTR [rsi-8]
+	add	rdi, 39					; 00000027H
 
 ; 119  : 
 ; 120  : 	// If the following asserts, it likely means that we are performing
@@ -11922,122 +11993,102 @@ $LN43@Tidy:
 ; 130  :   #endif /* _DEBUG */
 ; 131  : 	const uintptr_t _Back_shift = reinterpret_cast<uintptr_t>(_Ptr) - _Ptr_container;
 
-	sub	rcx, r8
+	sub	rsi, rcx
 
 ; 132  : 	_STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
 
-	lea	rax, QWORD PTR [rcx-8]
+	lea	rax, QWORD PTR [rsi-8]
 	cmp	rax, 31
-	ja	SHORT $LN31@Tidy
+	ja	SHORT $LN21@Tidy
 
 ; 133  : 	_Ptr = reinterpret_cast<void *>(_Ptr_container);
 
-	mov	rcx, r8
-$LN34@Tidy:
+	mov	rsi, rcx
+$LN24@Tidy:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
+	mov	rdx, rdi
+	mov	rcx, rsi
 	call	??3@YAXPEAX_K@Z				; operator delete
-$LN35@Tidy:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 251  : 		*_IGfirst = _First;
-
-	mov	rax, QWORD PTR [rbx+24]
-	xor	ecx, ecx
-	mov	QWORD PTR [rax], rcx
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rbx+56]
-	mov	QWORD PTR [rax], rcx
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	mov	rax, QWORD PTR [rbx+80]
-	mov	DWORD PTR [rax], ecx
-
-; 292  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [rbx+32]
-	mov	QWORD PTR [rax], rcx
-
-; 293  : 		*_IPnext = _First;
-
-	mov	rax, QWORD PTR [rbx+64]
-	mov	QWORD PTR [rax], rcx
-
-; 294  : 		*_IPcount = (int)(_Last - _First);
-
-	mov	rax, QWORD PTR [rbx+88]
-	mov	DWORD PTR [rax], ecx
+$LN25@Tidy:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+
+	xor	r9d, r9d
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W0@Z
+
+; 411  : 		_Seekhigh = nullptr;
 ; 412  : 		_Mystate &= ~_Allocated;
 
 	and	DWORD PTR [rbx+112], -2
-	mov	QWORD PTR [rbx+104], rcx
 
 ; 413  : 		}
 
+	mov	rsi, QWORD PTR [rsp+56]
+	mov	QWORD PTR [rbx+104], 0
+	mov	rbx, QWORD PTR [rsp+48]
 	add	rsp, 32					; 00000020H
-	pop	rbx
+	pop	rdi
 	ret	0
-$LN31@Tidy:
+$LN21@Tidy:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 132  : 	_STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
 
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	int	3
-$LN42@Tidy:
+$LN28@Tidy:
 ?_Tidy@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXXZ ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::_Tidy
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z
 _TEXT	SEGMENT
-this$ = 64
-_Ptr$ = 72
-_Count$ = 80
-_State$ = 88
+this$ = 48
+_Ptr$ = 56
+_Count$ = 64
+_State$ = 72
 ?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z PROC ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::_Init, COMDAT
 
 ; 361  : 		{	// initialize buffer to [_Ptr, _Ptr + _Count), set state
 
-$LN26:
+$LN20:
+	mov	QWORD PTR [rsp+16], rbx
 	mov	QWORD PTR [rsp+24], rsi
-	push	rdi
+	mov	QWORD PTR [rsp+32], rdi
 	push	r14
-	push	r15
 	sub	rsp, 32					; 00000020H
-	mov	esi, r9d
-	mov	r14, r8
-	mov	r15, rdx
-	mov	rdi, rcx
+	mov	edi, r9d
+	mov	rbx, r8
+	mov	r14, rdx
+	mov	rsi, rcx
 
 ; 362  : 		if (_Count > INT_MAX)
 
 	cmp	r8, 2147483647				; 7fffffffH
-	ja	$LN25@Init
+	ja	$LN19@Init
 
 ; 365  : 			}
 ; 366  : 
 ; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
 
-	test	r8, r8
+	test	rbx, rbx
 	je	$LN3@Init
 	mov	eax, r9d
 	and	eax, 6
@@ -12046,17 +12097,16 @@ $LN26:
 
 ; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
 
-	mov	QWORD PTR [rsp+64], rbx
 	add	rcx, 116				; 00000074H
-	mov	rdx, r8
-	mov	QWORD PTR [rsp+72], rbp
+	mov	QWORD PTR [rsp+48], rbp
+	mov	rdx, rbx
 	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
-	lea	rbx, QWORD PTR [r14+r14]
-	mov	rdx, r15
+	add	rbx, rbx
+	mov	rdx, r14
 	mov	r8, rbx
 	mov	rcx, rax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
@@ -12064,273 +12114,211 @@ $LN26:
 ; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
 
 	mov	rbp, rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	call	memcpy
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 371  : 			_Seekhigh = _Pnew + _Count;
 
-	lea	rcx, QWORD PTR [rbx+rbp]
+	lea	r9, QWORD PTR [rbx+rbp]
 
 ; 372  : 
 ; 373  : 			if (!(_State & _Noread))
 
-	mov	r8d, esi
-	mov	rbx, QWORD PTR [rsp+64]
-	mov	QWORD PTR [rdi+104], rcx
-	and	r8d, 4
+	mov	ebx, edi
+	mov	QWORD PTR [rsi+104], r9
+	and	ebx, 4
 	jne	SHORT $LN5@Init
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 251  : 		*_IGfirst = _First;
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
 
-	mov	rax, QWORD PTR [rdi+24]
-	mov	QWORD PTR [rax], rbp
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-	mov	QWORD PTR [rax], rbp
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], r14d
+	mov	r8, rbp
+	mov	rdx, rbp
+	mov	rcx, rsi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN5@Init:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 376  : 				}
+; 377  : 
 ; 378  : 			if (!(_State & _Constant))
 
-	test	sil, 2
+	test	dil, 2
 	jne	SHORT $LN7@Init
 
+; 379  : 				{	// setup write buffer, and maybe read buffer
 ; 380  : 				_Mysb::setp(_Pnew,
 
-	mov	rdx, QWORD PTR [rdi+104]
-	test	sil, 24
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	mov	r9, QWORD PTR [rsi+104]
+	test	dil, 24
+	mov	r8, rbp
+	mov	rdx, rbp
+	cmovne	r8, r9
+	mov	rcx, rsi
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 
-; 299  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [rdi+32]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 380  : 				_Mysb::setp(_Pnew,
-
-	mov	rcx, rbp
-	cmovne	rcx, rdx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 301  : 		*_IPcount = (int)(_Last - _Next);
-
-	sub	rdx, rcx
-	sar	rdx, 1
-	mov	QWORD PTR [rax], rbp
-	mov	rax, QWORD PTR [rdi+64]
-	mov	QWORD PTR [rax], rcx
-	mov	rax, QWORD PTR [rdi+88]
-	mov	DWORD PTR [rax], edx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
 ; 384  : 				if (_State & _Noread)
 
-	test	r8d, r8d
+	test	ebx, ebx
 	je	SHORT $LN7@Init
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 251  : 		*_IGfirst = _First;
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
 
-	mov	rax, QWORD PTR [rdi+24]
-	mov	QWORD PTR [rax], rbp
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sar	rbp, 1
-	mov	QWORD PTR [rax], 0
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], ebp
+	mov	r9, rbp
+	xor	r8d, r8d
+	mov	rdx, rbp
+	mov	rcx, rsi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN7@Init:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 387  : 					}
+; 388  : 				}
+; 389  : 
 ; 390  : 			_State |= _Allocated;
 
-	mov	rbp, QWORD PTR [rsp+72]
-	or	esi, 1
+	mov	rbp, QWORD PTR [rsp+48]
+	or	edi, 1
 
 ; 391  : 			}
 ; 392  : 		else
-; 393  : 			{
-; 394  : 			_Seekhigh = nullptr;
-; 395  : 			}
-; 396  : 
-; 397  : 		_Mystate = _State;
 
-	mov	DWORD PTR [rdi+112], esi
-
-; 398  : 		}
-
-	mov	rsi, QWORD PTR [rsp+80]
-	add	rsp, 32					; 00000020H
-	pop	r15
-	pop	r14
-	pop	rdi
-	ret	0
+	jmp	SHORT $LN4@Init
 $LN3@Init:
 
-; 391  : 			}
-; 392  : 		else
 ; 393  : 			{
 ; 394  : 			_Seekhigh = nullptr;
+
+	mov	QWORD PTR [rcx+104], 0
+$LN4@Init:
+
 ; 395  : 			}
 ; 396  : 
 ; 397  : 		_Mystate = _State;
-
-	mov	DWORD PTR [rdi+112], esi
-
 ; 398  : 		}
 
-	mov	rsi, QWORD PTR [rsp+80]
-	mov	QWORD PTR [rcx+104], 0
+	mov	rbx, QWORD PTR [rsp+56]
+	mov	DWORD PTR [rsi+112], edi
+	mov	rsi, QWORD PTR [rsp+64]
+	mov	rdi, QWORD PTR [rsp+72]
 	add	rsp, 32					; 00000020H
-	pop	r15
 	pop	r14
-	pop	rdi
 	ret	0
-$LN25@Init:
+$LN19@Init:
 
 ; 363  : 			{	// TRANSITION, VSO#485517
 ; 364  : 			_Xbad_alloc();
 
 	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
 	int	3
-$LN23@Init:
+$LN17@Init:
 ?_Init@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@IEAAXPEB_W_KH@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::_Init
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z
 _TEXT	SEGMENT
-this$ = 16
-__$ReturnUdt$ = 24
-_Pos$ = 32
-_Mode$ = 40
+this$ = 80
+__$ReturnUdt$ = 88
+_Pos$ = 96
+_Mode$ = 104
 ?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z PROC ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::seekpos, COMDAT
 
 ; 323  : 		{	// change position to _Pos, according to _Mode
 
-$LN32:
+$LN20:
 	mov	QWORD PTR [rsp+16], rbx
-	mov	QWORD PTR [rsp+24], rsi
+	mov	QWORD PTR [rsp+24], rbp
+	push	rsi
+	push	rdi
+	push	r13
 	push	r14
+	push	r15
+	sub	rsp, 32					; 00000020H
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 55   : 		return (_Myoff + _Fpos);
 
-	mov	rbx, QWORD PTR [r8+8]
+	mov	rbp, QWORD PTR [r8+8]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 323  : 		{	// change position to _Pos, according to _Mode
 
-	mov	r11, rcx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 225  : 		return (*_IGnext);
-
-	mov	r14, QWORD PTR [rcx+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 323  : 		{	// change position to _Pos, according to _Mode
-
-	mov	r10, rdx
+	mov	r14d, r9d
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 55   : 		return (_Myoff + _Fpos);
 
-	add	rbx, QWORD PTR [r8]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 235  : 		return (*_IPnext);
-
-	mov	rax, QWORD PTR [rcx+64]
-
-; 225  : 		return (*_IGnext);
-
-	mov	r8, QWORD PTR [r14]
-
-; 235  : 		return (*_IPnext);
-
-	mov	rcx, QWORD PTR [rax]
+	add	rbp, QWORD PTR [r8]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 323  : 		{	// change position to _Pos, according to _Mode
+
+	mov	rbx, rdx
+	mov	rdi, rcx
+
+; 324  : 		const auto _Off = static_cast<streamoff>(_Pos);
+; 325  : 		const auto _Gptr_old = _Mysb::gptr();
+
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+
+; 326  : 		const auto _Pptr_old = _Mysb::pptr();
+
+	mov	rcx, rdi
+	mov	r13, rax
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rsi, rax
 
 ; 327  : 		if (_Pptr_old != nullptr && _Seekhigh < _Pptr_old)
 
-	test	rcx, rcx
+	test	rax, rax
 	je	SHORT $LN2@seekpos
-	cmp	QWORD PTR [r11+104], rcx
+	cmp	QWORD PTR [rdi+104], rax
 	jae	SHORT $LN2@seekpos
 
 ; 328  : 			{	// update high-water pointer
 ; 329  : 			_Seekhigh = _Pptr_old;
 
-	mov	QWORD PTR [r11+104], rcx
+	mov	QWORD PTR [rdi+104], rax
 $LN2@seekpos:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 220  : 		return (*_IGfirst);
+; 330  : 			}
+; 331  : 
+; 332  : 		const auto _Seeklow = _Mysb::eback();
 
-	mov	rax, QWORD PTR [r11+24]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 333  : 		const auto _Seekdist = _Seekhigh - _Seeklow;
-
-	mov	rdx, QWORD PTR [r11+104]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 220  : 		return (*_IGfirst);
-
-	mov	rsi, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
 
 ; 333  : 		const auto _Seekdist = _Seekhigh - _Seeklow;
 
-	mov	rax, rdx
-	sub	rax, rsi
-	sar	rax, 1
+	mov	r9, QWORD PTR [rdi+104]
+	mov	r15, rax
+	mov	rcx, r9
+	sub	rcx, rax
+	sar	rcx, 1
 
 ; 334  : 		if (static_cast<unsigned long long>(_Off) > static_cast<unsigned long long>(_Seekdist))
 
-	cmp	rbx, rax
+	cmp	rbp, rcx
 	jbe	SHORT $LN3@seekpos
 $LN5@seekpos:
 
 ; 358  : 		}
 
-	mov	QWORD PTR [r10], -1
-	jmp	SHORT $LN30@seekpos
+	mov	QWORD PTR [rbx], -1
+	jmp	SHORT $LN18@seekpos
 $LN3@seekpos:
 
 ; 335  : 			{
@@ -12340,19 +12328,19 @@ $LN3@seekpos:
 ; 339  : 		if (_Off != 0
 ; 340  : 			&& (((_Mode & ios_base::in) && _Gptr_old == nullptr)
 
-	test	rbx, rbx
+	test	rbp, rbp
 	je	SHORT $LN4@seekpos
-	test	r9b, 1
+	test	r14b, 1
 	je	SHORT $LN6@seekpos
-	test	r8, r8
+	test	r13, r13
 	je	SHORT $LN5@seekpos
 $LN6@seekpos:
-	test	r9b, 2
+	test	r14b, 2
 	je	SHORT $LN4@seekpos
-	test	rcx, rcx
+	test	rsi, rsi
 	je	SHORT $LN5@seekpos
 $LN4@seekpos:
-	mov	QWORD PTR [rsp+16], rdi
+	mov	QWORD PTR [rsp+80], r12
 
 ; 341  : 				|| ((_Mode & ios_base::out) && _Pptr_old == nullptr)))
 ; 342  : 			{
@@ -12361,210 +12349,161 @@ $LN4@seekpos:
 ; 345  : 
 ; 346  : 		const auto _Newptr = _Seeklow + _Off;	// may perform nullptr + 0
 
-	lea	rdi, QWORD PTR [rsi+rbx*2]
+	lea	r12, QWORD PTR [rax+rbp*2]
 
 ; 347  : 		if ((_Mode & ios_base::in) && _Gptr_old != nullptr)
 
-	test	r9b, 1
+	test	r14b, 1
 	je	SHORT $LN7@seekpos
-	test	r8, r8
+	test	r13, r13
 	je	SHORT $LN7@seekpos
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 252  : 		*_IGnext = _Next;
+; 348  : 			{
+; 349  : 			_Mysb::setg(_Seeklow, _Newptr, _Seekhigh);
 
-	mov	QWORD PTR [r14], rdi
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sub	rdx, rdi
-	mov	rax, QWORD PTR [r11+80]
-	sar	rdx, 1
-	mov	DWORD PTR [rax], edx
+	mov	r8, r12
+	mov	rdx, r15
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN7@seekpos:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 350  : 			}
+; 351  : 
 ; 352  : 		if ((_Mode & ios_base::out) && _Pptr_old != nullptr)
 
-	test	r9b, 2
+	test	r14b, 2
 	je	SHORT $LN8@seekpos
-	test	rcx, rcx
+	test	rsi, rsi
 	je	SHORT $LN8@seekpos
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 258  : 		return (*_IPnext + *_IPcount);
+; 353  : 			{
+; 354  : 			_Mysb::setp(_Seeklow, _Newptr, _Mysb::epptr());
 
-	mov	rax, QWORD PTR [r11+88]
-	movsxd	rdx, DWORD PTR [rax]
-	mov	rax, QWORD PTR [r11+64]
-	mov	rcx, QWORD PTR [rax]
-
-; 299  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [r11+32]
-
-; 258  : 		return (*_IPnext + *_IPcount);
-
-	lea	r8, QWORD PTR [rcx+rdx*2]
-
-; 299  : 		*_IPfirst = _First;
-
-	mov	QWORD PTR [rax], rsi
-
-; 300  : 		*_IPnext = _Next;
-; 301  : 		*_IPcount = (int)(_Last - _Next);
-
-	sub	r8, rdi
-	mov	rax, QWORD PTR [r11+64]
-	sar	r8, 1
-	mov	QWORD PTR [rax], rdi
-	mov	rax, QWORD PTR [r11+88]
-	mov	DWORD PTR [rax], r8d
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r8, r12
+	mov	rdx, r15
+	mov	r9, rax
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN8@seekpos:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 355  : 			}
+; 356  : 
 ; 357  : 		return (pos_type(_Off));
 
-	mov	rdi, QWORD PTR [rsp+16]
+	mov	r12, QWORD PTR [rsp+80]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 32   : 		: _Myoff(_Off), _Fpos(0), _Mystate()
 
-	mov	QWORD PTR [r10], rbx
-$LN30@seekpos:
+	mov	QWORD PTR [rbx], rbp
+$LN18@seekpos:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 358  : 		}
 
-	mov	rbx, QWORD PTR [rsp+24]
+	mov	rbp, QWORD PTR [rsp+96]
 	xor	eax, eax
-	mov	rsi, QWORD PTR [rsp+32]
-	mov	QWORD PTR [r10+8], 0
-	mov	QWORD PTR [r10+16], rax
-	mov	rax, r10
+	mov	QWORD PTR [rbx+8], 0
+	mov	QWORD PTR [rbx+16], rax
+	mov	rax, rbx
+	mov	rbx, QWORD PTR [rsp+88]
+	add	rsp, 32					; 00000020H
+	pop	r15
 	pop	r14
+	pop	r13
+	pop	rdi
+	pop	rsi
 	ret	0
 ?seekpos@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@V32@H@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::seekpos
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z
 _TEXT	SEGMENT
-this$ = 24
-__$ReturnUdt$ = 32
-_Off$ = 40
-_Way$ = 48
-_Mode$ = 56
+_Gptr_old$1$ = 80
+this$ = 80
+__$ReturnUdt$ = 88
+_Off$ = 96
+_Way$ = 104
+_Mode$ = 112
 ?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z PROC ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::seekoff, COMDAT
 
 ; 249  : 		{	// change position by _Off, according to _Way, _Mode
 
-$LN45:
-	mov	QWORD PTR [rsp+8], rbx
-	mov	QWORD PTR [rsp+16], rbp
-	mov	QWORD PTR [rsp+24], rsi
-	mov	QWORD PTR [rsp+32], rdi
+$LN33:
+	mov	QWORD PTR [rsp+16], rbx
+	mov	QWORD PTR [rsp+32], rbp
+	mov	QWORD PTR [rsp+24], r8
+	push	rsi
+	push	r12
+	push	r13
 	push	r14
 	push	r15
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	sub	rsp, 32					; 00000020H
+	mov	ebp, r9d
+	mov	rbx, rdx
+	mov	r15, rcx
 
-; 225  : 		return (*_IGnext);
+; 250  : 		const auto _Gptr_old = _Mysb::gptr();
 
-	mov	r15, QWORD PTR [rcx+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
 
-; 249  : 		{	// change position by _Off, according to _Way, _Mode
+; 251  : 		const auto _Pptr_old = _Mysb::pptr();
 
-	mov	r11, rcx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 235  : 		return (*_IPnext);
-
-	mov	rax, QWORD PTR [rcx+64]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 249  : 		{	// change position by _Off, according to _Way, _Mode
-
-	mov	ebx, r9d
-	mov	rdi, r8
-	mov	r10, rdx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 225  : 		return (*_IGnext);
-
-	mov	rbp, QWORD PTR [r15]
-
-; 235  : 		return (*_IPnext);
-
-	mov	rcx, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, r15
+	mov	QWORD PTR _Gptr_old$1$[rsp], rax
+	mov	r13, rax
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rsi, rax
 
 ; 252  : 		if (_Pptr_old != nullptr && _Seekhigh < _Pptr_old)
 
-	test	rcx, rcx
+	test	rax, rax
 	je	SHORT $LN4@seekoff
-	cmp	QWORD PTR [r11+104], rcx
+	cmp	QWORD PTR [r15+104], rax
 	jae	SHORT $LN4@seekoff
 
 ; 253  : 			{	// update high-water pointer
 ; 254  : 			_Seekhigh = _Pptr_old;
 
-	mov	QWORD PTR [r11+104], rcx
+	mov	QWORD PTR [r15+104], rax
 $LN4@seekoff:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 220  : 		return (*_IGfirst);
+; 255  : 			}
+; 256  : 
+; 257  : 		const auto _Seeklow = _Mysb::eback();
 
-	mov	rax, QWORD PTR [r11+24]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 260  : 		switch (_Way)
-
-	xor	r9d, r9d
-	mov	r14, QWORD PTR [r11+104]
-	mov	edx, DWORD PTR _Mode$[rsp]
-	mov	r8, r14
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 220  : 		return (*_IGfirst);
-
-	mov	rsi, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, r15
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
 
 ; 258  : 		const auto _Seekdist = _Seekhigh - _Seeklow;
 
-	sub	r8, rsi
-	sar	r8, 1
+	mov	r9, QWORD PTR [r15+104]
+	mov	r12, rax
 
+; 259  : 		off_type _Newoff;
 ; 260  : 		switch (_Way)
 
-	test	ebx, ebx
+	mov	r14d, DWORD PTR _Mode$[rsp]
+	mov	rdx, r9
+	sub	rdx, rax
+	sar	rdx, 1
+	test	ebp, ebp
 	je	SHORT $LN5@seekoff
-	sub	ebx, 1
+	sub	ebp, 1
 	je	SHORT $LN7@seekoff
-	cmp	ebx, 1
+	cmp	ebp, 1
 	jne	SHORT $LN13@seekoff
 
 ; 264  : 				break;
 ; 265  : 			case ios_base::end:
 ; 266  : 				_Newoff = _Seekdist;
 
-	mov	rax, r8
+	mov	rax, rdx
 
 ; 267  : 				break;
 
@@ -12576,7 +12515,7 @@ $LN7@seekoff:
 ; 270  : 				constexpr auto _Both = ios_base::in | ios_base::out;
 ; 271  : 				if ((_Mode & _Both) != _Both)
 
-	mov	eax, edx
+	mov	eax, r14d
 	and	eax, 3
 	cmp	al, 3
 	je	SHORT $LN13@seekoff
@@ -12584,23 +12523,23 @@ $LN7@seekoff:
 ; 272  : 					{	// prohibited by N4727 [stringbuf.virtuals] Table 107 "seekoff positioning"
 ; 273  : 					if (_Mode & ios_base::in)
 
-	test	dl, 1
+	test	r14b, 1
 	je	SHORT $LN9@seekoff
 
 ; 274  : 						{
 ; 275  : 						if (_Gptr_old != nullptr || _Seeklow == nullptr)
 
-	test	rbp, rbp
+	test	r13, r13
 	jne	SHORT $LN12@seekoff
-	test	rsi, rsi
+	test	r12, r12
 	jne	SHORT $LN13@seekoff
 $LN12@seekoff:
 
 ; 276  : 							{
 ; 277  : 							_Newoff = _Gptr_old - _Seeklow;
 
-	mov	rax, rbp
-	sub	rax, rsi
+	mov	rax, r13
+	sub	rax, r12
 	sar	rax, 1
 
 ; 278  : 							break;
@@ -12612,19 +12551,19 @@ $LN9@seekoff:
 ; 280  : 						}
 ; 281  : 					else if ((_Mode & ios_base::out) && (_Pptr_old != nullptr || _Seeklow == nullptr))
 
-	test	dl, 2
+	test	r14b, 2
 	je	SHORT $LN13@seekoff
-	test	rcx, rcx
-	jne	SHORT $LN14@seekoff
 	test	rsi, rsi
+	jne	SHORT $LN14@seekoff
+	test	r12, r12
 	jne	SHORT $LN13@seekoff
 $LN14@seekoff:
 
 ; 282  : 						{
 ; 283  : 						_Newoff = _Pptr_old - _Seeklow;
 
-	mov	rax, rcx
-	sub	rax, rsi
+	mov	rax, rsi
+	sub	rax, r12
 	sar	rax, 1
 
 ; 284  : 						break;
@@ -12634,15 +12573,15 @@ $LN13@seekoff:
 
 ; 319  : 		}
 
-	mov	QWORD PTR [r10], -1
-	jmp	SHORT $LN43@seekoff
+	mov	QWORD PTR [rbx], -1
+	jmp	SHORT $LN31@seekoff
 $LN5@seekoff:
 
 ; 261  : 			{
 ; 262  : 			case ios_base::beg:
 ; 263  : 				_Newoff = 0;
 
-	mov	rax, r9
+	xor	eax, eax
 $LN2@seekoff:
 
 ; 285  : 						}
@@ -12656,8 +12595,9 @@ $LN2@seekoff:
 ; 293  : 
 ; 294  : 		if (static_cast<unsigned long long>(_Off) + _Newoff > static_cast<unsigned long long>(_Seekdist))
 
-	lea	rbx, QWORD PTR [rax+rdi]
-	cmp	rbx, r8
+	mov	rbp, QWORD PTR _Off$[rsp]
+	add	rbp, rax
+	cmp	rbp, rdx
 	ja	SHORT $LN13@seekoff
 
 ; 295  : 			{
@@ -12668,16 +12608,16 @@ $LN2@seekoff:
 ; 300  : 		if (_Off != 0
 ; 301  : 			&& (((_Mode & ios_base::in) && _Gptr_old == nullptr)
 
-	test	rbx, rbx
-	je	SHORT $LN17@seekoff
-	test	dl, 1
-	je	SHORT $LN19@seekoff
 	test	rbp, rbp
+	je	SHORT $LN17@seekoff
+	test	r14b, 1
+	je	SHORT $LN19@seekoff
+	test	r13, r13
 	je	SHORT $LN13@seekoff
 $LN19@seekoff:
-	test	dl, 2
+	test	r14b, 2
 	je	SHORT $LN17@seekoff
-	test	rcx, rcx
+	test	rsi, rsi
 	je	SHORT $LN13@seekoff
 $LN17@seekoff:
 
@@ -12688,170 +12628,148 @@ $LN17@seekoff:
 ; 306  : 
 ; 307  : 		const auto _Newptr = _Seeklow + _Off;	// may perform nullptr + 0
 
-	lea	rdi, QWORD PTR [rsi+rbx*2]
+	lea	r13, QWORD PTR [r12+rbp*2]
 
 ; 308  : 		if ((_Mode & ios_base::in) && _Gptr_old != nullptr)
 
-	test	dl, 1
+	test	r14b, 1
 	je	SHORT $LN20@seekoff
-	test	rbp, rbp
+	cmp	QWORD PTR _Gptr_old$1$[rsp], 0
 	je	SHORT $LN20@seekoff
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 252  : 		*_IGnext = _Next;
+; 309  : 			{
+; 310  : 			_Mysb::setg(_Seeklow, _Newptr, _Seekhigh);
 
-	mov	QWORD PTR [r15], rdi
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sub	r14, rdi
-	mov	rax, QWORD PTR [r11+80]
-	sar	r14, 1
-	mov	DWORD PTR [rax], r14d
+	mov	r8, r13
+	mov	rdx, r12
+	mov	rcx, r15
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN20@seekoff:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 311  : 			}
+; 312  : 
 ; 313  : 		if ((_Mode & ios_base::out) && _Pptr_old != nullptr)
 
-	test	dl, 2
+	test	r14b, 2
 	je	SHORT $LN21@seekoff
-	test	rcx, rcx
+	test	rsi, rsi
 	je	SHORT $LN21@seekoff
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 258  : 		return (*_IPnext + *_IPcount);
+; 314  : 			{
+; 315  : 			_Mysb::setp(_Seeklow, _Newptr, _Mysb::epptr());
 
-	mov	rax, QWORD PTR [r11+88]
-	movsxd	rdx, DWORD PTR [rax]
-	mov	rax, QWORD PTR [r11+64]
-	mov	rcx, QWORD PTR [rax]
-
-; 299  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [r11+32]
-
-; 258  : 		return (*_IPnext + *_IPcount);
-
-	lea	r8, QWORD PTR [rcx+rdx*2]
-
-; 299  : 		*_IPfirst = _First;
-
-	mov	QWORD PTR [rax], rsi
-
-; 300  : 		*_IPnext = _Next;
-; 301  : 		*_IPcount = (int)(_Last - _Next);
-
-	sub	r8, rdi
-	mov	rax, QWORD PTR [r11+64]
-	sar	r8, 1
-	mov	QWORD PTR [rax], rdi
-	mov	rax, QWORD PTR [r11+88]
-	mov	DWORD PTR [rax], r8d
+	mov	rcx, r15
+	call	QWORD PTR __imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r8, r13
+	mov	rdx, r12
+	mov	r9, rax
+	mov	rcx, r15
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN21@seekoff:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 32   : 		: _Myoff(_Off), _Fpos(0), _Mystate()
 
-	mov	QWORD PTR [r10], rbx
-$LN43@seekoff:
+	mov	QWORD PTR [rbx], rbp
+$LN31@seekoff:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 319  : 		}
 
-	mov	rbx, QWORD PTR [rsp+24]
+	mov	rbp, QWORD PTR [rsp+104]
 	xor	eax, eax
-	mov	rbp, QWORD PTR [rsp+32]
-	mov	rsi, QWORD PTR [rsp+40]
-	mov	rdi, QWORD PTR [rsp+48]
-	mov	QWORD PTR [r10+8], r9
-	mov	QWORD PTR [r10+16], rax
-	mov	rax, r10
+	mov	QWORD PTR [rbx+8], 0
+	mov	QWORD PTR [rbx+16], rax
+	mov	rax, rbx
+	mov	rbx, QWORD PTR [rsp+88]
+	add	rsp, 32					; 00000020H
 	pop	r15
 	pop	r14
+	pop	r13
+	pop	r12
+	pop	rsi
 	ret	0
 ?seekoff@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAA?AV?$fpos@U_Mbstatet@@@2@_JHH@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::seekoff
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ
 _TEXT	SEGMENT
-this$ = 8
+this$ = 48
 ?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ PROC ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::underflow, COMDAT
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 225  : 		return (*_IGnext);
-
-	mov	r10, QWORD PTR [rcx+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 216  : 		{	// get an element from stream, but don't point past it
 
-	mov	r9, rcx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+$LN21:
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
+	push	rdi
+	sub	rsp, 32					; 00000020H
+	mov	rdi, rcx
 
-; 225  : 		return (*_IGnext);
+; 217  : 		const auto _Gptr = _Mysb::gptr();
 
-	mov	rcx, QWORD PTR [r10]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rbx, rax
 
 ; 218  : 		if (_Gptr == nullptr)
 
-	test	rcx, rcx
-	je	SHORT $LN5@underflow
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	test	rax, rax
+	je	$LN5@underflow
 
-; 240  : 		return (*_IGnext + *_IGcount);
-
-	mov	rdx, QWORD PTR [r9+80]
-	movsxd	r8, DWORD PTR [rdx]
-	lea	rdx, QWORD PTR [rcx+r8*2]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 219  : 			{	// no character buffer, fail
+; 220  : 			return (_Traits::eof());
+; 221  : 			}
+; 222  : 
 ; 223  : 		if (_Gptr < _Mysb::egptr())
 
-	cmp	rcx, rdx
-	jb	SHORT $LN34@underflow
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	cmp	rbx, rax
+	jae	SHORT $LN3@underflow
 
-; 235  : 		return (*_IPnext);
+; 224  : 			{	// return buffered
+; 225  : 			return (_Traits::to_int_type(*_Gptr));
 
-	mov	rax, QWORD PTR [r9+64]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	movzx	eax, WORD PTR [rbx]
 
+; 244  : 		}
+
+	mov	rbx, QWORD PTR [rsp+48]
+	mov	rsi, QWORD PTR [rsp+56]
+	add	rsp, 32					; 00000020H
+	pop	rdi
+	ret	0
+$LN3@underflow:
+
+; 226  : 			}
+; 227  : 
+; 228  : 		// try to add initialized characters from the put area into the get area
 ; 229  : 		const auto _Pptr = _Mysb::pptr();
 
-	mov	r8, QWORD PTR [rax]
-	test	r8, r8
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
 
 ; 230  : 		if (!_Pptr || (_Mystate & _Noread))
 
+	test	rax, rax
 	je	SHORT $LN5@underflow
-	test	BYTE PTR [r9+112], 4
+	test	BYTE PTR [rdi+112], 4
 	jne	SHORT $LN5@underflow
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 
 ; 33   : 	return (_Left < _Right ? _Right : _Left);
 
-	mov	rdx, QWORD PTR [r9+104]
-	cmp	rdx, r8
-	cmovb	rdx, r8
+	mov	rsi, QWORD PTR [rdi+104]
+	cmp	rsi, rax
+	cmovb	rsi, rax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 236  : 		if (_Local_highwater <= _Gptr)
 
-	cmp	rdx, rcx
+	cmp	rsi, rbx
 	jbe	SHORT $LN5@underflow
 
 ; 237  : 			{	// nothing in the put area to take
@@ -12859,107 +12777,86 @@ this$ = 8
 ; 239  : 			}
 ; 240  : 
 ; 241  : 		_Seekhigh = _Local_highwater;
+; 242  : 		_Mysb::setg(_Mysb::eback(), _Mysb::gptr(), _Local_highwater);
 
-	mov	QWORD PTR [r9+104], rdx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	mov	rcx, rdi
+	mov	QWORD PTR [rdi+104], rsi
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rcx, rdi
+	mov	rbx, rax
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r9, rsi
+	mov	r8, rbx
+	mov	rdx, rax
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 
-; 225  : 		return (*_IGnext);
+; 243  : 		return (_Traits::to_int_type(*_Mysb::gptr()));
 
-	mov	rcx, QWORD PTR [r10]
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	QWORD PTR [r10], rcx
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sub	rdx, rcx
-	mov	rax, QWORD PTR [r9+80]
-	sar	rdx, 1
-	mov	DWORD PTR [rax], edx
-
-; 225  : 		return (*_IGnext);
-
-	mov	rax, QWORD PTR [r9+56]
-	mov	rcx, QWORD PTR [rax]
-$LN34@underflow:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	movzx	eax, WORD PTR [rax]
 
 ; 244  : 		}
 
-	movzx	eax, WORD PTR [rcx]
+	mov	rbx, QWORD PTR [rsp+48]
+	mov	rsi, QWORD PTR [rsp+56]
+	add	rsp, 32					; 00000020H
+	pop	rdi
 	ret	0
 $LN5@underflow:
-
-; 231  : 			{	// no put area or read disallowed
-; 232  : 			return (_Traits::eof());
-
+	mov	rbx, QWORD PTR [rsp+48]
 	mov	eax, 65535				; 0000ffffH
-
-; 244  : 		}
-
+	mov	rsi, QWORD PTR [rsp+56]
+	add	rsp, 32					; 00000020H
+	pop	rdi
 	ret	0
 ?underflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGXZ ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::underflow
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
 _TEXT	SEGMENT
-this$ = 8
-_Meta$ = 16
+this$ = 48
+_Meta$ = 56
 ?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z PROC ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::pbackfail, COMDAT
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 225  : 		return (*_IGnext);
+; 194  : 		{	// put an element back to stream
 
-	mov	rax, QWORD PTR [rcx+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+$LN31:
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rbp
+	mov	QWORD PTR [rsp+24], rsi
+	push	rdi
+	sub	rsp, 32					; 00000020H
+	movzx	ebx, dx
+	mov	rdi, rcx
+
+; 195  : 		const auto _Gptr = _Mysb::gptr();
+
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	rsi, rax
 
 ; 198  : 			|| (!_Traits::eq_int_type(_Traits::eof(), _Meta)
 
-	mov	r9d, 65535				; 0000ffffH
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 225  : 		return (*_IGnext);
-
-	mov	r8, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 198  : 			|| (!_Traits::eq_int_type(_Traits::eof(), _Meta)
-
-	test	r8, r8
+	mov	ebp, 65535				; 0000ffffH
+	test	rax, rax
 	je	SHORT $LN3@pbackfail
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 220  : 		return (*_IGfirst);
-
-	mov	rax, QWORD PTR [rcx+24]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 198  : 			|| (!_Traits::eq_int_type(_Traits::eof(), _Meta)
-
-	cmp	r8, QWORD PTR [rax]
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	cmp	rsi, rax
 	jbe	SHORT $LN3@pbackfail
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 384  : 		return (_Left == _Right);
 
-	cmp	r9w, dx
+	cmp	bp, bx
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 198  : 			|| (!_Traits::eq_int_type(_Traits::eof(), _Meta)
@@ -12969,47 +12866,41 @@ _Meta$ = 16
 
 ; 364  : 		return (_Left == _Right);
 
-	cmp	dx, WORD PTR [r8-2]
+	cmp	bx, WORD PTR [rsi-2]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 198  : 			|| (!_Traits::eq_int_type(_Traits::eof(), _Meta)
 
 	je	SHORT $LN2@pbackfail
-	test	BYTE PTR [rcx+112], 2
+	test	BYTE PTR [rdi+112], 2
 	jne	SHORT $LN3@pbackfail
 $LN2@pbackfail:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 245  : 		*_IGcount -= _Off;
+; 203  : 			}
+; 204  : 
+; 205  : 		// back up one position and store put-back character
+; 206  : 		_Mysb::gbump(-1);
 
-	mov	rax, QWORD PTR [rcx+80]
-	inc	DWORD PTR [rax]
-
-; 246  : 		*_IGnext += _Off;
-
-	mov	rax, QWORD PTR [rcx+56]
-	add	QWORD PTR [rax], -2
+	mov	edx, -1
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?gbump@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXH@Z
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 384  : 		return (_Left == _Right);
 
-	cmp	r9w, dx
+	cmp	bp, bx
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 207  : 		if (!_Traits::eq_int_type(_Traits::eof(), _Meta))
 
 	je	SHORT $LN4@pbackfail
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 225  : 		return (*_IGnext);
-
-	mov	rax, QWORD PTR [rcx+56]
-	mov	rcx, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 208  : 			{
 ; 209  : 			*_Mysb::gptr() = _Traits::to_char_type(_Meta);
 
-	mov	WORD PTR [rcx], dx
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	WORD PTR [rax], bx
 $LN4@pbackfail:
 
 ; 210  : 			}
@@ -13017,13 +12908,10 @@ $LN4@pbackfail:
 ; 212  : 		return (_Traits::not_eof(_Meta));
 
 	xor	eax, eax
-	cmp	dx, r9w
-	cmove	dx, ax
-	movzx	eax, dx
-
-; 213  : 		}
-
-	ret	0
+	cmp	bx, bp
+	cmove	bx, ax
+	movzx	eax, bx
+	jmp	SHORT $LN1@pbackfail
 $LN3@pbackfail:
 
 ; 199  : 				&& !_Traits::eq(_Traits::to_char_type(_Meta), _Gptr[-1])
@@ -13031,10 +12919,16 @@ $LN3@pbackfail:
 ; 201  : 			{	// can't put back, fail
 ; 202  : 			return (_Traits::eof());
 
-	movzx	eax, r9w
+	movzx	eax, bp
+$LN1@pbackfail:
 
 ; 213  : 		}
 
+	mov	rbx, QWORD PTR [rsp+48]
+	mov	rbp, QWORD PTR [rsp+56]
+	mov	rsi, QWORD PTR [rsp+64]
+	add	rsp, 32					; 00000020H
+	pop	rdi
 	ret	0
 ?pbackfail@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::pbackfail
 _TEXT	ENDS
@@ -13042,29 +12936,9 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z
 _TEXT	SEGMENT
@@ -13074,13 +12948,13 @@ _Meta$ = 88
 
 ; 119  : 		{	// put an element to stream
 
-$LN66:
+$LN49:
 	mov	QWORD PTR [rsp+16], rbx
 	mov	QWORD PTR [rsp+24], rbp
 	push	rsi
 	push	rdi
 	push	r12
-	push	r13
+	push	r14
 	push	r15
 	sub	rsp, 32					; 00000020H
 
@@ -13089,13 +12963,13 @@ $LN66:
 	test	BYTE PTR [rcx+112], 2
 	movzx	ebp, dx
 	mov	rdi, rcx
-	mov	r8d, 65535				; 0000ffffH
-	jne	SHORT $LN10@overflow
+	mov	r15d, 65535				; 0000ffffH
+	jne	$LN10@overflow
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 
 ; 384  : 		return (_Left == _Right);
 
-	cmp	r8w, dx
+	cmp	r15w, dx
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 125  : 		if (_Traits::eq_int_type(_Traits::eof(), _Meta))
@@ -13105,29 +12979,29 @@ $LN66:
 ; 126  : 			{
 ; 127  : 			return (_Traits::not_eof(_Meta));	// EOF, return success code
 
-	xor	r15d, r15d
-	movzx	eax, r15w
+	xor	esi, esi
+	movzx	eax, si
 	jmp	SHORT $LN1@overflow
 $LN3@overflow:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 235  : 		return (*_IPnext);
+; 128  : 			}
+; 129  : 
+; 130  : 		const auto _Pptr = _Mysb::pptr();
 
-	mov	rax, QWORD PTR [rcx+64]
-	mov	rbx, QWORD PTR [rax]
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
 
-; 258  : 		return (*_IPnext + *_IPcount);
+; 131  : 		const auto _Epptr = _Mysb::epptr();
 
-	mov	rax, QWORD PTR [rcx+88]
-	movsxd	rcx, DWORD PTR [rax]
-	lea	rdx, QWORD PTR [rbx+rcx*2]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, rdi
+	mov	rbx, rax
+	call	QWORD PTR __imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r14, rax
 
 ; 132  : 		if (_Pptr != nullptr && _Pptr < _Epptr)
 
 	test	rbx, rbx
 	je	SHORT $LN4@overflow
-	cmp	rbx, rdx
+	cmp	rbx, rax
 	jae	SHORT $LN4@overflow
 
 ; 133  : 			{	// room in buffer, store it
@@ -13147,34 +13021,28 @@ $LN3@overflow:
 	movzx	eax, bp
 	jmp	SHORT $LN1@overflow
 $LN4@overflow:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 220  : 		return (*_IGfirst);
-
-	mov	rax, QWORD PTR [rdi+24]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 137  : 			}
+; 138  : 
+; 139  : 		// grow buffer and store element
 ; 140  : 		size_t _Oldsize = 0;
+; 141  : 		const auto _Oldptr = _Mysb::eback();
 
-	xor	r15d, r15d
-	mov	esi, r15d
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 220  : 		return (*_IGfirst);
-
-	mov	r13, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rcx, rdi
+	xor	esi, esi
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r12, rax
 
 ; 142  : 		if (_Pptr != nullptr)
 
 	test	rbx, rbx
-	je	SHORT $LN64@overflow
+	je	SHORT $LN46@overflow
 
 ; 143  : 			{
 ; 144  : 			_Oldsize = static_cast<size_t>(_Epptr - _Oldptr);
 
-	mov	rsi, rdx
-	sub	rsi, r13
+	mov	rsi, r14
+	sub	rsi, rax
 	sar	rsi, 1
 
 ; 145  : 			}
@@ -13183,7 +13051,7 @@ $LN4@overflow:
 ; 148  : 		if (_Oldsize < _MINSIZE)
 
 	cmp	rsi, 32					; 00000020H
-	jb	SHORT $LN64@overflow
+	jb	SHORT $LN46@overflow
 
 ; 151  : 			}
 ; 152  : 		else if (_Oldsize < INT_MAX / 2)
@@ -13194,15 +13062,15 @@ $LN4@overflow:
 ; 153  : 			{	// grow by 50 percent
 ; 154  : 			_Newsize = _Oldsize << 1;
 
-	lea	r12, QWORD PTR [rsi+rsi]
+	lea	r14, QWORD PTR [rsi+rsi]
 	jmp	SHORT $LN11@overflow
 $LN8@overflow:
 
 ; 155  : 			}
 ; 156  : 		else if (_Oldsize < INT_MAX)
 
-	mov	r12d, 2147483647			; 7fffffffH
-	cmp	rsi, r12
+	mov	r14d, 2147483647			; 7fffffffH
+	cmp	rsi, r14
 	jb	SHORT $LN11@overflow
 $LN10@overflow:
 
@@ -13213,7 +13081,7 @@ $LN10@overflow:
 ; 161  : 			{	// buffer can't grow, fail
 ; 162  : 			return (_Traits::eof());
 
-	movzx	eax, r8w
+	movzx	eax, r15w
 $LN1@overflow:
 
 ; 191  : 		}
@@ -13222,159 +13090,98 @@ $LN1@overflow:
 	mov	rbp, QWORD PTR [rsp+96]
 	add	rsp, 32					; 00000020H
 	pop	r15
-	pop	r13
+	pop	r14
 	pop	r12
 	pop	rdi
 	pop	rsi
 	ret	0
-$LN64@overflow:
+$LN46@overflow:
 
 ; 149  : 			{
 ; 150  : 			_Newsize = _MINSIZE;
 
-	mov	r12d, 32				; 00000020H
+	mov	r14d, 32				; 00000020H
 $LN11@overflow:
 
 ; 165  : 		const auto _Newptr = _Unfancy(_Al.allocate(_Newsize));
 
+	mov	rdx, r14
+	mov	QWORD PTR [rsp+80], r13
 	lea	rcx, QWORD PTR [rdi+116]
-	mov	QWORD PTR [rsp+80], r14
-	mov	rdx, r12
 	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	rbx, QWORD PTR [rsi+rsi]
-	mov	rdx, r13
+	mov	rdx, r12
 	mov	r8, rbx
 	mov	rcx, rax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 165  : 		const auto _Newptr = _Unfancy(_Al.allocate(_Newsize));
 
-	mov	r14, rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+	mov	r15, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	call	memcpy
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 168  : 		const auto _New_pnext = _Newptr + _Oldsize;
 
-	lea	rdx, QWORD PTR [rbx+r14]
+	lea	r8, QWORD PTR [rbx+r15]
 
 ; 169  : 		_Seekhigh = _New_pnext + 1; // to include _Meta
-
-	lea	rcx, QWORD PTR [rdx+2]
-	mov	QWORD PTR [rdi+104], rcx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 299  : 		*_IPfirst = _First;
-
-	mov	rcx, QWORD PTR [rdi+32]
-	mov	QWORD PTR [rcx], r14
-
-; 300  : 		*_IPnext = _Next;
-
-	mov	rcx, QWORD PTR [rdi+64]
-	mov	QWORD PTR [rcx], rdx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 170  : 
 ; 171  : 		_Mysb::setp(_Newptr, _New_pnext, _Newptr + _Newsize);
 
-	lea	rcx, QWORD PTR [r12+r12]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 301  : 		*_IPcount = (int)(_Last - _Next);
-
-	mov	rax, QWORD PTR [rdi+88]
-	sub	rcx, rdx
-	add	rcx, r14
-	sar	rcx, 1
-	mov	DWORD PTR [rax], ecx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+	mov	rdx, r15
+	lea	rcx, QWORD PTR [r8+2]
+	mov	QWORD PTR [rdi+104], rcx
+	lea	r9, QWORD PTR [r15+r14*2]
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 
 ; 172  : 		if (_Mystate & _Noread)
 
 	test	BYTE PTR [rdi+112], 4
+	mov	rcx, rdi
 	je	SHORT $LN12@overflow
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 251  : 		*_IGfirst = _First;
+; 173  : 			{	// maintain eback() == allocated pointer invariant
+; 174  : 			_Mysb::setg(_Newptr, nullptr, _Newptr);
 
-	mov	rax, QWORD PTR [rdi+24]
-	mov	QWORD PTR [rax], r14
+	mov	r9, r15
+	xor	r8d, r8d
 
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sar	r14, 1
-	mov	QWORD PTR [rax], r15
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], r14d
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 175  : 			}
 ; 176  : 		else
 
-	jmp	SHORT $LN13@overflow
+	jmp	SHORT $LN47@overflow
 $LN12@overflow:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 225  : 		return (*_IGnext);
-
-	mov	rax, QWORD PTR [rdi+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 177  : 			{	// if readable, set the get area to initialized region
 ; 178  : 			_Mysb::setg(_Newptr,
 
-	mov	r10, QWORD PTR [rdi+104]
-	mov	rcx, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	call	QWORD PTR __imp_?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	mov	r9, QWORD PTR [rdi+104]
+	mov	rcx, rdi
+	sub	rax, r12
+	sar	rax, 1
+	lea	r8, QWORD PTR [r15+rax*2]
+$LN47@overflow:
 
-; 251  : 		*_IGfirst = _First;
-
-	mov	rax, QWORD PTR [rdi+24]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 178  : 			_Mysb::setg(_Newptr,
-
-	sub	rcx, r13
-	sar	rcx, 1
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 251  : 		*_IGfirst = _First;
-
-	mov	QWORD PTR [rax], r14
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 178  : 			_Mysb::setg(_Newptr,
-
-	lea	r9, QWORD PTR [r14+rcx*2]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sub	r10, r9
-	sar	r10, 1
-	mov	QWORD PTR [rax], r9
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], r10d
-$LN13@overflow:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 179  : 				_Newptr + (_Mysb::gptr() - _Oldptr),
+; 180  : 				_Seekhigh);
+; 181  : 			}
+; 182  : 
 ; 183  : 		if (_Mystate & _Allocated)
 
+	mov	rdx, r15
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 	mov	eax, DWORD PTR [rdi+112]
-	mov	r14, QWORD PTR [rsp+80]
 	test	al, 1
 	je	SHORT $LN14@overflow
 
@@ -13383,7 +13190,7 @@ $LN13@overflow:
 
 	mov	r8, rsi
 	lea	rcx, QWORD PTR [rdi+116]
-	mov	rdx, r13
+	mov	rdx, r12
 	call	?deallocate@?$allocator@_W@std@@QEAAXQEA_W_K@Z ; std::allocator<wchar_t>::deallocate
 	mov	eax, DWORD PTR [rdi+112]
 $LN14@overflow:
@@ -13399,24 +13206,18 @@ $LN14@overflow:
 	mov	rcx, rdi
 	mov	DWORD PTR [rdi+112], eax
 	call	QWORD PTR __imp_?_Pninc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAPEA_WXZ
-	mov	WORD PTR [rax], bp
 
 ; 190  : 		return (_Meta);
 
+	mov	r13, QWORD PTR [rsp+80]
+	mov	WORD PTR [rax], bp
 	movzx	eax, bp
 	jmp	$LN1@overflow
 ?overflow@?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@MEAAGG@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::overflow
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
@@ -13428,11 +13229,13 @@ this$ = 64
 
 ; 77   : 		{	// destroy the object
 
-$LN49:
+$LN36:
 	mov	QWORD PTR [rsp+8], rcx
-	push	rbx
+	push	rdi
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
+	mov	QWORD PTR [rsp+72], rbx
+	mov	QWORD PTR [rsp+80], rsi
 	mov	rbx, rcx
 	lea	rax, OFFSET FLAT:??_7?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
 	mov	QWORD PTR [rcx], rax
@@ -13440,63 +13243,43 @@ $LN49:
 ; 402  : 		if (_Mystate & _Allocated)
 
 	test	BYTE PTR [rcx+112], 1
-	je	SHORT $LN38@basic_stri
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	je	SHORT $LN28@basic_stri
 
-; 235  : 		return (*_IPnext);
-
-	mov	rax, QWORD PTR [rcx+64]
-	mov	rdx, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 403  : 			{
 ; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
 
-	test	rdx, rdx
+	call	QWORD PTR __imp_?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	npad	1
+	mov	rcx, rbx
+	test	rax, rax
 	je	SHORT $LN7@basic_stri
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 258  : 		return (*_IPnext + *_IPcount);
-
-	mov	rax, QWORD PTR [rcx+88]
-	movsxd	rcx, DWORD PTR [rax]
-	lea	rdx, QWORD PTR [rdx+rcx*2]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
-
-	jmp	SHORT $LN8@basic_stri
+	call	QWORD PTR __imp_?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	npad	1
+	jmp	SHORT $LN33@basic_stri
 $LN7@basic_stri:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 240  : 		return (*_IGnext + *_IGcount);
-
-	mov	rax, QWORD PTR [rcx+80]
-	movsxd	rdx, DWORD PTR [rax]
-	mov	rax, QWORD PTR [rcx+56]
-	mov	rcx, QWORD PTR [rax]
-	lea	rdx, QWORD PTR [rcx+rdx*2]
-$LN8@basic_stri:
-
-; 220  : 		return (*_IGfirst);
-
-	mov	rax, QWORD PTR [rbx+24]
-	mov	rcx, QWORD PTR [rax]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
-
-	sub	rdx, rcx
-	sar	rdx, 1
+	call	QWORD PTR __imp_?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	npad	1
+$LN33@basic_stri:
+	mov	rsi, rax
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	npad	1
+	mov	rdi, rax
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+	npad	1
+	sub	rsi, rax
+	sar	rsi, 1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 992  : 		_Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
 
-	add	rdx, rdx
+	lea	rdx, QWORD PTR [rsi+rsi]
 
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN37@basic_stri
+	jb	SHORT $LN27@basic_stri
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -13506,7 +13289,7 @@ $LN8@basic_stri:
 ; 117  : 	const uintptr_t * const _Ptr_user = reinterpret_cast<uintptr_t *>(_Ptr);
 ; 118  : 	const uintptr_t _Ptr_container = _Ptr_user[-1];
 
-	mov	r8, QWORD PTR [rcx-8]
+	mov	rcx, QWORD PTR [rdi-8]
 
 ; 119  : 
 ; 120  : 	// If the following asserts, it likely means that we are performing
@@ -13522,61 +13305,47 @@ $LN8@basic_stri:
 ; 130  :   #endif /* _DEBUG */
 ; 131  : 	const uintptr_t _Back_shift = reinterpret_cast<uintptr_t>(_Ptr) - _Ptr_container;
 
-	sub	rcx, r8
+	sub	rdi, rcx
 
 ; 132  : 	_STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
 
-	lea	rax, QWORD PTR [rcx-8]
+	lea	rax, QWORD PTR [rdi-8]
 	cmp	rax, 31
-	ja	SHORT $LN34@basic_stri
+	ja	SHORT $LN24@basic_stri
 
 ; 133  : 	_Ptr = reinterpret_cast<void *>(_Ptr_container);
 
-	mov	rcx, r8
-$LN37@basic_stri:
+	mov	rdi, rcx
+$LN27@basic_stri:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
+	mov	rcx, rdi
 	call	??3@YAXPEAX_K@Z				; operator delete
 	npad	1
-$LN38@basic_stri:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-
-; 251  : 		*_IGfirst = _First;
-
-	mov	rax, QWORD PTR [rbx+24]
-	xor	ecx, ecx
-	mov	QWORD PTR [rax], rcx
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rbx+56]
-	mov	QWORD PTR [rax], rcx
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	mov	rax, QWORD PTR [rbx+80]
-	mov	DWORD PTR [rax], ecx
-
-; 292  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [rbx+32]
-	mov	QWORD PTR [rax], rcx
-
-; 293  : 		*_IPnext = _First;
-
-	mov	rax, QWORD PTR [rbx+64]
-	mov	QWORD PTR [rax], rcx
-
-; 294  : 		*_IPcount = (int)(_Last - _First);
-
-	mov	rax, QWORD PTR [rbx+88]
-	mov	DWORD PTR [rax], ecx
+$LN28@basic_stri:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+
+	xor	r9d, r9d
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+	npad	1
+
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, rbx
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W0@Z
+	npad	1
 
 ; 411  : 		_Seekhigh = nullptr;
 
-	mov	QWORD PTR [rbx+104], rcx
+	mov	QWORD PTR [rbx+104], 0
 
 ; 412  : 		_Mystate &= ~_Allocated;
 
@@ -13585,17 +13354,19 @@ $LN38@basic_stri:
 ; 79   : 		}
 
 	mov	rcx, rbx
+	mov	rbx, QWORD PTR [rsp+72]
+	mov	rsi, QWORD PTR [rsp+80]
 	add	rsp, 48					; 00000030H
-	pop	rbx
+	pop	rdi
 	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN34@basic_stri:
+$LN24@basic_stri:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 132  : 	_STL_VERIFY(_Back_shift >= _Min_back_shift && _Back_shift <= _Non_user_size, "invalid argument");
 
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	npad	1
-$LN46@basic_stri:
+$LN32@basic_stri:
 ??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -13624,13 +13395,7 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 _TEXT	SEGMENT
@@ -13642,18 +13407,17 @@ _Mode$ = 96
 
 ; 38   : 		{	// construct character buffer from string, mode
 
-$LN62:
+$LN56:
 	mov	QWORD PTR [rsp+8], rcx
+	push	rsi
 	push	rdi
 	push	r14
-	push	r15
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
 	mov	QWORD PTR [rsp+88], rbx
 	mov	QWORD PTR [rsp+96], rbp
-	mov	QWORD PTR [rsp+104], rsi
 	mov	ebx, r8d
-	mov	r15, rdx
+	mov	r14, rdx
 	mov	rdi, rcx
 	call	QWORD PTR __imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
@@ -13743,8 +13507,8 @@ $LN62:
 
 ; 3302 : 		return (this->_Get_data()._Mysize);
 
-	mov	ebp, edx
-	or	ebp, 16
+	mov	esi, edx
+	or	esi, 16
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 441  : 		if (_Mode & ios_base::ate)
@@ -13754,12 +13518,12 @@ $LN62:
 
 ; 3302 : 		return (this->_Get_data()._Mysize);
 
-	cmove	ebp, edx
-	mov	r14, QWORD PTR [r15+16]
+	cmove	esi, edx
+	mov	rbx, QWORD PTR [r14+16]
 
 ; 1825 : 		return (_BUF_SIZE <= _Myres);
 
-	cmp	QWORD PTR [r15+24], 8
+	cmp	QWORD PTR [r14+24], 8
 
 ; 1815 : 		if (_Large_string_engaged())
 
@@ -13768,22 +13532,22 @@ $LN62:
 
 ; 346  : 	return (_Ptr);
 
-	mov	r15, QWORD PTR [r15]
+	mov	r14, QWORD PTR [r14]
 $LN29@basic_stri:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 362  : 		if (_Count > INT_MAX)
 
-	cmp	r14, 2147483647				; 7fffffffH
-	ja	$LN60@basic_stri
+	cmp	rbx, 2147483647				; 7fffffffH
+	ja	$LN54@basic_stri
 
 ; 365  : 			}
 ; 366  : 
 ; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
 
-	test	r14, r14
+	test	rbx, rbx
 	je	$LN37@basic_stri
-	mov	eax, ebp
+	mov	eax, esi
 	and	eax, 6
 	cmp	al, 6
 	je	$LN37@basic_stri
@@ -13792,114 +13556,88 @@ $LN29@basic_stri:
 ; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
 
 	lea	rcx, QWORD PTR [rdi+116]
-	mov	rdx, r14
+	mov	rdx, rbx
 	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
-	mov	rsi, rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+	mov	rbp, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
-	lea	rbx, QWORD PTR [r14+r14]
+	add	rbx, rbx
 	mov	r8, rbx
-	mov	rdx, r15
+	mov	rdx, r14
 	mov	rcx, rax
 	call	memcpy
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 371  : 			_Seekhigh = _Pnew + _Count;
 
-	lea	rcx, QWORD PTR [rbx+rsi]
-	mov	QWORD PTR [rdi+104], rcx
+	lea	r9, QWORD PTR [rbx+rbp]
+	mov	QWORD PTR [rdi+104], r9
 
 ; 372  : 
 ; 373  : 			if (!(_State & _Noread))
 
-	mov	r8d, ebp
-	and	r8d, 4
+	mov	ebx, esi
+	and	ebx, 4
 	jne	SHORT $LN39@basic_stri
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 251  : 		*_IGfirst = _First;
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
 
-	mov	rcx, QWORD PTR [rdi+24]
-	mov	QWORD PTR [rcx], rsi
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-	mov	QWORD PTR [rax], rsi
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], r14d
+	mov	r8, rbp
+	mov	rdx, rbp
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN39@basic_stri:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 376  : 				}
+; 377  : 
 ; 378  : 			if (!(_State & _Constant))
 
-	test	bpl, 2
+	test	sil, 2
 	jne	SHORT $LN41@basic_stri
 
 ; 379  : 				{	// setup write buffer, and maybe read buffer
 ; 380  : 				_Mysb::setp(_Pnew,
 
-	test	bpl, 24
+	test	sil, 24
 	je	SHORT $LN43@basic_stri
-	mov	rdx, QWORD PTR [rdi+104]
-	mov	rcx, rdx
+	mov	r8, QWORD PTR [rdi+104]
+	mov	r9, r8
 	jmp	SHORT $LN44@basic_stri
 $LN43@basic_stri:
-	mov	rdx, rsi
-	mov	rcx, QWORD PTR [rdi+104]
+	mov	r8, rbp
+	mov	r9, QWORD PTR [rdi+104]
 $LN44@basic_stri:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
+	mov	rdx, rbp
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 
-; 299  : 		*_IPfirst = _First;
-
-	mov	rax, QWORD PTR [rdi+32]
-	mov	QWORD PTR [rax], rsi
-
-; 300  : 		*_IPnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+64]
-	mov	QWORD PTR [rax], rdx
-
-; 301  : 		*_IPcount = (int)(_Last - _Next);
-
-	sub	rcx, rdx
-	sar	rcx, 1
-	mov	rax, QWORD PTR [rdi+88]
-	mov	DWORD PTR [rax], ecx
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
 ; 384  : 				if (_State & _Noread)
 
-	test	r8d, r8d
+	test	ebx, ebx
 	je	SHORT $LN41@basic_stri
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\streambuf
 
-; 251  : 		*_IGfirst = _First;
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
 
-	mov	rax, QWORD PTR [rdi+24]
-	mov	QWORD PTR [rax], rsi
-
-; 252  : 		*_IGnext = _Next;
-
-	mov	rax, QWORD PTR [rdi+56]
-	mov	QWORD PTR [rax], 0
-
-; 253  : 		*_IGcount = (int)(_Last - _Next);
-
-	sar	rsi, 1
-	mov	rax, QWORD PTR [rdi+80]
-	mov	DWORD PTR [rax], esi
+	mov	r9, rbp
+	xor	r8d, r8d
+	mov	rdx, rbp
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
 $LN41@basic_stri:
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
+; 387  : 					}
+; 388  : 				}
+; 389  : 
 ; 390  : 			_State |= _Allocated;
 
-	or	ebp, 1
+	or	esi, 1
 
 ; 391  : 			}
 ; 392  : 		else
@@ -13917,7 +13655,7 @@ $LN38@basic_stri:
 ; 396  : 
 ; 397  : 		_Mystate = _State;
 
-	mov	DWORD PTR [rdi+112], ebp
+	mov	DWORD PTR [rdi+112], esi
 
 ; 39   : 		_Init(_Str.c_str(), _Str.size(), _Getstate(_Mode));
 ; 40   : 		}
@@ -13925,19 +13663,18 @@ $LN38@basic_stri:
 	mov	rax, rdi
 	mov	rbx, QWORD PTR [rsp+88]
 	mov	rbp, QWORD PTR [rsp+96]
-	mov	rsi, QWORD PTR [rsp+104]
 	add	rsp, 48					; 00000030H
-	pop	r15
 	pop	r14
 	pop	rdi
+	pop	rsi
 	ret	0
-$LN60@basic_stri:
+$LN54@basic_stri:
 
 ; 364  : 			_Xbad_alloc();
 
 	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
 	npad	1
-$LN58@basic_stri:
+$LN52@basic_stri:
 ??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ENDP ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -13973,7 +13710,7 @@ this$ = 64
 
 ; 711  : 		{	// destroy the object
 
-$LN15:
+$LN7:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbx
 	sub	rsp, 48					; 00000030H
@@ -14047,121 +13784,577 @@ this$ = 64
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ;	COMDAT ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z
 _TEXT	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z PROC ; std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >, COMDAT
 
 ; 674  : 		{	// construct character buffer from NTCS
 
-$LN15:
+$LN64:
 	mov	QWORD PTR [rsp+8], rcx
+	push	rbp
+	push	rsi
 	push	rdi
-	sub	rsp, 64					; 00000040H
+	push	r14
+	push	r15
+	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T2[rsp], -2
-	mov	QWORD PTR [rsp+88], rbx
-	mov	QWORD PTR [rsp+96], rbp
-	mov	QWORD PTR [rsp+104], rsi
-	mov	esi, r8d
-	mov	rbp, rdx
-	mov	rdi, rcx
-	mov	DWORD PTR $T1[rsp], 0
+	mov	QWORD PTR [rsp+112], rbx
+	mov	ebx, r8d
+	mov	r15, rdx
+	mov	r14, rcx
+	xor	esi, esi
+	mov	DWORD PTR $T1[rsp], esi
 	test	r9d, r9d
 	je	SHORT $LN2@basic_stri
 	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_istream@_WU?$char_traits@_W@std@@@1@@
 	mov	QWORD PTR [rcx], rax
 	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_ostream@_WU?$char_traits@_W@std@@@1@@
 	mov	QWORD PTR [rcx+16], rax
-	lea	r9, QWORD PTR [rcx+152]
-	mov	QWORD PTR this$[rsp], r9
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-
-; 543  : 	__CLR_OR_THIS_CALL ios_base()
-
-	mov	rax, QWORD PTR __imp_??_7ios_base@std@@6B@
-	mov	QWORD PTR [r9], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-
-; 177  : 		{	// default constructor, do nothing
-
-	mov	rax, QWORD PTR __imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@
-	mov	QWORD PTR [r9], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-
-; 674  : 		{	// construct character buffer from NTCS
-
+	add	rcx, 152				; 00000098H
+	call	QWORD PTR __imp_??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+	npad	1
 	mov	DWORD PTR $T1[rsp], 1
 $LN2@basic_stri:
 
+; 442  : 			{
+; 443  : 			_State |= _Atend;
+; 444  : 			}
+; 445  : 
+; 446  : 		return (_State);
+; 447  : 		}
+; 448  : 
+; 449  : 	_Elem * _Seekhigh;	// the high-water pointer in character array
+; 450  : 	int _Mystate;	// the stream state
+; 451  : 	allocator_type _Al;	// the allocator object
+; 452  : 	};
+; 453  : 
+; 454  : template<class _Elem,
+; 455  : 	class _Traits,
+; 456  : 	class _Alloc> inline
+; 457  : 	void swap(basic_stringbuf<_Elem, _Traits, _Alloc>& _Left,
+; 458  : 		basic_stringbuf<_Elem, _Traits, _Alloc>& _Right)
+; 459  : 	{	// swap _Left and _Right basic_stringbufs
+; 460  : 	_Left.swap(_Right);
+; 461  : 	}
+; 462  : 
+; 463  : 		// CLASS TEMPLATE basic_istringstream
+; 464  : template<class _Elem,
+; 465  : 	class _Traits,
+; 466  : 	class _Alloc>
+; 467  : 	class basic_istringstream
+; 468  : 		: public basic_istream<_Elem, _Traits>
+; 469  : 	{	// input stream associated with a character array
+; 470  : public:
+; 471  : 	typedef basic_istream<_Elem, _Traits> _Mybase;
+; 472  : 	typedef _Alloc allocator_type;
+; 473  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 474  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 475  : 
+; 476  : 	explicit basic_istringstream(ios_base::openmode _Mode = ios_base::in)
+; 477  : 		: _Mybase(&_Stringbuffer),
+; 478  : 			_Stringbuffer(_Mode | ios_base::in)
+; 479  : 		{	// construct empty readable character buffer
+; 480  : 		}
+; 481  : 
+; 482  : 	explicit basic_istringstream(const _Mystr& _Str,
+; 483  : 		ios_base::openmode _Mode = ios_base::in)
+; 484  : 		: _Mybase(&_Stringbuffer),
+; 485  : 			_Stringbuffer(_Str, _Mode | ios_base::in)
+; 486  : 		{	// construct readable character buffer from NTCS
+; 487  : 		}
+; 488  : 
+; 489  : 	basic_istringstream(basic_istringstream&& _Right)
+; 490  : 		: _Mybase(&_Stringbuffer)
+; 491  : 		{	// construct by moving _Right
+; 492  : 		_Assign_rv(_STD move(_Right));
+; 493  : 		}
+; 494  : 
+; 495  : 	basic_istringstream& operator=(basic_istringstream&& _Right)
+; 496  : 		{	// move from _Right
+; 497  : 		_Assign_rv(_STD move(_Right));
+; 498  : 		return (*this);
+; 499  : 		}
+; 500  : 
+; 501  : 	void _Assign_rv(basic_istringstream&& _Right)
+; 502  : 		{	// assign by moving _Right
+; 503  : 		if (this != _STD addressof(_Right))
+; 504  : 			{	// different, worth moving
+; 505  : 			_Stringbuffer.str(_Mystr());
+; 506  : 			this->swap(_Right);
+; 507  : 			}
+; 508  : 		}
+; 509  : 
+; 510  : 	void swap(basic_istringstream& _Right)
+; 511  : 		{	// swap with _Right
+; 512  : 		if (this != _STD addressof(_Right))
+; 513  : 			{	// different, swap base and buffer
+; 514  : 			_Mybase::swap(_Right);
+; 515  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 516  : 			}
+; 517  : 		}
+; 518  : 
+; 519  : 	basic_istringstream(const basic_istringstream&) = delete;
+; 520  : 	basic_istringstream& operator=(const basic_istringstream&) = delete;
+; 521  : 
+; 522  : 	virtual ~basic_istringstream() noexcept
+; 523  : 		{	// destroy the object
+; 524  : 		}
+; 525  : 
+; 526  : 	_NODISCARD _Mysb *rdbuf() const
+; 527  : 		{	// return pointer to file buffer
+; 528  : 		return ((_Mysb *)&_Stringbuffer);
+; 529  : 		}
+; 530  : 
+; 531  : 	_NODISCARD _Mystr str() const
+; 532  : 		{	// return string copy of character array
+; 533  : 		return (_Stringbuffer.str());
+; 534  : 		}
+; 535  : 
+; 536  : 	void str(const _Mystr& _Newstr)
+; 537  : 		{	// replace character array from string
+; 538  : 		_Stringbuffer.str(_Newstr);
+; 539  : 		}
+; 540  : 
+; 541  : private:
+; 542  : 	_Mysb _Stringbuffer;	// the string buffer
+; 543  : 	};
+; 544  : 
+; 545  : template<class _Elem,
+; 546  : 	class _Traits,
+; 547  : 	class _Alloc> inline
+; 548  : 	void swap(basic_istringstream<_Elem, _Traits, _Alloc>& _Left,
+; 549  : 		basic_istringstream<_Elem, _Traits, _Alloc>& _Right)
+; 550  : 	{	// swap _Left and _Right basic_istringstreams
+; 551  : 	_Left.swap(_Right);
+; 552  : 	}
+; 553  : 
+; 554  : 		// CLASS TEMPLATE basic_ostringstream
+; 555  : template<class _Elem,
+; 556  : 	class _Traits,
+; 557  : 	class _Alloc>
+; 558  : 	class basic_ostringstream
+; 559  : 		: public basic_ostream<_Elem, _Traits>
+; 560  : 	{	// output stream associated with a character array
+; 561  : public:
+; 562  : 	typedef basic_ostream<_Elem, _Traits> _Mybase;
+; 563  : 	typedef _Alloc allocator_type;
+; 564  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 565  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 566  : 
+; 567  : 	explicit basic_ostringstream(ios_base::openmode _Mode = ios_base::out)
+; 568  : 		: _Mybase(&_Stringbuffer),
+; 569  : 			_Stringbuffer(_Mode | ios_base::out)
+; 570  : 		{	// construct empty writable character buffer
+; 571  : 		}
+; 572  : 
+; 573  : 	explicit basic_ostringstream(const _Mystr& _Str,
+; 574  : 		ios_base::openmode _Mode = ios_base::out)
+; 575  : 		: _Mybase(&_Stringbuffer),
+; 576  : 			_Stringbuffer(_Str, _Mode | ios_base::out)
+; 577  : 		{	// construct writable character buffer from NTCS
+; 578  : 		}
+; 579  : 
+; 580  : 	basic_ostringstream(basic_ostringstream&& _Right)
+; 581  : 		: _Mybase(&_Stringbuffer)
+; 582  : 		{	// construct by moving _Right
+; 583  : 		_Assign_rv(_STD move(_Right));
+; 584  : 		}
+; 585  : 
+; 586  : 	basic_ostringstream& operator=(basic_ostringstream&& _Right)
+; 587  : 		{	// move from _Right
+; 588  : 		_Assign_rv(_STD move(_Right));
+; 589  : 		return (*this);
+; 590  : 		}
+; 591  : 
+; 592  : 	void _Assign_rv(basic_ostringstream&& _Right)
+; 593  : 		{	// assign by moving _Right
+; 594  : 		if (this != _STD addressof(_Right))
+; 595  : 			{	// different, worth moving
+; 596  : 			_Stringbuffer.str(_Mystr());
+; 597  : 			this->swap(_Right);
+; 598  : 			}
+; 599  : 		}
+; 600  : 
+; 601  : 	void swap(basic_ostringstream& _Right)
+; 602  : 		{	// swap with _Right
+; 603  : 		if (this != _STD addressof(_Right))
+; 604  : 			{	// different, swap base and buffer
+; 605  : 			_Mybase::swap(_Right);
+; 606  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 607  : 			}
+; 608  : 		}
+; 609  : 
+; 610  : 	basic_ostringstream(const basic_ostringstream&) = delete;
+; 611  : 	basic_ostringstream& operator=(const basic_ostringstream&) = delete;
+; 612  : 
+; 613  : 	virtual ~basic_ostringstream() noexcept
+; 614  : 		{	// destroy the object
+; 615  : 		}
+; 616  : 
+; 617  : 	_NODISCARD _Mysb *rdbuf() const
+; 618  : 		{	// return pointer to buffer
+; 619  : 		return ((_Mysb *)&_Stringbuffer);
+; 620  : 		}
+; 621  : 
+; 622  : 	_NODISCARD _Mystr str() const
+; 623  : 		{	// return string copy of character array
+; 624  : 		return (_Stringbuffer.str());
+; 625  : 		}
+; 626  : 
+; 627  : 	void str(const _Mystr& _Newstr)
+; 628  : 		{	// replace character array from string
+; 629  : 		_Stringbuffer.str(_Newstr);
+; 630  : 		}
+; 631  : 
+; 632  : private:
+; 633  : 	_Mysb _Stringbuffer;	// the string buffer
+; 634  : 	};
+; 635  : 
+; 636  : template<class _Elem,
+; 637  : 	class _Traits,
+; 638  : 	class _Alloc> inline
+; 639  : 	void swap(basic_ostringstream<_Elem, _Traits, _Alloc>& _Left,
+; 640  : 		basic_ostringstream<_Elem, _Traits, _Alloc>& _Right)
+; 641  : 	{	// swap _Left and _Right basic_ostringstreams
+; 642  : 	_Left.swap(_Right);
+; 643  : 	}
+; 644  : 
+; 645  : 		// CLASS TEMPLATE basic_stringstream
+; 646  : template<class _Elem,
+; 647  : 	class _Traits,
+; 648  : 	class _Alloc>
+; 649  : 	class basic_stringstream
+; 650  : 		: public basic_iostream<_Elem, _Traits>
+; 651  : 	{	// input/output stream associated with a character array
+; 652  : public:
+; 653  : 	typedef basic_iostream<_Elem, _Traits> _Mybase;
+; 654  : 	typedef _Elem char_type;
+; 655  : 	typedef _Traits traits_type;
+; 656  : 	typedef _Alloc allocator_type;
+; 657  : 	typedef typename _Traits::int_type int_type;
+; 658  : 	typedef typename _Traits::pos_type pos_type;
+; 659  : 	typedef typename _Traits::off_type off_type;
+; 660  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 661  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 662  : 
+; 663  : 	explicit basic_stringstream(ios_base::openmode _Mode =
+; 664  : 		ios_base::in | ios_base::out)
+; 665  : 		: _Mybase(&_Stringbuffer),
+; 666  : 			_Stringbuffer(_Mode)
+; 667  : 		{	// construct empty character buffer
+; 668  : 		}
+; 669  : 
+; 670  : 	explicit basic_stringstream(const _Mystr& _Str,
+; 671  : 		ios_base::openmode _Mode = ios_base::in | ios_base::out)
 ; 672  : 		: _Mybase(&_Stringbuffer),
 
+	lea	rdi, QWORD PTR [r14+24]
 	xor	r8d, r8d
-	lea	rdx, QWORD PTR [rcx+24]
+	mov	rdx, rdi
+	mov	rcx, r14
 	call	QWORD PTR __imp_??0?$basic_iostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@@Z
 	npad	1
 
 ; 674  : 		{	// construct character buffer from NTCS
 
-	mov	rax, QWORD PTR [rdi]
-	movsxd	rdx, DWORD PTR [rax+4]
+	mov	rax, QWORD PTR [r14]
+	movsxd	rcx, DWORD PTR [rax+4]
 	lea	rax, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
-	mov	QWORD PTR [rdx+rdi], rax
-	mov	rax, QWORD PTR [rdi]
-	movsxd	rdx, DWORD PTR [rax+4]
-	lea	r8d, DWORD PTR [rdx-152]
-	mov	DWORD PTR [rdx+rdi-4], r8d
+	mov	QWORD PTR [rcx+r14], rax
+	mov	rax, QWORD PTR [r14]
+	movsxd	rcx, DWORD PTR [rax+4]
+	lea	edx, DWORD PTR [rcx-152]
+	mov	DWORD PTR [rcx+r14-4], edx
 
 ; 673  : 			_Stringbuffer(_Str, _Mode)
 
-	mov	r8d, esi
-	mov	rdx, rbp
-	lea	rcx, QWORD PTR [rdi+24]
-	call	??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	mov	QWORD PTR this$[rsp], rdi
+
+; 38   : 		{	// construct character buffer from string, mode
+
+	mov	rcx, rdi
+	call	QWORD PTR __imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
+	lea	rax, OFFSET FLAT:??_7?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR [rdi], rax
+
+; 431  : 		if (!(_Mode & ios_base::out))
+
+	mov	ecx, ebx
+	not	ecx
+	and	ecx, 1
+	shl	ecx, 2
+	mov	eax, ebx
+
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+
+	mov	edx, ecx
+	or	edx, 2
+
+; 398  : 		}
+; 399  : 
+; 400  : 	void _Tidy()
+; 401  : 		{	// discard any allocated buffer and clear pointers
+; 402  : 		if (_Mystate & _Allocated)
+; 403  : 			{
+; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
+; 405  : 				static_cast<typename allocator_traits<allocator_type>::size_type>(
+; 406  : 					(_Mysb::pptr() != nullptr ? _Mysb::epptr() : _Mysb::egptr()) - _Mysb::eback()));
+; 407  : 			}
+; 408  : 
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+; 411  : 		_Seekhigh = nullptr;
+; 412  : 		_Mystate &= ~_Allocated;
+; 413  : 		}
+; 414  : 
+; 415  : private:
+; 416  : 	using _Ptr_traits = pointer_traits<typename allocator_traits<allocator_type>::pointer>;
+; 417  : 
+; 418  : 	enum
+; 419  : 		{	// constant for minimum buffer size
+; 420  : 		_MINSIZE = 32
+; 421  : 		};
+; 422  : 
+; 423  : 	static int _Getstate(ios_base::openmode _Mode)
+; 424  : 		{	// convert open mode to stream state bits
+; 425  : 		int _State = 0;
+; 426  : 		if (!(_Mode & ios_base::in))
+; 427  : 			{
+; 428  : 			_State |= _Noread;
+; 429  : 			}
+; 430  : 
+; 431  : 		if (!(_Mode & ios_base::out))
+
+	and	al, 2
+
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+
+	cmovne	edx, ecx
+	mov	eax, ebx
+
+; 441  : 		if (_Mode & ios_base::ate)
+
+	mov	ecx, edx
+	or	ecx, 8
+
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+
+	and	al, 8
+
+; 441  : 		if (_Mode & ios_base::ate)
+
+	cmove	ecx, edx
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+
+; 3302 : 		return (this->_Get_data()._Mysize);
+
+	mov	ebp, ecx
+	or	ebp, 16
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 441  : 		if (_Mode & ios_base::ate)
+
+	and	bl, 4
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+
+; 3302 : 		return (this->_Get_data()._Mysize);
+
+	cmove	ebp, ecx
+	mov	rbx, QWORD PTR [r15+16]
+
+; 1825 : 		return (_BUF_SIZE <= _Myres);
+
+	cmp	QWORD PTR [r15+24], 8
+
+; 1815 : 		if (_Large_string_engaged())
+
+	jb	SHORT $LN36@basic_stri
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+
+; 346  : 	return (_Ptr);
+
+	mov	r15, QWORD PTR [r15]
+$LN36@basic_stri:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 362  : 		if (_Count > INT_MAX)
+
+	cmp	rbx, 2147483647				; 7fffffffH
+	ja	$LN62@basic_stri
+
+; 365  : 			}
+; 366  : 
+; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
+
+	test	rbx, rbx
+	je	$LN44@basic_stri
+	mov	eax, ebp
+	and	eax, 6
+	cmp	al, 6
+	je	$LN44@basic_stri
+
+; 368  : 			{	// finite buffer that can be read or written, set it up
+; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
+
+	lea	rcx, QWORD PTR [rdi+116]
+	mov	rdx, rbx
+	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
+	mov	rsi, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
+
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+
+	add	rbx, rbx
+	mov	r8, rbx
+	mov	rdx, r15
+	mov	rcx, rax
+	call	memcpy
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 371  : 			_Seekhigh = _Pnew + _Count;
+
+	lea	r9, QWORD PTR [rbx+rsi]
+	mov	QWORD PTR [rdi+104], r9
+
+; 372  : 
+; 373  : 			if (!(_State & _Noread))
+
+	mov	ebx, ebp
+	and	ebx, 4
+	jne	SHORT $LN46@basic_stri
+
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
+
+	mov	r8, rsi
+	mov	rdx, rsi
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+$LN46@basic_stri:
+
+; 376  : 				}
+; 377  : 
+; 378  : 			if (!(_State & _Constant))
+
+	test	bpl, 2
+	jne	SHORT $LN48@basic_stri
+
+; 379  : 				{	// setup write buffer, and maybe read buffer
+; 380  : 				_Mysb::setp(_Pnew,
+
+	test	bpl, 24
+	je	SHORT $LN50@basic_stri
+	mov	r8, QWORD PTR [rdi+104]
+	mov	r9, r8
+	jmp	SHORT $LN51@basic_stri
+$LN50@basic_stri:
+	mov	r8, rsi
+	mov	r9, QWORD PTR [rdi+104]
+$LN51@basic_stri:
+	mov	rdx, rsi
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
+; 384  : 				if (_State & _Noread)
+
+	test	ebx, ebx
+	je	SHORT $LN48@basic_stri
+
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
+
+	mov	r9, rsi
+	xor	r8d, r8d
+	mov	rdx, rsi
+	mov	rcx, rdi
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+$LN48@basic_stri:
+
+; 387  : 					}
+; 388  : 				}
+; 389  : 
+; 390  : 			_State |= _Allocated;
+
+	or	ebp, 1
+
+; 391  : 			}
+; 392  : 		else
+
+	jmp	SHORT $LN45@basic_stri
+$LN44@basic_stri:
+
+; 393  : 			{
+; 394  : 			_Seekhigh = nullptr;
+
+	mov	QWORD PTR [rdi+104], rsi
+$LN45@basic_stri:
+
+; 395  : 			}
+; 396  : 
+; 397  : 		_Mystate = _State;
+
+	mov	DWORD PTR [rdi+112], ebp
 
 ; 675  : 		}
 
-	mov	rax, rdi
-	mov	rbx, QWORD PTR [rsp+88]
-	mov	rbp, QWORD PTR [rsp+96]
-	mov	rsi, QWORD PTR [rsp+104]
-	add	rsp, 64					; 00000040H
+	mov	rax, r14
+	mov	rbx, QWORD PTR [rsp+112]
+	add	rsp, 48					; 00000030H
+	pop	r15
+	pop	r14
 	pop	rdi
+	pop	rsi
+	pop	rbp
 	ret	0
+$LN62@basic_stri:
+
+; 364  : 			_Xbad_alloc();
+
+	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
+	npad	1
+$LN60@basic_stri:
 ??0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ENDP ; std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
-?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-$T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$0@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$0
 	push	rbp
 	sub	rsp, 32					; 00000020H
@@ -14184,11 +14377,11 @@ text$x	ENDS
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$1@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$1
 	mov	rcx, QWORD PTR this$[rdx]
 	add	rcx, 32					; 00000020H
@@ -14199,11 +14392,25 @@ text$x	ENDS
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
+?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+$T2 = 40
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$2@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$2
 	mov	rcx, QWORD PTR this$[rdx]
 	add	rcx, 24
@@ -14215,26 +14422,11 @@ text$x	ENDS
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
-?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-$T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$0@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$0
 	push	rbp
 	sub	rsp, 32					; 00000020H
@@ -14258,11 +14450,11 @@ text$x	ENDS
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$1@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$1
 	mov	rcx, QWORD PTR this$[rdx]
 	add	rcx, 32					; 00000020H
@@ -14274,11 +14466,26 @@ text$x	ENDS
 text$x	SEGMENT
 $T1 = 32
 $T2 = 40
-this$ = 48
-this$ = 80
-_Str$ = 88
-_Mode$ = 96
-$initVBases$ = 104
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
+?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$3@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA ENDP ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$3
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+$T2 = 40
+this$ = 96
+this$ = 104
+_Str$ = 104
+_Mode$ = 112
+$initVBases$ = 120
 ?dtor$2@?0???0?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z@4HA PROC ; `std::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringstream<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >'::`1'::dtor$2
 	mov	rcx, QWORD PTR this$[rdx]
 	add	rcx, 24
@@ -14300,14 +14507,12 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -14316,8 +14521,18 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
@@ -14325,15 +14540,19 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
@@ -14345,21 +14564,15 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
@@ -14384,6 +14597,8 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z
 _TEXT	SEGMENT
@@ -14397,27 +14612,28 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z PROC ; parsePattern, COMDAT
 
-; 525  : static int parsePattern(std::wstring str, TilePattern* pat) {
+; 524  : static int parsePattern(std::wstring str, TilePattern* pat) {
 
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbp
@@ -14428,30 +14644,29 @@ offset$16 = 1064
 	push	r13
 	push	r14
 	push	r15
-	lea	rbp, QWORD PTR [rsp-712]
-	sub	rsp, 968				; 000003c8H
+	lea	rbp, QWORD PTR [rsp-728]
+	sub	rsp, 984				; 000003d8H
 	mov	QWORD PTR $T8[rbp-256], -2
-	mov	r13, rdx
-	mov	rsi, rcx
-	xor	r14d, r14d
-	mov	r15d, r14d
-	mov	DWORD PTR $T1[rsp], r14d
+	mov	rsi, rdx
+	mov	r15, rcx
+	xor	r13d, r13d
+	mov	DWORD PTR $T1[rsp], r13d
 
-; 526  : 	pat->rows.clear();
+; 525  : 	pat->rows.clear();
 
-	lea	r12, QWORD PTR [rdx+32]
-	mov	QWORD PTR this$1$[rbp-256], r12
+	lea	r14, QWORD PTR [rdx+32]
+	mov	QWORD PTR this$1$[rbp-256], r14
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1591 : 		_Destroy(this->_Myfirst(), this->_Mylast());
 
-	mov	rdi, QWORD PTR [r12+8]
-	mov	rbx, QWORD PTR [r12]
+	mov	rdi, QWORD PTR [r14+8]
+	mov	rbx, QWORD PTR [r14]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 1158 : 	_Destroy_range1(_First, _Last, _Al, bool_constant<conjunction_v<
 
-	mov	QWORD PTR _First$12[rbp-256], rbx
+	mov	QWORD PTR _First$13[rbp-256], rbx
 
 ; 1134 : 	for (; _First != _Last; ++_First)
 
@@ -14461,38 +14676,37 @@ $LL52@parsePatte:
 	lea	rcx, QWORD PTR [rbx+8]
 	call	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 	add	rbx, 32					; 00000020H
-	mov	QWORD PTR _First$12[rbp-256], rbx
+	mov	QWORD PTR _First$13[rbp-256], rbx
 	cmp	rbx, rdi
 	jne	SHORT $LL52@parsePatte
-	mov	rbx, QWORD PTR [r12]
+	mov	rbx, QWORD PTR [r14]
 $LN51@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1592 : 		this->_Mylast() = this->_Myfirst();
 
-	mov	QWORD PTR [r12+8], rbx
+	mov	QWORD PTR [r14+8], rbx
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 527  : 	pat->heights.clear();
+; 526  : 	pat->heights.clear();
 
-	add	r13, 8
-	mov	QWORD PTR this$1$[rbp-256], r13
+	lea	r12, QWORD PTR [rsi+8]
+	mov	QWORD PTR this$1$[rbp-256], r12
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1592 : 		this->_Mylast() = this->_Myfirst();
 
-	mov	rax, QWORD PTR [r13]
-	mov	QWORD PTR [r13+8], rax
-	vpxor	xmm0, xmm0, xmm0
+	mov	rax, QWORD PTR [r12]
+	mov	QWORD PTR [r12+8], rax
 
 ; 389  : 		: _Myfirst(),
 
-	vmovdqu	XMMWORD PTR rowStrings$[rsp], xmm0
+	mov	QWORD PTR rowStrings$[rsp], r13
+	vpxor	xmm0, xmm0, xmm0
 
 ; 390  : 		_Mylast(),
-; 391  : 		_Myend()
 
-	mov	QWORD PTR rowStrings$[rsp+16], r14
+	vmovdqu	XMMWORD PTR rowStrings$[rsp+8], xmm0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 1784 : 		_Mysize(0),
@@ -14507,7 +14721,7 @@ $LN51@parsePatte:
 
 ; 359  : 		_Left = _Right;
 
-	mov	WORD PTR $T4[rsp], r14w
+	mov	WORD PTR $T4[rsp], r13w
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2676 : 		return (assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr))));
@@ -14519,11 +14733,11 @@ $LN51@parsePatte:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 530  : 	tokenize(str, rowStrings, L"/");
+; 529  : 	tokenize(str, rowStrings, L"/");
 
 	lea	r8, QWORD PTR $T4[rsp]
 	lea	rdx, QWORD PTR rowStrings$[rsp]
-	mov	rcx, rsi
+	mov	rcx, r15
 	call	?tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z ; tokenize
 	npad	1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
@@ -14596,53 +14810,50 @@ $LN196@parsePatte:
 
 ; 359  : 		_Left = _Right;
 
-	mov	WORD PTR $T4[rsp], r14w
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 532  : 	for (int i=0; i<rowStrings.size(); i++) {		
-
-	mov	edi, r14d
-	mov	DWORD PTR i$1$[rbp-256], r14d
+	mov	WORD PTR $T4[rsp], r13w
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
+; 1679 : 		return (this->_Myfirst());
+
+	mov	rbx, QWORD PTR rowStrings$[rsp]
+	mov	QWORD PTR <begin>$L0$1$[rbp-256], rbx
+
+; 1689 : 		return (this->_Mylast());
 
 	mov	rax, QWORD PTR rowStrings$[rsp+8]
-	sub	rax, QWORD PTR rowStrings$[rsp]
-	sar	rax, 5
+	mov	QWORD PTR <end>$L0$1$[rbp-256], rax
+	cmp	rbx, rax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 532  : 	for (int i=0; i<rowStrings.size(); i++) {		
+; 531  : 	for (const auto& rowString : rowStrings)			//for (auto i = 0; i < rowStrings.size(); i++) {
 
-	test	rax, rax
 	je	$LN3@parsePatte
-	mov	rbx, r14
-	lea	rsi, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
-$LL4@parsePatte:
-	vpxor	xmm0, xmm0, xmm0
+	lea	r15, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+$LN1359@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 389  : 		: _Myfirst(),
 
+	lea	rdi, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_istream@_WU?$char_traits@_W@std@@@1@@
+	vpxor	xmm0, xmm0, xmm0
 	vmovdqu	XMMWORD PTR row$2[rsp], xmm0
 
-; 390  : 		_Mylast(),
 ; 391  : 		_Myend()
 
-	mov	QWORD PTR row$2[rsp+16], r14
+	mov	QWORD PTR row$2[rsp+16], r13
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 1784 : 		_Mysize(0),
 
-	mov	QWORD PTR $T3[rsp+16], r14
+	mov	QWORD PTR $T3[rsp+16], r13
 
 ; 1785 : 		_Myres(0)
 
-	mov	QWORD PTR $T3[rsp+24], r14
+	mov	QWORD PTR $T3[rsp+24], r13
 
 ; 3976 : 		_My_data._Mysize = 0;
 
-	mov	QWORD PTR $T3[rsp+16], r14
+	mov	QWORD PTR $T3[rsp+16], r13
 
 ; 3977 : 		_My_data._Myres = this->_BUF_SIZE - 1;
 
@@ -14651,7 +14862,7 @@ $LL4@parsePatte:
 
 ; 359  : 		_Left = _Right;
 
-	mov	WORD PTR $T3[rsp], r14w
+	mov	WORD PTR $T3[rsp], r13w
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2676 : 		return (assign(_Ptr, _Convert_size<size_type>(_Traits::length(_Ptr))));
@@ -14661,15 +14872,9 @@ $LL4@parsePatte:
 	lea	rcx, QWORD PTR $T3[rsp]
 	call	?assign@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAAEAV12@QEB_W_K@Z ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::assign
 	npad	1
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1736 : 		return (this->_Myfirst()[_Pos]);
-
-	shl	rbx, 5
-	add	rbx, QWORD PTR rowStrings$[rsp]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 534  : 		tokenize(rowStrings[i], row, L",");
+; 534  : 		tokenize(rowString, row, L",");
 
 	lea	r8, QWORD PTR $T3[rsp]
 	lea	rdx, QWORD PTR row$2[rsp]
@@ -14685,7 +14890,7 @@ $LL4@parsePatte:
 
 ; 3987 : 		if (_My_data._Large_string_engaged())
 
-	jb	SHORT $LN309@parsePatte
+	jb	SHORT $LN303@parsePatte
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 992  : 		_Deallocate<_New_alignof<_Ty>>(_Ptr, sizeof(_Ty) * _Count);
@@ -14697,7 +14902,7 @@ $LL4@parsePatte:
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN308@parsePatte
+	jb	SHORT $LN302@parsePatte
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -14727,18 +14932,18 @@ $LL4@parsePatte:
 
 	add	rax, -8
 	cmp	rax, 31
-	ja	$LN305@parsePatte
-$LN308@parsePatte:
+	ja	$LN299@parsePatte
+$LN302@parsePatte:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
 	call	??3@YAXPEAX_K@Z				; operator delete
-$LN309@parsePatte:
+$LN303@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 3995 : 		_My_data._Mysize = 0;
 
-	mov	QWORD PTR $T3[rsp+16], r14
+	mov	QWORD PTR $T3[rsp+16], r13
 
 ; 3996 : 		_My_data._Myres = this->_BUF_SIZE - 1;
 
@@ -14747,35 +14952,309 @@ $LN309@parsePatte:
 
 ; 359  : 		_Left = _Right;
 
-	mov	WORD PTR $T3[rsp], r14w
+	mov	WORD PTR $T3[rsp], r13w
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
 	mov	rax, QWORD PTR row$2[rsp+8]
-	mov	rbx, QWORD PTR row$2[rsp]
-	sub	rax, rbx
+	mov	rsi, QWORD PTR row$2[rsp]
+	sub	rax, rsi
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
 ; 536  : 		if (row.size() < 3)
 
 	cmp	rax, 3
-	jb	$LN1196@parsePatte
+	jb	$LN1332@parsePatte
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 674  : 		{	// construct character buffer from NTCS
 
-	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_istream@_WU?$char_traits@_W@std@@@1@@
-	mov	QWORD PTR s0$11[rbp-256], rax
+	mov	QWORD PTR s0$11[rbp-256], rdi
 	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_ostream@_WU?$char_traits@_W@std@@@1@@
 	mov	QWORD PTR s0$11[rbp-240], rax
 	lea	rcx, QWORD PTR s0$11[rbp-104]
 	call	QWORD PTR __imp_??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
-	or	r15d, 1
-	mov	DWORD PTR $T1[rsp], r15d
+	mov	edi, DWORD PTR $T1[rsp]
+	or	edi, 1
+	mov	DWORD PTR $T1[rsp], edi
 
+; 398  : 		}
+; 399  : 
+; 400  : 	void _Tidy()
+; 401  : 		{	// discard any allocated buffer and clear pointers
+; 402  : 		if (_Mystate & _Allocated)
+; 403  : 			{
+; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
+; 405  : 				static_cast<typename allocator_traits<allocator_type>::size_type>(
+; 406  : 					(_Mysb::pptr() != nullptr ? _Mysb::epptr() : _Mysb::egptr()) - _Mysb::eback()));
+; 407  : 			}
+; 408  : 
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+; 411  : 		_Seekhigh = nullptr;
+; 412  : 		_Mystate &= ~_Allocated;
+; 413  : 		}
+; 414  : 
+; 415  : private:
+; 416  : 	using _Ptr_traits = pointer_traits<typename allocator_traits<allocator_type>::pointer>;
+; 417  : 
+; 418  : 	enum
+; 419  : 		{	// constant for minimum buffer size
+; 420  : 		_MINSIZE = 32
+; 421  : 		};
+; 422  : 
+; 423  : 	static int _Getstate(ios_base::openmode _Mode)
+; 424  : 		{	// convert open mode to stream state bits
+; 425  : 		int _State = 0;
+; 426  : 		if (!(_Mode & ios_base::in))
+; 427  : 			{
+; 428  : 			_State |= _Noread;
+; 429  : 			}
+; 430  : 
+; 431  : 		if (!(_Mode & ios_base::out))
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+; 437  : 			{
+; 438  : 			_State |= _Append;
+; 439  : 			}
+; 440  : 
+; 441  : 		if (_Mode & ios_base::ate)
+; 442  : 			{
+; 443  : 			_State |= _Atend;
+; 444  : 			}
+; 445  : 
+; 446  : 		return (_State);
+; 447  : 		}
+; 448  : 
+; 449  : 	_Elem * _Seekhigh;	// the high-water pointer in character array
+; 450  : 	int _Mystate;	// the stream state
+; 451  : 	allocator_type _Al;	// the allocator object
+; 452  : 	};
+; 453  : 
+; 454  : template<class _Elem,
+; 455  : 	class _Traits,
+; 456  : 	class _Alloc> inline
+; 457  : 	void swap(basic_stringbuf<_Elem, _Traits, _Alloc>& _Left,
+; 458  : 		basic_stringbuf<_Elem, _Traits, _Alloc>& _Right)
+; 459  : 	{	// swap _Left and _Right basic_stringbufs
+; 460  : 	_Left.swap(_Right);
+; 461  : 	}
+; 462  : 
+; 463  : 		// CLASS TEMPLATE basic_istringstream
+; 464  : template<class _Elem,
+; 465  : 	class _Traits,
+; 466  : 	class _Alloc>
+; 467  : 	class basic_istringstream
+; 468  : 		: public basic_istream<_Elem, _Traits>
+; 469  : 	{	// input stream associated with a character array
+; 470  : public:
+; 471  : 	typedef basic_istream<_Elem, _Traits> _Mybase;
+; 472  : 	typedef _Alloc allocator_type;
+; 473  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 474  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 475  : 
+; 476  : 	explicit basic_istringstream(ios_base::openmode _Mode = ios_base::in)
+; 477  : 		: _Mybase(&_Stringbuffer),
+; 478  : 			_Stringbuffer(_Mode | ios_base::in)
+; 479  : 		{	// construct empty readable character buffer
+; 480  : 		}
+; 481  : 
+; 482  : 	explicit basic_istringstream(const _Mystr& _Str,
+; 483  : 		ios_base::openmode _Mode = ios_base::in)
+; 484  : 		: _Mybase(&_Stringbuffer),
+; 485  : 			_Stringbuffer(_Str, _Mode | ios_base::in)
+; 486  : 		{	// construct readable character buffer from NTCS
+; 487  : 		}
+; 488  : 
+; 489  : 	basic_istringstream(basic_istringstream&& _Right)
+; 490  : 		: _Mybase(&_Stringbuffer)
+; 491  : 		{	// construct by moving _Right
+; 492  : 		_Assign_rv(_STD move(_Right));
+; 493  : 		}
+; 494  : 
+; 495  : 	basic_istringstream& operator=(basic_istringstream&& _Right)
+; 496  : 		{	// move from _Right
+; 497  : 		_Assign_rv(_STD move(_Right));
+; 498  : 		return (*this);
+; 499  : 		}
+; 500  : 
+; 501  : 	void _Assign_rv(basic_istringstream&& _Right)
+; 502  : 		{	// assign by moving _Right
+; 503  : 		if (this != _STD addressof(_Right))
+; 504  : 			{	// different, worth moving
+; 505  : 			_Stringbuffer.str(_Mystr());
+; 506  : 			this->swap(_Right);
+; 507  : 			}
+; 508  : 		}
+; 509  : 
+; 510  : 	void swap(basic_istringstream& _Right)
+; 511  : 		{	// swap with _Right
+; 512  : 		if (this != _STD addressof(_Right))
+; 513  : 			{	// different, swap base and buffer
+; 514  : 			_Mybase::swap(_Right);
+; 515  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 516  : 			}
+; 517  : 		}
+; 518  : 
+; 519  : 	basic_istringstream(const basic_istringstream&) = delete;
+; 520  : 	basic_istringstream& operator=(const basic_istringstream&) = delete;
+; 521  : 
+; 522  : 	virtual ~basic_istringstream() noexcept
+; 523  : 		{	// destroy the object
+; 524  : 		}
+; 525  : 
+; 526  : 	_NODISCARD _Mysb *rdbuf() const
+; 527  : 		{	// return pointer to file buffer
+; 528  : 		return ((_Mysb *)&_Stringbuffer);
+; 529  : 		}
+; 530  : 
+; 531  : 	_NODISCARD _Mystr str() const
+; 532  : 		{	// return string copy of character array
+; 533  : 		return (_Stringbuffer.str());
+; 534  : 		}
+; 535  : 
+; 536  : 	void str(const _Mystr& _Newstr)
+; 537  : 		{	// replace character array from string
+; 538  : 		_Stringbuffer.str(_Newstr);
+; 539  : 		}
+; 540  : 
+; 541  : private:
+; 542  : 	_Mysb _Stringbuffer;	// the string buffer
+; 543  : 	};
+; 544  : 
+; 545  : template<class _Elem,
+; 546  : 	class _Traits,
+; 547  : 	class _Alloc> inline
+; 548  : 	void swap(basic_istringstream<_Elem, _Traits, _Alloc>& _Left,
+; 549  : 		basic_istringstream<_Elem, _Traits, _Alloc>& _Right)
+; 550  : 	{	// swap _Left and _Right basic_istringstreams
+; 551  : 	_Left.swap(_Right);
+; 552  : 	}
+; 553  : 
+; 554  : 		// CLASS TEMPLATE basic_ostringstream
+; 555  : template<class _Elem,
+; 556  : 	class _Traits,
+; 557  : 	class _Alloc>
+; 558  : 	class basic_ostringstream
+; 559  : 		: public basic_ostream<_Elem, _Traits>
+; 560  : 	{	// output stream associated with a character array
+; 561  : public:
+; 562  : 	typedef basic_ostream<_Elem, _Traits> _Mybase;
+; 563  : 	typedef _Alloc allocator_type;
+; 564  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 565  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 566  : 
+; 567  : 	explicit basic_ostringstream(ios_base::openmode _Mode = ios_base::out)
+; 568  : 		: _Mybase(&_Stringbuffer),
+; 569  : 			_Stringbuffer(_Mode | ios_base::out)
+; 570  : 		{	// construct empty writable character buffer
+; 571  : 		}
+; 572  : 
+; 573  : 	explicit basic_ostringstream(const _Mystr& _Str,
+; 574  : 		ios_base::openmode _Mode = ios_base::out)
+; 575  : 		: _Mybase(&_Stringbuffer),
+; 576  : 			_Stringbuffer(_Str, _Mode | ios_base::out)
+; 577  : 		{	// construct writable character buffer from NTCS
+; 578  : 		}
+; 579  : 
+; 580  : 	basic_ostringstream(basic_ostringstream&& _Right)
+; 581  : 		: _Mybase(&_Stringbuffer)
+; 582  : 		{	// construct by moving _Right
+; 583  : 		_Assign_rv(_STD move(_Right));
+; 584  : 		}
+; 585  : 
+; 586  : 	basic_ostringstream& operator=(basic_ostringstream&& _Right)
+; 587  : 		{	// move from _Right
+; 588  : 		_Assign_rv(_STD move(_Right));
+; 589  : 		return (*this);
+; 590  : 		}
+; 591  : 
+; 592  : 	void _Assign_rv(basic_ostringstream&& _Right)
+; 593  : 		{	// assign by moving _Right
+; 594  : 		if (this != _STD addressof(_Right))
+; 595  : 			{	// different, worth moving
+; 596  : 			_Stringbuffer.str(_Mystr());
+; 597  : 			this->swap(_Right);
+; 598  : 			}
+; 599  : 		}
+; 600  : 
+; 601  : 	void swap(basic_ostringstream& _Right)
+; 602  : 		{	// swap with _Right
+; 603  : 		if (this != _STD addressof(_Right))
+; 604  : 			{	// different, swap base and buffer
+; 605  : 			_Mybase::swap(_Right);
+; 606  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 607  : 			}
+; 608  : 		}
+; 609  : 
+; 610  : 	basic_ostringstream(const basic_ostringstream&) = delete;
+; 611  : 	basic_ostringstream& operator=(const basic_ostringstream&) = delete;
+; 612  : 
+; 613  : 	virtual ~basic_ostringstream() noexcept
+; 614  : 		{	// destroy the object
+; 615  : 		}
+; 616  : 
+; 617  : 	_NODISCARD _Mysb *rdbuf() const
+; 618  : 		{	// return pointer to buffer
+; 619  : 		return ((_Mysb *)&_Stringbuffer);
+; 620  : 		}
+; 621  : 
+; 622  : 	_NODISCARD _Mystr str() const
+; 623  : 		{	// return string copy of character array
+; 624  : 		return (_Stringbuffer.str());
+; 625  : 		}
+; 626  : 
+; 627  : 	void str(const _Mystr& _Newstr)
+; 628  : 		{	// replace character array from string
+; 629  : 		_Stringbuffer.str(_Newstr);
+; 630  : 		}
+; 631  : 
+; 632  : private:
+; 633  : 	_Mysb _Stringbuffer;	// the string buffer
+; 634  : 	};
+; 635  : 
+; 636  : template<class _Elem,
+; 637  : 	class _Traits,
+; 638  : 	class _Alloc> inline
+; 639  : 	void swap(basic_ostringstream<_Elem, _Traits, _Alloc>& _Left,
+; 640  : 		basic_ostringstream<_Elem, _Traits, _Alloc>& _Right)
+; 641  : 	{	// swap _Left and _Right basic_ostringstreams
+; 642  : 	_Left.swap(_Right);
+; 643  : 	}
+; 644  : 
+; 645  : 		// CLASS TEMPLATE basic_stringstream
+; 646  : template<class _Elem,
+; 647  : 	class _Traits,
+; 648  : 	class _Alloc>
+; 649  : 	class basic_stringstream
+; 650  : 		: public basic_iostream<_Elem, _Traits>
+; 651  : 	{	// input/output stream associated with a character array
+; 652  : public:
+; 653  : 	typedef basic_iostream<_Elem, _Traits> _Mybase;
+; 654  : 	typedef _Elem char_type;
+; 655  : 	typedef _Traits traits_type;
+; 656  : 	typedef _Alloc allocator_type;
+; 657  : 	typedef typename _Traits::int_type int_type;
+; 658  : 	typedef typename _Traits::pos_type pos_type;
+; 659  : 	typedef typename _Traits::off_type off_type;
+; 660  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 661  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 662  : 
+; 663  : 	explicit basic_stringstream(ios_base::openmode _Mode =
+; 664  : 		ios_base::in | ios_base::out)
+; 665  : 		: _Mybase(&_Stringbuffer),
+; 666  : 			_Stringbuffer(_Mode)
+; 667  : 		{	// construct empty character buffer
+; 668  : 		}
+; 669  : 
+; 670  : 	explicit basic_stringstream(const _Mystr& _Str,
+; 671  : 		ios_base::openmode _Mode = ios_base::in | ios_base::out)
 ; 672  : 		: _Mybase(&_Stringbuffer),
 
 	xor	r8d, r8d
@@ -14788,19 +15267,135 @@ $LN309@parsePatte:
 
 	mov	rax, QWORD PTR s0$11[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	mov	QWORD PTR s0$11[rbp+rcx-256], rsi
+	mov	QWORD PTR s0$11[rbp+rcx-256], r15
 	mov	rax, QWORD PTR s0$11[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	lea	r8d, DWORD PTR [rcx-152]
-	mov	DWORD PTR s0$11[rbp+rcx-260], r8d
+	lea	edx, DWORD PTR [rcx-152]
+	mov	DWORD PTR s0$11[rbp+rcx-260], edx
 
 ; 673  : 			_Stringbuffer(_Str, _Mode)
 
-	mov	r8d, 3
-	mov	rdx, rbx
+	lea	rax, QWORD PTR s0$11[rbp-232]
+	mov	QWORD PTR this$[rbp-256], rax
+
+; 38   : 		{	// construct character buffer from string, mode
+
 	lea	rcx, QWORD PTR s0$11[rbp-232]
-	call	??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	call	QWORD PTR __imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
+	lea	rax, OFFSET FLAT:??_7?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR s0$11[rbp-232], rax
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+
+; 3302 : 		return (this->_Get_data()._Mysize);
+
+	mov	rbx, QWORD PTR [rsi+16]
+
+; 1825 : 		return (_BUF_SIZE <= _Myres);
+
+	cmp	QWORD PTR [rsi+24], 8
+
+; 1815 : 		if (_Large_string_engaged())
+
+	jb	SHORT $LN628@parsePatte
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+
+; 346  : 	return (_Ptr);
+
+	mov	rsi, QWORD PTR [rsi]
+$LN628@parsePatte:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 39   : 		_Init(_Str.c_str(), _Str.size(), _Getstate(_Mode));
+
+	mov	eax, r13d
+
+; 362  : 		if (_Count > INT_MAX)
+
+	cmp	rbx, 2147483647				; 7fffffffH
+	ja	$LN1333@parsePatte
+
+; 365  : 			}
+; 366  : 
+; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
+
+	test	rbx, rbx
+	je	SHORT $LN636@parsePatte
+
+; 368  : 			{	// finite buffer that can be read or written, set it up
+; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
+
+	mov	rdx, rbx
+	lea	rcx, QWORD PTR s0$11[rbp-116]
+	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
+	mov	rdi, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
+
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+
+	add	rbx, rbx
+	mov	r8, rbx
+	mov	rdx, rsi
+	mov	rcx, rax
+	call	memcpy
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 371  : 			_Seekhigh = _Pnew + _Count;
+
+	lea	r9, QWORD PTR [rbx+rdi]
+	mov	QWORD PTR s0$11[rbp-128], r9
+
+; 372  : 
+; 373  : 			if (!(_State & _Noread))
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
+
+	mov	r8, rdi
+	mov	rdx, rdi
+	lea	rcx, QWORD PTR s0$11[rbp-232]
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 376  : 				}
+; 377  : 
+; 378  : 			if (!(_State & _Constant))
+; 379  : 				{	// setup write buffer, and maybe read buffer
+; 380  : 				_Mysb::setp(_Pnew,
+
+	mov	r9, QWORD PTR s0$11[rbp-128]
+	mov	r8, rdi
+	mov	rdx, rdi
+	lea	rcx, QWORD PTR s0$11[rbp-232]
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
+; 384  : 				if (_State & _Noread)
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
+; 387  : 					}
+; 388  : 				}
+; 389  : 
+; 390  : 			_State |= _Allocated;
+
+	mov	eax, 1
+
+; 391  : 			}
+; 392  : 		else
+
+	mov	edi, DWORD PTR $T1[rsp]
+	jmp	SHORT $LN637@parsePatte
+$LN636@parsePatte:
+
+; 393  : 			{
+; 394  : 			_Seekhigh = nullptr;
+
+	mov	QWORD PTR s0$11[rbp-128], r13
+$LN637@parsePatte:
+
+; 397  : 		_Mystate = _State;
+
+	mov	DWORD PTR s0$11[rbp-120], eax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
 ; 541  : 		s0 >> offset;
@@ -14812,7 +15407,8 @@ $LN309@parsePatte:
 
 ; 1736 : 		return (this->_Myfirst()[_Pos]);
 
-	mov	rbx, QWORD PTR row$2[rsp]
+	mov	rsi, QWORD PTR row$2[rsp]
+	add	rsi, 32					; 00000020H
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 674  : 		{	// construct character buffer from NTCS
@@ -14824,9 +15420,283 @@ $LN309@parsePatte:
 	lea	rcx, QWORD PTR s1$10[rbp-104]
 	call	QWORD PTR __imp_??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
-	or	r15d, 2
-	mov	DWORD PTR $T1[rsp], r15d
+	or	edi, 2
+	mov	DWORD PTR $T1[rsp], edi
 
+; 398  : 		}
+; 399  : 
+; 400  : 	void _Tidy()
+; 401  : 		{	// discard any allocated buffer and clear pointers
+; 402  : 		if (_Mystate & _Allocated)
+; 403  : 			{
+; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
+; 405  : 				static_cast<typename allocator_traits<allocator_type>::size_type>(
+; 406  : 					(_Mysb::pptr() != nullptr ? _Mysb::epptr() : _Mysb::egptr()) - _Mysb::eback()));
+; 407  : 			}
+; 408  : 
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+; 411  : 		_Seekhigh = nullptr;
+; 412  : 		_Mystate &= ~_Allocated;
+; 413  : 		}
+; 414  : 
+; 415  : private:
+; 416  : 	using _Ptr_traits = pointer_traits<typename allocator_traits<allocator_type>::pointer>;
+; 417  : 
+; 418  : 	enum
+; 419  : 		{	// constant for minimum buffer size
+; 420  : 		_MINSIZE = 32
+; 421  : 		};
+; 422  : 
+; 423  : 	static int _Getstate(ios_base::openmode _Mode)
+; 424  : 		{	// convert open mode to stream state bits
+; 425  : 		int _State = 0;
+; 426  : 		if (!(_Mode & ios_base::in))
+; 427  : 			{
+; 428  : 			_State |= _Noread;
+; 429  : 			}
+; 430  : 
+; 431  : 		if (!(_Mode & ios_base::out))
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+; 437  : 			{
+; 438  : 			_State |= _Append;
+; 439  : 			}
+; 440  : 
+; 441  : 		if (_Mode & ios_base::ate)
+; 442  : 			{
+; 443  : 			_State |= _Atend;
+; 444  : 			}
+; 445  : 
+; 446  : 		return (_State);
+; 447  : 		}
+; 448  : 
+; 449  : 	_Elem * _Seekhigh;	// the high-water pointer in character array
+; 450  : 	int _Mystate;	// the stream state
+; 451  : 	allocator_type _Al;	// the allocator object
+; 452  : 	};
+; 453  : 
+; 454  : template<class _Elem,
+; 455  : 	class _Traits,
+; 456  : 	class _Alloc> inline
+; 457  : 	void swap(basic_stringbuf<_Elem, _Traits, _Alloc>& _Left,
+; 458  : 		basic_stringbuf<_Elem, _Traits, _Alloc>& _Right)
+; 459  : 	{	// swap _Left and _Right basic_stringbufs
+; 460  : 	_Left.swap(_Right);
+; 461  : 	}
+; 462  : 
+; 463  : 		// CLASS TEMPLATE basic_istringstream
+; 464  : template<class _Elem,
+; 465  : 	class _Traits,
+; 466  : 	class _Alloc>
+; 467  : 	class basic_istringstream
+; 468  : 		: public basic_istream<_Elem, _Traits>
+; 469  : 	{	// input stream associated with a character array
+; 470  : public:
+; 471  : 	typedef basic_istream<_Elem, _Traits> _Mybase;
+; 472  : 	typedef _Alloc allocator_type;
+; 473  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 474  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 475  : 
+; 476  : 	explicit basic_istringstream(ios_base::openmode _Mode = ios_base::in)
+; 477  : 		: _Mybase(&_Stringbuffer),
+; 478  : 			_Stringbuffer(_Mode | ios_base::in)
+; 479  : 		{	// construct empty readable character buffer
+; 480  : 		}
+; 481  : 
+; 482  : 	explicit basic_istringstream(const _Mystr& _Str,
+; 483  : 		ios_base::openmode _Mode = ios_base::in)
+; 484  : 		: _Mybase(&_Stringbuffer),
+; 485  : 			_Stringbuffer(_Str, _Mode | ios_base::in)
+; 486  : 		{	// construct readable character buffer from NTCS
+; 487  : 		}
+; 488  : 
+; 489  : 	basic_istringstream(basic_istringstream&& _Right)
+; 490  : 		: _Mybase(&_Stringbuffer)
+; 491  : 		{	// construct by moving _Right
+; 492  : 		_Assign_rv(_STD move(_Right));
+; 493  : 		}
+; 494  : 
+; 495  : 	basic_istringstream& operator=(basic_istringstream&& _Right)
+; 496  : 		{	// move from _Right
+; 497  : 		_Assign_rv(_STD move(_Right));
+; 498  : 		return (*this);
+; 499  : 		}
+; 500  : 
+; 501  : 	void _Assign_rv(basic_istringstream&& _Right)
+; 502  : 		{	// assign by moving _Right
+; 503  : 		if (this != _STD addressof(_Right))
+; 504  : 			{	// different, worth moving
+; 505  : 			_Stringbuffer.str(_Mystr());
+; 506  : 			this->swap(_Right);
+; 507  : 			}
+; 508  : 		}
+; 509  : 
+; 510  : 	void swap(basic_istringstream& _Right)
+; 511  : 		{	// swap with _Right
+; 512  : 		if (this != _STD addressof(_Right))
+; 513  : 			{	// different, swap base and buffer
+; 514  : 			_Mybase::swap(_Right);
+; 515  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 516  : 			}
+; 517  : 		}
+; 518  : 
+; 519  : 	basic_istringstream(const basic_istringstream&) = delete;
+; 520  : 	basic_istringstream& operator=(const basic_istringstream&) = delete;
+; 521  : 
+; 522  : 	virtual ~basic_istringstream() noexcept
+; 523  : 		{	// destroy the object
+; 524  : 		}
+; 525  : 
+; 526  : 	_NODISCARD _Mysb *rdbuf() const
+; 527  : 		{	// return pointer to file buffer
+; 528  : 		return ((_Mysb *)&_Stringbuffer);
+; 529  : 		}
+; 530  : 
+; 531  : 	_NODISCARD _Mystr str() const
+; 532  : 		{	// return string copy of character array
+; 533  : 		return (_Stringbuffer.str());
+; 534  : 		}
+; 535  : 
+; 536  : 	void str(const _Mystr& _Newstr)
+; 537  : 		{	// replace character array from string
+; 538  : 		_Stringbuffer.str(_Newstr);
+; 539  : 		}
+; 540  : 
+; 541  : private:
+; 542  : 	_Mysb _Stringbuffer;	// the string buffer
+; 543  : 	};
+; 544  : 
+; 545  : template<class _Elem,
+; 546  : 	class _Traits,
+; 547  : 	class _Alloc> inline
+; 548  : 	void swap(basic_istringstream<_Elem, _Traits, _Alloc>& _Left,
+; 549  : 		basic_istringstream<_Elem, _Traits, _Alloc>& _Right)
+; 550  : 	{	// swap _Left and _Right basic_istringstreams
+; 551  : 	_Left.swap(_Right);
+; 552  : 	}
+; 553  : 
+; 554  : 		// CLASS TEMPLATE basic_ostringstream
+; 555  : template<class _Elem,
+; 556  : 	class _Traits,
+; 557  : 	class _Alloc>
+; 558  : 	class basic_ostringstream
+; 559  : 		: public basic_ostream<_Elem, _Traits>
+; 560  : 	{	// output stream associated with a character array
+; 561  : public:
+; 562  : 	typedef basic_ostream<_Elem, _Traits> _Mybase;
+; 563  : 	typedef _Alloc allocator_type;
+; 564  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 565  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 566  : 
+; 567  : 	explicit basic_ostringstream(ios_base::openmode _Mode = ios_base::out)
+; 568  : 		: _Mybase(&_Stringbuffer),
+; 569  : 			_Stringbuffer(_Mode | ios_base::out)
+; 570  : 		{	// construct empty writable character buffer
+; 571  : 		}
+; 572  : 
+; 573  : 	explicit basic_ostringstream(const _Mystr& _Str,
+; 574  : 		ios_base::openmode _Mode = ios_base::out)
+; 575  : 		: _Mybase(&_Stringbuffer),
+; 576  : 			_Stringbuffer(_Str, _Mode | ios_base::out)
+; 577  : 		{	// construct writable character buffer from NTCS
+; 578  : 		}
+; 579  : 
+; 580  : 	basic_ostringstream(basic_ostringstream&& _Right)
+; 581  : 		: _Mybase(&_Stringbuffer)
+; 582  : 		{	// construct by moving _Right
+; 583  : 		_Assign_rv(_STD move(_Right));
+; 584  : 		}
+; 585  : 
+; 586  : 	basic_ostringstream& operator=(basic_ostringstream&& _Right)
+; 587  : 		{	// move from _Right
+; 588  : 		_Assign_rv(_STD move(_Right));
+; 589  : 		return (*this);
+; 590  : 		}
+; 591  : 
+; 592  : 	void _Assign_rv(basic_ostringstream&& _Right)
+; 593  : 		{	// assign by moving _Right
+; 594  : 		if (this != _STD addressof(_Right))
+; 595  : 			{	// different, worth moving
+; 596  : 			_Stringbuffer.str(_Mystr());
+; 597  : 			this->swap(_Right);
+; 598  : 			}
+; 599  : 		}
+; 600  : 
+; 601  : 	void swap(basic_ostringstream& _Right)
+; 602  : 		{	// swap with _Right
+; 603  : 		if (this != _STD addressof(_Right))
+; 604  : 			{	// different, swap base and buffer
+; 605  : 			_Mybase::swap(_Right);
+; 606  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 607  : 			}
+; 608  : 		}
+; 609  : 
+; 610  : 	basic_ostringstream(const basic_ostringstream&) = delete;
+; 611  : 	basic_ostringstream& operator=(const basic_ostringstream&) = delete;
+; 612  : 
+; 613  : 	virtual ~basic_ostringstream() noexcept
+; 614  : 		{	// destroy the object
+; 615  : 		}
+; 616  : 
+; 617  : 	_NODISCARD _Mysb *rdbuf() const
+; 618  : 		{	// return pointer to buffer
+; 619  : 		return ((_Mysb *)&_Stringbuffer);
+; 620  : 		}
+; 621  : 
+; 622  : 	_NODISCARD _Mystr str() const
+; 623  : 		{	// return string copy of character array
+; 624  : 		return (_Stringbuffer.str());
+; 625  : 		}
+; 626  : 
+; 627  : 	void str(const _Mystr& _Newstr)
+; 628  : 		{	// replace character array from string
+; 629  : 		_Stringbuffer.str(_Newstr);
+; 630  : 		}
+; 631  : 
+; 632  : private:
+; 633  : 	_Mysb _Stringbuffer;	// the string buffer
+; 634  : 	};
+; 635  : 
+; 636  : template<class _Elem,
+; 637  : 	class _Traits,
+; 638  : 	class _Alloc> inline
+; 639  : 	void swap(basic_ostringstream<_Elem, _Traits, _Alloc>& _Left,
+; 640  : 		basic_ostringstream<_Elem, _Traits, _Alloc>& _Right)
+; 641  : 	{	// swap _Left and _Right basic_ostringstreams
+; 642  : 	_Left.swap(_Right);
+; 643  : 	}
+; 644  : 
+; 645  : 		// CLASS TEMPLATE basic_stringstream
+; 646  : template<class _Elem,
+; 647  : 	class _Traits,
+; 648  : 	class _Alloc>
+; 649  : 	class basic_stringstream
+; 650  : 		: public basic_iostream<_Elem, _Traits>
+; 651  : 	{	// input/output stream associated with a character array
+; 652  : public:
+; 653  : 	typedef basic_iostream<_Elem, _Traits> _Mybase;
+; 654  : 	typedef _Elem char_type;
+; 655  : 	typedef _Traits traits_type;
+; 656  : 	typedef _Alloc allocator_type;
+; 657  : 	typedef typename _Traits::int_type int_type;
+; 658  : 	typedef typename _Traits::pos_type pos_type;
+; 659  : 	typedef typename _Traits::off_type off_type;
+; 660  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 661  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 662  : 
+; 663  : 	explicit basic_stringstream(ios_base::openmode _Mode =
+; 664  : 		ios_base::in | ios_base::out)
+; 665  : 		: _Mybase(&_Stringbuffer),
+; 666  : 			_Stringbuffer(_Mode)
+; 667  : 		{	// construct empty character buffer
+; 668  : 		}
+; 669  : 
+; 670  : 	explicit basic_stringstream(const _Mystr& _Str,
+; 671  : 		ios_base::openmode _Mode = ios_base::in | ios_base::out)
 ; 672  : 		: _Mybase(&_Stringbuffer),
 
 	xor	r8d, r8d
@@ -14839,19 +15709,135 @@ $LN309@parsePatte:
 
 	mov	rax, QWORD PTR s1$10[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	mov	QWORD PTR s1$10[rbp+rcx-256], rsi
+	mov	QWORD PTR s1$10[rbp+rcx-256], r15
 	mov	rax, QWORD PTR s1$10[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	lea	r8d, DWORD PTR [rcx-152]
-	mov	DWORD PTR s1$10[rbp+rcx-260], r8d
+	lea	edx, DWORD PTR [rcx-152]
+	mov	DWORD PTR s1$10[rbp+rcx-260], edx
 
 ; 673  : 			_Stringbuffer(_Str, _Mode)
 
-	mov	r8d, 3
-	lea	rdx, QWORD PTR [rbx+32]
+	lea	rax, QWORD PTR s1$10[rbp-232]
+	mov	QWORD PTR this$[rbp-256], rax
+
+; 38   : 		{	// construct character buffer from string, mode
+
 	lea	rcx, QWORD PTR s1$10[rbp-232]
-	call	??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	call	QWORD PTR __imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
+	lea	rax, OFFSET FLAT:??_7?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR s1$10[rbp-232], rax
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+
+; 3302 : 		return (this->_Get_data()._Mysize);
+
+	mov	rbx, QWORD PTR [rsi+16]
+
+; 1825 : 		return (_BUF_SIZE <= _Myres);
+
+	cmp	QWORD PTR [rsi+24], 8
+
+; 1815 : 		if (_Large_string_engaged())
+
+	jb	SHORT $LN695@parsePatte
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+
+; 346  : 	return (_Ptr);
+
+	mov	rsi, QWORD PTR [rsi]
+$LN695@parsePatte:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 39   : 		_Init(_Str.c_str(), _Str.size(), _Getstate(_Mode));
+
+	mov	eax, r13d
+
+; 362  : 		if (_Count > INT_MAX)
+
+	cmp	rbx, 2147483647				; 7fffffffH
+	ja	$LN1334@parsePatte
+
+; 365  : 			}
+; 366  : 
+; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
+
+	test	rbx, rbx
+	je	SHORT $LN703@parsePatte
+
+; 368  : 			{	// finite buffer that can be read or written, set it up
+; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
+
+	mov	rdx, rbx
+	lea	rcx, QWORD PTR s1$10[rbp-116]
+	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
+	mov	rdi, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
+
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+
+	add	rbx, rbx
+	mov	r8, rbx
+	mov	rdx, rsi
+	mov	rcx, rax
+	call	memcpy
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 371  : 			_Seekhigh = _Pnew + _Count;
+
+	lea	r9, QWORD PTR [rbx+rdi]
+	mov	QWORD PTR s1$10[rbp-128], r9
+
+; 372  : 
+; 373  : 			if (!(_State & _Noread))
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
+
+	mov	r8, rdi
+	mov	rdx, rdi
+	lea	rcx, QWORD PTR s1$10[rbp-232]
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 376  : 				}
+; 377  : 
+; 378  : 			if (!(_State & _Constant))
+; 379  : 				{	// setup write buffer, and maybe read buffer
+; 380  : 				_Mysb::setp(_Pnew,
+
+	mov	r9, QWORD PTR s1$10[rbp-128]
+	mov	r8, rdi
+	mov	rdx, rdi
+	lea	rcx, QWORD PTR s1$10[rbp-232]
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
+; 384  : 				if (_State & _Noread)
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
+; 387  : 					}
+; 388  : 				}
+; 389  : 
+; 390  : 			_State |= _Allocated;
+
+	mov	eax, 1
+
+; 391  : 			}
+; 392  : 		else
+
+	mov	edi, DWORD PTR $T1[rsp]
+	jmp	SHORT $LN704@parsePatte
+$LN703@parsePatte:
+
+; 393  : 			{
+; 394  : 			_Seekhigh = nullptr;
+
+	mov	QWORD PTR s1$10[rbp-128], r13
+$LN704@parsePatte:
+
+; 397  : 		_Mystate = _State;
+
+	mov	DWORD PTR s1$10[rbp-120], eax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
 ; 543  : 		s1 >> height;
@@ -14872,10 +15858,10 @@ $LN309@parsePatte:
 
 	vmovdqu	XMMWORD PTR r$5[rbp-248], xmm0
 
-; 390  : 		_Mylast(),
 ; 391  : 		_Myend()
 
-	mov	QWORD PTR r$5[rbp-232], r14
+	mov	r15, r13
+	mov	QWORD PTR r$5[rbp-232], r13
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 58   : 	TileRow(float offset) {this->offset = offset;}
@@ -14883,48 +15869,324 @@ $LN309@parsePatte:
 	vmovss	DWORD PTR r$5[rsp], xmm1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 547  : 		for (int j=2; j<row.size(); j++) {
+; 547  : 		for (auto j=2; j<row.size(); j++) {
 
-	mov	esi, 2
+	mov	r13d, 2
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
 	mov	rax, QWORD PTR row$2[rsp+8]
-	mov	rcx, QWORD PTR row$2[rsp]
-	sub	rax, rcx
+	mov	rdx, QWORD PTR row$2[rsp]
+	sub	rax, rdx
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 547  : 		for (int j=2; j<row.size(); j++) {
+; 547  : 		for (auto j=2; j<row.size(); j++) {
 
-	cmp	rax, rsi
+	cmp	rax, r13
 	jbe	$LN6@parsePatte
-	mov	edi, esi
-	mov	rbx, QWORD PTR r$5[rbp-240]
-	lea	r13, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
-	lea	r12, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_istream@_WU?$char_traits@_W@std@@@1@@
-	npad	5
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 397  : 		_Mystate = _State;
+
+	mov	r12d, 64				; 00000040H
+	mov	rsi, QWORD PTR r$5[rbp-240]
+	npad	13
 $LL7@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1736 : 		return (this->_Myfirst()[_Pos]);
 
-	shl	rdi, 5
-	add	rdi, rcx
+	lea	r14, QWORD PTR [r12+rdx]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 674  : 		{	// construct character buffer from NTCS
 
-	mov	QWORD PTR sn$9[rbp-256], r12
+	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_istream@_WU?$char_traits@_W@std@@@1@@
+	mov	QWORD PTR sn$9[rbp-256], rax
 	lea	rax, OFFSET FLAT:??_8?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@7B?$basic_ostream@_WU?$char_traits@_W@std@@@1@@
 	mov	QWORD PTR sn$9[rbp-240], rax
 	lea	rcx, QWORD PTR sn$9[rbp-104]
 	call	QWORD PTR __imp_??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
 	npad	1
-	or	r15d, 4
-	mov	DWORD PTR $T1[rsp], r15d
+	or	edi, 4
+	mov	DWORD PTR $T1[rsp], edi
 
+; 398  : 		}
+; 399  : 
+; 400  : 	void _Tidy()
+; 401  : 		{	// discard any allocated buffer and clear pointers
+; 402  : 		if (_Mystate & _Allocated)
+; 403  : 			{
+; 404  : 			_Al.deallocate(_Ptr_traits::pointer_to(*_Mysb::eback()),
+; 405  : 				static_cast<typename allocator_traits<allocator_type>::size_type>(
+; 406  : 					(_Mysb::pptr() != nullptr ? _Mysb::epptr() : _Mysb::egptr()) - _Mysb::eback()));
+; 407  : 			}
+; 408  : 
+; 409  : 		_Mysb::setg(nullptr, nullptr, nullptr);
+; 410  : 		_Mysb::setp(nullptr, nullptr);
+; 411  : 		_Seekhigh = nullptr;
+; 412  : 		_Mystate &= ~_Allocated;
+; 413  : 		}
+; 414  : 
+; 415  : private:
+; 416  : 	using _Ptr_traits = pointer_traits<typename allocator_traits<allocator_type>::pointer>;
+; 417  : 
+; 418  : 	enum
+; 419  : 		{	// constant for minimum buffer size
+; 420  : 		_MINSIZE = 32
+; 421  : 		};
+; 422  : 
+; 423  : 	static int _Getstate(ios_base::openmode _Mode)
+; 424  : 		{	// convert open mode to stream state bits
+; 425  : 		int _State = 0;
+; 426  : 		if (!(_Mode & ios_base::in))
+; 427  : 			{
+; 428  : 			_State |= _Noread;
+; 429  : 			}
+; 430  : 
+; 431  : 		if (!(_Mode & ios_base::out))
+; 432  : 			{
+; 433  : 			_State |= _Constant;
+; 434  : 			}
+; 435  : 
+; 436  : 		if (_Mode & ios_base::app)
+; 437  : 			{
+; 438  : 			_State |= _Append;
+; 439  : 			}
+; 440  : 
+; 441  : 		if (_Mode & ios_base::ate)
+; 442  : 			{
+; 443  : 			_State |= _Atend;
+; 444  : 			}
+; 445  : 
+; 446  : 		return (_State);
+; 447  : 		}
+; 448  : 
+; 449  : 	_Elem * _Seekhigh;	// the high-water pointer in character array
+; 450  : 	int _Mystate;	// the stream state
+; 451  : 	allocator_type _Al;	// the allocator object
+; 452  : 	};
+; 453  : 
+; 454  : template<class _Elem,
+; 455  : 	class _Traits,
+; 456  : 	class _Alloc> inline
+; 457  : 	void swap(basic_stringbuf<_Elem, _Traits, _Alloc>& _Left,
+; 458  : 		basic_stringbuf<_Elem, _Traits, _Alloc>& _Right)
+; 459  : 	{	// swap _Left and _Right basic_stringbufs
+; 460  : 	_Left.swap(_Right);
+; 461  : 	}
+; 462  : 
+; 463  : 		// CLASS TEMPLATE basic_istringstream
+; 464  : template<class _Elem,
+; 465  : 	class _Traits,
+; 466  : 	class _Alloc>
+; 467  : 	class basic_istringstream
+; 468  : 		: public basic_istream<_Elem, _Traits>
+; 469  : 	{	// input stream associated with a character array
+; 470  : public:
+; 471  : 	typedef basic_istream<_Elem, _Traits> _Mybase;
+; 472  : 	typedef _Alloc allocator_type;
+; 473  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 474  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 475  : 
+; 476  : 	explicit basic_istringstream(ios_base::openmode _Mode = ios_base::in)
+; 477  : 		: _Mybase(&_Stringbuffer),
+; 478  : 			_Stringbuffer(_Mode | ios_base::in)
+; 479  : 		{	// construct empty readable character buffer
+; 480  : 		}
+; 481  : 
+; 482  : 	explicit basic_istringstream(const _Mystr& _Str,
+; 483  : 		ios_base::openmode _Mode = ios_base::in)
+; 484  : 		: _Mybase(&_Stringbuffer),
+; 485  : 			_Stringbuffer(_Str, _Mode | ios_base::in)
+; 486  : 		{	// construct readable character buffer from NTCS
+; 487  : 		}
+; 488  : 
+; 489  : 	basic_istringstream(basic_istringstream&& _Right)
+; 490  : 		: _Mybase(&_Stringbuffer)
+; 491  : 		{	// construct by moving _Right
+; 492  : 		_Assign_rv(_STD move(_Right));
+; 493  : 		}
+; 494  : 
+; 495  : 	basic_istringstream& operator=(basic_istringstream&& _Right)
+; 496  : 		{	// move from _Right
+; 497  : 		_Assign_rv(_STD move(_Right));
+; 498  : 		return (*this);
+; 499  : 		}
+; 500  : 
+; 501  : 	void _Assign_rv(basic_istringstream&& _Right)
+; 502  : 		{	// assign by moving _Right
+; 503  : 		if (this != _STD addressof(_Right))
+; 504  : 			{	// different, worth moving
+; 505  : 			_Stringbuffer.str(_Mystr());
+; 506  : 			this->swap(_Right);
+; 507  : 			}
+; 508  : 		}
+; 509  : 
+; 510  : 	void swap(basic_istringstream& _Right)
+; 511  : 		{	// swap with _Right
+; 512  : 		if (this != _STD addressof(_Right))
+; 513  : 			{	// different, swap base and buffer
+; 514  : 			_Mybase::swap(_Right);
+; 515  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 516  : 			}
+; 517  : 		}
+; 518  : 
+; 519  : 	basic_istringstream(const basic_istringstream&) = delete;
+; 520  : 	basic_istringstream& operator=(const basic_istringstream&) = delete;
+; 521  : 
+; 522  : 	virtual ~basic_istringstream() noexcept
+; 523  : 		{	// destroy the object
+; 524  : 		}
+; 525  : 
+; 526  : 	_NODISCARD _Mysb *rdbuf() const
+; 527  : 		{	// return pointer to file buffer
+; 528  : 		return ((_Mysb *)&_Stringbuffer);
+; 529  : 		}
+; 530  : 
+; 531  : 	_NODISCARD _Mystr str() const
+; 532  : 		{	// return string copy of character array
+; 533  : 		return (_Stringbuffer.str());
+; 534  : 		}
+; 535  : 
+; 536  : 	void str(const _Mystr& _Newstr)
+; 537  : 		{	// replace character array from string
+; 538  : 		_Stringbuffer.str(_Newstr);
+; 539  : 		}
+; 540  : 
+; 541  : private:
+; 542  : 	_Mysb _Stringbuffer;	// the string buffer
+; 543  : 	};
+; 544  : 
+; 545  : template<class _Elem,
+; 546  : 	class _Traits,
+; 547  : 	class _Alloc> inline
+; 548  : 	void swap(basic_istringstream<_Elem, _Traits, _Alloc>& _Left,
+; 549  : 		basic_istringstream<_Elem, _Traits, _Alloc>& _Right)
+; 550  : 	{	// swap _Left and _Right basic_istringstreams
+; 551  : 	_Left.swap(_Right);
+; 552  : 	}
+; 553  : 
+; 554  : 		// CLASS TEMPLATE basic_ostringstream
+; 555  : template<class _Elem,
+; 556  : 	class _Traits,
+; 557  : 	class _Alloc>
+; 558  : 	class basic_ostringstream
+; 559  : 		: public basic_ostream<_Elem, _Traits>
+; 560  : 	{	// output stream associated with a character array
+; 561  : public:
+; 562  : 	typedef basic_ostream<_Elem, _Traits> _Mybase;
+; 563  : 	typedef _Alloc allocator_type;
+; 564  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 565  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 566  : 
+; 567  : 	explicit basic_ostringstream(ios_base::openmode _Mode = ios_base::out)
+; 568  : 		: _Mybase(&_Stringbuffer),
+; 569  : 			_Stringbuffer(_Mode | ios_base::out)
+; 570  : 		{	// construct empty writable character buffer
+; 571  : 		}
+; 572  : 
+; 573  : 	explicit basic_ostringstream(const _Mystr& _Str,
+; 574  : 		ios_base::openmode _Mode = ios_base::out)
+; 575  : 		: _Mybase(&_Stringbuffer),
+; 576  : 			_Stringbuffer(_Str, _Mode | ios_base::out)
+; 577  : 		{	// construct writable character buffer from NTCS
+; 578  : 		}
+; 579  : 
+; 580  : 	basic_ostringstream(basic_ostringstream&& _Right)
+; 581  : 		: _Mybase(&_Stringbuffer)
+; 582  : 		{	// construct by moving _Right
+; 583  : 		_Assign_rv(_STD move(_Right));
+; 584  : 		}
+; 585  : 
+; 586  : 	basic_ostringstream& operator=(basic_ostringstream&& _Right)
+; 587  : 		{	// move from _Right
+; 588  : 		_Assign_rv(_STD move(_Right));
+; 589  : 		return (*this);
+; 590  : 		}
+; 591  : 
+; 592  : 	void _Assign_rv(basic_ostringstream&& _Right)
+; 593  : 		{	// assign by moving _Right
+; 594  : 		if (this != _STD addressof(_Right))
+; 595  : 			{	// different, worth moving
+; 596  : 			_Stringbuffer.str(_Mystr());
+; 597  : 			this->swap(_Right);
+; 598  : 			}
+; 599  : 		}
+; 600  : 
+; 601  : 	void swap(basic_ostringstream& _Right)
+; 602  : 		{	// swap with _Right
+; 603  : 		if (this != _STD addressof(_Right))
+; 604  : 			{	// different, swap base and buffer
+; 605  : 			_Mybase::swap(_Right);
+; 606  : 			_Stringbuffer.swap(_Right._Stringbuffer);
+; 607  : 			}
+; 608  : 		}
+; 609  : 
+; 610  : 	basic_ostringstream(const basic_ostringstream&) = delete;
+; 611  : 	basic_ostringstream& operator=(const basic_ostringstream&) = delete;
+; 612  : 
+; 613  : 	virtual ~basic_ostringstream() noexcept
+; 614  : 		{	// destroy the object
+; 615  : 		}
+; 616  : 
+; 617  : 	_NODISCARD _Mysb *rdbuf() const
+; 618  : 		{	// return pointer to buffer
+; 619  : 		return ((_Mysb *)&_Stringbuffer);
+; 620  : 		}
+; 621  : 
+; 622  : 	_NODISCARD _Mystr str() const
+; 623  : 		{	// return string copy of character array
+; 624  : 		return (_Stringbuffer.str());
+; 625  : 		}
+; 626  : 
+; 627  : 	void str(const _Mystr& _Newstr)
+; 628  : 		{	// replace character array from string
+; 629  : 		_Stringbuffer.str(_Newstr);
+; 630  : 		}
+; 631  : 
+; 632  : private:
+; 633  : 	_Mysb _Stringbuffer;	// the string buffer
+; 634  : 	};
+; 635  : 
+; 636  : template<class _Elem,
+; 637  : 	class _Traits,
+; 638  : 	class _Alloc> inline
+; 639  : 	void swap(basic_ostringstream<_Elem, _Traits, _Alloc>& _Left,
+; 640  : 		basic_ostringstream<_Elem, _Traits, _Alloc>& _Right)
+; 641  : 	{	// swap _Left and _Right basic_ostringstreams
+; 642  : 	_Left.swap(_Right);
+; 643  : 	}
+; 644  : 
+; 645  : 		// CLASS TEMPLATE basic_stringstream
+; 646  : template<class _Elem,
+; 647  : 	class _Traits,
+; 648  : 	class _Alloc>
+; 649  : 	class basic_stringstream
+; 650  : 		: public basic_iostream<_Elem, _Traits>
+; 651  : 	{	// input/output stream associated with a character array
+; 652  : public:
+; 653  : 	typedef basic_iostream<_Elem, _Traits> _Mybase;
+; 654  : 	typedef _Elem char_type;
+; 655  : 	typedef _Traits traits_type;
+; 656  : 	typedef _Alloc allocator_type;
+; 657  : 	typedef typename _Traits::int_type int_type;
+; 658  : 	typedef typename _Traits::pos_type pos_type;
+; 659  : 	typedef typename _Traits::off_type off_type;
+; 660  : 	typedef basic_stringbuf<_Elem, _Traits, _Alloc> _Mysb;
+; 661  : 	typedef basic_string<_Elem, _Traits, _Alloc> _Mystr;
+; 662  : 
+; 663  : 	explicit basic_stringstream(ios_base::openmode _Mode =
+; 664  : 		ios_base::in | ios_base::out)
+; 665  : 		: _Mybase(&_Stringbuffer),
+; 666  : 			_Stringbuffer(_Mode)
+; 667  : 		{	// construct empty character buffer
+; 668  : 		}
+; 669  : 
+; 670  : 	explicit basic_stringstream(const _Mystr& _Str,
+; 671  : 		ios_base::openmode _Mode = ios_base::in | ios_base::out)
 ; 672  : 		: _Mybase(&_Stringbuffer),
 
 	xor	r8d, r8d
@@ -14937,19 +16199,136 @@ $LL7@parsePatte:
 
 	mov	rax, QWORD PTR sn$9[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	mov	QWORD PTR sn$9[rbp+rcx-256], r13
+	lea	rax, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR sn$9[rbp+rcx-256], rax
 	mov	rax, QWORD PTR sn$9[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	lea	r8d, DWORD PTR [rcx-152]
-	mov	DWORD PTR sn$9[rbp+rcx-260], r8d
+	lea	edx, DWORD PTR [rcx-152]
+	mov	DWORD PTR sn$9[rbp+rcx-260], edx
 
 ; 673  : 			_Stringbuffer(_Str, _Mode)
 
-	mov	r8d, 3
+	lea	rax, QWORD PTR sn$9[rbp-232]
+	mov	QWORD PTR this$[rbp-256], rax
+
+; 38   : 		{	// construct character buffer from string, mode
+
+	lea	rcx, QWORD PTR sn$9[rbp-232]
+	call	QWORD PTR __imp_??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+	npad	1
+	lea	rax, OFFSET FLAT:??_7?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR sn$9[rbp-232], rax
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
+
+; 3302 : 		return (this->_Get_data()._Mysize);
+
+	mov	rbx, QWORD PTR [r14+16]
+
+; 1825 : 		return (_BUF_SIZE <= _Myres);
+
+	cmp	QWORD PTR [r14+24], 8
+
+; 1815 : 		if (_Large_string_engaged())
+
+	jb	SHORT $LN789@parsePatte
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
+
+; 346  : 	return (_Ptr);
+
+	mov	r14, QWORD PTR [r14]
+$LN789@parsePatte:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 39   : 		_Init(_Str.c_str(), _Str.size(), _Getstate(_Mode));
+
+	xor	eax, eax
+
+; 362  : 		if (_Count > INT_MAX)
+
+	cmp	rbx, 2147483647				; 7fffffffH
+	ja	$LN1331@parsePatte
+
+; 365  : 			}
+; 366  : 
+; 367  : 		if (_Count != 0 && (_State & (_Noread | _Constant)) != (_Noread | _Constant))
+
+	test	rbx, rbx
+	je	SHORT $LN797@parsePatte
+
+; 368  : 			{	// finite buffer that can be read or written, set it up
+; 369  : 			const auto _Pnew = _Unfancy(_Al.allocate(_Count));
+
+	mov	rdx, rbx
+	lea	rcx, QWORD PTR sn$9[rbp-116]
+	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
+	mov	rdi, rax
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
+
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+
+	add	rbx, rbx
+	mov	r8, rbx
+	mov	rdx, r14
+	mov	rcx, rax
+	call	memcpy
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 371  : 			_Seekhigh = _Pnew + _Count;
+
+	lea	r9, QWORD PTR [rbx+rdi]
+	mov	QWORD PTR sn$9[rbp-128], r9
+
+; 372  : 
+; 373  : 			if (!(_State & _Noread))
+; 374  : 				{
+; 375  : 				_Mysb::setg(_Pnew, _Pnew, _Seekhigh);	// setup read buffer
+
+	mov	r8, rdi
 	mov	rdx, rdi
 	lea	rcx, QWORD PTR sn$9[rbp-232]
-	call	??0?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@H@Z ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
-	npad	1
+	call	QWORD PTR __imp_?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 376  : 				}
+; 377  : 
+; 378  : 			if (!(_State & _Constant))
+; 379  : 				{	// setup write buffer, and maybe read buffer
+; 380  : 				_Mysb::setp(_Pnew,
+
+	mov	r9, QWORD PTR sn$9[rbp-128]
+	mov	r8, rdi
+	mov	rdx, rdi
+	lea	rcx, QWORD PTR sn$9[rbp-232]
+	call	QWORD PTR __imp_?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+
+; 381  : 					(_State & (_Atend | _Append)) ? _Seekhigh : _Pnew,
+; 382  : 					_Seekhigh);
+; 383  : 
+; 384  : 				if (_State & _Noread)
+; 385  : 					{	// maintain "_Allocated == eback() points to buffer base" invariant
+; 386  : 					_Mysb::setg(_Pnew, nullptr, _Pnew);
+; 387  : 					}
+; 388  : 				}
+; 389  : 
+; 390  : 			_State |= _Allocated;
+
+	mov	eax, 1
+
+; 391  : 			}
+; 392  : 		else
+
+	mov	edi, DWORD PTR $T1[rsp]
+	jmp	SHORT $LN798@parsePatte
+$LN797@parsePatte:
+
+; 393  : 			{
+; 394  : 			_Seekhigh = nullptr;
+
+	mov	QWORD PTR sn$9[rbp-128], rax
+$LN798@parsePatte:
+
+; 397  : 		_Mystate = _State;
+
+	mov	DWORD PTR sn$9[rbp-120], eax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
 ; 549  : 			sn >> width;
@@ -14968,39 +16347,39 @@ $LL7@parsePatte:
 
 ; 1726 : 		return (this->_Myend() != this->_Mylast());
 
-	cmp	r14, rbx
+	cmp	r15, rsi
 
 ; 917  : 		if (_Has_unused_capacity())
 
-	je	SHORT $LN666@parsePatte
+	je	SHORT $LN816@parsePatte
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
 
-	vmovss	DWORD PTR [rbx], xmm0
+	vmovss	DWORD PTR [rsi], xmm0
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 905  : 		++this->_Mylast();
 
-	add	rbx, 4
-	mov	QWORD PTR r$5[rbp-240], rbx
+	add	rsi, 4
+	mov	QWORD PTR r$5[rbp-240], rsi
 
 ; 919  : 			return (_Emplace_back_with_unused_capacity(_STD forward<_Valty>(_Val)...));
 
-	jmp	SHORT $LN665@parsePatte
-$LN666@parsePatte:
+	jmp	SHORT $LN815@parsePatte
+$LN816@parsePatte:
 
 ; 920  : 			}
 ; 921  : 
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	lea	r8, QWORD PTR $T15[rbp-256]
-	mov	rdx, rbx
+	mov	rdx, rsi
 	lea	rcx, QWORD PTR r$5[rbp-248]
 	call	??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z ; std::vector<float,std::allocator<float> >::_Emplace_reallocate<float const &>
-	mov	r14, QWORD PTR r$5[rbp-232]
-	mov	rbx, QWORD PTR r$5[rbp-240]
-$LN665@parsePatte:
+	mov	r15, QWORD PTR r$5[rbp-232]
+	mov	rsi, QWORD PTR r$5[rbp-240]
+$LN815@parsePatte:
 	lea	rax, QWORD PTR sn$9[rbp-104]
 	mov	QWORD PTR this$[rbp-256], rax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
@@ -15009,7 +16388,8 @@ $LN665@parsePatte:
 
 	mov	rax, QWORD PTR sn$9[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	mov	QWORD PTR sn$9[rbp+rcx-256], r13
+	lea	rax, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR sn$9[rbp+rcx-256], rax
 	mov	rax, QWORD PTR sn$9[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
 	lea	edx, DWORD PTR [rcx-152]
@@ -15022,65 +16402,48 @@ $LN665@parsePatte:
 	npad	1
 	lea	rcx, QWORD PTR sn$9[rbp-224]
 	call	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-	lea	rax, QWORD PTR sn$9[rbp-104]
-	mov	QWORD PTR this$[rbp-256], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-
-; 38   : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@
-	mov	QWORD PTR sn$9[rbp-104], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-
-; 533  : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7ios_base@std@@6B@
-	mov	QWORD PTR sn$9[rbp-104], rax
-
-; 534  : 		_Ios_base_dtor(this);
-
 	lea	rcx, QWORD PTR sn$9[rbp-104]
-	call	QWORD PTR __imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z
+	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 547  : 		for (int j=2; j<row.size(); j++) {
+; 547  : 		for (auto j=2; j<row.size(); j++) {
 
-	inc	esi
-	movsxd	rdi, esi
+	inc	r13d
+	add	r12, 32					; 00000020H
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	rax, QWORD PTR row$2[rsp+8]
-	mov	rcx, QWORD PTR row$2[rsp]
-	sub	rax, rcx
-	sar	rax, 5
+	mov	rcx, QWORD PTR row$2[rsp+8]
+	mov	rdx, QWORD PTR row$2[rsp]
+	sub	rcx, rdx
+	sar	rcx, 5
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 547  : 		for (int j=2; j<row.size(); j++) {
+; 547  : 		for (auto j=2; j<row.size(); j++) {
 
-	cmp	rdi, rax
+	movsxd	rax, r13d
+	cmp	rax, rcx
 	jb	$LL7@parsePatte
-	mov	r12, QWORD PTR this$1$[rbp-256]
-	mov	r13, QWORD PTR this$1$[rbp-256]
 	vmovss	xmm1, DWORD PTR r$5[rsp]
-	mov	edi, DWORD PTR i$1$[rbp-256]
+	mov	r14, QWORD PTR this$1$[rbp-256]
+	mov	r12, QWORD PTR this$1$[rbp-256]
 $LN6@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1726 : 		return (this->_Myend() != this->_Mylast());
 
-	mov	rdx, QWORD PTR [r12+8]
-	cmp	QWORD PTR [r12+16], rdx
+	mov	rdx, QWORD PTR [r14+8]
+	cmp	QWORD PTR [r14+16], rdx
 
 ; 917  : 		if (_Has_unused_capacity())
 
-	je	SHORT $LN754@parsePatte
+	je	SHORT $LN899@parsePatte
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
 
-	mov	QWORD PTR $T13[rbp-256], rdx
+	mov	QWORD PTR $T12[rbp-256], rdx
 	vmovss	DWORD PTR [rdx], xmm1
 	vmovss	xmm0, DWORD PTR r$5[rsp+4]
 	vmovss	DWORD PTR [rdx+4], xmm0
@@ -15092,21 +16455,21 @@ $LN6@parsePatte:
 
 ; 905  : 		++this->_Mylast();
 
-	add	QWORD PTR [r12+8], 32			; 00000020H
+	add	QWORD PTR [r14+8], 32			; 00000020H
 
 ; 919  : 			return (_Emplace_back_with_unused_capacity(_STD forward<_Valty>(_Val)...));
 
-	jmp	SHORT $LN753@parsePatte
-$LN754@parsePatte:
+	jmp	SHORT $LN898@parsePatte
+$LN899@parsePatte:
 
 ; 920  : 			}
 ; 921  : 
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	lea	r8, QWORD PTR r$5[rsp]
-	mov	rcx, r12
+	mov	rcx, r14
 	call	??$_Emplace_reallocate@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAPEAVTileRow@@QEAV2@AEBV2@@Z ; std::vector<TileRow,std::allocator<TileRow> >::_Emplace_reallocate<TileRow const &>
-$LN753@parsePatte:
+$LN898@parsePatte:
 	vmovsd	xmm0, QWORD PTR height$7[rbp-256]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
@@ -15118,12 +16481,12 @@ $LN753@parsePatte:
 
 ; 1726 : 		return (this->_Myend() != this->_Mylast());
 
-	mov	rdx, QWORD PTR [r13+8]
-	cmp	QWORD PTR [r13+16], rdx
+	mov	rdx, QWORD PTR [r12+8]
+	cmp	QWORD PTR [r12+16], rdx
 
 ; 917  : 		if (_Has_unused_capacity())
 
-	je	SHORT $LN836@parsePatte
+	je	SHORT $LN981@parsePatte
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
@@ -15133,22 +16496,22 @@ $LN753@parsePatte:
 
 ; 905  : 		++this->_Mylast();
 
-	add	QWORD PTR [r13+8], 4
+	add	QWORD PTR [r12+8], 4
 
 ; 919  : 			return (_Emplace_back_with_unused_capacity(_STD forward<_Valty>(_Val)...));
 
-	jmp	SHORT $LN835@parsePatte
-$LN836@parsePatte:
+	jmp	SHORT $LN980@parsePatte
+$LN981@parsePatte:
 
 ; 920  : 			}
 ; 921  : 
 ; 922  : 		_Ty& _Result = *_Emplace_reallocate(this->_Mylast(), _STD forward<_Valty>(_Val)...);
 
 	lea	r8, QWORD PTR $T14[rbp-256]
-	mov	rcx, r13
+	mov	rcx, r12
 	call	??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z ; std::vector<float,std::allocator<float> >::_Emplace_reallocate<float>
 	npad	1
-$LN835@parsePatte:
+$LN980@parsePatte:
 	lea	rcx, QWORD PTR r$5[rbp-248]
 	call	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 	npad	1
@@ -15160,8 +16523,8 @@ $LN835@parsePatte:
 
 	mov	rax, QWORD PTR s1$10[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	lea	rsi, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
-	mov	QWORD PTR s1$10[rbp+rcx-256], rsi
+	lea	r15, OFFSET FLAT:??_7?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@6B@
+	mov	QWORD PTR s1$10[rbp+rcx-256], r15
 	mov	rax, QWORD PTR s1$10[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
 	lea	edx, DWORD PTR [rcx-152]
@@ -15174,35 +16537,17 @@ $LN835@parsePatte:
 	npad	1
 	lea	rcx, QWORD PTR s1$10[rbp-224]
 	call	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-	lea	rax, QWORD PTR s1$10[rbp-104]
-	mov	QWORD PTR this$[rbp-256], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-
-; 38   : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@
-	mov	QWORD PTR s1$10[rbp-104], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-
-; 533  : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7ios_base@std@@6B@
-	mov	QWORD PTR s1$10[rbp-104], rax
-
-; 534  : 		_Ios_base_dtor(this);
-
 	lea	rcx, QWORD PTR s1$10[rbp-104]
-	call	QWORD PTR __imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z
+	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 	npad	1
 	lea	rax, QWORD PTR s0$11[rbp-104]
 	mov	QWORD PTR this$[rbp-256], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
 ; 711  : 		{	// destroy the object
 
 	mov	rax, QWORD PTR s0$11[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
-	mov	QWORD PTR s0$11[rbp+rcx-256], rsi
+	mov	QWORD PTR s0$11[rbp+rcx-256], r15
 	mov	rax, QWORD PTR s0$11[rbp-256]
 	movsxd	rcx, DWORD PTR [rax+4]
 	lea	edx, DWORD PTR [rcx-152]
@@ -15215,25 +16560,8 @@ $LN835@parsePatte:
 	npad	1
 	lea	rcx, QWORD PTR s0$11[rbp-224]
 	call	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-	lea	rax, QWORD PTR s0$11[rbp-104]
-	mov	QWORD PTR this$[rbp-256], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios
-
-; 38   : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7?$basic_ios@_WU?$char_traits@_W@std@@@std@@6B@
-	mov	QWORD PTR s0$11[rbp-104], rax
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xiosbase
-
-; 533  : 		{	// destroy the object
-
-	mov	rax, QWORD PTR __imp_??_7ios_base@std@@6B@
-	mov	QWORD PTR s0$11[rbp-104], rax
-
-; 534  : 		_Ios_base_dtor(this);
-
 	lea	rcx, QWORD PTR s0$11[rbp-104]
-	call	QWORD PTR __imp_?_Ios_base_dtor@ios_base@std@@CAXPEAV12@@Z
+	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 	npad	1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
@@ -15241,7 +16569,7 @@ $LN835@parsePatte:
 
 	mov	rbx, QWORD PTR row$2[rsp]
 	test	rbx, rbx
-	je	SHORT $LN1219@parsePatte
+	je	SHORT $LN1357@parsePatte
 
 ; 1914 : 			{	// destroy and deallocate old array
 ; 1915 : 			_Destroy(this->_Myfirst(), this->_Mylast());
@@ -15255,9 +16583,8 @@ $LN835@parsePatte:
 
 ; 1134 : 	for (; _First != _Last; ++_First)
 
-	je	SHORT $LN976@parsePatte
-	npad	1
-$LL977@parsePatte:
+	je	SHORT $LN1111@parsePatte
+$LL1112@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
@@ -15270,9 +16597,9 @@ $LL977@parsePatte:
 
 	add	rbx, 32					; 00000020H
 	cmp	rbx, rdi
-	jne	SHORT $LL977@parsePatte
+	jne	SHORT $LL1112@parsePatte
 	mov	rbx, QWORD PTR row$2[rsp]
-$LN976@parsePatte:
+$LN1111@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1715 : 		return (static_cast<size_type>(this->_Myend() - this->_Myfirst()));
@@ -15289,7 +16616,7 @@ $LN976@parsePatte:
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN1034@parsePatte
+	jb	SHORT $LN1169@parsePatte
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -15319,8 +16646,8 @@ $LN976@parsePatte:
 
 	add	rax, -8
 	cmp	rax, 31
-	ja	$LN1031@parsePatte
-$LN1034@parsePatte:
+	ja	$LN1166@parsePatte
+$LN1169@parsePatte:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
@@ -15336,40 +16663,29 @@ $LN1034@parsePatte:
 ; 1919 : 			this->_Mylast() = pointer();
 ; 1920 : 			this->_Myend() = pointer();
 
-	xor	r14d, r14d
-	mov	QWORD PTR row$2[rsp+16], r14
-	mov	edi, DWORD PTR i$1$[rbp-256]
+	xor	r13d, r13d
+	mov	QWORD PTR row$2[rsp+16], r13
 
 ; 1913 : 		if (this->_Myfirst() != pointer())
 
 	jmp	SHORT $LN2@parsePatte
-$LN1219@parsePatte:
-	xor	r14d, r14d
+$LN1357@parsePatte:
+	xor	r13d, r13d
 $LN2@parsePatte:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 532  : 	for (int i=0; i<rowStrings.size(); i++) {		
+; 531  : 	for (const auto& rowString : rowStrings)			//for (auto i = 0; i < rowStrings.size(); i++) {
 
-	inc	edi
-	mov	DWORD PTR i$1$[rbp-256], edi
-	movsxd	rbx, edi
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+	mov	rbx, QWORD PTR <begin>$L0$1$[rbp-256]
+	add	rbx, 32					; 00000020H
+	mov	QWORD PTR <begin>$L0$1$[rbp-256], rbx
+	cmp	rbx, QWORD PTR <end>$L0$1$[rbp-256]
+	jne	$LN1359@parsePatte
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
 
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
+; 362  : 		if (_Count > INT_MAX)
 
-	mov	rax, QWORD PTR rowStrings$[rsp+8]
-	sub	rax, QWORD PTR rowStrings$[rsp]
-	sar	rax, 5
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 532  : 	for (int i=0; i<rowStrings.size(); i++) {		
-
-	cmp	rbx, rax
-	jb	$LL4@parsePatte
-
-; 536  : 		if (row.size() < 3)
-
-	mov	rsi, QWORD PTR str$[rbp-256]
+	mov	r15, QWORD PTR str$[rbp-256]
 $LN3@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
@@ -15377,7 +16693,7 @@ $LN3@parsePatte:
 
 	mov	rbx, QWORD PTR rowStrings$[rsp]
 	test	rbx, rbx
-	je	$LN1060@parsePatte
+	je	$LN1195@parsePatte
 
 ; 1914 : 			{	// destroy and deallocate old array
 ; 1915 : 			_Destroy(this->_Myfirst(), this->_Mylast());
@@ -15391,9 +16707,8 @@ $LN3@parsePatte:
 
 ; 1134 : 	for (; _First != _Last; ++_First)
 
-	je	SHORT $LN1098@parsePatte
-	npad	3
-$LL1099@parsePatte:
+	je	SHORT $LN1233@parsePatte
+$LL1234@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
@@ -15406,9 +16721,9 @@ $LL1099@parsePatte:
 
 	add	rbx, 32					; 00000020H
 	cmp	rbx, rdi
-	jne	SHORT $LL1099@parsePatte
+	jne	SHORT $LL1234@parsePatte
 	mov	rbx, QWORD PTR rowStrings$[rsp]
-$LN1098@parsePatte:
+$LN1233@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1715 : 		return (static_cast<size_type>(this->_Myend() - this->_Myfirst()));
@@ -15425,7 +16740,7 @@ $LN1098@parsePatte:
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	$LN1156@parsePatte
+	jb	$LN1291@parsePatte
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -15455,23 +16770,23 @@ $LN1098@parsePatte:
 
 	add	rax, -8
 	cmp	rax, 31
-	jbe	$LN1156@parsePatte
+	jbe	$LN1291@parsePatte
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	npad	1
-$LN305@parsePatte:
+$LN299@parsePatte:
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	npad	1
-$LN1031@parsePatte:
+$LN1166@parsePatte:
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	int	3
-$LN1196@parsePatte:
+$LN1332@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1913 : 		if (this->_Myfirst() != pointer())
 
 	mov	rbx, QWORD PTR row$2[rsp]
 	test	rbx, rbx
-	je	SHORT $LN340@parsePatte
+	je	SHORT $LN334@parsePatte
 
 ; 1914 : 			{	// destroy and deallocate old array
 ; 1915 : 			_Destroy(this->_Myfirst(), this->_Mylast());
@@ -15485,8 +16800,9 @@ $LN1196@parsePatte:
 
 ; 1134 : 	for (; _First != _Last; ++_First)
 
-	je	SHORT $LN378@parsePatte
-$LL379@parsePatte:
+	je	SHORT $LN372@parsePatte
+	npad	6
+$LL373@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
@@ -15499,9 +16815,9 @@ $LL379@parsePatte:
 
 	add	rbx, 32					; 00000020H
 	cmp	rbx, rdi
-	jne	SHORT $LL379@parsePatte
+	jne	SHORT $LL373@parsePatte
 	mov	rbx, QWORD PTR row$2[rsp]
-$LN378@parsePatte:
+$LN372@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1715 : 		return (static_cast<size_type>(this->_Myend() - this->_Myfirst()));
@@ -15518,7 +16834,7 @@ $LN378@parsePatte:
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN436@parsePatte
+	jb	SHORT $LN430@parsePatte
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -15548,10 +16864,10 @@ $LN378@parsePatte:
 
 	add	rax, -8
 	cmp	rax, 31
-	jbe	SHORT $LN436@parsePatte
+	jbe	SHORT $LN430@parsePatte
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	int	3
-$LN436@parsePatte:
+$LN430@parsePatte:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
@@ -15567,14 +16883,14 @@ $LN436@parsePatte:
 ; 1919 : 			this->_Mylast() = pointer();
 ; 1920 : 			this->_Myend() = pointer();
 
-	mov	QWORD PTR row$2[rsp+16], r14
-$LN340@parsePatte:
+	mov	QWORD PTR row$2[rsp+16], r13
+$LN334@parsePatte:
 
 ; 1913 : 		if (this->_Myfirst() != pointer())
 
 	mov	rbx, QWORD PTR rowStrings$[rsp]
 	test	rbx, rbx
-	je	SHORT $LN462@parsePatte
+	je	SHORT $LN456@parsePatte
 
 ; 1914 : 			{	// destroy and deallocate old array
 ; 1915 : 			_Destroy(this->_Myfirst(), this->_Mylast());
@@ -15588,9 +16904,8 @@ $LN340@parsePatte:
 
 ; 1134 : 	for (; _First != _Last; ++_First)
 
-	je	SHORT $LN500@parsePatte
-	npad	7
-$LL501@parsePatte:
+	je	SHORT $LN494@parsePatte
+$LL495@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
@@ -15603,9 +16918,9 @@ $LL501@parsePatte:
 
 	add	rbx, 32					; 00000020H
 	cmp	rbx, rdi
-	jne	SHORT $LL501@parsePatte
+	jne	SHORT $LL495@parsePatte
 	mov	rbx, QWORD PTR rowStrings$[rsp]
-$LN500@parsePatte:
+$LN494@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1715 : 		return (static_cast<size_type>(this->_Myend() - this->_Myfirst()));
@@ -15622,7 +16937,7 @@ $LN500@parsePatte:
 ; 201  : 	if (_Bytes >= _Big_allocation_threshold)
 
 	cmp	rdx, 4096				; 00001000H
-	jb	SHORT $LN558@parsePatte
+	jb	SHORT $LN552@parsePatte
 
 ; 115  : 	_Bytes += _Non_user_size;
 
@@ -15652,10 +16967,10 @@ $LN500@parsePatte:
 
 	add	rax, -8
 	cmp	rax, 31
-	jbe	SHORT $LN558@parsePatte
+	jbe	SHORT $LN552@parsePatte
 	call	QWORD PTR __imp__invalid_parameter_noinfo_noreturn
 	int	3
-$LN558@parsePatte:
+$LN552@parsePatte:
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
 
@@ -15671,8 +16986,8 @@ $LN558@parsePatte:
 ; 1919 : 			this->_Mylast() = pointer();
 ; 1920 : 			this->_Myend() = pointer();
 
-	mov	QWORD PTR rowStrings$[rsp+16], r14
-$LN462@parsePatte:
+	mov	QWORD PTR rowStrings$[rsp+16], r13
+$LN456@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
@@ -15685,7 +17000,7 @@ $LN462@parsePatte:
 
 	xor	eax, eax
 	jmp	SHORT $LN1@parsePatte
-$LN1156@parsePatte:
+$LN1291@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
 
 ; 207  : 	::operator delete(_Ptr, _Bytes);
@@ -15702,13 +17017,13 @@ $LN1156@parsePatte:
 ; 1919 : 			this->_Mylast() = pointer();
 ; 1920 : 			this->_Myend() = pointer();
 
-	mov	QWORD PTR rowStrings$[rsp+16], r14
-$LN1060@parsePatte:
+	mov	QWORD PTR rowStrings$[rsp+16], r13
+$LN1195@parsePatte:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
 ; 2460 : 		_Tidy_deallocate();
 
-	mov	rcx, rsi
+	mov	rcx, r15
 	call	?_Tidy_deallocate@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::_Tidy_deallocate
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
@@ -15719,7 +17034,7 @@ $LN1@parsePatte:
 
 ; 559  : }
 
-	add	rsp, 968				; 000003c8H
+	add	rsp, 984				; 000003d8H
 	pop	r15
 	pop	r14
 	pop	r13
@@ -15729,7 +17044,20 @@ $LN1@parsePatte:
 	pop	rbx
 	pop	rbp
 	ret	0
-$LN1220@parsePatte:
+$LN1333@parsePatte:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\sstream
+
+; 364  : 			_Xbad_alloc();
+
+	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
+	npad	1
+$LN1331@parsePatte:
+	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
+	npad	1
+$LN1334@parsePatte:
+	call	?_Xbad_alloc@std@@YAXXZ			; std::_Xbad_alloc
+	int	3
+$LN1358@parsePatte:
 ?parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z ENDP ; parsePattern
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -15744,24 +17072,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$0@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$0
 	mov	rcx, QWORD PTR str$[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -15779,26 +17108,27 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$9@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$9
-	mov	rcx, QWORD PTR _First$12[rdx]
+	mov	rcx, QWORD PTR _First$13[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$9@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$9
@@ -15815,24 +17145,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$1@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$1
 	lea	rcx, QWORD PTR rowStrings$[rdx]
 	jmp	??1?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::~vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >
@@ -15850,24 +17181,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$2@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$2
 	lea	rcx, QWORD PTR $T4[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -15885,24 +17217,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$3@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$3
 	lea	rcx, QWORD PTR row$2[rdx]
 	jmp	??1?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::~vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >
@@ -15920,24 +17253,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$4@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$4
 	lea	rcx, QWORD PTR $T3[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -15955,24 +17289,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$10
 	push	rbp
 	sub	rsp, 32					; 00000020H
@@ -15980,12 +17315,12 @@ offset$16 = 1064
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 1
 	test	eax, eax
-	je	SHORT $LN603@dtor$10
+	je	SHORT $LN597@dtor$10
 	and	DWORD PTR $T1[rbp], -2
 	lea	rcx, QWORD PTR s0$11[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN603@dtor$10:
+$LN597@dtor$10:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
@@ -16003,24 +17338,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$11@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$11
 	lea	rcx, QWORD PTR s0$11[rdx]
 	add	rcx, 32					; 00000020H
@@ -16039,24 +17375,61 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$13
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$13
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$12@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$12
 	lea	rcx, QWORD PTR s0$11[rdx]
 	add	rcx, 24
@@ -16075,24 +17448,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$5@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$5
 	lea	rcx, QWORD PTR s0$11[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -16110,76 +17484,41 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$13
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$14
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 2
 	test	eax, eax
-	je	SHORT $LN618@dtor$13
+	je	SHORT $LN664@dtor$14
 	and	DWORD PTR $T1[rbp], -3
 	lea	rcx, QWORD PTR s1$10[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN618@dtor$13:
+$LN664@dtor$14:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
-?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$13
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$14
-	lea	rcx, QWORD PTR s1$10[rdx]
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$14
 text$x	ENDS
 ;	COMDAT text$x
@@ -16194,28 +17533,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$15
 	lea	rcx, QWORD PTR s1$10[rdx]
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$15
 text$x	ENDS
 ;	COMDAT text$x
@@ -16230,24 +17570,98 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$17
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$17
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$16
+	lea	rcx, QWORD PTR s1$10[rdx]
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$16
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$6@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$6
 	lea	rcx, QWORD PTR s1$10[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -16265,29 +17679,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$16
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$18
 	lea	rcx, QWORD PTR r$5[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$16
+?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$18
 text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -16301,24 +17716,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$7@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$7
 	lea	rcx, QWORD PTR r$5[rdx]
 	jmp	??1TileRow@@QEAA@XZ
@@ -16336,112 +17752,41 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$17
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$19
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 4
 	test	eax, eax
-	je	SHORT $LN660@dtor$17
+	je	SHORT $LN758@dtor$19
 	and	DWORD PTR $T1[rbp], -5
 	lea	rcx, QWORD PTR sn$9[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN660@dtor$17:
+$LN758@dtor$19:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
-?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$17
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$18
-	lea	rcx, QWORD PTR sn$9[rdx]
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$18
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$19
-	lea	rcx, QWORD PTR sn$9[rdx]
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$19
 text$x	ENDS
 ;	COMDAT text$x
@@ -16456,24 +17801,135 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$20
+	lea	rcx, QWORD PTR sn$9[rdx]
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$20
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$22
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$22
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$21
+	lea	rcx, QWORD PTR sn$9[rdx]
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$21
+text$x	ENDS
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$8@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$8
 	lea	rcx, QWORD PTR sn$9[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -16491,137 +17947,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$20
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$23
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
 	add	rcx, 32					; 00000020H
 	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$20
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$21
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
-?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$21
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$22
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$22
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$23
-	mov	rcx, QWORD PTR $T13[rdx]
-	add	rcx, 8
-	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$23
 text$x	ENDS
 ;	COMDAT text$x
@@ -16636,28 +17985,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$24
-	lea	rcx, QWORD PTR r$5[rdx]
-	add	rcx, 8
-	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
+	mov	rcx, QWORD PTR this$[rdx]
+	sub	rcx, 152				; 00000098H
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$24
 text$x	ENDS
 ;	COMDAT text$x
@@ -16672,29 +18023,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$25
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+	mov	rcx, QWORD PTR $T12[rdx]
+	add	rcx, 8
+	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$25
 text$x	ENDS
 ;	COMDAT text$x
@@ -16709,29 +18060,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$26
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	lea	rcx, QWORD PTR r$5[rdx]
+	add	rcx, 8
+	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$26
 text$x	ENDS
 ;	COMDAT text$x
@@ -16746,27 +18097,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$27
 	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
+	sub	rcx, 152				; 00000098H
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$27
 text$x	ENDS
 ;	COMDAT text$x
@@ -16781,29 +18135,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$28
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$28
 text$x	ENDS
 ;	COMDAT text$x
@@ -16818,29 +18173,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$29
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$29
 text$x	ENDS
 ;	COMDAT text$x
@@ -16855,27 +18211,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$30
 	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
+	sub	rcx, 152				; 00000098H
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$30
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -16891,24 +18250,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$0@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$0
 	mov	rcx, QWORD PTR str$[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -16927,26 +18287,27 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$9@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$9
-	mov	rcx, QWORD PTR _First$12[rdx]
+	mov	rcx, QWORD PTR _First$13[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$9@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$9
@@ -16964,24 +18325,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$1@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$1
 	lea	rcx, QWORD PTR rowStrings$[rdx]
 	jmp	??1?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::~vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >
@@ -17000,24 +18362,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$2@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$2
 	lea	rcx, QWORD PTR $T4[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -17036,24 +18399,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$3@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$3
 	lea	rcx, QWORD PTR row$2[rdx]
 	jmp	??1?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@XZ ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::~vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >
@@ -17072,24 +18436,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$4@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$4
 	lea	rcx, QWORD PTR $T3[rdx]
 	jmp	??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
@@ -17108,24 +18473,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$10
 	push	rbp
 	sub	rsp, 32					; 00000020H
@@ -17133,12 +18499,12 @@ offset$16 = 1064
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 1
 	test	eax, eax
-	je	SHORT $LN603@dtor$10
+	je	SHORT $LN597@dtor$10
 	and	DWORD PTR $T1[rbp], -2
 	lea	rcx, QWORD PTR s0$11[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN603@dtor$10:
+$LN597@dtor$10:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
@@ -17157,24 +18523,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$11@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$11
 	lea	rcx, QWORD PTR s0$11[rdx]
 	add	rcx, 32					; 00000020H
@@ -17194,24 +18561,62 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$13
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$13
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$12@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$12
 	lea	rcx, QWORD PTR s0$11[rdx]
 	add	rcx, 24
@@ -17231,24 +18636,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$5@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$5
 	lea	rcx, QWORD PTR s0$11[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -17267,77 +18673,41 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$13
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$14
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 2
 	test	eax, eax
-	je	SHORT $LN618@dtor$13
+	je	SHORT $LN664@dtor$14
 	and	DWORD PTR $T1[rbp], -3
 	lea	rcx, QWORD PTR s1$10[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN618@dtor$13:
+$LN664@dtor$14:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
-?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$13
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$14
-	lea	rcx, QWORD PTR s1$10[rdx]
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$14
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17353,28 +18723,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$15
 	lea	rcx, QWORD PTR s1$10[rdx]
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$15
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17390,24 +18761,100 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$17
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$17
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$16
+	lea	rcx, QWORD PTR s1$10[rdx]
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$16
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$6@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$6
 	lea	rcx, QWORD PTR s1$10[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -17426,29 +18873,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$16
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$18
 	lea	rcx, QWORD PTR r$5[rdx]
 	add	rcx, 8
 	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
-?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$16
+?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$18
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
@@ -17463,24 +18911,25 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$7@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$7
 	lea	rcx, QWORD PTR r$5[rdx]
 	jmp	??1TileRow@@QEAA@XZ
@@ -17499,114 +18948,41 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$17
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$19
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 	mov	eax, DWORD PTR $T1[rbp]
 	and	eax, 4
 	test	eax, eax
-	je	SHORT $LN660@dtor$17
+	je	SHORT $LN758@dtor$19
 	and	DWORD PTR $T1[rbp], -5
 	lea	rcx, QWORD PTR sn$9[rbp]
 	add	rcx, 152				; 00000098H
 	call	QWORD PTR __imp_??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-$LN660@dtor$17:
+$LN758@dtor$19:
 	add	rsp, 32					; 00000020H
 	pop	rbp
 	ret	0
-?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$17
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$18
-	lea	rcx, QWORD PTR sn$9[rdx]
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$18
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$19
-	lea	rcx, QWORD PTR sn$9[rdx]
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$19
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17622,24 +18998,138 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$20
+	lea	rcx, QWORD PTR sn$9[rdx]
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$20
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$22
+	mov	rcx, QWORD PTR this$[rdx]
+	rex_jmp	QWORD PTR __imp_??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$22
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$21
+	lea	rcx, QWORD PTR sn$9[rdx]
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$21
+text$x	ENDS
+; Function compile flags: /Ogtp
+;	COMDAT text$x
+text$x	SEGMENT
+$T1 = 32
+row$2 = 40
+rowStrings$ = 64
+$T3 = 88
+$T4 = 88
+r$5 = 120
+width$6 = 152
+this$1$ = 160
+this$1$ = 168
+height$7 = 176
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$8@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$8
 	lea	rcx, QWORD PTR sn$9[rdx]
 	jmp	??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ
@@ -17658,140 +19148,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$20
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
+?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$23
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
 	add	rcx, 32					; 00000020H
 	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
-?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$20
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$21
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
-?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$21
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$22
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
-?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$22
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-row$2 = 40
-rowStrings$ = 64
-$T3 = 88
-$T4 = 88
-r$5 = 120
-width$6 = 152
-this$1$ = 160
-this$1$ = 168
-height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
-?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$23
-	mov	rcx, QWORD PTR $T13[rdx]
-	add	rcx, 8
-	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$23
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17807,28 +19187,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$24
-	lea	rcx, QWORD PTR r$5[rdx]
-	add	rcx, 8
-	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
+	mov	rcx, QWORD PTR this$[rdx]
+	sub	rcx, 152				; 00000098H
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$24
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17844,29 +19226,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$25
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+	mov	rcx, QWORD PTR $T12[rdx]
+	add	rcx, 8
+	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$25
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17882,29 +19264,29 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$26
-	mov	rcx, QWORD PTR this$[rdx]
-	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	lea	rcx, QWORD PTR r$5[rdx]
+	add	rcx, 8
+	jmp	??1?$vector@MV?$allocator@M@std@@@std@@QEAA@XZ ; std::vector<float,std::allocator<float> >::~vector<float,std::allocator<float> >
 ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$26
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17920,27 +19302,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$27
 	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
+	sub	rcx, 152				; 00000098H
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$27
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17956,29 +19341,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$28
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
-	add	rcx, 32					; 00000020H
-	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$28
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -17994,29 +19380,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$29
 	mov	rcx, QWORD PTR this$[rdx]
 	sub	rcx, 152				; 00000098H
-	add	rcx, 24
-	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
+	add	rcx, 32					; 00000020H
+	rex_jmp	QWORD PTR __imp_??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
 ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$29
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -18032,27 +19419,30 @@ width$6 = 152
 this$1$ = 160
 this$1$ = 168
 height$7 = 176
-$T8 = 184
-sn$9 = 192
-s1$10 = 448
-s0$11 = 704
-str$ = 1040
-i$1$ = 1048
-_First$12 = 1048
-pat$ = 1048
-$T13 = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-this$ = 1056
-$T14 = 1056
-$T15 = 1056
-offset$16 = 1064
+<end>$L0$1$ = 184
+$T8 = 192
+sn$9 = 208
+s1$10 = 464
+s0$11 = 720
+str$ = 1056
+$T12 = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+this$ = 1064
+_First$13 = 1064
+$T14 = 1064
+$T15 = 1064
+pat$ = 1064
+<begin>$L0$1$ = 1072
+offset$16 = 1080
 ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA PROC ; `parsePattern'::`1'::dtor$30
 	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1ios_base@std@@UEAA@XZ
+	sub	rcx, 152				; 00000098H
+	add	rcx, 24
+	jmp	??1?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAA@XZ ; std::basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::~basic_stringbuf<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >
 ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA ENDP ; `parsePattern'::`1'::dtor$30
 text$x	ENDS
 ; Function compile flags: /Ogtp
@@ -18984,6 +20374,38 @@ this$ = 8
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+;	COMDAT ?_Unchecked_end@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ
+_TEXT	SEGMENT
+this$ = 8
+?_Unchecked_end@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Unchecked_end, COMDAT
+
+; 1689 : 		return (this->_Mylast());
+
+	mov	rax, QWORD PTR [rcx+8]
+
+; 1690 : 		}
+
+	ret	0
+?_Unchecked_end@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Unchecked_end
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+;	COMDAT ?_Unchecked_begin@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ
+_TEXT	SEGMENT
+this$ = 8
+?_Unchecked_begin@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ PROC ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Unchecked_begin, COMDAT
+
+; 1679 : 		return (this->_Myfirst());
+
+	mov	rax, QWORD PTR [rcx]
+
+; 1680 : 		}
+
+	ret	0
+?_Unchecked_begin@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@XZ ENDP ; std::vector<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >,std::allocator<std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> > > >::_Unchecked_begin
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
@@ -19768,14 +21190,14 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -19794,7 +21216,7 @@ tokens$ = 664
 delimiters$ = 672
 ?tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z PROC ; tokenize, COMDAT
 
-; 514  : static void tokenize(const std::wstring& str, std::vector<std::wstring>& tokens, const std::wstring& delimiters) {
+; 513  : static void tokenize(const std::wstring& str, std::vector<std::wstring>& tokens, const std::wstring& delimiters) {
 
 	mov	rax, rsp
 	mov	QWORD PTR [rax+24], r8
@@ -19818,14 +21240,14 @@ delimiters$ = 672
 	mov	esi, r13d
 	mov	DWORD PTR $T1[rsp], r13d
 
-; 515  : 	std::wstring::size_type lastPos = str.find_first_not_of(delimiters, 0);
+; 514  : 	std::wstring::size_type lastPos = str.find_first_not_of(delimiters, 0);
 
 	xor	r8d, r8d
 	mov	rdx, r15
 	call	?find_first_not_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z ; std::basic_string<wchar_t,std::char_traits<wchar_t>,std::allocator<wchar_t> >::find_first_not_of
 	mov	rdi, rax
 
-; 516  : 	std::wstring::size_type pos = str.find_first_of(delimiters, lastPos);
+; 515  : 	std::wstring::size_type pos = str.find_first_of(delimiters, lastPos);
 
 	mov	r8, rax
 	mov	rdx, r15
@@ -19834,8 +21256,8 @@ delimiters$ = 672
 	mov	rbx, rax
 $LL2@tokenize:
 
-; 517  : 	
-; 518  : 	while (std::wstring::npos != pos || std::wstring::npos != lastPos) {
+; 516  : 	
+; 517  : 	while (std::wstring::npos != pos || std::wstring::npos != lastPos) {
 
 	cmp	rbx, -1
 	jne	SHORT $LN4@tokenize
@@ -19873,7 +21295,7 @@ $LN4@tokenize:
 	jb	$LN374@tokenize
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 519  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
+; 518  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
 
 	mov	r8, rbx
 	sub	r8, rdi
@@ -19973,7 +21395,7 @@ $LN66@tokenize:
 $LN65@tokenize:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 519  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
+; 518  : 		tokens.push_back(str.substr(lastPos, pos - lastPos));
 
 	and	esi, -2
 	mov	DWORD PTR $T1[rsp], esi
@@ -20179,21 +21601,21 @@ $LN417@tokenize:
 	jae	SHORT $LN264@tokenize
 	mov	rcx, r15
 	mov	rax, rsi
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r15, r15
 	je	SHORT $LN369@tokenize
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	edx, WORD PTR [rdi]
 $LL290@tokenize:
 	cmp	WORD PTR [rax], dx
 	je	SHORT $LN367@tokenize
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -20355,14 +21777,14 @@ $LN421@tokenize:
 	jae	SHORT $LN323@tokenize
 	mov	rcx, r15
 	mov	rax, rsi
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r15, r15
 	je	SHORT $LN348@tokenize
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	edx, WORD PTR [rbx]
 	npad	4
@@ -20370,7 +21792,7 @@ $LL349@tokenize:
 	cmp	WORD PTR [rax], dx
 	je	SHORT $LN373@tokenize
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -20385,7 +21807,7 @@ $LN348@tokenize:
 $LN373@tokenize:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 522  : 	}
+; 521  : 	}
 
 	sub	rbx, r14
 	sar	rbx, 1
@@ -20411,7 +21833,7 @@ $LN3@tokenize:
 	vzeroupper
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 523  : }
+; 522  : }
 
 	mov	rbx, QWORD PTR [rsp+680]
 	add	rsp, 592				; 00000250H
@@ -20497,6 +21919,14 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z
 _TEXT	SEGMENT
 low$ = 240
@@ -20504,20 +21934,22 @@ high$ = 248
 id$ = 256
 pos$ = 264
 total$ = 272
-tv790 = 280
+tv728 = 280
 arr$ = 280
-tv803 = 288
+tv739 = 288
 size$ = 288
 var$ = 296
 rand$ = 304
 ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z PROC ; rowcol, COMDAT
 
-; 326  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
 	mov	rax, rsp
-	push	rbx
+	mov	QWORD PTR [rax+16], rbx
+	mov	QWORD PTR [rax+24], rbp
 	push	rsi
 	push	rdi
+	push	r12
 	push	r14
 	push	r15
 	sub	rsp, 192				; 000000c0H
@@ -20525,446 +21957,457 @@ rand$ = 304
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	r15, QWORD PTR arr$[rsp]
+	mov	r12, QWORD PTR arr$[rsp]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 326  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
-	mov	r14, r8
+	mov	r15, r8
 	vmovaps	XMMWORD PTR [rax-56], xmm6
-	mov	rdi, rdx
+	mov	rbp, rdx
 	vmovaps	XMMWORD PTR [rax-72], xmm7
-	mov	rsi, rcx
-	vmovaps	XMMWORD PTR [rax-88], xmm8
+	mov	r14, rcx
+
+; 327  : 	float h = total * size;
+
+	vmovss	xmm7, DWORD PTR size$[rsp]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	r9, QWORD PTR [r15]
-	mov	rax, QWORD PTR [r15+8]
-	sub	rax, r9
-	vmovaps	XMMWORD PTR [rsp+96], xmm11
-	sar	rax, 2
-	vxorps	xmm4, xmm4, xmm4
+	mov	rsi, QWORD PTR [r12]
+	mov	rdi, QWORD PTR [r12+8]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 326  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
+; 327  : 	float h = total * size;
 
-	vmovaps	xmm11, xmm3
+	vmulss	xmm6, xmm7, DWORD PTR total$[rsp]
+	vmovaps	XMMWORD PTR [rax-120], xmm10
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
-; 327  : 	float num = arr.size();
+; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	vcvtsi2ss xmm4, xmm4, rax
-	test	rax, rax
-	jns	SHORT $LN103@rowcol
-	vaddss	xmm4, xmm4, DWORD PTR __real@5f800000
-$LN103@rowcol:
+	sub	rdi, rsi
+	vmovaps	XMMWORD PTR [rsp+48], xmm14
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 328  : 	float h = total * size;
+; 328  : 	float y = pos / h;
 
-	vmovss	xmm7, DWORD PTR size$[rsp]
-	vmulss	xmm2, xmm7, DWORD PTR total$[rsp]
+	vdivss	xmm0, xmm3, xmm6
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
-; 329  : 	float y = pos / h;
+; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	vdivss	xmm1, xmm11, xmm2
-	vcvttss2si ecx, xmm1
-	vxorps	xmm8, xmm8, xmm8
+	sar	rdi, 2
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 330  : 	float yi = float(FASTFLOOR(y)); // group ID
+; 325  : static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
 
-	vcomiss	xmm8, xmm1
-	vxorps	xmm5, xmm5, xmm5
-	lea	eax, DWORD PTR [rcx-1]
-	mov	QWORD PTR [rsp+248], r12
-	cmovbe	eax, ecx
+	vmovaps	xmm14, xmm3
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 331  : 	y = pos - yi * h; // pos within group
-; 332  : 
-; 333  : 	float sumY = 0.f;
-; 334  : 	float tileHeight = 0.f;
-; 335  : 	int cur = 0;	
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 330  : 	y = pos - yi * h; // pos within group
+
+	vmulss	xmm4, xmm0, xmm6
+
+; 331  : 
+; 332  : 	float sumY = 0.f;
+; 333  : 	float tileHeight = 0.f;
+; 334  : 	auto cur = 0;	
 
 	xor	ebx, ebx
+	vsubss	xmm1, xmm14, xmm4
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 336  : 	while (cur < num) {		
+; 123  : 	return (_CSTD floorf(_Xx));
 
-	vcomiss	xmm4, xmm8
-	vcvtsi2ss xmm5, xmm5, eax
-	vmulss	xmm2, xmm5, xmm2
-	vsubss	xmm1, xmm11, xmm2
-	vxorps	xmm3, xmm3, xmm3
+	vmovaps	xmm3, xmm0
+	vxorps	xmm10, xmm10, xmm10
+	vxorps	xmm2, xmm2, xmm2
 	vxorps	xmm6, xmm6, xmm6
-	jbe	SHORT $LN102@rowcol
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 335  : 	while (cur < num) {		
+
+	test	rdi, rdi
+	je	SHORT $LN102@rowcol
+	npad	1
 $LL2@rowcol:
 
-; 337  : 		tileHeight = arr[cur] * size;
+; 336  : 		tileHeight = arr[cur] * size;
 
-	vmulss	xmm6, xmm7, DWORD PTR [r9]
+	vmulss	xmm6, xmm7, DWORD PTR [rsi]
 
-; 338  : 		if (y < sumY + tileHeight)
+; 337  : 		if (y < sumY + tileHeight)
 
-	vaddss	xmm0, xmm6, xmm3
+	vaddss	xmm0, xmm6, xmm2
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN98@rowcol
 
-; 339  : 			break;		
-; 340  : 		sumY += tileHeight;
-
-	vmovaps	xmm3, xmm0
-
-; 341  : 		cur++;
+; 338  : 			break;		
+; 339  : 		sumY += tileHeight;
+; 340  : 		cur++;
 
 	inc	ebx
-	add	r9, 4
-	vxorps	xmm0, xmm0, xmm0
-	vcvtsi2ss xmm0, xmm0, ebx
-	vcomiss	xmm4, xmm0
-	ja	SHORT $LL2@rowcol
+	add	rsi, 4
+	movsxd	rax, ebx
+	vmovaps	xmm2, xmm0
+	cmp	rax, rdi
+	jb	SHORT $LL2@rowcol
 $LN98@rowcol:
 
-; 342  : 	}
-; 343  : 	if (cur < 0 || cur >= num) // Necessary due floating point error
+; 341  : 	}
+; 342  : 	if (cur < 0 || cur >= num) // Necessary due floating point error
 
 	test	ebx, ebx
 	js	$LN6@rowcol
 $LN102@rowcol:
-	vxorps	xmm1, xmm1, xmm1
-	vcvtsi2ss xmm1, xmm1, ebx
-	vcomiss	xmm1, xmm4
-	mov	r12d, ebx
+	movsxd	rax, ebx
+	mov	esi, ebx
+	cmp	rax, rdi
 	jae	$LN6@rowcol
 
-; 345  : 
-; 346  : 	id = yi * num + cur;
+; 344  : 
+; 345  : 	id = yi * num + cur;
 
-	mov	QWORD PTR [rsp+240], rbp
-	mov	QWORD PTR [rsp+256], r13
+	vmovaps	XMMWORD PTR [rsp+144], xmm8
 	vmovaps	XMMWORD PTR [rsp+128], xmm9
-	vmovaps	XMMWORD PTR [rsp+112], xmm10
+	vmovaps	XMMWORD PTR [rsp+96], xmm11
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, rdi
+	test	rdi, rdi
+	jns	SHORT $LN103@rowcol
+	vaddss	xmm0, xmm0, DWORD PTR __real@5f800000
+$LN103@rowcol:
 
-; 347  : 
-; 348  : 	// Variance
-; 349  : 	// ----------- To determine max var
-; 350  : 	// ----------- If we rose
-; 351  : 	// ----------- eTop -> neTop
-; 352  : 	//    x
-; 353  : 	// ----------- eBot -> neBot
-; 354  : 	// ----------- If we droped
-; 355  : 	// ----------- To determine max var
-; 356  : 
-; 357  : 	float eBot = yi * h + sumY;	
-; 358  : 	float eTop = eBot + tileHeight;
-; 359  : 
-; 360  : 	if (var > 0.0001f) {
+; 346  : 
+; 347  : 	// Variance
+; 348  : 	// ----------- To determine max var
+; 349  : 	// ----------- If we rose
+; 350  : 	// ----------- eTop -> neTop
+; 351  : 	//    x
+; 352  : 	// ----------- eBot -> neBot
+; 353  : 	// ----------- If we droped
+; 354  : 	// ----------- To determine max var
+; 355  : 
+; 356  : 	float eBot = yi * h + sumY;	
+; 357  : 	float eTop = eBot + tileHeight;
+; 358  : 
+; 359  : 	if (var > 0.0001f) {
 
-	vmovss	xmm10, DWORD PTR var$[rsp]
-	vcomiss	xmm10, DWORD PTR __real@38d1b717
+	vmovss	xmm9, DWORD PTR var$[rsp]
+	vcomiss	xmm9, DWORD PTR __real@38d1b717
+	vmulss	xmm1, xmm0, xmm3
+	mov	QWORD PTR [rsp+240], r13
 	vmovaps	XMMWORD PTR [rsp+80], xmm12
-	vmovaps	XMMWORD PTR [rsp+64], xmm13
-	vmulss	xmm0, xmm5, xmm4
-	vaddss	xmm1, xmm0, xmm1
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, ebx
+	vaddss	xmm1, xmm1, xmm0
 	vcvttss2si eax, xmm1
-	vaddss	xmm9, xmm2, xmm3
-	vmovaps	XMMWORD PTR [rsp+48], xmm14
+	vaddss	xmm8, xmm4, xmm2
+	vmovaps	XMMWORD PTR [rsp+64], xmm13
+	mov	DWORD PTR [r15], eax
 	vmovaps	XMMWORD PTR [rsp+32], xmm15
-	mov	DWORD PTR [r8], eax
-	vaddss	xmm12, xmm9, xmm6
+	vaddss	xmm11, xmm8, xmm6
 	jbe	$LN7@rowcol
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1736 : 		return (this->_Myfirst()[_Pos]);
 
-	mov	rcx, QWORD PTR [r15]
+	mov	rcx, QWORD PTR [r12]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 35   : 	if (n-1 < 0) return m-1;
+; 34   : 	if (n-1 < 0) return m-1;
 
 	lea	edx, DWORD PTR [rbx-1]
 	vmovss	xmm1, DWORD PTR rand$[rsp]
 
-; 361  : 		float n;
-; 362  : 		
-; 363  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
+; 360  : 		float n;
+; 361  : 		
+; 362  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
 
 	test	edx, edx
 
-; 35   : 	if (n-1 < 0) return m-1;
+; 34   : 	if (n-1 < 0) return m-1;
 
-	mov	DWORD PTR tv803[rsp], edx
-	vcvttss2si ebp, xmm4
+	mov	DWORD PTR tv739[rsp], edx
 
-; 361  : 		float n;
-; 362  : 		
-; 363  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
+; 360  : 		float n;
+; 361  : 		
+; 362  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
 
-	mov	eax, ebp
-	cmovns	eax, ebx
+	mov	eax, edi
+	cmovns	eax, esi
 	cdqe
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm1, xmm1, xmm1
-	vcvtss2sd xmm0, xmm9, xmm9
+	vcvtss2sd xmm0, xmm8, xmm8
 	vmulsd	xmm0, xmm0, QWORD PTR __real@403f666666666666
 
-; 361  : 		float n;
-; 362  : 		
-; 363  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
+; 360  : 		float n;
+; 361  : 		
+; 362  : 		float bTileHeight = arr[STEPDOWN(cur, num)]*size;
 
-	vmulss	xmm14, xmm7, DWORD PTR [rcx+rax*4-4]
+	vmulss	xmm13, xmm7, DWORD PTR [rcx+rax*4-4]
 
-; 28   : 	return (n + 1) % m;
+; 27   : 	return (n + 1) % m;
 
 	lea	eax, DWORD PTR [rbx+1]
 	cdq
-	idiv	ebp
+	idiv	edi
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
-	vmovsd	QWORD PTR tv790[rsp], xmm1
+	vmovsd	QWORD PTR tv728[rsp], xmm1
 
-; 28   : 	return (n + 1) % m;
+; 27   : 	return (n + 1) % m;
 
 	movsxd	r13, edx
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vaddsd	xmm1, xmm0, xmm1
 	vcvtsd2ss xmm0, xmm1, xmm1
 
-; 364  : 		float tTileHeight = arr[STEPUP(cur, num)]*size;
+; 363  : 		float tTileHeight = arr[STEPUP(cur, num)]*size;
 
-	vmulss	xmm13, xmm7, DWORD PTR [rcx+r13*4]
+	vmulss	xmm12, xmm7, DWORD PTR [rcx+r13*4]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 365  : 
-; 366  : 		n = noise(eBot, rand);
-; 367  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
+; 364  : 
+; 365  : 		n = noise(eBot, rand);
+; 366  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
 
-	vcmpltss xmm1, xmm8, xmm0
-	vblendvps xmm1, xmm14, xmm6, xmm1
+	vcmpltss xmm1, xmm10, xmm0
+	vblendvps xmm1, xmm13, xmm6, xmm1
 	vmulss	xmm0, xmm1, xmm0
-	vmulss	xmm2, xmm0, xmm10
+	vmulss	xmm2, xmm0, xmm9
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
-	vcvtss2sd xmm1, xmm12, xmm12
+	vcvtss2sd xmm1, xmm11, xmm11
 	vmulsd	xmm0, xmm1, QWORD PTR __real@403f666666666666
 
-; 365  : 
-; 366  : 		n = noise(eBot, rand);
-; 367  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
+; 364  : 
+; 365  : 		n = noise(eBot, rand);
+; 366  : 		float neBot = eBot + (n>0 ? tileHeight : bTileHeight) * n * var;		
 
-	vaddss	xmm15, xmm2, xmm9
+	vaddss	xmm15, xmm2, xmm8
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
-	vaddsd	xmm2, xmm0, QWORD PTR tv790[rsp]
+	vaddsd	xmm2, xmm0, QWORD PTR tv728[rsp]
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 368  : 		n = noise(eTop, rand);
-; 369  : 		float neTop = eTop + (n<0 ? tileHeight : tTileHeight) * n * var;
-; 370  : 
-; 371  : 		if (pos < neBot) { // We droped one cur down
+; 367  : 		n = noise(eTop, rand);
+; 368  : 		float neTop = eTop + (n<0 ? tileHeight : tTileHeight) * n * var;
+; 369  : 
+; 370  : 		if (pos < neBot) { // We droped one cur down
 
-	vcomiss	xmm15, xmm11
-	vcmpltss xmm1, xmm0, xmm8
-	vblendvps xmm1, xmm13, xmm6, xmm1
+	vcomiss	xmm15, xmm14
+	vcmpltss xmm1, xmm0, xmm10
+	vblendvps xmm1, xmm12, xmm6, xmm1
 	vmulss	xmm0, xmm1, xmm0
-	vmulss	xmm2, xmm0, xmm10
-	vaddss	xmm6, xmm2, xmm12
+	vmulss	xmm2, xmm0, xmm9
+	vaddss	xmm6, xmm2, xmm11
 	jbe	SHORT $LN9@rowcol
 
-; 372  : 			id--;
+; 371  : 			id--;
 
-	dec	DWORD PTR [r14]
+	dec	DWORD PTR [r15]
 
-; 373  : 			cur = STEPDOWN(cur, num);
-; 374  : 			low = eBot-bTileHeight;
+; 372  : 			cur = STEPDOWN(cur, num);
+; 373  : 			low = eBot-bTileHeight;
 
-	mov	ebx, ebp
-	cmp	DWORD PTR tv803[rsp], 0
-	vsubss	xmm0, xmm9, xmm14
-	vmovss	DWORD PTR [rsi], xmm0
+	mov	ebx, edi
+	cmp	DWORD PTR tv739[rsp], 0
+	vsubss	xmm0, xmm8, xmm13
+	vmovss	DWORD PTR [r14], xmm0
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, QWORD PTR __real@403f666666666666
-	vaddsd	xmm2, xmm1, QWORD PTR tv790[rsp]
+	vaddsd	xmm2, xmm1, QWORD PTR tv728[rsp]
 
-; 373  : 			cur = STEPDOWN(cur, num);
-; 374  : 			low = eBot-bTileHeight;
+; 372  : 			cur = STEPDOWN(cur, num);
+; 373  : 			low = eBot-bTileHeight;
 
-	cmovge	ebx, r12d
+	cmovge	ebx, esi
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtsd2ss xmm0, xmm2, xmm2
 
-; 373  : 			cur = STEPDOWN(cur, num);
-; 374  : 			low = eBot-bTileHeight;
+; 372  : 			cur = STEPDOWN(cur, num);
+; 373  : 			low = eBot-bTileHeight;
 
 	dec	ebx
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 375  : 			n = noise(low, rand);
-; 376  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
+; 374  : 			n = noise(low, rand);
+; 375  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
 
-	vcomiss	xmm0, xmm8
-	ja	SHORT $LN17@rowcol
+	vcomiss	xmm0, xmm10
+	ja	SHORT $LN15@rowcol
 
-; 35   : 	if (n-1 < 0) return m-1;
+; 34   : 	if (n-1 < 0) return m-1;
 
 	lea	eax, DWORD PTR [rbx-1]
 
-; 375  : 			n = noise(low, rand);
-; 376  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
+; 374  : 			n = noise(low, rand);
+; 375  : 			low += (n>0 ? bTileHeight : arr[STEPDOWN(cur, num)]*size) * n * var;
 
 	test	eax, eax
-	mov	rax, QWORD PTR [r15]
-	cmovns	ebp, ebx
-	movsxd	rcx, ebp
-	vmulss	xmm14, xmm7, DWORD PTR [rax+rcx*4-4]
-$LN17@rowcol:
-	vmulss	xmm0, xmm14, xmm0
-	vmulss	xmm1, xmm0, xmm10
-	vaddss	xmm2, xmm1, DWORD PTR [rsi]
-	vmovss	DWORD PTR [rsi], xmm2
+	mov	rax, QWORD PTR [r12]
+	cmovns	edi, ebx
+	movsxd	rcx, edi
+	vmulss	xmm13, xmm7, DWORD PTR [rax+rcx*4-4]
+$LN15@rowcol:
+	vmulss	xmm0, xmm13, xmm0
+	vmulss	xmm1, xmm0, xmm9
+	vaddss	xmm2, xmm1, DWORD PTR [r14]
+	vmovss	DWORD PTR [r14], xmm2
 
-; 377  : 			high = neBot;				
+; 376  : 			high = neBot;				
 
-	vmovss	DWORD PTR [rdi], xmm15
+	vmovss	DWORD PTR [rbp], xmm15
 	jmp	SHORT $LN8@rowcol
 $LN9@rowcol:
 
-; 378  : 
-; 379  : 		} else if (pos > neTop) { // We rose one cur up
+; 377  : 
+; 378  : 		} else if (pos > neTop) { // We rose one cur up
 
-	vcomiss	xmm11, xmm6
+	vcomiss	xmm14, xmm6
 	jbe	SHORT $LN11@rowcol
 
-; 380  : 			id++;
+; 379  : 			id++;
 
-	inc	DWORD PTR [r14]
+	inc	DWORD PTR [r15]
 
-; 381  : 			cur = STEPUP(cur, num);
+; 380  : 			cur = STEPUP(cur, num);
 
 	mov	ebx, r13d
 
-; 382  : 			high = eTop+tTileHeight;
+; 381  : 			high = eTop+tTileHeight;
 
-	vaddss	xmm0, xmm13, xmm12
-	vmovss	DWORD PTR [rdi], xmm0
+	vaddss	xmm0, xmm12, xmm11
+	vmovss	DWORD PTR [rbp], xmm0
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, QWORD PTR __real@403f666666666666
-	vaddsd	xmm2, xmm1, QWORD PTR tv790[rsp]
+	vaddsd	xmm2, xmm1, QWORD PTR tv728[rsp]
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 383  : 			n = noise(high, rand);
-; 384  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
+; 382  : 			n = noise(high, rand);
+; 383  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
 
-	vcomiss	xmm8, xmm0
-	ja	SHORT $LN19@rowcol
+	vcomiss	xmm10, xmm0
+	ja	SHORT $LN17@rowcol
 
-; 28   : 	return (n + 1) % m;
+; 27   : 	return (n + 1) % m;
 
 	lea	eax, DWORD PTR [r13+1]
 	cdq
-	idiv	ebp
+	idiv	edi
 
-; 383  : 			n = noise(high, rand);
-; 384  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
+; 382  : 			n = noise(high, rand);
+; 383  : 			high += (n<0 ? tTileHeight : arr[STEPUP(cur, num)]*size) * n * var;
 
-	mov	rax, QWORD PTR [r15]
+	mov	rax, QWORD PTR [r12]
 	movsxd	rcx, edx
-	vmulss	xmm13, xmm7, DWORD PTR [rax+rcx*4]
-$LN19@rowcol:
-	vmulss	xmm0, xmm13, xmm0
-	vmulss	xmm1, xmm0, xmm10
-	vaddss	xmm2, xmm1, DWORD PTR [rdi]
-	vmovss	DWORD PTR [rdi], xmm2
+	vmulss	xmm12, xmm7, DWORD PTR [rax+rcx*4]
+$LN17@rowcol:
+	vmulss	xmm0, xmm12, xmm0
+	vmulss	xmm1, xmm0, xmm9
+	vaddss	xmm2, xmm1, DWORD PTR [rbp]
+	vmovss	DWORD PTR [rbp], xmm2
 
-; 385  : 			low = neTop;		
+; 384  : 			low = neTop;		
 
-	vmovss	DWORD PTR [rsi], xmm6
+	vmovss	DWORD PTR [r14], xmm6
 
-; 386  : 
-; 387  : 		} else { // Still in the same cur
+; 385  : 
+; 386  : 		} else { // Still in the same cur
 
 	jmp	SHORT $LN8@rowcol
 $LN11@rowcol:
 
-; 388  : 			low = neBot;
+; 387  : 			low = neBot;
 
-	vmovss	DWORD PTR [rsi], xmm15
+	vmovss	DWORD PTR [r14], xmm15
 
-; 389  : 			high = neTop;				
+; 388  : 			high = neTop;				
 
-	vmovss	DWORD PTR [rdi], xmm6
+	vmovss	DWORD PTR [rbp], xmm6
 
-; 390  : 		}
-; 391  : 	} else {
+; 389  : 		}
+; 390  : 	} else {
 
 	jmp	SHORT $LN8@rowcol
 $LN7@rowcol:
 
-; 392  : 		low = eBot;
+; 391  : 		low = eBot;
 
-	vmovss	DWORD PTR [rsi], xmm9
+	vmovss	DWORD PTR [r14], xmm8
 
-; 393  : 		high = eTop;
+; 392  : 		high = eTop;
 
-	vmovss	DWORD PTR [rdx], xmm12
+	vmovss	DWORD PTR [rbp], xmm11
 $LN8@rowcol:
 
-; 394  : 	}
-; 395  : 
-; 396  : 	return cur;
+; 393  : 	}
+; 394  : 
+; 395  : 	return cur;
 
 	vmovaps	xmm15, XMMWORD PTR [rsp+32]
 	mov	eax, ebx
-	vmovaps	xmm14, XMMWORD PTR [rsp+48]
 	vmovaps	xmm13, XMMWORD PTR [rsp+64]
 	vmovaps	xmm12, XMMWORD PTR [rsp+80]
-	vmovaps	xmm10, XMMWORD PTR [rsp+112]
+	vmovaps	xmm11, XMMWORD PTR [rsp+96]
 	vmovaps	xmm9, XMMWORD PTR [rsp+128]
-	mov	r13, QWORD PTR [rsp+256]
-	mov	rbp, QWORD PTR [rsp+240]
+	vmovaps	xmm8, XMMWORD PTR [rsp+144]
+	mov	r13, QWORD PTR [rsp+240]
 	jmp	SHORT $LN1@rowcol
 $LN6@rowcol:
 
-; 344  : 		return -1;
+; 343  : 		return -1;
 
 	mov	eax, -1
 $LN1@rowcol:
-	mov	r12, QWORD PTR [rsp+248]
 
-; 397  : }
+; 396  : }
 
+	vmovaps	xmm14, XMMWORD PTR [rsp+48]
 	lea	r11, QWORD PTR [rsp+192]
+	mov	rbx, QWORD PTR [r11+56]
+	mov	rbp, QWORD PTR [r11+64]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm7, XMMWORD PTR [r11-32]
-	vmovaps	xmm8, XMMWORD PTR [r11-48]
-	vmovaps	xmm11, XMMWORD PTR [r11-96]
+	vmovaps	xmm10, XMMWORD PTR [r11-80]
 	mov	rsp, r11
 	pop	r15
 	pop	r14
+	pop	r12
 	pop	rdi
 	pop	rsi
-	pop	rbx
 	ret	0
 ?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ENDP ; rowcol
 _TEXT	ENDS
@@ -20977,27 +22420,27 @@ x$ = 16
 y$ = 24
 ?offsetEdges@@YAXQEAMMM@Z PROC				; offsetEdges, COMDAT
 
-; 262  : 	edges[0] += x;
+; 261  : 	edges[0] += x;
 
 	vaddss	xmm0, xmm1, DWORD PTR [rcx]
 	vmovss	DWORD PTR [rcx], xmm0
 
-; 263  : 	edges[2] += x;
+; 262  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm1, DWORD PTR [rcx+8]
 	vmovss	DWORD PTR [rcx+8], xmm0
 
-; 264  : 	edges[3] += y;
+; 263  : 	edges[3] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rcx+12]
 	vmovss	DWORD PTR [rcx+12], xmm0
 
-; 265  : 	edges[1] += y;
+; 264  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm2, DWORD PTR [rcx+4]
 	vmovss	DWORD PTR [rcx+4], xmm0
 
-; 266  : }
+; 265  : }
 
 	ret	0
 ?offsetEdges@@YAXQEAMMM@Z ENDP				; offsetEdges
@@ -21010,13 +22453,13 @@ type$ = 64
 amount$ = 72
 ?getAngle@@YAMHM@Z PROC					; getAngle, COMDAT
 
-; 123  : inline static float getAngle(int type, float amount) {
+; 122  : inline static float getAngle(int type, float amount) {
 
 	sub	rsp, 56					; 00000038H
 	vmovaps	XMMWORD PTR [rsp+32], xmm6
 	vmovaps	xmm6, xmm1
 
-; 124  : 	switch (type) {
+; 123  : 	switch (type) {
 
 	test	ecx, ecx
 	je	$LN6@getAngle
@@ -21025,9 +22468,9 @@ amount$ = 72
 	cmp	ecx, 1
 	jne	SHORT $LN4@getAngle
 
-; 130  : 			return 0.f;
-; 131  : 		case 2: // 90
-; 132  : 			switch (rand() % 4) {
+; 129  : 			return 0.f;
+; 130  : 		case 2: // 90
+; 131  : 			switch (rand() % 4) {
 
 	call	QWORD PTR __imp_rand
 	and	eax, -2147483645			; ffffffff80000003H
@@ -21045,39 +22488,39 @@ $LN18@getAngle:
 	cmp	eax, 1
 	jne	SHORT $LN4@getAngle
 
-; 137  : 				case 2:
-; 138  : 					return (float)pi;
-; 139  : 				case 3:
-; 140  : 					return (float)pi*1.5f;
+; 136  : 				case 2:
+; 137  : 					return (float)pi;
+; 138  : 				case 3:
+; 139  : 					return (float)pi*1.5f;
 
 	vmovss	xmm0, DWORD PTR __real@4096cbe4
 
-; 144  : 	}
-; 145  : }
+; 143  : 	}
+; 144  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
 	ret	0
 $LN11@getAngle:
 
-; 133  : 				case 0:
-; 134  : 					return 0.f;
-; 135  : 				case 1: 
-; 136  : 					return (float)pi*.5f;
+; 132  : 				case 0:
+; 133  : 					return 0.f;
+; 134  : 				case 1: 
+; 135  : 					return (float)pi*.5f;
 
 	vmovss	xmm0, DWORD PTR __real@3fc90fdb
 
-; 144  : 	}
-; 145  : }
+; 143  : 	}
+; 144  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
 	ret	0
 $LN4@getAngle:
 
-; 141  : 			}			
-; 142  : 		default: // Amount	
-; 143  : 			return UFRAND() * amount;
+; 140  : 			}			
+; 141  : 		default: // Amount	
+; 142  : 			return UFRAND() * amount;
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
@@ -21089,18 +22532,18 @@ $LN4@getAngle:
 	vmulsd	xmm1, xmm3, xmm0
 	vcvtsd2ss xmm0, xmm1, xmm1
 
-; 144  : 	}
-; 145  : }
+; 143  : 	}
+; 144  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
 	ret	0
 $LN7@getAngle:
 
-; 125  : 		case 0:
-; 126  : 			return 0.f;
-; 127  : 		case 1: // 180
-; 128  : 			if (rand() % 2)
+; 124  : 		case 0:
+; 125  : 			return 0.f;
+; 126  : 		case 1: // 180
+; 127  : 			if (rand() % 2)
 
 	call	QWORD PTR __imp_rand
 	and	eax, -2147483647			; ffffffff80000001H
@@ -21113,12 +22556,12 @@ $LN17@getAngle:
 	je	SHORT $LN6@getAngle
 $LN16@getAngle:
 
-; 129  : 				return (float)pi;
+; 128  : 				return (float)pi;
 
 	vmovss	xmm0, DWORD PTR __real@40490fdb
 
-; 144  : 	}
-; 145  : }
+; 143  : 	}
+; 144  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+32]
 	add	rsp, 56					; 00000038H
@@ -21138,7 +22581,7 @@ n$ = 8
 m$ = 16
 ?STEPDOWN@@YAHHH@Z PROC					; STEPDOWN, COMDAT
 
-; 35   : 	if (n-1 < 0) return m-1;
+; 34   : 	if (n-1 < 0) return m-1;
 
 	lea	eax, DWORD PTR [rcx-1]
 	test	eax, eax
@@ -21146,8 +22589,8 @@ m$ = 16
 	lea	eax, DWORD PTR [rdx-1]
 $LN2@STEPDOWN:
 
-; 36   : 	return n-1;
-; 37   : }
+; 35   : 	return n-1;
+; 36   : }
 
 	ret	0
 ?STEPDOWN@@YAHHH@Z ENDP					; STEPDOWN
@@ -21160,7 +22603,7 @@ x$ = 8
 y$ = 16
 ?rotate270@@YAXAEAM0@Z PROC				; rotate270, COMDAT
 
-; 32   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
+; 31   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
 
 	vmovss	xmm0, DWORD PTR [rcx]
 	mov	eax, DWORD PTR [rdx]
@@ -21178,7 +22621,7 @@ x$ = 8
 y$ = 16
 ?rotate90@@YAXAEAM0@Z PROC				; rotate90, COMDAT
 
-; 31   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
+; 30   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
 
 	vmovss	xmm0, DWORD PTR [rdx]
 	mov	eax, DWORD PTR [rcx]
@@ -21196,18 +22639,18 @@ n$ = 8
 m$ = 16
 ?STEPUP@@YAHHH@Z PROC					; STEPUP, COMDAT
 
-; 27   : inline static int STEPUP(int n, int m) {
+; 26   : inline static int STEPUP(int n, int m) {
 
 	mov	r8d, edx
 
-; 28   : 	return (n + 1) % m;
+; 27   : 	return (n + 1) % m;
 
 	lea	eax, DWORD PTR [rcx+1]
 	cdq
 	idiv	r8d
 	mov	eax, edx
 
-; 29   : }
+; 28   : }
 
 	ret	0
 ?STEPUP@@YAHHH@Z ENDP					; STEPUP
@@ -21220,7 +22663,7 @@ x$ = 8
 rand$ = 16
 ?noise@@YAMMM@Z PROC					; noise, COMDAT
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm2, xmm0, xmm0
 	vmulsd	xmm3, xmm2, QWORD PTR __real@403f666666666666
@@ -21238,7 +22681,7 @@ x$ = 8
 y$ = 16
 ?generateID@@YAHHH@Z PROC				; generateID, COMDAT
 
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
 	lea	eax, DWORD PTR [rdx-101]
 	imul	eax, eax, 1000				; 000003e8H
@@ -21248,347 +22691,308 @@ y$ = 16
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 _TEXT	SEGMENT
+$T1 = 80
 $T2 = 80
-$T3 = 80
-edges$4 = 96
-edges$5 = 96
+$T3 = 96
+$T4 = 96
+edges$5 = 112
+edges$6 = 112
 __$ReturnUdt$ = 224
 p$ = 232
-id$6 = 240
+id$7 = 240
 t$ = 240
-id2$7 = 248
+id2$8 = 248
 ?draw@Tile@@SA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::draw, COMDAT
 
-; 508  : TilePoint Tile::draw(Point3 p, TileParam& t) {	
+; 507  : TilePoint Tile::draw(Point3 p, TileParam& t) {	
 
-$LN82:
+$LN61:
 	mov	rax, rsp
-	mov	QWORD PTR [rax+16], rbx
+	mov	QWORD PTR [rax+8], rbx
 	push	rbp
 	push	rsi
 	push	rdi
+	push	r14
+	push	r15
 	lea	rbp, QWORD PTR [rax-95]
-	sub	rsp, 192				; 000000c0H
+	sub	rsp, 176				; 000000b0H
 
-; 509  : 	if (t.tilingType == 1)
+; 508  : 	if (t.tilingType == 1)
 
 	cmp	DWORD PTR [r8], 1
 	mov	rsi, r8
-	vmovaps	XMMWORD PTR [rax-40], xmm6
-	mov	rbx, rcx
-	vmovaps	XMMWORD PTR [rax-56], xmm7
-	vmovss	xmm7, DWORD PTR [rdx]
-	vmovaps	XMMWORD PTR [rax-72], xmm8
-	vmovss	xmm8, DWORD PTR [rdx+4]
-	vmovaps	XMMWORD PTR [rax-88], xmm9
-	vmovss	xmm9, DWORD PTR [rdx+8]
+	vmovaps	XMMWORD PTR [rax-56], xmm6
+	mov	r14, rcx
 	jne	$LN2@draw
 
-; 459  : 	float s = t.tileWidth * 2.f;	
+; 509  : 		return pat_herring(p, t);
 
-	vmovss	xmm6, DWORD PTR [r8+8]
+	vmovaps	XMMWORD PTR [rax-72], xmm7
+	lea	rcx, QWORD PTR $T2[rbp-121]
+	vmovaps	XMMWORD PTR [rax-88], xmm8
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 
-; 460  : 	float h = t.tileWidth * .5f;
+; 458  : 	float s = t.tileWidth * 2.f;	
 
-	vmulss	xmm4, xmm6, DWORD PTR __real@3f000000
-	vaddss	xmm3, xmm6, xmm6
+	vmovss	xmm7, DWORD PTR [rsi+8]
+
+; 459  : 	float h = t.tileWidth * .5f;
+
+	vmulss	xmm5, xmm7, DWORD PTR __real@3f000000
+	vaddss	xmm4, xmm7, xmm7
+
+; 460  : 	float x = p.x / s;
+; 461  : 	float y = p.y / s;
+
+	vmovss	xmm3, DWORD PTR [rax+4]
+	vmovss	xmm8, DWORD PTR [rax]
+	vdivss	xmm0, xmm8, xmm4
+	vcvttss2si ecx, xmm0
+	vdivss	xmm2, xmm3, xmm4
 	vxorps	xmm1, xmm1, xmm1
 
-; 461  : 	float x = p.x / s;
-
-	vdivss	xmm0, xmm7, xmm3
-
-; 462  : 	float y = p.y / s;
-; 463  : 	int xi = FASTFLOOR(x);
-; 464  : 	int yi = FASTFLOOR(y);
+; 462  : 	int xi = FASTFLOOR(x);
+; 463  : 	int yi = FASTFLOOR(y);
 
 	vcomiss	xmm1, xmm0
-	vmovaps	XMMWORD PTR [rax-104], xmm11
-	vcvttss2si eax, xmm0
-	vdivss	xmm2, xmm8, xmm3
-	vxorps	xmm0, xmm0, xmm0
-	lea	r8d, DWORD PTR [rax-1]
-	cmovbe	r8d, eax
+	lea	r8d, DWORD PTR [rcx-1]
 
-; 465  : 	x = xi * s;
+; 509  : 		return pat_herring(p, t);
+
+	mov	r10, rax
+
+; 463  : 	int yi = FASTFLOOR(y);
+
+	cmovbe	r8d, ecx
+
+; 464  : 	x = xi * s;
 
 	vcomiss	xmm1, xmm2
 	vcvttss2si eax, xmm2
+	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r8d
-	vxorps	xmm1, xmm1, xmm1
-	vmulss	xmm5, xmm0, xmm3
+	vmulss	xmm6, xmm0, xmm4
 	lea	r9d, DWORD PTR [rax-1]
 	cmovbe	r9d, eax
+	vxorps	xmm1, xmm1, xmm1
 
-; 466  : 	y = yi * s;
+; 465  : 	y = yi * s;
 
 	vcvtsi2ss xmm1, xmm1, r9d
-	vmulss	xmm11, xmm1, xmm3
+	vmulss	xmm4, xmm1, xmm4
 
-; 468  : 	int y_id = (int)((p.y - y) / h) % 4;	
+; 467  : 	int y_id = (int)((p.y - y) / h) % 4;	
 
-	vsubss	xmm0, xmm8, xmm11
-	vdivss	xmm2, xmm0, xmm4
+	vsubss	xmm0, xmm3, xmm4
+	vdivss	xmm2, xmm0, xmm5
 	vcvttss2si ecx, xmm2
 	and	ecx, -2147483645			; ffffffff80000003H
-	jge	SHORT $LN77@draw
+	jge	SHORT $LN58@draw
 	dec	ecx
 	or	ecx, -4
 	inc	ecx
-$LN77@draw:
+$LN58@draw:
 
-; 467  : 	int x_id = (int)((p.x - x) / h) % 4;
+; 466  : 	int x_id = (int)((p.x - x) / h) % 4;
 
-	vsubss	xmm0, xmm7, xmm5
-	vdivss	xmm1, xmm0, xmm4
+	vsubss	xmm0, xmm8, xmm6
+	vmovaps	xmm8, XMMWORD PTR [rsp+128]
+	vdivss	xmm1, xmm0, xmm5
 	vcvttss2si eax, xmm1
 	and	eax, -2147483645			; ffffffff80000003H
-	jge	SHORT $LN76@draw
+	jge	SHORT $LN57@draw
 	dec	eax
 	or	eax, -4
 	inc	eax
-$LN76@draw:
+$LN57@draw:
 
-; 469  : 	int id = x_id + 4 * y_id;
-; 470  : 
-; 471  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
-; 472  : 
-; 473  : 	float edges[4];
-; 474  : 
-; 475  : 	if (!pat_herring_dir[id]) {
+; 468  : 	int id = x_id + 4 * y_id;
+; 469  : 
+; 470  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
+; 471  : 
+; 472  : 	float edges[4];
+; 473  : 
+; 474  : 	if (!pat_herring_dir[id]) {
 
-	lea	r10, OFFSET FLAT:__ImageBase
-	xor	edi, edi
+	lea	r11, OFFSET FLAT:__ImageBase
+	xor	r15d, r15d
 	lea	eax, DWORD PTR [rax+rcx*4]
 	movsxd	rcx, eax
-	movzx	edx, BYTE PTR ?pat_herring_dir@@3PAEA[rcx+r10]
-	vmovss	xmm0, DWORD PTR ?pat_herring_x@@3PAMA[r10+rcx*4]
-	vmovss	xmm3, DWORD PTR ?pat_herring_y@@3PAMA[r10+rcx*4]
+	movzx	edx, BYTE PTR ?pat_herring_dir@@3PAEA[rcx+r11]
+	vmovss	xmm0, DWORD PTR ?pat_herring_x@@3PAMA[r11+rcx*4]
+	vmovss	xmm3, DWORD PTR ?pat_herring_y@@3PAMA[r11+rcx*4]
 	test	dl, dl
-	jne	SHORT $LN7@draw
+	jne	SHORT $LN5@draw
 
-; 476  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
+; 475  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
 
 	vsubss	xmm0, xmm0, DWORD PTR __real@3f800000
-	vmulss	xmm1, xmm0, xmm4
-	vaddss	xmm2, xmm1, xmm5
+	vmulss	xmm1, xmm0, xmm5
+	vaddss	xmm2, xmm1, xmm6
 
-; 477  : 		edges[2] = edges[0] + t.tileWidth;
-; 478  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
+; 476  : 		edges[2] = edges[0] + t.tileWidth;
+; 477  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
 
 	vsubss	xmm1, xmm3, DWORD PTR __real@3f000000
-	vaddss	xmm0, xmm6, xmm2
-	vmovss	DWORD PTR edges$5[rbp-113], xmm0
-	vmovss	DWORD PTR edges$5[rbp-121], xmm2
-	vmulss	xmm2, xmm1, xmm4
-	vaddss	xmm0, xmm2, xmm11
-	vmovss	DWORD PTR edges$5[rbp-109], xmm0
+	vaddss	xmm0, xmm2, xmm7
+	vmovss	DWORD PTR edges$6[rbp-113], xmm0
+	vmovss	DWORD PTR edges$6[rbp-121], xmm2
+	vmulss	xmm2, xmm1, xmm5
+	vaddss	xmm0, xmm2, xmm4
+	vmovss	DWORD PTR edges$6[rbp-109], xmm0
 
-; 482  : 		edges[2] = edges[0] + h;
-; 483  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
-; 484  : 		edges[1] = edges[3] + t.tileWidth;	
-; 485  : 	}
-; 486  : 
-; 487  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
+; 481  : 		edges[2] = edges[0] + h;
+; 482  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
+; 483  : 		edges[1] = edges[3] + t.tileWidth;	
+; 484  : 	}
+; 485  : 
+; 486  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
 
-	mov	eax, edi
-	movzx	edi, BYTE PTR ?pat_herring_id@@3PAEA[rcx+r10]
-	vaddss	xmm0, xmm0, xmm4
-	jmp	SHORT $LN78@draw
-$LN7@draw:
+	mov	eax, r15d
+	movzx	r15d, BYTE PTR ?pat_herring_id@@3PAEA[rcx+r11]
+	vaddss	xmm0, xmm0, xmm5
+	jmp	SHORT $LN59@draw
+$LN5@draw:
 
-; 479  : 		edges[1] = edges[3] + h;
-; 480  : 	} else {
-; 481  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
+; 478  : 		edges[1] = edges[3] + h;
+; 479  : 	} else {
+; 480  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
 
 	vsubss	xmm0, xmm0, DWORD PTR __real@3f000000
 
-; 482  : 		edges[2] = edges[0] + h;
-; 483  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
-; 484  : 		edges[1] = edges[3] + t.tileWidth;	
-; 485  : 	}
-; 486  : 
-; 487  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
+; 481  : 		edges[2] = edges[0] + h;
+; 482  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
+; 483  : 		edges[1] = edges[3] + t.tileWidth;	
+; 484  : 	}
+; 485  : 
+; 486  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
 
-	movzx	eax, BYTE PTR ?pat_herring_id@@3PAEA[rcx+r10]
-	vmulss	xmm1, xmm0, xmm4
-	vaddss	xmm2, xmm1, xmm5
+	movzx	eax, BYTE PTR ?pat_herring_id@@3PAEA[rcx+r11]
+	vmulss	xmm1, xmm0, xmm5
+	vaddss	xmm2, xmm1, xmm6
 	vsubss	xmm1, xmm3, DWORD PTR __real@3f800000
+	vaddss	xmm0, xmm2, xmm5
+	vmovss	DWORD PTR edges$6[rbp-113], xmm0
+	vmovss	DWORD PTR edges$6[rbp-121], xmm2
+	vmulss	xmm2, xmm1, xmm5
 	vaddss	xmm0, xmm2, xmm4
-	vmovss	DWORD PTR edges$5[rbp-113], xmm0
-	vmovss	DWORD PTR edges$5[rbp-121], xmm2
-	vmulss	xmm2, xmm1, xmm4
-	vaddss	xmm0, xmm2, xmm11
-	vmovss	DWORD PTR edges$5[rbp-109], xmm0
-	vaddss	xmm0, xmm6, xmm0
-$LN78@draw:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovss	DWORD PTR edges$6[rbp-109], xmm0
+	vaddss	xmm0, xmm0, xmm7
+$LN59@draw:
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 487  : 						 yi*4 + (pat_herring_dir[id] ? pat_herring_id[id] : 0));			
+; 488  : 	
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	lea	eax, DWORD PTR [rax+r9*4]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	movzx	edx, dl
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
+	movzx	edi, dl
 	add	eax, -101				; ffffffffffffff9bH
-; File g:\dropbox\github\berconmaps\src\tile.cpp
+	mov	rdx, r10
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	mov	DWORD PTR [rsp+40], edx
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
 	imul	ecx, eax, 250				; 000000faH
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
-	lea	rdx, QWORD PTR $T3[rbp-121]
-	mov	r9, rsi
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovss	DWORD PTR edges$6[rbp-117], xmm0
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR edges$5[rbp-117], xmm0
-	vmovss	DWORD PTR $T3[rbp-121], xmm7
-	vmovss	DWORD PTR $T3[rbp-117], xmm8
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
 	add	ecx, r8d
+	lea	ebx, DWORD PTR [r15+rcx*4]
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
-	lea	r8, QWORD PTR edges$5[rbp-121]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T3[rbp-113], xmm9
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	lea	eax, DWORD PTR [rdi+rcx*4]
-
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	mov	rcx, rbx
-	mov	DWORD PTR [rsp+32], eax
+	lea	rcx, QWORD PTR $T3[rbp-121]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	DWORD PTR [rsp+40], edi
+	lea	r8, QWORD PTR edges$6[rbp-121]
+	mov	rdx, rax
+	mov	DWORD PTR [rsp+32], ebx
+	mov	r9, rsi
+	mov	rcx, r14
 	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
 
-; 510  : 		return pat_herring(p, t);
+; 509  : 		return pat_herring(p, t);
 
-	vmovaps	xmm11, XMMWORD PTR [rsp+112]
-	jmp	$LN79@draw
+	vmovaps	xmm7, XMMWORD PTR [rsp+144]
+	jmp	$LN18@draw
 $LN2@draw:
-	mov	QWORD PTR [rsp+224], r14
 
-; 402  : 	if (!pat) return TilePoint();
+; 510  : 	return pat_xBond(p, t);
 
-	xor	edi, edi
-	mov	r14, QWORD PTR [r8+112]
-	test	r14, r14
-	jne	SHORT $LN25@draw
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	lea	rcx, QWORD PTR $T4[rbp-121]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 399  : 	TilePattern* pat = t.pattern;
 
-	mov	QWORD PTR [rcx], rdi
-	mov	QWORD PTR [rcx+8], rdi
-	mov	QWORD PTR [rcx+16], rdi
-; File g:\dropbox\github\berconmaps\src\tile.h
+	mov	rbx, QWORD PTR [rsi+112]
 
-; 165  : 	TilePoint() {d = -1.f;}	
+; 510  : 	return pat_xBond(p, t);
 
-	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
-; File g:\dropbox\github\berconmaps\src\tile.cpp
+	mov	rdi, rax
 
-; 402  : 	if (!pat) return TilePoint();
+; 401  : 	if (!pat) return TilePoint();
 
-	jmp	$LN24@draw
-$LN25@draw:
+	test	rbx, rbx
+	je	$LN56@draw
 
-; 403  : 
-; 404  : 	float edges[4];
-; 405  : 	int id = 0;
-; 406  : 	int id2 = 0;
-; 407  : 	
-; 408  : 	// Tile top and bottom
-; 409  : 	float rand = 3.14f;
-; 410  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
+; 402  : 
+; 403  : 	float edges[4];
+; 404  : 	int id = 0;
+; 405  : 	int id2 = 0;
+; 406  : 	
+; 407  : 	// Tile top and bottom
+; 408  : 	float rand = 3.14f;
+; 409  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
 
-	vmovss	xmm1, DWORD PTR [r8+20]
 	vmovss	xmm0, DWORD PTR __real@4048f5c3
+	vmovss	xmm1, DWORD PTR [rsi+20]
+	vmovss	xmm3, DWORD PTR [rax+4]
 	vmovss	DWORD PTR [rsp+64], xmm0
-	vmovss	xmm0, DWORD PTR [r8+4]
+	vmovss	xmm0, DWORD PTR [rsi+4]
 	vmovss	DWORD PTR [rsp+56], xmm1
-	vmovss	xmm1, DWORD PTR [r14]
+	vmovss	xmm1, DWORD PTR [rbx]
 	vmovss	DWORD PTR [rsp+48], xmm0
-	lea	rax, QWORD PTR [r14+8]
-	mov	DWORD PTR id$6[rbp-121], edi
-	mov	QWORD PTR [rsp+40], rax
-	lea	r8, QWORD PTR id$6[rbp-121]
-	vmovaps	xmm3, xmm8
-	lea	rdx, QWORD PTR edges$4[rbp-117]
-	mov	DWORD PTR id2$7[rbp-121], edi
-	lea	rcx, QWORD PTR edges$4[rbp-109]
+	lea	rcx, QWORD PTR [rbx+8]
+	xor	r15d, r15d
+	mov	QWORD PTR [rsp+40], rcx
+	lea	r8, QWORD PTR id$7[rbp-121]
+	lea	rcx, QWORD PTR edges$5[rbp-109]
+	mov	DWORD PTR id$7[rbp-121], r15d
+	lea	rdx, QWORD PTR edges$5[rbp-117]
+	mov	DWORD PTR id2$8[rbp-121], r15d
 	vmovss	DWORD PTR [rsp+32], xmm1
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 411  : 	if (row == -1) return TilePoint();
+; 410  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
-	jne	SHORT $LN26@draw
-$LN80@draw:
+	je	$LN56@draw
 
-; 511  : 	return pat_xBond(p, t);
+; 411  : 
+; 412  : 	// Tile sides
+; 413  : 	rand = edges[3] * 1.325f + 31.41213f;
 
-	mov	QWORD PTR [rbx], rdi
-	mov	QWORD PTR [rbx+8], rdi
-	mov	QWORD PTR [rbx+16], rdi
-	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
-	jmp	$LN24@draw
-$LN26@draw:
-
-; 414  : 	rand = edges[3] * 1.325f + 31.41213f;
-
-	vmovss	xmm0, DWORD PTR edges$4[rbp-109]
+	vmovss	xmm0, DWORD PTR edges$5[rbp-109]
 	vmulss	xmm1, xmm0, DWORD PTR __real@3fa9999a
 
-; 415  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
-	mov	rdx, QWORD PTR [r14+32]
+	mov	rdx, QWORD PTR [rbx+32]
 	vaddss	xmm2, xmm1, DWORD PTR __real@41fb4c0b
 	vmovss	xmm1, DWORD PTR [rsi+8]
 
-; 416  : 	if (offset < 0) offset *= -id;
+; 415  : 	if (offset < 0) offset *= -id;
 
-	mov	r14d, DWORD PTR id$6[rbp-121]
+	mov	ebx, DWORD PTR id$7[rbp-121]
 	movsxd	rcx, eax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
@@ -21598,112 +23002,109 @@ $LN26@draw:
 	vxorps	xmm0, xmm0, xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 415  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
 	vmulss	xmm6, xmm1, DWORD PTR [rcx+rdx]
 
-; 416  : 	if (offset < 0) offset *= -id;
+; 415  : 	if (offset < 0) offset *= -id;
 
 	vcomiss	xmm0, xmm6
-	jbe	SHORT $LN27@draw
-	mov	eax, r14d
+	jbe	SHORT $LN21@draw
+	mov	eax, ebx
 	neg	eax
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
 	vmulss	xmm6, xmm6, xmm0
-$LN27@draw:
+$LN21@draw:
 
-; 417  : 
-; 418  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
+; 416  : 
+; 417  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
 
 	vmovss	xmm0, DWORD PTR [rsi+24]
+	vaddss	xmm3, xmm6, DWORD PTR [rdi]
 	vmovss	DWORD PTR [rsp+64], xmm2
 	vmovss	DWORD PTR [rsp+56], xmm0
 	vmovss	xmm0, DWORD PTR [rcx+rdx+4]
 	lea	rax, QWORD PTR [rdx+8]
 	add	rax, rcx
-	lea	rdx, QWORD PTR edges$4[rbp-113]
+	lea	rdx, QWORD PTR edges$5[rbp-113]
 	vmovss	DWORD PTR [rsp+48], xmm1
 	mov	QWORD PTR [rsp+40], rax
-	lea	rcx, QWORD PTR edges$4[rbp-121]
-	vaddss	xmm3, xmm7, xmm6
-	lea	r8, QWORD PTR id2$7[rbp-121]
+	lea	rcx, QWORD PTR edges$5[rbp-121]
+	lea	r8, QWORD PTR id2$8[rbp-121]
 	vmovss	DWORD PTR [rsp+32], xmm0
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 419  : 	if (row == -1) return TilePoint();
+; 418  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
-	je	$LN80@draw
+	je	SHORT $LN56@draw
 
-; 420  : 
-; 421  : 	edges[0] -= offset;
+; 419  : 
+; 420  : 	edges[0] -= offset;
 
-	vmovss	xmm0, DWORD PTR edges$4[rbp-121]
+	vmovss	xmm0, DWORD PTR edges$5[rbp-121]
 
-; 422  : 	edges[2] -= offset;
+; 421  : 	edges[2] -= offset;
 
-	vmovss	xmm2, DWORD PTR edges$4[rbp-113]
+	vmovss	xmm2, DWORD PTR edges$5[rbp-113]
+
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+
+	lea	eax, DWORD PTR [rbx-101]
+
+; 426  : 	return drawTile(p, edges, t, id);	
+
+	mov	rdx, rdi
 	vsubss	xmm1, xmm0, xmm6
 
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
-	lea	eax, DWORD PTR [r14-101]
+	imul	ebx, eax, 1000				; 000003e8H
 
-; 427  : 	return drawTile(p, edges, t, id);	
+; 426  : 	return drawTile(p, edges, t, id);	
 
-	mov	DWORD PTR [rsp+40], edi
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	imul	ecx, eax, 1000				; 000003e8H
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	lea	r8, QWORD PTR edges$4[rbp-121]
+	lea	rcx, QWORD PTR $T1[rbp-121]
 	vsubss	xmm0, xmm2, xmm6
+	vmovss	DWORD PTR edges$5[rbp-121], xmm1
+	vmovss	DWORD PTR edges$5[rbp-113], xmm0
+
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+
+	add	ebx, DWORD PTR id2$8[rbp-121]
+
+; 426  : 	return drawTile(p, edges, t, id);	
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	DWORD PTR [rsp+40], r15d
+	lea	r8, QWORD PTR edges$5[rbp-121]
+	mov	rdx, rax
+	mov	DWORD PTR [rsp+32], ebx
 	mov	r9, rsi
-	lea	rdx, QWORD PTR $T2[rbp-121]
-	vmovss	DWORD PTR edges$4[rbp-121], xmm1
-	vmovss	DWORD PTR edges$4[rbp-113], xmm0
+	mov	rcx, r14
+	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
+	jmp	SHORT $LN18@draw
+$LN56@draw:
+; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 165  : 	TilePoint() {d = -1.f;}	
 
-	add	ecx, DWORD PTR id2$7[rbp-121]
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	mov	DWORD PTR [rsp+32], ecx
-	mov	rcx, rbx
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T2[rbp-121], xmm7
-	vmovss	DWORD PTR $T2[rbp-117], xmm8
-	vmovss	DWORD PTR $T2[rbp-113], xmm9
+	mov	rcx, r14
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [r14+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	mov	DWORD PTR [r14+24], -1082130432		; bf800000H
+$LN18@draw:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 427  : 	return drawTile(p, edges, t, id);	
+; 511  : }
 
-	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
-$LN24@draw:
-
-; 511  : 	return pat_xBond(p, t);
-
-	mov	r14, QWORD PTR [rsp+224]
-$LN79@draw:
-
-; 512  : }
-
-	lea	r11, QWORD PTR [rsp+192]
-	mov	rax, rbx
-	mov	rbx, QWORD PTR [r11+40]
-	vmovaps	xmm6, XMMWORD PTR [r11-16]
-	vmovaps	xmm7, XMMWORD PTR [r11-32]
-	vmovaps	xmm8, XMMWORD PTR [r11-48]
-	vmovaps	xmm9, XMMWORD PTR [r11-64]
-	mov	rsp, r11
+	mov	rbx, QWORD PTR [rsp+224]
+	mov	rax, r14
+	vmovaps	xmm6, XMMWORD PTR [rsp+160]
+	add	rsp, 176				; 000000b0H
+	pop	r15
+	pop	r14
 	pop	rdi
 	pop	rsi
 	pop	rbp
@@ -21712,247 +23113,214 @@ $LN79@draw:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 _TEXT	SEGMENT
 $T1 = 48
 edges$ = 64
-__$ReturnUdt$ = 160
-p$ = 168
-t$ = 176
+__$ReturnUdt$ = 144
+p$ = 152
+t$ = 160
 ?pat_herring@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::pat_herring, COMDAT
 
-; 458  : TilePoint Tile::pat_herring(Point3 p, TileParam& t) {
+; 457  : TilePoint Tile::pat_herring(Point3 p, TileParam& t) {
 
-$LN21:
-	mov	rax, rsp
-	mov	QWORD PTR [rax+8], rbx
-	mov	QWORD PTR [rax+16], rsi
+$LN19:
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rbp
+	mov	QWORD PTR [rsp+24], rsi
 	push	rdi
-	sub	rsp, 144				; 00000090H
-	vmovaps	XMMWORD PTR [rax-24], xmm6
-	mov	rbx, rcx
+	sub	rsp, 128				; 00000080H
 
-; 459  : 	float s = t.tileWidth * 2.f;	
-; 460  : 	float h = t.tileWidth * .5f;
-; 461  : 	float x = p.x / s;
+; 458  : 	float s = t.tileWidth * 2.f;	
+; 459  : 	float h = t.tileWidth * .5f;
+; 460  : 	float x = p.x / s;
+; 461  : 	float y = p.y / s;
 
-	vmovss	xmm6, DWORD PTR [rdx]
-	vmovaps	XMMWORD PTR [rax-40], xmm7
-	mov	rdi, r8
-	vmovss	xmm7, DWORD PTR [r8+8]
-	vmulss	xmm4, xmm7, DWORD PTR __real@3f000000
-	vaddss	xmm3, xmm7, xmm7
-	vmovaps	XMMWORD PTR [rax-56], xmm9
-	mov	r11, rdx
+	vmovss	xmm3, DWORD PTR [rdx+4]
 	vxorps	xmm1, xmm1, xmm1
-	vdivss	xmm0, xmm6, xmm3
+	vmovaps	XMMWORD PTR [rsp+112], xmm6
+	mov	rsi, rcx
+	vmovaps	XMMWORD PTR [rsp+96], xmm7
+	mov	rbp, r8
+	vmovss	xmm7, DWORD PTR [r8+8]
+	vmulss	xmm5, xmm7, DWORD PTR __real@3f000000
+	vaddss	xmm4, xmm7, xmm7
+	vdivss	xmm2, xmm3, xmm4
+	vmovaps	XMMWORD PTR [rsp+80], xmm8
+	mov	r11, rdx
+	vmovss	xmm8, DWORD PTR [rdx]
+	vdivss	xmm0, xmm8, xmm4
 
-; 462  : 	float y = p.y / s;
-; 463  : 	int xi = FASTFLOOR(x);
-; 464  : 	int yi = FASTFLOOR(y);
+; 462  : 	int xi = FASTFLOOR(x);
+; 463  : 	int yi = FASTFLOOR(y);
 
 	vcomiss	xmm1, xmm0
-	vmovaps	XMMWORD PTR [rax-72], xmm10
-	vmovss	xmm10, DWORD PTR [rdx+4]
 	vcvttss2si eax, xmm0
-	vdivss	xmm2, xmm10, xmm3
 	vxorps	xmm0, xmm0, xmm0
 	lea	r9d, DWORD PTR [rax-1]
 	cmovbe	r9d, eax
 
-; 465  : 	x = xi * s;
+; 464  : 	x = xi * s;
 
 	vcomiss	xmm1, xmm2
 	vcvttss2si eax, xmm2
 	vcvtsi2ss xmm0, xmm0, r9d
+	vmulss	xmm6, xmm0, xmm4
 	vxorps	xmm1, xmm1, xmm1
-	vmulss	xmm5, xmm0, xmm3
 	lea	r10d, DWORD PTR [rax-1]
 	cmovbe	r10d, eax
 
-; 466  : 	y = yi * s;
+; 465  : 	y = yi * s;
 
 	vcvtsi2ss xmm1, xmm1, r10d
-	vmulss	xmm9, xmm1, xmm3
+	vmulss	xmm4, xmm1, xmm4
 
-; 468  : 	int y_id = (int)((p.y - y) / h) % 4;	
+; 467  : 	int y_id = (int)((p.y - y) / h) % 4;	
 
-	vsubss	xmm0, xmm10, xmm9
-	vdivss	xmm2, xmm0, xmm4
+	vsubss	xmm0, xmm3, xmm4
+	vdivss	xmm2, xmm0, xmm5
 	vcvttss2si ecx, xmm2
 	and	ecx, -2147483645			; ffffffff80000003H
-	jge	SHORT $LN18@pat_herrin
+	jge	SHORT $LN16@pat_herrin
 	dec	ecx
 	or	ecx, -4
 	inc	ecx
-$LN18@pat_herrin:
+$LN16@pat_herrin:
 
-; 467  : 	int x_id = (int)((p.x - x) / h) % 4;
+; 466  : 	int x_id = (int)((p.x - x) / h) % 4;
 
-	vsubss	xmm0, xmm6, xmm5
-	vdivss	xmm1, xmm0, xmm4
+	vsubss	xmm0, xmm8, xmm6
+	vdivss	xmm1, xmm0, xmm5
 	vcvttss2si eax, xmm1
 	and	eax, -2147483645			; ffffffff80000003H
-	jge	SHORT $LN17@pat_herrin
+	jge	SHORT $LN15@pat_herrin
 	dec	eax
 	or	eax, -4
 	inc	eax
-$LN17@pat_herrin:
+$LN15@pat_herrin:
 
-; 469  : 	int id = x_id + 4 * y_id;
-; 470  : 
-; 471  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
-; 472  : 
-; 473  : 	float edges[4];
-; 474  : 
-; 475  : 	if (!pat_herring_dir[id]) {
+; 468  : 	int id = x_id + 4 * y_id;
+; 469  : 
+; 470  : 	//Point3 center = Point3(pat_herring_x[id]*h+x, pat_herring_y[id]*h+y, p.z);
+; 471  : 
+; 472  : 	float edges[4];
+; 473  : 
+; 474  : 	if (!pat_herring_dir[id]) {
 
-	lea	rsi, OFFSET FLAT:__ImageBase
-	xor	r8d, r8d
+	lea	rbx, OFFSET FLAT:__ImageBase
+	xor	edx, edx
 	lea	eax, DWORD PTR [rax+rcx*4]
 	movsxd	rcx, eax
-	movzx	edx, BYTE PTR ?pat_herring_dir@@3PAEA[rcx+rsi]
-	vmovss	xmm0, DWORD PTR ?pat_herring_x@@3PAMA[rsi+rcx*4]
-	vmovss	xmm3, DWORD PTR ?pat_herring_y@@3PAMA[rsi+rcx*4]
-	test	dl, dl
+	movzx	r8d, BYTE PTR ?pat_herring_dir@@3PAEA[rcx+rbx]
+	vmovss	xmm0, DWORD PTR ?pat_herring_x@@3PAMA[rbx+rcx*4]
+	vmovss	xmm3, DWORD PTR ?pat_herring_y@@3PAMA[rbx+rcx*4]
+	test	r8b, r8b
 	jne	SHORT $LN2@pat_herrin
 
-; 476  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
+; 475  : 		edges[0] = (pat_herring_x[id]-1.f) * h + x;
 
 	vsubss	xmm0, xmm0, DWORD PTR __real@3f800000
-	vmulss	xmm1, xmm0, xmm4
-	vaddss	xmm2, xmm1, xmm5
+	vmulss	xmm1, xmm0, xmm5
+	vaddss	xmm2, xmm1, xmm6
 
-; 477  : 		edges[2] = edges[0] + t.tileWidth;
-; 478  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
+; 476  : 		edges[2] = edges[0] + t.tileWidth;
+; 477  : 		edges[3] = (pat_herring_y[id]-.5f) * h + y;
 
 	vsubss	xmm1, xmm3, DWORD PTR __real@3f000000
 	vaddss	xmm0, xmm2, xmm7
 	vmovss	DWORD PTR edges$[rsp+8], xmm0
 	vmovss	DWORD PTR edges$[rsp], xmm2
-	vmulss	xmm2, xmm1, xmm4
-	vaddss	xmm0, xmm2, xmm9
+	vmulss	xmm2, xmm1, xmm5
+	vaddss	xmm0, xmm2, xmm4
 	vmovss	DWORD PTR edges$[rsp+12], xmm0
 
-; 482  : 		edges[2] = edges[0] + h;
-; 483  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
-; 484  : 		edges[1] = edges[3] + t.tileWidth;	
-; 485  : 	}
-; 486  : 
-; 487  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
+; 481  : 		edges[2] = edges[0] + h;
+; 482  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
+; 483  : 		edges[1] = edges[3] + t.tileWidth;	
+; 484  : 	}
+; 485  : 
+; 486  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
 
-	mov	eax, r8d
-	movzx	r8d, BYTE PTR ?pat_herring_id@@3PAEA[rcx+rsi]
-	vaddss	xmm0, xmm0, xmm4
-	jmp	SHORT $LN19@pat_herrin
+	mov	eax, edx
+	movzx	edx, BYTE PTR ?pat_herring_id@@3PAEA[rcx+rbx]
+	vaddss	xmm0, xmm0, xmm5
+	jmp	SHORT $LN17@pat_herrin
 $LN2@pat_herrin:
 
-; 479  : 		edges[1] = edges[3] + h;
-; 480  : 	} else {
-; 481  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
+; 478  : 		edges[1] = edges[3] + h;
+; 479  : 	} else {
+; 480  : 		edges[0] = (pat_herring_x[id]-.5f) * h + x;
 
 	vsubss	xmm0, xmm0, DWORD PTR __real@3f000000
 
-; 482  : 		edges[2] = edges[0] + h;
-; 483  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
-; 484  : 		edges[1] = edges[3] + t.tileWidth;	
-; 485  : 	}
-; 486  : 
-; 487  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
+; 481  : 		edges[2] = edges[0] + h;
+; 482  : 		edges[3] = (pat_herring_y[id]-1.f) * h + y;
+; 483  : 		edges[1] = edges[3] + t.tileWidth;	
+; 484  : 	}
+; 485  : 
+; 486  : 	int tid = generateID(xi*4 + (pat_herring_dir[id] ? 0 : pat_herring_id[id]),
 
-	movzx	eax, BYTE PTR ?pat_herring_id@@3PAEA[rcx+rsi]
-	vmulss	xmm1, xmm0, xmm4
-	vaddss	xmm2, xmm1, xmm5
+	movzx	eax, BYTE PTR ?pat_herring_id@@3PAEA[rcx+rbx]
+	vmulss	xmm1, xmm0, xmm5
+	vaddss	xmm2, xmm1, xmm6
 	vsubss	xmm1, xmm3, DWORD PTR __real@3f800000
-	vaddss	xmm0, xmm2, xmm4
+	vaddss	xmm0, xmm2, xmm5
 	vmovss	DWORD PTR edges$[rsp+8], xmm0
 	vmovss	DWORD PTR edges$[rsp], xmm2
-	vmulss	xmm2, xmm1, xmm4
-	vaddss	xmm0, xmm2, xmm9
+	vmulss	xmm2, xmm1, xmm5
+	vaddss	xmm0, xmm2, xmm4
 	vmovss	DWORD PTR edges$[rsp+12], xmm0
 	vaddss	xmm0, xmm0, xmm7
-$LN19@pat_herrin:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+$LN17@pat_herrin:
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 487  : 						 yi*4 + (pat_herring_dir[id] ? pat_herring_id[id] : 0));			
+; 488  : 	
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	lea	eax, DWORD PTR [rax+r10*4]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	movzx	edx, dl
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
+	movzx	edi, r8b
 	add	eax, -101				; ffffffffffffff9bH
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	mov	DWORD PTR [rsp+40], edx
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
 	imul	ecx, eax, 250				; 000000faH
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	lea	rdx, QWORD PTR $T1[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 487  : 						 yi*4 + (pat_herring_dir[id] ? pat_herring_id[id] : 0));			
+; 488  : 	
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
 	vmovss	DWORD PTR edges$[rsp+4], xmm0
-	vmovss	xmm0, DWORD PTR [r11+8]
-	vmovss	DWORD PTR $T1[rsp], xmm6
-	vmovss	DWORD PTR $T1[rsp+4], xmm10
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
 
 	add	ecx, r9d
+	lea	ebx, DWORD PTR [rdx+rcx*4]
 
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
+; 487  : 						 yi*4 + (pat_herring_dir[id] ? pat_herring_id[id] : 0));			
+; 488  : 	
+; 489  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
 
-	mov	r9, rdi
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T1[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	lea	eax, DWORD PTR [r8+rcx*4]
-
-; 490  : 	return drawTile(p, edges, t, tid, pat_herring_dir[id]);
-
-	mov	rcx, rbx
+	mov	rdx, r11
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	DWORD PTR [rsp+40], edi
 	lea	r8, QWORD PTR edges$[rsp]
-	mov	DWORD PTR [rsp+32], eax
+	mov	rdx, rax
+	mov	DWORD PTR [rsp+32], ebx
+	mov	r9, rbp
+	mov	rcx, rsi
 	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
 
-; 491  : }
+; 490  : }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp+112]
-	lea	r11, QWORD PTR [rsp+144]
-	mov	rsi, QWORD PTR [r11+24]
-	mov	rax, rbx
+	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	lea	r11, QWORD PTR [rsp+128]
 	mov	rbx, QWORD PTR [r11+16]
-	vmovaps	xmm6, XMMWORD PTR [r11-16]
-	vmovaps	xmm9, XMMWORD PTR [r11-48]
-	vmovaps	xmm10, XMMWORD PTR [r11-64]
+	mov	rax, rsi
+	mov	rbp, QWORD PTR [r11+24]
+	mov	rsi, QWORD PTR [r11+32]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm7, XMMWORD PTR [rsp+96]
 	mov	rsp, r11
 	pop	rdi
 	ret	0
@@ -21960,22 +23328,9 @@ $LN19@pat_herrin:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z
 _TEXT	SEGMENT
@@ -21988,55 +23343,38 @@ t$ = 176
 id2$ = 184
 ?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z PROC ; Tile::pat_xBond, COMDAT
 
-; 399  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
+; 398  : TilePoint Tile::pat_xBond(Point3 p, TileParam& t) {
 
-$LN57:
-	mov	QWORD PTR [rsp+8], rbx
-	mov	QWORD PTR [rsp+16], rbp
+$LN42:
+	mov	r11, rsp
+	mov	QWORD PTR [r11+8], rbx
+	push	rbp
 	push	rsi
 	push	rdi
-	push	r14
 	sub	rsp, 128				; 00000080H
 
-; 400  : 	TilePattern* pat = t.pattern;
+; 399  : 	TilePattern* pat = t.pattern;
 
-	mov	rbp, QWORD PTR [r8+112]
-
-; 402  : 	if (!pat) return TilePoint();
-
-	xor	edi, edi
+	mov	rbx, QWORD PTR [r8+112]
 	mov	rsi, r8
-	mov	r14, rdx
-	mov	rbx, rcx
-	test	rbp, rbp
-	jne	SHORT $LN2@pat_xBond
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovaps	XMMWORD PTR [rsp+112], xmm6
+	mov	rbp, rdx
+	mov	rdi, rcx
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 400  : 
+; 401  : 	if (!pat) return TilePoint();
 
-	mov	QWORD PTR [rcx], rdi
-	mov	QWORD PTR [rcx+8], rdi
-	mov	QWORD PTR [rcx+16], rdi
-; File g:\dropbox\github\berconmaps\src\tile.h
+	test	rbx, rbx
+	je	$LN39@pat_xBond
 
-; 165  : 	TilePoint() {d = -1.f;}	
-
-	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 402  : 	if (!pat) return TilePoint();
-
-	jmp	$LN55@pat_xBond
-$LN2@pat_xBond:
-
-; 403  : 
-; 404  : 	float edges[4];
-; 405  : 	int id = 0;
-; 406  : 	int id2 = 0;
-; 407  : 	
-; 408  : 	// Tile top and bottom
-; 409  : 	float rand = 3.14f;
-; 410  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
+; 402  : 
+; 403  : 	float edges[4];
+; 404  : 	int id = 0;
+; 405  : 	int id2 = 0;
+; 406  : 	
+; 407  : 	// Tile top and bottom
+; 408  : 	float rand = 3.14f;
+; 409  : 	int row = rowcol(edges[3], edges[1], id, p.y, pat->totalHeight, pat->heights, t.tileHeight, t.tileHeightVar, rand);
 
 	vmovss	xmm1, DWORD PTR [r8+20]
 	vmovss	xmm0, DWORD PTR __real@4048f5c3
@@ -22044,87 +23382,68 @@ $LN2@pat_xBond:
 	vmovss	DWORD PTR [rsp+64], xmm0
 	vmovss	xmm0, DWORD PTR [r8+4]
 	vmovss	DWORD PTR [rsp+56], xmm1
-	vmovss	xmm1, DWORD PTR [rbp]
+	vmovss	xmm1, DWORD PTR [rbx]
 	vmovss	DWORD PTR [rsp+48], xmm0
-	lea	rax, QWORD PTR [rbp+8]
-	mov	DWORD PTR id$[rsp], edi
-	mov	QWORD PTR [rsp+40], rax
-	lea	r8, QWORD PTR id$[rsp]
-	lea	rdx, QWORD PTR edges$[rsp+4]
-	mov	DWORD PTR id2$[rsp], edi
-	lea	rcx, QWORD PTR edges$[rsp+12]
+	lea	rax, QWORD PTR [rbx+8]
+	mov	DWORD PTR [r11+24], 0
+	mov	QWORD PTR [r11-112], rax
+	lea	r8, QWORD PTR [r11+24]
+	lea	rdx, QWORD PTR [r11-52]
+	mov	DWORD PTR [r11+32], 0
+	lea	rcx, QWORD PTR [r11-44]
 	vmovss	DWORD PTR [rsp+32], xmm1
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 411  : 	if (row == -1) return TilePoint();
+; 410  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
-	jne	SHORT $LN3@pat_xBond
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	je	$LN39@pat_xBond
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	mov	QWORD PTR [rbx], rdi
-	mov	QWORD PTR [rbx+8], rdi
-	mov	QWORD PTR [rbx+16], rdi
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 165  : 	TilePoint() {d = -1.f;}	
-
-	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 411  : 	if (row == -1) return TilePoint();
-
-	jmp	$LN55@pat_xBond
-$LN3@pat_xBond:
-
-; 412  : 
-; 413  : 	// Tile sides
-; 414  : 	rand = edges[3] * 1.325f + 31.41213f;
+; 411  : 
+; 412  : 	// Tile sides
+; 413  : 	rand = edges[3] * 1.325f + 31.41213f;
 
 	vmovss	xmm0, DWORD PTR edges$[rsp+12]
 	vmulss	xmm1, xmm0, DWORD PTR __real@3fa9999a
 
-; 415  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
-	mov	rdx, QWORD PTR [rbp+32]
+	mov	rdx, QWORD PTR [rbx+32]
 	vaddss	xmm2, xmm1, DWORD PTR __real@41fb4c0b
 	vmovss	xmm1, DWORD PTR [rsi+8]
 
-; 416  : 	if (offset < 0) offset *= -id;
+; 415  : 	if (offset < 0) offset *= -id;
 
-	mov	ebp, DWORD PTR id$[rsp]
+	mov	ebx, DWORD PTR id$[rsp]
 	movsxd	rcx, eax
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1736 : 		return (this->_Myfirst()[_Pos]);
 
 	shl	rcx, 5
-	vmovaps	XMMWORD PTR [rsp+112], xmm6
 	vxorps	xmm0, xmm0, xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 415  : 	float offset = pat->rows[row].offset * t.tileWidth;
+; 414  : 	float offset = pat->rows[row].offset * t.tileWidth;
 
 	vmulss	xmm6, xmm1, DWORD PTR [rcx+rdx]
 
-; 416  : 	if (offset < 0) offset *= -id;
+; 415  : 	if (offset < 0) offset *= -id;
 
 	vcomiss	xmm0, xmm6
 	jbe	SHORT $LN4@pat_xBond
-	mov	eax, ebp
+	mov	eax, ebx
 	neg	eax
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
 	vmulss	xmm6, xmm6, xmm0
 $LN4@pat_xBond:
 
-; 417  : 
-; 418  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
+; 416  : 
+; 417  : 	row = rowcol(edges[0], edges[2], id2, p.x + offset, pat->rows[row].totalWidth, pat->rows[row].tiles, t.tileWidth, t.tileWidthVar, rand);		
 
 	vmovss	xmm0, DWORD PTR [rsi+24]
-	vaddss	xmm3, xmm6, DWORD PTR [r14]
+	vaddss	xmm3, xmm6, DWORD PTR [rbp]
 	vmovss	DWORD PTR [rsp+64], xmm2
 	vmovss	DWORD PTR [rsp+56], xmm0
 	vmovss	xmm0, DWORD PTR [rcx+rdx+4]
@@ -22138,107 +23457,89 @@ $LN4@pat_xBond:
 	vmovss	DWORD PTR [rsp+32], xmm0
 	call	?rowcol@@YAHAEAM0AEAHMMAEAV?$vector@MV?$allocator@M@std@@@std@@MMM@Z ; rowcol
 
-; 419  : 	if (row == -1) return TilePoint();
+; 418  : 	if (row == -1) return TilePoint();
 
 	cmp	eax, -1
-	jne	SHORT $LN5@pat_xBond
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	je	SHORT $LN39@pat_xBond
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 419  : 
+; 420  : 	edges[0] -= offset;
 
-	mov	QWORD PTR [rbx], rdi
-	mov	QWORD PTR [rbx+8], rdi
-	mov	QWORD PTR [rbx+16], rdi
+	vmovss	xmm0, DWORD PTR edges$[rsp]
+
+; 421  : 	edges[2] -= offset;
+
+	vmovss	xmm2, DWORD PTR edges$[rsp+8]
+
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+
+	lea	eax, DWORD PTR [rbx-101]
+
+; 422  : 
+; 423  : 	id = generateID(id2, id);
+; 424  : 
+; 425  : 	// Draw it
+; 426  : 	return drawTile(p, edges, t, id);	
+
+	mov	rdx, rbp
+	vsubss	xmm1, xmm0, xmm6
+
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+
+	imul	ebx, eax, 1000				; 000003e8H
+
+; 422  : 
+; 423  : 	id = generateID(id2, id);
+; 424  : 
+; 425  : 	// Draw it
+; 426  : 	return drawTile(p, edges, t, id);	
+
+	lea	rcx, QWORD PTR $T1[rsp]
+	vsubss	xmm0, xmm2, xmm6
+	vmovss	DWORD PTR edges$[rsp], xmm1
+	vmovss	DWORD PTR edges$[rsp+8], xmm0
+
+; 22   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
+
+	add	ebx, DWORD PTR id2$[rsp]
+
+; 422  : 
+; 423  : 	id = generateID(id2, id);
+; 424  : 
+; 425  : 	// Draw it
+; 426  : 	return drawTile(p, edges, t, id);	
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	DWORD PTR [rsp+40], 0
+	lea	r8, QWORD PTR edges$[rsp]
+	mov	rdx, rax
+	mov	DWORD PTR [rsp+32], ebx
+	mov	r9, rsi
+	mov	rcx, rdi
+	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
+	jmp	SHORT $LN40@pat_xBond
+$LN39@pat_xBond:
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 165  : 	TilePoint() {d = -1.f;}	
 
-	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
+	mov	rcx, rdi
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rdi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	mov	DWORD PTR [rdi+24], -1082130432		; bf800000H
+$LN40@pat_xBond:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 419  : 	if (row == -1) return TilePoint();
+; 427  : }
 
-	jmp	SHORT $LN54@pat_xBond
-$LN5@pat_xBond:
-
-; 420  : 
-; 421  : 	edges[0] -= offset;
-
-	vmovss	xmm0, DWORD PTR edges$[rsp]
-
-; 422  : 	edges[2] -= offset;
-
-	vmovss	xmm2, DWORD PTR edges$[rsp+8]
-	vsubss	xmm1, xmm0, xmm6
-	vsubss	xmm0, xmm2, xmm6
-	vmovss	DWORD PTR edges$[rsp+8], xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm0, DWORD PTR [r14]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	lea	eax, DWORD PTR [rbp-101]
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	mov	DWORD PTR [rsp+40], edi
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	imul	ecx, eax, 1000				; 000003e8H
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	lea	r8, QWORD PTR edges$[rsp]
-	vmovss	DWORD PTR edges$[rsp], xmm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm1, DWORD PTR [r14+4]
-	vmovss	DWORD PTR $T1[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [r14+8]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 23   : inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
-
-	add	ecx, DWORD PTR id2$[rsp]
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	lea	rdx, QWORD PTR $T1[rsp]
-	mov	DWORD PTR [rsp+32], ecx
-	mov	r9, rsi
-	mov	rcx, rbx
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T1[rsp+4], xmm1
-	vmovss	DWORD PTR $T1[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 427  : 	return drawTile(p, edges, t, id);	
-
-	call	?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z ; Tile::drawTile
-$LN54@pat_xBond:
+	mov	rbx, QWORD PTR [rsp+160]
+	mov	rax, rdi
 	vmovaps	xmm6, XMMWORD PTR [rsp+112]
-$LN55@pat_xBond:
-
-; 428  : }
-
-	lea	r11, QWORD PTR [rsp+128]
-	mov	rax, rbx
-	mov	rbx, QWORD PTR [r11+32]
-	mov	rbp, QWORD PTR [r11+40]
-	mov	rsp, r11
-	pop	r14
+	add	rsp, 128				; 00000080H
 	pop	rdi
 	pop	rsi
+	pop	rbp
 	ret	0
 ?pat_xBond@Tile@@CA?AVTilePoint@@VPoint3@@AEAVTileParam@@@Z ENDP ; Tile::pat_xBond
 _TEXT	ENDS
@@ -22250,15 +23551,7 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z
 _TEXT	SEGMENT
@@ -22273,9 +23566,9 @@ id$ = 272
 dir$ = 280
 ?drawTile@Tile@@CA?AVTilePoint@@VPoint3@@QEAMAEAVTileParam@@HH@Z PROC ; Tile::drawTile, COMDAT
 
-; 268  : TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir) {
+; 267  : TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir) {
 
-$LN130:
+$LN95:
 	mov	rax, rsp
 	mov	QWORD PTR [rax+8], rbx
 	mov	QWORD PTR [rax+16], rsi
@@ -22288,27 +23581,27 @@ $LN130:
 	lea	rbp, QWORD PTR [rax-79]
 	sub	rsp, 192				; 000000c0H
 
-; 269  : 	float hEdgeW = t.edgeWidth * .5f;
-; 270  : 	float hEdgeH = t.edgeHeight * .5f;
-; 271  : 			
-; 272  : 	float randomSeed = (float)id * 1.23f + 0.1234f;
-; 273  : 	if (dir) {
+; 268  : 	float hEdgeW = t.edgeWidth * .5f;
+; 269  : 	float hEdgeH = t.edgeHeight * .5f;
+; 270  : 			
+; 271  : 	float randomSeed = (float)id * 1.23f + 0.1234f;
+; 272  : 	if (dir) {
 
 	cmp	DWORD PTR dir$[rbp-153], 0
-	mov	rdi, r9
+	mov	rbx, r9
 	vmovss	xmm0, DWORD PTR [r9+16]
 	vmovaps	XMMWORD PTR [rax-56], xmm6
 	mov	rsi, r8
 	vmovaps	XMMWORD PTR [rax-72], xmm7
 	mov	r13, rdx
 	vmovaps	XMMWORD PTR [rax-88], xmm8
-	mov	rbx, rcx
-	vmovaps	XMMWORD PTR [rax-104], xmm9
-	vmovsd	xmm9, QWORD PTR __real@403f666666666666
+	mov	rdi, rcx
 	vmovaps	XMMWORD PTR [rsp+96], xmm11
 	vmovss	xmm11, DWORD PTR __real@3f000000
 	vmulss	xmm7, xmm0, xmm11
 	vmovss	xmm0, DWORD PTR [r9+12]
+	vmovaps	XMMWORD PTR [rax-104], xmm9
+	vmovsd	xmm9, QWORD PTR __real@403f666666666666
 	vxorps	xmm1, xmm1, xmm1
 	vcvtsi2ss xmm1, xmm1, DWORD PTR id$[rbp-153]
 	vmulss	xmm6, xmm0, xmm11
@@ -22319,13 +23612,13 @@ $LN130:
 	vcvtss2sd xmm8, xmm2, xmm2
 	je	$LN2@drawTile
 
-; 274  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 273  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
 	cmp	BYTE PTR [r9+37], 0
 	je	SHORT $LN17@drawTile
 	vmovss	xmm0, DWORD PTR [r8]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22333,9 +23626,9 @@ $LN130:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 274  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 273  : 		edges[0] += t.eH_var ? hEdgeH * (1.f + noise(edges[0], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+28]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+28]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm6
 	jmp	SHORT $LN18@drawTile
@@ -22345,14 +23638,14 @@ $LN18@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rsi]
 	vmovss	DWORD PTR [rsi], xmm0
 
-; 275  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 274  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	cmp	BYTE PTR [rdi+37], 0
+	cmp	BYTE PTR [rbx+37], 0
 	lea	r15, QWORD PTR [rsi+8]
 	je	SHORT $LN19@drawTile
 	vmovss	xmm0, DWORD PTR [r15]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22360,9 +23653,9 @@ $LN18@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 275  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 274  : 		edges[2] -= t.eH_var ? hEdgeH * (1.f + noise(edges[2], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+28]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+28]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm6, xmm1, xmm6
 $LN19@drawTile:
@@ -22370,14 +23663,14 @@ $LN19@drawTile:
 	vsubss	xmm1, xmm0, xmm6
 	vmovss	DWORD PTR [r15], xmm1
 
-; 276  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 275  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	cmp	BYTE PTR [rdi+36], 0
+	cmp	BYTE PTR [rbx+36], 0
 	lea	r12, QWORD PTR [rsi+12]
 	je	SHORT $LN21@drawTile
 	vmovss	xmm0, DWORD PTR [r12]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22385,9 +23678,9 @@ $LN19@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 276  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 275  : 		edges[3] += t.eW_var ? hEdgeW * (1.f + noise(edges[3], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+32]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+32]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm7
 	jmp	SHORT $LN22@drawTile
@@ -22397,14 +23690,14 @@ $LN22@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [r12]
 	vmovss	DWORD PTR [r12], xmm0
 
-; 277  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 276  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	cmp	BYTE PTR [rdi+36], 0
+	cmp	BYTE PTR [rbx+36], 0
 	lea	r14, QWORD PTR [rsi+4]
 	je	SHORT $LN23@drawTile
 	vmovss	xmm0, DWORD PTR [r14]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22412,27 +23705,27 @@ $LN22@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 277  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 276  : 		edges[1] -= t.eW_var ? hEdgeW * (1.f + noise(edges[1], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+32]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+32]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm7, xmm1, xmm7
 $LN23@drawTile:
 	vmovss	xmm0, DWORD PTR [r14]
 	vsubss	xmm1, xmm0, xmm7
 
-; 278  : 	} else {
+; 277  : 	} else {
 
-	jmp	$LN127@drawTile
+	jmp	$LN92@drawTile
 $LN2@drawTile:
 
-; 279  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 278  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
 	cmp	BYTE PTR [r9+36], 0
 	je	SHORT $LN25@drawTile
 	vmovss	xmm0, DWORD PTR [r8]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22440,9 +23733,9 @@ $LN2@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 279  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 278  : 		edges[0] += t.eW_var ? hEdgeW * (1.f + noise(edges[0], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+32]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+32]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm7
 	jmp	SHORT $LN26@drawTile
@@ -22452,13 +23745,13 @@ $LN26@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [rsi]
 	vmovss	DWORD PTR [rsi], xmm0
 
-; 280  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 279  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	cmp	BYTE PTR [rdi+36], 0
+	cmp	BYTE PTR [rbx+36], 0
 	je	SHORT $LN27@drawTile
 	vmovss	xmm0, DWORD PTR [rsi+8]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22466,9 +23759,9 @@ $LN26@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 280  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
+; 279  : 		edges[2] -= t.eW_var ? hEdgeW * (1.f + noise(edges[2], randomSeed) * t.edgeWidthVar) : hEdgeW;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+32]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+32]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm7, xmm1, xmm7
 $LN27@drawTile:
@@ -22477,13 +23770,13 @@ $LN27@drawTile:
 	vsubss	xmm1, xmm0, xmm7
 	vmovss	DWORD PTR [r15], xmm1
 
-; 281  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 280  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	cmp	BYTE PTR [rdi+37], 0
+	cmp	BYTE PTR [rbx+37], 0
 	je	SHORT $LN29@drawTile
 	vmovss	xmm0, DWORD PTR [rsi+12]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22491,9 +23784,9 @@ $LN27@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 281  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 280  : 		edges[3] += t.eH_var ? hEdgeH * (1.f + noise(edges[3], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+28]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+28]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm6
 	jmp	SHORT $LN30@drawTile
@@ -22504,13 +23797,13 @@ $LN30@drawTile:
 	vaddss	xmm0, xmm2, DWORD PTR [r12]
 	vmovss	DWORD PTR [r12], xmm0
 
-; 282  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 281  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	cmp	BYTE PTR [rdi+37], 0
+	cmp	BYTE PTR [rbx+37], 0
 	je	SHORT $LN31@drawTile
 	vmovss	xmm0, DWORD PTR [rsi+4]
 
-; 25   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
+; 24   : inline static float noise(float x, float rand) { return Perlin::snoise(x * 31.4 + rand); }
 
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm1, xmm0, xmm9
@@ -22518,164 +23811,123 @@ $LN30@drawTile:
 	vcvtsd2ss xmm0, xmm2, xmm2
 	call	?snoise@Perlin@@SAMM@Z			; Perlin::snoise
 
-; 282  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
+; 281  : 		edges[1] -= t.eH_var ? hEdgeH * (1.f + noise(edges[1], randomSeed) * t.edgeHeightVar) : hEdgeH;
 
-	vmulss	xmm0, xmm0, DWORD PTR [rdi+28]
+	vmulss	xmm0, xmm0, DWORD PTR [rbx+28]
 	vaddss	xmm1, xmm0, xmm10
 	vmulss	xmm6, xmm1, xmm6
 $LN31@drawTile:
 	lea	r14, QWORD PTR [rsi+4]
 	vmovss	xmm0, DWORD PTR [r14]
 	vsubss	xmm1, xmm0, xmm6
-$LN127@drawTile:
+$LN92@drawTile:
 
-; 283  : 	}
-; 284  : 
-; 285  : 	if (p.x < edges[0]) return TilePoint();
+; 282  : 	}
+; 283  : 
+; 284  : 	if (p.x < edges[0]) return TilePoint();
 
-	vmovss	xmm3, DWORD PTR [rsi]
+	vmovss	xmm4, DWORD PTR [rsi]
 	vmovaps	xmm10, XMMWORD PTR [rsp+112]
+	vmovaps	xmm9, XMMWORD PTR [rsp+128]
 	vmovss	DWORD PTR [r14], xmm1
 	vmovss	xmm0, DWORD PTR [r13]
-	vcomiss	xmm3, xmm0
-	ja	$LN9@drawTile
+	vcomiss	xmm4, xmm0
+	ja	$LN90@drawTile
 
-; 286  : 	if (p.x > edges[2]) return TilePoint();
+; 285  : 	if (p.x > edges[2]) return TilePoint();
 
-	vmovss	xmm5, DWORD PTR [r15]
-	vcomiss	xmm0, xmm5
-	ja	$LN9@drawTile
+	vmovss	xmm3, DWORD PTR [r15]
+	vcomiss	xmm0, xmm3
+	ja	$LN90@drawTile
 
-; 287  : 	if (p.y < edges[3]) return TilePoint();
+; 286  : 	if (p.y < edges[3]) return TilePoint();
 
 	vmovss	xmm2, DWORD PTR [r13+4]
-	vmovss	xmm4, DWORD PTR [r12]
-	vcomiss	xmm4, xmm2
-	ja	$LN9@drawTile
+	vmovss	xmm5, DWORD PTR [r12]
+	vcomiss	xmm5, xmm2
+	ja	$LN90@drawTile
 
-; 288  : 	if (p.y > edges[1]) return TilePoint();
+; 287  : 	if (p.y > edges[1]) return TilePoint();
 
 	vcomiss	xmm2, xmm1
 	ja	$LN9@drawTile
 
-; 289  : 
-; 290  : 	float width = edges[2] - edges[0];
+; 288  : 
+; 289  : 	float width = edges[2] - edges[0];
 
-	vsubss	xmm7, xmm5, xmm3
+	vsubss	xmm3, xmm3, xmm4
 	vxorps	xmm6, xmm6, xmm6
 
-; 291  : 	float height = edges[1] - edges[3];
-; 292  : 	if (width < 0 || height < 0) return TilePoint();
+; 290  : 	float height = edges[1] - edges[3];
+; 291  : 	if (width < 0 || height < 0) return TilePoint();
 
+	vcomiss	xmm6, xmm3
+	vsubss	xmm7, xmm1, xmm5
+	ja	$LN9@drawTile
 	vcomiss	xmm6, xmm7
-	vsubss	xmm5, xmm1, xmm4
-	ja	$LN9@drawTile
-	vcomiss	xmm6, xmm5
 	ja	$LN9@drawTile
 
-; 293  : 
-; 294  : 	TilePoint tp = corner(p.x - edges[0], p.y - edges[3], width, height, t);	
+; 292  : 
+; 293  : 	TilePoint tp = corner(p.x - edges[0], p.y - edges[3], width, height, t);	
 
-	vsubss	xmm1, xmm0, xmm3
-	vmovaps	xmm3, xmm7
-	vsubss	xmm2, xmm2, xmm4
-	mov	QWORD PTR [rsp+40], rdi
+	vsubss	xmm2, xmm2, xmm5
+	vsubss	xmm1, xmm0, xmm4
+	mov	QWORD PTR [rsp+40], rbx
 	lea	rcx, QWORD PTR tp$[rbp-153]
-	vmovss	DWORD PTR [rsp+32], xmm5
+	vmovss	DWORD PTR [rsp+32], xmm7
 	call	?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z ; Tile::corner
 
-; 295  : 	if (tp.d < 0) return tp; // On edge
+; 294  : 	if (tp.d < 0) return tp; // On edge
 
-	vmovss	xmm8, DWORD PTR tp$[rbp-129]
-	vcomiss	xmm6, xmm8
-	jbe	SHORT $LN10@drawTile
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vcomiss	xmm6, DWORD PTR tp$[rbp-129]
+	ja	$LN15@drawTile
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 295  : 
+; 296  : 	//if (t.tileID || t.mapUV)
+; 297  : 		tp.id = id;
+; 298  : 
+; 299  : 	if (t.center || (t.mapUV && dir))
 
-	vmovss	xmm0, DWORD PTR tp$[rbp-153]
-	vmovss	xmm1, DWORD PTR tp$[rbp-149]
-	vmovss	DWORD PTR [rbx], xmm0
-	vmovss	xmm0, DWORD PTR tp$[rbp-145]
-	lea	rcx, QWORD PTR [rbx+12]
-	lea	rdx, QWORD PTR tp$[rbp-141]
-	vmovss	DWORD PTR [rbx+8], xmm0
-	vmovss	DWORD PTR [rbx+4], xmm1
-	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
-	vmovss	xmm0, DWORD PTR tp$[rbp-129]
-	mov	eax, DWORD PTR tp$[rbp-125]
-	vmovss	DWORD PTR [rbx+24], xmm0
-	mov	DWORD PTR [rbx+28], eax
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 295  : 	if (tp.d < 0) return tp; // On edge
-
-	jmp	$LN128@drawTile
-$LN10@drawTile:
-
-; 296  : 
-; 297  : 	//if (t.tileID || t.mapUV)
-; 298  : 		tp.id = id;
-; 299  : 
-; 300  : 	if (t.center || (t.mapUV && dir))
-
-	cmp	DWORD PTR [rdi+104], 0
+	cmp	DWORD PTR [rbx+104], 0
 	mov	eax, DWORD PTR id$[rbp-153]
-	vmovss	xmm9, DWORD PTR __xmm@80000000800000008000000080000000
+	vmovss	xmm8, DWORD PTR __xmm@80000000800000008000000080000000
 	mov	DWORD PTR tp$[rbp-125], eax
-	jne	SHORT $LN124@drawTile
-	cmp	DWORD PTR [rdi+60], 0
-	je	SHORT $LN123@drawTile
-	mov	eax, DWORD PTR dir$[rbp-153]
-	test	eax, eax
-	je	$LN125@drawTile
-$LN124@drawTile:
+	jne	SHORT $LN89@drawTile
+	cmp	DWORD PTR [rbx+60], 0
+	je	SHORT $LN11@drawTile
+	cmp	DWORD PTR dir$[rbp-153], 0
+	je	$LN91@drawTile
+$LN89@drawTile:
 
-; 301  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
+; 300  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
 
-	vmovss	xmm0, DWORD PTR [r15]
-	vsubss	xmm1, xmm0, DWORD PTR [rsi]
 	vmovss	xmm0, DWORD PTR [r14]
-	vmulss	xmm2, xmm1, xmm11
 	vsubss	xmm1, xmm0, DWORD PTR [r12]
-	vaddss	xmm5, xmm2, DWORD PTR [rsi]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR [r13+8]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 301  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
-
+	vmovss	xmm0, DWORD PTR [r15]
 	vmulss	xmm2, xmm1, xmm11
-	vaddss	xmm3, xmm2, DWORD PTR [r12]
-	vunpcklps xmm1, xmm5, xmm3
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T2[rbp-145], xmm0
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 301  : 		tp.center = Point3(edges[0] + (edges[2] - edges[0]) * .5f,
-
-	mov	eax, DWORD PTR $T2[rbp-145]
-	vmovsd	QWORD PTR tp$[rbp-153], xmm1
+	vsubss	xmm1, xmm0, DWORD PTR [rsi]
+	vaddss	xmm2, xmm2, DWORD PTR [r12]
+	vmulss	xmm3, xmm1, xmm11
+	vaddss	xmm1, xmm3, DWORD PTR [rsi]
+	vmovss	xmm3, DWORD PTR [r13+8]
+	lea	rcx, QWORD PTR $T2[rbp-153]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR tp$[rbp-153], xmm0
+	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR tp$[rbp-145], eax
-$LN123@drawTile:
+$LN11@drawTile:
 
-; 304  : 	if (dir) {
+; 303  : 	if (dir) {
 
-	mov	eax, DWORD PTR dir$[rbp-153]
-	test	eax, eax
-	je	$LN125@drawTile
+	cmp	DWORD PTR dir$[rbp-153], 0
+	je	$LN91@drawTile
 
-; 264  : 	edges[3] += y;
+; 263  : 	edges[3] += y;
 
 	vmovss	xmm1, DWORD PTR [r12]
 
-; 305  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
 	vmovss	xmm5, DWORD PTR tp$[rbp-149]
 	vmovss	xmm6, DWORD PTR tp$[rbp-153]
@@ -22686,51 +23938,51 @@ $LN123@drawTile:
 	vmovss	xmm7, DWORD PTR tp$[rbp-145]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 305  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
-	vxorps	xmm2, xmm5, xmm9
+	vxorps	xmm2, xmm5, xmm8
 
-; 265  : 	edges[1] += y;
+; 264  : 	edges[1] += y;
 
 	vaddss	xmm3, xmm2, DWORD PTR [r14]
 	vaddss	xmm1, xmm2, xmm1
 
-; 31   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
+; 30   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
 
-	vxorps	xmm2, xmm1, xmm9
+	vxorps	xmm2, xmm1, xmm8
 
-; 305  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 304  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
-	vxorps	xmm0, xmm6, xmm9
+	vxorps	xmm0, xmm6, xmm8
 
-; 263  : 	edges[2] += x;
+; 262  : 	edges[2] += x;
 
 	vaddss	xmm4, xmm0, DWORD PTR [r15]
 	vaddss	xmm0, xmm0, DWORD PTR [rsi]
 
-; 31   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
+; 30   : inline static void rotate90(float& x, float& y)  { float temp = y; y = x; x = -temp; }
 
 	vmovss	DWORD PTR [r12], xmm0
 	vmovss	DWORD PTR [rsi], xmm2
 	vmovss	DWORD PTR [r14], xmm4
-	vxorps	xmm0, xmm3, xmm9
+	vxorps	xmm0, xmm3, xmm8
 	vmovss	DWORD PTR [r15], xmm0
 
-; 262  : 	edges[0] += x;
+; 261  : 	edges[0] += x;
 
 	vaddss	xmm1, xmm6, DWORD PTR [rsi]
 
-; 263  : 	edges[2] += x;
+; 262  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm6, DWORD PTR [r15]
 	vmovss	DWORD PTR [rsi], xmm1
 
-; 264  : 	edges[3] += y;
+; 263  : 	edges[3] += y;
 
 	vaddss	xmm1, xmm5, DWORD PTR [r12]
 	vmovss	DWORD PTR [r15], xmm0
 
-; 265  : 	edges[1] += y;
+; 264  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm5, DWORD PTR [r14]
 	vmovss	DWORD PTR [r12], xmm1
@@ -22768,127 +24020,98 @@ $LN123@drawTile:
 	vmovss	DWORD PTR [r13+8], xmm1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 304  : 	if (dir) {
+; 303  : 	if (dir) {
 
-	jmp	SHORT $LN122@drawTile
-$LN125@drawTile:
+	jmp	SHORT $LN88@drawTile
+$LN91@drawTile:
 	vmovss	xmm7, DWORD PTR tp$[rbp-145]
 	vmovss	xmm5, DWORD PTR tp$[rbp-149]
 	vmovss	xmm6, DWORD PTR tp$[rbp-153]
-$LN122@drawTile:
+$LN88@drawTile:
 
-; 306  : 		rotate90(edges[0], edges[3]);
-; 307  : 		rotate90(edges[2], edges[1]);
-; 308  : 		offsetEdges(edges, tp.center.x, tp.center.y);
-; 309  : 		p -= tp.center; rotate90(p.x, p.y); p += tp.center;
-; 310  : 	}
-; 311  : 	
-; 312  : 	if (t.mapUV)
+; 305  : 		rotate90(edges[0], edges[3]);
+; 306  : 		rotate90(edges[2], edges[1]);
+; 307  : 		offsetEdges(edges, tp.center.x, tp.center.y);
+; 308  : 		p -= tp.center; rotate90(p.x, p.y); p += tp.center;
+; 309  : 	}
+; 310  : 	
+; 311  : 	if (t.mapUV)
 
-	cmp	DWORD PTR [rdi+60], 0
-	je	SHORT $LN126@drawTile
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	cmp	DWORD PTR [rbx+60], 0
+	je	SHORT $LN14@drawTile
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 312  : 		uvMapping(tp, p, edges, t, dir);
 
-	vmovss	xmm0, DWORD PTR [r13]
-	vmovss	xmm1, DWORD PTR [r13+4]
-	vmovss	DWORD PTR $T1[rbp-153], xmm0
-	vmovss	xmm0, DWORD PTR [r13+8]
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 313  : 		uvMapping(tp, p, edges, t, dir);
-
-	mov	r9, rdi
-	mov	DWORD PTR [rsp+32], eax
-	mov	r8, rsi
-	lea	rdx, QWORD PTR $T1[rbp-153]
+	mov	rdx, r13
+	lea	rcx, QWORD PTR $T1[rbp-153]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	r9, rbx
 	lea	rcx, QWORD PTR tp$[rbp-153]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T1[rbp-145], xmm0
-	vmovss	DWORD PTR $T1[rbp-149], xmm1
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 313  : 		uvMapping(tp, p, edges, t, dir);
-
+	mov	rdx, rax
+	mov	r8, rsi
+	mov	eax, DWORD PTR dir$[rbp-153]
+	mov	DWORD PTR [rsp+32], eax
 	call	?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z ; Tile::uvMapping
-	mov	eax, DWORD PTR tp$[rbp-125]
 	vmovss	xmm5, DWORD PTR tp$[rbp-149]
-	vmovss	xmm8, DWORD PTR tp$[rbp-129]
 	vmovss	xmm7, DWORD PTR tp$[rbp-145]
 	vmovss	xmm6, DWORD PTR tp$[rbp-153]
-	jmp	SHORT $LN14@drawTile
-$LN126@drawTile:
-
-; 306  : 		rotate90(edges[0], edges[3]);
-; 307  : 		rotate90(edges[2], edges[1]);
-; 308  : 		offsetEdges(edges, tp.center.x, tp.center.y);
-; 309  : 		p -= tp.center; rotate90(p.x, p.y); p += tp.center;
-; 310  : 	}
-; 311  : 	
-; 312  : 	if (t.mapUV)
-
-	mov	eax, DWORD PTR id$[rbp-153]
 $LN14@drawTile:
 
-; 314  : 
-; 315  : 	if (dir) {
+; 313  : 
+; 314  : 	if (dir) {
 
 	cmp	DWORD PTR dir$[rbp-153], 0
 	je	$LN15@drawTile
 
-; 262  : 	edges[0] += x;
+; 261  : 	edges[0] += x;
 
 	vmovss	xmm1, DWORD PTR [rsi]
 
-; 316  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 315  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
-	vxorps	xmm2, xmm6, xmm9
+	vxorps	xmm2, xmm6, xmm8
 
-; 263  : 	edges[2] += x;
+; 262  : 	edges[2] += x;
 
 	vaddss	xmm4, xmm2, DWORD PTR [r15]
 	vaddss	xmm1, xmm2, xmm1
 
-; 32   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
+; 31   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
 
-	vxorps	xmm2, xmm1, xmm9
+	vxorps	xmm2, xmm1, xmm8
 
-; 316  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
+; 315  : 		offsetEdges(edges, -tp.center.x, -tp.center.y);
 
-	vxorps	xmm0, xmm5, xmm9
+	vxorps	xmm0, xmm5, xmm8
 
-; 265  : 	edges[1] += y;
+; 264  : 	edges[1] += y;
 
 	vaddss	xmm3, xmm0, DWORD PTR [r14]
 	vaddss	xmm0, xmm0, DWORD PTR [r12]
 
-; 32   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
+; 31   : inline static void rotate270(float& x, float& y) { float temp = x; x = y; y = -temp; }
 
 	vmovss	DWORD PTR [rsi], xmm0
 	vmovss	DWORD PTR [r12], xmm2
 	vmovss	DWORD PTR [r15], xmm3
-	vxorps	xmm0, xmm4, xmm9
+	vxorps	xmm0, xmm4, xmm8
 	vmovss	DWORD PTR [r14], xmm0
 
-; 262  : 	edges[0] += x;
+; 261  : 	edges[0] += x;
 
 	vaddss	xmm1, xmm6, DWORD PTR [rsi]
 
-; 263  : 	edges[2] += x;
+; 262  : 	edges[2] += x;
 
 	vaddss	xmm0, xmm6, DWORD PTR [r15]
 	vmovss	DWORD PTR [rsi], xmm1
 
-; 264  : 	edges[3] += y;
+; 263  : 	edges[3] += y;
 
 	vaddss	xmm1, xmm5, DWORD PTR [r12]
 	vmovss	DWORD PTR [r15], xmm0
 
-; 265  : 	edges[1] += y;
+; 264  : 	edges[1] += y;
 
 	vaddss	xmm0, xmm5, DWORD PTR [r14]
 	vmovss	DWORD PTR [r12], xmm1
@@ -22925,44 +24148,52 @@ $LN14@drawTile:
 	vaddss	xmm1, xmm0, xmm7
 	vmovss	DWORD PTR [r13+8], xmm1
 $LN15@drawTile:
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm0, DWORD PTR tp$[rbp-141]
-	vmovss	xmm1, DWORD PTR tp$[rbp-137]
-	vmovss	DWORD PTR [rbx], xmm6
-	vmovss	DWORD PTR [rbx+4], xmm5
-	vmovss	DWORD PTR [rbx+8], xmm7
-	vmovss	DWORD PTR [rbx+12], xmm0
-	vmovss	xmm0, DWORD PTR tp$[rbp-133]
-	vmovss	DWORD PTR [rbx+20], xmm0
-	vmovss	DWORD PTR [rbx+16], xmm1
-	vmovss	DWORD PTR [rbx+24], xmm8
-	mov	DWORD PTR [rbx+28], eax
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 323  : 	return tp;	
+; 323  : }
 
-	jmp	SHORT $LN128@drawTile
+	lea	rdx, QWORD PTR tp$[rbp-153]
+	mov	rcx, rdi
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rcx, QWORD PTR [rdi+12]
+	lea	rdx, QWORD PTR tp$[rbp-141]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	vmovss	xmm0, DWORD PTR tp$[rbp-129]
+	mov	eax, DWORD PTR tp$[rbp-125]
+	vmovss	DWORD PTR [rdi+24], xmm0
+	mov	DWORD PTR [rdi+28], eax
+	jmp	SHORT $LN93@drawTile
 $LN9@drawTile:
 
-; 324  : }
+; 290  : 	float height = edges[1] - edges[3];
+; 291  : 	if (width < 0 || height < 0) return TilePoint();
 
-	xor	eax, eax
-	mov	QWORD PTR [rbx], rax
-	mov	QWORD PTR [rbx+8], rax
-	mov	QWORD PTR [rbx+16], rax
-	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
-$LN128@drawTile:
+	mov	rcx, rdi
+	call	??0TilePoint@@QEAA@XZ			; TilePoint::TilePoint
+	jmp	SHORT $LN93@drawTile
+$LN90@drawTile:
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 165  : 	TilePoint() {d = -1.f;}	
+
+	mov	rcx, rdi
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rdi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	mov	DWORD PTR [rdi+24], -1082130432		; bf800000H
+$LN93@drawTile:
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 323  : }
+
 	lea	r11, QWORD PTR [rsp+192]
-	mov	rax, rbx
+	mov	rax, rdi
 	mov	rbx, QWORD PTR [r11+48]
 	mov	rsi, QWORD PTR [r11+56]
 	mov	rdi, QWORD PTR [r11+64]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm7, XMMWORD PTR [r11-32]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
-	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm11, XMMWORD PTR [r11-96]
 	mov	rsp, r11
 	pop	r15
@@ -22981,6 +24212,12 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z
 _TEXT	SEGMENT
 uvw$ = 32
@@ -22991,279 +24228,279 @@ t$ = 232
 dir$ = 240
 ?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z PROC ; Tile::uvMapping, COMDAT
 
-; 163  : void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int dir) {
+; 162  : void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int dir) {
 
-$LN67:
+$LN68:
 	mov	rax, rsp
-	push	rsi
+	mov	QWORD PTR [rax+32], r14
+	push	rbp
+	lea	rbp, QWORD PTR [rax-87]
 	sub	rsp, 192				; 000000c0H
 
-; 164  : 	float w = edges[2] - edges[0];
+; 163  : 	float w = edges[2] - edges[0];
 
 	vmovss	xmm0, DWORD PTR [r8+8]
 
-; 165  : 	float h = edges[1] - edges[3];
+; 164  : 	float h = edges[1] - edges[3];
 
 	vmovss	xmm1, DWORD PTR [r8+4]
-	vmovaps	XMMWORD PTR [rax-56], xmm8
-	mov	rsi, rcx
-	vmovaps	XMMWORD PTR [rax-72], xmm9
-	vsubss	xmm9, xmm0, DWORD PTR [r8]
-
-; 166  : 		
-; 167  : 	// Center uvw
-; 168  : 	Point3 uvw;
-; 169  : 	uvw.x = p.x - edges[0] - w * .5f;
-
-	vmovss	xmm0, DWORD PTR [rdx]
-	vsubss	xmm2, xmm0, DWORD PTR [r8]
-
-; 170  : 	uvw.y = p.y - edges[3] - h * .5f;
-
-	vmovss	xmm0, DWORD PTR [rdx+4]
-	mov	QWORD PTR [rax+8], rbx
-	mov	rbx, r9
-	mov	QWORD PTR [rax+16], rdi
-	vmovaps	XMMWORD PTR [rax-24], xmm6
-	vmovaps	XMMWORD PTR [rax-40], xmm7
-	vmovaps	XMMWORD PTR [rax-88], xmm10
-	vmovaps	XMMWORD PTR [rax-104], xmm11
-	vmovaps	XMMWORD PTR [rax-120], xmm12
-	vmovaps	XMMWORD PTR [rsp+64], xmm14
-	vsubss	xmm14, xmm1, DWORD PTR [r8+12]
-	vmulss	xmm1, xmm9, DWORD PTR __real@3f000000
-	vsubss	xmm11, xmm2, xmm1
-	vsubss	xmm2, xmm0, DWORD PTR [r8+12]
-
-; 171  : 	uvw.z = p.z;
-
-	vmovss	xmm0, DWORD PTR [rdx+8]
-
-; 172  : 
-; 173  : 	// Prime randomness
-; 174  : 	srand(tp.id*(tp.id*tp.id*15731 + 789221));
-
-	mov	edx, DWORD PTR [rcx+28]
-	mov	eax, edx
-	vmulss	xmm1, xmm14, DWORD PTR __real@3f000000
-	imul	eax, edx
-	vsubss	xmm8, xmm2, xmm1
-	vmovss	DWORD PTR uvw$[rsp], xmm11
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
-	vmovss	DWORD PTR uvw$[rsp+8], xmm0
-	imul	ecx, eax, 15731				; 00003d73H
 	vmovaps	XMMWORD PTR [rsp+48], xmm15
+	mov	r14, rcx
+	mov	QWORD PTR [rax+8], rbx
+
+; 165  : 		
+; 166  : 	// Center uvw
+; 167  : 	Point3 uvw;
+
+	lea	rcx, QWORD PTR uvw$[rbp-113]
+	mov	QWORD PTR [rax+16], rsi
+	mov	rbx, r8
+	mov	QWORD PTR [rax+24], rdi
+	mov	rsi, r9
+	vmovaps	XMMWORD PTR [rax-24], xmm6
+	mov	rdi, rdx
+	vmovaps	XMMWORD PTR [rax-40], xmm7
+	vmovaps	XMMWORD PTR [rax-56], xmm8
+	vmovaps	XMMWORD PTR [rax-72], xmm9
+	vmovaps	XMMWORD PTR [rax-88], xmm10
+	vsubss	xmm10, xmm0, DWORD PTR [r8]
+	vmovaps	XMMWORD PTR [rax-104], xmm11
+	vsubss	xmm11, xmm1, DWORD PTR [r8+12]
+	vmovaps	XMMWORD PTR [rax-120], xmm12
+	vmovaps	XMMWORD PTR [rsp+64], xmm13
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
+; 168  : 	uvw.x = p.x - edges[0] - w * .5f;
+; 169  : 	uvw.y = p.y - edges[3] - h * .5f;
+; 170  : 	uvw.z = p.z;
+; 171  : 
+; 172  : 	// Prime randomness
+; 173  : 	srand(tp.id*(tp.id*tp.id*15731 + 789221));
+
+	mov	edx, DWORD PTR [r14+28]
+	mov	eax, edx
+	vmovss	xmm0, DWORD PTR [rdi]
+	vsubss	xmm2, xmm0, DWORD PTR [rbx]
+	vmovss	xmm15, DWORD PTR __real@3f000000
+	vmulss	xmm1, xmm10, xmm15
+	vsubss	xmm0, xmm2, xmm1
+	vmovss	xmm2, DWORD PTR [rdi+4]
+	vsubss	xmm1, xmm2, DWORD PTR [rbx+12]
+	vmovss	xmm2, DWORD PTR [rdi+8]
+	imul	eax, edx
+	vmovss	DWORD PTR uvw$[rbp-113], xmm0
+	vmulss	xmm0, xmm11, xmm15
+	vsubss	xmm1, xmm1, xmm0
+	vmovss	DWORD PTR uvw$[rbp-109], xmm1
+	imul	ecx, eax, 15731				; 00003d73H
+	vmovss	DWORD PTR uvw$[rbp-105], xmm2
 	add	ecx, 789221				; 000c0ae5H
 	imul	ecx, edx
 	call	QWORD PTR __imp_srand
 
-; 124  : 	switch (type) {
+; 123  : 	switch (type) {
 
-	mov	ecx, DWORD PTR [rbx+84]
+	mov	ecx, DWORD PTR [rsi+84]
+	mov	rdi, QWORD PTR [rsp+224]
 
-; 175  : 
-; 176  : 	// Angle
-; 177  : 	float angle = getAngle(t.rotUV, t.randRot);
+; 174  : 
+; 175  : 	// Angle
+; 176  : 	float angle = getAngle(t.rotUV, t.randRot);
 
-	vmovss	xmm6, DWORD PTR [rbx+88]
+	vmovss	xmm6, DWORD PTR [rsi+88]
 
-; 124  : 	switch (type) {
+; 123  : 	switch (type) {
 
-	vmovsd	xmm15, QWORD PTR __real@40dfffc000000000
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	vxorps	xmm12, xmm12, xmm12
+	vmovsd	xmm12, QWORD PTR __real@40dfffc000000000
+	vmovsd	xmm13, QWORD PTR __real@3ff0000000000000
+	vxorps	xmm9, xmm9, xmm9
 	test	ecx, ecx
-	je	SHORT $LN34@uvMapping
+	je	$LN30@uvMapping
 	sub	ecx, 1
-	je	$LN35@uvMapping
+	je	SHORT $LN31@uvMapping
 	cmp	ecx, 1
-	jne	$LN32@uvMapping
+	jne	SHORT $LN28@uvMapping
 
-; 131  : 		case 2: // 90
-; 132  : 			switch (rand() % 4) {
+; 128  : 				return (float)pi;
+; 129  : 			return 0.f;
+; 130  : 		case 2: // 90
+; 131  : 			switch (rand() % 4) {
 
 	call	QWORD PTR __imp_rand
 	and	eax, -2147483645			; ffffffff80000003H
-	jge	SHORT $LN64@uvMapping
+	jge	SHORT $LN62@uvMapping
 	dec	eax
 	or	eax, -4
 	inc	eax
-$LN64@uvMapping:
+$LN62@uvMapping:
 	test	eax, eax
-	je	SHORT $LN38@uvMapping
+	je	$LN30@uvMapping
 	sub	eax, 1
-	je	SHORT $LN39@uvMapping
+	je	SHORT $LN35@uvMapping
 	sub	eax, 1
-	je	SHORT $LN40@uvMapping
+	je	SHORT $LN36@uvMapping
 	cmp	eax, 1
-	jne	$LN32@uvMapping
+	jne	SHORT $LN28@uvMapping
 
-; 139  : 				case 3:
-; 140  : 					return (float)pi*1.5f;
+; 138  : 				case 3:
+; 139  : 					return (float)pi*1.5f;
 
-	vmovss	xmm10, DWORD PTR __real@4096cbe4
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	jmp	SHORT $LN29@uvMapping
-$LN40@uvMapping:
+	vmovss	xmm8, DWORD PTR __real@4096cbe4
+	jmp	SHORT $LN25@uvMapping
+$LN36@uvMapping:
 
-; 137  : 				case 2:
-; 138  : 					return (float)pi;
+; 136  : 				case 2:
+; 137  : 					return (float)pi;
 
-	vmovss	xmm10, DWORD PTR __real@40490fdb
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	jmp	SHORT $LN29@uvMapping
-$LN39@uvMapping:
+	vmovss	xmm8, DWORD PTR __real@40490fdb
+	jmp	SHORT $LN25@uvMapping
+$LN35@uvMapping:
 
-; 135  : 				case 1: 
-; 136  : 					return (float)pi*.5f;
+; 132  : 				case 0:
+; 133  : 					return 0.f;
+; 134  : 				case 1: 
+; 135  : 					return (float)pi*.5f;
 
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	vmovaps	xmm10, xmm1
-	jmp	SHORT $LN29@uvMapping
-$LN38@uvMapping:
+	vmovss	xmm8, DWORD PTR __real@3fc90fdb
+	jmp	SHORT $LN25@uvMapping
+$LN28@uvMapping:
 
-; 133  : 				case 0:
-; 134  : 					return 0.f;
-
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-$LN34@uvMapping:
-
-; 178  : 
-; 179  : 	// Random scale
-; 180  : 	float scaleX = 0, scaleY = 0;			//avoid error C4701
-; 181  : 	switch (t.autoScale) {
-
-	vxorps	xmm10, xmm10, xmm10
-$LN29@uvMapping:
-	mov	edi, DWORD PTR [rbx+56]
-	mov	ecx, edi
-	vxorps	xmm6, xmm6, xmm6
-	vxorps	xmm7, xmm7, xmm7
-	sub	ecx, 1
-	je	$LN4@uvMapping
-	sub	ecx, 1
-	je	$LN5@uvMapping
-	sub	ecx, 1
-	je	$LN6@uvMapping
-	sub	ecx, 1
-	je	$LN7@uvMapping
-	cmp	ecx, 1
-	je	$LN8@uvMapping
-
-; 200  : 			break; }		
-; 201  : 	}
-; 202  : 
-; 203  : 	// Calculate scaling required to fit UVs tightly around the tile
-; 204  : 	if ((t.autoScale == 2 || t.autoScale == 3) && t.rotUV) { // Scale based on rotation so whole tile stays inside 0..1 space
-
-	lea	eax, DWORD PTR [rdi-2]
-	cmp	eax, 1
-	ja	$LN9@uvMapping
-	jmp	$LN10@uvMapping
-$LN32@uvMapping:
-
-; 143  : 			return UFRAND() * amount;
+; 140  : 			}			
+; 141  : 		default: // Amount	
+; 142  : 			return UFRAND() * amount;
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm1, xmm0, xmm15
+	vdivsd	xmm1, xmm0, xmm12
 	vaddsd	xmm2, xmm1, xmm1
-	vsubsd	xmm3, xmm2, QWORD PTR __real@3ff0000000000000
+	vsubsd	xmm3, xmm2, xmm13
 	vcvtss2sd xmm0, xmm6, xmm6
 	vmulsd	xmm1, xmm3, xmm0
-	vcvtsd2ss xmm10, xmm1, xmm1
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	jmp	SHORT $LN29@uvMapping
-$LN35@uvMapping:
+	vcvtsd2ss xmm8, xmm1, xmm1
+	jmp	SHORT $LN25@uvMapping
+$LN31@uvMapping:
 
-; 125  : 		case 0:
-; 126  : 			return 0.f;
-; 127  : 		case 1: // 180
-; 128  : 			if (rand() % 2)
+; 124  : 		case 0:
+; 125  : 			return 0.f;
+; 126  : 		case 1: // 180
+; 127  : 			if (rand() % 2)
 
 	call	QWORD PTR __imp_rand
 	and	eax, -2147483647			; ffffffff80000001H
-	jge	SHORT $LN63@uvMapping
+	jge	SHORT $LN61@uvMapping
 	dec	eax
 	or	eax, -2
 	inc	eax
-$LN63@uvMapping:
+$LN61@uvMapping:
 	xor	ecx, ecx
 	vmovd	xmm1, ecx
 	vmovd	xmm0, eax
 	vpcmpeqd xmm2, xmm0, xmm1
 	vmovss	xmm1, DWORD PTR __real@40490fdb
-	vblendvps xmm10, xmm1, xmm12, xmm2
+	vblendvps xmm8, xmm1, xmm9, xmm2
 
-; 129  : 				return (float)pi;
-; 130  : 			return 0.f;
+; 177  : 
+; 178  : 	// Random scale
+; 179  : 	float scaleX = 0, scaleY = 0;			//avoid error C4701
+; 180  : 	switch (t.autoScale) {
 
-	vmovss	xmm1, DWORD PTR __real@3fc90fdb
-	jmp	$LN29@uvMapping
-$LN8@uvMapping:
+	jmp	SHORT $LN25@uvMapping
+$LN30@uvMapping:
+	vxorps	xmm8, xmm8, xmm8
+$LN25@uvMapping:
+	mov	ecx, DWORD PTR [rsi+56]
+	vxorps	xmm6, xmm6, xmm6
+	vxorps	xmm7, xmm7, xmm7
+	sub	ecx, 1
+	je	SHORT $LN4@uvMapping
+	sub	ecx, 1
+	je	SHORT $LN4@uvMapping
+	sub	ecx, 1
+	je	SHORT $LN6@uvMapping
+	sub	ecx, 1
+	je	SHORT $LN7@uvMapping
+	cmp	ecx, 1
+	jne	SHORT $LN2@uvMapping
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 196  : 		case 5: { // UV Norm. Keep aspect
-; 197  : 			float s = MAX(t.tileMaxWidth, t.tileMaxHeight);		
+; 134  : 	return (_CSTD fmaxf(_Xx, _Yx));
 
-	vmovss	xmm0, DWORD PTR [rbx+124]
-	vmaxss	xmm6, xmm0, DWORD PTR [rbx+120]
+	vmovss	xmm1, DWORD PTR [rsi+120]
+	vmovss	xmm0, DWORD PTR [rsi+124]
+	call	QWORD PTR __imp_fmaxf
+	vmovaps	xmm6, xmm0
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 198  : 			scaleX = s;
-; 199  : 			scaleY = s;
+; 198  : 			scaleY = s;
 
-	vmovaps	xmm7, xmm6
-	jmp	SHORT $LN9@uvMapping
+	vmovaps	xmm7, xmm0
+	jmp	SHORT $LN2@uvMapping
 $LN7@uvMapping:
 
-; 192  : 		case 4: { // UV Norm.
-; 193  : 			scaleX = t.tileMaxWidth;
+; 191  : 		case 4: { // UV Norm.
+; 192  : 			scaleX = t.tileMaxWidth;
 
-	vmovss	xmm6, DWORD PTR [rbx+124]
+	vmovss	xmm6, DWORD PTR [rsi+124]
 
-; 194  : 			scaleY = t.tileMaxHeight;
+; 193  : 			scaleY = t.tileMaxHeight;
 
-	vmovss	xmm7, DWORD PTR [rbx+120]
+	vmovss	xmm7, DWORD PTR [rsi+120]
 
-; 195  : 			break; }
+; 194  : 			break; }
 
-	jmp	SHORT $LN59@uvMapping
+	jmp	SHORT $LN2@uvMapping
 $LN6@uvMapping:
-	vmaxss	xmm6, xmm9, xmm14
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 187  : 			break; }
-; 188  : 		case 3: { // UV Fit Keep aspect
-; 189  : 			float s = MAX(w, h);		
-; 190  : 			scaleX = s; scaleY = s;
+; 134  : 	return (_CSTD fmaxf(_Xx, _Yx));
 
-	vmovaps	xmm7, xmm6
+	vmovaps	xmm1, xmm11
+	vmovaps	xmm0, xmm10
+	call	QWORD PTR __imp_fmaxf
+	vmovaps	xmm6, xmm0
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 191  : 			break; }
+; 189  : 			scaleX = s; scaleY = s;
 
-	jmp	SHORT $LN10@uvMapping
-$LN5@uvMapping:
+	vmovaps	xmm7, xmm0
 
-; 184  : 			break; }		
-; 185  : 		case 2: { // UV Fit
-; 186  : 			scaleX = w; scaleY = h; // Same as UV, but with additiona scaling below
+; 190  : 			break; }
 
-	vmovaps	xmm6, xmm9
-	vmovaps	xmm7, xmm14
-$LN10@uvMapping:
+	jmp	SHORT $LN2@uvMapping
+$LN4@uvMapping:
 
-; 200  : 			break; }		
-; 201  : 	}
-; 202  : 
-; 203  : 	// Calculate scaling required to fit UVs tightly around the tile
-; 204  : 	if ((t.autoScale == 2 || t.autoScale == 3) && t.rotUV) { // Scale based on rotation so whole tile stays inside 0..1 space
+; 199  : 			break; }		
+; 200  : 	}
+; 201  : 
+; 202  : 	// Calculate scaling required to fit UVs tightly around the tile
+; 203  : 	if ((t.autoScale == 2 || t.autoScale == 3) && t.rotUV) { // Scale based on rotation so whole tile stays inside 0..1 space
 
-	cmp	DWORD PTR [rbx+84], 0
+	vmovaps	xmm7, xmm11
+	vmovaps	xmm6, xmm10
+$LN2@uvMapping:
+	mov	ebx, DWORD PTR [rsi+56]
+	vmovss	xmm10, DWORD PTR __xmm@80000000800000008000000080000000
+	vmovaps	xmm11, XMMWORD PTR [rsp+96]
+	lea	eax, DWORD PTR [rbx-2]
+	cmp	eax, 1
+	ja	SHORT $LN9@uvMapping
+	cmp	DWORD PTR [rsi+84], 0
 	je	SHORT $LN9@uvMapping
 
-; 205  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
-	vandps	xmm0, xmm10, DWORD PTR __xmm@7fffffff7fffffff7fffffff7fffffff
-	vxorps	xmm0, xmm0, DWORD PTR __xmm@80000000800000008000000080000000
+	vandps	xmm0, xmm8, DWORD PTR __xmm@7fffffff7fffffff7fffffff7fffffff
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 144  : 	return (_CSTD fmodf(_Xx, _Yx));
+
+	vmovss	xmm1, DWORD PTR __real@3fc90fdb
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+
+	vxorps	xmm0, xmm0, xmm10
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
 ; 144  : 	return (_CSTD fmodf(_Xx, _Yx));
@@ -23271,7 +24508,7 @@ $LN10@uvMapping:
 	call	fmodf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 205  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vaddss	xmm0, xmm0, DWORD PTR __real@3f490fdb
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
@@ -23281,300 +24518,282 @@ $LN10@uvMapping:
 	call	cosf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 205  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
+; 204  : 		float scale = 2.f * SQRTHALF * cos(fmod(angle > 0 ? -angle : angle, HALFPI) + QUATPI);
 
 	vmulss	xmm1, xmm0, DWORD PTR __real@3fb504f3
 
-; 206  : 		scaleX *= scale;
+; 205  : 		scaleX *= scale;
 
 	vmulss	xmm6, xmm6, xmm1
 
-; 207  : 		scaleY *= scale;
+; 206  : 		scaleY *= scale;
 
 	vmulss	xmm7, xmm7, xmm1
-	jmp	SHORT $LN9@uvMapping
-$LN4@uvMapping:
-
-; 182  : 		case 1: { // UV
-; 183  : 			scaleX = w; scaleY = h;
-
-	vmovaps	xmm6, xmm9
-	vmovaps	xmm7, xmm14
 $LN9@uvMapping:
 
-; 208  : 	}	
-; 209  : 
-; 210  : 	// Apply auto scale
-; 211  : 	if (t.autoScale) {
+; 207  : 	}	
+; 208  : 
+; 209  : 	// Apply auto scale
+; 210  : 	if (t.autoScale) {
 
-	test	edi, edi
-	je	SHORT $LN11@uvMapping
+	test	ebx, ebx
+	mov	rbx, QWORD PTR [rsp+208]
+	je	SHORT $LN63@uvMapping
+
+; 211  : 		uvw.x /= scaleX;
+
+	vmovss	xmm0, DWORD PTR uvw$[rbp-113]
+
+; 212  : 		uvw.y /= scaleY;
+
+	vmovss	xmm2, DWORD PTR uvw$[rbp-109]
+	vdivss	xmm1, xmm0, xmm6
+	vdivss	xmm0, xmm2, xmm7
+	vmovss	DWORD PTR uvw$[rbp-109], xmm0
+	vmovss	DWORD PTR uvw$[rbp-113], xmm1
+$LN63@uvMapping:
+
+; 213  : 	}
+; 214  : 
+; 215  : 	// Flip
+; 216  : 	if (t.flipX) if (rand() % 2) uvw.x = -uvw.x;
+
+	cmp	DWORD PTR [rsi+92], 0
+	je	SHORT $LN64@uvMapping
+	call	QWORD PTR __imp_rand
+	and	eax, -2147483647			; ffffffff80000001H
+	jge	SHORT $LN60@uvMapping
+	dec	eax
+	or	eax, -2
+	inc	eax
+$LN60@uvMapping:
+	test	eax, eax
+	je	SHORT $LN64@uvMapping
+	vmovss	xmm0, DWORD PTR uvw$[rbp-113]
+	vxorps	xmm1, xmm0, xmm10
+	vmovss	DWORD PTR uvw$[rbp-113], xmm1
+$LN64@uvMapping:
+
+; 217  : 	if (t.flipY) if (rand() % 2) uvw.y = -uvw.y;
+
+	cmp	DWORD PTR [rsi+96], 0
+	je	SHORT $LN65@uvMapping
+	call	QWORD PTR __imp_rand
+	and	eax, -2147483647			; ffffffff80000001H
+	jge	SHORT $LN59@uvMapping
+	dec	eax
+	or	eax, -2
+	inc	eax
 $LN59@uvMapping:
-
-; 212  : 		uvw.x /= scaleX;
-
-	vdivss	xmm11, xmm11, xmm6
-
-; 213  : 		uvw.y /= scaleY;
-
-	vdivss	xmm8, xmm8, xmm7
-	vmovss	DWORD PTR uvw$[rsp], xmm11
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
-$LN11@uvMapping:
-
-; 214  : 	}
-; 215  : 
-; 216  : 	// Flip
-; 217  : 	if (t.flipX) if (rand() % 2) uvw.x = -uvw.x;
-
-	cmp	DWORD PTR [rbx+92], 0
-	vmovaps	xmm14, XMMWORD PTR [rsp+64]
-	mov	rdi, QWORD PTR [rsp+216]
-	vmovaps	xmm9, xmm11
-	je	SHORT $LN13@uvMapping
-	call	QWORD PTR __imp_rand
-	and	eax, -2147483647			; ffffffff80000001H
-	jge	SHORT $LN62@uvMapping
-	dec	eax
-	or	eax, -2
-	inc	eax
-$LN62@uvMapping:
 	test	eax, eax
-	je	SHORT $LN13@uvMapping
-	vxorps	xmm9, xmm11, DWORD PTR __xmm@80000000800000008000000080000000
-	vmovss	DWORD PTR uvw$[rsp], xmm9
-$LN13@uvMapping:
+	je	SHORT $LN65@uvMapping
+	vmovss	xmm0, DWORD PTR uvw$[rbp-109]
+	vxorps	xmm1, xmm0, xmm10
+	vmovss	DWORD PTR uvw$[rbp-109], xmm1
+$LN65@uvMapping:
 
-; 218  : 	if (t.flipY) if (rand() % 2) uvw.y = -uvw.y;
+; 218  : 	
+; 219  : 	// Random scale
+; 220  : 	if (t.randScale) {
 
-	cmp	DWORD PTR [rbx+96], 0
-	vmovaps	xmm11, XMMWORD PTR [rsp+96]
-	je	SHORT $LN15@uvMapping
-	call	QWORD PTR __imp_rand
-	and	eax, -2147483647			; ffffffff80000001H
-	jge	SHORT $LN61@uvMapping
-	dec	eax
-	or	eax, -2
-	inc	eax
-$LN61@uvMapping:
-	test	eax, eax
-	je	SHORT $LN15@uvMapping
-	vxorps	xmm8, xmm8, DWORD PTR __xmm@80000000800000008000000080000000
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
-$LN15@uvMapping:
+	cmp	BYTE PTR [rsi+128], 0
+	vmovaps	xmm10, XMMWORD PTR [rsp+112]
+	je	$LN16@uvMapping
 
-; 219  : 	
-; 220  : 	// Random scale
-; 221  : 	if (t.randScale) {
+; 221  : 		if (t.lock) {
 
-	cmp	BYTE PTR [rbx+128], 0
-	je	$LN65@uvMapping
-
-; 222  : 		if (t.lock) {
-
-	cmp	DWORD PTR [rbx+80], 0
+	cmp	DWORD PTR [rsi+80], 0
 	je	SHORT $LN17@uvMapping
 
-; 223  : 			float s = 1.f + SFRAND() * t.randSX;
+; 222  : 			float s = 1.f + SFRAND() * t.randSX;
 
 	call	QWORD PTR __imp_rand
-	vmovss	xmm1, DWORD PTR [rbx+72]
+	vmovss	xmm1, DWORD PTR [rsi+72]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm2, xmm0, xmm15
+	vdivsd	xmm2, xmm0, xmm12
 	vcvtss2sd xmm1, xmm1, xmm1
 	vmulsd	xmm3, xmm1, xmm2
 
-; 224  : 			scaleX = s;
-; 225  : 			scaleY = s;
+; 223  : 			scaleX = s;
+; 224  : 			scaleY = s;
 
 	vmovaps	xmm0, xmm3
 
-; 226  : 		} else {
+; 225  : 		} else {
 
 	jmp	SHORT $LN18@uvMapping
 $LN17@uvMapping:
 
-; 227  : 			scaleX = 1.f + SFRAND() * t.randSX;
+; 226  : 			scaleX = 1.f + SFRAND() * t.randSX;
 
 	call	QWORD PTR __imp_rand
-	vmovss	xmm6, DWORD PTR [rbx+72]
+	vmovss	xmm6, DWORD PTR [rsi+72]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm7, xmm0, xmm15
+	vdivsd	xmm7, xmm0, xmm12
 
-; 228  : 			scaleY = 1.f + SFRAND() * t.randSY;
+; 227  : 			scaleY = 1.f + SFRAND() * t.randSY;
 
 	call	QWORD PTR __imp_rand
-	vmovss	xmm1, DWORD PTR [rbx+76]
+	vmovss	xmm1, DWORD PTR [rsi+76]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm2, xmm0, xmm15
+	vdivsd	xmm2, xmm0, xmm12
 	vcvtss2sd xmm0, xmm6, xmm6
 	vcvtss2sd xmm1, xmm1, xmm1
 	vmulsd	xmm0, xmm0, xmm7
 	vmulsd	xmm3, xmm1, xmm2
 $LN18@uvMapping:
 
-; 229  : 		}
-; 230  : 
-; 231  : 		if (scaleX < 0) scaleX = 0.f;
+; 228  : 		}
+; 229  : 
+; 230  : 		if (scaleX < 0) scaleX = 0.f;
 
-	vmovsd	xmm6, QWORD PTR __real@3ff0000000000000
-	vaddsd	xmm0, xmm0, xmm6
+	vaddsd	xmm0, xmm0, xmm13
 	vcvtsd2ss xmm1, xmm0, xmm0
-	vmaxss	xmm1, xmm12, xmm1
 
-; 232  : 		if (scaleY < 0) scaleY = 0.f;
+; 231  : 		if (scaleY < 0) scaleY = 0.f;
+; 232  : 
+; 233  : 		uvw.x /= scaleX;	 
 
-	vdivss	xmm9, xmm9, xmm1
-	vaddsd	xmm0, xmm3, xmm6
-	vcvtsd2ss xmm1, xmm0, xmm0
-	vmaxss	xmm1, xmm12, xmm1
+	vmovss	xmm0, DWORD PTR uvw$[rbp-113]
+	vmaxss	xmm2, xmm9, xmm1
+	vdivss	xmm1, xmm0, xmm2
+	vmovss	DWORD PTR uvw$[rbp-113], xmm1
+	vaddsd	xmm2, xmm3, xmm13
+	vcvtsd2ss xmm0, xmm2, xmm2
+	vmaxss	xmm1, xmm9, xmm0
 
-; 233  : 
-; 234  : 		uvw.x /= scaleX;	 
-; 235  : 		uvw.y /= scaleY;
+; 234  : 		uvw.y /= scaleY;
 
-	vdivss	xmm8, xmm8, xmm1
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
-	vmovss	DWORD PTR uvw$[rsp], xmm9
-	jmp	SHORT $LN16@uvMapping
-$LN65@uvMapping:
-
-; 219  : 	
-; 220  : 	// Random scale
-; 221  : 	if (t.randScale) {
-
-	vmovsd	xmm6, QWORD PTR __real@3ff0000000000000
+	vmovss	xmm0, DWORD PTR uvw$[rbp-109]
+	vdivss	xmm1, xmm0, xmm1
+	vmovss	DWORD PTR uvw$[rbp-109], xmm1
 $LN16@uvMapping:
 
-; 236  : 	}
-; 237  : 
-; 238  : 	// Offset
-; 239  : 	if (t.randOffset) {
+; 235  : 	}
+; 236  : 
+; 237  : 	// Offset
+; 238  : 	if (t.randOffset) {
 
-	cmp	BYTE PTR [rbx+129], 0
-	vmovaps	xmm12, XMMWORD PTR [rsp+80]
+	cmp	BYTE PTR [rsi+129], 0
+	vmovaps	xmm9, XMMWORD PTR [rsp+128]
 	vmovaps	xmm7, XMMWORD PTR [rsp+160]
 	je	SHORT $LN21@uvMapping
 
-; 240  : 		uvw.x += UFRAND() * t.randX;
+; 239  : 		uvw.x += UFRAND() * t.randX;
 
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm1, xmm0, xmm15
-	vmovss	xmm0, DWORD PTR [rbx+64]
+	vdivsd	xmm1, xmm0, xmm12
+	vmovss	xmm0, DWORD PTR [rsi+64]
 	vaddsd	xmm2, xmm1, xmm1
-	vsubsd	xmm3, xmm2, xmm6
-	vcvtss2sd xmm1, xmm9, xmm9
+	vmovss	xmm1, DWORD PTR uvw$[rbp-113]
+	vsubsd	xmm3, xmm2, xmm13
 	vcvtss2sd xmm0, xmm0, xmm0
 	vmulsd	xmm4, xmm3, xmm0
+	vcvtss2sd xmm1, xmm1, xmm1
 	vaddsd	xmm2, xmm4, xmm1
-	vcvtsd2ss xmm9, xmm2, xmm2
-	vmovss	DWORD PTR uvw$[rsp], xmm9
+	vcvtsd2ss xmm0, xmm2, xmm2
+	vmovss	DWORD PTR uvw$[rbp-113], xmm0
 
-; 241  : 		uvw.y += UFRAND() * t.randY;
+; 240  : 		uvw.y += UFRAND() * t.randY;
 
 	call	QWORD PTR __imp_rand
+	vmovss	xmm3, DWORD PTR [rsi+68]
+	vcvtss2sd xmm3, xmm3, xmm3
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, eax
-	vdivsd	xmm1, xmm0, xmm15
-	vmovss	xmm0, DWORD PTR [rbx+68]
+	vdivsd	xmm1, xmm0, xmm12
 	vaddsd	xmm2, xmm1, xmm1
-	vsubsd	xmm3, xmm2, xmm6
-	vcvtss2sd xmm1, xmm8, xmm8
-	vcvtss2sd xmm0, xmm0, xmm0
-	vmulsd	xmm4, xmm3, xmm0
-	vaddsd	xmm2, xmm4, xmm1
-	vcvtsd2ss xmm8, xmm2, xmm2
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
+	vmovss	xmm1, DWORD PTR uvw$[rbp-109]
+	vsubsd	xmm4, xmm2, xmm13
+	vmulsd	xmm5, xmm4, xmm3
+	vcvtss2sd xmm1, xmm1, xmm1
+	vaddsd	xmm2, xmm5, xmm1
+	vcvtsd2ss xmm3, xmm2, xmm2
+	vmovss	DWORD PTR uvw$[rbp-109], xmm3
 $LN21@uvMapping:
 
-; 242  : 	}
-; 243  : 
-; 244  : 	// Rotate
-; 245  : 	if (t.rotUV)
+; 241  : 	}
+; 242  : 
+; 243  : 	// Rotate
+; 244  : 	if (t.rotUV)
 
-	cmp	DWORD PTR [rbx+84], 0
-	vmovaps	xmm15, XMMWORD PTR [rsp+48]
+	cmp	DWORD PTR [rsi+84], 0
+	vmovaps	xmm13, XMMWORD PTR [rsp+64]
+	vmovaps	xmm12, XMMWORD PTR [rsp+80]
 	je	SHORT $LN22@uvMapping
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
 ; 78   : 	return (_CSTD cosf(_Xx));
 
-	vmovaps	xmm0, xmm10
+	vmovaps	xmm0, xmm8
 	call	cosf
 	vmovaps	xmm6, xmm0
 
 ; 285  : 	return (_CSTD sinf(_Xx));
 
-	vmovaps	xmm0, xmm10
+	vmovaps	xmm0, xmm8
 	call	sinf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 117  : 	float rotX = (cos(angle)*d.x - sin(angle)*d.y);
+; 117  : 	float rotY = (sin(angle)*d.x + cos(angle)*d.y);
 
-	vmulss	xmm1, xmm0, xmm8
+	vmulss	xmm2, xmm0, DWORD PTR uvw$[rbp-113]
+	vmulss	xmm1, xmm6, DWORD PTR uvw$[rbp-109]
+	vmulss	xmm0, xmm0, DWORD PTR uvw$[rbp-109]
+	vaddss	xmm5, xmm2, xmm1
+	vmulss	xmm2, xmm6, DWORD PTR uvw$[rbp-113]
+	vsubss	xmm1, xmm2, xmm0
+	vmovss	DWORD PTR uvw$[rbp-113], xmm1
 
-; 118  : 	float rotY = (sin(angle)*d.x + cos(angle)*d.y);
+; 118  : 	d.x = rotX;
+; 119  : 	d.y = rotY;
 
-	vmulss	xmm0, xmm0, xmm9
-	vmulss	xmm2, xmm6, xmm9
-	vsubss	xmm4, xmm2, xmm1
-	vmulss	xmm3, xmm6, xmm8
-	vaddss	xmm8, xmm3, xmm0
-	vmovss	DWORD PTR uvw$[rsp+4], xmm8
-
-; 119  : 	d.x = rotX;
-
-	vmovss	DWORD PTR uvw$[rsp], xmm4
-
-; 120  : 	d.y = rotY;
-
-	vmovaps	xmm9, xmm4
+	vmovss	DWORD PTR uvw$[rbp-109], xmm5
 $LN22@uvMapping:
 
-; 246  : 		rotatePoint2(uvw, angle);
-; 247  : 
-; 248  : 	// Offset to 0..1
-; 249  : 	if (t.autoScale) {
+; 245  : 		rotatePoint2(uvw, angle);
+; 246  : 
+; 247  : 	// Offset to 0..1
+; 248  : 	if (t.autoScale) {
 
-	cmp	DWORD PTR [rbx+56], 0
-	mov	rbx, QWORD PTR [rsp+208]
-	vmovaps	xmm10, XMMWORD PTR [rsp+112]
+	cmp	DWORD PTR [rsi+56], 0
+	mov	rsi, QWORD PTR [rsp+216]
+	vmovaps	xmm8, XMMWORD PTR [rsp+144]
 	vmovaps	xmm6, XMMWORD PTR [rsp+176]
 	je	SHORT $LN23@uvMapping
 
-; 250  : 		uvw.x += .5f;
+; 249  : 		uvw.x += .5f;
 
-	vaddss	xmm0, xmm9, DWORD PTR __real@3f000000
+	vaddss	xmm1, xmm15, DWORD PTR uvw$[rbp-113]
 
-; 251  : 		uvw.y += .5f;
+; 250  : 		uvw.y += .5f;
 
-	vaddss	xmm1, xmm8, DWORD PTR __real@3f000000
-	vmovss	DWORD PTR uvw$[rsp], xmm0
-	vmovss	DWORD PTR uvw$[rsp+4], xmm1
+	vaddss	xmm0, xmm15, DWORD PTR uvw$[rbp-109]
+	vmovss	DWORD PTR uvw$[rbp-113], xmm1
+	vmovss	DWORD PTR uvw$[rbp-109], xmm0
 $LN23@uvMapping:
 
-; 252  : 	}
-; 253  : 
-; 254  : 	// Return
-; 255  : 	tp.uvw = uvw;
+; 251  : 	}
+; 252  : 
+; 253  : 	// Return
+; 254  : 	tp.uvw = uvw;
 
-	vmovsd	xmm0, QWORD PTR uvw$[rsp]
-	mov	eax, DWORD PTR uvw$[rsp+8]
+	vmovsd	xmm0, QWORD PTR uvw$[rbp-113]
+	mov	eax, DWORD PTR uvw$[rbp-105]
 
-; 256  : }
+; 255  : }
 
-	lea	r11, QWORD PTR [rsp+192]
-	vmovaps	xmm8, XMMWORD PTR [r11-48]
-	vmovaps	xmm9, XMMWORD PTR [r11-64]
-	vmovsd	QWORD PTR [rsi+12], xmm0
-	mov	DWORD PTR [rsi+20], eax
-	mov	rsp, r11
-	pop	rsi
+	vmovaps	xmm15, XMMWORD PTR [rsp+48]
+	vmovsd	QWORD PTR [r14+12], xmm0
+	mov	DWORD PTR [r14+20], eax
+	mov	r14, QWORD PTR [rsp+232]
+	add	rsp, 192				; 000000c0H
+	pop	rbp
 	ret	0
 ?uvMapping@Tile@@CAXAEAVTilePoint@@VPoint3@@QEAMAEAVTileParam@@H@Z ENDP ; Tile::uvMapping
 _TEXT	ENDS
@@ -23587,8 +24806,8 @@ var$ = 16
 d$ = 24
 ?rotateUV@Tile@@CAXHMAEAVPoint3@@@Z PROC		; Tile::rotateUV, COMDAT
 
-; 113  : 
-; 114  : }
+; 112  : 
+; 113  : }
 
 	ret	0
 ?rotateUV@Tile@@CAXHMAEAVPoint3@@@Z ENDP		; Tile::rotateUV
@@ -23605,7 +24824,7 @@ d$ = 96
 angle$ = 104
 ?rotatePoint2@Tile@@CAXAEAVPoint3@@M@Z PROC		; Tile::rotatePoint2, COMDAT
 
-; 116  : void Tile::rotatePoint2(Point3& d, float angle) {
+; 115  : void Tile::rotatePoint2(Point3& d, float angle) {
 
 $LN12:
 	push	rbx
@@ -23621,7 +24840,7 @@ $LN12:
 	vmovaps	XMMWORD PTR [rsp+32], xmm8
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 116  : void Tile::rotatePoint2(Point3& d, float angle) {
+; 115  : void Tile::rotatePoint2(Point3& d, float angle) {
 
 	vmovaps	xmm6, xmm1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
@@ -23637,17 +24856,17 @@ $LN12:
 	call	sinf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 117  : 	float rotX = (cos(angle)*d.x - sin(angle)*d.y);
+; 116  : 	float rotX = (cos(angle)*d.x - sin(angle)*d.y);
 
 	vmulss	xmm1, xmm0, DWORD PTR [rbx+4]
 
-; 118  : 	float rotY = (sin(angle)*d.x + cos(angle)*d.y);
+; 117  : 	float rotY = (sin(angle)*d.x + cos(angle)*d.y);
 
 	vmovss	xmm3, DWORD PTR [rbx]
 
-; 119  : 	d.x = rotX;
-; 120  : 	d.y = rotY;
-; 121  : }
+; 118  : 	d.x = rotX;
+; 119  : 	d.y = rotY;
+; 120  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+64]
 	vmovaps	xmm7, XMMWORD PTR [rsp+48]
@@ -23666,28 +24885,30 @@ $LN12:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File g:\dropbox\github\berconmaps\src\tile.h
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+; File g:\dropbox\github\berconmaps\src\tile.h
+; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 ;	COMDAT ?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z
@@ -23696,168 +24917,161 @@ $T1 = 32
 $T2 = 32
 $T3 = 48
 $T4 = 48
-__$ReturnUdt$ = 192
-rX$ = 200
-rY$ = 208
-w$ = 216
-h$ = 224
-t$ = 232
+$T5 = 64
+$T6 = 96
+__$ReturnUdt$ = 224
+rX$ = 232
+rY$ = 240
+w$ = 248
+h$ = 256
+t$ = 264
 ?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z PROC ; Tile::corner, COMDAT
 
-; 51   : TilePoint Tile::corner(float rX, float rY, float w, float h, TileParam& t) {	
+; 50   : TilePoint Tile::corner(float rX, float rY, float w, float h, TileParam& t) {	
 
-$LN90:
+$LN64:
 	mov	rax, rsp
-	mov	QWORD PTR [rax+8], rbx
-	mov	QWORD PTR [rax+16], rdi
-	push	rbp
-	lea	rbp, QWORD PTR [rax-79]
-	sub	rsp, 176				; 000000b0H
+	mov	QWORD PTR [rax+16], rbx
+	push	rsi
+	sub	rsp, 208				; 000000d0H
 
-; 52   : 	// Evaluate	maps
-; 53   : 	if (t.tileRound) {
+; 51   : 	// Evaluate	maps
+; 52   : 	if (t.tileRound) {
 
-	mov	rdi, QWORD PTR t$[rbp-105]
-	mov	rbx, rcx
+	mov	rbx, QWORD PTR t$[rsp]
+	mov	rsi, rcx
 	vmovaps	XMMWORD PTR [rax-24], xmm6
 	vmovaps	XMMWORD PTR [rax-40], xmm7
 	vmovaps	XMMWORD PTR [rax-56], xmm8
-	cmp	DWORD PTR [rdi+40], 0
+	cmp	DWORD PTR [rbx+40], 0
 	vmovaps	XMMWORD PTR [rax-72], xmm9
-	vmovss	xmm9, DWORD PTR h$[rbp-105]
+	vmovss	xmm9, DWORD PTR h$[rsp]
 	vmovaps	XMMWORD PTR [rax-88], xmm10
-	vmovaps	XMMWORD PTR [rax-104], xmm11
-	vmovaps	xmm11, xmm3
+	vmovaps	xmm10, xmm3
 	vmovaps	xmm7, xmm2
 	vmovaps	xmm8, xmm1
-	vxorps	xmm10, xmm10, xmm10
 	je	$LN14@corner
 
-; 54   : 		bool inCorner = false;
-; 55   : 		float cX=0.0f, cY=0.0f;
-; 56   : 		// Detect corner
-; 57   : 		if (rX < t.tileCrnrRad) { 
+; 53   : 		bool inCorner = false;
+; 54   : 		float cX=0.0f, cY=0.0f;
+; 55   : 		// Detect corner
+; 56   : 		if (rX < t.tileCrnrRad) { 
 
-	vmovss	xmm6, DWORD PTR [rdi+52]
+	vmovss	xmm6, DWORD PTR [rbx+52]
 	xor	al, al
 	vcomiss	xmm6, xmm8
 	vxorps	xmm2, xmm2, xmm2
 	vxorps	xmm1, xmm1, xmm1
 	jbe	SHORT $LN3@corner
 
-; 58   : 			if (rY < t.tileCrnrRad) { // Bottom left
+; 57   : 			if (rY < t.tileCrnrRad) { // Bottom left
 
 	vcomiss	xmm6, xmm7
 	jbe	SHORT $LN5@corner
 
-; 59   : 				cX = t.tileCrnrRad - rX;
+; 58   : 				cX = t.tileCrnrRad - rX;
 
 	vsubss	xmm2, xmm6, xmm8
 
-; 60   : 				cY = t.tileCrnrRad - rY; 				
+; 59   : 				cY = t.tileCrnrRad - rY; 				
 
 	vsubss	xmm1, xmm6, xmm7
 
-; 61   : 				inCorner = true;
+; 60   : 				inCorner = true;
 
-	jmp	SHORT $LN83@corner
+	jmp	SHORT $LN59@corner
 $LN5@corner:
 
-; 62   : 			} else if (rY > h - t.tileCrnrRad) { // Top left
+; 61   : 			} else if (rY > h - t.tileCrnrRad) { // Top left
 
 	vsubss	xmm0, xmm9, xmm6
 	vcomiss	xmm7, xmm0
 	jbe	SHORT $LN11@corner
 
-; 63   : 				cX = t.tileCrnrRad - rX;
-; 64   : 				cY = h - rY - t.tileCrnrRad; 				
+; 62   : 				cX = t.tileCrnrRad - rX;
+; 63   : 				cY = h - rY - t.tileCrnrRad; 				
 
 	vsubss	xmm0, xmm9, xmm7
 	vsubss	xmm1, xmm0, xmm6
 	vsubss	xmm2, xmm6, xmm8
 
-; 65   : 				inCorner = true;
-; 66   : 			}
+; 64   : 				inCorner = true;
+; 65   : 			}
 
-	jmp	SHORT $LN83@corner
+	jmp	SHORT $LN59@corner
 $LN3@corner:
 
-; 67   : 		} else if (rX > w - t.tileCrnrRad) {
+; 66   : 		} else if (rX > w - t.tileCrnrRad) {
 
-	vsubss	xmm0, xmm11, xmm6
+	vsubss	xmm0, xmm10, xmm6
 	vcomiss	xmm8, xmm0
 	jbe	SHORT $LN11@corner
 
-; 68   : 			if (rY < t.tileCrnrRad) { // Bottom right
+; 67   : 			if (rY < t.tileCrnrRad) { // Bottom right
 
 	vcomiss	xmm6, xmm7
 	jbe	SHORT $LN9@corner
 
-; 69   : 				cX = w - rX - t.tileCrnrRad;
-; 70   : 				cY = t.tileCrnrRad - rY; 				
+; 68   : 				cX = w - rX - t.tileCrnrRad;
+; 69   : 				cY = t.tileCrnrRad - rY; 				
 
 	vsubss	xmm1, xmm6, xmm7
 
-; 71   : 				inCorner = true;
+; 70   : 				inCorner = true;
 
-	jmp	SHORT $LN84@corner
+	jmp	SHORT $LN60@corner
 $LN9@corner:
 
-; 72   : 			} else if (rY > h - t.tileCrnrRad) { // Top right
+; 71   : 			} else if (rY > h - t.tileCrnrRad) { // Top right
 
 	vsubss	xmm0, xmm9, xmm6
 	vcomiss	xmm7, xmm0
 	jbe	SHORT $LN11@corner
 
-; 73   : 				cX = w - rX - t.tileCrnrRad;
-; 74   : 				cY = h - rY - t.tileCrnrRad;
+; 72   : 				cX = w - rX - t.tileCrnrRad;
+; 73   : 				cY = h - rY - t.tileCrnrRad;
 
 	vsubss	xmm1, xmm9, xmm7
 	vsubss	xmm1, xmm1, xmm6
-$LN84@corner:
+$LN60@corner:
 
-; 75   : 				inCorner = true;
-; 76   : 			}
-; 77   : 		}
-; 78   : 		float d = cY*cY + cX*cX;
+; 74   : 				inCorner = true;
+; 75   : 			}
+; 76   : 		}
+; 77   : 		float d = cY*cY + cX*cX;
 
-	vsubss	xmm0, xmm11, xmm8
+	vsubss	xmm0, xmm10, xmm8
 	vsubss	xmm2, xmm0, xmm6
-$LN83@corner:
+$LN59@corner:
 	mov	al, 1
 $LN11@corner:
 	vmulss	xmm1, xmm1, xmm1
 	vmulss	xmm0, xmm2, xmm2
 	vaddss	xmm3, xmm1, xmm0
 
-; 79   : 		if (inCorner) {
+; 78   : 		if (inCorner) {
 
 	test	al, al
 	je	$LN14@corner
 
-; 80   : 			if (d > t.tileCrnrRad*t.tileCrnrRad)
+; 79   : 			if (d > t.tileCrnrRad*t.tileCrnrRad)
 
 	vmulss	xmm0, xmm6, xmm6
 	vcomiss	xmm3, xmm0
 	jbe	SHORT $LN13@corner
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	xor	eax, eax
-	mov	QWORD PTR [rcx], rax
-	mov	QWORD PTR [rcx+8], rax
-	mov	QWORD PTR [rcx+16], rax
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 165  : 	TilePoint() {d = -1.f;}	
 
-	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rsi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	mov	DWORD PTR [rsi+24], -1082130432		; bf800000H
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 81   : 				return TilePoint();
+; 80   : 				return TilePoint();
 
-	jmp	$LN85@corner
+	jmp	$LN61@corner
 $LN13@corner:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
@@ -23867,49 +25081,49 @@ $LN13@corner:
 	call	sqrtf
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 84   : 			if (t.tileBlur > 0 && d <t. tileBlurRad)
+; 83   : 			if (t.tileBlur > 0 && d <t. tileBlurRad)
 
-	mov	ecx, DWORD PTR [rdi+44]
+	mov	ecx, DWORD PTR [rbx+44]
 	vsubss	xmm3, xmm6, xmm0
 	test	ecx, ecx
-	jle	SHORT $LN14@corner
-	vmovss	xmm0, DWORD PTR [rdi+48]
+	jle	$LN14@corner
+	vmovss	xmm0, DWORD PTR [rbx+48]
 	vcomiss	xmm0, xmm3
-	jbe	SHORT $LN14@corner
+	jbe	$LN14@corner
 
-; 41   : 	switch (type) {		
+; 40   : 	switch (type) {		
 
 	sub	ecx, 1
-	je	SHORT $LN37@corner
+	je	SHORT $LN33@corner
 	sub	ecx, 1
-	je	SHORT $LN38@corner
+	je	SHORT $LN34@corner
 	cmp	ecx, 1
-	je	SHORT $LN39@corner
+	je	SHORT $LN35@corner
 
-; 47   : 		default: return 1.f;
+; 46   : 		default: return 1.f;
 
-	vmovss	xmm3, DWORD PTR __real@3f800000
-	jmp	SHORT $LN34@corner
-$LN39@corner:
+	vmovss	xmm6, DWORD PTR __real@3f800000
+	jmp	SHORT $LN30@corner
+$LN35@corner:
 
-; 46   : 		case 3: return smooth(d, 0.f, r); // Smooth					
+; 45   : 		case 3: return smooth(d, 0.f, r); // Smooth					
 
 	vmovaps	xmm2, xmm0
 	vmovaps	xmm0, xmm3
 	vxorps	xmm1, xmm1, xmm1
 	call	?smooth@@YAMMMM@Z			; smooth
-	vmovaps	xmm3, xmm0
-	jmp	SHORT $LN34@corner
-$LN38@corner:
+	vmovaps	xmm6, xmm0
+	jmp	SHORT $LN30@corner
+$LN34@corner:
 
-; 43   : 		case 2: // Cubic
-; 44   : 			d = 1.f - (d/r);
+; 42   : 		case 2: // Cubic
+; 43   : 			d = 1.f - (d/r);
 
 	vmovss	xmm2, DWORD PTR __real@3f800000
 	vdivss	xmm0, xmm3, xmm0
 	vsubss	xmm0, xmm2, xmm0
 
-; 45   : 			return sqrt(1-d*d);
+; 44   : 			return sqrt(1-d*d);
 
 	vmulss	xmm1, xmm0, xmm0
 	vsubss	xmm0, xmm2, xmm1
@@ -23918,229 +25132,313 @@ $LN38@corner:
 ; 295  : 	return (_CSTD sqrtf(_Xx));
 
 	call	sqrtf
-	vmovaps	xmm3, xmm0
+	vmovaps	xmm6, xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 45   : 			return sqrt(1-d*d);
+; 44   : 			return sqrt(1-d*d);
 
-	jmp	SHORT $LN34@corner
-$LN37@corner:
+	jmp	SHORT $LN30@corner
+$LN33@corner:
 
-; 42   : 		case 1: return d/r; // Linear
+; 41   : 		case 1: return d/r; // Linear
 
-	vdivss	xmm3, xmm3, xmm0
-$LN34@corner:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vdivss	xmm6, xmm3, xmm0
+$LN30@corner:
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 84   : 				return TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(d, t.tileBlurRad, t.tileBlur));
 
-	xor	eax, eax
-	mov	QWORD PTR [rbx], rax
-	mov	DWORD PTR [rbx+8], eax
-	mov	QWORD PTR [rbx+16], rax
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
-
-	vmovss	DWORD PTR [rbx+24], xmm3
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 85   : 				return TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(d, t.tileBlurRad, t.tileBlur));
-
-	jmp	$LN86@corner
+	vdivss	xmm2, xmm7, xmm9
+	vdivss	xmm1, xmm8, xmm10
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, rax
+	mov	rcx, rsi
+	vmovaps	xmm2, xmm6
+	call	??0TilePoint@@QEAA@VPoint3@@M@Z		; TilePoint::TilePoint
+	jmp	$LN61@corner
 $LN14@corner:
 
-; 86   : 		}
-; 87   : 	} 
-; 88   : 	if (t.tileBlur) {		
+; 85   : 		}
+; 86   : 	} 
+; 87   : 	if (t.tileBlur) {		
 
-	mov	r8d, DWORD PTR [rdi+44]
+	mov	r8d, DWORD PTR [rbx+44]
 	test	r8d, r8d
 	je	$LN22@corner
 
-; 89   : 		bool inCorner = false;
-; 90   : 		float dX = rX;
-; 91   : 		float dY = rY;
-; 92   : 		// Distance to vertical walls
-; 93   : 		if (rX < t.tileBlurRad) {
+; 88   : 		bool inCorner = false;
+; 89   : 		float dX = rX;
+; 90   : 		float dY = rY;
+; 91   : 		// Distance to vertical walls
+; 92   : 		if (rX < t.tileBlurRad) {
 
-	vmovss	xmm4, DWORD PTR [rdi+48]
+	vmovss	xmm1, DWORD PTR [rbx+48]
 	xor	al, al
-	vcomiss	xmm4, xmm8
-	vmovaps	xmm5, xmm8
-	vmovaps	xmm3, xmm7
-	ja	SHORT $LN87@corner
+	vcomiss	xmm1, xmm8
+	vmovaps	xmm3, xmm8
+	vmovaps	xmm2, xmm7
+	ja	SHORT $LN62@corner
 
-; 94   : 			inCorner = true;
-; 95   : 		} else if (rX > w - t.tileBlurRad) {
+; 93   : 			inCorner = true;
+; 94   : 		} else if (rX > w - t.tileBlurRad) {
 
-	vsubss	xmm0, xmm11, xmm4
+	vsubss	xmm0, xmm10, xmm1
 	vcomiss	xmm8, xmm0
 	jbe	SHORT $LN18@corner
 
-; 96   : 			dX = w - rX;
+; 95   : 			dX = w - rX;
 
-	vsubss	xmm5, xmm11, xmm8
-$LN87@corner:
+	vsubss	xmm3, xmm10, xmm8
+$LN62@corner:
 
-; 97   : 			inCorner = true;
-; 98   : 		}
-; 99   : 		// Distance to horizontal walls
-; 100  : 		if (rY < t.tileBlurRad) {
+; 96   : 			inCorner = true;
+; 97   : 		}
+; 98   : 		// Distance to horizontal walls
+; 99   : 		if (rY < t.tileBlurRad) {
 
 	mov	al, 1
 $LN18@corner:
-	vcomiss	xmm4, xmm7
-	ja	SHORT $LN82@corner
+	vcomiss	xmm1, xmm7
+	ja	SHORT $LN58@corner
 
-; 101  : 			inCorner = true;
-; 102  : 		} else if (rY > h - t.tileBlurRad) {
+; 100  : 			inCorner = true;
+; 101  : 		} else if (rY > h - t.tileBlurRad) {
 
-	vsubss	xmm0, xmm9, xmm4
+	vsubss	xmm0, xmm9, xmm1
 	vcomiss	xmm7, xmm0
 	jbe	SHORT $LN21@corner
 
-; 103  : 			dY = h - rY;
+; 102  : 			dY = h - rY;
 
-	vsubss	xmm3, xmm9, xmm7
+	vsubss	xmm2, xmm9, xmm7
 
-; 104  : 			inCorner = true;
-; 105  : 		}
-; 106  : 		if (inCorner)
+; 103  : 			inCorner = true;
 
-	jmp	SHORT $LN82@corner
+	mov	al, 1
 $LN21@corner:
+
+; 104  : 		}
+; 105  : 		if (inCorner)
+
 	test	al, al
 	je	$LN22@corner
-$LN82@corner:
+$LN58@corner:
 
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
 
-	vcomiss	xmm3, xmm5
-	vmovss	DWORD PTR $T2[rbp-97], xmm10
-	mov	eax, DWORD PTR $T2[rbp-97]
-	mov	DWORD PTR $T4[rbp-85], eax
-	vmovss	DWORD PTR $T4[rbp-105], xmm10
-	vmovss	DWORD PTR $T4[rbp-101], xmm10
-	vdivss	xmm0, xmm8, xmm11
-	vdivss	xmm1, xmm7, xmm9
-	jbe	SHORT $LN24@corner
-; File g:\dropbox\github\berconmaps\src\tile.h
+	vcomiss	xmm2, xmm3
+	jbe	$LN24@corner
 
-; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 40   : 	switch (type) {		
 
-	vunpcklps xmm2, xmm0, xmm1
-; File g:\dropbox\github\berconmaps\src\tile.cpp
+	sub	r8d, 1
+	je	SHORT $LN43@corner
+	sub	r8d, 1
+	je	SHORT $LN44@corner
+	cmp	r8d, 1
+	je	SHORT $LN45@corner
 
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+; 46   : 		default: return 1.f;
 
-	vmovaps	xmm1, xmm4
-	vmovaps	xmm0, xmm5
-; File g:\dropbox\github\berconmaps\src\tile.h
+	vmovss	xmm6, DWORD PTR __real@3f800000
+	jmp	SHORT $LN40@corner
+$LN45@corner:
 
-; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+; 45   : 		case 3: return smooth(d, 0.f, r); // Smooth					
 
-	vmovsd	QWORD PTR $T4[rbp-93], xmm2
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR $T4[rbp-97], xmm10
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
-
-	call	?edgeBlur@Tile@@CAMMMH@Z		; Tile::edgeBlur
-	vxorps	xmm6, xmm6, xmm6
-	jmp	SHORT $LN88@corner
-$LN24@corner:
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
-
-	vunpcklps xmm1, xmm0, xmm1
-	vmovsd	QWORD PTR $T3[rbp-93], xmm1
-	vxorps	xmm6, xmm6, xmm6
-; File g:\dropbox\github\berconmaps\src\tile.cpp
-
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
-
-	vmovaps	xmm1, xmm4
+	vmovaps	xmm2, xmm1
+	vxorps	xmm1, xmm1, xmm1
 	vmovaps	xmm0, xmm3
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	call	?smooth@@YAMMMM@Z			; smooth
+	vmovaps	xmm6, xmm0
+	jmp	SHORT $LN40@corner
+$LN44@corner:
 
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
+; 42   : 		case 2: // Cubic
+; 43   : 			d = 1.f - (d/r);
 
-	vmovss	DWORD PTR $T3[rbp-97], xmm6
+	vmovss	xmm2, DWORD PTR __real@3f800000
+	vdivss	xmm0, xmm3, xmm1
+	vsubss	xmm0, xmm2, xmm0
+
+; 44   : 			return sqrt(1-d*d);
+
+	vmulss	xmm1, xmm0, xmm0
+	vsubss	xmm0, xmm2, xmm1
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 295  : 	return (_CSTD sqrtf(_Xx));
+
+	call	sqrtf
+	vmovaps	xmm6, xmm0
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+; 44   : 			return sqrt(1-d*d);
 
-	call	?edgeBlur@Tile@@CAMMMH@Z		; Tile::edgeBlur
-$LN88@corner:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	jmp	SHORT $LN40@corner
+$LN43@corner:
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 41   : 		case 1: return d/r; // Linear
 
-	mov	edx, DWORD PTR $T3[rbp-77]
-	lea	rcx, QWORD PTR $T3[rbp-93]
-	vmovss	DWORD PTR [rbx+4], xmm10
-	vmovss	DWORD PTR [rbx+8], xmm6
-	xor	eax, eax
-	mov	DWORD PTR [rbx], eax
-	vmovss	DWORD PTR $T3[rbp-81], xmm0
-	mov	eax, DWORD PTR [rcx]
-	mov	DWORD PTR [rbx+12], eax
-	mov	eax, DWORD PTR [rcx+4]
-	mov	DWORD PTR [rbx+16], eax
-	mov	eax, DWORD PTR [rcx+8]
-	mov	DWORD PTR [rbx+20], eax
-	vmovss	DWORD PTR [rbx+24], xmm0
-	mov	DWORD PTR [rbx+28], edx
-; File g:\dropbox\github\berconmaps\src\tile.cpp
+	vdivss	xmm6, xmm3, xmm1
+$LN40@corner:
 
-; 107  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
 
-	jmp	SHORT $LN85@corner
-$LN22@corner:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	xor	eax, eax
-	mov	QWORD PTR [rbx], rax
-	mov	DWORD PTR [rbx+8], eax
-	mov	QWORD PTR [rbx+16], rax
+	vdivss	xmm2, xmm7, xmm9
+	vdivss	xmm1, xmm8, xmm10
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
-	mov	DWORD PTR [rbx+24], 1065353216		; 3f800000H
-$LN86@corner:
+	lea	rcx, QWORD PTR $T5[rsp]
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 110  : }
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
 
-	vdivss	xmm0, xmm7, xmm9
-	vdivss	xmm1, xmm8, xmm11
-	vunpcklps xmm0, xmm1, xmm0
-	vmovss	DWORD PTR $T1[rbp-97], xmm10
-	mov	eax, DWORD PTR $T1[rbp-97]
-	vmovsd	QWORD PTR [rbx+12], xmm0
-	mov	DWORD PTR [rbx+20], eax
-$LN85@corner:
-	lea	r11, QWORD PTR [rsp+176]
-	mov	rax, rbx
-	mov	rbx, QWORD PTR [r11+16]
-	mov	rdi, QWORD PTR [r11+24]
+	mov	rbx, rax
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR $T5[rsp+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	vmovsd	xmm0, QWORD PTR [rbx]
+	vmovsd	QWORD PTR $T5[rsp+12], xmm0
+	mov	eax, DWORD PTR [rbx+8]
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+
+	lea	rbx, QWORD PTR $T5[rsp]
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	vmovss	DWORD PTR $T5[rsp+24], xmm6
+	mov	DWORD PTR $T5[rsp+20], eax
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+
+	jmp	SHORT $LN25@corner
+$LN24@corner:
+	vmovaps	xmm0, xmm2
+	call	?edgeBlur@Tile@@CAMMMH@Z		; Tile::edgeBlur
+	vdivss	xmm2, xmm7, xmm9
+	vdivss	xmm1, xmm8, xmm10
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T4[rsp]
+	vmovaps	xmm6, xmm0
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	lea	rcx, QWORD PTR $T6[rsp]
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+
+	mov	rbx, rax
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR $T6[rsp+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	vmovsd	xmm1, QWORD PTR [rbx]
+	vmovsd	QWORD PTR $T6[rsp+12], xmm1
+	mov	eax, DWORD PTR [rbx+8]
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+
+	lea	rbx, QWORD PTR $T6[rsp]
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	vmovss	DWORD PTR $T6[rsp+24], xmm6
+	mov	DWORD PTR $T6[rsp+20], eax
+$LN25@corner:
+	mov	rdx, rbx
+	mov	rcx, rsi
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR [rbx+12]
+	lea	rcx, QWORD PTR [rsi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	eax, DWORD PTR [rbx+24]
+	mov	DWORD PTR [rsi+24], eax
+	mov	eax, DWORD PTR [rbx+28]
+	mov	DWORD PTR [rsi+28], eax
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 106  : 			return dX<dY?TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dX, t.tileBlurRad, t.tileBlur)):TilePoint(Point3(rX/w, rY/h, 0.f), edgeBlur(dY, t.tileBlurRad, t.tileBlur));
+
+	jmp	SHORT $LN61@corner
+$LN22@corner:
+
+; 108  : 	return TilePoint(Point3(rX/w, rY/h, 0.f), 1.f);
+
+	vdivss	xmm2, xmm7, xmm9
+	vdivss	xmm1, xmm8, xmm10
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T3[rsp]
+	mov	QWORD PTR [rsp+224], rdi
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	mov	rcx, rsi
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 108  : 	return TilePoint(Point3(rX/w, rY/h, 0.f), 1.f);
+
+	mov	rdi, rax
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rsi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	vmovsd	xmm0, QWORD PTR [rdi]
+	vmovsd	QWORD PTR [rsi+12], xmm0
+	mov	eax, DWORD PTR [rdi+8]
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 108  : 	return TilePoint(Point3(rX/w, rY/h, 0.f), 1.f);
+
+	mov	rdi, QWORD PTR [rsp+224]
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
+
+	mov	DWORD PTR [rsi+20], eax
+	mov	DWORD PTR [rsi+24], 1065353216		; 3f800000H
+$LN61@corner:
+; File g:\dropbox\github\berconmaps\src\tile.cpp
+
+; 109  : }
+
+	lea	r11, QWORD PTR [rsp+208]
+	mov	rax, rsi
+	mov	rbx, QWORD PTR [r11+24]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	vmovaps	xmm7, XMMWORD PTR [r11-32]
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
-	vmovaps	xmm11, XMMWORD PTR [r11-96]
 	mov	rsp, r11
-	pop	rbp
+	pop	rsi
 	ret	0
 ?corner@Tile@@CA?AVTilePoint@@MMMMAEAVTileParam@@@Z ENDP ; Tile::corner
 _TEXT	ENDS
@@ -24155,7 +25453,7 @@ r$ = 16
 type$ = 24
 ?edgeBlur@Tile@@CAMMMH@Z PROC				; Tile::edgeBlur, COMDAT
 
-; 41   : 	switch (type) {		
+; 40   : 	switch (type) {		
 
 	sub	r8d, 1
 	je	SHORT $LN4@edgeBlur
@@ -24164,31 +25462,31 @@ type$ = 24
 	cmp	r8d, 1
 	je	SHORT $LN6@edgeBlur
 
-; 47   : 		default: return 1.f;
+; 46   : 		default: return 1.f;
 
 	vmovss	xmm0, DWORD PTR __real@3f800000
 
-; 48   : 	}	
-; 49   : }
+; 47   : 	}	
+; 48   : }
 
 	ret	0
 $LN6@edgeBlur:
 
-; 46   : 		case 3: return smooth(d, 0.f, r); // Smooth					
+; 45   : 		case 3: return smooth(d, 0.f, r); // Smooth					
 
 	vmovaps	xmm2, xmm1
 	vxorps	xmm1, xmm1, xmm1
 	jmp	?smooth@@YAMMMM@Z			; smooth
 $LN5@edgeBlur:
 
-; 43   : 		case 2: // Cubic
-; 44   : 			d = 1.f - (d/r);
+; 42   : 		case 2: // Cubic
+; 43   : 			d = 1.f - (d/r);
 
 	vmovss	xmm2, DWORD PTR __real@3f800000
 	vdivss	xmm0, xmm0, xmm1
 	vsubss	xmm0, xmm2, xmm0
 
-; 45   : 			return sqrt(1-d*d);
+; 44   : 			return sqrt(1-d*d);
 
 	vmulss	xmm1, xmm0, xmm0
 	vsubss	xmm0, xmm2, xmm1
@@ -24200,99 +25498,100 @@ $LN5@edgeBlur:
 $LN4@edgeBlur:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 42   : 		case 1: return d/r; // Linear
+; 41   : 		case 1: return d/r; // Linear
 
 	vdivss	xmm0, xmm0, xmm1
 
-; 48   : 	}	
-; 49   : }
+; 47   : 	}	
+; 48   : }
 
 	ret	0
 ?edgeBlur@Tile@@CAMMMH@Z ENDP				; Tile::edgeBlur
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??0TilePoint@@QEAA@$$QEAV0@@Z
 _TEXT	SEGMENT
-this$ = 8
-__that$ = 16
+this$ = 48
+__that$ = 56
 ??0TilePoint@@QEAA@$$QEAV0@@Z PROC			; TilePoint::TilePoint, COMDAT
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR [rdx]
-	mov	DWORD PTR [rcx], eax
-	mov	eax, DWORD PTR [rdx+4]
-	mov	DWORD PTR [rcx+4], eax
-	mov	eax, DWORD PTR [rdx+8]
-	mov	DWORD PTR [rcx+8], eax
-	mov	eax, DWORD PTR [rdx+12]
-	mov	DWORD PTR [rcx+12], eax
-	mov	eax, DWORD PTR [rdx+16]
-	mov	DWORD PTR [rcx+16], eax
-	mov	eax, DWORD PTR [rdx+20]
-	mov	DWORD PTR [rcx+20], eax
-	mov	eax, DWORD PTR [rdx+24]
-	mov	DWORD PTR [rcx+24], eax
-	mov	eax, DWORD PTR [rdx+28]
-	mov	DWORD PTR [rcx+28], eax
-	mov	rax, rcx
+$LN4:
+	mov	QWORD PTR [rsp+8], rbx
+	push	rdi
+	sub	rsp, 32					; 00000020H
+	mov	rbx, rdx
+	mov	rdi, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR [rbx+12]
+	lea	rcx, QWORD PTR [rdi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	eax, DWORD PTR [rbx+24]
+	mov	DWORD PTR [rdi+24], eax
+	mov	eax, DWORD PTR [rbx+28]
+	mov	rbx, QWORD PTR [rsp+48]
+	mov	DWORD PTR [rdi+28], eax
+	mov	rax, rdi
+	add	rsp, 32					; 00000020H
+	pop	rdi
 	ret	0
 ??0TilePoint@@QEAA@$$QEAV0@@Z ENDP			; TilePoint::TilePoint
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.h
 ;	COMDAT ??0TilePoint@@QEAA@VPoint3@@M@Z
 _TEXT	SEGMENT
-this$ = 8
-x$ = 16
-y$ = 24
+this$ = 64
+x$ = 72
+y$ = 80
 ??0TilePoint@@QEAA@VPoint3@@M@Z PROC			; TilePoint::TilePoint, COMDAT
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	xor	eax, eax
-	mov	QWORD PTR [rcx], rax
-	mov	QWORD PTR [rcx+8], rax
-	mov	QWORD PTR [rcx+16], rax
-; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 168  : 	TilePoint(Point3 x, float y) {uvw = x; d = y;}
 
-	vmovsd	xmm0, QWORD PTR [rdx]
-	vmovsd	QWORD PTR [rcx+12], xmm0
-	mov	eax, DWORD PTR [rdx+8]
-	mov	DWORD PTR [rcx+20], eax
-	mov	rax, rcx
-	vmovss	DWORD PTR [rcx+24], xmm2
+$LN4:
+	mov	QWORD PTR [rsp+8], rbx
+	mov	QWORD PTR [rsp+16], rsi
+	push	rdi
+	sub	rsp, 48					; 00000030H
+	vmovaps	XMMWORD PTR [rsp+32], xmm6
+	mov	rdi, rdx
+	vmovaps	xmm6, xmm2
+	mov	rsi, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rsi+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	vmovsd	xmm0, QWORD PTR [rdi]
+	mov	rbx, QWORD PTR [rsp+64]
+	vmovsd	QWORD PTR [rsi+12], xmm0
+	mov	eax, DWORD PTR [rdi+8]
+	mov	DWORD PTR [rsi+20], eax
+	mov	rax, rsi
+	vmovss	DWORD PTR [rsi+24], xmm6
+	mov	rsi, QWORD PTR [rsp+72]
+	vmovaps	xmm6, XMMWORD PTR [rsp+32]
+	add	rsp, 48					; 00000030H
+	pop	rdi
 	ret	0
 ??0TilePoint@@QEAA@VPoint3@@M@Z ENDP			; TilePoint::TilePoint
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\tile.h
 ;	COMDAT ??0TilePoint@@QEAA@XZ
 _TEXT	SEGMENT
-this$ = 8
+this$ = 48
 ??0TilePoint@@QEAA@XZ PROC				; TilePoint::TilePoint, COMDAT
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	xor	eax, eax
-	mov	QWORD PTR [rcx], rax
-	mov	QWORD PTR [rcx+8], rax
-	mov	QWORD PTR [rcx+16], rax
-; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 165  : 	TilePoint() {d = -1.f;}	
 
-	mov	rax, rcx
-	mov	DWORD PTR [rcx+24], -1082130432		; bf800000H
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR [rbx+12]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	mov	rax, rbx
+	mov	DWORD PTR [rbx+24], -1082130432		; bf800000H
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??0TilePoint@@QEAA@XZ ENDP				; TilePoint::TilePoint
 _TEXT	ENDS
@@ -24365,11 +25664,11 @@ $T20 = 112
 $T21 = 112
 ?setPreset@TilePattern@@QEAAXH@Z PROC			; TilePattern::setPreset, COMDAT
 
-; 493  : void TilePattern::setPreset(int preset) {
+; 492  : void TilePattern::setPreset(int preset) {
 
 $LN270:
 
-; 494  : 	switch (preset) {
+; 493  : 	switch (preset) {
 
 	cmp	edx, 9
 	ja	$LN266@setPreset
@@ -24379,11 +25678,11 @@ $LN270:
 	mov	QWORD PTR $T1[rbp-80], -2
 	mov	QWORD PTR [rsp+96], rbx
 
-; 493  : void TilePattern::setPreset(int preset) {
+; 492  : void TilePattern::setPreset(int preset) {
 
 	mov	rbx, rcx
 
-; 494  : 	switch (preset) {
+; 493  : 	switch (preset) {
 
 	movsxd	rax, edx
 	lea	rcx, OFFSET FLAT:__ImageBase
@@ -24392,7 +25691,7 @@ $LN270:
 	jmp	rdx
 $LN4@setPreset:
 
-; 495  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
+; 494  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
 
 	lea	rax, QWORD PTR $T11[rbp-80]
 	mov	QWORD PTR $T21[rbp-80], rax
@@ -24422,12 +25721,12 @@ $LN4@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 495  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
+; 494  : 		case 0: setPattern(L"0, 1, 1"); break; // Stack
 
 	jmp	$LN267@setPreset
 $LN5@setPreset:
 
-; 496  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
+; 495  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
 
 	lea	rax, QWORD PTR $T10[rbp-80]
 	mov	QWORD PTR $T20[rbp-80], rax
@@ -24457,12 +25756,12 @@ $LN5@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 496  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
+; 495  : 		case 1: setPattern(L"0, 1, 1 / 0.5, 1, 1"); break; // Stretcher
 
 	jmp	$LN267@setPreset
 $LN6@setPreset:
 
-; 497  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
+; 496  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
 
 	lea	rax, QWORD PTR $T9[rbp-80]
 	mov	QWORD PTR $T19[rbp-80], rax
@@ -24492,12 +25791,12 @@ $LN6@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 497  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
+; 496  : 		case 2: setPattern(L".25, 1, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Flemish Strecher
 
 	jmp	$LN267@setPreset
 $LN7@setPreset:
 
-; 498  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
+; 497  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
 
 	lea	rax, QWORD PTR $T8[rbp-80]
 	mov	QWORD PTR $T18[rbp-80], rax
@@ -24527,12 +25826,12 @@ $LN7@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 498  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
+; 497  : 		case 3: setPattern(L".25, 1, .5 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1 / -.5, 1, 1"); break; // Common
 
 	jmp	$LN267@setPreset
 $LN8@setPreset:
 
-; 499  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
+; 498  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
 
 	lea	rax, QWORD PTR $T7[rbp-80]
 	mov	QWORD PTR $T17[rbp-80], rax
@@ -24562,12 +25861,12 @@ $LN8@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 499  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
+; 498  : 		case 4: setPattern(L"0, 1, 1, .5 / .75, 1, 1, .5"); break; // Flemish
 
 	jmp	$LN267@setPreset
 $LN9@setPreset:
 
-; 500  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
+; 499  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
 
 	lea	rax, QWORD PTR $T6[rbp-80]
 	mov	QWORD PTR $T16[rbp-80], rax
@@ -24597,12 +25896,12 @@ $LN9@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 500  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
+; 499  : 		case 5: setPattern(L"0, 1, 1, 1, .5 / 1.25, 1, 1, 1, .5"); break; // Monk Bond
 
 	jmp	$LN267@setPreset
 $LN10@setPreset:
 
-; 501  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
+; 500  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
 
 	lea	rax, QWORD PTR $T5[rbp-80]
 	mov	QWORD PTR $T15[rbp-80], rax
@@ -24632,12 +25931,12 @@ $LN10@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 501  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
+; 500  : 		case 6: setPattern(L"0, 1, 1, 1, 1, .5 / 1.75, 1, 1, 1, 1, .5"); break; // Flemish Garden Wall
 
 	jmp	$LN267@setPreset
 $LN11@setPreset:
 
-; 502  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
+; 501  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
 
 	lea	rax, QWORD PTR $T4[rbp-80]
 	mov	QWORD PTR $T14[rbp-80], rax
@@ -24667,12 +25966,12 @@ $LN11@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 502  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
+; 501  : 		case 7: setPattern(L".25, 1, .5 / 0, 1, 1"); break; // English
 
 	jmp	SHORT $LN267@setPreset
 $LN12@setPreset:
 
-; 503  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
+; 502  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
 
 	lea	rax, QWORD PTR $T3[rbp-80]
 	mov	QWORD PTR $T13[rbp-80], rax
@@ -24702,12 +26001,12 @@ $LN12@setPreset:
 	npad	1
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 503  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
+; 502  : 		case 8: setPattern(L"0,1,1 / -.25,1,.5 / -.25,1,1 / -.25,1,.5"); break; // English Cross
 
 	jmp	SHORT $LN267@setPreset
 $LN13@setPreset:
 
-; 504  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
+; 503  : 		case 9: setPattern(L"0,1,.5 / -.25,1,.5 / -.25,1,1 / -.25,1,1"); break; // Double English Cross
 
 	lea	rax, QWORD PTR $T2[rbp-80]
 	mov	QWORD PTR $T12[rbp-80], rax
@@ -24738,7 +26037,7 @@ $LN13@setPreset:
 $LN267@setPreset:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
-; 506  : }
+; 505  : }
 
 	lea	rdx, QWORD PTR $T2[rbp-80]
 	mov	rcx, rbx
@@ -25385,12 +26684,6 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
 ;	COMDAT ?update@TilePattern@@QEAAXXZ
 _TEXT	SEGMENT
 this$ = 16
@@ -25398,26 +26691,26 @@ this$ = 16
 
 ; 82   : 	void update() {
 
-$LN74:
-	mov	QWORD PTR [rsp+24], rbp
-	push	rdi
+$LN66:
+	mov	QWORD PTR [rsp+16], rbx
+	push	rsi
 
 ; 83   : 		totalHeight = 0.f;
 
-	xor	ebp, ebp
+	xor	esi, esi
 	mov	r11, rcx
-	mov	DWORD PTR [rcx], ebp
+	mov	DWORD PTR [rcx], esi
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	mov	edi, ebp
+	mov	ebx, esi
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	rdx, QWORD PTR [rcx+32]
+	mov	r8, QWORD PTR [rcx+32]
 	mov	rax, QWORD PTR [rcx+40]
-	sub	rax, rdx
+	sub	rax, r8
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
@@ -25425,104 +26718,88 @@ $LN74:
 
 	test	rax, rax
 	je	$LN3@update
-	mov	QWORD PTR [rsp+16], rbx
-	mov	r8d, ebp
-	mov	QWORD PTR [rsp+24], rsi
-	mov	esi, ebp
-	npad	10
+	mov	QWORD PTR [rsp+16], rdi
+	mov	r10d, esi
+	mov	edi, esi
+	npad	15
 $LL4@update:
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+
+; 1679 : 		return (this->_Myfirst());
+
+	mov	rcx, QWORD PTR [r10+r8+8]
+; File g:\dropbox\github\berconmaps\src\tile.h
+
+; 85   : 			rows[i].update();
+
+	mov	rdx, rsi
+	mov	r9, QWORD PTR [r10+r8+16]
+	sub	r9, rcx
 
 ; 65   : 		totalWidth = 0.f;
 
-	mov	DWORD PTR [r8+rdx+4], ebp
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	mov	r10d, ebp
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
-
-	mov	rbx, QWORD PTR [r8+rdx+8]
-	mov	rax, QWORD PTR [r8+rdx+16]
-	sub	rax, rbx
-	sar	rax, 2
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	test	rax, rax
-	je	SHORT $LN72@update
-	vxorps	xmm0, xmm0, xmm0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1736 : 		return (this->_Myfirst()[_Pos]);
-
-	mov	r9, rbp
-	npad	11
-$LL31@update:
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 67   : 			totalWidth += tiles[i];
-
-	vaddss	xmm0, xmm0, DWORD PTR [r9+rbx]
-	inc	r10d
-	lea	r9, QWORD PTR [r9+4]
-	vmovss	DWORD PTR [r8+rdx+4], xmm0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
-
-	mov	rcx, QWORD PTR [r8+rdx+16]
-	sub	rcx, rbx
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	movsxd	rax, r10d
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
-
-	sar	rcx, 2
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	cmp	rax, rcx
-	jb	SHORT $LL31@update
-$LN72@update:
+	mov	DWORD PTR [r10+r8+4], esi
 
 ; 85   : 			rows[i].update();
+
+	add	r9, 3
+	shr	r9, 2
+	cmp	rcx, QWORD PTR [r10+r8+16]
+	cmova	r9, rsi
+
+; 66   : 		for (float tile : tiles)	//for (int i=0; i<tiles.size(); i++)
+
+	test	r9, r9
+	je	SHORT $LN30@update
+	vxorps	xmm0, xmm0, xmm0
+	npad	1
+$LL31@update:
+
+; 67   : 			totalWidth += tile;
+
+	vaddss	xmm0, xmm0, DWORD PTR [rcx]
+	inc	rdx
+
+; 85   : 			rows[i].update();
+
+	lea	rcx, QWORD PTR [rcx+4]
+
+; 67   : 			totalWidth += tile;
+
+	vmovss	DWORD PTR [r10+r8+4], xmm0
+	cmp	rdx, r9
+	jne	SHORT $LL31@update
+$LN30@update:
+
 ; 86   : 			totalHeight += heights[i];
 
 	mov	rax, QWORD PTR [r11+8]
-	inc	edi
-	add	r8, 32					; 00000020H
-	vmovss	xmm0, DWORD PTR [rsi+rax]
+	inc	ebx
+	add	r10, 32					; 00000020H
+	vmovss	xmm0, DWORD PTR [rdi+rax]
 	vaddss	xmm1, xmm0, DWORD PTR [r11]
 	vmovss	DWORD PTR [r11], xmm1
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	rdx, QWORD PTR [r11+32]
+	mov	r8, QWORD PTR [r11+32]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	add	rsi, 4
+	add	rdi, 4
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
 	mov	rcx, QWORD PTR [r11+40]
-	sub	rcx, rdx
+	sub	rcx, r8
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	movsxd	rax, edi
+	movsxd	rax, ebx
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
@@ -25533,16 +26810,15 @@ $LN72@update:
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
 	cmp	rax, rcx
-	jb	$LL4@update
-	mov	rsi, QWORD PTR [rsp+24]
-	mov	rbx, QWORD PTR [rsp+16]
+	jb	SHORT $LL4@update
+	mov	rdi, QWORD PTR [rsp+16]
 $LN3@update:
 
 ; 87   : 		}
 ; 88   : 	}
 
-	mov	rbp, QWORD PTR [rsp+32]
-	pop	rdi
+	mov	rbx, QWORD PTR [rsp+24]
+	pop	rsi
 	ret	0
 ?update@TilePattern@@QEAAXXZ ENDP			; TilePattern::update
 _TEXT	ENDS
@@ -25551,16 +26827,12 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.h
@@ -25582,7 +26854,7 @@ s$ = 136
 
 ; 561  : void TilePattern::setPattern(std::wstring s) {
 
-$LN164:
+$LN156:
 	mov	r11, rsp
 	mov	QWORD PTR [r11+16], rdx
 	push	rbp
@@ -25638,9 +26910,9 @@ $LN35@setPattern:
 
 	cmp	rsi, 8
 	jae	SHORT $LN24@setPattern
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	vmovups	xmm0, XMMWORD PTR [rbp]
 	vmovups	XMMWORD PTR $T1[rsp], xmm0
@@ -25652,7 +26924,7 @@ $LN35@setPattern:
 
 ; 2406 : 			return;
 
-	jmp	SHORT $LN161@setPattern
+	jmp	SHORT $LN153@setPattern
 $LN24@setPattern:
 
 ; 2407 : 			}
@@ -25676,9 +26948,9 @@ $LN24@setPattern:
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
 
 	mov	QWORD PTR $T1[rsp], rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	r8, QWORD PTR [rsi*2+2]
 	mov	rdx, rbp
@@ -25689,7 +26961,7 @@ $LN24@setPattern:
 ; 2415 : 		_My_data._Myres = _New_capacity;
 
 	mov	QWORD PTR $T1[rsp+24], rbx
-$LN161@setPattern:
+$LN153@setPattern:
 ; File g:\dropbox\github\berconmaps\src\tile.cpp
 
 ; 562  : 	parsePattern(s, this);
@@ -25706,14 +26978,14 @@ $LN161@setPattern:
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	mov	ebx, r15d
+	mov	r11d, r15d
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	rdx, QWORD PTR [rdi+32]
+	mov	r8, QWORD PTR [rdi+32]
 	mov	rax, QWORD PTR [rdi+40]
-	sub	rax, rdx
+	sub	rax, r8
 	sar	rax, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
@@ -25721,94 +26993,82 @@ $LN161@setPattern:
 
 	test	rax, rax
 	je	$LN81@setPattern
-	mov	rsi, r15
-	mov	r8, r15
+	mov	rbx, r15
+	mov	r10, r15
 	npad	3
 $LL82@setPattern:
 
 ; 65   : 		totalWidth = 0.f;
 
-	mov	DWORD PTR [r8+rdx+4], r15d
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	mov	r10d, r15d
+	mov	DWORD PTR [r10+r8+4], r15d
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
+; 1679 : 		return (this->_Myfirst());
 
-	mov	r11, QWORD PTR [r8+rdx+8]
-	mov	rax, QWORD PTR [r8+rdx+16]
-	sub	rax, r11
-	sar	rax, 2
+	mov	rcx, QWORD PTR [r10+r8+8]
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 66   : 		for (int i=0; i<tiles.size(); i++)
+; 85   : 			rows[i].update();
 
-	test	rax, rax
-	je	SHORT $LN160@setPattern
+	mov	rdx, r15
+	mov	r9, QWORD PTR [r10+r8+16]
+	sub	r9, rcx
+	add	r9, 3
+	shr	r9, 2
+	cmp	rcx, QWORD PTR [r10+r8+16]
+	cmova	r9, r15
+
+; 66   : 		for (float tile : tiles)	//for (int i=0; i<tiles.size(); i++)
+
+	test	r9, r9
+	je	SHORT $LN108@setPattern
 	vxorps	xmm0, xmm0, xmm0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1736 : 		return (this->_Myfirst()[_Pos]);
-
-	mov	r9, r15
-	npad	11
+	npad	1
 $LL109@setPattern:
-; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 67   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tile;
 
-	vaddss	xmm0, xmm0, DWORD PTR [r9+r11]
-	vmovss	DWORD PTR [r8+rdx+4], xmm0
+	vaddss	xmm0, xmm0, DWORD PTR [rcx]
+	vmovss	DWORD PTR [r10+r8+4], xmm0
 
-; 66   : 		for (int i=0; i<tiles.size(); i++)
+; 85   : 			rows[i].update();
 
-	inc	r10d
-	lea	r9, QWORD PTR [r9+4]
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+	lea	rcx, QWORD PTR [rcx+4]
 
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
+; 66   : 		for (float tile : tiles)	//for (int i=0; i<tiles.size(); i++)
 
-	mov	rcx, QWORD PTR [r8+rdx+16]
-	sub	rcx, r11
-	sar	rcx, 2
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	movsxd	rax, r10d
-	cmp	rax, rcx
-	jb	SHORT $LL109@setPattern
-$LN160@setPattern:
+	inc	rdx
+	cmp	rdx, r9
+	jne	SHORT $LL109@setPattern
+$LN108@setPattern:
 
 ; 86   : 			totalHeight += heights[i];
 
 	mov	rax, QWORD PTR [rdi+8]
-	vmovss	xmm0, DWORD PTR [rax+rsi]
+	vmovss	xmm0, DWORD PTR [rbx+rax]
 	vaddss	xmm1, xmm0, DWORD PTR [rdi]
 	vmovss	DWORD PTR [rdi], xmm1
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	inc	ebx
-	add	r8, 32					; 00000020H
-	add	rsi, 4
+	inc	r11d
+	add	r10, 32					; 00000020H
+	add	rbx, 4
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 
 ; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
 
-	mov	rdx, QWORD PTR [rdi+32]
+	mov	r8, QWORD PTR [rdi+32]
 	mov	rcx, QWORD PTR [rdi+40]
-	sub	rcx, rdx
+	sub	rcx, r8
 	sar	rcx, 5
 ; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 84   : 		for (int i=0; i<rows.size(); i++) {
 
-	movsxd	rax, ebx
+	movsxd	rax, r11d
 	cmp	rax, rcx
-	jb	$LL82@setPattern
+	jb	SHORT $LL82@setPattern
 $LN81@setPattern:
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 
@@ -27284,74 +28544,44 @@ text$x	ENDS
 ; File g:\dropbox\github\berconmaps\src\tile.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
 ; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-; File g:\dropbox\github\berconmaps\src\tile.h
 ;	COMDAT ?update@TileRow@@QEAAXXZ
 _TEXT	SEGMENT
 this$ = 8
 ?update@TileRow@@QEAAXXZ PROC				; TileRow::update, COMDAT
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+
+; 1679 : 		return (this->_Myfirst());
+
+	mov	r8, QWORD PTR [rcx+8]
+; File g:\dropbox\github\berconmaps\src\tile.h
 
 ; 65   : 		totalWidth = 0.f;
 
-	xor	r8d, r8d
-	mov	rdx, rcx
-	mov	DWORD PTR [rcx+4], r8d
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+	xor	edx, edx
+	mov	r9, QWORD PTR [rcx+16]
+	sub	r9, r8
+	mov	DWORD PTR [rcx+4], edx
+	add	r9, 3
+	shr	r9, 2
+	cmp	r8, QWORD PTR [rcx+16]
+	cmova	r9, rdx
 
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
+; 66   : 		for (float tile : tiles)	//for (int i=0; i<tiles.size(); i++)
 
-	mov	r10, QWORD PTR [rcx+8]
-	mov	rax, QWORD PTR [rcx+16]
-	sub	rax, r10
-	sar	rax, 2
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	test	rax, rax
+	test	r9, r9
 	je	SHORT $LN3@update
 	vxorps	xmm0, xmm0, xmm0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1736 : 		return (this->_Myfirst()[_Pos]);
-
-	mov	r9d, r8d
-	npad	11
+	npad	7
 $LL4@update:
-; File g:\dropbox\github\berconmaps\src\tile.h
 
-; 67   : 			totalWidth += tiles[i];
+; 67   : 			totalWidth += tile;
 
-	vaddss	xmm0, xmm0, DWORD PTR [r9+r10]
-	inc	r8d
-	lea	r9, QWORD PTR [r9+4]
-	vmovss	DWORD PTR [rdx+4], xmm0
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
-
-	mov	rcx, QWORD PTR [rdx+16]
-	sub	rcx, r10
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	movsxd	rax, r8d
-; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
-
-; 1704 : 		return (static_cast<size_type>(this->_Mylast() - this->_Myfirst()));
-
-	sar	rcx, 2
-; File g:\dropbox\github\berconmaps\src\tile.h
-
-; 66   : 		for (int i=0; i<tiles.size(); i++)
-
-	cmp	rax, rcx
-	jb	SHORT $LL4@update
+	vaddss	xmm0, xmm0, DWORD PTR [r8]
+	inc	rdx
+	lea	r8, QWORD PTR [r8+4]
+	vmovss	DWORD PTR [rcx+4], xmm0
+	cmp	rdx, r9
+	jne	SHORT $LL4@update
 $LN3@update:
 
 ; 68   : 	}
@@ -27965,6 +29195,38 @@ this$ = 8
 
 	ret	0
 ?size@?$vector@MV?$allocator@M@std@@@std@@QEBA_KXZ ENDP	; std::vector<float,std::allocator<float> >::size
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+;	COMDAT ?_Unchecked_end@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ
+_TEXT	SEGMENT
+this$ = 8
+?_Unchecked_end@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ PROC ; std::vector<float,std::allocator<float> >::_Unchecked_end, COMDAT
+
+; 1689 : 		return (this->_Mylast());
+
+	mov	rax, QWORD PTR [rcx+8]
+
+; 1690 : 		}
+
+	ret	0
+?_Unchecked_end@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ ENDP ; std::vector<float,std::allocator<float> >::_Unchecked_end
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
+;	COMDAT ?_Unchecked_begin@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ
+_TEXT	SEGMENT
+this$ = 8
+?_Unchecked_begin@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ PROC ; std::vector<float,std::allocator<float> >::_Unchecked_begin, COMDAT
+
+; 1679 : 		return (this->_Myfirst());
+
+	mov	rax, QWORD PTR [rcx]
+
+; 1680 : 		}
+
+	ret	0
+?_Unchecked_begin@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMXZ ENDP ; std::vector<float,std::allocator<float> >::_Unchecked_begin
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector
@@ -29553,7 +30815,7 @@ text$x	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ?find_first_not_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z
 _TEXT	SEGMENT
@@ -29738,21 +31000,21 @@ $LL44@find_first:
 
 	mov	rcx, rsi
 	mov	rax, r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	rsi, rsi
 	je	SHORT $LN66@find_first
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	r8d, WORD PTR [rdx]
 $LL53@find_first:
 	cmp	WORD PTR [rax], r8w
 	je	SHORT $LN65@find_first
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -29820,7 +31082,7 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ?find_first_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z
 _TEXT	SEGMENT
@@ -30009,14 +31271,14 @@ $LL44@find_first:
 
 	mov	rcx, rbx
 	mov	rax, r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	rbx, rbx
 	je	SHORT $LN52@find_first
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	r8d, WORD PTR [rdx]
 	npad	1
@@ -30024,7 +31286,7 @@ $LL53@find_first:
 	cmp	WORD PTR [rax], r8w
 	je	SHORT $LN66@find_first
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rax, 2
 	sub	rcx, 1
@@ -30186,18 +31448,18 @@ _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -30249,9 +31511,9 @@ $LN115:
 
 	mov	rbp, QWORD PTR [rcx]
 $LN9@assign:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 247  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
+; 246  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	rbx, QWORD PTR [r8+r8]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
@@ -30259,9 +31521,9 @@ $LN9@assign:
 ; 2662 : 			_My_data._Mysize = _Count;
 
 	mov	QWORD PTR [rcx+16], r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 247  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
+; 246  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	r8, rbx
 	mov	rcx, rbp
@@ -30335,9 +31597,9 @@ $LN44@assign:
 ; 3901 : 		_My_data._Myres = _New_capacity;
 
 	mov	QWORD PTR [rdi+24], rbx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	rdx, r15
 	lea	rbx, QWORD PTR [r14+r14]
@@ -30346,9 +31608,9 @@ $LN44@assign:
 ; 3900 : 		_My_data._Mysize = _New_size;
 
 	mov	QWORD PTR [rdi+16], r14
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	r8, rbx
 	mov	rcx, rax
@@ -30357,9 +31619,9 @@ $LN44@assign:
 ; 3898 : 		const pointer _New_ptr = _Al.allocate(_New_capacity + 1); // throws
 
 	mov	rbp, rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	call	memcpy
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
@@ -30561,15 +31823,15 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ?_Construct_lv_contents@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXAEBV12@@Z
 _TEXT	SEGMENT
@@ -30617,9 +31879,9 @@ $LN13@Construct_:
 
 	cmp	rbp, 8
 	jae	SHORT $LN2@Construct_
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	vmovups	xmm0, XMMWORD PTR [rdi]
 	vmovups	XMMWORD PTR [rcx], xmm0
@@ -30659,9 +31921,9 @@ $LN2@Construct_:
 
 	lea	rdx, QWORD PTR [rbx+1]
 	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	r8, QWORD PTR [rbp*2+2]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -30669,9 +31931,9 @@ $LN2@Construct_:
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
 
 	mov	QWORD PTR [rsi], rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	rdx, rdi
 	mov	rcx, rax
@@ -30950,15 +32212,15 @@ _TEXT	ENDS
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstddef
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\utility
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring
 ;	COMDAT ??0?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@AEBV01@@Z
 _TEXT	SEGMENT
@@ -31018,9 +32280,9 @@ $LN31@basic_stri:
 
 	cmp	rbp, 8
 	jae	SHORT $LN20@basic_stri
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	vmovups	xmm0, XMMWORD PTR [rdi]
 	vmovups	XMMWORD PTR [rcx], xmm0
@@ -31057,9 +32319,9 @@ $LN20@basic_stri:
 
 	lea	rdx, QWORD PTR [rsi+1]
 	call	?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z ; std::allocator<wchar_t>::allocate
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	lea	r8, QWORD PTR [rbp*2+2]
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xmemory0
@@ -31067,9 +32329,9 @@ $LN20@basic_stri:
 ; 880  : 		::new (const_cast<void *>(static_cast<const volatile void *>(_Ptr)))
 
 	mov	QWORD PTR [rbx], rax
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	mov	rdx, rdi
 	mov	rcx, rax
@@ -32033,7 +33295,7 @@ _Right$ = 16
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ;	COMDAT ?move@?$_WChar_traits@_W@std@@SAPEA_WQEA_WQEB_W_K@Z
 _TEXT	SEGMENT
@@ -32041,9 +33303,9 @@ _First1$ = 8
 _First2$ = 16
 _Count$ = 24
 ?move@?$_WChar_traits@_W@std@@SAPEA_WQEA_WQEB_W_K@Z PROC ; std::_WChar_traits<wchar_t>::move, COMDAT
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 247  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
+; 246  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
 
 	add	r8, r8
 	jmp	memmove
@@ -32051,7 +33313,7 @@ _Count$ = 24
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ;	COMDAT ?find@?$_WChar_traits@_W@std@@SAPEB_WPEB_W_KAEB_W@Z
 _TEXT	SEGMENT
@@ -32059,14 +33321,14 @@ _First$ = 8
 _Count$ = 16
 _Ch$ = 24
 ?find@?$_WChar_traits@_W@std@@SAPEB_WPEB_W_KAEB_W@Z PROC ; std::_WChar_traits<wchar_t>::find, COMDAT
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	rdx, rdx
 	je	SHORT $LN5@find
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	movzx	eax, WORD PTR [r8]
 	npad	7
@@ -32074,7 +33336,7 @@ $LL6@find:
 	cmp	WORD PTR [rcx], ax
 	je	SHORT $LN10@find
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rcx, 2
 	sub	rdx, 1
@@ -32106,9 +33368,9 @@ $LN10@find:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
 ;	COMDAT ?copy@?$_WChar_traits@_W@std@@SAPEA_WQEA_WQEB_W_K@Z
 _TEXT	SEGMENT
@@ -32122,9 +33384,9 @@ _Count$ = 64
 $LN6:
 	push	rbx
 	sub	rsp, 32					; 00000020H
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	add	r8, r8
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\iosfwd
@@ -32132,9 +33394,9 @@ $LN6:
 ; 313  : 		{	// copy [_First2, _First2 + _Count) to [_First1, ...)
 
 	mov	rbx, rcx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	call	memcpy
 	mov	rax, rbx
@@ -32233,6 +33495,44 @@ _Yx$ = 16
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+;	COMDAT ?fmax@@YAMMM@Z
+_TEXT	SEGMENT
+$T1 = 32
+_Xx$ = 64
+_Yx$ = 72
+?fmax@@YAMMM@Z PROC					; fmax, COMDAT
+
+; 133  : 	{
+
+$LN5:
+	sub	rsp, 56					; 00000038H
+	mov	QWORD PTR $T1[rsp], -2
+
+; 134  : 	return (_CSTD fmaxf(_Xx, _Yx));
+
+	call	QWORD PTR __imp_fmaxf
+	npad	1
+
+; 135  : 	}
+
+	add	rsp, 56					; 00000038H
+	ret	0
+?fmax@@YAMMM@Z ENDP					; fmax
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+;	COMDAT ?floor@@YAMM@Z
+_TEXT	SEGMENT
+_Xx$ = 8
+?floor@@YAMM@Z PROC					; floor, COMDAT
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	jmp	floorf
+?floor@@YAMM@Z ENDP					; floor
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 ;	COMDAT ?cos@@YAMM@Z
 _TEXT	SEGMENT
 _Xx$ = 8
@@ -32279,7 +33579,7 @@ _Where$ = 16
 ??2@YAPEAX_KPEAX@Z ENDP					; operator new
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ;	COMDAT wmemmove
 _TEXT	SEGMENT
 _S1$ = 8
@@ -32287,16 +33587,16 @@ _S2$ = 16
 _N$ = 24
 wmemmove PROC						; COMDAT
 
-; 245  :         #pragma warning(push)
-; 246  :         #pragma warning(disable : 4996 6386)
-; 247  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
+; 244  :         #pragma warning(push)
+; 245  :         #pragma warning(disable : 4996 6386)
+; 246  :         return (wchar_t*)memmove(_S1, _S2, _N*sizeof(wchar_t));
 
 	add	r8, r8
 	jmp	memmove
 wmemmove ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ;	COMDAT wmemcpy
 _TEXT	SEGMENT
 _S1$ = 48
@@ -32304,23 +33604,23 @@ _S2$ = 56
 _N$ = 64
 wmemcpy	PROC						; COMDAT
 
-; 231  :     {
+; 230  :     {
 
 $LN4:
 	push	rbx
 	sub	rsp, 32					; 00000020H
 
-; 232  :         #pragma warning(push)
-; 233  :         #pragma warning(disable : 4995 4996 6386)
-; 234  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
+; 231  :         #pragma warning(push)
+; 232  :         #pragma warning(disable : 4995 4996 6386)
+; 233  :         return (wchar_t*)memcpy(_S1, _S2, _N*sizeof(wchar_t));
 
 	add	r8, r8
 	mov	rbx, rcx
 	call	memcpy
 	mov	rax, rbx
 
-; 235  :         #pragma warning(pop)
-; 236  :     }
+; 234  :         #pragma warning(pop)
+; 235  :     }
 
 	add	rsp, 32					; 00000020H
 	pop	rbx
@@ -32328,7 +33628,7 @@ $LN4:
 wmemcpy	ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\wchar.h
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\wchar.h
 ;	COMDAT wmemchr
 _TEXT	SEGMENT
 _S$ = 8
@@ -32336,39 +33636,39 @@ _C$ = 16
 _N$ = 24
 wmemchr	PROC						; COMDAT
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	test	r8, r8
 	je	SHORT $LN3@wmemchr
 $LL4@wmemchr:
 
-; 204  :             if (*_S == _C)
+; 203  :             if (*_S == _C)
 
 	cmp	WORD PTR [rcx], dx
 	je	SHORT $LN8@wmemchr
 
-; 203  :         for (; 0 < _N; ++_S, --_N)
+; 202  :         for (; 0 < _N; ++_S, --_N)
 
 	add	rcx, 2
 	sub	r8, 1
 	jne	SHORT $LL4@wmemchr
 $LN3@wmemchr:
 
-; 206  : 
-; 207  :         return 0;
+; 205  : 
+; 206  :         return 0;
 
 	xor	eax, eax
 
-; 208  :     }
+; 207  :     }
 
 	ret	0
 $LN8@wmemchr:
 
-; 205  :                 return (wchar_t _CONST_RETURN*)_S;
+; 204  :                 return (wchar_t _CONST_RETURN*)_S;
 
 	mov	rax, rcx
 
-; 208  :     }
+; 207  :     }
 
 	ret	0
 wmemchr	ENDP

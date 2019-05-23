@@ -49,7 +49,7 @@ private:
 	
 	int keys;	
 	
-	bool keyMoved;
+	//bool keyMoved;			//kentebird, may 2019, this is never used 
 
 public:	
 	int selected; // Key number, not index		

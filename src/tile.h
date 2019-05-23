@@ -63,8 +63,8 @@ public:
 
 	void update() {
 		totalWidth = 0.f;
-		for (int i=0; i<tiles.size(); i++)
-			totalWidth += tiles[i];
+		for (float tile : tiles)	//for (int i=0; i<tiles.size(); i++)
+			totalWidth += tile;
 	}
 };
 
@@ -73,7 +73,7 @@ public:
 	TilePattern() {update();}
 	~TilePattern() {}
 
-	float totalHeight;
+	float totalHeight{};
 	std::vector<float> heights;
 	std::vector<TileRow> rows;	
 
@@ -92,43 +92,43 @@ public:
 
 class TileParam { // Tile parameters
 public:
-	int tilingType; 
+	int tilingType{}; 
 
-	float tileHeight;
-	float tileWidth;	
-	float edgeHeight;
-	float edgeWidth;			
+	float tileHeight{};
+	float tileWidth{};	
+	float edgeHeight{};
+	float edgeWidth{};			
 
-	float tileHeightVar; // .5f == 100%
-	float tileWidthVar;	
-	float edgeHeightVar; // 1.f == 100%
-	float edgeWidthVar;
-	bool eW_var, eH_var;
+	float tileHeightVar{}; // .5f == 100%
+	float tileWidthVar{};	
+	float edgeHeightVar{}; // 1.f == 100%
+	float edgeWidthVar{};
+	bool eW_var{}, eH_var{};
 
-	BOOL tileRound;
-	int tileBlur;
-	float tileBlurRad;
-	float tileCrnrRad;	
+	BOOL tileRound{};
+	int tileBlur{};
+	float tileBlurRad{};
+	float tileCrnrRad{};	
 
-	int autoScale;
+	int autoScale{};
 
-	BOOL mapUV;
-	float randX, randY;
-	float randSX, randSY;
-	BOOL lock;
-	int rotUV;
-	float randRot; // rad
-	int flipX, flipY;
-	int tileID;
-	int center;
+	BOOL mapUV{};
+	float randX{}, randY{};
+	float randSX{}, randSY{};
+	BOOL lock{};
+	int rotUV{};
+	float randRot{}; // rad
+	int flipX{}, flipY{};
+	int tileID{};
+	int center{};
 
 	TilePattern* pattern;
 
 	// Automatically set parameters
-	float tileMaxHeight;
-	float tileMaxWidth;	
-	bool randScale;
-	bool randOffset;
+	float tileMaxHeight{};
+	float tileMaxWidth{};	
+	bool randScale{};
+	bool randOffset{};
 
 	TileParam() { pattern = NULL; }
 

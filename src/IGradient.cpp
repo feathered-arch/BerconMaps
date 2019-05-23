@@ -43,8 +43,8 @@ LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPA
 
    switch(msg) {	   
 		case WM_CREATE:      {
-			LPCREATESTRUCT lpcs = (LPCREATESTRUCT)lParam;
-			grad = (IGradient*)lpcs->lpCreateParams;
+			LPCREATESTRUCT lpcs = LPCREATESTRUCT(lParam);
+			grad = static_cast<IGradient*>(lpcs->lpCreateParams);
 			DLSetWindowLongPtr(hWnd, grad);
 			break;
 		}
@@ -59,8 +59,8 @@ LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPA
 		case WM_MOUSEMOVE: {
 			int buttons = (int)wParam; 
 			if (buttons & MK_LBUTTON) {				
-				int mouse_x = (int)LOWORD(lParam);
-				int mouse_y = (int)HIWORD(lParam); 
+				int mouse_x = int(LOWORD(lParam));
+				int mouse_y = int(HIWORD(lParam)); 
 				grad->gradient->dragging(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 				//CharStream *out = thread_local(current_stdout);
 				//out->printf("Dragging %d %d\n", mouse_x, mouse_y);
@@ -71,9 +71,9 @@ LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPA
 		case WM_LBUTTONDOWN: {
 			CharStream *out = thread_local(current_stdout);
 			
-			int buttons = (int)wParam; 
-			int mouse_x = (int)LOWORD(lParam);
-			int mouse_y = (int)HIWORD(lParam); 
+			int buttons = int(wParam); 
+			int mouse_x = int(LOWORD(lParam));
+			int mouse_y = int(HIWORD(lParam)); 
 
 			grad->gradient->leftDown(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 
@@ -92,9 +92,9 @@ LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPA
 		case WM_LBUTTONUP: {
 			CharStream *out = thread_local(current_stdout);
 			
-			int buttons = (int)wParam; 
-			int mouse_x = (int)LOWORD(lParam);
-			int mouse_y = (int)HIWORD(lParam); 
+			int buttons = int(wParam); 
+			int mouse_x = int(LOWORD(lParam));
+			int mouse_y = int(HIWORD(lParam)); 
 			grad->gradient->leftUp(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 
 			/*
@@ -116,8 +116,8 @@ LRESULT CALLBACK IGradient::GradientProc(HWND hWnd, UINT msg, WPARAM wParam, LPA
 			GetCursorPos(&pt);
 			int sel = TrackPopupMenuEx(Popup, TPM_LEFTALIGN | TPM_RIGHTBUTTON | TPM_RETURNCMD, pt.x, pt.y, hWnd, NULL);
 			if (sel > 0) {
-				int mouse_x = (int)LOWORD(lParam);
-				int mouse_y = (int)HIWORD(lParam); 
+				int mouse_x = int(LOWORD(lParam));
+				int mouse_y = int(HIWORD(lParam)); 
 				grad->gradient->popup(mouse_x, mouse_y, sel);
 			}
 			break;
@@ -186,7 +186,7 @@ void InitGradientControls() {
 	WNDCLASSEX wc;
 	wc.cbClsExtra = 0;
 	wc.cbWndExtra = 0;
-	wc.hbrBackground = (HBRUSH)GetStockObject(NULL_BRUSH);
+	wc.hbrBackground = HBRUSH(GetStockObject(NULL_BRUSH));
 	wc.hCursor = LoadCursor(NULL, /*IDC_CROSS*/IDC_ARROW);
 	wc.hIcon = NULL;
 	wc.hIconSm = NULL;

@@ -170,7 +170,7 @@ int GradientRamp::hit(int x, int y, bool broad) {
 		return -1;
 
 	// Distance from gradient
-	int dist = 0;
+	int dist;
 	if (broad)
 		dist  = ARROWS;
 	else if (y < PADDING)
@@ -311,8 +311,8 @@ void GradientRamp::addKey(int n, float pos, AColor col, Texmap* sub) {
 
 	keys++;	
 	Texmap** t_subtex = new Texmap*[keys];
-	float* t_position = new float[keys];
-	AColor* t_color = new AColor[keys];
+	auto t_position = new float[keys];
+	auto t_color = new AColor[keys];
 	int* t_number = new int[keys];
 	keys--;
 

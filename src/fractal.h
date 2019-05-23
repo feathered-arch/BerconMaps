@@ -16,6 +16,7 @@ under the License.
 */
 
 #pragma once
+#include <cmath>
 #include "noise.h"
 
 class Fractal {
@@ -39,7 +40,7 @@ public:
 	static float hybridMultiFractal(Point3 p, float d, NoiseParams& np);
 	static float ridgedMultiFractal(Point3 p, float d, NoiseParams& np);
 
-	static float marble(Point3 p, float d, NoiseParams& np);
+	static float marble(Point3 p, float d, NoiseParams& np);					// not used?
 
 	// Generic 
 	static float fBm(Point3 p, float levels, float lacunarity, float H);

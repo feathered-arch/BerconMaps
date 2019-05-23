@@ -17,8 +17,9 @@ under the License.
 
 // Implementation of Steven Worley's cellular noise
 
-#include <math.h>
+#include <cmath>
 #include "worley.h"
+#include <assert1.h>
 
 static char Poisson_count[256]= {
 	4,3,1,1,1,2,4,2,2,2,5,1,0,2,1,2,2,0,4,3,2,1,2,1,3,2,2,4,2,2,5,1,2,3,2,2,2,2,2,3,
@@ -30,29 +31,28 @@ static char Poisson_count[256]= {
 	2,3,3,4,2,5,4,2,4,2,2,2,4,5,3,2};
 
 #define DENSITY_ADJUSTMENT  0.398150
-#define FASTFLOORL(x) ((x)<0 ? ((long)x-1) : ((long)x) )
-#define ADD(a,b,c) ( add(int_at[0]+a, int_at[1]+b, int_at[2]+c, new_at, order, F, function) )
+#define FASTFLOORL(x) ((x)<0 ? ((long)(x)-1) : ((long)(x)) )
+#define ADD(a,b,c) ( add(int_at[0]+(a), int_at[1]+(b), int_at[2]+(c), new_at, order, F, function) )
 
-void Worley::noise(double at[3], int order, double *F, int function) {
-	double x2, y2, z2, mx2, my2, mz2;
+void Worley::noise(const double at[3], int order, double *F, int function) {
 	double new_at[3];
 	long int_at[3];
 
-	for (int i=0; i<order; i++) F[i] = 999999.9;
+	for (auto i=0; i<order; i++) F[i] = 999999.9;
 
-	for (int i=0; i<3; i++) {
+	for (auto i=0; i<3; i++) {
 		new_at[i] = DENSITY_ADJUSTMENT * at[i];
 		int_at[i] = FASTFLOORL(new_at[i]);
 	}
 	
 	add(int_at[0], int_at[1], int_at[2], new_at, order, F, function);
 
-	x2=new_at[0]-int_at[0];
-	y2=new_at[1]-int_at[1];
-	z2=new_at[2]-int_at[2];
-	mx2=(1.0-x2)*(1.0-x2);
-	my2=(1.0-y2)*(1.0-y2);
-	mz2=(1.0-z2)*(1.0-z2);
+	double x2 = new_at[0] - int_at[0];
+	double y2 = new_at[1] - int_at[1];
+	double z2 = new_at[2] - int_at[2];
+	const double mx2 = (1.0 - x2) * (1.0 - x2);
+	const double my2 = (1.0 - y2) * (1.0 - y2);
+	const double mz2 = (1.0 - z2) * (1.0 - z2);
 	x2*=x2;
 	y2*=y2;
 	z2*=z2;
@@ -93,23 +93,23 @@ void Worley::noise(double at[3], int order, double *F, int function) {
 	return;
 }
 
-#define ROLL(seed) (seed=1402024253*seed+586950981)
-void Worley::add(long xi, long yi, long zi, double at[3], int order, double *F, int function) {
-	double d = 0;			// Initialize variable to avoid error C4701
+#define ROLL(seed) ((seed)=1402024253*(seed)+586950981)
+void Worley::add(long xi, long yi, long zi, const double at[3], int order, double *F, int function) {
+	double d = 0;								// initialize to avoid compiler error C4701
 	double d3[3];
 	double f3[3];
-	unsigned long seed, this_id;
 
-	seed = 702395077*xi + 915488749*yi + 2120969693*zi;
-	int count = Poisson_count[seed>>24];
+	unsigned long seed = 702395077 * xi + 915488749 * yi + 2120969693 * zi;
+	const int count = Poisson_count[seed>>24];
 	ROLL(seed);
 
 	for (int j=0; j<count; j++) {
-		this_id = seed;
+		unsigned long this_id = seed;
 		ROLL(seed);
 
-		for (int i=0; i<3; i++) {
-			f3[i] = (seed+0.5)*(1.0/4294967296.0);			
+		for (double& i : f3)					//for (int i=0; i<3; i++) {
+		{
+			i = (seed+0.5)*(1.0/4294967296.0);			
 			ROLL(seed);
 		}
 
@@ -148,9 +148,9 @@ void Worley::add(long xi, long yi, long zi, double at[3], int order, double *F, 
 		}		
 
 		if (d < F[order-1]) {
-			int index = order;		
+			auto index = order;		
 			while (index > 0 && d < F[index-1]) index--;
-			for (int i=order-2; i>=index; i--)
+			for (auto i=order-2; i>=index; i--)
 				F[i+1] = F[i];
 			F[index] = d;
 		}

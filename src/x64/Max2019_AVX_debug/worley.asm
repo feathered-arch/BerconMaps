@@ -5,8 +5,8 @@ include listing.inc
 INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
-PUBLIC	?noise@Worley@@SAXQEANHPEANH@Z			; Worley::noise
-PUBLIC	?add@Worley@@CAXJJJQEANHPEANH@Z			; Worley::add
+PUBLIC	?noise@Worley@@SAXQEBNHPEANH@Z			; Worley::noise
+PUBLIC	?add@Worley@@CAXJJJQEBNHPEANH@Z			; Worley::add
 PUBLIC	__real@3df0000000000000
 PUBLIC	__real@3fd97b4a2339c0ec
 PUBLIC	__real@3fe0000000000000
@@ -19,33 +19,33 @@ EXTRN	__ImageBase:BYTE
 EXTRN	_fltused:DWORD
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?noise@Worley@@SAXQEANHPEANH@Z DD imagerel $LN69
+$pdata$?noise@Worley@@SAXQEBNHPEANH@Z DD imagerel $LN69
 	DD	imagerel $LN69+1991
-	DD	imagerel $unwind$?noise@Worley@@SAXQEANHPEANH@Z
+	DD	imagerel $unwind$?noise@Worley@@SAXQEBNHPEANH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?add@Worley@@CAXJJJQEANHPEANH@Z DD imagerel $LN56
-	DD	imagerel $LN56+107
-	DD	imagerel $unwind$?add@Worley@@CAXJJJQEANHPEANH@Z
+$pdata$?add@Worley@@CAXJJJQEBNHPEANH@Z DD imagerel $LN56
+	DD	imagerel $LN56+105
+	DD	imagerel $unwind$?add@Worley@@CAXJJJQEBNHPEANH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$11$?add@Worley@@CAXJJJQEANHPEANH@Z DD imagerel $LN56+107
-	DD	imagerel $LN56+996
-	DD	imagerel $chain$11$?add@Worley@@CAXJJJQEANHPEANH@Z
+$pdata$11$?add@Worley@@CAXJJJQEBNHPEANH@Z DD imagerel $LN56+105
+	DD	imagerel $LN56+970
+	DD	imagerel $chain$11$?add@Worley@@CAXJJJQEBNHPEANH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$12$?add@Worley@@CAXJJJQEANHPEANH@Z DD imagerel $LN56+996
-	DD	imagerel $LN56+1018
-	DD	imagerel $chain$12$?add@Worley@@CAXJJJQEANHPEANH@Z
+$pdata$12$?add@Worley@@CAXJJJQEBNHPEANH@Z DD imagerel $LN56+970
+	DD	imagerel $LN56+991
+	DD	imagerel $chain$12$?add@Worley@@CAXJJJQEBNHPEANH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$13$?add@Worley@@CAXJJJQEANHPEANH@Z DD imagerel $LN56+1018
-	DD	imagerel $LN56+1068
-	DD	imagerel $chain$13$?add@Worley@@CAXJJJQEANHPEANH@Z
+$pdata$13$?add@Worley@@CAXJJJQEBNHPEANH@Z DD imagerel $LN56+991
+	DD	imagerel $LN56+1044
+	DD	imagerel $chain$13$?add@Worley@@CAXJJJQEBNHPEANH@Z
 pdata	ENDS
 ;	COMDAT __ymm@400417ca3f5539e6400417ca3f5539e6400417ca3f5539e6400417ca3f5539e6
 CONST	SEGMENT
@@ -338,60 +338,60 @@ _DATA	SEGMENT
 _DATA	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$13$?add@Worley@@CAXJJJQEANHPEANH@Z DD 0180021H
-	DD	02e800H
-	DD	03d800H
-	DD	04c800H
-	DD	05b800H
-	DD	06a800H
-	DD	079800H
-	DD	088800H
-	DD	097800H
-	DD	0a6800H
-	DD	01c7400H
-	DD	01b6400H
-	DD	01a5400H
+$chain$13$?add@Worley@@CAXJJJQEBNHPEANH@Z DD 0180021H
+	DD	04e800H
+	DD	05d800H
+	DD	06c800H
+	DD	07b800H
+	DD	08a800H
+	DD	099800H
+	DD	0a8800H
+	DD	0b7800H
+	DD	0c6800H
+	DD	020f400H
+	DD	01f6400H
+	DD	01e5400H
 	DD	imagerel $LN56
-	DD	imagerel $LN56+107
-	DD	imagerel $unwind$?add@Worley@@CAXJJJQEANHPEANH@Z
+	DD	imagerel $LN56+105
+	DD	imagerel $unwind$?add@Worley@@CAXJJJQEBNHPEANH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$12$?add@Worley@@CAXJJJQEANHPEANH@Z DD 021H
+$chain$12$?add@Worley@@CAXJJJQEBNHPEANH@Z DD 021H
 	DD	imagerel $LN56
-	DD	imagerel $LN56+107
-	DD	imagerel $unwind$?add@Worley@@CAXJJJQEANHPEANH@Z
+	DD	imagerel $LN56+105
+	DD	imagerel $unwind$?add@Worley@@CAXJJJQEBNHPEANH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$11$?add@Worley@@CAXJJJQEANHPEANH@Z DD 0188921H
-	DD	0a6889H
-	DD	02e864H
-	DD	03d85eH
-	DD	04c858H
-	DD	05b84aH
-	DD	06a83cH
-	DD	07982eH
-	DD	088828H
-	DD	097822H
-	DD	01c7414H
-	DD	01b6410H
-	DD	01a5404H
+$chain$11$?add@Worley@@CAXJJJQEBNHPEANH@Z DD 0188921H
+	DD	0c6889H
+	DD	04e864H
+	DD	05d85eH
+	DD	06c858H
+	DD	07b84aH
+	DD	08a83cH
+	DD	09982eH
+	DD	0a8828H
+	DD	0b7822H
+	DD	020f414H
+	DD	01f6408H
+	DD	01e5404H
 	DD	imagerel $LN56
-	DD	imagerel $LN56+107
-	DD	imagerel $unwind$?add@Worley@@CAXJJJQEANHPEANH@Z
+	DD	imagerel $LN56+105
+	DD	imagerel $unwind$?add@Worley@@CAXJJJQEBNHPEANH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?add@Worley@@CAXJJJQEANHPEANH@Z DD 071401H
-	DD	01d3414H
-	DD	0160114H
-	DD	0e00bf00dH
-	DD	0c009H
+$unwind$?add@Worley@@CAXJJJQEBNHPEANH@Z DD 071301H
+	DD	0213413H
+	DD	01a0113H
+	DD	0c00ae00cH
+	DD	07008H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Worley@@SAXQEANHPEANH@Z DD 01f5e01H
+$unwind$?noise@Worley@@SAXQEBNHPEANH@Z DD 01f5e01H
 	DD	06e85eH
 	DD	07d858H
 	DD	08c852H
@@ -411,142 +411,139 @@ $unwind$?noise@Worley@@SAXQEANHPEANH@Z DD 01f5e01H
 xdata	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\worley.cpp
-;	COMDAT ?add@Worley@@CAXJJJQEANHPEANH@Z
+;	COMDAT ?add@Worley@@CAXJJJQEBNHPEANH@Z
 _TEXT	SEGMENT
-xi$ = 208
-yi$ = 216
-zi$ = 224
-at$ = 232
-order$ = 240
-F$ = 248
-function$ = 256
-?add@Worley@@CAXJJJQEANHPEANH@Z PROC			; Worley::add, COMDAT
+f3$ = 32
+xi$ = 240
+yi$ = 248
+zi$ = 256
+at$ = 264
+order$ = 272
+F$ = 280
+function$ = 288
+?add@Worley@@CAXJJJQEBNHPEANH@Z PROC			; Worley::add, COMDAT
 
-; 97   : void Worley::add(long xi, long yi, long zi, double at[3], int order, double *F, int function) {
+; 97   : void Worley::add(long xi, long yi, long zi, const double at[3], int order, double *F, int function) {
 
 $LN56:
 	mov	r11, rsp
 	mov	QWORD PTR [r11+32], rbx
+	push	rdi
 	push	r12
 	push	r14
-	push	r15
-	sub	rsp, 176				; 000000b0H
-	mov	rbx, QWORD PTR F$[rsp]
+	sub	rsp, 208				; 000000d0H
+	mov	rdi, QWORD PTR F$[rsp]
 
-; 98   : 	double d = 0;			// Initialize variable to avoid error C4701
+; 98   : 	double d = 0;								// initialize to avoid compiler error C4701
 ; 99   : 	double d3[3];
 ; 100  : 	double f3[3];
-; 101  : 	unsigned long seed, this_id;
-; 102  : 
-; 103  : 	seed = 702395077*xi + 915488749*yi + 2120969693*zi;
-; 104  : 	int count = Poisson_count[seed>>24];
+; 101  : 
+; 102  : 	unsigned long seed = 702395077 * xi + 915488749 * yi + 2120969693 * zi;
+; 103  : 	const int count = Poisson_count[seed>>24];
 
 	lea	r12, OFFSET FLAT:__ImageBase
 	imul	eax, r8d, 2120969693			; 7e6b6dddH
-	mov	r15, r9
+	mov	r14, r9
 	imul	r10d, ecx, 702395077			; 29ddb2c5H
-	vxorpd	xmm5, xmm5, xmm5
+	vxorpd	xmm3, xmm3, xmm3
 	add	r10d, eax
 	imul	eax, edx, 915488749			; 36913fedH
 	add	r10d, eax
 
-; 105  : 	ROLL(seed);
+; 104  : 	ROLL(seed);
 
-	imul	r14d, r10d, 1402024253			; 5391313dH
+	imul	ebx, r10d, 1402024253			; 5391313dH
 	mov	eax, r10d
 	shr	rax, 24
-	add	r14d, 586950981				; 22fc2945H
+	add	ebx, 586950981				; 22fc2945H
 	movsx	r9d, BYTE PTR ?Poisson_count@@3PADA[rax+r12]
 
-; 106  : 
-; 107  : 	for (int j=0; j<count; j++) {
+; 105  : 
+; 106  : 	for (int j=0; j<count; j++) {
 
 	test	r9d, r9d
 	jle	$LN3@add
 	mov	QWORD PTR [r11+8], rbp
-	movsxd	rbp, DWORD PTR function$[rsp]
 	mov	QWORD PTR [r11+16], rsi
-	mov	QWORD PTR [r11+24], rdi
-	movsxd	rdi, DWORD PTR order$[rsp]
+	movsxd	rsi, DWORD PTR order$[rsp]
+	mov	QWORD PTR [r11+24], r15
+	movsxd	r15, DWORD PTR function$[rsp]
 	vmovaps	XMMWORD PTR [r11-56], xmm7
 	vmovaps	XMMWORD PTR [r11-72], xmm8
 	vmovaps	XMMWORD PTR [r11-88], xmm9
-	vmovsd	xmm9, QWORD PTR __xmm@7fffffffffffffff7fffffffffffffff
+	vmovsd	xmm9, QWORD PTR __real@3fe0000000000000
 	vmovaps	XMMWORD PTR [r11-104], xmm10
-	vmovsd	xmm10, QWORD PTR __real@3fe0000000000000
+	vmovsd	xmm10, QWORD PTR __real@3df0000000000000
 	vmovaps	XMMWORD PTR [r11-120], xmm11
-	vmovsd	xmm11, QWORD PTR __real@3df0000000000000
-	vmovaps	XMMWORD PTR [rsp+64], xmm12
-	vmovaps	XMMWORD PTR [rsp+48], xmm13
-	vmovaps	XMMWORD PTR [rsp+32], xmm14
+	vmovsd	xmm11, QWORD PTR __xmm@7fffffffffffffff7fffffffffffffff
+	vmovaps	XMMWORD PTR [rsp+96], xmm12
+	vmovaps	XMMWORD PTR [rsp+80], xmm13
+	vmovaps	XMMWORD PTR [rsp+64], xmm14
 	vxorps	xmm14, xmm14, xmm14
 	vxorps	xmm12, xmm12, xmm12
 	vxorps	xmm13, xmm13, xmm13
 	vcvtsi2sd xmm14, xmm14, r8d
 	vcvtsi2sd xmm12, xmm12, ecx
 	vcvtsi2sd xmm13, xmm13, edx
-	mov	esi, r9d
+	mov	ebp, r9d
 	vmovaps	XMMWORD PTR [r11-40], xmm6
-	npad	12
+	npad	14
 $LL4@add:
 
-; 108  : 		this_id = seed;
-; 109  : 		ROLL(seed);
+; 107  : 		unsigned long this_id = seed;
+; 108  : 		ROLL(seed);
 
-	imul	ecx, r14d, 1402024253			; 5391313dH
-	vxorps	xmm0, xmm0, xmm0
-	vxorps	xmm3, xmm3, xmm3
-	vxorps	xmm4, xmm4, xmm4
-	add	ecx, 586950981				; 22fc2945H
+	imul	ebx, ebx, 1402024253			; 5391313dH
 
-; 110  : 
-; 111  : 		for (int i=0; i<3; i++) {
-; 112  : 			f3[i] = (seed+0.5)*(1.0/4294967296.0);			
+; 109  : 
+; 110  : 		for (double& i : f3)					//for (int i=0; i<3; i++) {
+
+	lea	rcx, QWORD PTR f3$[rsp]
+	mov	edx, 3
+	add	ebx, 586950981				; 22fc2945H
+	npad	10
+$LL31@add:
+
+; 111  : 		{
+; 112  : 			i = (seed+0.5)*(1.0/4294967296.0);			
+
+	mov	eax, ebx
+	lea	rcx, QWORD PTR [rcx+8]
+
 ; 113  : 			ROLL(seed);
 
-	imul	edx, ecx, 1402024253			; 5391313dH
-	mov	eax, ecx
+	imul	ebx, ebx, 1402024253			; 5391313dH
+	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2sd xmm0, xmm0, rax
-	vaddsd	xmm0, xmm0, xmm10
-	vmulsd	xmm1, xmm0, xmm11
-	vaddsd	xmm2, xmm1, xmm12
+	vaddsd	xmm1, xmm0, xmm9
+	vmulsd	xmm2, xmm1, xmm10
+	add	ebx, 586950981				; 22fc2945H
+	vmovsd	QWORD PTR [rcx-8], xmm2
+	sub	rdx, 1
+	jne	SHORT $LL31@add
 
 ; 114  : 		}
 ; 115  : 
 ; 116  : 		d3[0] = xi + f3[0] - at[0]; 
 
-	vsubsd	xmm7, xmm2, QWORD PTR [r15]
-	add	edx, 586950981				; 22fc2945H
-	imul	ecx, edx, 1402024253			; 5391313dH
-	mov	eax, edx
-	vcvtsi2sd xmm3, xmm3, rax
-	vaddsd	xmm0, xmm3, xmm10
-	vmulsd	xmm1, xmm0, xmm11
-	add	ecx, 586950981				; 22fc2945H
-	vaddsd	xmm2, xmm1, xmm13
+	vaddsd	xmm0, xmm12, QWORD PTR f3$[rsp]
+	vsubsd	xmm7, xmm0, QWORD PTR [r14]
 
 ; 117  : 		d3[1] = yi + f3[1] - at[1];
-
-	vsubsd	xmm3, xmm2, QWORD PTR [r15+8]
-	imul	r14d, ecx, 1402024253			; 5391313dH
-	mov	eax, ecx
-	vcvtsi2sd xmm4, xmm4, rax
-	vaddsd	xmm0, xmm4, xmm10
-	vmulsd	xmm1, xmm0, xmm11
-	add	r14d, 586950981				; 22fc2945H
-	vaddsd	xmm2, xmm1, xmm14
-
 ; 118  : 		d3[2] = zi + f3[2] - at[2];
 
-	vsubsd	xmm8, xmm2, QWORD PTR [r15+16]
+	vaddsd	xmm0, xmm14, QWORD PTR f3$[rsp+16]
+	vaddsd	xmm1, xmm13, QWORD PTR f3$[rsp+8]
+	vsubsd	xmm8, xmm0, QWORD PTR [r14+16]
+	vsubsd	xmm4, xmm1, QWORD PTR [r14+8]
 
 ; 119  : 
 ; 120  : 		// Distance function to the point
 ; 121  : 		switch (function) {
 
-	cmp	ebp, 5
+	cmp	r15d, 5
 	ja	$LN8@add
-	mov	ecx, DWORD PTR $LN52@add[r12+rbp*4]
+	mov	ecx, DWORD PTR $LN52@add[r12+r15*4]
 	add	rcx, r12
 	jmp	rcx
 $LN15@add:
@@ -554,7 +551,7 @@ $LN15@add:
 ; 122  : 			case 0: // Linear
 ; 123  : 				d = sqrt(d3[0]*d3[0]+d3[1]*d3[1]+d3[2]*d3[2]);
 
-	vmulsd	xmm1, xmm3, xmm3
+	vmulsd	xmm1, xmm4, xmm4
 	vmulsd	xmm0, xmm7, xmm7
 	vaddsd	xmm2, xmm1, xmm0
 	vmulsd	xmm1, xmm8, xmm8
@@ -568,11 +565,11 @@ $LN16@add:
 ; 125  : 			case 1: // Square
 ; 126  : 				d = d3[0]*d3[0]+d3[1]*d3[1]+d3[2]*d3[2];
 
-	vmulsd	xmm1, xmm3, xmm3
+	vmulsd	xmm1, xmm4, xmm4
 	vmulsd	xmm0, xmm7, xmm7
 	vaddsd	xmm2, xmm1, xmm0
 	vmulsd	xmm1, xmm8, xmm8
-	vaddsd	xmm5, xmm2, xmm1
+	vaddsd	xmm3, xmm2, xmm1
 
 ; 127  : 				break;
 
@@ -582,11 +579,11 @@ $LN17@add:
 ; 128  : 			case 2: // Manhattan
 ; 129  : 				d = fabs(d3[0])+fabs(d3[1])+fabs(d3[2]);
 
-	vandpd	xmm3, xmm3, xmm9
-	vandpd	xmm7, xmm7, xmm9
-	vaddsd	xmm0, xmm3, xmm7
-	vandpd	xmm8, xmm8, xmm9
-	vaddsd	xmm5, xmm0, xmm8
+	vandpd	xmm4, xmm4, xmm11
+	vandpd	xmm7, xmm7, xmm11
+	vaddsd	xmm0, xmm4, xmm7
+	vandpd	xmm8, xmm8, xmm11
+	vaddsd	xmm3, xmm0, xmm8
 
 ; 130  : 				break;			
 
@@ -596,17 +593,17 @@ $LN18@add:
 ; 131  : 			case 3: {// Chebychev				
 ; 132  : 				double x = fabs(d3[0]);
 
-	vandpd	xmm7, xmm7, xmm9
+	vandpd	xmm7, xmm7, xmm11
 
 ; 133  : 				double y = fabs(d3[1]);
 
-	vandpd	xmm3, xmm3, xmm9
-	vmaxsd	xmm0, xmm7, xmm3
+	vandpd	xmm4, xmm4, xmm11
+	vmaxsd	xmm0, xmm7, xmm4
 
 ; 134  : 				double z = fabs(d3[2]);
 
-	vandpd	xmm8, xmm8, xmm9
-	vmaxsd	xmm5, xmm8, xmm0
+	vandpd	xmm8, xmm8, xmm11
+	vmaxsd	xmm3, xmm8, xmm0
 
 ; 135  : 				double t = (x>y)?x:y;
 ; 136  : 				d = ((z>t)?z:t);
@@ -618,19 +615,19 @@ $LN19@add:
 ; 138  : 			case 4: // Minkovsky 0.5
 ; 139  : 				d = sqrt(fabs(d3[0])) + sqrt(fabs(d3[1])) + sqrt(fabs(d3[2]));	
 
-	vandpd	xmm0, xmm3, xmm9
+	vandpd	xmm0, xmm4, xmm11
 	call	sqrt
 	vmovaps	xmm6, xmm0
-	vandpd	xmm0, xmm7, xmm9
+	vandpd	xmm0, xmm7, xmm11
 	call	sqrt
 	vaddsd	xmm6, xmm6, xmm0
-	vandpd	xmm0, xmm8, xmm9
+	vandpd	xmm0, xmm8, xmm11
 	call	sqrt
 	vaddsd	xmm1, xmm6, xmm0
 
 ; 140  : 				d *= d;
 
-	vmulsd	xmm5, xmm1, xmm1
+	vmulsd	xmm3, xmm1, xmm1
 
 ; 141  : 				break;
 
@@ -640,7 +637,7 @@ $LN20@add:
 ; 142  : 			case 5: {// Minkovsky 4
 ; 143  : 				double x = d3[0]*d3[0];
 
-	vmulsd	xmm0, xmm3, xmm3
+	vmulsd	xmm0, xmm4, xmm4
 
 ; 144  : 				double y = d3[1]*d3[1];
 ; 145  : 				double z = d3[2]*d3[2];				
@@ -662,35 +659,34 @@ $LN54@add:
 ; 150  : 		if (d < F[order-1]) {
 
 	call	sqrt
-	vmovaps	xmm5, xmm0
+	vmovaps	xmm3, xmm0
 $LN8@add:
-	vmovsd	xmm0, QWORD PTR [rbx+rdi*8-8]
-	vcomisd	xmm0, xmm5
+	vmovsd	xmm0, QWORD PTR [rdi+rsi*8-8]
+	vcomisd	xmm0, xmm3
 	jbe	$LN2@add
 
-; 151  : 			int index = order;		
+; 151  : 			auto index = order;		
 
-	mov	rcx, rdi
+	mov	rcx, rsi
 
 ; 152  : 			while (index > 0 && d < F[index-1]) index--;
 
-	cmp	rdi, 4
+	cmp	rsi, 4
 	jl	SHORT $LC37@add
-	lea	rax, QWORD PTR [rdi-2]
-	lea	rax, QWORD PTR [rbx+rax*8]
-	npad	1
+	lea	rax, QWORD PTR [rsi-2]
+	lea	rax, QWORD PTR [rdi+rax*8]
 $LL42@add:
 	vmovsd	xmm0, QWORD PTR [rax+8]
-	vcomisd	xmm0, xmm5
+	vcomisd	xmm0, xmm3
 	jbe	SHORT $LN53@add
 	vmovsd	xmm0, QWORD PTR [rax]
-	vcomisd	xmm0, xmm5
+	vcomisd	xmm0, xmm3
 	jbe	$LN39@add
 	vmovsd	xmm0, QWORD PTR [rax-8]
-	vcomisd	xmm0, xmm5
+	vcomisd	xmm0, xmm3
 	jbe	$LN40@add
 	vmovsd	xmm0, QWORD PTR [rax-16]
-	vcomisd	xmm0, xmm5
+	vcomisd	xmm0, xmm3
 	jbe	$LN41@add
 	sub	rcx, 4
 	sub	rax, 32					; 00000020H
@@ -699,11 +695,11 @@ $LL42@add:
 $LC37@add:
 	test	rcx, rcx
 	jle	SHORT $LN53@add
-	lea	rax, QWORD PTR [rbx-8]
+	lea	rax, QWORD PTR [rdi-8]
 	lea	rax, QWORD PTR [rax+rcx*8]
 $LC10@add:
 	vmovsd	xmm0, QWORD PTR [rax]
-	vcomisd	xmm0, xmm5
+	vcomisd	xmm0, xmm3
 	jbe	SHORT $LN53@add
 	dec	rcx
 	sub	rax, 8
@@ -711,9 +707,9 @@ $LC10@add:
 	jg	SHORT $LC10@add
 $LN53@add:
 
-; 153  : 			for (int i=order-2; i>=index; i--)
+; 153  : 			for (auto i=order-2; i>=index; i--)
 
-	lea	r8, QWORD PTR [rdi-2]
+	lea	r8, QWORD PTR [rsi-2]
 	cmp	r8, rcx
 	jl	SHORT $LN43@add
 	mov	rax, r8
@@ -721,8 +717,8 @@ $LN53@add:
 	inc	rax
 	cmp	rax, 4
 	jl	SHORT $LC44@add
-	mov	r9, rdi
-	lea	rdx, QWORD PTR [rbx-8]
+	mov	r9, rsi
+	lea	rdx, QWORD PTR [rdi-8]
 	sub	r9, rcx
 	lea	rdx, QWORD PTR [rdx+r8*8]
 	sub	r9, 5
@@ -730,7 +726,7 @@ $LN53@add:
 	inc	r9
 	lea	rax, QWORD PTR [r9*4]
 	sub	r8, rax
-	npad	12
+	npad	11
 $LL45@add:
 
 ; 154  : 				F[i+1] = F[i];
@@ -748,7 +744,7 @@ $LL45@add:
 	jne	SHORT $LL45@add
 $LC44@add:
 
-; 153  : 			for (int i=order-2; i>=index; i--)
+; 153  : 			for (auto i=order-2; i>=index; i--)
 
 	cmp	r8, rcx
 	jl	SHORT $LN43@add
@@ -756,8 +752,8 @@ $LC14@add:
 
 ; 154  : 				F[i+1] = F[i];
 
-	mov	rax, QWORD PTR [rbx+r8*8]
-	mov	QWORD PTR [rbx+r8*8+8], rax
+	mov	rax, QWORD PTR [rdi+r8*8]
+	mov	QWORD PTR [rdi+r8*8+8], rax
 	dec	r8
 	cmp	r8, rcx
 	jge	SHORT $LC14@add
@@ -765,37 +761,37 @@ $LN43@add:
 
 ; 155  : 			F[index] = d;
 
-	vmovsd	QWORD PTR [rbx+rcx*8], xmm5
+	vmovsd	QWORD PTR [rdi+rcx*8], xmm3
 $LN2@add:
 
-; 106  : 
-; 107  : 	for (int j=0; j<count; j++) {
+; 105  : 
+; 106  : 	for (int j=0; j<count; j++) {
 
-	sub	rsi, 1
+	sub	rbp, 1
 	jne	$LL4@add
-	vmovaps	xmm14, XMMWORD PTR [rsp+32]
-	vmovaps	xmm13, XMMWORD PTR [rsp+48]
-	vmovaps	xmm12, XMMWORD PTR [rsp+64]
-	vmovaps	xmm11, XMMWORD PTR [rsp+80]
-	vmovaps	xmm10, XMMWORD PTR [rsp+96]
-	vmovaps	xmm9, XMMWORD PTR [rsp+112]
-	vmovaps	xmm8, XMMWORD PTR [rsp+128]
-	vmovaps	xmm7, XMMWORD PTR [rsp+144]
-	vmovaps	xmm6, XMMWORD PTR [rsp+160]
-	mov	rdi, QWORD PTR [rsp+224]
-	mov	rsi, QWORD PTR [rsp+216]
-	mov	rbp, QWORD PTR [rsp+208]
+	vmovaps	xmm14, XMMWORD PTR [rsp+64]
+	vmovaps	xmm13, XMMWORD PTR [rsp+80]
+	vmovaps	xmm12, XMMWORD PTR [rsp+96]
+	vmovaps	xmm11, XMMWORD PTR [rsp+112]
+	vmovaps	xmm10, XMMWORD PTR [rsp+128]
+	vmovaps	xmm9, XMMWORD PTR [rsp+144]
+	vmovaps	xmm8, XMMWORD PTR [rsp+160]
+	vmovaps	xmm7, XMMWORD PTR [rsp+176]
+	vmovaps	xmm6, XMMWORD PTR [rsp+192]
+	mov	r15, QWORD PTR [rsp+256]
+	mov	rsi, QWORD PTR [rsp+248]
+	mov	rbp, QWORD PTR [rsp+240]
 $LN3@add:
 
 ; 156  : 		}
 ; 157  : 	}
 ; 158  : }
 
-	mov	rbx, QWORD PTR [rsp+232]
-	add	rsp, 176				; 000000b0H
-	pop	r15
+	mov	rbx, QWORD PTR [rsp+264]
+	add	rsp, 208				; 000000d0H
 	pop	r14
 	pop	r12
+	pop	rdi
 	ret	0
 $LN41@add:
 
@@ -809,6 +805,7 @@ $LN40@add:
 $LN39@add:
 	dec	rcx
 	jmp	$LN53@add
+	npad	3
 $LN52@add:
 
 ; 156  : 		}
@@ -821,20 +818,20 @@ $LN52@add:
 	DD	$LN18@add
 	DD	$LN19@add
 	DD	$LN20@add
-?add@Worley@@CAXJJJQEANHPEANH@Z ENDP			; Worley::add
+?add@Worley@@CAXJJJQEBNHPEANH@Z ENDP			; Worley::add
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\worley.cpp
-;	COMDAT ?noise@Worley@@SAXQEANHPEANH@Z
+;	COMDAT ?noise@Worley@@SAXQEBNHPEANH@Z
 _TEXT	SEGMENT
 new_at$ = 64
 at$ = 272
 order$ = 280
 F$ = 288
 function$ = 296
-?noise@Worley@@SAXQEANHPEANH@Z PROC			; Worley::noise, COMDAT
+?noise@Worley@@SAXQEBNHPEANH@Z PROC			; Worley::noise, COMDAT
 
-; 36   : void Worley::noise(double at[3], int order, double *F, int function) {
+; 37   : void Worley::noise(const double at[3], int order, double *F, int function) {
 
 $LN69:
 	mov	rax, rsp
@@ -860,11 +857,10 @@ $LN69:
 	vmovaps	XMMWORD PTR [rsp+112], xmm13
 	vmovaps	XMMWORD PTR [rsp+96], xmm14
 
-; 37   : 	double x2, y2, z2, mx2, my2, mz2;
 ; 38   : 	double new_at[3];
 ; 39   : 	long int_at[3];
 ; 40   : 
-; 41   : 	for (int i=0; i<order; i++) F[i] = 999999.9;
+; 41   : 	for (auto i=0; i<order; i++) F[i] = 999999.9;
 
 	test	esi, esi
 	jle	SHORT $LL61@noise
@@ -876,7 +872,7 @@ $LN69:
 $LL61@noise:
 
 ; 42   : 
-; 43   : 	for (int i=0; i<3; i++) {
+; 43   : 	for (auto i=0; i<3; i++) {
 ; 44   : 		new_at[i] = DENSITY_ADJUSTMENT * at[i];
 
 	vmovsd	xmm1, QWORD PTR __real@3fd97b4a2339c0ec
@@ -914,13 +910,13 @@ $LL61@noise:
 	cmovbe	r13d, eax
 	mov	r8d, r13d
 	vmovsd	QWORD PTR new_at$[rsp+16], xmm6
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 
 ; 49   : 
-; 50   : 	x2=new_at[0]-int_at[0];
-; 51   : 	y2=new_at[1]-int_at[1];
-; 52   : 	z2=new_at[2]-int_at[2];
-; 53   : 	mx2=(1.0-x2)*(1.0-x2);
+; 50   : 	double x2 = new_at[0] - int_at[0];
+; 51   : 	double y2 = new_at[1] - int_at[1];
+; 52   : 	double z2 = new_at[2] - int_at[2];
+; 53   : 	const double mx2 = (1.0 - x2) * (1.0 - x2);
 
 	vmovsd	xmm2, QWORD PTR __real@3ff0000000000000
 	vxorps	xmm0, xmm0, xmm0
@@ -935,8 +931,8 @@ $LL61@noise:
 	vcvtsi2sd xmm1, xmm1, r15d
 	vsubsd	xmm4, xmm7, xmm1
 
-; 54   : 	my2=(1.0-y2)*(1.0-y2);
-; 55   : 	mz2=(1.0-z2)*(1.0-z2);
+; 54   : 	const double my2 = (1.0 - y2) * (1.0 - y2);
+; 55   : 	const double mz2 = (1.0 - z2) * (1.0 - z2);
 
 	vsubsd	xmm0, xmm2, xmm3
 	vmulsd	xmm7, xmm0, xmm0
@@ -963,7 +959,7 @@ $LL61@noise:
 	mov	r8d, r13d
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN11@noise:
 
 ; 62   : 	if (y2          < F[order-1]) ADD( 0, -1,  0);
@@ -978,7 +974,7 @@ $LN11@noise:
 	mov	r8d, r13d
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN12@noise:
 
 ; 63   : 	if (z2          < F[order-1]) ADD( 0,  0, -1);
@@ -993,7 +989,7 @@ $LN12@noise:
 	mov	edx, r15d
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN13@noise:
 
 ; 64   : 	if (mx2         < F[order-1]) ADD( 1,  0,  0);
@@ -1008,7 +1004,7 @@ $LN13@noise:
 	mov	r8d, r13d
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN14@noise:
 
 ; 65   : 	if (my2         < F[order-1]) ADD( 0,  1,  0);
@@ -1023,7 +1019,7 @@ $LN14@noise:
 	mov	r8d, r13d
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN15@noise:
 
 ; 66   : 	if (mz2         < F[order-1]) ADD( 0,  0,  1);
@@ -1038,7 +1034,7 @@ $LN15@noise:
 	mov	edx, r15d
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN16@noise:
 
 ; 67   : 	// Edges
@@ -1055,7 +1051,7 @@ $LN16@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	r8d, r13d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN17@noise:
 
 ; 69   : 	if ( x2+ z2     < F[order-1]) ADD(-1,  0, -1);
@@ -1071,7 +1067,7 @@ $LN17@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN18@noise:
 
 ; 70   : 	if ( y2+ z2     < F[order-1]) ADD( 0, -1, -1);
@@ -1087,7 +1083,7 @@ $LN18@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN19@noise:
 
 ; 71   : 	if (mx2+my2     < F[order-1]) ADD( 1,  1,  0);
@@ -1103,7 +1099,7 @@ $LN19@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	r8d, r13d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN20@noise:
 
 ; 72   : 	if (mx2+mz2     < F[order-1]) ADD( 1,  0,  1);
@@ -1119,7 +1115,7 @@ $LN20@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN21@noise:
 
 ; 73   : 	if (my2+mz2     < F[order-1]) ADD( 0,  1,  1);
@@ -1135,7 +1131,7 @@ $LN21@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN22@noise:
 
 ; 74   : 	if ( x2+my2     < F[order-1]) ADD(-1,  1,  0);
@@ -1151,7 +1147,7 @@ $LN22@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	r8d, r13d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN23@noise:
 
 ; 75   : 	if ( x2+mz2     < F[order-1]) ADD(-1,  0,  1);
@@ -1167,7 +1163,7 @@ $LN23@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN24@noise:
 
 ; 76   : 	if ( y2+mz2     < F[order-1]) ADD( 0, -1,  1);
@@ -1183,7 +1179,7 @@ $LN24@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN25@noise:
 
 ; 77   : 	if (mx2+ y2     < F[order-1]) ADD( 1, -1,  0);
@@ -1199,7 +1195,7 @@ $LN25@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	r8d, r13d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN26@noise:
 
 ; 78   : 	if (mx2+ z2     < F[order-1]) ADD( 1,  0, -1);
@@ -1215,7 +1211,7 @@ $LN26@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	edx, r15d
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN27@noise:
 
 ; 79   : 	if (my2+ z2     < F[order-1]) ADD( 0,  1, -1);
@@ -1231,7 +1227,7 @@ $LN27@noise:
 	lea	r9, QWORD PTR new_at$[rsp]
 	mov	DWORD PTR [rsp+32], esi
 	mov	ecx, edi
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN28@noise:
 
 ; 80   : 	// Corners
@@ -1248,7 +1244,7 @@ $LN28@noise:
 	lea	ecx, DWORD PTR [rdi-1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN29@noise:
 
 ; 82   : 	if ( x2+ y2+mz2 < F[order-1]) ADD(-1, -1,  1);
@@ -1264,7 +1260,7 @@ $LN29@noise:
 	lea	ecx, DWORD PTR [rdi-1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN30@noise:
 
 ; 83   : 	if ( x2+my2+ z2 < F[order-1]) ADD(-1,  1, -1);
@@ -1280,7 +1276,7 @@ $LN30@noise:
 	lea	ecx, DWORD PTR [rdi-1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN31@noise:
 
 ; 84   : 	if ( x2+my2+mz2 < F[order-1]) ADD(-1,  1,  1);
@@ -1296,7 +1292,7 @@ $LN31@noise:
 	lea	ecx, DWORD PTR [rdi-1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN32@noise:
 
 ; 85   : 	if (mx2+ y2+ z2 < F[order-1]) ADD( 1, -1, -1);
@@ -1312,7 +1308,7 @@ $LN32@noise:
 	lea	ecx, DWORD PTR [rdi+1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN33@noise:
 
 ; 86   : 	if (mx2+ y2+mz2 < F[order-1]) ADD( 1, -1,  1);
@@ -1328,7 +1324,7 @@ $LN33@noise:
 	lea	ecx, DWORD PTR [rdi+1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN34@noise:
 
 ; 87   : 	if (mx2+my2+ z2 < F[order-1]) ADD( 1,  1, -1);
@@ -1344,7 +1340,7 @@ $LN34@noise:
 	lea	ecx, DWORD PTR [rdi+1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN35@noise:
 
 ; 88   : 	if (mx2+my2+mz2 < F[order-1]) ADD( 1,  1,  1);
@@ -1360,7 +1356,7 @@ $LN35@noise:
 	lea	ecx, DWORD PTR [rdi+1]
 	mov	DWORD PTR [rsp+32], esi
 	lea	r9, QWORD PTR new_at$[rsp]
-	call	?add@Worley@@CAXJJJQEANHPEANH@Z		; Worley::add
+	call	?add@Worley@@CAXJJJQEBNHPEANH@Z		; Worley::add
 $LN36@noise:
 
 ; 89   : 
@@ -1486,6 +1482,6 @@ $LN58@noise:
 	pop	r14
 	pop	r13
 	ret	0
-?noise@Worley@@SAXQEANHPEANH@Z ENDP			; Worley::noise
+?noise@Worley@@SAXQEBNHPEANH@Z ENDP			; Worley::noise
 _TEXT	ENDS
 END

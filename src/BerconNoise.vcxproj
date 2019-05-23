@@ -13,20 +13,8 @@
       <Configuration>Max2018</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Max2019_AVX_debug|x64">
-      <Configuration>Max2019_AVX_debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="max2019_AVX|x64">
-      <Configuration>max2019_AVX</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Max2019|x64">
       <Configuration>Max2019</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Max2020_AVX|x64">
-      <Configuration>Max2020_AVX</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Max2020|x64">
@@ -38,7 +26,7 @@
     <ProjectName>BerconMaps</ProjectName>
     <ProjectGuid>{E7CB76AA-6113-46BA-8EBC-8AE1D2B81210}</ProjectGuid>
     <RootNamespace>BerconNoise</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2016|x64'" Label="Configuration">
@@ -56,28 +44,13 @@
     <CharacterSet>Unicode</CharacterSet>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX|x64'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019_AVX_debug|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'" Label="Configuration">
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX|x64'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'" Label="Configuration">
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
@@ -89,24 +62,19 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2017|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2017 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
+    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2018|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2018 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX|x64'" Label="PropertySheets">
-    <Import Project="C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2019_AVX_debug|x64'" Label="PropertySheets">
-    <Import Project="C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX|x64'" Label="PropertySheets">
-    <Import Project="C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
+    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
+    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
+    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -135,37 +103,6 @@
     <CustomBuildAfterTargets />
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX|x64'">
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;$(LibraryPath)</LibraryPath>
-    <CustomBuildAfterTargets />
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
-    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
-    <TargetExt>.dlt</TargetExt>
-    <ExcludePath>$(ExcludePath)</ExcludePath>
-    <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019_AVX_debug|x64'">
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;$(LibraryPath)</LibraryPath>
-    <CustomBuildAfterTargets />
-    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
-    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
-    <TargetExt>.dlt</TargetExt>
-    <ExcludePath>$(ExcludePath)</ExcludePath>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX|x64'">
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>
-    <IncludePath>C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\lib\x64\Release;$(LibraryPath)</LibraryPath>
-    <CustomBuildAfterTargets />
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
-    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
-    <TargetExt>.dlt</TargetExt>
-    <ExcludePath>$(ExcludePath)</ExcludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'">
     <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>
@@ -365,198 +302,6 @@
       </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='max2019_AVX|x64'">
-    <Midl>
-      <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\midl\x64\BerconNoise.tlb</TypeLibraryName>
-      <HeaderFileName>.\midl\x64\%(Filename).h</HeaderFileName>
-      <InterfaceIdentifierFileName>.\midl\x64\%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>false</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <StringPooling>true</StringPooling>
-      <AdditionalOptions>/LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
-      <SDLCheck>false</SDLCheck>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-    </ClCompile>
-    <ResourceCompile />
-    <Link>
-      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\samples\images\tif\lib\x64\Release;C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProfileGuidedDatabase>
-      </ProfileGuidedDatabase>
-      <BaseAddress>
-      </BaseAddress>
-      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
-      <ModuleDefinitionFile>.\BerconNoise.def</ModuleDefinitionFile>
-      <AdditionalDependencies>AmgTranslator.lib;assetmanagement.lib;ATSCore.lib;biped.lib;bmm.lib;CommonRendererUI.lib;core.lib;crowd.lib;CustDlg.lib;CustomFileStreamAPI.lib;DataBridge.lib;DefaultRenderItems.lib;edmodel.lib;expr.lib;flt.lib;FragmentGraph.lib;geom.lib;gfx.lib;GraphicsDriver.lib;GraphicsUtility.lib;gup.lib;IGame.lib;imageViewers.lib;ManipSys.lib;MaxGraphicsObjects.lib;maxnet.lib;MaxQtBridge.lib;Maxscrpt.lib;maxutil.lib;MenuMan.lib;menus.lib;mesh.lib;MNMath.lib;MouseCursors.lib;NotificationAPIUtils.lib;NotificationSystem.lib;optimesh.lib;Paramblk2.lib;particle.lib;particleflow.lib;ParticleFlowTools.lib;physique.lib;PointCloud.lib;Poly.lib;PolyPaint.lib;populate.lib;RapidRTCore.lib;RenderingAPI.lib;RenderUtil.lib;rtmax.lib;spring.lib;tessint.lib;TipSystem.lib;ToolClips.lib;Tprofiler.lib;TprofilerTool.lib;UnwrapBase.lib;UnwrapInternal.lib;viewfile.lib;ViewSystem.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <StripPrivateSymbols>
-      </StripPrivateSymbols>
-      <OutputFile>$(OutDir)BerconMaps_2019_64_AVX2.dlt</OutputFile>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <AssemblyDebug>true</AssemblyDebug>
-      <Version>
-      </Version>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateMapFile>true</GenerateMapFile>
-      <MapExports>true</MapExports>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-    </Link>
-    <Xdcmake />
-    <Bscmake />
-    <ResourceCompile />
-    <ProjectReference />
-    <ResourceCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <ProjectReference />
-    <PostBuildEvent>
-      <Command>
-      </Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Max2019_AVX_debug|x64'">
-    <Midl>
-      <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\midl\x64\BerconNoise.tlb</TypeLibraryName>
-      <HeaderFileName>.\midl\x64\%(Filename).h</HeaderFileName>
-      <InterfaceIdentifierFileName>.\midl\x64\%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>false</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <StringPooling>true</StringPooling>
-      <AdditionalOptions>/Qvec-report:1 /Qpar-report:1 /LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
-      <SDLCheck>false</SDLCheck>
-      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
-    </ClCompile>
-    <ResourceCompile />
-    <Link>
-      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\samples\images\tif\lib\x64\Release;C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProfileGuidedDatabase>
-      </ProfileGuidedDatabase>
-      <BaseAddress>
-      </BaseAddress>
-      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
-      <ModuleDefinitionFile>.\BerconNoise.def</ModuleDefinitionFile>
-      <AdditionalDependencies>AmgTranslator.lib;assetmanagement.lib;ATSCore.lib;biped.lib;bmm.lib;CommonRendererUI.lib;core.lib;crowd.lib;CustDlg.lib;CustomFileStreamAPI.lib;DataBridge.lib;DefaultRenderItems.lib;edmodel.lib;expr.lib;flt.lib;FragmentGraph.lib;geom.lib;gfx.lib;GraphicsDriver.lib;GraphicsUtility.lib;gup.lib;IGame.lib;imageViewers.lib;ManipSys.lib;MaxGraphicsObjects.lib;maxnet.lib;MaxQtBridge.lib;Maxscrpt.lib;maxutil.lib;MenuMan.lib;menus.lib;mesh.lib;MNMath.lib;MouseCursors.lib;NotificationAPIUtils.lib;NotificationSystem.lib;optimesh.lib;Paramblk2.lib;particle.lib;particleflow.lib;ParticleFlowTools.lib;physique.lib;PointCloud.lib;Poly.lib;PolyPaint.lib;populate.lib;RapidRTCore.lib;RenderingAPI.lib;RenderUtil.lib;rtmax.lib;spring.lib;tessint.lib;TipSystem.lib;ToolClips.lib;Tprofiler.lib;TprofilerTool.lib;UnwrapBase.lib;UnwrapInternal.lib;viewfile.lib;ViewSystem.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <StripPrivateSymbols>
-      </StripPrivateSymbols>
-      <OutputFile>$(OutDir)BerconMaps_2019_64_AVX2_d.dlt</OutputFile>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <AssemblyDebug>true</AssemblyDebug>
-      <Version>
-      </Version>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateMapFile>true</GenerateMapFile>
-      <MapExports>true</MapExports>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
-    </Link>
-    <Xdcmake />
-    <Bscmake />
-    <ResourceCompile />
-    <ProjectReference />
-    <ResourceCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <ProjectReference />
-    <PostBuildEvent>
-      <Command>"G:\Dropbox\GitHub\BerconMaps\src\updatetomax_debug.bat"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Max2020_AVX|x64'">
-    <Midl>
-      <TargetEnvironment>X64</TargetEnvironment>
-      <TypeLibraryName>.\midl\x64\BerconNoise.tlb</TypeLibraryName>
-      <HeaderFileName>.\midl\x64\%(Filename).h</HeaderFileName>
-      <InterfaceIdentifierFileName>.\midl\x64\%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>.\midl\x64\%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
-      <FloatingPointModel>Precise</FloatingPointModel>
-      <TreatWarningAsError>false</TreatWarningAsError>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>false</OmitFramePointers>
-      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
-      <BufferSecurityCheck>false</BufferSecurityCheck>
-      <StringPooling>true</StringPooling>
-      <AdditionalOptions>/LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
-      <SDLCheck>false</SDLCheck>
-    </ClCompile>
-    <ResourceCompile />
-    <Link>
-      <AdditionalLibraryDirectories>C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\samples\images\tif\lib\x64\Release;C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\lib\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ProfileGuidedDatabase>
-      </ProfileGuidedDatabase>
-      <BaseAddress>
-      </BaseAddress>
-      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
-      <ModuleDefinitionFile>.\BerconNoise.def</ModuleDefinitionFile>
-      <AdditionalDependencies>AmgTranslator.lib;assetmanagement.lib;ATSCore.lib;biped.lib;bmm.lib;CommonRendererUI.lib;core.lib;crowd.lib;CustDlg.lib;CustomFileStreamAPI.lib;DataBridge.lib;DefaultRenderItems.lib;edmodel.lib;expr.lib;flt.lib;FragmentGraph.lib;geom.lib;gfx.lib;GraphicsDriver.lib;GraphicsUtility.lib;gup.lib;IGame.lib;imageViewers.lib;ManipSys.lib;MaxGraphicsObjects.lib;maxnet.lib;MaxQtBridge.lib;Maxscrpt.lib;maxutil.lib;MenuMan.lib;menus.lib;mesh.lib;MNMath.lib;MouseCursors.lib;NotificationAPIUtils.lib;NotificationSystem.lib;optimesh.lib;Paramblk2.lib;particle.lib;particleflow.lib;ParticleFlowTools.lib;physique.lib;PointCloud.lib;Poly.lib;PolyPaint.lib;populate.lib;RapidRTCore.lib;RenderingAPI.lib;RenderUtil.lib;rtmax.lib;spring.lib;tessint.lib;TipSystem.lib;ToolClips.lib;Tprofiler.lib;TprofilerTool.lib;UnwrapBase.lib;UnwrapInternal.lib;viewfile.lib;ViewSystem.lib;zlibdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <StripPrivateSymbols>
-      </StripPrivateSymbols>
-      <OutputFile>$(OutDir)BerconMaps_2020_64_AVX2.dlt</OutputFile>
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
-      <AssemblyDebug>true</AssemblyDebug>
-      <Version>
-      </Version>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateMapFile>true</GenerateMapFile>
-      <MapExports>true</MapExports>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
-    </Link>
-    <Xdcmake />
-    <Bscmake />
-    <ResourceCompile />
-    <ProjectReference />
-    <ResourceCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <ProjectReference />
-    <PostBuildEvent>
-      <Command>"C:\Users\James\source\repos\BerconMaps\src\updatetomax.bat"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'">
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
@@ -643,8 +388,9 @@
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <StringPooling>true</StringPooling>
-      <AdditionalOptions>/LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/Qpar:1 /LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
       <SDLCheck>false</SDLCheck>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ResourceCompile />
     <Link>

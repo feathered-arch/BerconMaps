@@ -5,20 +5,16 @@ include listing.inc
 INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
-PUBLIC	?controlsInit@@3HA				; controlsInit
-PUBLIC	?hInstance@@3PEAUHINSTANCE__@@EA		; hInstance
 PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
 PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
 PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+PUBLIC	?hInstance@@3PEAUHINSTANCE__@@EA		; hInstance
+PUBLIC	?controlsInit@@3HA				; controlsInit
 EXTRN	GUID_NULL:BYTE
-_BSS	SEGMENT
-?controlsInit@@3HA DD 01H DUP (?)			; controlsInit
-	ALIGN	8
-
-?hInstance@@3PEAUHINSTANCE__@@EA DQ 01H DUP (?)		; hInstance
-_BSS	ENDS
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
 IsolationAwarePrivateT_SqbjaYRiRY DD 01H DUP (?)
@@ -35,6 +31,18 @@ _BSS	ENDS
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
 _BSS	ENDS
+_BSS	SEGMENT
+?hInstance@@3PEAUHINSTANCE__@@EA DQ 01H DUP (?)		; hInstance
+?controlsInit@@3HA DD 01H DUP (?)			; controlsInit
+_BSS	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
 _DATA	SEGMENT
 WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
@@ -62,6 +70,7 @@ PUBLIC	??_C@_0BD@KDNHKDOA@InitCommonControls@		; `string'
 PUBLIC	?c@?1??CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY@@9@4UIsolationAwarePrivate_pBAFGnAG_zBqHyr_vAsB@@B ; `CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY'::`2'::c
 PUBLIC	?m@?1??CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY@@9@4UIsolationAwarePrivate_zHGnoyr_zBqHyr_vAsB@@A ; `CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY'::`2'::m
 PUBLIC	??_C@_13COJANIEC@?$AA0@				; `string'
+PUBLIC	?__LINE__Var@?0??LibClassDesc@@YAPEAVClassDesc@@H@Z@4JA ; `LibClassDesc'::`1'::__LINE__Var
 PUBLIC	??_C@_1BK@JEDIBDND@?$AAL?$AAi?$AAb?$AAC?$AAl?$AAa?$AAs?$AAs?$AAD?$AAe?$AAs?$AAc@ ; `string'
 PUBLIC	??_C@_1FM@FHBPLIJN@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh@ ; `string'
 EXTRN	__imp_OutputDebugStringA:PROC
@@ -98,9 +107,6 @@ _BSS	SEGMENT
 _BSS	ENDS
 _BSS	SEGMENT
 ?kInvalidId@AssetManagement@MaxSDK@@3UAssetId@12@A DB 010H DUP (?) ; MaxSDK::AssetManagement::kInvalidId
-_BSS	ENDS
-;	COMDAT ?buf@?1??GetString@@YAPEA_WH@Z@4PA_WA
-_BSS	SEGMENT
 ?buf@?1??GetString@@YAPEA_WH@Z@4PA_WA DW 0100H DUP (?)	; `GetString'::`2'::buf
 _BSS	ENDS
 ;	COMDAT pdata
@@ -184,7 +190,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?LibClassDesc@@YAPEAVClassDesc@@H@Z DD imagerel $LN13
-	DD	imagerel $LN13+112
+	DD	imagerel $LN13+116
 	DD	imagerel $unwind$?LibClassDesc@@YAPEAVClassDesc@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -225,6 +231,10 @@ CONST	SEGMENT
 	DB	00H, 'i', 00H, 'b', 00H, 'C', 00H, 'l', 00H, 'a', 00H, 's', 00H
 	DB	's', 00H, 'D', 00H, 'e', 00H, 's', 00H, 'c', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??LibClassDesc@@YAPEAVClassDesc@@H@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??LibClassDesc@@YAPEAVClassDesc@@H@Z@4JA DD 046H ; `LibClassDesc'::`1'::__LINE__Var
+_DATA	ENDS
 _DATA	SEGMENT
 ?kTriObjNormalXTCID@@3VClass_ID@@B DD 0730a33d7H	; kTriObjNormalXTCID
 	DD	027246c55H
@@ -491,8 +501,9 @@ $LN13:
 
 ; 77   : 		default: DbgAssert(0); return 0;
 
+	mov	ecx, DWORD PTR ?__LINE__Var@?0??LibClassDesc@@YAPEAVClassDesc@@H@Z@4JA
 	lea	r9, OFFSET FLAT:??_C@_13COJANIEC@?$AA0@
-	mov	ecx, 77					; 0000004dH
+	add	ecx, 7
 	lea	r8, OFFSET FLAT:??_C@_1BK@JEDIBDND@?$AAL?$AAi?$AAb?$AAC?$AAl?$AAa?$AAs?$AAs?$AAD?$AAe?$AAs?$AAc@
 	lea	rdx, OFFSET FLAT:??_C@_1FM@FHBPLIJN@?$AAg?$AA?3?$AA?2?$AAd?$AAr?$AAo?$AAp?$AAb?$AAo?$AAx?$AA?2?$AAg?$AAi?$AAt?$AAh@
 	call	QWORD PTR __imp_?assert1@@YAHHPEB_W00@Z
@@ -731,42 +742,42 @@ bb$ = 24
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 ;	COMDAT IsolationAwareInitCommonControls
 _TEXT	SEGMENT
 ulpCookie$ = 48
 IsolationAwareInitCommonControls PROC			; COMDAT
 
-; 239  : {
+; 158  : {
 
 $LN40:
 	push	rbx
 	sub	rsp, 32					; 00000020H
 
-; 240  :     typedef void (WINAPI* PFN)(void);
-; 241  :     static PFN s_pfn;
-; 242  :     PFN __IsolationAware_pfn = s_pfn;
+; 159  :     typedef void (WINAPI* PFN)(void);
+; 160  :     static PFN s_pfn;
+; 161  :     PFN __IsolationAware_pfn = s_pfn;
 
 	mov	rbx, QWORD PTR ?s_pfn@?1??IsolationAwareInitCommonControls@@9@4P6AXXZEA ; `IsolationAwareInitCommonControls'::`2'::s_pfn
 
-; 243  :     ULONG_PTR ulpCookie = 0;
+; 162  :     ULONG_PTR ulpCookie = 0;
 
 	mov	QWORD PTR ulpCookie$[rsp], 0
 
-; 244  :     const BOOL fActivateActCtxSuccess =
-; 245  :         IsolationAwarePrivateT_SAbnPgpgk ||
-; 246  :         IsolationAwarePrivateT_SqbjaYRiRY ||
+; 163  :     const BOOL fActivateActCtxSuccess =
+; 164  :         IsolationAwarePrivateT_SAbnPgpgk ||
+; 165  :         IsolationAwarePrivateT_SqbjaYRiRY ||
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SAbnPgpgk, 0
 	jne	SHORT $LN9@IsolationA
 	mov	eax, DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY
 	test	eax, eax
 	jne	SHORT $LN9@IsolationA
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 585  :     if (WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ)
 
@@ -854,60 +865,60 @@ $LN29@IsolationA:
 
 	mov	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 1
 $LN9@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 252  :         if (__IsolationAware_pfn == NULL)
+; 171  :         if (__IsolationAware_pfn == NULL)
 
 	test	rbx, rbx
 	jne	SHORT $LN4@IsolationA
 
-; 253  :         {
-; 254  :             __IsolationAware_pfn = (PFN) CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY("InitCommonControls");
+; 172  :         {
+; 173  :             __IsolationAware_pfn = (PFN) CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY("InitCommonControls");
 
 	lea	rcx, OFFSET FLAT:??_C@_0BD@KDNHKDOA@InitCommonControls@
 	call	CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY
 	mov	rbx, rax
 
-; 255  :             if (__IsolationAware_pfn == NULL)
+; 174  :             if (__IsolationAware_pfn == NULL)
 
 	test	rax, rax
 	je	SHORT $LN3@IsolationA
 
-; 256  :                 __leave;
-; 257  :             s_pfn = __IsolationAware_pfn;
+; 175  :                 __leave;
+; 176  :             s_pfn = __IsolationAware_pfn;
 
 	mov	QWORD PTR ?s_pfn@?1??IsolationAwareInitCommonControls@@9@4P6AXXZEA, rax ; `IsolationAwareInitCommonControls'::`2'::s_pfn
 $LN4@IsolationA:
 
-; 258  :         }
-; 259  :         __IsolationAware_pfn();
+; 177  :         }
+; 178  :         __IsolationAware_pfn();
 
 	call	rbx
 	npad	1
 $LN3@IsolationA:
 $LN17@IsolationA:
 
-; 260  :     }
-; 261  :     __finally
-; 262  :     {
-; 263  :         if (!IsolationAwarePrivateT_SAbnPgpgk
-; 264  :          || !IsolationAwarePrivateT_SqbjaYRiRY
+; 179  :     }
+; 180  :     __finally
+; 181  :     {
+; 182  :         if (!IsolationAwarePrivateT_SAbnPgpgk
+; 183  :          || !IsolationAwarePrivateT_SqbjaYRiRY
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SAbnPgpgk, 0
 	je	SHORT $LN11@IsolationA
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN12@IsolationA
 $LN11@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rsp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 271  : }
+; 190  : }
 
 	add	rsp, 32					; 00000020H
 	pop	rbx
@@ -923,25 +934,25 @@ text$x	SEGMENT
 ulpCookie$ = 48
 IsolationAwareInitCommonControls$fin$0 PROC
 
-; 260  :     }
+; 179  :     }
 
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 $LN14@IsolationA:
 
-; 260  :     }
-; 261  :     __finally
-; 262  :     {
-; 263  :         if (!IsolationAwarePrivateT_SAbnPgpgk
-; 264  :          || !IsolationAwarePrivateT_SqbjaYRiRY
+; 179  :     }
+; 180  :     __finally
+; 181  :     {
+; 182  :         if (!IsolationAwarePrivateT_SAbnPgpgk
+; 183  :          || !IsolationAwarePrivateT_SqbjaYRiRY
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SAbnPgpgk, 0
 	je	SHORT $LN7@IsolationA
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN15@IsolationA
 $LN7@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
@@ -957,32 +968,32 @@ $LN15@IsolationA:
 IsolationAwareInitCommonControls$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT text$x
 text$x	SEGMENT
 ulpCookie$ = 48
 IsolationAwareInitCommonControls$fin$0 PROC
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 260  :     }
+; 179  :     }
 
 	push	rbp
 	sub	rsp, 32					; 00000020H
 	mov	rbp, rdx
 $LN14@IsolationA:
 
-; 261  :     __finally
-; 262  :     {
-; 263  :         if (!IsolationAwarePrivateT_SAbnPgpgk
-; 264  :          || !IsolationAwarePrivateT_SqbjaYRiRY
+; 180  :     __finally
+; 181  :     {
+; 182  :         if (!IsolationAwarePrivateT_SAbnPgpgk
+; 183  :          || !IsolationAwarePrivateT_SqbjaYRiRY
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SAbnPgpgk, 0
 	je	SHORT $LN7@IsolationA
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN15@IsolationA
 $LN7@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
@@ -998,11 +1009,11 @@ $LN15@IsolationA:
 IsolationAwareInitCommonControls$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 ;	COMDAT CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY
 _TEXT	SEGMENT
 fActivateActCtxSuccess$ = 32
@@ -1011,7 +1022,7 @@ pszProcName$ = 64
 ulpCookie$ = 72
 CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY PROC ; COMDAT
 
-; 4383 : {
+; 3213 : {
 
 $LN29:
 	mov	rax, rsp
@@ -1022,61 +1033,61 @@ $LN29:
 	sub	rsp, 48					; 00000030H
 	mov	r14, rcx
 
-; 4384 :     FARPROC proc = NULL;
+; 3214 :     FARPROC proc = NULL;
 
 	xor	edi, edi
 	mov	ebx, edi
 	mov	QWORD PTR [rax-16], rbx
 
-; 4385 :     static HMODULE s_module;
-; 4386 :     BOOL fActivateActCtxSuccess = FALSE;
+; 3215 :     static HMODULE s_module;
+; 3216 :     BOOL fActivateActCtxSuccess = FALSE;
 
 	mov	esi, edi
 	mov	DWORD PTR [rax-24], edi
 
-; 4387 :     ULONG_PTR ulpCookie = 0;
+; 3217 :     ULONG_PTR ulpCookie = 0;
 
 	mov	QWORD PTR [rax+16], rdi
 
-; 4388 : #ifndef _M_CEE_PURE
-; 4389 :     const static IsolationAwarePrivatepBAFGnAG_zBqHyr_vAsB
-; 4390 :         c = { IsolationAwarePrivatezlybNQyVOeNelJ, L"Comctl32.dll"
-; 4391 : #ifdef _M_IX86
-; 4392 :              , IsolationAwarePrivatezlybNQyVOeNeln, "Comctl32.dll"
-; 4393 : #endif
-; 4394 :     };
-; 4395 : #else
-; 4396 :     static IsolationAwarePrivatepBAFGnAG_zBqHyr_vAsB c;
-; 4397 :     c.WinbaseIsolationAwarePrivateybNQJ = IsolationAwarePrivatezlybNQyVOeNelJ;
-; 4398 :     c.WinbaseIsolationAwarePrivateANZRJ = L"Comctl32.dll";
-; 4399 : #ifdef _M_IX86
-; 4400 :     c.WinbaseIsolationAwarePrivateybNQn = IsolationAwarePrivatezlybNQyVOeNeln;
-; 4401 :     c.WinbaseIsolationAwarePrivateANZRn = "Comctl32.dll";
-; 4402 : #endif
-; 4403 : #endif
-; 4404 :     static IsolationAwarePrivatezHGnoyr_zBqHyr_vAsB m;
-; 4405 : 
-; 4406 :     __try
-; 4407 :     {
-; 4408 :         if (!IsolationAwarePrivateT_SqbjaYRiRY)
+; 3218 : #ifndef _M_CEE_PURE
+; 3219 :     const static IsolationAwarePrivatepBAFGnAG_zBqHyr_vAsB
+; 3220 :         c = { IsolationAwarePrivatezlybNQyVOeNelJ, L"Comctl32.dll"
+; 3221 : #ifdef _M_IX86
+; 3222 :              , IsolationAwarePrivatezlybNQyVOeNeln, "Comctl32.dll"
+; 3223 : #endif
+; 3224 :     };
+; 3225 : #else
+; 3226 :     static IsolationAwarePrivatepBAFGnAG_zBqHyr_vAsB c;
+; 3227 :     c.WinbaseIsolationAwarePrivateybNQJ = IsolationAwarePrivatezlybNQyVOeNelJ;
+; 3228 :     c.WinbaseIsolationAwarePrivateANZRJ = L"Comctl32.dll";
+; 3229 : #ifdef _M_IX86
+; 3230 :     c.WinbaseIsolationAwarePrivateybNQn = IsolationAwarePrivatezlybNQyVOeNeln;
+; 3231 :     c.WinbaseIsolationAwarePrivateANZRn = "Comctl32.dll";
+; 3232 : #endif
+; 3233 : #endif
+; 3234 :     static IsolationAwarePrivatezHGnoyr_zBqHyr_vAsB m;
+; 3235 : 
+; 3236 :     __try
+; 3237 :     {
+; 3238 :         if (!IsolationAwarePrivateT_SqbjaYRiRY)
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, edi
 	jne	SHORT $LN4@CommctrlIs
 
-; 4409 :         {
-; 4410 :             fActivateActCtxSuccess = IsolationAwarePrivatenPgViNgRzlnPgpgk(&ulpCookie);
+; 3239 :         {
+; 3240 :             fActivateActCtxSuccess = IsolationAwarePrivatenPgViNgRzlnPgpgk(&ulpCookie);
 
 	lea	rcx, QWORD PTR [rax+16]
 	call	IsolationAwarePrivatenPgViNgRzlnPgpgk
 	mov	esi, eax
 	mov	DWORD PTR fActivateActCtxSuccess$[rsp], eax
 
-; 4411 :             if (!fActivateActCtxSuccess)
+; 3241 :             if (!fActivateActCtxSuccess)
 
 	test	eax, eax
 	je	SHORT $LN2@CommctrlIs
 $LN4@CommctrlIs:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 372  :     FARPROC Proc = NULL;
 
@@ -1117,62 +1128,62 @@ $LN20@CommctrlIs:
 	call	QWORD PTR __imp_GetProcAddress
 	mov	rbx, rax
 $Exit$30:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 4414 :         proc = IsolationAwarePrivatezltRgCebPnQQeRff(&c, &m, pszProcName);
+; 3244 :         proc = IsolationAwarePrivatezltRgCebPnQQeRff(&c, &m, pszProcName);
 
 	mov	QWORD PTR proc$[rsp], rbx
 $LN2@CommctrlIs:
 $LN18@CommctrlIs:
 
-; 4415 :     }
-; 4416 :     __finally
-; 4417 :     {
-; 4418 :         if (
-; 4419 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
+; 3245 :     }
+; 3246 :     __finally
+; 3247 :     {
+; 3248 :         if (
+; 3249 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN12@CommctrlIs
 	test	esi, esi
 	je	SHORT $LN12@CommctrlIs
 
-; 4420 :             fActivateActCtxSuccess)
-; 4421 :         {
-; 4422 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
+; 3250 :             fActivateActCtxSuccess)
+; 3251 :         {
+; 3252 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
 
 	test	rbx, rbx
 	jne	SHORT $LN11@CommctrlIs
 	call	QWORD PTR __imp_GetLastError
 	mov	edi, eax
 $LN11@CommctrlIs:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rsp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 4424 :             if (proc == NULL)
+; 3254 :             if (proc == NULL)
 
 	test	rbx, rbx
 	jne	SHORT $LN12@CommctrlIs
 
-; 4425 :                 SetLastError(dwLastError);
+; 3255 :                 SetLastError(dwLastError);
 
 	mov	ecx, edi
 	call	QWORD PTR __imp_SetLastError
 $LN12@CommctrlIs:
 
-; 4426 :         }
-; 4427 :     }
-; 4428 :     return proc;
+; 3256 :         }
+; 3257 :     }
+; 3258 :     return proc;
 
 	mov	rax, rbx
 $LN14@CommctrlIs:
 
-; 4429 : }
+; 3259 : }
 
 	mov	rbx, QWORD PTR [rsp+64]
 	mov	rsi, QWORD PTR [rsp+80]
@@ -1190,7 +1201,7 @@ pszProcName$ = 64
 ulpCookie$ = 72
 CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 PROC
 
-; 4415 :     }
+; 3245 :     }
 
 	push	rbx
 	push	rbp
@@ -1199,20 +1210,20 @@ CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 PROC
 	mov	rbp, rdx
 $LN15@CommctrlIs:
 
-; 4415 :     }
-; 4416 :     __finally
-; 4417 :     {
-; 4418 :         if (
-; 4419 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
+; 3245 :     }
+; 3246 :     __finally
+; 3247 :     {
+; 3248 :         if (
+; 3249 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN16@CommctrlIs
 	cmp	DWORD PTR fActivateActCtxSuccess$[rbp], 0
 	je	SHORT $LN16@CommctrlIs
 
-; 4420 :             fActivateActCtxSuccess)
-; 4421 :         {
-; 4422 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
+; 3250 :             fActivateActCtxSuccess)
+; 3251 :         {
+; 3252 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
 
 	mov	rbx, QWORD PTR proc$[rbp]
 	test	rbx, rbx
@@ -1223,21 +1234,21 @@ $LN15@CommctrlIs:
 $LN8@CommctrlIs:
 	xor	edi, edi
 $LN9@CommctrlIs:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rbp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 4424 :             if (proc == NULL)
+; 3254 :             if (proc == NULL)
 
 	test	rbx, rbx
 	jne	SHORT $LN16@CommctrlIs
 
-; 4425 :                 SetLastError(dwLastError);
+; 3255 :                 SetLastError(dwLastError);
 
 	mov	ecx, edi
 	call	QWORD PTR __imp_SetLastError
@@ -1252,8 +1263,8 @@ $LN16@CommctrlIs:
 CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 ;	COMDAT text$x
 text$x	SEGMENT
 fActivateActCtxSuccess$ = 32
@@ -1262,7 +1273,7 @@ pszProcName$ = 64
 ulpCookie$ = 72
 CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 PROC
 
-; 4415 :     }
+; 3245 :     }
 
 	push	rbx
 	push	rbp
@@ -1271,19 +1282,19 @@ CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 PROC
 	mov	rbp, rdx
 $LN15@CommctrlIs:
 
-; 4416 :     __finally
-; 4417 :     {
-; 4418 :         if (
-; 4419 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
+; 3246 :     __finally
+; 3247 :     {
+; 3248 :         if (
+; 3249 :             !IsolationAwarePrivateT_SqbjaYRiRY &&
 
 	cmp	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 0
 	jne	SHORT $LN16@CommctrlIs
 	cmp	DWORD PTR fActivateActCtxSuccess$[rbp], 0
 	je	SHORT $LN16@CommctrlIs
 
-; 4420 :             fActivateActCtxSuccess)
-; 4421 :         {
-; 4422 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
+; 3250 :             fActivateActCtxSuccess)
+; 3251 :         {
+; 3252 :             const DWORD dwLastError = (proc == NULL) ? GetLastError() : NO_ERROR;
 
 	mov	rbx, QWORD PTR proc$[rbp]
 	test	rbx, rbx
@@ -1294,21 +1305,21 @@ $LN15@CommctrlIs:
 $LN8@CommctrlIs:
 	xor	edi, edi
 $LN9@CommctrlIs:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rbp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\commctrl.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\commctrl.inl
 
-; 4424 :             if (proc == NULL)
+; 3254 :             if (proc == NULL)
 
 	test	rbx, rbx
 	jne	SHORT $LN16@CommctrlIs
 
-; 4425 :                 SetLastError(dwLastError);
+; 3255 :                 SetLastError(dwLastError);
 
 	mov	ecx, edi
 	call	QWORD PTR __imp_SetLastError
@@ -1323,7 +1334,7 @@ $LN16@CommctrlIs:
 CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT WinbaseIsolationAwarePrivatetRgzlnPgpgk
 _TEXT	SEGMENT
 actCtxBasicInfo$ = 64
@@ -2052,7 +2063,7 @@ $LN24@WinbaseIso:
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwarePrivatezltRgCebPnQQeRff
 _TEXT	SEGMENT
 c$ = 48
@@ -2122,7 +2133,7 @@ $LN6@IsolationA:
 IsolationAwarePrivatezltRgCebPnQQeRff ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareQueryActCtxW
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -2141,7 +2152,7 @@ IsolationAwareQueryActCtxW PROC				; COMDAT
 IsolationAwareQueryActCtxW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareFindActCtxSectionStringW
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -2158,7 +2169,7 @@ IsolationAwareFindActCtxSectionStringW PROC		; COMDAT
 IsolationAwareFindActCtxSectionStringW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareDeactivateActCtx
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -2172,7 +2183,7 @@ IsolationAwareDeactivateActCtx PROC			; COMDAT
 IsolationAwareDeactivateActCtx ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareActivateActCtx
 _TEXT	SEGMENT
 hActCtx$ = 8
@@ -2186,7 +2197,7 @@ IsolationAwareActivateActCtx PROC			; COMDAT
 IsolationAwareActivateActCtx ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareCreateActCtxW
 _TEXT	SEGMENT
 pActCtx$ = 8
@@ -2199,7 +2210,7 @@ IsolationAwareCreateActCtxW PROC			; COMDAT
 IsolationAwareCreateActCtxW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwarePrivatenPgViNgRzlnPgpgk
 _TEXT	SEGMENT
 pulpCookie$ = 48
@@ -2325,7 +2336,7 @@ $LN19@IsolationA:
 IsolationAwarePrivatenPgViNgRzlnPgpgk ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwarePrivatezlybNQyVOeNelJ
 _TEXT	SEGMENT
 s$ = 8

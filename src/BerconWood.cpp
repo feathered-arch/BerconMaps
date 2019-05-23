@@ -253,8 +253,8 @@ static ParamBlockDesc2 BerconWood_param_blk ( BerconWood_params, _M("params"),  
 
 	// Sampling
 	pb_samples,	_M("samples"),   TYPE_INT,			P_ANIMATABLE,	IDS_SAMPLES,
-		p_default,		4,
-		p_range,		1, 1000000,
+		p_default,		1,
+		p_range,		1, 100000,
 		p_ui, 			TYPE_SPINNER, EDITTYPE_INT, IDC_SAMPLES_EDIT, IDC_SAMPLES_SPIN, SPIN_AUTOSCALE, 
 		p_end,
 
@@ -379,22 +379,22 @@ INT_PTR BerconWoodDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT ms
 
 			// Wood type
 			HWND hwndMap = GetDlgItem(hWnd, IDC_WOOD_TYPE);  
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_RADIAL_WOOD));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_PERLIN_WOOD));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_SIMPLEX_WOOD));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LINEAR_WOOD));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_RADIAL_WOOD)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_PERLIN_WOOD)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_SIMPLEX_WOOD)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LINEAR_WOOD)));
 
 			// Set correct dropdown value
 			int curIndex;
 			map->GetParamBlock()->GetValue(wood_type, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_WOOD_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);						
+			SendMessage(GetDlgItem(hWnd, IDC_WOOD_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);						
 			break;
 		}		
 		case WM_SHOWWINDOW:	{		
 			// Set correct dropdown value
 			int curIndex;
 			map->GetParamBlock()->GetValue(wood_type, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_WOOD_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_WOOD_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 			break;
 		}
 		default: return FALSE;
@@ -466,7 +466,7 @@ void BerconWood::Reset() {
 	pblock->SetValue( high_tresh, t,		1.f		);
 	pblock->SetValue( wood_skew, t,			.75f	);
 	pblock->SetValue( rand_seed, t,			12.345f	);
-	pblock->SetValue( pb_samples, t,			4	);
+	pblock->SetValue( pb_samples, t,			1	);
 
 	// Maps
 	for (int i=16; i<32; i++)
@@ -759,7 +759,7 @@ void BerconWood::applyDistortion(ShadeContext& sc, Point3& p) {
 }
 
 WoodParam BerconWood::EvalParameters(ShadeContext& sc) {
-	WoodParam wp;
+	WoodParam wp{};
 	wp.woodType = woodType;
 	wp.randSeed = randSeed;
 	wp.samples = samples;

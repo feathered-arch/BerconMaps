@@ -19,6 +19,8 @@ under the License.
 // implementation of perlin/simplex noise, (Simplex)Noise1234
 
 #include	"perlin.h"
+#include <immintrin.h>
+
 
 // Chart given by Ken Perlin, using the same to get identical results
 static unsigned char perm[] = {		
@@ -96,7 +98,7 @@ float Perlin::grad(int hash, float x, float y, float z, float w) {
 // #################### // Perlin \\ ####################
 
 float Perlin::noise(float x) {    
-    int ix0 = FASTFLOOR(x);		
+    int ix0 = floor(x);		
 	int ix1 = (ix0+1) & 255;
     float xf0 = x - ix0;
 	float xf1 = xf0 - 1.0f;   
@@ -107,8 +109,8 @@ float Perlin::noise(float x) {
 }
 
 float Perlin::noise(float x, float y) {    
-    int xi = FASTFLOOR(x);
-	int yi = FASTFLOOR(y);
+    int xi = floor(x);
+	int yi = floor(y);
     float xf0 = x - xi;
     float yf0 = y - yi;
     float xf1 = xf0 - 1.0f;
@@ -127,12 +129,12 @@ float Perlin::noise(float x, float y) {
 }
 
 float Perlin::noise(float x, float y, float z) {
-	int xi = FASTFLOOR(x);
-	int yi = FASTFLOOR(y);
-	int zi = FASTFLOOR(z);
-	float xf = x - (float)xi;
-	float yf = y - (float)yi;
-	float zf = z - (float)zi;
+	int xi = floor(x);
+	int yi = floor(y);
+	int zi = floor(z);
+	float xf = x - float(xi);
+	float yf = y - float(yi);
+	float zf = z - float(zi);
 	xi = xi & 255;
 	yi = yi & 255;
 	zi = zi & 255;
@@ -153,10 +155,10 @@ float Perlin::noise(float x, float y, float z) {
 }
 
 float Perlin::noise(float x, float y, float z, float w) {
-    int xi = FASTFLOOR(x);
-	int yi = FASTFLOOR(y);
-	int zi = FASTFLOOR(z);
-	int wi = FASTFLOOR(w);
+    int xi = floor(x);
+	int yi = floor(y);
+	int zi = floor(z);
+	int wi = floor(w);
     float xf0 = x - xi;
     float yf0 = y - yi;
 	float zf0 = z - zi;
@@ -239,7 +241,7 @@ inline float Perlin::point(float x, float y, float z, float w, int i, int j, int
 // #################### // Simplex \\ ####################
 
 float Perlin::snoise(float x) {
-	int i0 = FASTFLOOR(x);
+	int i0 = floor(x);
 	int i1 = i0 + 1;
 	float x0 = x - i0;
 	float x1 = x0 - 1.0f;
@@ -254,8 +256,8 @@ float Perlin::snoise(float x, float y) {
     float s = (x+y)*F2;
     float xs = x + s;
     float ys = y + s;
-    int i = FASTFLOOR(xs);
-    int j = FASTFLOOR(ys);
+    int i = floor(xs);
+    int j = floor(ys);
 
     float t = (float)(i+j)*G2;
     float X0 = i-t;
@@ -289,9 +291,9 @@ float Perlin::snoise(float x, float y, float z) {
     float xs = x+s;
     float ys = y+s;
     float zs = z+s;
-    int i = FASTFLOOR(xs);
-    int j = FASTFLOOR(ys);
-    int k = FASTFLOOR(zs);
+    int i = floor(xs);
+    int j = floor(ys);
+    int k = floor(zs);
 
     float t = (float)(i+j+k)*G3; 
     float X0 = i-t;
@@ -341,10 +343,10 @@ float Perlin::snoise(float x, float y, float z, float w) {
     float ys = y + s;
     float zs = z + s;
     float ws = w + s;
-    int i = FASTFLOOR(xs);
-    int j = FASTFLOOR(ys);
-    int k = FASTFLOOR(zs);
-    int l = FASTFLOOR(ws);
+    int i = floor(xs);
+    int j = floor(ys);
+    int k = floor(zs);
+    int l = floor(ws);
 
     float t = (i + j + k + l) * G4;
     float X0 = i - t; 

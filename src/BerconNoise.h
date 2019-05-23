@@ -212,7 +212,8 @@ public:
 
 	void DeleteThis() override { delete this; }
 
-	void* GetInterface(ULONG id) {
+	void* GetInterface(ULONG id) override
+	{
 		/*	if(id == I_RESMAKER_INTERFACE)
 				return (void *) (ResourceMakerCallback*) this;
 			else*/

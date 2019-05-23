@@ -15,8 +15,9 @@ specific language governing permissions and limitations
 under the License.   
 */
 
+#include <Max.h>
 #include "commonMath.h"
-#include <immintrin.h>
+
 
 float smooth(float d) { 
 	return (d*d*(3.f-2.f*d));
@@ -28,7 +29,18 @@ float smooth(float d, float low, float high) {
 	if (d > 1) return 1.f;
 	return (d*d*(3.f-2.f*d));
 }
+#if MAX_RELEASE >= 20900
+constexpr float linear(float d, float low, float high) {
+	d = (d - low) / (high - low);
+	if (d < 0) return 0.f;
+	if (d > 1) return 1.f;
+	return d;
+}
 
+constexpr float lerp(float a, float b, float blend) {
+	return b + blend * (a - b);
+}
+#else
 float linear(float d, float low, float high) { 
 	d = (d-low)/(high-low);
 	if (d < 0) return 0.f;
@@ -39,3 +51,4 @@ float linear(float d, float low, float high) {
 float lerp(float a, float b, float blend) {
 	return b + blend * (a-b);
 }
+#endif

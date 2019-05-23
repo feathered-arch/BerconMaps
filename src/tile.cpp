@@ -17,7 +17,6 @@ under the License.
 
 #include "tile.h"
 #include "perlin.h"
-#include "immintrin.h"
 #include "intrin.h"
 
 inline static int generateID(int x, int y) { return (y-101) * 1000 + x; }
@@ -186,7 +185,7 @@ void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int 
 			scaleX = w; scaleY = h; // Same as UV, but with additiona scaling below
 			break; }
 		case 3: { // UV Fit Keep aspect
-			float s = MAX(w, h);		
+			float s = fmax(w, h);		
 			scaleX = s; scaleY = s;
 			break; }
 		case 4: { // UV Norm.
@@ -194,7 +193,7 @@ void Tile::uvMapping(TilePoint& tp, Point3 p, float edges[4], TileParam& t, int 
 			scaleY = t.tileMaxHeight;
 			break; }
 		case 5: { // UV Norm. Keep aspect
-			float s = MAX(t.tileMaxWidth, t.tileMaxHeight);		
+			float s = fmax(t.tileMaxWidth, t.tileMaxHeight);		
 			scaleX = s;
 			scaleY = s;
 			break; }		
@@ -324,15 +323,15 @@ TilePoint Tile::drawTile(Point3 p, float edges[4], TileParam& t, int id, int dir
 }
 
 static int rowcol(float& low, float& high, int& id, float pos, float total, std::vector<float>& arr, float size, float var, float rand) {
-	float num = arr.size();
+	auto num = arr.size();
 	float h = total * size;
 	float y = pos / h;
-	float yi = float(FASTFLOOR(y)); // group ID
+	auto yi = float(floor(y)); // group ID
 	y = pos - yi * h; // pos within group
 
 	float sumY = 0.f;
 	float tileHeight = 0.f;
-	int cur = 0;	
+	auto cur = 0;	
 	while (cur < num) {		
 		tileHeight = arr[cur] * size;
 		if (y < sumY + tileHeight)
@@ -529,9 +528,10 @@ static int parsePattern(std::wstring str, TilePattern* pat) {
 	std::vector<std::wstring> rowStrings = std::vector<std::wstring>();
 	tokenize(str, rowStrings, L"/");
 
-	for (int i=0; i<rowStrings.size(); i++) {		
+	for (const auto& rowString : rowStrings)			//for (auto i = 0; i < rowStrings.size(); i++) {
+	{					
 		std::vector<std::wstring> row = std::vector<std::wstring>();
-		tokenize(rowStrings[i], row, L",");
+		tokenize(rowString, row, L",");
 		
 		if (row.size() < 3)
 			return FALSE;	
@@ -544,7 +544,7 @@ static int parsePattern(std::wstring str, TilePattern* pat) {
 
 		TileRow r = TileRow(offset);
 
-		for (int j=2; j<row.size(); j++) {
+		for (auto j=2; j<row.size(); j++) {
 			std::wstringstream sn(row[j]);
 			sn >> width;
 

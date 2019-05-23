@@ -340,9 +340,10 @@ class BerconTileDlgProc : public ParamMap2UserDlgProc {
 	public:
 		BerconTile *tile;		
 		BerconTileDlgProc(BerconTile *m) {tile = m;}		
-		INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam);		
-		void DeleteThis() {delete this;}
-		void SetThing(ReferenceTarget *m) {
+		INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) override;		
+		void DeleteThis() override {delete this;}
+		void SetThing(ReferenceTarget *m) override
+		{
 			tile = (BerconTile*)m;
 			tile->EnableStuff(GetCOREInterface()->GetTime());
 		}
@@ -361,63 +362,63 @@ INT_PTR BerconTileDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT ms
 
 			// Style
 			HWND hwndMap = GetDlgItem(hWnd, IDC_TYPE);  
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_11)); // Custom
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_10)); // Herringbone
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_9)); // Stack
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_0)); // Stretcher			
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_1)); // Flemish Stretcher
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_2)); // Common
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_3)); // Flemish
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_4)); // Monk
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_5)); // Flemish Garden Wall
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_6)); // English
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_7)); // English Cross
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILETYPE_8)); // Double
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_11))); // Custom
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_10))); // Herringbone
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_9))); // Stack
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_0))); // Stretcher			
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_1))); // Flemish Stretcher
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_2))); // Common
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_3))); // Flemish
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_4))); // Monk
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_5))); // Flemish Garden Wall
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_6))); // English
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_7))); // English Cross
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILETYPE_8))); // Double
 
 			// Soften
 			hwndMap = GetDlgItem(hWnd, IDC_SOFTEN);  
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILESOFTEN_0));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILESOFTEN_1));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILESOFTEN_2));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILESOFTEN_3));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILESOFTEN_0)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILESOFTEN_1)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILESOFTEN_2)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILESOFTEN_3)));
 
 			// UV rotation
 			hwndMap = GetDlgItem(hWnd, IDC_ROTUV);  
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEROT_0));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEROT_1));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEROT_2));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEROT_3));	
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEROT_0)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEROT_1)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEROT_2)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEROT_3)));	
 
 			// Auto scale
 			hwndMap = GetDlgItem(hWnd, IDC_AUTO);  
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_0));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_1));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_2));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_3));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_4));
-			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_TILEUVW_5));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_0)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_1)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_2)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_3)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_4)));
+			SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_TILEUVW_5)));
 
 			// Set correct dropdown value			
 			int curIndex;
 			map->GetParamBlock()->GetValue(tile_style, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(soften, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_SOFTEN), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_SOFTEN), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(pb_rotUV, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_ROTUV), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_ROTUV), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(pb_auto, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_AUTO), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_AUTO), CB_SETCURSEL, WPARAM(curIndex), 0);
 			break;
 		}		
 		case WM_SHOWWINDOW:	{					
 			// Set correct dropdown value
 			int curIndex;
 			map->GetParamBlock()->GetValue(tile_style, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(soften, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_SOFTEN), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_SOFTEN), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(pb_rotUV, t, curIndex, FOREVER);
-			SendMessage(GetDlgItem(hWnd, IDC_ROTUV), CB_SETCURSEL, (WPARAM)curIndex, 0);
+			SendMessage(GetDlgItem(hWnd, IDC_ROTUV), CB_SETCURSEL, WPARAM(curIndex), 0);
 			map->GetParamBlock()->GetValue(pb_auto, t, curIndex, FOREVER);
 			SendMessage(GetDlgItem(hWnd, IDC_AUTO), CB_SETCURSEL, (WPARAM)curIndex, 0);
 			break;
@@ -429,7 +430,7 @@ INT_PTR BerconTileDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT ms
 
 //--- BerconTile -------------------------------------------------------
 BerconTile::BerconTile() {	
-	for (int i=0; i<TILE_NSUBTEX; i++) subtex[i] = NULL;
+	for (auto i=0; i<TILE_NSUBTEX; i++) subtex[i] = NULL;
 	texHandle = NULL;
 	pblock = NULL;
 	pbMap = NULL;

@@ -56,53 +56,54 @@ PUBLIC	__real@42200000
 PUBLIC	__real@c0000000
 PUBLIC	__xmm@80000000800000008000000080000000
 EXTRN	?smooth@@YAMMMM@Z:PROC				; smooth
+EXTRN	floorf:PROC
 EXTRN	_fltused:DWORD
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Perlin@@SAMM@Z DD imagerel $LN14
-	DD	imagerel $LN14+228
+	DD	imagerel $LN14+224
 	DD	imagerel $unwind$?noise@Perlin@@SAMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Perlin@@SAMMM@Z DD imagerel $LN38
-	DD	imagerel $LN38+692
+	DD	imagerel $LN38+682
 	DD	imagerel $unwind$?noise@Perlin@@SAMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Perlin@@SAMMMM@Z DD imagerel $LN24
-	DD	imagerel $LN24+851
+	DD	imagerel $LN24+839
 	DD	imagerel $unwind$?noise@Perlin@@SAMMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?noise@Perlin@@SAMMMMM@Z DD imagerel $LN42
-	DD	imagerel $LN42+1638
+	DD	imagerel $LN42+1626
 	DD	imagerel $unwind$?noise@Perlin@@SAMMMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?snoise@Perlin@@SAMM@Z DD imagerel $LN16
-	DD	imagerel $LN16+223
+	DD	imagerel $LN16+220
 	DD	imagerel $unwind$?snoise@Perlin@@SAMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?snoise@Perlin@@SAMMM@Z DD imagerel $LN21
-	DD	imagerel $LN21+649
+	DD	imagerel $LN21+638
 	DD	imagerel $unwind$?snoise@Perlin@@SAMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?snoise@Perlin@@SAMMMM@Z DD imagerel $LN24
-	DD	imagerel $LN24+733
+	DD	imagerel $LN24+716
 	DD	imagerel $unwind$?snoise@Perlin@@SAMMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?snoise@Perlin@@SAMMMMM@Z DD imagerel $LN16
-	DD	imagerel $LN16+1147
+	DD	imagerel $LN16+1124
 	DD	imagerel $unwind$?snoise@Perlin@@SAMMMMM@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1225,12 +1226,12 @@ $unwind$?fnoise2D@Perlin@@SAMMMM@Z DD 072201H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?snoise@Perlin@@SAMMMMM@Z DD 0168001H
-	DD	05b880H
-	DD	06a872H
-	DD	079858H
-	DD	08882aH
-	DD	097825H
+$unwind$?snoise@Perlin@@SAMMMMM@Z DD 0165301H
+	DD	05b853H
+	DD	06a849H
+	DD	07982fH
+	DD	088825H
+	DD	097820H
 	DD	0a681bH
 	DD	0170116H
 	DD	0e00df00fH
@@ -1240,11 +1241,11 @@ $unwind$?snoise@Perlin@@SAMMMMM@Z DD 0168001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?snoise@Perlin@@SAMMMM@Z DD 0174101H
-	DD	03b841H
-	DD	04a83cH
-	DD	059833H
-	DD	06882eH
+$unwind$?snoise@Perlin@@SAMMMM@Z DD 0173d01H
+	DD	03b83dH
+	DD	04a838H
+	DD	05982fH
+	DD	06882aH
 	DD	077825H
 	DD	086820H
 	DD	018641bH
@@ -1256,16 +1257,16 @@ $unwind$?snoise@Perlin@@SAMMMM@Z DD 0174101H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?snoise@Perlin@@SAMMM@Z DD 01d9201H
-	DD	02e892H
-	DD	03d880H
-	DD	04c877H
-	DD	05b851H
-	DD	06a84cH
-	DD	079843H
-	DD	08883eH
-	DD	097835H
-	DD	0a6830H
+$unwind$?snoise@Perlin@@SAMMM@Z DD 01d5f01H
+	DD	02e85fH
+	DD	03d855H
+	DD	04c84bH
+	DD	05b839H
+	DD	06a834H
+	DD	07982fH
+	DD	08882aH
+	DD	097825H
+	DD	0a6820H
 	DD	01c641bH
 	DD	01b541bH
 	DD	01a341bH
@@ -1275,23 +1276,23 @@ $unwind$?snoise@Perlin@@SAMMM@Z DD 01d9201H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?snoise@Perlin@@SAMM@Z DD 052d01H
-	DD	0782dH
-	DD	016825H
-	DD	04204H
+$unwind$?snoise@Perlin@@SAMM@Z DD 051001H
+	DD	027810H
+	DD	03680aH
+	DD	08204H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Perlin@@SAMMMMM@Z DD 01e9001H
-	DD	05f890H
-	DD	06e886H
-	DD	07d86fH
-	DD	08c855H
-	DD	09b84dH
-	DD	0aa845H
-	DD	0b983dH
-	DD	0c8831H
-	DD	0d7828H
+$unwind$?noise@Perlin@@SAMMMMM@Z DD 01e5701H
+	DD	05f857H
+	DD	06e851H
+	DD	07d84bH
+	DD	08c845H
+	DD	09b83dH
+	DD	0aa835H
+	DD	0b982dH
+	DD	0c8825H
+	DD	0d7820H
 	DD	0e681bH
 	DD	01f0116H
 	DD	0e00df00fH
@@ -1301,16 +1302,16 @@ $unwind$?noise@Perlin@@SAMMMMM@Z DD 01e9001H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Perlin@@SAMMMM@Z DD 01d8f01H
-	DD	02f88fH
-	DD	03e889H
-	DD	04d876H
-	DD	05c86cH
-	DD	06b862H
-	DD	07a841H
-	DD	08983cH
-	DD	098833H
-	DD	0a7826H
+$unwind$?noise@Perlin@@SAMMMM@Z DD 01d4c01H
+	DD	02f84cH
+	DD	03e846H
+	DD	04d840H
+	DD	05c83aH
+	DD	06b834H
+	DD	07a82eH
+	DD	089829H
+	DD	098824H
+	DD	0a781fH
 	DD	0b681aH
 	DD	0203415H
 	DD	0180115H
@@ -1320,24 +1321,25 @@ $unwind$?noise@Perlin@@SAMMMM@Z DD 01d8f01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Perlin@@SAMMM@Z DD 0148601H
-	DD	0e886H
-	DD	01d86cH
-	DD	02c852H
-	DD	03b849H
-	DD	04a844H
-	DD	05983bH
-	DD	068832H
-	DD	077827H
-	DD	086817H
-	DD	013010aH
+$unwind$?noise@Perlin@@SAMMM@Z DD 0153a01H
+	DD	02e83aH
+	DD	03d834H
+	DD	04c82eH
+	DD	05b829H
+	DD	06a824H
+	DD	07981fH
+	DD	08881aH
+	DD	097815H
+	DD	0a6810H
+	DD	016010bH
+	DD	03004H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?noise@Perlin@@SAMM@Z DD 052d01H
-	DD	0782dH
-	DD	016825H
-	DD	04204H
+$unwind$?noise@Perlin@@SAMM@Z DD 051001H
+	DD	027810H
+	DD	03680aH
+	DD	08204H
 xdata	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
@@ -1348,7 +1350,7 @@ a$ = 16
 b$ = 24
 ?lerp2@@YAMMMM@Z PROC					; lerp2, COMDAT
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm2, xmm1
 	vmulss	xmm0, xmm2, xmm0
@@ -1370,12 +1372,12 @@ k$ = 144
 l$ = 152
 ?point@Perlin@@CAMMMMMHHHH@Z PROC			; Perlin::point, COMDAT
 
-; 231  : inline float Perlin::point(float x, float y, float z, float w, int i, int j, int k, int l) {
+; 233  : inline float Perlin::point(float x, float y, float z, float w, int i, int j, int k, int l) {
 
 $LN5:
 	sub	rsp, 88					; 00000058H
 
-; 232  : 	float t = 0.6f - x*x - y*y - z*z - w*w;
+; 234  : 	float t = 0.6f - x*x - y*y - z*z - w*w;
 
 	vmovss	xmm4, DWORD PTR __real@3f19999a
 	vmulss	xmm5, xmm0, xmm0
@@ -1390,14 +1392,14 @@ $LN5:
 	vsubss	xmm4, xmm4, xmm5
 	vxorps	xmm0, xmm0, xmm0
 
-; 233  : 	if(t < 0.0f)
+; 235  : 	if(t < 0.0f)
 
 	vcomiss	xmm0, xmm4
 	ja	SHORT $LN1@point
 
-; 234  : 		return 0.0f;	
-; 235  : 	t *= t;
-; 236  : 	return t * t * grad(perm[i+perm[j+perm[k+perm[l]]]], x, y, z, w);	
+; 236  : 		return 0.0f;	
+; 237  : 	t *= t;
+; 238  : 	return t * t * grad(perm[i+perm[j+perm[k+perm[l]]]], x, y, z, w);	
 
 	movsxd	rax, DWORD PTR l$[rsp]
 	lea	rdx, OFFSET FLAT:?perm@@3PAEA
@@ -1423,7 +1425,7 @@ $LN5:
 	vmulss	xmm0, xmm0, xmm1
 $LN1@point:
 
-; 237  : }
+; 239  : }
 
 	vmovaps	xmm7, XMMWORD PTR [rsp+48]
 	add	rsp, 88					; 00000058H
@@ -1442,12 +1444,12 @@ j$ = 112
 k$ = 120
 ?point@Perlin@@CAMMMMHHH@Z PROC				; Perlin::point, COMDAT
 
-; 223  : inline float Perlin::point(float x, float y, float z, int i, int j, int k) {
+; 225  : inline float Perlin::point(float x, float y, float z, int i, int j, int k) {
 
 $LN5:
 	sub	rsp, 72					; 00000048H
 
-; 224  : 	float t = 0.6f - x*x - y*y - z*z;
+; 226  : 	float t = 0.6f - x*x - y*y - z*z;
 
 	vmovss	xmm3, DWORD PTR __real@3f19999a
 	vmulss	xmm4, xmm0, xmm0
@@ -1460,14 +1462,14 @@ $LN5:
 	vsubss	xmm5, xmm4, xmm3
 	vxorps	xmm0, xmm0, xmm0
 
-; 225  : 	if(t < 0.0f) 
+; 227  : 	if(t < 0.0f) 
 
 	vcomiss	xmm0, xmm5
 	ja	SHORT $LN1@point
 
-; 226  : 		return 0.0f;
-; 227  : 	t *= t;
-; 228  : 	return t * t * grad(perm[i+perm[j+perm[k]]], x, y, z);
+; 228  : 		return 0.0f;
+; 229  : 	t *= t;
+; 230  : 	return t * t * grad(perm[i+perm[j+perm[k]]], x, y, z);
 
 	movsxd	rax, DWORD PTR k$[rsp]
 	lea	rdx, OFFSET FLAT:?perm@@3PAEA
@@ -1489,7 +1491,7 @@ $LN5:
 	vmulss	xmm0, xmm0, xmm1
 $LN1@point:
 
-; 229  : }
+; 231  : }
 
 	vmovaps	xmm7, XMMWORD PTR [rsp+32]
 	add	rsp, 72					; 00000048H
@@ -1506,12 +1508,12 @@ i$ = 80
 j$ = 88
 ?point@Perlin@@CAMMMHH@Z PROC				; Perlin::point, COMDAT
 
-; 215  : inline float Perlin::point(float x, float y, int i, int j) {
+; 217  : inline float Perlin::point(float x, float y, int i, int j) {
 
 $LN5:
 	sub	rsp, 56					; 00000038H
 
-; 216  :     float t = 0.5f - x*x - y*y;
+; 218  :     float t = 0.5f - x*x - y*y;
 
 	vmovss	xmm2, DWORD PTR __real@3f000000
 	vmulss	xmm3, xmm0, xmm0
@@ -1521,14 +1523,14 @@ $LN5:
 	vsubss	xmm2, xmm4, xmm3
 	vxorps	xmm0, xmm0, xmm0
 
-; 217  :     if(t < 0.0f) 
+; 219  :     if(t < 0.0f) 
 
 	vcomiss	xmm0, xmm2
 	ja	SHORT $LN1@point
 
-; 218  : 		return 0.0f;
-; 219  :     t *= t;
-; 220  :     return t * t * grad(perm[i+perm[j]], x, y);
+; 220  : 		return 0.0f;
+; 221  :     t *= t;
+; 222  :     return t * t * grad(perm[i+perm[j]], x, y);
 
 	lea	rdx, OFFSET FLAT:?perm@@3PAEA
 	movsxd	rax, r9d
@@ -1546,7 +1548,7 @@ $LN5:
 	vmulss	xmm0, xmm0, xmm1
 $LN1@point:
 
-; 221  : }
+; 223  : }
 
 	add	rsp, 56					; 00000038H
 	ret	0
@@ -1560,12 +1562,12 @@ x$ = 8
 i$ = 16
 ?point@Perlin@@CAMMH@Z PROC				; Perlin::point, COMDAT
 
-; 210  : 	float t = 1.0f - x*x;
+; 212  : 	float t = 1.0f - x*x;
 
 	vmovss	xmm2, DWORD PTR __real@3f800000
 
-; 211  : 	t *= t;
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 213  : 	t *= t;
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
 	lea	rax, OFFSET FLAT:?perm@@3PAEA
 	movzx	ecx, dl
@@ -1574,7 +1576,7 @@ i$ = 16
 	vmulss	xmm4, xmm1, xmm1
 	movzx	edx, BYTE PTR [rcx+rax]
 
-; 69   :     float grad = 1.0f + (h & 7);
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, edx
 	and	eax, 7
@@ -1582,24 +1584,24 @@ i$ = 16
 	vcvtsi2ss xmm1, xmm1, eax
 	vaddss	xmm3, xmm1, xmm2
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	dl, 8
 	je	SHORT $LN4@point
 	vxorps	xmm3, xmm3, DWORD PTR __xmm@80000000800000008000000080000000
 $LN4@point:
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm1, xmm3, xmm0
 
-; 211  : 	t *= t;
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 213  : 	t *= t;
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
 	vmulss	xmm0, xmm4, xmm4
 	vmulss	xmm0, xmm1, xmm0
 
-; 213  : }
+; 215  : }
 
 	ret	0
 ?point@Perlin@@CAMMH@Z ENDP				; Perlin::point
@@ -1615,13 +1617,13 @@ z$ = 56
 w$ = 64
 ?grad@Perlin@@CAMHMMMM@Z PROC				; Perlin::grad, COMDAT
 
-; 88   : float Perlin::grad(int hash, float x, float y, float z, float w) {
+; 90   : float Perlin::grad(int hash, float x, float y, float z, float w) {
 
 $LN10:
 	sub	rsp, 24
 
-; 89   : 	int h = hash & 31;
-; 90   :     float i = h<24 ? x : y;
+; 91   : 	int h = hash & 31;
+; 92   :     float i = h<24 ? x : y;
 
 	mov	edx, 24
 	vmovaps	XMMWORD PTR [rsp], xmm6
@@ -1629,7 +1631,7 @@ $LN10:
 	vmovd	xmm0, edx
 	mov	eax, ecx
 
-; 91   :     float j = h<16 ? y : z;
+; 93   :     float j = h<16 ? y : z;
 
 	mov	edx, 16
 	and	eax, 31
@@ -1640,7 +1642,7 @@ $LN10:
 	vmovd	xmm0, edx
 	vpcmpgtq xmm2, xmm0, xmm1
 
-; 92   :     float k = h<8 ? z : w;
+; 94   :     float k = h<8 ? z : w;
 
 	vmovd	xmm1, eax
 	mov	eax, 8
@@ -1649,7 +1651,7 @@ $LN10:
 	vpcmpgtq xmm2, xmm0, xmm1
 	vmovss	xmm1, DWORD PTR w$[rsp]
 
-; 93   :     return ((h&1)? -i : i) + ((h&2)? -j : j) + ((h&4)? -k : k);
+; 95   :     return ((h&1)? -i : i) + ((h&2)? -j : j) + ((h&4)? -k : k);
 
 	vmovss	xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 	vblendvps xmm4, xmm1, xmm3, xmm2
@@ -1667,7 +1669,7 @@ $LN5@grad:
 $LN7@grad:
 	vaddss	xmm0, xmm6, xmm5
 
-; 94   : }
+; 96   : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp]
 	vaddss	xmm0, xmm0, xmm4
@@ -1685,19 +1687,19 @@ y$ = 64
 z$ = 72
 ?grad@Perlin@@CAMHMMM@Z PROC				; Perlin::grad, COMDAT
 
-; 81   : float Perlin::grad(int hash, float x, float y, float z) {
+; 83   : float Perlin::grad(int hash, float x, float y, float z) {
 
 $LN13:
 	sub	rsp, 40					; 00000028H
 	vmovaps	XMMWORD PTR [rsp+16], xmm6
 
-; 82   :     int h = hash & 15;
+; 84   :     int h = hash & 15;
 
 	mov	eax, ecx
 	and	eax, 15
 	vmovaps	XMMWORD PTR [rsp], xmm7
 
-; 83   :     float i = h<8 ? x : y;
+; 85   :     float i = h<8 ? x : y;
 
 	mov	edx, 8
 	vmovd	xmm4, eax
@@ -1707,7 +1709,7 @@ $LN13:
 	vmovaps	xmm7, xmm3
 	vblendvps xmm3, xmm2, xmm6, xmm5
 
-; 84   :     float j = h<4 ? y : h==12||h==14 ? x : z;
+; 86   :     float j = h<4 ? y : h==12||h==14 ? x : z;
 
 	cmp	eax, 4
 	jb	SHORT $LN3@grad
@@ -1720,7 +1722,7 @@ $LN13:
 	vblendvps xmm2, xmm7, xmm6, xmm2
 $LN3@grad:
 
-; 85   :     return ((h&1) ? -i : i) + ((h&2) ? -j : j);
+; 87   :     return ((h&1) ? -i : i) + ((h&2) ? -j : j);
 
 	vmovss	xmm0, DWORD PTR __xmm@80000000800000008000000080000000
 	test	cl, 1
@@ -1732,7 +1734,7 @@ $LN7@grad:
 	vxorps	xmm0, xmm2, xmm0
 	vaddss	xmm0, xmm0, xmm3
 
-; 86   : }
+; 88   : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+16]
 	vmovaps	xmm7, XMMWORD PTR [rsp]
@@ -1755,13 +1757,13 @@ x$ = 16
 y$ = 24
 ?grad@Perlin@@CAMHMM@Z PROC				; Perlin::grad, COMDAT
 
-; 74   : float Perlin::grad(int hash, float x, float y) {
+; 76   : float Perlin::grad(int hash, float x, float y) {
 
 	vmovaps	xmm4, xmm1
 	vmovaps	xmm5, xmm2
 
-; 75   :     int h = hash & 7;
-; 76   :     float i = h<4 ? x : y;
+; 77   :     int h = hash & 7;
+; 78   :     float i = h<4 ? x : y;
 
 	mov	edx, 4
 	mov	eax, ecx
@@ -1770,7 +1772,7 @@ y$ = 24
 	vmovd	xmm3, eax
 	vpcmpgtq xmm3, xmm0, xmm3
 
-; 77   :     float j = h<4 ? y : x;
+; 79   :     float j = h<4 ? y : x;
 
 	vmovd	xmm0, edx
 	vmovd	xmm1, eax
@@ -1778,7 +1780,7 @@ y$ = 24
 	vblendvps xmm0, xmm4, xmm5, xmm2
 	vblendvps xmm3, xmm5, xmm4, xmm3
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	test	cl, 1
 	je	SHORT $LN4@grad
@@ -1788,17 +1790,17 @@ $LN4@grad:
 	je	SHORT $LN5@grad
 	vmulss	xmm0, xmm0, DWORD PTR __real@c0000000
 
-; 79   : }
+; 81   : }
 
 	vaddss	xmm0, xmm0, xmm3
 	ret	0
 $LN5@grad:
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	vaddss	xmm0, xmm0, xmm0
 
-; 79   : }
+; 81   : }
 
 	vaddss	xmm0, xmm0, xmm3
 	ret	0
@@ -1812,8 +1814,8 @@ hash$ = 8
 x$ = 16
 ?grad@Perlin@@CAMHM@Z PROC				; Perlin::grad, COMDAT
 
-; 68   :     int h = hash & 15;
-; 69   :     float grad = 1.0f + (h & 7);
+; 70   :     int h = hash & 15;
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, ecx
 	and	eax, 7
@@ -1821,26 +1823,26 @@ x$ = 16
 	vcvtsi2ss xmm0, xmm0, eax
 	vaddss	xmm2, xmm0, DWORD PTR __real@3f800000
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	cl, 8
 	je	SHORT $LN4@grad
 	vxorps	xmm0, xmm2, DWORD PTR __xmm@80000000800000008000000080000000
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm0, xmm0, xmm1
 
-; 72   : }
+; 74   : }
 
 	ret	0
 $LN4@grad:
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm0, xmm2, xmm1
 
-; 72   : }
+; 74   : }
 
 	ret	0
 ?grad@Perlin@@CAMHM@Z ENDP				; Perlin::grad
@@ -1856,12 +1858,12 @@ w$ = 152
 d$ = 160
 ?fsnoise4D@Perlin@@SAMMMMMM@Z PROC			; Perlin::fsnoise4D, COMDAT
 
-; 431  : float Perlin::fsnoise4D(float x, float y, float z, float w, float d) {
+; 433  : float Perlin::fsnoise4D(float x, float y, float z, float w, float d) {
 
 $LN7:
 	sub	rsp, 120				; 00000078H
 
-; 432  : 	FILTER(d)
+; 434  : 	FILTER(d)
 
 	vmovss	xmm4, DWORD PTR d$[rsp]
 	vmovaps	XMMWORD PTR [rsp+96], xmm6
@@ -1884,7 +1886,7 @@ $LN7:
 	jmp	SHORT $LN1@fsnoise4D
 $LN2@fsnoise4D:
 
-; 433  : 	return lerp2(d, snoise(x,y,z,w), 0.f);
+; 435  : 	return lerp2(d, snoise(x,y,z,w), 0.f);
 
 	vmovaps	xmm3, xmm7
 	vmovaps	xmm2, xmm8
@@ -1893,14 +1895,14 @@ $LN2@fsnoise4D:
 	call	?snoise@Perlin@@SAMMMMM@Z		; Perlin::snoise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fsnoise4D:
 
-; 434  : }	
+; 436  : }	
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+96]
 	vmovaps	xmm7, XMMWORD PTR [rsp+80]
@@ -1921,7 +1923,7 @@ z$ = 128
 d$ = 136
 ?fsnoise3D@Perlin@@SAMMMMM@Z PROC			; Perlin::fsnoise3D, COMDAT
 
-; 426  : float Perlin::fsnoise3D(float x, float y, float z, float d) {
+; 428  : float Perlin::fsnoise3D(float x, float y, float z, float d) {
 
 $LN7:
 	sub	rsp, 104				; 00000068H
@@ -1930,7 +1932,7 @@ $LN7:
 	vmovaps	XMMWORD PTR [rsp+48], xmm8
 	vmovaps	xmm8, xmm1
 
-; 427  : 	FILTER(d)
+; 429  : 	FILTER(d)
 
 	vmovss	xmm1, DWORD PTR __real@3f99999a
 	vmovaps	xmm7, xmm2
@@ -1946,7 +1948,7 @@ $LN7:
 	jmp	SHORT $LN1@fsnoise3D
 $LN2@fsnoise3D:
 
-; 428  : 	return lerp2(d, snoise(x,y,z), 0.f);
+; 430  : 	return lerp2(d, snoise(x,y,z), 0.f);
 
 	vmovaps	xmm2, xmm7
 	vmovaps	xmm1, xmm8
@@ -1954,14 +1956,14 @@ $LN2@fsnoise3D:
 	call	?snoise@Perlin@@SAMMMM@Z		; Perlin::snoise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fsnoise3D:
 
-; 429  : }
+; 431  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+80]
 	vmovaps	xmm7, XMMWORD PTR [rsp+64]
@@ -1980,7 +1982,7 @@ y$ = 104
 d$ = 112
 ?fsnoise2D@Perlin@@SAMMMM@Z PROC			; Perlin::fsnoise2D, COMDAT
 
-; 421  : float Perlin::fsnoise2D(float x, float y, float d) {
+; 423  : float Perlin::fsnoise2D(float x, float y, float d) {
 
 $LN7:
 	sub	rsp, 88					; 00000058H
@@ -1988,7 +1990,7 @@ $LN7:
 	vmovaps	XMMWORD PTR [rsp+48], xmm7
 	vmovaps	xmm7, xmm1
 
-; 422  : 	FILTER(d)
+; 424  : 	FILTER(d)
 
 	vmovss	xmm1, DWORD PTR __real@3f99999a
 	vmovaps	XMMWORD PTR [rsp+32], xmm8
@@ -2003,21 +2005,21 @@ $LN7:
 	jmp	SHORT $LN1@fsnoise2D
 $LN2@fsnoise2D:
 
-; 423  : 	return lerp2(d, snoise(x,y), 0.f);
+; 425  : 	return lerp2(d, snoise(x,y), 0.f);
 
 	vmovaps	xmm1, xmm7
 	vmovaps	xmm0, xmm8
 	call	?snoise@Perlin@@SAMMM@Z			; Perlin::snoise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fsnoise2D:
 
-; 424  : }
+; 426  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+64]
 	vmovaps	xmm7, XMMWORD PTR [rsp+48]
@@ -2037,12 +2039,12 @@ w$ = 152
 d$ = 160
 ?fnoise4D@Perlin@@SAMMMMMM@Z PROC			; Perlin::fnoise4D, COMDAT
 
-; 416  : float Perlin::fnoise4D(float x, float y, float z, float w, float d) {
+; 418  : float Perlin::fnoise4D(float x, float y, float z, float w, float d) {
 
 $LN7:
 	sub	rsp, 120				; 00000078H
 
-; 417  : 	FILTER(d)
+; 419  : 	FILTER(d)
 
 	vmovss	xmm4, DWORD PTR d$[rsp]
 	vmovaps	XMMWORD PTR [rsp+96], xmm6
@@ -2065,7 +2067,7 @@ $LN7:
 	jmp	SHORT $LN1@fnoise4D
 $LN2@fnoise4D:
 
-; 418  : 	return lerp2(d, noise(x,y,z,w), 0.f);
+; 420  : 	return lerp2(d, noise(x,y,z,w), 0.f);
 
 	vmovaps	xmm3, xmm7
 	vmovaps	xmm2, xmm8
@@ -2074,14 +2076,14 @@ $LN2@fnoise4D:
 	call	?noise@Perlin@@SAMMMMM@Z		; Perlin::noise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fnoise4D:
 
-; 419  : }	
+; 421  : }	
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+96]
 	vmovaps	xmm7, XMMWORD PTR [rsp+80]
@@ -2102,7 +2104,7 @@ z$ = 128
 d$ = 136
 ?fnoise3D@Perlin@@SAMMMMM@Z PROC			; Perlin::fnoise3D, COMDAT
 
-; 411  : float Perlin::fnoise3D(float x, float y, float z, float d) {
+; 413  : float Perlin::fnoise3D(float x, float y, float z, float d) {
 
 $LN7:
 	sub	rsp, 104				; 00000068H
@@ -2111,7 +2113,7 @@ $LN7:
 	vmovaps	XMMWORD PTR [rsp+48], xmm8
 	vmovaps	xmm8, xmm1
 
-; 412  : 	FILTER(d)
+; 414  : 	FILTER(d)
 
 	vmovss	xmm1, DWORD PTR __real@3f99999a
 	vmovaps	xmm7, xmm2
@@ -2127,7 +2129,7 @@ $LN7:
 	jmp	SHORT $LN1@fnoise3D
 $LN2@fnoise3D:
 
-; 413  : 	return lerp2(d, noise(x,y,z), 0.f);
+; 415  : 	return lerp2(d, noise(x,y,z), 0.f);
 
 	vmovaps	xmm2, xmm7
 	vmovaps	xmm1, xmm8
@@ -2135,14 +2137,14 @@ $LN2@fnoise3D:
 	call	?noise@Perlin@@SAMMMM@Z			; Perlin::noise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fnoise3D:
 
-; 414  : }
+; 416  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+80]
 	vmovaps	xmm7, XMMWORD PTR [rsp+64]
@@ -2161,7 +2163,7 @@ y$ = 104
 d$ = 112
 ?fnoise2D@Perlin@@SAMMMM@Z PROC				; Perlin::fnoise2D, COMDAT
 
-; 406  : float Perlin::fnoise2D(float x, float y, float d) {
+; 408  : float Perlin::fnoise2D(float x, float y, float d) {
 
 $LN7:
 	sub	rsp, 88					; 00000058H
@@ -2169,7 +2171,7 @@ $LN7:
 	vmovaps	XMMWORD PTR [rsp+48], xmm7
 	vmovaps	xmm7, xmm1
 
-; 407  : 	FILTER(d)
+; 409  : 	FILTER(d)
 
 	vmovss	xmm1, DWORD PTR __real@3f99999a
 	vmovaps	XMMWORD PTR [rsp+32], xmm8
@@ -2184,21 +2186,21 @@ $LN7:
 	jmp	SHORT $LN1@fnoise2D
 $LN2@fnoise2D:
 
-; 408  : 	return lerp2(d, noise(x,y), 0.f);
+; 410  : 	return lerp2(d, noise(x,y), 0.f);
 
 	vmovaps	xmm1, xmm7
 	vmovaps	xmm0, xmm8
 	call	?noise@Perlin@@SAMMM@Z			; Perlin::noise
 	vxorps	xmm1, xmm1, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm1, xmm0
 	vmulss	xmm3, xmm2, xmm6
 	vaddss	xmm0, xmm3, xmm0
 $LN1@fnoise2D:
 
-; 409  : }
+; 411  : }
 
 	vmovaps	xmm6, XMMWORD PTR [rsp+64]
 	vmovaps	xmm7, XMMWORD PTR [rsp+48]
@@ -2208,6 +2210,14 @@ $LN1@fnoise2D:
 ?fnoise2D@Perlin@@SAMMMM@Z ENDP				; Perlin::fnoise2D
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
@@ -2222,7 +2232,7 @@ k3$1$ = 280
 w$ = 280
 ?snoise@Perlin@@SAMMMMM@Z PROC				; Perlin::snoise, COMDAT
 
-; 331  : float Perlin::snoise(float x, float y, float z, float w) {
+; 333  : float Perlin::snoise(float x, float y, float z, float w) {
 
 $LN16:
 	mov	rax, rsp
@@ -2236,159 +2246,173 @@ $LN16:
 	push	r15
 	sub	rsp, 184				; 000000b8H
 	vmovaps	XMMWORD PTR [rax-88], xmm6
-
-; 332  :   
-; 333  : 	#define F4 0.309016994f // F4 = (Math.sqrt(5.0)-1.0)/4.0
-; 334  : 	#define G4 0.138196601f // G4 = (5.0-Math.sqrt(5.0))/20.0
-; 335  : 	#define G4a (G4*2.f)
-; 336  : 	#define G4b (G4*3.f)
-; 337  : 	#define G4c (G4*4.f-1.f)
-; 338  : 
-; 339  :     float s = (x + y + z + w) * F4;
-; 340  :     float xs = x + s;
-; 341  :     float ys = y + s;
-; 342  :     float zs = z + s;
-; 343  :     float ws = w + s;
-; 344  :     int i = FASTFLOOR(xs);
-; 345  :     int j = FASTFLOOR(ys);
-; 346  :     int k = FASTFLOOR(zs);
-; 347  :     int l = FASTFLOOR(ws);
-; 348  : 
-; 349  :     float t = (i + j + k + l) * G4;
-; 350  :     float X0 = i - t; 
-; 351  :     float Y0 = j - t;
-; 352  :     float Z0 = k - t;
-; 353  :     float W0 = l - t;
-; 354  : 
-; 355  :     float x0 = x - X0;
-; 356  :     float y0 = y - Y0;
-; 357  :     float z0 = z - Z0;
-; 358  :     float w0 = w - W0;
-; 359  : 
-; 360  :     int c1 = (x0 > y0) ? 32 : 0;
-; 361  :     int c2 = (x0 > z0) ? 16 : 0;
-; 362  :     int c3 = (y0 > z0) ? 8 : 0;
-; 363  :     int c4 = (x0 > w0) ? 4 : 0;
-; 364  :     int c5 = (y0 > w0) ? 2 : 0;
-
-	mov	edx, 2
 	vmovaps	XMMWORD PTR [rax-104], xmm7
 	vmovaps	XMMWORD PTR [rax-120], xmm8
+
+; 334  :   
+; 335  : 	#define F4 0.309016994f // F4 = (Math.sqrt(5.0)-1.0)/4.0
+; 336  : 	#define G4 0.138196601f // G4 = (5.0-Math.sqrt(5.0))/20.0
+; 337  : 	#define G4a (G4*2.f)
+; 338  : 	#define G4b (G4*3.f)
+; 339  : 	#define G4c (G4*4.f-1.f)
+; 340  : 
+; 341  :     float s = (x + y + z + w) * F4;
+
 	vaddss	xmm4, xmm0, xmm1
-	vmovaps	xmm8, xmm0
+	vmovaps	XMMWORD PTR [rsp+112], xmm9
 	vaddss	xmm5, xmm4, xmm2
 	vaddss	xmm4, xmm5, xmm3
-	vmulss	xmm5, xmm4, DWORD PTR __real@3e9e377a
-	vaddss	xmm4, xmm5, xmm0
-	vaddss	xmm6, xmm5, xmm1
-	vaddss	xmm7, xmm5, xmm2
-	vxorps	xmm0, xmm0, xmm0
-	vmovaps	XMMWORD PTR [rsp+112], xmm9
-	vmovaps	xmm9, xmm1
-	vxorps	xmm1, xmm1, xmm1
-	vcomiss	xmm1, xmm4
-	vcvttss2si eax, xmm4
-	vaddss	xmm5, xmm5, xmm3
+	vmulss	xmm6, xmm4, DWORD PTR __real@3e9e377a
+	vmovaps	xmm7, xmm0
 	vmovaps	XMMWORD PTR [rsp+96], xmm10
-	vmovaps	xmm10, xmm2
-	lea	r14d, DWORD PTR [rax-1]
-	vmovaps	XMMWORD PTR [rsp+80], xmm11
-	cmovbe	r14d, eax
-	vcomiss	xmm1, xmm6
-	vcvttss2si eax, xmm6
-	vmovss	xmm6, DWORD PTR __real@3e0d8369
-	vmovaps	xmm11, xmm3
-	vxorps	xmm2, xmm2, xmm2
-	lea	edi, DWORD PTR [rax-1]
-	cmovbe	edi, eax
-	vcomiss	xmm1, xmm7
-	vcvttss2si eax, xmm7
-	vcvtsi2ss xmm2, xmm2, edi
-	lea	esi, DWORD PTR [rax-1]
-	cmovbe	esi, eax
-	vcomiss	xmm1, xmm5
-	vcvttss2si eax, xmm5
-	lea	ebx, DWORD PTR [rax-1]
-	cmovbe	ebx, eax
 
-; 365  :     int c6 = (z0 > w0) ? 1 : 0;
+; 342  :     float xs = x + s;
+
+	vaddss	xmm0, xmm6, xmm0
+	vmovaps	XMMWORD PTR [rsp+80], xmm11
+	vmovaps	xmm10, xmm3
+	vmovaps	xmm9, xmm2
+	vmovaps	xmm8, xmm1
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 346  :     int i = floor(xs);
+
+	vcvttss2si r14d, xmm0
+	vaddss	xmm0, xmm6, xmm8
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 347  :     int j = floor(ys);
+
+	vcvttss2si edi, xmm0
+	vaddss	xmm0, xmm6, xmm9
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 348  :     int k = floor(zs);
+
+	vcvttss2si esi, xmm0
+	vaddss	xmm0, xmm6, xmm10
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 351  :     float t = (i + j + k + l) * G4;
+
+	vmovss	xmm6, DWORD PTR __real@3e0d8369
+
+; 352  :     float X0 = i - t; 
+; 353  :     float Y0 = j - t;
+; 354  :     float Z0 = k - t;
+; 355  :     float W0 = l - t;
+; 356  : 
+; 357  :     float x0 = x - X0;
+; 358  :     float y0 = y - Y0;
+; 359  :     float z0 = z - Z0;
+; 360  :     float w0 = w - W0;
+; 361  : 
+; 362  :     int c1 = (x0 > y0) ? 32 : 0;
+; 363  :     int c2 = (x0 > z0) ? 16 : 0;
+; 364  :     int c3 = (y0 > z0) ? 8 : 0;
+; 365  :     int c4 = (x0 > w0) ? 4 : 0;
+; 366  :     int c5 = (y0 > w0) ? 2 : 0;
+; 367  :     int c6 = (z0 > w0) ? 1 : 0;
 
 	xor	ebp, ebp
+
+; 368  :     int c = c1 + c2 + c3 + c4 + c5 + c6;
+; 369  : 
+; 370  :     int i1, j1, k1, l1;
+; 371  :     int i2, j2, k2, l2;
+; 372  :     int i3, j3, k3, l3;
+; 373  : 
+; 374  :     i1 = simplex[c][0]>=3 ? 1 : 0; i2 = simplex[c][0]>=2 ? 1 : 0; i3 = simplex[c][0]>=1 ? 1 : 0;
+
+	lea	r8, OFFSET FLAT:?simplex@@3PAY03EA
+	vcvttss2si ebx, xmm0
+	vxorps	xmm0, xmm0, xmm0
 	mov	ecx, ebp
-	lea	eax, DWORD PTR [rsi+rdi]
+	mov	edx, 2
+	vxorps	xmm2, xmm2, xmm2
+	vcvtsi2ss xmm2, xmm2, edi
+	lea	eax, DWORD PTR [rbx+rsi]
+	add	eax, edi
 	add	eax, r14d
-	add	eax, ebx
 	vcvtsi2ss xmm0, xmm0, eax
 	vmulss	xmm3, xmm0, xmm6
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r14d
 	vsubss	xmm1, xmm0, xmm3
-	vsubss	xmm8, xmm8, xmm1
+	vsubss	xmm11, xmm7, xmm1
 	vsubss	xmm0, xmm2, xmm3
-	vsubss	xmm9, xmm9, xmm0
+	vsubss	xmm8, xmm8, xmm0
 	vxorps	xmm1, xmm1, xmm1
 	vcvtsi2ss xmm1, xmm1, esi
 	vsubss	xmm2, xmm1, xmm3
-	vsubss	xmm10, xmm10, xmm2
+	vsubss	xmm9, xmm9, xmm2
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, ebx
 	vsubss	xmm1, xmm0, xmm3
-	vsubss	xmm11, xmm11, xmm1
-	vcomiss	xmm10, xmm11
+	vsubss	xmm10, xmm10, xmm1
+	vcomiss	xmm9, xmm10
 	mov	eax, ebp
 	seta	cl
-	vcomiss	xmm9, xmm11
+	vcomiss	xmm8, xmm10
 	cmova	eax, edx
 	mov	edx, 4
-
-; 366  :     int c = c1 + c2 + c3 + c4 + c5 + c6;
-
 	add	ecx, eax
 	mov	eax, ebp
-	vcomiss	xmm8, xmm11
+	vcomiss	xmm11, xmm10
 	cmova	eax, edx
 	mov	edx, 8
 	add	ecx, eax
 	mov	eax, ebp
-	vcomiss	xmm9, xmm10
+	vcomiss	xmm8, xmm9
 	cmova	eax, edx
 	mov	edx, 16
 	add	ecx, eax
 	mov	eax, ebp
-	vcomiss	xmm8, xmm10
+	vcomiss	xmm11, xmm9
 	cmova	eax, edx
-	add	ecx, eax
-
-; 367  : 
-; 368  :     int i1, j1, k1, l1;
-; 369  :     int i2, j2, k2, l2;
-; 370  :     int i3, j3, k3, l3;
-; 371  : 
-; 372  :     i1 = simplex[c][0]>=3 ? 1 : 0; i2 = simplex[c][0]>=2 ? 1 : 0; i3 = simplex[c][0]>=1 ? 1 : 0;
-
-	lea	r8, OFFSET FLAT:?simplex@@3PAY03EA
-	vcomiss	xmm8, xmm9
-	mov	eax, ebp
 	mov	edx, 32					; 00000020H
-	cmova	eax, edx
-	mov	r9d, ebp
 	add	ecx, eax
-	mov	r15d, ebp
+	mov	eax, ebp
+	vcomiss	xmm11, xmm8
+	cmova	eax, edx
+	add	ecx, eax
 	mov	edx, ecx
-	mov	r12d, ebp
-
-; 373  :     j1 = simplex[c][1]>=3 ? 1 : 0; j2 = simplex[c][1]>=2 ? 1 : 0; j3 = simplex[c][1]>=1 ? 1 : 0;
-
-	mov	r10d, ebp
-	mov	r13d, ebp
-
-; 374  :     k1 = simplex[c][2]>=3 ? 1 : 0; k2 = simplex[c][2]>=2 ? 1 : 0; k3 = simplex[c][2]>=1 ? 1 : 0;
-
-	mov	r11d, ebp
 	movzx	eax, BYTE PTR [r8+rcx*4]
 	cmp	al, 3
+	mov	r9d, ebp
+	mov	r15d, ebp
+	mov	r12d, ebp
 	setae	r9b
+
+; 375  :     j1 = simplex[c][1]>=3 ? 1 : 0; j2 = simplex[c][1]>=2 ? 1 : 0; j3 = simplex[c][1]>=1 ? 1 : 0;
+
+	mov	r10d, ebp
 	cmp	al, 2
+	mov	r13d, ebp
+
+; 376  :     k1 = simplex[c][2]>=3 ? 1 : 0; k2 = simplex[c][2]>=2 ? 1 : 0; k3 = simplex[c][2]>=1 ? 1 : 0;
+
+	mov	r11d, ebp
 	setae	r15b
 	cmp	al, 1
 	movzx	eax, BYTE PTR [r8+rcx*4+1]
@@ -2409,7 +2433,7 @@ $LN16:
 	setae	cl
 	cmp	al, 1
 
-; 375  :     l1 = simplex[c][3]>=3 ? 1 : 0; l2 = simplex[c][3]>=2 ? 1 : 0; l3 = simplex[c][3]>=1 ? 1 : 0;
+; 377  :     l1 = simplex[c][3]>=3 ? 1 : 0; l2 = simplex[c][3]>=2 ? 1 : 0; l3 = simplex[c][3]>=1 ? 1 : 0;
 
 	movzx	eax, BYTE PTR [r8+rdx*4+3]
 	mov	edx, ebp
@@ -2427,8 +2451,8 @@ $LN16:
 	mov	DWORD PTR l2$1$[rsp], edx
 	setae	bpl
 
-; 381  : 
-; 382  :     int ii = i % 256;
+; 383  : 
+; 384  :     int ii = i % 256;
 
 	and	r14d, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN14@snoise
@@ -2437,7 +2461,7 @@ $LN16:
 	inc	r14d
 $LN14@snoise:
 
-; 383  :     int jj = j % 256;
+; 385  :     int jj = j % 256;
 
 	and	edi, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN13@snoise
@@ -2446,7 +2470,7 @@ $LN14@snoise:
 	inc	edi
 $LN13@snoise:
 
-; 384  :     int kk = k % 256;
+; 386  :     int kk = k % 256;
 
 	and	esi, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN12@snoise
@@ -2455,7 +2479,7 @@ $LN13@snoise:
 	inc	esi
 $LN12@snoise:
 
-; 385  :     int ll = l % 256;
+; 387  :     int ll = l % 256;
 
 	and	ebx, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN11@snoise
@@ -2464,26 +2488,26 @@ $LN12@snoise:
 	inc	ebx
 $LN11@snoise:
 
-; 376  : 
-; 377  : 	float x1 = x0 - i1 + G4,  x2 = x0 - i2 + G4a,  x3 = x0 - i3 + G4b,  x4 = x0 + G4c;
-; 378  :     float y1 = y0 - j1 + G4,  y2 = y0 - j2 + G4a,  y3 = y0 - j3 + G4b,  y4 = y0 + G4c;
-; 379  :     float z1 = z0 - k1 + G4,  z2 = z0 - k2 + G4a,  z3 = z0 - k3 + G4b,  z4 = z0 + G4c;
-; 380  :     float w1 = w0 - l1 + G4,  w2 = w0 - l2 + G4a,  w3 = w0 - l3 + G4b,  w4 = w0 + G4c;
+; 378  : 
+; 379  : 	float x1 = x0 - i1 + G4,  x2 = x0 - i2 + G4a,  x3 = x0 - i3 + G4b,  x4 = x0 + G4c;
+; 380  :     float y1 = y0 - j1 + G4,  y2 = y0 - j2 + G4a,  y3 = y0 - j3 + G4b,  y4 = y0 + G4c;
+; 381  :     float z1 = z0 - k1 + G4,  z2 = z0 - k2 + G4a,  z3 = z0 - k3 + G4b,  z4 = z0 + G4c;
+; 382  :     float w1 = w0 - l1 + G4,  w2 = w0 - l2 + G4a,  w3 = w0 - l3 + G4b,  w4 = w0 + G4c;
 
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, DWORD PTR l1$1$[rsp]
-	vsubss	xmm1, xmm11, xmm0
+	vsubss	xmm1, xmm10, xmm0
 	vaddss	xmm3, xmm1, xmm6
 	vxorps	xmm2, xmm2, xmm2
 	vcvtsi2ss xmm2, xmm2, r11d
-	vsubss	xmm0, xmm10, xmm2
+	vsubss	xmm0, xmm9, xmm2
 	vaddss	xmm2, xmm0, xmm6
 	vxorps	xmm0, xmm0, xmm0
 	vxorps	xmm1, xmm1, xmm1
 	vcvtsi2ss xmm0, xmm0, r9d
 
-; 386  : 
-; 387  : 	return 27.0f * (point(x0, y0, z0, w0, ii,    jj,    kk,    ll) +
+; 388  : 
+; 389  : 	return 27.0f * (point(x0, y0, z0, w0, ii,    jj,    kk,    ll) +
 
 	lea	eax, DWORD PTR [rbx+rcx]
 	mov	DWORD PTR [rsp+56], eax
@@ -2491,8 +2515,8 @@ $LN11@snoise:
 	vcvtsi2ss xmm1, xmm1, r10d
 	mov	DWORD PTR [rsp+48], ecx
 	lea	edx, DWORD PTR [rdi+r10]
-	vsubss	xmm5, xmm8, xmm0
-	vsubss	xmm4, xmm9, xmm1
+	vsubss	xmm5, xmm11, xmm0
+	vsubss	xmm4, xmm8, xmm1
 	lea	r8d, DWORD PTR [r14+r9]
 	mov	DWORD PTR [rsp+40], edx
 	vaddss	xmm0, xmm5, xmm6
@@ -2503,10 +2527,10 @@ $LN11@snoise:
 	vmovaps	xmm6, xmm0
 	mov	DWORD PTR [rsp+48], esi
 	mov	DWORD PTR [rsp+40], edi
-	vmovaps	xmm0, xmm8
-	vmovaps	xmm3, xmm11
-	vmovaps	xmm2, xmm10
-	vmovaps	xmm1, xmm9
+	vmovaps	xmm0, xmm11
+	vmovaps	xmm3, xmm10
+	vmovaps	xmm2, xmm9
+	vmovaps	xmm1, xmm8
 	mov	DWORD PTR [rsp+32], r14d
 	call	?point@Perlin@@CAMMMMMHHHH@Z		; Perlin::point
 	mov	r10d, DWORD PTR l2$1$[rsp]
@@ -2517,14 +2541,14 @@ $LN11@snoise:
 	vmovss	xmm6, DWORD PTR __real@3e8d8369
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r10d
-	vsubss	xmm1, xmm11, xmm0
+	vsubss	xmm1, xmm10, xmm0
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r9d
 	vxorps	xmm4, xmm4, xmm4
 	vaddss	xmm3, xmm1, xmm6
-	vsubss	xmm1, xmm10, xmm0
+	vsubss	xmm1, xmm9, xmm0
 	vcvtsi2ss xmm4, xmm4, r13d
-	vsubss	xmm0, xmm9, xmm4
+	vsubss	xmm0, xmm8, xmm4
 	vxorps	xmm5, xmm5, xmm5
 	lea	eax, DWORD PTR [rbx+r10]
 	mov	DWORD PTR [rsp+56], eax
@@ -2532,7 +2556,7 @@ $LN11@snoise:
 	mov	DWORD PTR [rsp+48], ecx
 	vcvtsi2ss xmm5, xmm5, r15d
 	vaddss	xmm2, xmm1, xmm6
-	vsubss	xmm4, xmm8, xmm5
+	vsubss	xmm4, xmm11, xmm5
 	vaddss	xmm1, xmm0, xmm6
 	mov	DWORD PTR [rsp+40], edx
 	vaddss	xmm0, xmm4, xmm6
@@ -2546,22 +2570,22 @@ $LN11@snoise:
 	vaddss	xmm7, xmm7, xmm0
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, ebp
-	vsubss	xmm1, xmm11, xmm0
+	vsubss	xmm1, xmm10, xmm0
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r10d
 	vaddss	xmm3, xmm1, xmm6
-	vsubss	xmm1, xmm10, xmm0
+	vsubss	xmm1, xmm9, xmm0
 	vaddss	xmm2, xmm1, xmm6
 	lea	ecx, DWORD PTR [rsi+r10]
 	lea	edx, DWORD PTR [rdi+r9]
 	vxorps	xmm4, xmm4, xmm4
 	mov	DWORD PTR [rsp+56], eax
 	vcvtsi2ss xmm4, xmm4, r9d
-	vsubss	xmm0, xmm9, xmm4
+	vsubss	xmm0, xmm8, xmm4
 	mov	DWORD PTR [rsp+48], ecx
 	vxorps	xmm5, xmm5, xmm5
 	vcvtsi2ss xmm5, xmm5, r12d
-	vsubss	xmm4, xmm8, xmm5
+	vsubss	xmm4, xmm11, xmm5
 	vaddss	xmm1, xmm0, xmm6
 	mov	DWORD PTR [rsp+40], edx
 	vaddss	xmm0, xmm4, xmm6
@@ -2574,20 +2598,20 @@ $LN11@snoise:
 	lea	ecx, DWORD PTR [rsi+1]
 	mov	DWORD PTR [rsp+48], ecx
 	lea	edx, DWORD PTR [rdi+1]
-	vsubss	xmm3, xmm11, xmm0
-	vsubss	xmm2, xmm10, xmm0
-	vsubss	xmm1, xmm9, xmm0
+	vsubss	xmm3, xmm10, xmm0
+	vsubss	xmm2, xmm9, xmm0
+	vsubss	xmm1, xmm8, xmm0
 	lea	r8d, DWORD PTR [r14+1]
 	mov	DWORD PTR [rsp+40], edx
-	vsubss	xmm0, xmm8, xmm0
+	vsubss	xmm0, xmm11, xmm0
 	mov	DWORD PTR [rsp+32], r8d
 	call	?point@Perlin@@CAMMMMMHHHH@Z		; Perlin::point
 
-; 388  : 					point(x1, y1, z1, w1, ii+i1, jj+j1, kk+k1, ll+l1) +
-; 389  : 					point(x2, y2, z2, w2, ii+i2, jj+j2, kk+k2, ll+l2) +
-; 390  : 					point(x3, y3, z3, w3, ii+i3, jj+j3, kk+k3, ll+l3) +
-; 391  : 					point(x4, y4, z4, w4, ii+1,  jj+1,  kk+1,  ll+1));
-; 392  : }
+; 390  : 					point(x1, y1, z1, w1, ii+i1, jj+j1, kk+k1, ll+l1) +
+; 391  : 					point(x2, y2, z2, w2, ii+i2, jj+j2, kk+k2, ll+l2) +
+; 392  : 					point(x3, y3, z3, w3, ii+i3, jj+j3, kk+k3, ll+l3) +
+; 393  : 					point(x4, y4, z4, w4, ii+1,  jj+1,  kk+1,  ll+1));
+; 394  : }
 
 	lea	r11, QWORD PTR [rsp+184]
 	vmovaps	xmm7, XMMWORD PTR [r11-40]
@@ -2612,6 +2636,12 @@ $LN11@snoise:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
 x$ = 176
@@ -2619,7 +2649,7 @@ y$ = 184
 z$ = 192
 ?snoise@Perlin@@SAMMMM@Z PROC				; Perlin::snoise, COMDAT
 
-; 281  : float Perlin::snoise(float x, float y, float z) {
+; 283  : float Perlin::snoise(float x, float y, float z) {
 
 $LN24:
 	mov	rax, rsp
@@ -2632,70 +2662,70 @@ $LN24:
 	sub	rsp, 144				; 00000090H
 	vmovaps	XMMWORD PTR [rax-40], xmm6
 	vmovaps	XMMWORD PTR [rax-56], xmm7
-
-; 282  : 
-; 283  : 	#define F3 0.333333333f
-; 284  : 	#define G3 0.166666667f
-; 285  : 	#define G3a	(2.0f * G3)
-; 286  : 	#define G3b (3.0f * G3 - 1.0f)
-; 287  : 
-; 288  :     float s = (x+y+z)*F3;
-
-	vaddss	xmm3, xmm0, xmm1
 	vmovaps	XMMWORD PTR [rax-72], xmm8
 	vmovaps	XMMWORD PTR [rax-88], xmm9
-	vaddss	xmm4, xmm3, xmm2
+
+; 284  : 
+; 285  : 	#define F3 0.333333333f
+; 286  : 	#define G3 0.166666667f
+; 287  : 	#define G3a	(2.0f * G3)
+; 288  : 	#define G3b (3.0f * G3 - 1.0f)
+; 289  : 
+; 290  :     float s = (x+y+z)*F3;
+
+	vaddss	xmm3, xmm0, xmm1
 	vmovaps	XMMWORD PTR [rax-104], xmm10
 	vmovaps	XMMWORD PTR [rax-120], xmm11
 	vmovss	xmm11, DWORD PTR __real@3eaaaaab
-	vmovaps	xmm6, xmm0
-	vmovaps	xmm8, xmm2
-	vmulss	xmm5, xmm4, xmm11
+	vaddss	xmm4, xmm3, xmm2
+	vmulss	xmm6, xmm4, xmm11
+	vmovaps	xmm7, xmm0
 
-; 289  :     float xs = x+s;
+; 291  :     float xs = x+s;
 
-	vaddss	xmm3, xmm5, xmm0
+	vaddss	xmm0, xmm6, xmm0
+	vmovaps	xmm9, xmm2
+	vmovaps	xmm8, xmm1
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 290  :     float ys = y+s;
+; 123  : 	return (_CSTD floorf(_Xx));
 
-	vaddss	xmm4, xmm5, xmm1
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 
-; 291  :     float zs = z+s;
+; 294  :     int i = floor(xs);
 
-	vaddss	xmm5, xmm5, xmm2
-	vxorps	xmm2, xmm2, xmm2
+	vcvttss2si edi, xmm0
+	vaddss	xmm0, xmm6, xmm8
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 292  :     int i = FASTFLOOR(xs);
-; 293  :     int j = FASTFLOOR(ys);
+; 123  : 	return (_CSTD floorf(_Xx));
 
-	vcomiss	xmm2, xmm3
-	vcvttss2si eax, xmm3
-	vmovaps	xmm7, xmm1
-	vxorps	xmm0, xmm0, xmm0
-	lea	edi, DWORD PTR [rax-1]
-	cmovbe	edi, eax
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 
-; 294  :     int k = FASTFLOOR(zs);
+; 295  :     int j = floor(ys);
 
-	vcomiss	xmm2, xmm4
-	vcvttss2si eax, xmm4
-	lea	esi, DWORD PTR [rax-1]
-	cmovbe	esi, eax
+	vcvttss2si esi, xmm0
+	vaddss	xmm0, xmm6, xmm9
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 295  : 
-; 296  :     float t = (float)(i+j+k)*G3; 
+; 123  : 	return (_CSTD floorf(_Xx));
 
-	vcomiss	xmm2, xmm5
-	vcvttss2si eax, xmm5
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 298  :     float t = (float)(i+j+k)*G3; 
+
 	vmovss	xmm5, DWORD PTR __real@3e2aaaab
+	vcvttss2si ebx, xmm0
+	vxorps	xmm0, xmm0, xmm0
 	vxorps	xmm2, xmm2, xmm2
 
-; 297  :     float X0 = i-t;
-; 298  :     float Y0 = j-t;
+; 299  :     float X0 = i-t;
+; 300  :     float Y0 = j-t;
 
 	vcvtsi2ss xmm2, xmm2, esi
-	lea	ebx, DWORD PTR [rax-1]
-	cmovbe	ebx, eax
 	lea	eax, DWORD PTR [rbx+rsi]
 	add	eax, edi
 	vcvtsi2ss xmm0, xmm0, eax
@@ -2704,54 +2734,54 @@ $LN24:
 	vcvtsi2ss xmm0, xmm0, edi
 	vsubss	xmm1, xmm0, xmm3
 
-; 299  :     float Z0 = k-t;
-; 300  :     float x0 = x-X0;
+; 301  :     float Z0 = k-t;
+; 302  :     float x0 = x-X0;
 
-	vsubss	xmm9, xmm6, xmm1
+	vsubss	xmm10, xmm7, xmm1
 	vsubss	xmm0, xmm2, xmm3
-
-; 301  :     float y0 = y-Y0;
-
-	vsubss	xmm10, xmm7, xmm0
-
-; 302  :     float z0 = z-Z0;
-; 303  : 
-; 304  :     int i1, j1, k1;
-; 305  :     int i2, j2, k2;
-; 306  : 
-; 307  :     if(x0>=y0) {
-
-	vcomiss	xmm9, xmm10
 	vxorps	xmm1, xmm1, xmm1
 	vcvtsi2ss xmm1, xmm1, ebx
+
+; 303  :     float y0 = y-Y0;
+
+	vsubss	xmm8, xmm8, xmm0
+
+; 304  :     float z0 = z-Z0;
+; 305  : 
+; 306  :     int i1, j1, k1;
+; 307  :     int i2, j2, k2;
+; 308  : 
+; 309  :     if(x0>=y0) {
+
+	vcomiss	xmm10, xmm8
 	vsubss	xmm2, xmm1, xmm3
-	vsubss	xmm7, xmm8, xmm2
+	vsubss	xmm7, xmm9, xmm2
 	jb	SHORT $LN2@snoise
 
-; 308  : 		if(y0>=z0)		{ i1=1; j1=0; k1=0; i2=1; j2=1; k2=0; }
+; 310  : 		if(y0>=z0)		{ i1=1; j1=0; k1=0; i2=1; j2=1; k2=0; }
 
-	vcomiss	xmm10, xmm7
+	vcomiss	xmm8, xmm7
 	jb	SHORT $LN4@snoise
 	mov	edx, 1
 	xor	r8d, r8d
 	xor	r14d, r14d
 	mov	ebp, edx
 
-; 311  : 	} else {
+; 313  : 	} else {
 
 	xor	r10d, r10d
 	mov	r15d, edx
 	jmp	SHORT $LN11@snoise
 $LN4@snoise:
 
-; 309  :         else if(x0>=z0) { i1=1; j1=0; k1=0; i2=1; j2=0; k2=1; }
+; 311  :         else if(x0>=z0) { i1=1; j1=0; k1=0; i2=1; j2=0; k2=1; }
 
-	vcomiss	xmm9, xmm7
+	vcomiss	xmm10, xmm7
 	jb	SHORT $LN6@snoise
 	mov	edx, 1
 	xor	r8d, r8d
 
-; 311  : 	} else {
+; 313  : 	} else {
 
 	xor	ebp, ebp
 	mov	r14d, edx
@@ -2760,12 +2790,12 @@ $LN4@snoise:
 	jmp	SHORT $LN11@snoise
 $LN6@snoise:
 
-; 310  :         else			{ i1=0; j1=0; k1=1; i2=1; j2=0; k2=1; }
+; 312  :         else			{ i1=0; j1=0; k1=1; i2=1; j2=0; k2=1; }
 
 	mov	r8d, 1
 	xor	edx, edx
 
-; 311  : 	} else {
+; 313  : 	} else {
 
 	xor	ebp, ebp
 	mov	r14d, r8d
@@ -2774,10 +2804,10 @@ $LN6@snoise:
 	jmp	SHORT $LN11@snoise
 $LN2@snoise:
 
-; 312  : 		if(y0<z0)		{ i1=0; j1=0; k1=1; i2=0; j2=1; k2=1; }
+; 314  : 		if(y0<z0)		{ i1=0; j1=0; k1=1; i2=0; j2=1; k2=1; }
 
 	xor	edx, edx
-	vcomiss	xmm7, xmm10
+	vcomiss	xmm7, xmm8
 	jbe	SHORT $LN8@snoise
 	mov	r8d, 1
 	xor	r10d, r10d
@@ -2787,11 +2817,11 @@ $LN2@snoise:
 	jmp	SHORT $LN11@snoise
 $LN8@snoise:
 
-; 313  : 		else if(x0<z0)	{ i1=0; j1=1; k1=0; i2=0; j2=1; k2=1; }
+; 315  : 		else if(x0<z0)	{ i1=0; j1=1; k1=0; i2=0; j2=1; k2=1; }
 
 	xor	r8d, r8d
 	mov	r10d, 1
-	vcomiss	xmm7, xmm9
+	vcomiss	xmm7, xmm10
 	mov	ebp, r10d
 	jbe	SHORT $LN10@snoise
 	xor	r15d, r15d
@@ -2799,14 +2829,14 @@ $LN8@snoise:
 	jmp	SHORT $LN11@snoise
 $LN10@snoise:
 
-; 314  : 		else			{ i1=0; j1=1; k1=0; i2=1; j2=1; k2=0; }
+; 316  : 		else			{ i1=0; j1=1; k1=0; i2=1; j2=1; k2=0; }
 
 	mov	r15d, ebp
 	xor	r14d, r14d
 $LN11@snoise:
 
-; 320  : 
-; 321  :     int ii = i % 256;
+; 322  : 
+; 323  :     int ii = i % 256;
 
 	and	edi, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN21@snoise
@@ -2815,7 +2845,7 @@ $LN11@snoise:
 	inc	edi
 $LN21@snoise:
 
-; 322  :     int jj = j % 256;
+; 324  :     int jj = j % 256;
 
 	and	esi, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN20@snoise
@@ -2824,7 +2854,7 @@ $LN21@snoise:
 	inc	esi
 $LN20@snoise:
 
-; 323  :     int kk = k % 256;
+; 325  :     int kk = k % 256;
 
 	and	ebx, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN19@snoise
@@ -2833,25 +2863,25 @@ $LN20@snoise:
 	inc	ebx
 $LN19@snoise:
 
-; 315  :     }
-; 316  : 
-; 317  :     float x1 = x0 - i1 + G3,  x2 = x0 - i2 + G3a,  x3 = x0 + G3b;
-; 318  :     float y1 = y0 - j1 + G3,  y2 = y0 - j2 + G3a,  y3 = y0 + G3b;
-; 319  :     float z1 = z0 - k1 + G3,  z2 = z0 - k2 + G3a,  z3 = z0 + G3b;
+; 317  :     }
+; 318  : 
+; 319  :     float x1 = x0 - i1 + G3,  x2 = x0 - i2 + G3a,  x3 = x0 + G3b;
+; 320  :     float y1 = y0 - j1 + G3,  y2 = y0 - j2 + G3a,  y3 = y0 + G3b;
+; 321  :     float z1 = z0 - k1 + G3,  z2 = z0 - k2 + G3a,  z3 = z0 + G3b;
 
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, r8d
 	vsubss	xmm1, xmm7, xmm0
 	vxorps	xmm3, xmm3, xmm3
 	vcvtsi2ss xmm3, xmm3, r10d
-	vsubss	xmm0, xmm10, xmm3
+	vsubss	xmm0, xmm8, xmm3
 	vxorps	xmm4, xmm4, xmm4
 	vcvtsi2ss xmm4, xmm4, edx
 	vaddss	xmm2, xmm1, xmm5
-	vsubss	xmm3, xmm9, xmm4
+	vsubss	xmm3, xmm10, xmm4
 
-; 324  : 
-; 325  : 	return 32.0f * (point(x0, y0, z0, ii,    jj,    kk) +
+; 326  : 
+; 327  : 	return 32.0f * (point(x0, y0, z0, ii,    jj,    kk) +
 
 	lea	eax, DWORD PTR [rbx+r8]
 	vaddss	xmm1, xmm0, xmm5
@@ -2862,11 +2892,11 @@ $LN19@snoise:
 	mov	DWORD PTR [rsp+32], ecx
 	call	?point@Perlin@@CAMMMMHHH@Z		; Perlin::point
 	vmovaps	xmm6, xmm0
-	vmovaps	xmm0, xmm9
+	vmovaps	xmm0, xmm10
 	mov	DWORD PTR [rsp+40], ebx
 	mov	r9d, edi
 	vmovaps	xmm2, xmm7
-	vmovaps	xmm1, xmm10
+	vmovaps	xmm1, xmm8
 	mov	DWORD PTR [rsp+32], esi
 	call	?point@Perlin@@CAMMMMHHH@Z		; Perlin::point
 	vaddss	xmm6, xmm6, xmm0
@@ -2875,11 +2905,11 @@ $LN19@snoise:
 	vsubss	xmm1, xmm7, xmm0
 	vxorps	xmm3, xmm3, xmm3
 	vcvtsi2ss xmm3, xmm3, ebp
-	vsubss	xmm0, xmm10, xmm3
+	vsubss	xmm0, xmm8, xmm3
 	vxorps	xmm4, xmm4, xmm4
 	vcvtsi2ss xmm4, xmm4, r15d
 	vaddss	xmm2, xmm1, xmm11
-	vsubss	xmm3, xmm9, xmm4
+	vsubss	xmm3, xmm10, xmm4
 	lea	eax, DWORD PTR [rbx+r14]
 	vaddss	xmm1, xmm0, xmm11
 	lea	ecx, DWORD PTR [rsi+rbp]
@@ -2892,18 +2922,18 @@ $LN19@snoise:
 	vmovss	xmm0, DWORD PTR __real@3f000000
 	lea	eax, DWORD PTR [rbx+1]
 	vsubss	xmm2, xmm7, xmm0
-	vsubss	xmm1, xmm10, xmm0
+	vsubss	xmm1, xmm8, xmm0
 	lea	ecx, DWORD PTR [rsi+1]
 	mov	DWORD PTR [rsp+40], eax
-	vsubss	xmm0, xmm9, xmm0
+	vsubss	xmm0, xmm10, xmm0
 	lea	r9d, DWORD PTR [rdi+1]
 	mov	DWORD PTR [rsp+32], ecx
 	call	?point@Perlin@@CAMMMMHHH@Z		; Perlin::point
 
-; 326  : 					point(x1, y1, z1, ii+i1, jj+j1, kk+k1) +
-; 327  : 					point(x2, y2, z2, ii+i2, jj+j2, kk+k2) +
-; 328  : 					point(x3, y3, z3, ii+1,  jj+1,  kk+1));
-; 329  : }
+; 328  : 					point(x1, y1, z1, ii+i1, jj+j1, kk+k1) +
+; 329  : 					point(x2, y2, z2, ii+i2, jj+j2, kk+k2) +
+; 330  : 					point(x3, y3, z3, ii+1,  jj+1,  kk+1));
+; 331  : }
 
 	vmovaps	xmm7, XMMWORD PTR [rsp+112]
 	lea	r11, QWORD PTR [rsp+144]
@@ -2926,13 +2956,17 @@ $LN19@snoise:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMMM@Z
 _TEXT	SEGMENT
 x$ = 208
 y$ = 216
 ?snoise@Perlin@@SAMMM@Z PROC				; Perlin::snoise, COMDAT
 
-; 249  : float Perlin::snoise(float x, float y) {
+; 251  : float Perlin::snoise(float x, float y) {
 
 $LN21:
 	mov	rax, rsp
@@ -2943,80 +2977,82 @@ $LN21:
 	push	r14
 	push	r15
 	sub	rsp, 176				; 000000b0H
-
-; 250  : 
-; 251  : 	#define F2 0.366025403f // F2 = 0.5*(sqrt(3.0)-1.0)
-; 252  : 	#define G2 0.211324865f // G2 = (3.0-Math.sqrt(3.0))/6.0
-; 253  : 
-; 254  :     float s = (x+y)*F2;
-
-	vaddss	xmm2, xmm0, xmm1
-	vmulss	xmm3, xmm2, DWORD PTR __real@3ebb67ae
-
-; 255  :     float xs = x + s;
-
-	vaddss	xmm4, xmm3, xmm0
 	vmovaps	XMMWORD PTR [rax-40], xmm6
 	vmovaps	XMMWORD PTR [rax-56], xmm7
-	vmovaps	xmm6, xmm0
 	vmovaps	XMMWORD PTR [rax-72], xmm8
 	vmovaps	XMMWORD PTR [rax-88], xmm9
-	vxorps	xmm0, xmm0, xmm0
 	vmovaps	XMMWORD PTR [rax-104], xmm10
 	vmovaps	XMMWORD PTR [rax-120], xmm11
 
-; 256  :     float ys = y + s;
+; 252  : 
+; 253  : 	#define F2 0.366025403f // F2 = 0.5*(sqrt(3.0)-1.0)
+; 254  : 	#define G2 0.211324865f // G2 = (3.0-Math.sqrt(3.0))/6.0
+; 255  : 
+; 256  :     float s = (x+y)*F2;
 
-	vaddss	xmm5, xmm3, xmm1
-	vcvttss2si eax, xmm4
-	vmovaps	xmm7, xmm1
-	vxorps	xmm8, xmm8, xmm8
+	vaddss	xmm2, xmm0, xmm1
+	vmulss	xmm6, xmm2, DWORD PTR __real@3ebb67ae
+	vmovaps	XMMWORD PTR [rsp+64], xmm12
+	vmovaps	xmm7, xmm0
+	vmovaps	XMMWORD PTR [rsp+48], xmm13
 
-; 257  :     int i = FASTFLOOR(xs);
-; 258  :     int j = FASTFLOOR(ys);
+; 257  :     float xs = x + s;
 
-	vcomiss	xmm8, xmm4
+	vaddss	xmm0, xmm6, xmm0
+	vmovaps	XMMWORD PTR [rsp+32], xmm14
+	vmovaps	xmm8, xmm1
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 259  : 
-; 260  :     float t = (float)(i+j)*G2;
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 259  :     int i = floor(xs);
+
+	vcvttss2si edi, xmm0
+	vaddss	xmm0, xmm6, xmm8
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 262  :     float t = (float)(i+j)*G2;
 
 	vmovss	xmm4, DWORD PTR __real@3e58658c
-	lea	edi, DWORD PTR [rax-1]
-	vmovaps	XMMWORD PTR [rsp+64], xmm12
-	cmovbe	edi, eax
-	vmovaps	XMMWORD PTR [rsp+48], xmm13
-	vcvttss2si eax, xmm5
-	vcomiss	xmm8, xmm5
-	vxorps	xmm2, xmm2, xmm2
-	vmovaps	XMMWORD PTR [rsp+32], xmm14
-	lea	ebx, DWORD PTR [rax-1]
-	cmovbe	ebx, eax
+	vcvttss2si ebx, xmm0
+	vxorps	xmm0, xmm0, xmm0
 
-; 261  :     float X0 = i-t;
-; 262  :     float Y0 = j-t;
-; 263  :     float x0 = x-X0;
-; 264  :     float y0 = y-Y0;
-; 265  : 
-; 266  :     int i1, j1;
-; 267  :     if(x0>y0) {i1=1; j1=0;}
-; 268  :     else {i1=0; j1=1;}
-; 269  : 
-; 270  :     float x1 = x0 - i1 + G2, x2 = x0 - 1.0f + 2.0f * G2;
+; 263  :     float X0 = i-t;
+
+	vcvtsi2ss xmm0, xmm0, edi
+
+; 264  :     float Y0 = j-t;
+; 265  :     float x0 = x-X0;
+; 266  :     float y0 = y-Y0;
+; 267  : 
+; 268  :     int i1, j1;
+; 269  :     if(x0>y0) {i1=1; j1=0;}
+; 270  :     else {i1=0; j1=1;}
+; 271  : 
+; 272  :     float x1 = x0 - i1 + G2, x2 = x0 - 1.0f + 2.0f * G2;
 
 	xor	ebp, ebp
+	vxorps	xmm2, xmm2, xmm2
 	mov	r14d, ebp
-	vcvtsi2ss xmm2, xmm2, ebx
 	lea	eax, DWORD PTR [rbx+rdi]
-	vcvtsi2ss xmm0, xmm0, eax
-	vmulss	xmm3, xmm0, xmm4
-	vxorps	xmm0, xmm0, xmm0
-	vcvtsi2ss xmm0, xmm0, edi
+	vcvtsi2ss xmm2, xmm2, eax
+	vmulss	xmm3, xmm2, xmm4
 	vsubss	xmm1, xmm0, xmm3
-	vsubss	xmm5, xmm6, xmm1
+	vsubss	xmm5, xmm7, xmm1
+	vxorps	xmm2, xmm2, xmm2
+	vcvtsi2ss xmm2, xmm2, ebx
 	vsubss	xmm0, xmm2, xmm3
-	vsubss	xmm9, xmm7, xmm0
+	vsubss	xmm9, xmm8, xmm0
 
-; 271  :     float y1 = y0 - j1 + G2, y2 = y0 - 1.0f + 2.0f * G2;     
+; 273  :     float y1 = y0 - j1 + G2, y2 = y0 - 1.0f + 2.0f * G2;     
 
 	vsubss	xmm2, xmm9, DWORD PTR __real@3f800000
 	vaddss	xmm12, xmm2, DWORD PTR __real@3ed8658c
@@ -3034,8 +3070,8 @@ $LN21:
 	vsubss	xmm1, xmm9, xmm0
 	vaddss	xmm14, xmm1, xmm4
 
-; 272  : 
-; 273  :     int ii = i % 256;
+; 274  : 
+; 275  :     int ii = i % 256;
 
 	and	edi, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN19@snoise
@@ -3044,7 +3080,7 @@ $LN21:
 	inc	edi
 $LN19@snoise:
 
-; 274  :     int jj = j % 256;
+; 276  :     int jj = j % 256;
 
 	and	ebx, -2147483393			; ffffffff800000ffH
 	jge	SHORT $LN18@snoise
@@ -3053,29 +3089,30 @@ $LN19@snoise:
 	inc	ebx
 $LN18@snoise:
 
-; 216  :     float t = 0.5f - x*x - y*y;
+; 218  :     float t = 0.5f - x*x - y*y;
 
-	vmovss	xmm7, DWORD PTR __real@3f000000
+	vmovss	xmm8, DWORD PTR __real@3f000000
 	vmulss	xmm0, xmm5, xmm5
-	vsubss	xmm1, xmm7, xmm0
+	vsubss	xmm1, xmm8, xmm0
 	vmulss	xmm0, xmm9, xmm9
 	vsubss	xmm2, xmm1, xmm0
+	vxorps	xmm7, xmm7, xmm7
 
-; 217  :     if(t < 0.0f) 
+; 219  :     if(t < 0.0f) 
 
-	vcomiss	xmm8, xmm2
+	vcomiss	xmm7, xmm2
 	movsxd	rsi, ebx
 	lea	r15, OFFSET FLAT:?perm@@3PAEA
 	jbe	SHORT $LN10@snoise
 	vxorps	xmm10, xmm10, xmm10
 
-; 218  : 		return 0.0f;
+; 220  : 		return 0.0f;
 
 	jmp	SHORT $LN9@snoise
 $LN10@snoise:
 
-; 219  :     t *= t;
-; 220  :     return t * t * grad(perm[i+perm[j]], x, y);
+; 221  :     t *= t;
+; 222  :     return t * t * grad(perm[i+perm[j]], x, y);
 
 	movzx	eax, BYTE PTR [rsi+r15]
 	add	eax, edi
@@ -3089,30 +3126,30 @@ $LN10@snoise:
 	vmulss	xmm10, xmm0, xmm1
 $LN9@snoise:
 
-; 216  :     float t = 0.5f - x*x - y*y;
+; 218  :     float t = 0.5f - x*x - y*y;
 
 	vmulss	xmm0, xmm13, xmm13
-	vsubss	xmm1, xmm7, xmm0
+	vsubss	xmm1, xmm8, xmm0
 	vmulss	xmm0, xmm14, xmm14
 	vsubss	xmm2, xmm1, xmm0
 
-; 217  :     if(t < 0.0f) 
+; 219  :     if(t < 0.0f) 
 
-	vcomiss	xmm8, xmm2
+	vcomiss	xmm7, xmm2
 	jbe	SHORT $LN13@snoise
 	vxorps	xmm9, xmm9, xmm9
 
-; 218  : 		return 0.0f;
+; 220  : 		return 0.0f;
 
 	jmp	SHORT $LN12@snoise
 $LN13@snoise:
 
-; 275  : 
-; 276  :     return 40.0f * (point(x0, y0, ii,    jj) +
+; 277  : 
+; 278  :     return 40.0f * (point(x0, y0, ii,    jj) +
 
 	lea	eax, DWORD PTR [r14+rbx]
 
-; 220  :     return t * t * grad(perm[i+perm[j]], x, y);
+; 222  :     return t * t * grad(perm[i+perm[j]], x, y);
 
 	movsxd	rcx, eax
 	vmulss	xmm6, xmm2, xmm2
@@ -3128,20 +3165,20 @@ $LN13@snoise:
 	vmulss	xmm9, xmm0, xmm1
 $LN12@snoise:
 
-; 216  :     float t = 0.5f - x*x - y*y;
+; 218  :     float t = 0.5f - x*x - y*y;
 
 	vmulss	xmm0, xmm11, xmm11
-	vsubss	xmm1, xmm7, xmm0
+	vsubss	xmm1, xmm8, xmm0
 	vmulss	xmm0, xmm12, xmm12
 	vsubss	xmm2, xmm1, xmm0
 
-; 217  :     if(t < 0.0f) 
+; 219  :     if(t < 0.0f) 
 
-	vcomiss	xmm8, xmm2
+	vcomiss	xmm7, xmm2
 	ja	SHORT $LN15@snoise
 
-; 219  :     t *= t;
-; 220  :     return t * t * grad(perm[i+perm[j]], x, y);
+; 221  :     t *= t;
+; 222  :     return t * t * grad(perm[i+perm[j]], x, y);
 
 	movzx	eax, BYTE PTR [rsi+r15+1]
 	add	eax, edi
@@ -3152,12 +3189,12 @@ $LN12@snoise:
 	movzx	ecx, BYTE PTR [rcx+r15+1]
 	call	?grad@Perlin@@CAMHMM@Z			; Perlin::grad
 	vmulss	xmm1, xmm6, xmm6
-	vmulss	xmm8, xmm0, xmm1
+	vmulss	xmm7, xmm0, xmm1
 $LN15@snoise:
 
-; 277  : 					point(x1, y1, ii+i1, jj+j1) +
-; 278  : 					point(x2, y2, ii+1,  jj+1));
-; 279  : }
+; 279  : 					point(x1, y1, ii+i1, jj+j1) +
+; 280  : 					point(x2, y2, ii+1,  jj+1));
+; 281  : }
 
 	vmovaps	xmm14, XMMWORD PTR [rsp+32]
 	lea	r11, QWORD PTR [rsp+176]
@@ -3165,16 +3202,16 @@ $LN15@snoise:
 	mov	rbp, QWORD PTR [r11+40]
 	mov	rsi, QWORD PTR [r11+48]
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
-	vmovaps	xmm7, XMMWORD PTR [r11-32]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
 	vmovaps	xmm11, XMMWORD PTR [r11-96]
 	vmovaps	xmm12, XMMWORD PTR [r11-112]
 	vmovaps	xmm13, XMMWORD PTR [r11-128]
 	vaddss	xmm0, xmm9, xmm10
 	vmovaps	xmm9, XMMWORD PTR [r11-64]
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
-	vaddss	xmm1, xmm0, xmm8
+	vaddss	xmm1, xmm0, xmm7
 	vmulss	xmm0, xmm1, DWORD PTR __real@42200000
-	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm7, XMMWORD PTR [r11-32]
 	mov	rsp, r11
 	pop	r15
 	pop	r14
@@ -3184,55 +3221,60 @@ $LN15@snoise:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?snoise@Perlin@@SAMM@Z
 _TEXT	SEGMENT
-x$ = 48
+x$ = 80
 ?snoise@Perlin@@SAMM@Z PROC				; Perlin::snoise, COMDAT
 
-; 241  : float Perlin::snoise(float x) {
+; 243  : float Perlin::snoise(float x) {
 
 $LN16:
-	sub	rsp, 40					; 00000028H
+	sub	rsp, 72					; 00000048H
+	vmovaps	XMMWORD PTR [rsp+48], xmm6
+	vmovaps	XMMWORD PTR [rsp+32], xmm7
+	vmovaps	xmm6, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 70   :     if (h&8) grad = -grad;
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 72   :     if (h&8) grad = -grad;
 
 	vmovss	xmm3, DWORD PTR __xmm@80000000800000008000000080000000
 
-; 241  : float Perlin::snoise(float x) {
+; 244  : 	int i0 = floor(x);
 
 	vcvttss2si eax, xmm0
+
+; 214  : 	return t * t * grad(perm[i & 255], x);
+
+	movsxd	rdx, eax
+	lea	r8, OFFSET FLAT:?perm@@3PAEA
 	vxorps	xmm1, xmm1, xmm1
 
-; 242  : 	int i0 = FASTFLOOR(x);
-; 243  : 	int i1 = i0 + 1;
+; 245  : 	int i1 = i0 + 1;
+; 246  : 	float x0 = x - i0;
 
-	vcomiss	xmm1, xmm0
-	vxorps	xmm1, xmm1, xmm1
-	lea	ecx, DWORD PTR [rax-1]
-	vmovaps	XMMWORD PTR [rsp+16], xmm6
-	cmovbe	ecx, eax
-	vmovaps	XMMWORD PTR [rsp], xmm7
+	vcvtsi2ss xmm1, xmm1, eax
+	vsubss	xmm7, xmm6, xmm1
 
-; 244  : 	float x0 = x - i0;
-
-	vcvtsi2ss xmm1, xmm1, ecx
-	vsubss	xmm7, xmm0, xmm1
-
-; 245  : 	float x1 = x0 - 1.0f;
+; 247  : 	float x1 = x0 - 1.0f;
 
 	vmovss	xmm1, DWORD PTR __real@3f800000
 
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
-	movsxd	rdx, ecx
-	lea	r8, OFFSET FLAT:?perm@@3PAEA
 	movzx	eax, dl
 	vmulss	xmm0, xmm7, xmm7
 	vsubss	xmm0, xmm1, xmm0
 	vmulss	xmm6, xmm0, xmm0
 	movzx	ecx, BYTE PTR [rax+r8]
 
-; 69   :     float grad = 1.0f + (h & 7);
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, ecx
 	and	eax, 7
@@ -3240,18 +3282,18 @@ $LN16:
 	vcvtsi2ss xmm0, xmm0, eax
 	vaddss	xmm2, xmm0, xmm1
 
-; 245  : 	float x1 = x0 - 1.0f;
+; 247  : 	float x1 = x0 - 1.0f;
 
 	vsubss	xmm5, xmm7, xmm1
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	cl, 8
 	je	SHORT $LN8@snoise
 	vxorps	xmm2, xmm2, xmm3
 $LN8@snoise:
 
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
 	lea	rax, QWORD PTR [rdx+1]
 	movzx	ecx, al
@@ -3260,7 +3302,7 @@ $LN8@snoise:
 	vmulss	xmm4, xmm0, xmm0
 	movzx	edx, BYTE PTR [rcx+r8]
 
-; 69   :     float grad = 1.0f + (h & 7);
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, edx
 	and	eax, 7
@@ -3268,59 +3310,67 @@ $LN8@snoise:
 	vcvtsi2ss xmm0, xmm0, eax
 	vaddss	xmm1, xmm0, xmm1
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	dl, 8
 	je	SHORT $LN13@snoise
 	vxorps	xmm1, xmm1, xmm3
 $LN13@snoise:
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm2, xmm2, xmm7
 
-; 247  : }
+; 249  : }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp]
+	vmovaps	xmm7, XMMWORD PTR [rsp+32]
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm1, xmm1, xmm5
 
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
 	vmulss	xmm0, xmm4, xmm4
 	vmulss	xmm3, xmm1, xmm0
 	vmulss	xmm1, xmm6, xmm6
 
-; 247  : }
+; 249  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+16]
+	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 
-; 212  : 	return t * t * grad(perm[i & 255], x);
+; 214  : 	return t * t * grad(perm[i & 255], x);
 
 	vmulss	xmm0, xmm2, xmm1
 
-; 246  : 	return (1.f/2.53125f) * (point(x0, i0) + point(x1, i1));
+; 248  : 	return (1.f/2.53125f) * (point(x0, i0) + point(x1, i1));
 
 	vaddss	xmm2, xmm3, xmm0
 	vmulss	xmm0, xmm2, DWORD PTR __real@3eca4588
 
-; 247  : }
+; 249  : }
 
-	add	rsp, 40					; 00000028H
+	add	rsp, 72					; 00000048H
 	ret	0
 ?snoise@Perlin@@SAMM@Z ENDP				; Perlin::snoise
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMMMM@Z
 _TEXT	SEGMENT
 zf1$1$ = 48
-wi$1$ = 52
+wi$2$ = 52
 i$1$ = 56
-zf0$1$ = 60
-j$1$ = 64
+j$1$ = 60
+zf0$1$ = 64
 k$1$ = 68
 yf1$1$ = 320
 x$ = 320
@@ -3332,7 +3382,7 @@ wf1$1$ = 344
 w$ = 344
 ?noise@Perlin@@SAMMMMM@Z PROC				; Perlin::noise, COMDAT
 
-; 155  : float Perlin::noise(float x, float y, float z, float w) {
+; 157  : float Perlin::noise(float x, float y, float z, float w) {
 
 $LN42:
 	mov	rax, rsp
@@ -3346,256 +3396,259 @@ $LN42:
 	push	r15
 	sub	rsp, 248				; 000000f8H
 	vmovaps	XMMWORD PTR [rax-88], xmm6
-	vcvttss2si ecx, xmm0
-	vmovaps	xmm5, xmm0
 	vmovaps	XMMWORD PTR [rax-104], xmm7
-	vmovaps	xmm6, xmm1
 	vmovaps	XMMWORD PTR [rax-120], xmm8
-
-; 156  :     int xi = FASTFLOOR(x);
-; 157  : 	int yi = FASTFLOOR(y);
-
-	lea	r10d, DWORD PTR [rcx-1]
 	vmovaps	XMMWORD PTR [rax-136], xmm9
 	vmovaps	XMMWORD PTR [rax-152], xmm10
 	vmovaps	XMMWORD PTR [rax-168], xmm11
 	vmovaps	XMMWORD PTR [rax-184], xmm12
-	vcvttss2si eax, xmm1
-	vxorps	xmm4, xmm4, xmm4
-	vcomiss	xmm4, xmm0
-	vxorps	xmm0, xmm0, xmm0
-	cmovbe	r10d, ecx
 	vmovaps	XMMWORD PTR [rsp+112], xmm13
-
-; 158  : 	int zi = FASTFLOOR(z);
-
-	vcomiss	xmm4, xmm1
-
-; 159  : 	int wi = FASTFLOOR(w);
-; 160  :     float xf0 = x - xi;
-
-	vcvtsi2ss xmm0, xmm0, r10d
-	vxorps	xmm1, xmm1, xmm1
-	lea	r8d, DWORD PTR [rax-1]
 	vmovaps	XMMWORD PTR [rsp+96], xmm14
-	cmovbe	r8d, eax
 	vmovaps	XMMWORD PTR [rsp+80], xmm15
-	vsubss	xmm15, xmm5, xmm0
+	vmovaps	xmm9, xmm3
+	vmovaps	xmm8, xmm2
+	vmovaps	xmm7, xmm1
+	vmovaps	xmm6, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 161  :     float yf0 = y - yi;
-; 162  : 	float zf0 = z - zi;
-; 163  : 	float wf0 = w - wi;
-; 164  :     float xf1 = xf0 - 1.0f;
-; 165  :     float yf1 = yf0 - 1.0f;
-; 166  : 	float zf1 = zf0 - 1.0f;
-; 167  : 	float wf1 = wf0 - 1.0f;
-; 168  :     xi = xi & 255;
-; 169  :     yi = yi & 255;   
-; 170  : 	zi = zi & 255;
-; 171  : 	wi = wi & 255;
-; 172  :     float i = FADE(xf0);
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 158  :     int xi = floor(x);
+
+	vcvttss2si esi, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm7
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 159  : 	int yi = floor(y);
+
+	vcvttss2si edi, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm8
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 160  : 	int zi = floor(z);
+
+	vcvttss2si ebx, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm9
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 174  :     float i = FADE(xf0);
 
 	vmovss	xmm5, DWORD PTR __real@41700000
-	vcvtsi2ss xmm1, xmm1, r8d
-	vsubss	xmm9, xmm6, xmm1
-	vmovss	xmm6, DWORD PTR __real@40c00000
-	vcvttss2si eax, xmm2
-	vcomiss	xmm4, xmm2
-	vxorps	xmm0, xmm0, xmm0
-	vxorps	xmm1, xmm1, xmm1
-	lea	edx, DWORD PTR [rax-1]
-	movzx	r9d, r8b
-	cmovbe	edx, eax
-	vcvtsi2ss xmm0, xmm0, edx
-	vsubss	xmm7, xmm2, xmm0
-	vmovss	xmm0, DWORD PTR __real@3f800000
-	vsubss	xmm13, xmm15, xmm0
-	vsubss	xmm8, xmm9, xmm0
-	vsubss	xmm12, xmm7, xmm0
-	vcvttss2si eax, xmm3
-	vcomiss	xmm4, xmm3
 	vmovss	xmm4, DWORD PTR __real@41200000
-	vmovss	DWORD PTR zf0$1$[rsp], xmm7
-	lea	ecx, DWORD PTR [rax-1]
-	movzx	r8d, dl
-	cmovbe	ecx, eax
-	vcvtsi2ss xmm1, xmm1, ecx
-	vsubss	xmm14, xmm3, xmm1
-	vsubss	xmm11, xmm14, xmm0
+	vcvttss2si eax, xmm0
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, edi
+	vsubss	xmm10, xmm7, xmm0
+	vxorps	xmm1, xmm1, xmm1
+	vcvtsi2ss xmm1, xmm1, esi
+	vsubss	xmm15, xmm6, xmm1
+	vmovss	xmm6, DWORD PTR __real@40c00000
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, eax
+	vsubss	xmm14, xmm9, xmm0
+	vxorps	xmm1, xmm1, xmm1
+	vcvtsi2ss xmm1, xmm1, ebx
+	vsubss	xmm7, xmm8, xmm1
+	vmovss	xmm1, DWORD PTR __real@3f800000
+	vsubss	xmm13, xmm15, xmm1
+	vsubss	xmm8, xmm10, xmm1
+	vsubss	xmm12, xmm7, xmm1
+	vsubss	xmm11, xmm14, xmm1
 	vmulss	xmm0, xmm15, xmm6
 	vsubss	xmm0, xmm0, xmm5
 	vmulss	xmm1, xmm0, xmm15
 	vaddss	xmm2, xmm1, xmm4
 	vmulss	xmm0, xmm15, xmm15
 	vmulss	xmm1, xmm0, xmm15
-	vmulss	xmm10, xmm2, xmm1
+	vmulss	xmm9, xmm2, xmm1
 
-; 173  :     float j = FADE(yf0);
+; 175  :     float j = FADE(yf0);
 
-	vmulss	xmm2, xmm9, xmm6
+	vmulss	xmm2, xmm10, xmm6
 	vsubss	xmm0, xmm2, xmm5
-	vmulss	xmm1, xmm0, xmm9
+	vmulss	xmm1, xmm0, xmm10
 	vaddss	xmm3, xmm1, xmm4
-	vmulss	xmm2, xmm9, xmm9
-	vmulss	xmm0, xmm2, xmm9
-	vmulss	xmm1, xmm3, xmm0
-	vmovss	DWORD PTR j$1$[rsp], xmm1
+	vmulss	xmm2, xmm10, xmm10
+	vmulss	xmm0, xmm2, xmm10
+	vmulss	xmm0, xmm3, xmm0
 
-; 174  : 	float k = FADE(zf0);
+; 176  : 	float k = FADE(zf0);
 
 	vmulss	xmm1, xmm7, xmm6
 	vsubss	xmm2, xmm1, xmm5
+	vmovss	DWORD PTR j$1$[rsp], xmm0
 	vmulss	xmm0, xmm2, xmm7
-	movzx	esi, cl
 	vmulss	xmm1, xmm7, xmm7
 	vaddss	xmm3, xmm0, xmm4
+	vmulss	xmm2, xmm1, xmm7
+	vmulss	xmm0, xmm3, xmm2
+	movzx	ebp, al
+	movzx	edx, sil
+
+; 178  : 
+; 179  : 	int A = perm[xi]  +yi, AA = perm[A]  +zi, AAA = perm[AA]  +wi,
+
+	lea	rsi, OFFSET FLAT:?perm@@3PAEA
+	vmovss	DWORD PTR k$1$[rsp], xmm0
+	vmovss	DWORD PTR zf0$1$[rsp], xmm7
 	vmovss	DWORD PTR wf0$1$[rsp], xmm14
 	vmovss	DWORD PTR xf1$1$[rsp], xmm13
 	vmovss	DWORD PTR yf1$1$[rsp], xmm8
 	vmovss	DWORD PTR zf1$1$[rsp], xmm12
 	vmovss	DWORD PTR wf1$1$[rsp], xmm11
-	vmovss	DWORD PTR i$1$[rsp], xmm10
-	mov	DWORD PTR wi$1$[rsp], esi
-	vmulss	xmm2, xmm1, xmm7
+	vmovss	DWORD PTR i$1$[rsp], xmm9
+	movzx	r8d, dil
+	movzx	r9d, bl
+	mov	DWORD PTR wi$2$[rsp], ebp
+	movzx	eax, BYTE PTR [rdx+rsi]
+	add	eax, r8d
 
-; 176  : 
-; 177  : 	int A = perm[xi]  +yi, AA = perm[A]  +zi, AAA = perm[AA]  +wi,
-
-	lea	rbp, OFFSET FLAT:?perm@@3PAEA
-	movzx	edx, r10b
-	vmulss	xmm0, xmm3, xmm2
-
-; 178  :                                               AAB = perm[AA+1]+wi,
-; 179  : 		                   AB = perm[A+1]+zi, ABA = perm[AB]  +wi,
-; 180  :                                               ABB = perm[AB+1]+wi;
-; 181  : 	int B = perm[xi+1]+yi, BA = perm[B]  +zi, BAA = perm[BA]  +wi,
-; 182  :                                               BAB = perm[BA+1]+wi,
-; 183  : 		                   BB = perm[B+1]+zi, BBA = perm[BB]  +wi,
-; 184  :                                               BBB = perm[BB+1]+wi;
-; 185  : 											  
-; 186  : 	
-; 187  : 	float l1 = lerp2(i, grad(perm[AAA  ], xf0, yf0, zf0, wf0), grad(perm[BAA  ], xf1, yf0, zf0, wf0));
+; 183  : 	int B = perm[xi+1]+yi, BA = perm[B]  +zi, BAA = perm[BA]  +wi,
+; 184  :                                               BAB = perm[BA+1]+wi,
+; 185  : 		                   BB = perm[B+1]+zi, BBA = perm[BB]  +wi,
+; 186  :                                               BBB = perm[BB+1]+wi;
+; 187  : 											  
+; 188  : 	
+; 189  : 	float l1 = lerp2(i, grad(perm[AAA  ], xf0, yf0, zf0, wf0), grad(perm[BAA  ], xf1, yf0, zf0, wf0));
 
 	vmovaps	xmm3, xmm7
-	vmovaps	xmm2, xmm9
-	movzx	eax, BYTE PTR [rdx+rbp]
-	add	eax, r9d
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm15
-	vmovss	DWORD PTR k$1$[rsp], xmm0
+	movzx	edi, BYTE PTR [rax+rsi]
+	movzx	r12d, BYTE PTR [rax+rsi+1]
+	add	edi, r9d
+	movzx	eax, BYTE PTR [rdx+rsi+1]
+	add	r12d, r9d
+	add	eax, r8d
 	vmovss	DWORD PTR [rsp+32], xmm14
-	movzx	edi, BYTE PTR [rax+rbp]
-	movzx	r12d, BYTE PTR [rax+rbp+1]
-	add	edi, r8d
-	movzx	eax, BYTE PTR [rdx+rbp+1]
-	add	r12d, r8d
-	add	eax, r9d
-	movzx	ebx, BYTE PTR [rax+rbp]
-	movzx	r13d, BYTE PTR [rax+rbp+1]
-	add	ebx, r8d
-	movzx	eax, BYTE PTR [rdi+rbp]
-	add	r13d, r8d
-	add	eax, esi
+	movzx	ebx, BYTE PTR [rax+rsi]
+	movzx	r13d, BYTE PTR [rax+rsi+1]
+	add	ebx, r9d
+	movzx	eax, BYTE PTR [rdi+rsi]
+	add	r13d, r9d
+	add	eax, ebp
 	mov	r15d, eax
-	movzx	ecx, BYTE PTR [rax+rbp]
+	movzx	ecx, BYTE PTR [rax+rsi]
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
-	movzx	eax, BYTE PTR [rbx+rbp]
-	add	eax, esi
+	movzx	eax, BYTE PTR [rbx+rsi]
+	add	eax, ebp
 	vmovaps	xmm3, xmm7
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm13
-	movzx	ecx, BYTE PTR [rax+rbp]
+	movzx	ecx, BYTE PTR [rax+rsi]
 	vmovss	DWORD PTR [rsp+32], xmm14
 	vmovaps	xmm6, xmm0
 	mov	r14d, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
-	movzx	ebp, BYTE PTR [r12+rbp]
+	movzx	eax, BYTE PTR [r12+rsi]
 
-; 188  : 	float l2 = lerp2(i, grad(perm[ABA  ], xf0, yf1, zf0, wf0), grad(perm[BBA  ], xf1, yf1, zf0, wf0));
-
-	lea	rax, OFFSET FLAT:?perm@@3PAEA
-
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm6
-	vmulss	xmm2, xmm1, xmm10
+	vmulss	xmm2, xmm1, xmm9
+
+; 180  :                                               AAB = perm[AA+1]+wi,
+; 181  : 		                   AB = perm[A+1]+zi, ABA = perm[AB]  +wi,
+
+	add	eax, ebp
+
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+
 	vaddss	xmm14, xmm2, xmm6
 
-; 188  : 	float l2 = lerp2(i, grad(perm[ABA  ], xf0, yf1, zf0, wf0), grad(perm[BBA  ], xf1, yf1, zf0, wf0));
+; 190  : 	float l2 = lerp2(i, grad(perm[ABA  ], xf0, yf1, zf0, wf0), grad(perm[BBA  ], xf1, yf1, zf0, wf0));
 
 	vmovss	xmm6, DWORD PTR wf0$1$[rsp]
-	add	ebp, esi
 	vmovaps	xmm3, xmm7
+	movzx	ecx, BYTE PTR [rsi+rax]
 	vmovaps	xmm2, xmm8
 	vmovaps	xmm1, xmm15
-	movzx	ecx, BYTE PTR [rax+rbp]
 	vmovss	DWORD PTR [rsp+32], xmm6
+	mov	ebp, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
-	lea	rcx, OFFSET FLAT:?perm@@3PAEA
-	movzx	eax, BYTE PTR [rdi+rcx+1]
-	add	eax, esi
+	movzx	esi, BYTE PTR [rdi+rsi+1]
 
-; 189  : 	float l3 = lerp2(i, grad(perm[AAB  ], xf0, yf0, zf1, wf0), grad(perm[BAB  ], xf1, yf0, zf1, wf0));
+; 191  : 	float l3 = lerp2(i, grad(perm[AAB  ], xf0, yf0, zf1, wf0), grad(perm[BAB  ], xf1, yf0, zf1, wf0));
 
+	lea	rax, OFFSET FLAT:?perm@@3PAEA
+	add	esi, DWORD PTR wi$2$[rsp]
 	vmovaps	xmm3, xmm12
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm15
-	movzx	ecx, BYTE PTR [rax+rcx]
+	movzx	ecx, BYTE PTR [rsi+rax]
 	vmovss	DWORD PTR [rsp+32], xmm6
 	vmovaps	xmm8, xmm0
-	mov	esi, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 	lea	rcx, OFFSET FLAT:?perm@@3PAEA
 	movzx	eax, BYTE PTR [rbx+rcx+1]
-	add	eax, DWORD PTR wi$1$[rsp]
+	add	eax, DWORD PTR wi$2$[rsp]
 	vmovaps	xmm6, xmm0
 	vmovss	xmm0, DWORD PTR wf0$1$[rsp]
 	vmovaps	xmm3, xmm12
 	movzx	ecx, BYTE PTR [rax+rcx]
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm13
 	vmovss	DWORD PTR [rsp+32], xmm0
 	mov	edi, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
-	lea	rcx, OFFSET FLAT:?perm@@3PAEA
-	movzx	eax, BYTE PTR [r12+rcx+1]
-	mov	r12d, DWORD PTR wi$1$[rsp]
-	add	eax, r12d
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm6
 
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
+; 192  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
 
 	vmovss	xmm0, DWORD PTR wf0$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
-	vmulss	xmm2, xmm1, xmm10
+	vmulss	xmm2, xmm1, xmm9
 
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
+; 182  :                                               ABB = perm[AB+1]+wi;
 
-	movzx	ecx, BYTE PTR [rax+rcx]
+	lea	rcx, OFFSET FLAT:?perm@@3PAEA
+	movzx	eax, BYTE PTR [r12+rcx+1]
+	mov	r12d, DWORD PTR wi$2$[rsp]
+	add	eax, r12d
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm13, xmm2, xmm6
 
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
+; 192  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
 
-	mov	ebx, eax
 	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
 	vmovaps	xmm3, xmm12
+	movzx	ecx, BYTE PTR [rax+rcx]
 	vmovaps	xmm1, xmm15
 	vmovss	DWORD PTR [rsp+32], xmm0
+	mov	ebx, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 191  : 	float l5 = lerp2(i, grad(perm[AAA+1], xf0, yf0, zf0, wf1), grad(perm[BAA+1], xf1, yf0, zf0, wf1));
+; 193  : 	float l5 = lerp2(i, grad(perm[AAA+1], xf0, yf0, zf0, wf1), grad(perm[BAA+1], xf1, yf0, zf0, wf1));
 
 	lea	rax, OFFSET FLAT:?perm@@3PAEA
 	movzx	ecx, BYTE PTR [r15+rax+1]
 	vmovaps	xmm3, xmm7
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm15
 	vmovss	DWORD PTR [rsp+32], xmm11
 	vmovaps	xmm12, xmm0
@@ -3604,22 +3657,22 @@ $LN42:
 	lea	r15, OFFSET FLAT:?perm@@3PAEA
 	movzx	ecx, BYTE PTR [r14+r15+1]
 	vmovaps	xmm3, xmm7
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovss	DWORD PTR [rsp+32], xmm11
 	vmovaps	xmm6, xmm0
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 192  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
+; 194  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
 
 	movzx	ecx, BYTE PTR [r15+rbp+1]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm6
-	vmulss	xmm2, xmm1, xmm10
+	vmulss	xmm2, xmm1, xmm9
 	vaddss	xmm11, xmm2, xmm6
 
-; 192  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
+; 194  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
 
 	vmovss	xmm6, DWORD PTR wf1$1$[rsp]
 	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
@@ -3628,11 +3681,11 @@ $LN42:
 	vmovss	DWORD PTR [rsp+32], xmm6
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 193  : 	float l7 = lerp2(i, grad(perm[AAB+1], xf0, yf0, zf1, wf1), grad(perm[BAB+1], xf1, yf0, zf1, wf1));
+; 195  : 	float l7 = lerp2(i, grad(perm[AAB+1], xf0, yf0, zf1, wf1), grad(perm[BAB+1], xf1, yf0, zf1, wf1));
 
 	movzx	ecx, BYTE PTR [rsi+r15+1]
 	vmovss	xmm3, DWORD PTR zf1$1$[rsp]
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovaps	xmm1, xmm15
 	vmovss	DWORD PTR [rsp+32], xmm6
 	vmovaps	xmm7, xmm0
@@ -3642,35 +3695,35 @@ $LN42:
 	vmovss	xmm1, DWORD PTR xf1$1$[rsp]
 	vmovaps	xmm6, xmm0
 	vmovss	xmm0, DWORD PTR wf1$1$[rsp]
-	vmovaps	xmm2, xmm9
+	vmovaps	xmm2, xmm10
 	vmovss	DWORD PTR [rsp+32], xmm0
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	movzx	ecx, BYTE PTR [rbx+r15+1]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm0, xmm6
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	vmovss	xmm0, DWORD PTR wf1$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
-	vmulss	xmm3, xmm2, xmm10
+	vmulss	xmm3, xmm2, xmm9
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm10, xmm3, xmm6
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	vmovss	xmm3, DWORD PTR zf1$1$[rsp]
 	vmovaps	xmm1, xmm15
@@ -3689,176 +3742,173 @@ $LN42:
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 	movzx	eax, BYTE PTR [r15+r13+1]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
-	vmovss	xmm15, DWORD PTR j$1$[rsp]
 	vsubss	xmm1, xmm0, xmm8
 	vmulss	xmm2, xmm1, DWORD PTR i$1$[rsp]
 	vaddss	xmm3, xmm2, xmm8
+
+; 192  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
+
+	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
+
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+
 	vsubss	xmm0, xmm3, xmm14
+	vmulss	xmm1, xmm0, DWORD PTR j$1$[rsp]
 
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
+; 192  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
 
+	vmovss	xmm0, DWORD PTR wf0$1$[rsp]
 	vmovss	xmm3, DWORD PTR zf1$1$[rsp]
 	add	eax, r12d
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
-
-	vmulss	xmm1, xmm0, xmm15
-
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
-
-	vmovss	xmm0, DWORD PTR wf0$1$[rsp]
-	vmovss	DWORD PTR [rsp+32], xmm0
-	movzx	ecx, BYTE PTR [rax+r15]
-
-; 195  : 
-; 196  : 	l1 = lerp2(j, l1, l2);
+; 197  : 
+; 198  : 	l1 = lerp2(j, l1, l2);
 
 	vaddss	xmm8, xmm14, xmm1
-	mov	ebx, eax
-
-; 190  : 	float l4 = lerp2(i, grad(perm[ABB  ], xf0, yf1, zf1, wf0), grad(perm[BBB  ], xf1, yf1, zf1, wf0));
-
-	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
 	vmovss	xmm1, DWORD PTR xf1$1$[rsp]
+	vmovss	DWORD PTR [rsp+32], xmm0
+	movzx	ecx, BYTE PTR [rax+r15]
+	mov	ebx, eax
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vmovss	xmm14, DWORD PTR i$1$[rsp]
+	vsubss	xmm1, xmm0, xmm12
+	vmulss	xmm2, xmm1, xmm14
 
-; 192  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
+; 194  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
 
 	movzx	ecx, BYTE PTR [rdi+r15+1]
 	vmovss	xmm3, DWORD PTR zf0$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
-	vsubss	xmm1, xmm0, xmm12
-	vmulss	xmm2, xmm1, xmm14
 	vaddss	xmm4, xmm2, xmm12
+	vmovss	xmm12, DWORD PTR j$1$[rsp]
 
-; 192  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
+; 194  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
 
-	vmovss	xmm12, DWORD PTR wf1$1$[rsp]
 	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm0, xmm4, xmm13
-	vmulss	xmm1, xmm0, xmm15
+	vmulss	xmm1, xmm0, xmm12
 	vaddss	xmm6, xmm1, xmm13
 
-; 192  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
+; 194  : 	float l6 = lerp2(i, grad(perm[ABA+1], xf0, yf1, zf0, wf1), grad(perm[BBA+1], xf1, yf1, zf0, wf1));
 
+	vmovss	xmm13, DWORD PTR wf1$1$[rsp]
 	vmovss	xmm1, DWORD PTR xf1$1$[rsp]
-	vmovss	DWORD PTR [rsp+32], xmm12
+	vmovss	DWORD PTR [rsp+32], xmm13
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	movzx	ecx, BYTE PTR [rbx+r15+1]
 	vmovss	xmm3, DWORD PTR zf1$1$[rsp]
 	vmovss	xmm2, DWORD PTR yf1$1$[rsp]
 	vmovss	xmm1, DWORD PTR xf1$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm4, xmm0, xmm7
 	vmulss	xmm5, xmm4, xmm14
 	vaddss	xmm0, xmm5, xmm7
 	vsubss	xmm4, xmm0, xmm11
 	vsubss	xmm0, xmm6, xmm8
-	vmulss	xmm5, xmm4, xmm15
+	vmulss	xmm5, xmm4, xmm12
 	vmulss	xmm4, xmm0, DWORD PTR k$1$[rsp]
 
-; 197  : 	l2 = lerp2(j, l3, l4);
-; 198  : 	l3 = lerp2(j, l5, l6);
-; 199  : 	l4 = lerp2(j, l7, l8);
-; 200  : 
-; 201  : 	l1 = lerp2(k, l1, l2);
+; 199  : 	l2 = lerp2(j, l3, l4);
+; 200  : 	l3 = lerp2(j, l5, l6);
+; 201  : 	l4 = lerp2(j, l7, l8);
+; 202  : 
+; 203  : 	l1 = lerp2(k, l1, l2);
 
 	vaddss	xmm6, xmm8, xmm4
-	vmovss	DWORD PTR [rsp+32], xmm12
+	vmovss	DWORD PTR [rsp+32], xmm13
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm7, xmm5, xmm11
 
-; 194  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
+; 196  : 	float l8 = lerp2(i, grad(perm[ABB+1], xf0, yf1, zf1, wf1), grad(perm[BBB+1], xf1, yf1, zf1, wf1));
 
 	call	?grad@Perlin@@CAMHMMMM@Z		; Perlin::grad
 	vmovss	xmm5, DWORD PTR wf0$1$[rsp]
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm13, XMMWORD PTR [rsp+112]
 	lea	r11, QWORD PTR [rsp+248]
 	vmovaps	xmm8, XMMWORD PTR [r11-56]
 	vmovaps	xmm11, XMMWORD PTR [r11-104]
-	vmovaps	xmm12, XMMWORD PTR [r11-120]
+	vmovaps	xmm15, XMMWORD PTR [rsp+80]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm9
 	vmulss	xmm2, xmm1, xmm14
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm14, XMMWORD PTR [rsp+96]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm3, xmm2, xmm9
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm9, XMMWORD PTR [r11-72]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm0, xmm3, xmm10
-	vmulss	xmm1, xmm0, xmm15
+	vmulss	xmm1, xmm0, xmm12
 
-; 205  : }
+; 207  : }
 
-	vmovaps	xmm15, XMMWORD PTR [rsp+80]
+	vmovaps	xmm12, XMMWORD PTR [r11-120]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm2, xmm1, xmm10
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm10, XMMWORD PTR [r11-88]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm3, xmm2, xmm7
 	vmulss	xmm0, xmm3, DWORD PTR k$1$[rsp]
 
-; 175  : 	float l = FADE(wf0);
+; 177  : 	float l = FADE(wf0);
 
 	vmulss	xmm2, xmm5, DWORD PTR __real@40c00000
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm1, xmm0, xmm7
 
-; 175  : 	float l = FADE(wf0);
+; 177  : 	float l = FADE(wf0);
 
 	vsubss	xmm0, xmm2, DWORD PTR __real@41700000
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm7, XMMWORD PTR [r11-40]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm4, xmm1, xmm6
 
-; 175  : 	float l = FADE(wf0);
+; 177  : 	float l = FADE(wf0);
 
 	vmulss	xmm1, xmm0, xmm5
 	vaddss	xmm3, xmm1, DWORD PTR __real@41200000
@@ -3866,18 +3916,18 @@ $LN42:
 	vmulss	xmm0, xmm2, xmm5
 	vmulss	xmm1, xmm3, xmm0
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vmulss	xmm3, xmm4, xmm1
 	vaddss	xmm2, xmm3, xmm6
 
-; 202  : 	l2 = lerp2(k, l3, l4);
-; 203  : 
-; 204  : 	return lerp2(l, l1, l2) * 0.87f;
+; 204  : 	l2 = lerp2(k, l3, l4);
+; 205  : 
+; 206  : 	return lerp2(l, l1, l2) * 0.87f;
 
 	vmulss	xmm0, xmm2, DWORD PTR __real@3f5eb852
 
-; 205  : }
+; 207  : }
 
 	vmovaps	xmm6, XMMWORD PTR [r11-24]
 	mov	rsp, r11
@@ -3894,6 +3944,12 @@ $LN42:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMMM@Z
 _TEXT	SEGMENT
 zf$1$ = 240
@@ -3903,7 +3959,7 @@ y$ = 248
 z$ = 256
 ?noise@Perlin@@SAMMMM@Z PROC				; Perlin::noise, COMDAT
 
-; 129  : float Perlin::noise(float x, float y, float z) {
+; 131  : float Perlin::noise(float x, float y, float z) {
 
 $LN24:
 	mov	rax, rsp
@@ -3915,67 +3971,97 @@ $LN24:
 	push	r15
 	sub	rsp, 192				; 000000c0H
 	vmovaps	XMMWORD PTR [rax-56], xmm6
-
-; 142  : 	int A = perm[xi  ]+yi, AA = perm[A]+zi, AB = perm[A+1]+zi;
-
-	lea	r15, OFFSET FLAT:?perm@@3PAEA
 	vmovaps	XMMWORD PTR [rax-72], xmm7
-
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
-
-	vmovss	xmm7, DWORD PTR __real@3f800000
 	vmovaps	XMMWORD PTR [rax-88], xmm8
-	vcvttss2si ecx, xmm0
 	vmovaps	XMMWORD PTR [rax-104], xmm9
 	vmovaps	XMMWORD PTR [rax-120], xmm10
-	vcvttss2si eax, xmm1
-	vmovaps	xmm4, xmm0
-	vmovaps	xmm5, xmm1
-	vxorps	xmm3, xmm3, xmm3
-	vcomiss	xmm3, xmm0
-	vxorps	xmm0, xmm0, xmm0
-	lea	edx, DWORD PTR [rax-1]
 	vmovaps	XMMWORD PTR [rsp+96], xmm11
-	lea	r9d, DWORD PTR [rcx-1]
 	vmovaps	XMMWORD PTR [rsp+80], xmm12
-	cmovbe	r9d, ecx
 	vmovaps	XMMWORD PTR [rsp+64], xmm13
-	vcomiss	xmm3, xmm1
-	vcvtsi2ss xmm0, xmm0, r9d
-	vsubss	xmm13, xmm4, xmm0
 	vmovaps	XMMWORD PTR [rsp+48], xmm14
 	vmovaps	XMMWORD PTR [rsp+32], xmm15
-	cmovbe	edx, eax
-	vcvttss2si eax, xmm2
-	vcomiss	xmm3, xmm2
-	vxorps	xmm0, xmm0, xmm0
+	vmovaps	xmm8, xmm2
+	vmovaps	xmm7, xmm1
+	vmovaps	xmm6, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 132  : 	int xi = floor(x);
+
+	vcvttss2si edi, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm7
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 133  : 	int yi = floor(y);
+
+	vcvttss2si ebx, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm8
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 134  : 	int zi = floor(z);
+
+	vcvttss2si eax, xmm0
 	vxorps	xmm1, xmm1, xmm1
-	lea	ecx, DWORD PTR [rax-1]
-	movzx	r8d, dl
-	cmovbe	ecx, eax
-	vcvtsi2ss xmm0, xmm0, ecx
-	vsubss	xmm6, xmm2, xmm0
+
+; 135  : 	float xf = x - float(xi);
+
+	vcvtsi2ss xmm1, xmm1, edi
+	vsubss	xmm13, xmm6, xmm1
+	vxorps	xmm0, xmm0, xmm0
+
+; 136  : 	float yf = y - float(yi);
+
+	vcvtsi2ss xmm0, xmm0, ebx
+	vsubss	xmm14, xmm7, xmm0
+
+; 137  : 	float zf = z - float(zi);
+; 138  : 	xi = xi & 255;
+; 139  : 	yi = yi & 255;
+; 140  : 	zi = zi & 255;
+; 141  : 	float i = FADE(xf);
+
 	vmulss	xmm0, xmm13, DWORD PTR __real@40c00000
 	vsubss	xmm0, xmm0, DWORD PTR __real@41700000
-	vcvtsi2ss xmm1, xmm1, edx
-	vsubss	xmm14, xmm5, xmm1
+
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+
+	vmovss	xmm7, DWORD PTR __real@3f800000
+	vxorps	xmm1, xmm1, xmm1
+	vcvtsi2ss xmm1, xmm1, eax
+	vsubss	xmm6, xmm8, xmm1
 	vmulss	xmm1, xmm0, xmm13
 	vaddss	xmm2, xmm1, DWORD PTR __real@41200000
-	movzx	r14d, cl
-	movzx	ecx, r9b
+	movzx	r14d, al
+	lea	r15, OFFSET FLAT:?perm@@3PAEA
+	movzx	ecx, dil
+	movzx	edx, bl
 	vmulss	xmm0, xmm13, xmm13
 	vmulss	xmm1, xmm0, xmm13
-	vmulss	xmm8, xmm2, xmm1
 	movzx	eax, BYTE PTR [rcx+r15]
+	movzx	ebp, BYTE PTR [rcx+r15+1]
+	add	eax, edx
+	vmulss	xmm8, xmm2, xmm1
 	vmulss	xmm2, xmm14, DWORD PTR __real@40c00000
 	vsubss	xmm0, xmm2, DWORD PTR __real@41700000
-	movzx	ebp, BYTE PTR [rcx+r15+1]
-	add	eax, r8d
 	vmulss	xmm1, xmm0, xmm14
 	vaddss	xmm3, xmm1, DWORD PTR __real@41200000
 	mov	ebx, eax
-	add	ebp, r8d
+	add	ebp, edx
 	movzx	eax, BYTE PTR [rax+r15+1]
 	vmulss	xmm2, xmm14, xmm14
 	add	eax, r14d
@@ -4000,33 +4086,26 @@ $LN24:
 	vmovaps	xmm10, xmm0
 	mov	edi, eax
 	call	?grad@Perlin@@CAMHMMM@Z			; Perlin::grad
-	vmovaps	xmm6, xmm0
-	vsubss	xmm9, xmm13, xmm7
-
-; 143  : 	int B = perm[xi+1]+yi, BA = perm[B]+zi, BB = perm[B+1]+zi;
-
 	movzx	eax, BYTE PTR [r15+rbp]
 	add	eax, r14d
-
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
-
+	vmovaps	xmm6, xmm0
+	vsubss	xmm9, xmm13, xmm7
+	mov	ebx, eax
+	movzx	ecx, BYTE PTR [rax+r15+1]
 	vmovaps	xmm3, xmm11
 	vmovaps	xmm2, xmm14
 	vmovaps	xmm1, xmm9
-	movzx	ecx, BYTE PTR [rax+r15+1]
-	mov	ebx, eax
 	call	?grad@Perlin@@CAMHMMM@Z			; Perlin::grad
 	movzx	ecx, BYTE PTR [rsi+r15]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm2, xmm0, xmm6
 	vmulss	xmm3, xmm2, xmm8
 	vaddss	xmm8, xmm3, xmm6
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	vmovss	xmm3, DWORD PTR zf$1$[rsp]
 	vmovaps	xmm2, xmm12
@@ -4046,30 +4125,31 @@ $LN24:
 	call	?grad@Perlin@@CAMHMMM@Z			; Perlin::grad
 	movzx	eax, BYTE PTR [r15+rbp+1]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vmovss	xmm13, DWORD PTR i$1$[rsp]
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	vmovss	xmm14, DWORD PTR zf$1$[rsp]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm6
 	vmulss	xmm2, xmm1, xmm13
 
-; 143  : 	int B = perm[xi+1]+yi, BA = perm[B]+zi, BB = perm[B+1]+zi;
+; 144  : 	int A = perm[xi  ]+yi, AA = perm[A]+zi, AB = perm[A+1]+zi;
+; 145  : 	int B = perm[xi+1]+yi, BA = perm[B]+zi, BB = perm[B+1]+zi;
 
 	add	eax, r14d
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm6, xmm2, xmm6
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	vmovaps	xmm3, xmm14
 	vmovaps	xmm2, xmm12
@@ -4079,7 +4159,7 @@ $LN24:
 	call	?grad@Perlin@@CAMHMMM@Z			; Perlin::grad
 	movzx	ecx, BYTE PTR [rbx+r15+1]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm4, xmm0, xmm7
 	vmulss	xmm5, xmm4, xmm13
@@ -4087,30 +4167,30 @@ $LN24:
 	vsubss	xmm4, xmm0, xmm6
 	vmulss	xmm5, xmm4, xmm15
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	vmovaps	xmm3, xmm11
 	vmovaps	xmm2, xmm12
 	vmovaps	xmm1, xmm9
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm6, xmm5, xmm6
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	call	?grad@Perlin@@CAMHMMM@Z			; Perlin::grad
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	lea	r11, QWORD PTR [rsp+192]
 	mov	rbx, QWORD PTR [r11+64]
@@ -4119,150 +4199,120 @@ $LN24:
 	vmovaps	xmm11, XMMWORD PTR [r11-96]
 	vmovaps	xmm12, XMMWORD PTR [r11-112]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm10
 	vmulss	xmm2, xmm1, xmm13
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm13, XMMWORD PTR [r11-128]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm3, xmm2, xmm10
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm10, XMMWORD PTR [r11-80]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm0, xmm3, xmm8
 	vmulss	xmm1, xmm0, xmm15
 
-; 130  : 	int xi = FASTFLOOR(x);
-; 131  : 	int yi = FASTFLOOR(y);
-; 132  : 	int zi = FASTFLOOR(z);
-; 133  : 	float xf = x - (float)xi;
-; 134  : 	float yf = y - (float)yi;
-; 135  : 	float zf = z - (float)zi;
-; 136  : 	xi = xi & 255;
-; 137  : 	yi = yi & 255;
-; 138  : 	zi = zi & 255;
-; 139  : 	float i = FADE(xf);
-; 140  : 	float j = FADE(yf);
-; 141  : 	float k = FADE(zf);
+; 142  : 	float j = FADE(yf);
+; 143  : 	float k = FADE(zf);
 
 	vmulss	xmm0, xmm14, DWORD PTR __real@40c00000
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm15, XMMWORD PTR [rsp+32]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm2, xmm1, xmm8
 
-; 130  : 	int xi = FASTFLOOR(x);
-; 131  : 	int yi = FASTFLOOR(y);
-; 132  : 	int zi = FASTFLOOR(z);
-; 133  : 	float xf = x - (float)xi;
-; 134  : 	float yf = y - (float)yi;
-; 135  : 	float zf = z - (float)zi;
-; 136  : 	xi = xi & 255;
-; 137  : 	yi = yi & 255;
-; 138  : 	zi = zi & 255;
-; 139  : 	float i = FADE(xf);
-; 140  : 	float j = FADE(yf);
-; 141  : 	float k = FADE(zf);
+; 142  : 	float j = FADE(yf);
+; 143  : 	float k = FADE(zf);
 
 	vsubss	xmm1, xmm0, DWORD PTR __real@41700000
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm8, XMMWORD PTR [r11-48]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm4, xmm2, xmm6
 
-; 130  : 	int xi = FASTFLOOR(x);
-; 131  : 	int yi = FASTFLOOR(y);
-; 132  : 	int zi = FASTFLOOR(z);
-; 133  : 	float xf = x - (float)xi;
-; 134  : 	float yf = y - (float)yi;
-; 135  : 	float zf = z - (float)zi;
-; 136  : 	xi = xi & 255;
-; 137  : 	yi = yi & 255;
-; 138  : 	zi = zi & 255;
-; 139  : 	float i = FADE(xf);
-; 140  : 	float j = FADE(yf);
-; 141  : 	float k = FADE(zf);
+; 142  : 	float j = FADE(yf);
+; 143  : 	float k = FADE(zf);
 
 	vmulss	xmm2, xmm1, xmm14
 	vaddss	xmm3, xmm2, DWORD PTR __real@41200000
 	vmulss	xmm0, xmm14, xmm14
 	vmulss	xmm1, xmm0, xmm14
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm14, XMMWORD PTR [rsp+48]
 	vmulss	xmm2, xmm3, xmm1
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vmulss	xmm3, xmm4, xmm2
 	vaddss	xmm0, xmm3, xmm6
 
-; 144  : 
-; 145  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
+; 146  : 
+; 147  : 	return lerp2(k, lerp2(j, lerp2(i, grad(perm[AA  ], xf  , yf  , zf   ),
 
 	vmulss	xmm0, xmm0, DWORD PTR __real@3f6f9db2
 
-; 146  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
-; 147  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
-; 148  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
-; 149  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
-; 150  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
-; 151  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
-; 152  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
-; 153  : }
+; 148  : 								   grad(perm[BA  ], xf-1, yf  , zf   )),
+; 149  : 						   lerp2(i, grad(perm[AB  ], xf  , yf-1, zf   ),
+; 150  : 								   grad(perm[BB  ], xf-1, yf-1, zf   ))),
+; 151  : 				   lerp2(j, lerp2(i, grad(perm[AA+1], xf  , yf  , zf-1 ),
+; 152  : 								   grad(perm[BA+1], xf-1, yf  , zf-1 )),
+; 153  : 						   lerp2(i, grad(perm[AB+1], xf  , yf-1, zf-1 ),
+; 154  : 								   grad(perm[BB+1], xf-1, yf-1, zf-1 )))) * 0.936f;
+; 155  : }
 
 	vmovaps	xmm6, XMMWORD PTR [r11-16]
 	mov	rsp, r11
@@ -4276,86 +4326,98 @@ $LN24:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMMM@Z
 _TEXT	SEGMENT
-x$ = 160
-y$ = 168
+x$ = 192
+y$ = 200
 ?noise@Perlin@@SAMMM@Z PROC				; Perlin::noise, COMDAT
 
-; 109  : float Perlin::noise(float x, float y) {    
+; 111  : float Perlin::noise(float x, float y) {    
 
 $LN38:
 	mov	rax, rsp
-	sub	rsp, 152				; 00000098H
-
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
-
-	vmovss	xmm5, DWORD PTR __xmm@80000000800000008000000080000000
+	push	rbx
+	sub	rsp, 176				; 000000b0H
 	vmovaps	XMMWORD PTR [rax-24], xmm6
-
-; 120  : 	int A = perm[xi  ] + yi;
-
-	lea	r10, OFFSET FLAT:?perm@@3PAEA
-	vcvttss2si ecx, xmm0
 	vmovaps	XMMWORD PTR [rax-40], xmm7
-
-; 76   :     float i = h<4 ? x : y;
-
-	mov	r9d, 4
 	vmovaps	XMMWORD PTR [rax-56], xmm8
-
-; 109  : float Perlin::noise(float x, float y) {    
-
-	vmovaps	xmm3, xmm0
 	vmovaps	XMMWORD PTR [rax-72], xmm9
-
-; 110  :     int xi = FASTFLOOR(x);
-; 111  : 	int yi = FASTFLOOR(y);
-
-	lea	r8d, DWORD PTR [rcx-1]
 	vmovaps	XMMWORD PTR [rax-88], xmm10
 	vmovaps	XMMWORD PTR [rax-104], xmm11
-	vmovaps	xmm4, xmm1
 	vmovaps	XMMWORD PTR [rax-120], xmm12
-	vcvttss2si eax, xmm1
-	vxorps	xmm2, xmm2, xmm2
-	vcomiss	xmm2, xmm0
+	vmovaps	XMMWORD PTR [rsp+48], xmm13
+	vmovaps	XMMWORD PTR [rsp+32], xmm14
+	vmovaps	xmm7, xmm1
+	vmovaps	xmm6, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 112  :     int xi = floor(x);
+
+	vcvttss2si ebx, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	vmovaps	xmm0, xmm7
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+
+	vmovss	xmm5, DWORD PTR __xmm@80000000800000008000000080000000
+
+; 113  : 	int yi = floor(y);
+
+	vcvttss2si eax, xmm0
 	vxorps	xmm0, xmm0, xmm0
-	cmovbe	r8d, ecx
-	vmovaps	XMMWORD PTR [rsp+16], xmm13
 
-; 112  :     float xf0 = x - xi;
+; 114  :     float xf0 = x - xi;
+; 115  :     float yf0 = y - yi;
 
-	vcomiss	xmm2, xmm1
-	vcvtsi2ss xmm0, xmm0, r8d
-	vsubss	xmm8, xmm3, xmm0
+	vcvtsi2ss xmm0, xmm0, eax
+	vsubss	xmm9, xmm7, xmm0
 
-; 113  :     float yf0 = y - yi;
-; 114  :     float xf1 = xf0 - 1.0f;
-; 115  :     float yf1 = yf0 - 1.0f;
-; 116  :     xi = xi & 255;
-; 117  :     yi = yi & 255;       
-; 118  :     float i = FADE(xf0);
+; 116  :     float xf1 = xf0 - 1.0f;
+; 117  :     float yf1 = yf0 - 1.0f;
+; 118  :     xi = xi & 255;
+; 119  :     yi = yi & 255;       
 
+	movzx	edx, al
+
+; 122  : 	int A = perm[xi  ] + yi;
+
+	lea	r10, OFFSET FLAT:?perm@@3PAEA
+	vxorps	xmm2, xmm2, xmm2
+	vcvtsi2ss xmm2, xmm2, ebx
+	vsubss	xmm8, xmm6, xmm2
 	vmulss	xmm0, xmm8, DWORD PTR __real@40c00000
-	vmovaps	XMMWORD PTR [rsp], xmm14
-	lea	ecx, DWORD PTR [rax-1]
 	vsubss	xmm0, xmm0, DWORD PTR __real@41700000
 	vsubss	xmm7, xmm8, DWORD PTR __real@3f800000
-	cmovbe	ecx, eax
-	vxorps	xmm1, xmm1, xmm1
-	vcvtsi2ss xmm1, xmm1, ecx
-	vsubss	xmm9, xmm4, xmm1
 	vsubss	xmm6, xmm9, DWORD PTR __real@3f800000
 	vmulss	xmm1, xmm0, xmm8
 	vaddss	xmm2, xmm1, DWORD PTR __real@41200000
-	movzx	edx, cl
-	movzx	ecx, r8b
+	movzx	ecx, bl
+
+; 78   :     float i = h<4 ? x : y;
+
+	mov	r9d, 4
+
+; 120  :     float i = FADE(xf0);
+
 	vmulss	xmm0, xmm8, xmm8
 	vmulss	xmm1, xmm0, xmm8
 	vmulss	xmm13, xmm2, xmm1
 
-; 121  : 	int B = perm[xi+1] + yi;
+; 123  : 	int B = perm[xi+1] + yi;
 
 	movzx	eax, BYTE PTR [rcx+r10+1]
 	vmulss	xmm2, xmm9, DWORD PTR __real@40c00000
@@ -4366,29 +4428,29 @@ $LN38:
 	vaddss	xmm3, xmm1, DWORD PTR __real@41200000
 	add	r8d, edx
 
-; 122  : 
-; 123  :     return lerp2(j, lerp2(i, grad(perm[A  ], xf0, yf0),
+; 124  : 
+; 125  :     return lerp2(j, lerp2(i, grad(perm[A  ], xf0, yf0),
 
 	mov	edx, eax
 
-; 75   :     int h = hash & 7;
+; 77   :     int h = hash & 7;
 
 	movzx	eax, BYTE PTR [rax+r10+1]
 	and	eax, 7
 
-; 119  : 	float j = FADE(yf0);
+; 121  : 	float j = FADE(yf0);
 
 	vmulss	xmm2, xmm9, xmm9
 	vmulss	xmm0, xmm2, xmm9
 	vmulss	xmm14, xmm3, xmm0
 
-; 76   :     float i = h<4 ? x : y;
+; 78   :     float i = h<4 ? x : y;
 
 	vmovd	xmm0, r9d
 	vmovd	xmm1, eax
 	vpcmpgtq xmm1, xmm0, xmm1
 
-; 77   :     float j = h<4 ? y : x;
+; 79   :     float j = h<4 ? y : x;
 
 	vmovd	xmm0, r9d
 	vmovd	xmm2, eax
@@ -4396,7 +4458,7 @@ $LN38:
 	vpcmpgtq xmm1, xmm0, xmm2
 	vblendvps xmm0, xmm7, xmm6, xmm1
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	test	al, 1
 	je	SHORT $LN9@noise
@@ -4411,18 +4473,18 @@ $LN11@noise:
 	vaddss	xmm10, xmm0, xmm0
 $LN12@noise:
 
-; 75   :     int h = hash & 7;
+; 77   :     int h = hash & 7;
 
 	movzx	eax, BYTE PTR [r8+r10+1]
 	and	eax, 7
 
-; 76   :     float i = h<4 ? x : y;
+; 78   :     float i = h<4 ? x : y;
 
 	vmovd	xmm1, eax
 	vmovd	xmm0, r9d
 	vpcmpgtq xmm2, xmm0, xmm1
 
-; 77   :     float j = h<4 ? y : x;
+; 79   :     float j = h<4 ? y : x;
 
 	vmovd	xmm0, r9d
 	vmovd	xmm1, eax
@@ -4430,7 +4492,7 @@ $LN12@noise:
 	vpcmpgtq xmm2, xmm0, xmm1
 	vblendvps xmm0, xmm8, xmm6, xmm2
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	test	al, 1
 	je	SHORT $LN15@noise
@@ -4444,22 +4506,22 @@ $LN17@noise:
 	vaddss	xmm1, xmm0, xmm0
 $LN18@noise:
 
-; 75   :     int h = hash & 7;
+; 77   :     int h = hash & 7;
 
 	movzx	eax, BYTE PTR [rdx+r10]
 	and	eax, 7
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	vaddss	xmm12, xmm1, xmm4
 
-; 76   :     float i = h<4 ? x : y;
+; 78   :     float i = h<4 ? x : y;
 
 	vmovd	xmm1, eax
 	vmovd	xmm0, r9d
 	vpcmpgtq xmm2, xmm0, xmm1
 
-; 77   :     float j = h<4 ? y : x;
+; 79   :     float j = h<4 ? y : x;
 
 	vmovd	xmm0, r9d
 	vmovd	xmm1, eax
@@ -4467,7 +4529,7 @@ $LN18@noise:
 	vpcmpgtq xmm2, xmm0, xmm1
 	vblendvps xmm0, xmm7, xmm9, xmm2
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	test	al, 1
 	je	SHORT $LN23@noise
@@ -4481,18 +4543,18 @@ $LN25@noise:
 	vaddss	xmm7, xmm0, xmm0
 $LN26@noise:
 
-; 75   :     int h = hash & 7;
+; 77   :     int h = hash & 7;
 
 	movzx	eax, BYTE PTR [r8+r10]
 	and	eax, 7
 
-; 76   :     float i = h<4 ? x : y;
+; 78   :     float i = h<4 ? x : y;
 
 	vmovd	xmm1, eax
 	vmovd	xmm0, r9d
 	vpcmpgtq xmm2, xmm0, xmm1
 
-; 77   :     float j = h<4 ? y : x;
+; 79   :     float j = h<4 ? y : x;
 
 	vmovd	xmm0, r9d
 	vmovd	xmm1, eax
@@ -4500,7 +4562,7 @@ $LN26@noise:
 	vpcmpgtq xmm2, xmm0, xmm1
 	vblendvps xmm0, xmm8, xmm9, xmm2
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	test	al, 1
 	je	SHORT $LN29@noise
@@ -4514,182 +4576,182 @@ $LN31@noise:
 	vaddss	xmm1, xmm0, xmm0
 $LN32@noise:
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	lea	r11, QWORD PTR [rsp+152]
-	vmovaps	xmm8, XMMWORD PTR [r11-56]
-	vmovaps	xmm9, XMMWORD PTR [r11-72]
+	lea	r11, QWORD PTR [rsp+176]
+	vmovaps	xmm8, XMMWORD PTR [r11-48]
+	vmovaps	xmm9, XMMWORD PTR [r11-64]
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	vaddss	xmm3, xmm1, xmm4
 	vaddss	xmm0, xmm7, xmm6
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	vmovaps	xmm6, XMMWORD PTR [r11-24]
-	vmovaps	xmm7, XMMWORD PTR [rsp+112]
+	vmovaps	xmm6, XMMWORD PTR [r11-16]
+	vmovaps	xmm7, XMMWORD PTR [r11-32]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm3
 	vmulss	xmm2, xmm1, xmm13
 
-; 78   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
+; 80   :     return ((h&1)? -i : i) + ((h&2)? -2.f*j : 2.f*j);
 
 	vaddss	xmm0, xmm10, xmm11
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	vmovaps	xmm10, XMMWORD PTR [r11-88]
-	vmovaps	xmm11, XMMWORD PTR [r11-104]
+	vmovaps	xmm10, XMMWORD PTR [r11-80]
+	vmovaps	xmm11, XMMWORD PTR [r11-96]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm12
 	vaddss	xmm4, xmm2, xmm3
 	vmulss	xmm2, xmm1, xmm13
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	vmovaps	xmm13, XMMWORD PTR [rsp+16]
+	vmovaps	xmm13, XMMWORD PTR [r11-128]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm3, xmm2, xmm12
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	vmovaps	xmm12, XMMWORD PTR [r11-120]
+	vmovaps	xmm12, XMMWORD PTR [r11-112]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm0, xmm3, xmm4
 	vmulss	xmm1, xmm0, xmm14
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
-	vmovaps	xmm14, XMMWORD PTR [rsp]
+	vmovaps	xmm14, XMMWORD PTR [rsp+32]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm2, xmm1, xmm4
 
-; 122  : 
-; 123  :     return lerp2(j, lerp2(i, grad(perm[A  ], xf0, yf0),
+; 124  : 
+; 125  :     return lerp2(j, lerp2(i, grad(perm[A  ], xf0, yf0),
 
 	vmulss	xmm0, xmm2, DWORD PTR __real@3f01cac1
 
-; 124  : 		                   grad(perm[B  ], xf1, yf0)),
-; 125  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
-; 126  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
-; 127  : }
+; 126  : 		                   grad(perm[B  ], xf1, yf0)),
+; 127  : 		           lerp2(i, grad(perm[A+1], xf0, yf1),
+; 128  : 		                   grad(perm[B+1], xf1, yf1))) * 0.507f;
+; 129  : }
 
 	mov	rsp, r11
+	pop	rbx
 	ret	0
 ?noise@Perlin@@SAMMM@Z ENDP				; Perlin::noise
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\perlin.cpp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
 ;	COMDAT ?noise@Perlin@@SAMM@Z
 _TEXT	SEGMENT
-x$ = 48
+x$ = 80
 ?noise@Perlin@@SAMM@Z PROC				; Perlin::noise, COMDAT
 
-; 98   : float Perlin::noise(float x) {    
+; 100  : float Perlin::noise(float x) {    
 
 $LN14:
-	sub	rsp, 40					; 00000028H
+	sub	rsp, 72					; 00000048H
+	vmovaps	XMMWORD PTR [rsp+48], xmm6
+	vmovaps	XMMWORD PTR [rsp+32], xmm7
+	vmovaps	xmm6, xmm0
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
 
-; 99   :     int ix0 = FASTFLOOR(x);		
-; 100  : 	int ix1 = (ix0+1) & 255;
-; 101  :     float xf0 = x - ix0;
-; 102  : 	float xf1 = xf0 - 1.0f;   
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	call	floorf
+; File g:\dropbox\github\berconmaps\src\perlin.cpp
+
+; 104  : 	float xf1 = xf0 - 1.0f;   
 
 	vmovss	xmm5, DWORD PTR __real@3f800000
 	vcvttss2si eax, xmm0
 	vxorps	xmm1, xmm1, xmm1
-	vcomiss	xmm1, xmm0
-	vxorps	xmm1, xmm1, xmm1
-	lea	ecx, DWORD PTR [rax-1]
-	vmovaps	XMMWORD PTR [rsp+16], xmm6
-	cmovbe	ecx, eax
-	vmovaps	XMMWORD PTR [rsp], xmm7
-	vcvtsi2ss xmm1, xmm1, ecx
-	vsubss	xmm4, xmm0, xmm1
+	vcvtsi2ss xmm1, xmm1, eax
+	vsubss	xmm4, xmm6, xmm1
 
-; 103  : 	ix0 = ix0 & 0xff;    // Wrap to 0..255
-; 104  :     float s = FADE(xf0);
+; 105  : 	ix0 = ix0 & 0xff;    // Wrap to 0..255
+; 106  :     float s = FADE(xf0);
 
 	vmulss	xmm0, xmm4, DWORD PTR __real@40c00000
 	vsubss	xmm1, xmm0, DWORD PTR __real@41700000
-	vmulss	xmm2, xmm1, xmm4
-	vaddss	xmm3, xmm2, DWORD PTR __real@41200000
-	lea	eax, DWORD PTR [rcx+1]
-	movzx	r8d, cl
-	movzx	ecx, al
+	movzx	r8d, al
 
-; 105  :     return lerp2(s, grad(perm[ix0], xf0),
+; 107  :     return lerp2(s, grad(perm[ix0], xf0),
 
 	lea	r9, OFFSET FLAT:?perm@@3PAEA
+	inc	eax
+	movzx	ecx, al
+	vmulss	xmm2, xmm1, xmm4
+	vaddss	xmm3, xmm2, DWORD PTR __real@41200000
 	vmulss	xmm0, xmm4, xmm4
-	vmulss	xmm1, xmm0, xmm4
-	vxorps	xmm0, xmm0, xmm0
 	movzx	edx, BYTE PTR [rcx+r9]
+	vmulss	xmm1, xmm0, xmm4
 
-; 69   :     float grad = 1.0f + (h & 7);
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, edx
 	and	eax, 7
+	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
 
-; 103  : 	ix0 = ix0 & 0xff;    // Wrap to 0..255
-; 104  :     float s = FADE(xf0);
+; 105  : 	ix0 = ix0 & 0xff;    // Wrap to 0..255
+; 106  :     float s = FADE(xf0);
 
 	vmulss	xmm7, xmm3, xmm1
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	vmovss	xmm3, DWORD PTR __xmm@80000000800000008000000080000000
 	vaddss	xmm2, xmm0, xmm5
 
-; 99   :     int ix0 = FASTFLOOR(x);		
-; 100  : 	int ix1 = (ix0+1) & 255;
-; 101  :     float xf0 = x - ix0;
-; 102  : 	float xf1 = xf0 - 1.0f;   
+; 104  : 	float xf1 = xf0 - 1.0f;   
 
 	vsubss	xmm6, xmm4, xmm5
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	dl, 8
 	je	SHORT $LN6@noise
 	vxorps	xmm2, xmm2, xmm3
 $LN6@noise:
 
-; 105  :     return lerp2(s, grad(perm[ix0], xf0),
+; 107  :     return lerp2(s, grad(perm[ix0], xf0),
 
 	movzx	ecx, BYTE PTR [r8+r9]
 
-; 69   :     float grad = 1.0f + (h & 7);
+; 71   :     float grad = 1.0f + (h & 7);
 
 	mov	eax, ecx
 	and	eax, 7
@@ -4697,49 +4759,61 @@ $LN6@noise:
 	vcvtsi2ss xmm0, xmm0, eax
 	vaddss	xmm1, xmm0, xmm5
 
-; 70   :     if (h&8) grad = -grad;
+; 72   :     if (h&8) grad = -grad;
 
 	test	cl, 8
 	je	SHORT $LN9@noise
 	vxorps	xmm1, xmm1, xmm3
 $LN9@noise:
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm0, xmm2, xmm6
 
-; 106  : 				   grad(perm[ix1], xf1)) * 0.188f;
-; 107  : }
+; 108  : 				   grad(perm[ix1], xf1)) * 0.188f;
+; 109  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+16]
+	vmovaps	xmm6, XMMWORD PTR [rsp+48]
 
-; 71   :     return ( grad * x );
+; 73   :     return ( grad * x );
 
 	vmulss	xmm3, xmm1, xmm4
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vsubss	xmm1, xmm0, xmm3
 	vmulss	xmm2, xmm1, xmm7
 
-; 106  : 				   grad(perm[ix1], xf1)) * 0.188f;
-; 107  : }
+; 108  : 				   grad(perm[ix1], xf1)) * 0.188f;
+; 109  : }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp]
+	vmovaps	xmm7, XMMWORD PTR [rsp+32]
 
-; 63   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
+; 65   : float lerp2(float t, float a,float b) {return a+t*(b-a);}
 
 	vaddss	xmm3, xmm2, xmm3
 
-; 105  :     return lerp2(s, grad(perm[ix0], xf0),
+; 107  :     return lerp2(s, grad(perm[ix0], xf0),
 
 	vmulss	xmm0, xmm3, DWORD PTR __real@3e408312
 
-; 106  : 				   grad(perm[ix1], xf1)) * 0.188f;
-; 107  : }
+; 108  : 				   grad(perm[ix1], xf1)) * 0.188f;
+; 109  : }
 
-	add	rsp, 40					; 00000028H
+	add	rsp, 72					; 00000048H
 	ret	0
 ?noise@Perlin@@SAMM@Z ENDP				; Perlin::noise
+_TEXT	ENDS
+; Function compile flags: /Ogtp
+; File c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\cmath
+;	COMDAT ?floor@@YAMM@Z
+_TEXT	SEGMENT
+_Xx$ = 8
+?floor@@YAMM@Z PROC					; floor, COMDAT
+
+; 123  : 	return (_CSTD floorf(_Xx));
+
+	jmp	floorf
+?floor@@YAMM@Z ENDP					; floor
 _TEXT	ENDS
 END

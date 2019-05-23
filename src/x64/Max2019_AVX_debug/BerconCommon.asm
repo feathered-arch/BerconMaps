@@ -10,6 +10,8 @@ PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
 PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
 EXTRN	GUID_NULL:BYTE
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
@@ -27,6 +29,14 @@ _BSS	ENDS
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
 _BSS	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
 _DATA	SEGMENT
 WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
@@ -62,8 +72,11 @@ EXTRN	__imp_srand:PROC
 EXTRN	__imp_rand:PROC
 EXTRN	__imp_?zfree@@YAXPEAPEAX@Z:PROC
 EXTRN	__imp_??0Interval@@QEAA@HH@Z:PROC
+EXTRN	__imp_??0Point2@@QEAA@XZ:PROC
 EXTRN	__imp_?GetCOREInterface@@YAPEAVInterface@@XZ:PROC
 EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
+EXTRN	__imp_??0Point3@@QEAA@MMM@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@AEBV0@@Z:PROC
 EXTRN	__imp_??TPoint3@@QEBA?AV0@AEBV0@@Z:PROC
 EXTRN	__imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z:PROC
 EXTRN	__imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z:PROC
@@ -88,6 +101,18 @@ pdata	SEGMENT
 $pdata$??_H@YAXPEAX_K1P6APEAX0@Z@Z DD imagerel $LN12
 	DD	imagerel $LN12+72
 	DD	imagerel $unwind$??_H@YAXPEAX_K1P6APEAX0@Z@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??D@YA?AVPoint3@@AEBV0@M@Z DD imagerel $LN4
+	DD	imagerel $LN4+42
+	DD	imagerel $unwind$??D@YA?AVPoint3@@AEBV0@M@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z DD imagerel $LN6
+	DD	imagerel $LN6+38
+	DD	imagerel $unwind$?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -121,26 +146,32 @@ $pdata$2$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z DD imagerel ?setSpinnerTy
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN14
-	DD	imagerel $LN14+36
+$pdata$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN10
+	DD	imagerel $LN10+36
 	DD	imagerel $unwind$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN14+36
-	DD	imagerel $LN14+1860
-	DD	imagerel $chain$3$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$4$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN14+1860
-	DD	imagerel $LN14+1984
+$pdata$4$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN10+36
+	DD	imagerel $LN10+1843
 	DD	imagerel $chain$4$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?update@BerconXYZ@@QEAAXXZ DD imagerel $LN10
-	DD	imagerel $LN10+407
+$pdata$5$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN10+1843
+	DD	imagerel $LN10+1969
+	DD	imagerel $chain$5$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$6$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD imagerel $LN10+1969
+	DD	imagerel $LN10+1970
+	DD	imagerel $chain$6$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?update@BerconXYZ@@QEAAXXZ DD imagerel $LN6
+	DD	imagerel $LN6+389
 	DD	imagerel $unwind$?update@BerconXYZ@@QEAAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -187,38 +218,50 @@ $pdata$?get@BerconXYZ@@QEAAHAEAVShadeContext@@AEAVPoint3@@PEAV3@@Z DD imagerel $
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN66
-	DD	imagerel $LN66+773
+$pdata$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN39
+	DD	imagerel $LN39+754
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN66+773
-	DD	imagerel $LN66+1050
+$pdata$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN39+754
+	DD	imagerel $LN39+822
 	DD	imagerel $chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN66+1050
-	DD	imagerel $LN66+1158
+$pdata$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN39+822
+	DD	imagerel $LN39+1022
 	DD	imagerel $chain$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN44
-	DD	imagerel $LN44+373
+$pdata$2$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN39+1022
+	DD	imagerel $LN39+1163
+	DD	imagerel $chain$2$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$3$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD imagerel $LN39+1163
+	DD	imagerel $LN39+1271
+	DD	imagerel $chain$3$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN30
+	DD	imagerel $LN30+356
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN44+373
-	DD	imagerel $LN44+509
+$pdata$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN30+356
+	DD	imagerel $LN30+570
 	DD	imagerel $chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN44+509
-	DD	imagerel $LN44+638
+$pdata$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD imagerel $LN30+570
+	DD	imagerel $LN30+703
 	DD	imagerel $chain$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -253,50 +296,50 @@ $pdata$3$?seedRandomGen@BerconXYZ@@AEAAXAEAVShadeContext@@@Z DD imagerel $LN12+2
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31
-	DD	imagerel $LN31+42
+$pdata$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23
+	DD	imagerel $LN23+64
 	DD	imagerel $unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+42
-	DD	imagerel $LN31+143
+$pdata$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+64
+	DD	imagerel $LN23+165
 	DD	imagerel $chain$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+143
-	DD	imagerel $LN31+189
+$pdata$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+165
+	DD	imagerel $LN23+211
 	DD	imagerel $chain$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$4$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+189
-	DD	imagerel $LN31+271
+$pdata$4$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+211
+	DD	imagerel $LN23+293
 	DD	imagerel $chain$4$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$5$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+271
-	DD	imagerel $LN31+279
+$pdata$5$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+293
+	DD	imagerel $LN23+301
 	DD	imagerel $chain$5$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$6$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+279
-	DD	imagerel $LN31+649
+$pdata$6$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+301
+	DD	imagerel $LN23+682
 	DD	imagerel $chain$6$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$7$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+649
-	DD	imagerel $LN31+704
+$pdata$7$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+682
+	DD	imagerel $LN23+748
 	DD	imagerel $chain$7$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$8$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN31+704
-	DD	imagerel $LN31+1054
+$pdata$8$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD imagerel $LN23+748
+	DD	imagerel $LN23+1129
 	DD	imagerel $chain$8$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -331,8 +374,8 @@ $pdata$4$?EnableStuff@BerconXYZ@@AEAAXPEAVIParamBlock2@@H@Z DD imagerel $LN13+70
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?getBasis@BerconXYZ@@AEAAXVMatrix3@@PEAVPoint3@@@Z DD imagerel $LN43
-	DD	imagerel $LN43+416
+$pdata$?getBasis@BerconXYZ@@AEAAXVMatrix3@@PEAVPoint3@@@Z DD imagerel $LN31
+	DD	imagerel $LN31+294
 	DD	imagerel $unwind$?getBasis@BerconXYZ@@AEAAXVMatrix3@@PEAVPoint3@@@Z
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -438,66 +481,70 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$8$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 021H
-	DD	imagerel $LN31
-	DD	imagerel $LN31+42
+	DD	imagerel $LN23
+	DD	imagerel $LN23+64
 	DD	imagerel $unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$7$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 020021H
-	DD	016d400H
-	DD	imagerel $LN31
-	DD	imagerel $LN31+42
+	DD	01ed400H
+	DD	imagerel $LN23
+	DD	imagerel $LN23+64
 	DD	imagerel $unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$6$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 021H
-	DD	imagerel $LN31+42
-	DD	imagerel $LN31+143
+	DD	imagerel $LN23+64
+	DD	imagerel $LN23+165
 	DD	imagerel $chain$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$5$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 021H
-	DD	imagerel $LN31+143
-	DD	imagerel $LN31+189
+	DD	imagerel $LN23+165
+	DD	imagerel $LN23+211
 	DD	imagerel $chain$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$4$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 020821H
-	DD	010f408H
-	DD	imagerel $LN31+143
-	DD	imagerel $LN31+189
+	DD	018f408H
+	DD	imagerel $LN23+165
+	DD	imagerel $LN23+211
 	DD	imagerel $chain$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$3$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 020821H
-	DD	0143408H
-	DD	imagerel $LN31+42
-	DD	imagerel $LN31+143
+	DD	01c3408H
+	DD	imagerel $LN23+64
+	DD	imagerel $LN23+165
 	DD	imagerel $chain$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 061421H
-	DD	017e414H
-	DD	016d40dH
-	DD	0156404H
-	DD	imagerel $LN31
-	DD	imagerel $LN31+42
+	DD	01fe414H
+	DD	01ed40dH
+	DD	01d6404H
+	DD	imagerel $LN23
+	DD	imagerel $LN23+64
 	DD	imagerel $unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 0c2a01H
-	DD	04982aH
-	DD	058825H
-	DD	067820H
-	DD	076818H
-	DD	011010cH
+$unwind$?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z DD 0144001H
+	DD	04d840H
+	DD	05c83aH
+	DD	06b834H
+	DD	07a82fH
+	DD	08982aH
+	DD	098825H
+	DD	0a7820H
+	DD	0b6818H
+	DD	019010cH
 	DD	050047005H
 xdata	ENDS
 ;	COMDAT xdata
@@ -540,50 +587,64 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD 021H
-	DD	imagerel $LN44
-	DD	imagerel $LN44+373
+	DD	imagerel $LN30
+	DD	imagerel $LN30+356
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD 020621H
-	DD	057806H
-	DD	imagerel $LN44
-	DD	imagerel $LN44+373
+	DD	076806H
+	DD	imagerel $LN30
+	DD	imagerel $LN30+356
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD 0a2101H
-	DD	066821H
-	DD	0146415H
-	DD	0133415H
-	DD	0e00ed215H
-	DD	0500b700cH
+$unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z DD 0a1e01H
+	DD	017741eH
+	DD	016641eH
+	DD	015341eH
+	DD	0f014f21eH
+	DD	05010e012H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 021H
-	DD	imagerel $LN66
-	DD	imagerel $LN66+773
+$chain$3$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 021H
+	DD	imagerel $LN39
+	DD	imagerel $LN39+754
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 020621H
-	DD	057806H
-	DD	imagerel $LN66
-	DD	imagerel $LN66+773
+$chain$2$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 021H
+	DD	imagerel $LN39+754
+	DD	imagerel $LN39+822
+	DD	imagerel $chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$1$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 020621H
+	DD	076806H
+	DD	imagerel $LN39+754
+	DD	imagerel $LN39+822
+	DD	imagerel $chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$0$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 020821H
+	DD	017d408H
+	DD	imagerel $LN39
+	DD	imagerel $LN39+754
 	DD	imagerel $unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 0c2c01H
-	DD	06682cH
-	DD	0166419H
-	DD	0153419H
-	DD	0f012d219H
-	DD	0d00ee010H
+$unwind$?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z DD 0a1c01H
+	DD	019641cH
+	DD	018341cH
+	DD	0f012f21cH
+	DD	0c00ee010H
 	DD	0500b700cH
 xdata	ENDS
 ;	COMDAT xdata
@@ -657,26 +718,35 @@ $unwind$?update@BerconXYZ@@QEAAXXZ DD 040a01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$4$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 021H
-	DD	imagerel $LN14
-	DD	imagerel $LN14+36
+$chain$6$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 021H
+	DD	imagerel $LN10
+	DD	imagerel $LN10+36
 	DD	imagerel $unwind$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$3$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 081a21H
-	DD	013f41aH
-	DD	014d413H
-	DD	015c40bH
-	DD	0165404H
-	DD	imagerel $LN14
-	DD	imagerel $LN14+36
+$chain$5$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 020021H
+	DD	015f400H
+	DD	imagerel $LN10
+	DD	imagerel $LN10+36
+	DD	imagerel $unwind$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$4$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 0a2221H
+	DD	096822H
+	DD	015f41aH
+	DD	016d413H
+	DD	017c40bH
+	DD	0185404H
+	DD	imagerel $LN10
+	DD	imagerel $LN10+36
 	DD	imagerel $unwind$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z DD 062401H
-	DD	0170124H
+	DD	0190124H
 	DD	0701be01dH
 	DD	03019601aH
 xdata	ENDS
@@ -757,6 +827,16 @@ $unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ DD 010d19H
 	DD	06204H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??D@YA?AVPoint3@@AEBV0@M@Z DD 020601H
+	DD	030023206H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -1037,33 +1117,21 @@ $LN7@tiling:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ;	COMDAT ?getBasis@BerconXYZ@@AEAAXVMatrix3@@PEAVPoint3@@@Z
 _TEXT	SEGMENT
@@ -1072,13 +1140,12 @@ $T2 = 32
 $T3 = 32
 $T4 = 32
 $T5 = 32
-$T6 = 32
+$T6 = 44
 $T7 = 44
 $T8 = 44
 $T9 = 44
 $T10 = 44
-$T11 = 44
-temp$12 = 56
+temp$11 = 56
 this$ = 128
 transform$ = 136
 b$ = 144
@@ -1086,7 +1153,7 @@ b$ = 144
 
 ; 146  : void BerconXYZ::getBasis(Matrix3 transform, Point3* b) {
 
-$LN43:
+$LN31:
 	mov	QWORD PTR [rsp+8], rbx
 	mov	QWORD PTR [rsp+16], rdi
 	push	rbp
@@ -1096,11 +1163,11 @@ $LN43:
 ; 147  : 	if (mappingType==4&&mode2D) {
 
 	cmp	DWORD PTR [rcx], 4
-	mov	rdi, r8
-	mov	rbx, rdx
-	jne	$LN2@getBasis
+	mov	rbx, r8
+	mov	rdi, rdx
+	jne	SHORT $LN2@getBasis
 	cmp	DWORD PTR [rcx+260], 0
-	je	$LN2@getBasis
+	je	SHORT $LN2@getBasis
 
 ; 148  : 		Matrix3 temp = transform;
 
@@ -1110,204 +1177,131 @@ $LN43:
 
 ; 149  : 		temp.Invert();
 
-	lea	rcx, QWORD PTR temp$12[rbp-112]
-	vmovups	YMMWORD PTR temp$12[rbp-112], ymm0
-	vmovups	XMMWORD PTR temp$12[rbp-80], xmm1
-	mov	DWORD PTR temp$12[rbp-64], eax
+	lea	rcx, QWORD PTR temp$11[rbp-112]
+	vmovups	YMMWORD PTR temp$11[rbp-112], ymm0
+	vmovups	XMMWORD PTR temp$11[rbp-80], xmm1
+	mov	DWORD PTR temp$11[rbp-64], eax
 	vzeroupper
 	call	QWORD PTR __imp_?Invert@Matrix3@@QEAAXXZ
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	xmm0, DWORD PTR temp$12[rbp-112]
-	vmovss	xmm1, DWORD PTR temp$12[rbp-108]
-	vmovss	DWORD PTR $T6[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR temp$12[rbp-104]
+	lea	rdx, QWORD PTR temp$11[rbp-112]
+	lea	rcx, QWORD PTR $T5[rbp-112]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 150  : 		b[0] = Normalize(temp.GetRow(0));
-
-	lea	rdx, QWORD PTR $T6[rbp-112]
-	lea	rcx, QWORD PTR $T11[rbp-112]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T6[rbp-104], xmm0
-	vmovss	DWORD PTR $T6[rbp-108], xmm1
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 150  : 		b[0] = Normalize(temp.GetRow(0));
-
-	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm1, DWORD PTR temp$12[rbp-96]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 151  : 		b[1] = Normalize(temp.GetRow(1));
 
 	lea	rdx, QWORD PTR $T5[rbp-112]
 	lea	rcx, QWORD PTR $T10[rbp-112]
-	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [rdi], xmm0
-	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	xmm0, DWORD PTR temp$12[rbp-100]
-	vmovss	DWORD PTR $T5[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR temp$12[rbp-92]
-	vmovss	DWORD PTR $T5[rbp-104], xmm0
-	vmovss	DWORD PTR $T5[rbp-108], xmm1
+	lea	rdx, QWORD PTR temp$11[rbp-100]
+	lea	rcx, QWORD PTR $T4[rbp-112]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 150  : 		b[0] = Normalize(temp.GetRow(0));
 
-	mov	DWORD PTR [rdi+8], eax
-
-; 151  : 		b[1] = Normalize(temp.GetRow(1));
-
-	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm1, DWORD PTR temp$12[rbp-84]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 151  : 		b[1] = Normalize(temp.GetRow(1));
-
 	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [rdi+12], xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovsd	QWORD PTR [rbx], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR [rbx+8], eax
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	xmm0, DWORD PTR temp$12[rbp-88]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 151  : 		b[1] = Normalize(temp.GetRow(1));
 
-	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	lea	rdx, QWORD PTR $T4[rbp-112]
+	lea	rcx, QWORD PTR $T9[rbp-112]
+	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	DWORD PTR $T4[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR temp$12[rbp-80]
+	lea	rdx, QWORD PTR temp$11[rbp-88]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 153  : 	} else {
 
-	jmp	$LN41@getBasis
+	jmp	SHORT $LN29@getBasis
 $LN2@getBasis:
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	xmm0, DWORD PTR [rdx]
-	vmovss	xmm1, DWORD PTR [rdx+4]
-	vmovss	DWORD PTR $T3[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR [rdx+8]
+	lea	rcx, QWORD PTR $T3[rbp-112]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 154  : 		b[0] = Normalize(transform.GetRow(0));
 
 	lea	rdx, QWORD PTR $T3[rbp-112]
-	lea	rcx, QWORD PTR $T9[rbp-112]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	lea	rcx, QWORD PTR $T8[rbp-112]
+	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 118  :    const Point3& operator[](int i) const { return((Point3&)(*m[i])); }
 
-	vmovss	DWORD PTR $T3[rbp-104], xmm0
-	vmovss	DWORD PTR $T3[rbp-108], xmm1
+	lea	rdx, QWORD PTR [rdi+12]
+
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
+
+	lea	rcx, QWORD PTR $T2[rbp-112]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 154  : 		b[0] = Normalize(transform.GetRow(0));
 
-	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR [rbx], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR [rbx+8], eax
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	vmovss	xmm1, DWORD PTR [rbx+16]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 155  : 		b[1] = Normalize(transform.GetRow(1));
 
 	lea	rdx, QWORD PTR $T2[rbp-112]
-	lea	rcx, QWORD PTR $T8[rbp-112]
-	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [rdi], xmm0
-	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm0, DWORD PTR [rbx+12]
-	vmovss	DWORD PTR $T2[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR [rbx+20]
-	vmovss	DWORD PTR $T2[rbp-104], xmm0
-	vmovss	DWORD PTR $T2[rbp-108], xmm1
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 154  : 		b[0] = Normalize(transform.GetRow(0));
-
-	mov	DWORD PTR [rdi+8], eax
-
-; 155  : 		b[1] = Normalize(transform.GetRow(1));
-
+	lea	rcx, QWORD PTR $T7[rbp-112]
 	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 118  :    const Point3& operator[](int i) const { return((Point3&)(*m[i])); }
 
-	vmovss	xmm1, DWORD PTR [rbx+28]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 155  : 		b[1] = Normalize(transform.GetRow(1));
-
-	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [rdi+12], xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	xmm0, DWORD PTR [rbx+24]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 155  : 		b[1] = Normalize(transform.GetRow(1));
-
-	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T1[rbp-112], xmm0
-	vmovss	xmm0, DWORD PTR [rbx+32]
-$LN41@getBasis:
+	lea	rdx, QWORD PTR [rdi+24]
+$LN29@getBasis:
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 158  : }
 
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR [rbx+12], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	lea	rcx, QWORD PTR $T1[rbp-112]
+	mov	DWORD PTR [rbx+20], eax
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
 	lea	rdx, QWORD PTR $T1[rbp-112]
-	mov	DWORD PTR [rdi+20], eax
-	lea	rcx, QWORD PTR $T7[rbp-112]
-	vmovss	DWORD PTR $T1[rbp-108], xmm1
-	vmovss	DWORD PTR $T1[rbp-104], xmm0
+	lea	rcx, QWORD PTR $T6[rbp-112]
 	call	QWORD PTR __imp_?Normalize@@YA?AVPoint3@@AEBV1@@Z
 	lea	r11, QWORD PTR [rsp+112]
-	mov	rbx, QWORD PTR [r11+16]
-	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [rdi+24], xmm0
-	mov	eax, DWORD PTR [rax+8]
-	mov	DWORD PTR [rdi+32], eax
 	mov	rdi, QWORD PTR [r11+24]
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR [rbx+24], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR [rbx+32], eax
+	mov	rbx, QWORD PTR [r11+16]
 	mov	rsp, r11
 	pop	rbp
 	ret	0
@@ -1578,29 +1572,24 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ;	COMDAT ?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z
 _TEXT	SEGMENT
 scale$ = 32
 $T1 = 48
 $T2 = 48
-$T3 = 48
-this$ = 160
-__$ReturnUdt$ = 168
-sc$ = 176
-inv$ = 184
+this$ = 224
+__$ReturnUdt$ = 232
+sc$ = 240
+inv$ = 248
 ?random@BerconXYZ@@AEAA?AVMatrix3@@AEAVShadeContext@@PEAV2@@Z PROC ; BerconXYZ::random, COMDAT
 
 ; 178  : Matrix3 BerconXYZ::random(ShadeContext& sc, Matrix3* inv) {
 
-$LN31:
+$LN23:
 	mov	rax, rsp
 	push	rbp
 	push	rdi
-	sub	rsp, 136				; 00000088H
+	sub	rsp, 200				; 000000c8H
 
 ; 212  : 	if (p_randMat) { 		
 
@@ -1614,6 +1603,10 @@ $LN31:
 	vmovaps	XMMWORD PTR [rax-56], xmm7
 	vmovaps	XMMWORD PTR [rax-72], xmm8
 	vmovaps	XMMWORD PTR [rax-88], xmm9
+	vmovaps	XMMWORD PTR [rax-104], xmm10
+	vmovaps	XMMWORD PTR [rax-120], xmm11
+	vmovaps	XMMWORD PTR [rsp+80], xmm12
+	vmovaps	XMMWORD PTR [rsp+64], xmm13
 	mov	QWORD PTR [rax+16], rsi
 
 ; 210  : 	int seed = 1;
@@ -1681,19 +1674,19 @@ $LN12@random:
 
 	mov	rax, QWORD PTR [r14]
 	mov	rcx, r14
-	mov	QWORD PTR [rsp+160], rbx
+	mov	QWORD PTR [rsp+224], rbx
 	call	QWORD PTR [rax+80]
 	mov	rbx, rax
 
 ; 224  : 		if (ob && ob->IsParticleSystem()) {
 
 	test	rax, rax
-	je	SHORT $LN27@random
+	je	SHORT $LN19@random
 	mov	rdx, QWORD PTR [rax]
 	mov	rcx, rax
 	call	QWORD PTR [rdx+1896]
 	test	eax, eax
-	je	SHORT $LN27@random
+	je	SHORT $LN19@random
 
 ; 225  : 			ParticleObject *obj = (ParticleObject*)ob;
 ; 226  : 			IChkMtlAPI* chkMtlAPI = static_cast<IChkMtlAPI*>(obj->GetInterface(I_NEWMTLINTERFACE));
@@ -1701,19 +1694,19 @@ $LN12@random:
 	mov	r8, QWORD PTR [rbx]
 	mov	edx, 4752				; 00001290H
 	mov	rcx, rbx
-	mov	QWORD PTR [rsp+128], r15
+	mov	QWORD PTR [rsp+192], r15
 	call	QWORD PTR [r8+72]
 	mov	r15, rax
 
 ; 227  : 			if ((chkMtlAPI && chkMtlAPI->SupportsParticleIDbyFace())) {
 
 	test	rax, rax
-	je	SHORT $LN28@random
+	je	SHORT $LN20@random
 	mov	rdx, QWORD PTR [rax]
 	mov	rcx, rax
 	call	QWORD PTR [rdx]
 	test	eax, eax
-	je	SHORT $LN28@random
+	je	SHORT $LN20@random
 
 ; 228  : 				int id = chkMtlAPI->GetParticleFromFace(sc.FaceNumber());
 
@@ -1733,10 +1726,10 @@ $LN12@random:
 	add	edx, 789221				; 000c0ae5H
 	imul	edx, eax
 	add	esi, edx
-$LN28@random:
-	mov	r15, QWORD PTR [rsp+128]
-$LN27@random:
-	mov	rbx, QWORD PTR [rsp+160]
+$LN20@random:
+	mov	r15, QWORD PTR [rsp+192]
+$LN19@random:
+	mov	rbx, QWORD PTR [rsp+224]
 $LN15@random:
 
 ; 230  : 			}			
@@ -1773,44 +1766,39 @@ $LN15@random:
 ; 183  : 	transform.Translate(Point3(offX+offX2*URANDF(), offY+offY2*URANDF(), offZ+offZ2*URANDF()));
 
 	call	QWORD PTR __imp_rand
-	vmovss	xmm9, DWORD PTR __real@46fffe00
-	vmovss	xmm8, DWORD PTR __real@3f800000
+	vmovss	xmm13, DWORD PTR __real@46fffe00
+	vmovss	xmm10, DWORD PTR [rdi+64]
+	vmovss	xmm11, DWORD PTR [rdi+16]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm0, xmm0, xmm9
-	vaddss	xmm1, xmm0, xmm0
-	vsubss	xmm1, xmm1, xmm8
-	vmulss	xmm0, xmm1, DWORD PTR [rdi+64]
-	vaddss	xmm7, xmm0, DWORD PTR [rdi+16]
+	vdivss	xmm7, xmm0, xmm13
 	call	QWORD PTR __imp_rand
+	vmovss	xmm8, DWORD PTR [rdi+60]
+	vmovss	xmm9, DWORD PTR [rdi+12]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
-	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
-	vmulss	xmm0, xmm3, DWORD PTR [rdi+60]
-	vaddss	xmm6, xmm0, DWORD PTR [rdi+12]
+	vdivss	xmm6, xmm0, xmm13
 	call	QWORD PTR __imp_rand
+	vmovss	xmm12, DWORD PTR __real@3f800000
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
-	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
-	vmulss	xmm0, xmm3, DWORD PTR [rdi+56]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+8]
-	lea	rdx, QWORD PTR $T3[rsp]
+	vdivss	xmm4, xmm0, xmm13
+	vaddss	xmm1, xmm7, xmm7
+	vsubss	xmm0, xmm1, xmm12
+	vmulss	xmm1, xmm0, xmm10
+	vaddss	xmm3, xmm1, xmm11
+	vaddss	xmm2, xmm6, xmm6
+	vsubss	xmm0, xmm2, xmm12
+	vmulss	xmm1, xmm0, xmm8
+	vaddss	xmm2, xmm1, xmm9
+	vaddss	xmm4, xmm4, xmm4
+	vsubss	xmm0, xmm4, xmm12
+	vmulss	xmm1, xmm0, DWORD PTR [rdi+56]
+	vaddss	xmm1, xmm1, DWORD PTR [rdi+8]
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, rax
 	mov	rcx, rbp
-	vmovss	DWORD PTR $T3[rsp], xmm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T3[rsp+4], xmm6
-	vmovss	DWORD PTR $T3[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 183  : 	transform.Translate(Point3(offX+offX2*URANDF(), offY+offY2*URANDF(), offZ+offZ2*URANDF()));
-
 	call	QWORD PTR __imp_?Translate@Matrix3@@QEAAXAEBVPoint3@@@Z
 
 ; 184  :  	transform.RotateX(angX+angX2*URANDF());
@@ -1818,9 +1806,9 @@ $LN15@random:
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
+	vdivss	xmm1, xmm0, xmm13
 	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
+	vsubss	xmm3, xmm2, xmm12
 	vmulss	xmm0, xmm3, DWORD PTR [rdi+80]
 	vaddss	xmm1, xmm0, DWORD PTR [rdi+32]
 	mov	rcx, rbp
@@ -1831,9 +1819,9 @@ $LN15@random:
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
+	vdivss	xmm1, xmm0, xmm13
 	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
+	vsubss	xmm3, xmm2, xmm12
 	vmulss	xmm0, xmm3, DWORD PTR [rdi+84]
 	vaddss	xmm1, xmm0, DWORD PTR [rdi+36]
 	mov	rcx, rbp
@@ -1844,15 +1832,15 @@ $LN15@random:
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
+	vdivss	xmm1, xmm0, xmm13
 	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
+	vsubss	xmm3, xmm2, xmm12
 	vmulss	xmm0, xmm3, DWORD PTR [rdi+88]
 	vaddss	xmm1, xmm0, DWORD PTR [rdi+40]
 	mov	rcx, rbp
 	call	QWORD PTR __imp_?RotateZ@Matrix3@@QEAAXM@Z
-	mov	r14, QWORD PTR [rsp+184]
-	mov	rsi, QWORD PTR [rsp+168]
+	mov	r14, QWORD PTR [rsp+248]
+	mov	rsi, QWORD PTR [rsp+232]
 
 ; 187  : 
 ; 188  : 	if (inv) {
@@ -1879,10 +1867,14 @@ $LN2@random:
 ; 191  : 	}
 ; 192  : 
 ; 193  : 	Point3 scale;
+
+	lea	rcx, QWORD PTR scale$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
 ; 194  : 	if (lock) {
 
 	cmp	DWORD PTR [rdi+112], 0
-	mov	r13, QWORD PTR [rsp+176]
+	mov	r13, QWORD PTR [rsp+240]
 	je	SHORT $LN3@random
 
 ; 195  : 		float add = sizeX2*URANDF();
@@ -1890,90 +1882,85 @@ $LN2@random:
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
+	vdivss	xmm1, xmm0, xmm13
 	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
+	vsubss	xmm3, xmm2, xmm12
 	vmulss	xmm0, xmm3, DWORD PTR [rdi+68]
 
 ; 196  : 		scale = Point3(sizeX+add, sizeY+add, sizeZ+add);	
 
-	vaddss	xmm4, xmm0, DWORD PTR [rdi+20]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+24]
-	vaddss	xmm0, xmm0, DWORD PTR [rdi+28]
-	vunpcklps xmm1, xmm4, xmm1
-	vmovsd	QWORD PTR scale$[rsp], xmm1
-	vmovss	DWORD PTR $T2[rsp+8], xmm0
+	vaddss	xmm3, xmm0, DWORD PTR [rdi+28]
+	vaddss	xmm2, xmm0, DWORD PTR [rdi+24]
 
 ; 197  : 	} else {
 
-	jmp	$LN29@random
+	jmp	$LN21@random
 $LN3@random:
 
 ; 198  : 		scale = Point3(sizeX+sizeX2*URANDF(), sizeY+sizeY2*URANDF(), sizeZ+sizeZ2*URANDF());
 
 	call	QWORD PTR __imp_rand
+	vmovss	xmm10, DWORD PTR [rdi+76]
+	vmovss	xmm11, DWORD PTR [rdi+28]
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
-	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
-	vmulss	xmm0, xmm3, DWORD PTR [rdi+76]
-	vaddss	xmm7, xmm0, DWORD PTR [rdi+28]
+	vdivss	xmm9, xmm0, xmm13
+	call	QWORD PTR __imp_rand
+	vmovss	xmm7, DWORD PTR [rdi+72]
+	vmovss	xmm8, DWORD PTR [rdi+24]
+	vxorps	xmm0, xmm0, xmm0
+	vcvtsi2ss xmm0, xmm0, eax
+	vdivss	xmm6, xmm0, xmm13
 	call	QWORD PTR __imp_rand
 	vxorps	xmm0, xmm0, xmm0
 	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
-	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
-	vmulss	xmm0, xmm3, DWORD PTR [rdi+72]
-	vaddss	xmm6, xmm0, DWORD PTR [rdi+24]
-	call	QWORD PTR __imp_rand
-	vxorps	xmm0, xmm0, xmm0
-	vcvtsi2ss xmm0, xmm0, eax
-	vdivss	xmm1, xmm0, xmm9
-	vaddss	xmm2, xmm1, xmm1
-	vsubss	xmm3, xmm2, xmm8
-	vmulss	xmm0, xmm3, DWORD PTR [rdi+68]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+20]
-	vunpcklps xmm0, xmm1, xmm6
-	vmovsd	QWORD PTR scale$[rsp], xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vdivss	xmm4, xmm0, xmm13
+	vaddss	xmm1, xmm9, xmm9
+	vsubss	xmm2, xmm1, xmm12
+	vmulss	xmm0, xmm2, xmm10
+	vaddss	xmm1, xmm6, xmm6
+	vsubss	xmm2, xmm1, xmm12
+	vaddss	xmm3, xmm0, xmm11
+	vmulss	xmm0, xmm2, xmm7
+	vaddss	xmm1, xmm4, xmm4
+	vsubss	xmm4, xmm1, xmm12
+	vaddss	xmm2, xmm0, xmm8
+	vmulss	xmm0, xmm4, DWORD PTR [rdi+68]
+$LN21@random:
 
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T1[rsp+8], xmm7
-$LN29@random:
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
+; 199  : 	}
 ; 200  : 	if (scale.x < 0.0001f) scale.x = 0.0001f;
 
+	vaddss	xmm1, xmm0, DWORD PTR [rdi+20]
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 	vmovss	xmm5, DWORD PTR __real@38d1b717
-	vmovss	xmm1, DWORD PTR scale$[rsp]
 
 ; 201  : 	if (scale.y < 0.0001f) scale.y = 0.0001f;
-
-	vmovss	xmm2, DWORD PTR scale$[rsp+4]
-	mov	eax, DWORD PTR $T1[rsp+8]
-
 ; 202  : 	if (scale.z < 0.0001f) scale.z = 0.0001f;
 ; 203  : 	scale.x = 1.f/scale.x; scale.y = 1.f/scale.y; scale.z = 1.f/scale.z;
 ; 204  : 	transform.Scale(scale);
 
+	xor	r8d, r8d
 	lea	rdx, QWORD PTR scale$[rsp]
+	mov	rcx, rbp
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR scale$[rsp], xmm0
+	vmovss	xmm1, DWORD PTR scale$[rsp]
+	vmovss	xmm2, DWORD PTR scale$[rsp+4]
+	mov	eax, DWORD PTR [rax+8]
 	vcmpltss xmm0, xmm1, xmm5
 	vblendvps xmm4, xmm1, xmm5, xmm0
 	vcmpltss xmm0, xmm2, xmm5
 	vblendvps xmm3, xmm2, xmm5, xmm0
 	mov	DWORD PTR scale$[rsp+8], eax
-	xor	r8d, r8d
 	vmovss	xmm1, DWORD PTR scale$[rsp+8]
 	vcmpltss xmm0, xmm1, xmm5
 	vblendvps xmm2, xmm1, xmm5, xmm0
-	vdivss	xmm0, xmm8, xmm4
+	vdivss	xmm0, xmm12, xmm4
 	vmovss	DWORD PTR scale$[rsp], xmm0
-	vdivss	xmm0, xmm8, xmm2
-	vdivss	xmm1, xmm8, xmm3
-	mov	rcx, rbp
+	vdivss	xmm0, xmm12, xmm2
+	vdivss	xmm1, xmm12, xmm3
 	vmovss	DWORD PTR scale$[rsp+8], xmm0
 	vmovss	DWORD PTR scale$[rsp+4], xmm1
 	call	QWORD PTR __imp_?Scale@Matrix3@@QEAAXAEBVPoint3@@H@Z
@@ -1982,12 +1969,17 @@ $LN29@random:
 ; 206  : 	return transform;
 ; 207  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	vmovaps	xmm13, XMMWORD PTR [rsp+64]
+	lea	r11, QWORD PTR [rsp+200]
+	vmovaps	xmm6, XMMWORD PTR [r11-24]
 	mov	rax, rbp
-	vmovaps	xmm7, XMMWORD PTR [rsp+96]
-	vmovaps	xmm8, XMMWORD PTR [rsp+80]
-	vmovaps	xmm9, XMMWORD PTR [rsp+64]
-	add	rsp, 136				; 00000088H
+	vmovaps	xmm7, XMMWORD PTR [r11-40]
+	vmovaps	xmm8, XMMWORD PTR [r11-56]
+	vmovaps	xmm9, XMMWORD PTR [r11-72]
+	vmovaps	xmm10, XMMWORD PTR [r11-88]
+	vmovaps	xmm11, XMMWORD PTR [r11-104]
+	vmovaps	xmm12, XMMWORD PTR [r11-120]
+	mov	rsp, r11
 	pop	rdi
 	pop	rbp
 	ret	0
@@ -2157,18 +2149,6 @@ $LN7@seedRandom:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point2.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
@@ -2182,94 +2162,78 @@ $T4 = 48
 $T5 = 48
 $T6 = 48
 $T7 = 48
-$T8 = 48
+$T8 = 60
 $T9 = 60
 $T10 = 60
 $T11 = 60
 $T12 = 60
-$T13 = 60
-uv$14 = 144
-this$ = 144
-sc$ = 152
-p$ = 160
-transform$ = 168
-flips$ = 176
+$T13 = 72
+$T14 = 84
+$T15 = 96
+uv$16 = 160
+this$ = 160
+sc$ = 168
+p$ = 176
+transform$ = 184
+flips$ = 192
 ?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z PROC ; BerconXYZ::get, COMDAT
 
 ; 312  : int BerconXYZ::get(ShadeContext& sc, Point3& p, Matrix3 transform, int* flips) {
 
-$LN44:
+$LN30:
 	mov	QWORD PTR [rsp+16], rbx
 	mov	QWORD PTR [rsp+24], rsi
+	mov	QWORD PTR [rsp+32], rdi
 	push	rbp
-	push	rdi
 	push	r14
+	push	r15
 	mov	rbp, rsp
-	sub	rsp, 112				; 00000070H
+	sub	rsp, 128				; 00000080H
+	mov	rdi, r8
+	mov	r15, r9
 
 ; 313  : 	switch (mappingType) {
 
-	mov	r10d, DWORD PTR [rcx]
-	mov	r14, r9
-	vmovaps	XMMWORD PTR [rsp+96], xmm6
-	mov	rdi, r8
+	mov	r8d, DWORD PTR [rcx]
 	mov	rsi, rdx
-	mov	rbx, rcx
-	test	r10d, r10d
+	mov	r14, rcx
+	test	r8d, r8d
 	je	$LN4@get
-	sub	r10d, 1
+	sub	r8d, 1
 	je	$LN17@get
-	sub	r10d, 1
+	sub	r8d, 1
 	je	$LN18@get
-	sub	r10d, 1
+	sub	r8d, 1
 	je	SHORT $LN19@get
-	cmp	r10d, 1
+	cmp	r8d, 1
 	jne	$LN16@get
 
+; 332  : 		case 4: {
+; 333  : 			Point2 uv, duv;
+
+	lea	rcx, QWORD PTR uv$16[rbp-128]
+	call	QWORD PTR __imp_??0Point2@@QEAA@XZ
+	lea	rcx, QWORD PTR duv$1[rbp-128]
+	call	QWORD PTR __imp_??0Point2@@QEAA@XZ
+
 ; 334  : 			sc.ScreenUV(uv, duv);
 
-	mov	rax, QWORD PTR [rdx]
-	lea	r8, QWORD PTR duv$1[rbp-112]
-	vxorps	xmm6, xmm6, xmm6
-	lea	rdx, QWORD PTR uv$14[rbp-112]
+	mov	rax, QWORD PTR [rsi]
+	lea	r8, QWORD PTR duv$1[rbp-128]
+	lea	rdx, QWORD PTR uv$16[rbp-128]
 	mov	rcx, rsi
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point2.h
-
-; 50   : 	Point2() : x(0.0f), y(0.0f) {}
-
-	vmovss	DWORD PTR uv$14[rbp-112], xmm6
-	vmovss	DWORD PTR uv$14[rbp-108], xmm6
-	vmovss	DWORD PTR duv$1[rbp-112], xmm6
-	vmovss	DWORD PTR duv$1[rbp-108], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 334  : 			sc.ScreenUV(uv, duv);
-
 	call	QWORD PTR [rax+272]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR uv$14[rbp-112]
-	vmovss	xmm1, DWORD PTR uv$14[rbp-108]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 335  : 			p = transform * Point3(uv.x, uv.y, 0.f);
 
-	lea	r8, QWORD PTR $T4[rbp-112]
-	mov	rdx, r14
-	lea	rcx, QWORD PTR $T9[rbp-112]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T4[rbp-112], xmm0
-	vmovss	DWORD PTR $T4[rbp-108], xmm1
-	vmovss	DWORD PTR $T4[rbp-104], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 335  : 			p = transform * Point3(uv.x, uv.y, 0.f);
-
+	vmovss	xmm2, DWORD PTR uv$16[rbp-124]
+	vmovss	xmm1, DWORD PTR uv$16[rbp-128]
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T4[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, r15
+	lea	rcx, QWORD PTR $T8[rbp-128]
+	mov	r8, rax
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR [rdi], xmm0
@@ -2290,13 +2254,13 @@ $LN19@get:
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
-	lea	rdx, QWORD PTR $T10[rbp-112]
+	lea	rdx, QWORD PTR $T9[rbp-128]
 	call	QWORD PTR [rbx+208]
 	mov	r9d, 1
 
 ; 331  : 			break;}
 
-	jmp	SHORT $LN42@get
+	jmp	SHORT $LN28@get
 $LN18@get:
 
 ; 325  : 			break;
@@ -2305,21 +2269,21 @@ $LN18@get:
 
 	mov	rbx, QWORD PTR [rdx]
 	mov	rcx, rsi
-	lea	rdx, QWORD PTR $T11[rbp-112]
+	lea	rdx, QWORD PTR $T10[rbp-128]
 	call	QWORD PTR [rbx+208]
 	mov	r9d, 2
-$LN42@get:
+$LN28@get:
 
 ; 336  : 			break;}
 ; 337  : 		}
 ; 338  : 	return TRUE;
 
 	mov	r8, rax
-	lea	rdx, QWORD PTR $T5[rbp-112]
+	lea	rdx, QWORD PTR $T5[rbp-128]
 	mov	rcx, rsi
 	call	QWORD PTR [rbx+416]
-	mov	rdx, r14
-	lea	rcx, QWORD PTR $T2[rbp-112]
+	mov	rdx, r15
+	lea	rcx, QWORD PTR $T2[rbp-128]
 	mov	r8, rax
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 	vmovsd	xmm0, QWORD PTR [rax]
@@ -2335,12 +2299,12 @@ $LN17@get:
 ; 324  : 			p = transform * sc.UVW(mappingChannel);			
 
 	mov	rax, QWORD PTR [rdx]
-	lea	rdx, QWORD PTR $T12[rbp-112]
+	lea	rdx, QWORD PTR $T11[rbp-128]
 	mov	r8d, DWORD PTR [rcx+4]
 	mov	rcx, rsi
 	call	QWORD PTR [rax+296]
-	mov	rdx, r14
-	lea	rcx, QWORD PTR $T6[rbp-112]
+	mov	rdx, r15
+	lea	rcx, QWORD PTR $T6[rbp-128]
 	mov	r8, rax
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 	vmovsd	xmm0, QWORD PTR [rax]
@@ -2355,98 +2319,82 @@ $LN17@get:
 	mov	eax, 1
 	jmp	$LN1@get
 $LN4@get:
+	vmovaps	XMMWORD PTR [rsp+112], xmm6
 
 ; 315  : 			p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;	
 
-	mov	rax, QWORD PTR [rdx]
-	lea	rdx, QWORD PTR $T13[rbp-112]
-	mov	r8d, DWORD PTR [rcx+4]
+	lea	rcx, QWORD PTR $T12[rbp-128]
+	vmovss	xmm6, DWORD PTR __real@3f000000
+	vmovaps	xmm2, xmm6
+	vmovaps	xmm1, xmm6
+	vxorps	xmm3, xmm3, xmm3
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	r8d, DWORD PTR [r14+4]
+	lea	rdx, QWORD PTR $T13[rbp-128]
+	mov	rbx, rax
 	mov	rcx, rsi
-	vmovaps	XMMWORD PTR [rsp+80], xmm7
+	mov	rax, QWORD PTR [rsi]
 	call	QWORD PTR [rax+296]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
 
-	vmovss	xmm6, DWORD PTR __real@3f000000
-	vxorps	xmm7, xmm7, xmm7
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 315  : 			p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;	
-
-	lea	r8, QWORD PTR $T8[rbp-112]
-	mov	rdx, r14
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
-
+	lea	rcx, QWORD PTR $T7[rbp-128]
 	vmovss	xmm0, DWORD PTR [rax+8]
-	vsubss	xmm3, xmm0, xmm7
-	vmovss	xmm0, DWORD PTR [rax+4]
-	vsubss	xmm2, xmm0, xmm6
+	vsubss	xmm3, xmm0, DWORD PTR [rbx+8]
 	vmovss	xmm0, DWORD PTR [rax]
-	vsubss	xmm1, xmm0, xmm6
+	vmovss	xmm2, DWORD PTR [rax+4]
+	vsubss	xmm1, xmm0, DWORD PTR [rbx]
+	vsubss	xmm2, xmm2, DWORD PTR [rbx+4]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vxorps	xmm3, xmm3, xmm3
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 315  : 			p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;	
 
-	lea	rcx, QWORD PTR $T3[rbp-112]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
-
-	vmovss	DWORD PTR $T8[rbp-112], xmm1
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T8[rbp-108], xmm2
-	vmovss	DWORD PTR $T8[rbp-104], xmm3
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 315  : 			p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;	
-
+	vmovaps	xmm2, xmm6
+	vmovaps	xmm1, xmm6
+	lea	rcx, QWORD PTR $T14[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	lea	r8, QWORD PTR $T7[rbp-128]
+	mov	rdx, r15
+	lea	rcx, QWORD PTR $T15[rbp-128]
+	mov	rbx, rax
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
-
-; 316  : 			if (flips) { if (!tiling(tileX, p.x, flips[0])) return FALSE; }
-
-	mov	r9, QWORD PTR flips$[rbp-112]
-	mov	rdx, rdi
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm3, xmm6, DWORD PTR [rax]
-	vaddss	xmm2, xmm6, DWORD PTR [rax+4]
-	vaddss	xmm0, xmm7, DWORD PTR [rax+8]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 316  : 			if (flips) { if (!tiling(tileX, p.x, flips[0])) return FALSE; }
-
-	vmovaps	xmm7, XMMWORD PTR [rsp+80]
-	vunpcklps xmm1, xmm3, xmm2
-	vmovsd	QWORD PTR [rdi], xmm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vmovss	DWORD PTR $T7[rbp-104], xmm0
+	vmovss	xmm0, DWORD PTR [rbx+8]
+	vmovss	xmm1, DWORD PTR [rbx+4]
+	lea	rcx, QWORD PTR $T3[rbp-128]
+	vaddss	xmm3, xmm0, DWORD PTR [rax+8]
+	vmovss	xmm0, DWORD PTR [rbx]
+	vaddss	xmm2, xmm1, DWORD PTR [rax+4]
+	vaddss	xmm1, xmm0, DWORD PTR [rax]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 315  : 			p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;	
 
-	mov	eax, DWORD PTR $T7[rbp-104]
-	mov	DWORD PTR [rdi+8], eax
-	mov	ecx, DWORD PTR [rbx+44]
+	vmovsd	xmm0, QWORD PTR $T3[rbp-128]
 
 ; 316  : 			if (flips) { if (!tiling(tileX, p.x, flips[0])) return FALSE; }
 
+	mov	r9, QWORD PTR flips$[rbp-128]
+	mov	rdx, rdi
+	mov	eax, DWORD PTR $T3[rbp-120]
+	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	vmovsd	QWORD PTR [rdi], xmm0
+	mov	DWORD PTR [rdi+8], eax
+	mov	ecx, DWORD PTR [r14+44]
 	test	r9, r9
 	je	SHORT $LN5@get
 	mov	r8, r9
 	call	?tiling@@YAHHAEAMAEAH@Z			; tiling
 	test	eax, eax
 	jne	SHORT $LN8@get
-$LN40@get:
+$LN26@get:
 
 ; 321  : 			else { if (!tiling(tileZ, p.z)) return FALSE; }
 
@@ -2455,13 +2403,13 @@ $LN1@get:
 
 ; 339  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+96]
-	lea	r11, QWORD PTR [rsp+112]
+	lea	r11, QWORD PTR [rsp+128]
 	mov	rbx, QWORD PTR [r11+40]
 	mov	rsi, QWORD PTR [r11+48]
+	mov	rdi, QWORD PTR [r11+56]
 	mov	rsp, r11
+	pop	r15
 	pop	r14
-	pop	rdi
 	pop	rbp
 	ret	0
 $LN5@get:
@@ -2470,12 +2418,12 @@ $LN5@get:
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
 	test	eax, eax
-	je	SHORT $LN40@get
+	je	SHORT $LN26@get
 $LN8@get:
 
 ; 318  : 			if (flips) { if (!tiling(tileY, p.y, flips[1])) return FALSE; }
 
-	mov	ecx, DWORD PTR [rbx+48]
+	mov	ecx, DWORD PTR [r14+48]
 	lea	rdx, QWORD PTR [rdi+4]
 	test	r9, r9
 	je	SHORT $LN9@get
@@ -2483,19 +2431,19 @@ $LN8@get:
 	call	?tiling@@YAHHAEAMAEAH@Z			; tiling
 	test	eax, eax
 	jne	SHORT $LN12@get
-	jmp	SHORT $LN40@get
+	jmp	SHORT $LN26@get
 $LN9@get:
 
 ; 319  : 			else { if (!tiling(tileY, p.y)) return FALSE; }
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
 	test	eax, eax
-	je	SHORT $LN40@get
+	je	SHORT $LN26@get
 $LN12@get:
 
 ; 320  : 			if (flips) { if (!tiling(tileZ, p.z, flips[2])) return FALSE; }
 
-	mov	ecx, DWORD PTR [rbx+52]
+	mov	ecx, DWORD PTR [r14+52]
 	lea	rdx, QWORD PTR [rdi+8]
 	test	r9, r9
 	je	SHORT $LN13@get
@@ -2503,14 +2451,14 @@ $LN12@get:
 	call	?tiling@@YAHHAEAMAEAH@Z			; tiling
 	test	eax, eax
 	jne	SHORT $LN16@get
-	jmp	SHORT $LN40@get
+	jmp	SHORT $LN26@get
 $LN13@get:
 
 ; 321  : 			else { if (!tiling(tileZ, p.z)) return FALSE; }
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
 	test	eax, eax
-	je	SHORT $LN40@get
+	je	SHORT $LN26@get
 $LN16@get:
 
 ; 336  : 			break;}
@@ -2522,28 +2470,6 @@ $LN16@get:
 ?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@VMatrix3@@PEAH@Z ENDP ; BerconXYZ::get
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point2.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
@@ -2557,13 +2483,13 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ;	COMDAT ?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z
 _TEXT	SEGMENT
-duv$1 = 32
+$T1 = 32
 $T2 = 32
-$T3 = 32
+duv$3 = 32
 $T4 = 32
 $T5 = 32
-$T6 = 48
-$T7 = 48
+duvw$6 = 32
+$T7 = 32
 $T8 = 48
 $T9 = 48
 $T10 = 48
@@ -2573,234 +2499,193 @@ $T13 = 48
 $T14 = 48
 $T15 = 48
 $T16 = 48
-duvw$17 = 48
-$T18 = 48
-$T19 = 48
-$T20 = 48
-$T21 = 64
-$T22 = 64
-$T23 = 64
-$T24 = 64
-$T25 = 64
-$T26 = 64
-$T27 = 64
-$T28 = 64
-$T29 = 64
-$T30 = 64
-uv$31 = 160
-this$ = 160
-sc$ = 168
-p$ = 176
-dpdx$ = 184
-dpdy$ = 192
-transform$ = 200
-flips$ = 208
+$T17 = 60
+$T18 = 60
+$T19 = 60
+$T20 = 60
+$T21 = 60
+$T22 = 60
+$T23 = 60
+$T24 = 60
+$T25 = 60
+$T26 = 60
+$T27 = 72
+$T28 = 84
+$T29 = 96
+$T30 = 96
+$T31 = 96
+$T32 = 96
+uv$33 = 176
+this$ = 176
+sc$ = 184
+p$ = 192
+dpdx$ = 200
+dpdy$ = 208
+transform$ = 216
+flips$ = 224
 ?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z PROC ; BerconXYZ::get, COMDAT
 
 ; 266  : int BerconXYZ::get(ShadeContext& sc, Point3& p, Point3& dpdx, Point3& dpdy, Matrix3 transform, int* flips) {
 
-$LN66:
-	mov	QWORD PTR [rsp+16], rbx
-	mov	QWORD PTR [rsp+24], rsi
+$LN39:
+	mov	QWORD PTR [rsp+24], rbx
+	mov	QWORD PTR [rsp+32], rsi
 	push	rbp
 	push	rdi
-	push	r13
+	push	r12
 	push	r14
 	push	r15
 	mov	rbp, rsp
-	sub	rsp, 112				; 00000070H
+	sub	rsp, 128				; 00000080H
 
 ; 267  : 	switch (mappingType) {
 
-	mov	r13, QWORD PTR dpdy$[rbp-112]
+	mov	eax, DWORD PTR [rcx]
+	mov	r14, r9
+	mov	r15, QWORD PTR dpdy$[rbp-128]
 	mov	rdi, r8
-	mov	r8d, DWORD PTR [rcx]
-	mov	r15, r9
-	vmovaps	XMMWORD PTR [rsp+96], xmm6
-	mov	r14, rdx
+	mov	r12, rdx
 	mov	rsi, rcx
-	test	r8d, r8d
+	test	eax, eax
 	js	$LN18@get
-	cmp	r8d, 1
+	cmp	eax, 1
 	jle	$LN4@get
-	cmp	r8d, 2
+	cmp	eax, 2
 	je	$LN19@get
-	cmp	r8d, 3
+	cmp	eax, 3
 	je	$LN20@get
-	cmp	r8d, 4
+	cmp	eax, 4
 	jne	$LN18@get
 
-; 300  : 			sc.ScreenUV(uv, duv);
+; 298  : 		case 4: {
+; 299  : 			Point2 uv, duv;
 
-	mov	rax, QWORD PTR [rdx]
-	lea	r8, QWORD PTR duv$1[rbp-112]
-	vxorps	xmm6, xmm6, xmm6
-	lea	rdx, QWORD PTR uv$31[rbp-112]
-	mov	rcx, r14
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point2.h
-
-; 50   : 	Point2() : x(0.0f), y(0.0f) {}
-
-	vmovss	DWORD PTR uv$31[rbp-112], xmm6
-	vmovss	DWORD PTR uv$31[rbp-108], xmm6
-	vmovss	DWORD PTR duv$1[rbp-112], xmm6
-	vmovss	DWORD PTR duv$1[rbp-108], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
+	lea	rcx, QWORD PTR uv$33[rbp-128]
+	call	QWORD PTR __imp_??0Point2@@QEAA@XZ
+	lea	rcx, QWORD PTR duv$3[rbp-128]
+	call	QWORD PTR __imp_??0Point2@@QEAA@XZ
 
 ; 300  : 			sc.ScreenUV(uv, duv);
 
+	mov	rax, QWORD PTR [r12]
+	lea	r8, QWORD PTR duv$3[rbp-128]
+	lea	rdx, QWORD PTR uv$33[rbp-128]
+	mov	rcx, r12
 	call	QWORD PTR [rax+272]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR uv$31[rbp-112]
-	vmovss	xmm1, DWORD PTR uv$31[rbp-108]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 301  : 			p = transform * Point3(uv.x, uv.y, 0.f);
 
-	mov	rbx, QWORD PTR transform$[rbp-112]
-	lea	r8, QWORD PTR $T10[rbp-112]
+	vmovss	xmm2, DWORD PTR uv$33[rbp-124]
+	vmovss	xmm1, DWORD PTR uv$33[rbp-128]
+	vxorps	xmm3, xmm3, xmm3
+	lea	rcx, QWORD PTR $T9[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rbx, QWORD PTR transform$[rbp-128]
+	lea	rcx, QWORD PTR $T19[rbp-128]
+	mov	r8, rax
 	mov	rdx, rbx
-	lea	rcx, QWORD PTR $T23[rbp-112]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T10[rbp-112], xmm0
-	vmovss	DWORD PTR $T10[rbp-108], xmm1
-	vmovss	DWORD PTR $T10[rbp-104], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 301  : 			p = transform * Point3(uv.x, uv.y, 0.f);
-
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 
 ; 302  : 			dpdx = VectorTransform(transform, Point3(duv.x, 0.f, 0.f));
 
-	lea	r8, QWORD PTR $T9[rbp-112]
-	mov	rdx, rbx
-	lea	rcx, QWORD PTR $T22[rbp-112]
+	vmovss	xmm1, DWORD PTR duv$3[rbp-128]
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm2, xmm2, xmm2
 	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR [rdi], xmm0
 	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR duv$1[rbp-112]
-	vmovss	DWORD PTR $T9[rbp-112], xmm0
-	vmovss	DWORD PTR $T9[rbp-108], xmm6
-	vmovss	DWORD PTR $T9[rbp-104], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 301  : 			p = transform * Point3(uv.x, uv.y, 0.f);
-
+	lea	rcx, QWORD PTR $T18[rbp-128]
 	mov	DWORD PTR [rdi+8], eax
-
-; 302  : 			dpdx = VectorTransform(transform, Point3(duv.x, 0.f, 0.f));
-
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, rbx
+	lea	rcx, QWORD PTR $T8[rbp-128]
+	mov	r8, rax
 	call	QWORD PTR __imp_?VectorTransform@@YA?AVPoint3@@AEBVMatrix3@@AEBV1@@Z
 
 ; 303  : 			dpdy = VectorTransform(transform, Point3(0.f, duv.y, 0.f));
 
-	lea	r8, QWORD PTR $T8[rbp-112]
-	lea	rcx, QWORD PTR $T21[rbp-112]
+	vmovss	xmm2, DWORD PTR duv$3[rbp-124]
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm1, xmm1, xmm1
 	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [r15], xmm0
+	vmovsd	QWORD PTR [r14], xmm0
 	mov	eax, DWORD PTR [rax+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR duv$1[rbp-108]
-	vmovss	DWORD PTR $T8[rbp-108], xmm0
-	vmovss	DWORD PTR $T8[rbp-112], xmm6
-	vmovss	DWORD PTR $T8[rbp-104], xmm6
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 302  : 			dpdx = VectorTransform(transform, Point3(duv.x, 0.f, 0.f));
-
-	mov	DWORD PTR [r15+8], eax
-$LN64@get:
+	lea	rcx, QWORD PTR $T17[rbp-128]
+	mov	DWORD PTR [r14+8], eax
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+$LN36@get:
 
 ; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
 
+	mov	r8, rax
+	lea	rcx, QWORD PTR $T12[rbp-128]
 	mov	rdx, rbx
 	call	QWORD PTR __imp_?VectorTransform@@YA?AVPoint3@@AEBVMatrix3@@AEBV1@@Z
 	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [r13], xmm0
+	vmovsd	QWORD PTR [r15], xmm0
 	mov	eax, DWORD PTR [rax+8]
-	mov	DWORD PTR [r13+8], eax
+	mov	DWORD PTR [r15+8], eax
 $LN18@get:
 	vmovss	xmm0, DWORD PTR [rsi+108]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm2, xmm0, DWORD PTR [r15]
-	vmulss	xmm1, xmm0, DWORD PTR [r15+4]
-	vmulss	xmm0, xmm0, DWORD PTR [r15+8]
+	vmulss	xmm3, xmm0, DWORD PTR [r14+8]
+	vmulss	xmm2, xmm0, DWORD PTR [r14+4]
+	vmulss	xmm1, xmm0, DWORD PTR [r14]
+	lea	rcx, QWORD PTR $T2[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
 
-	vunpcklps xmm1, xmm2, xmm1
-	vmovsd	QWORD PTR [r15], xmm1
+	vmovsd	xmm0, QWORD PTR $T2[rbp-128]
+	mov	eax, DWORD PTR $T2[rbp-120]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmovss	DWORD PTR $T7[rbp-104], xmm0
+	lea	rcx, QWORD PTR $T1[rbp-128]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
 
-	mov	eax, DWORD PTR $T7[rbp-104]
-	mov	DWORD PTR [r15+8], eax
-
-; 308  : 	
-; 309  : 	return TRUE;
-
-	mov	eax, 1
+	vmovsd	QWORD PTR [r14], xmm0
+	mov	DWORD PTR [r14+8], eax
 	vmovss	xmm0, DWORD PTR [rsi+108]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm2, xmm0, DWORD PTR [r13]
-	vmulss	xmm1, xmm0, DWORD PTR [r13+4]
-	vmulss	xmm0, xmm0, DWORD PTR [r13+8]
+	vmulss	xmm3, xmm0, DWORD PTR [r15+8]
+	vmulss	xmm2, xmm0, DWORD PTR [r15+4]
+	vmulss	xmm1, xmm0, DWORD PTR [r15]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
 
-	vunpcklps xmm1, xmm2, xmm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovsd	xmm0, QWORD PTR $T1[rbp-128]
+	mov	ecx, DWORD PTR $T1[rbp-120]
 
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+; 308  : 	
+; 309  : 	return TRUE;
 
-	vmovss	DWORD PTR $T6[rbp-104], xmm0
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
-
-	mov	ecx, DWORD PTR $T6[rbp-104]
-	vmovsd	QWORD PTR [r13], xmm1
-	mov	DWORD PTR [r13+8], ecx
+	mov	eax, 1
+	vmovsd	QWORD PTR [r15], xmm0
+	mov	DWORD PTR [r15+8], ecx
 $LN1@get:
 
 ; 310  : }
 
-	vmovaps	xmm6, XMMWORD PTR [rsp+96]
-	lea	r11, QWORD PTR [rsp+112]
-	mov	rbx, QWORD PTR [r11+56]
-	mov	rsi, QWORD PTR [r11+64]
+	lea	r11, QWORD PTR [rsp+128]
+	mov	rbx, QWORD PTR [r11+64]
+	mov	rsi, QWORD PTR [r11+72]
 	mov	rsp, r11
 	pop	r15
 	pop	r14
-	pop	r13
+	pop	r12
 	pop	rdi
 	pop	rbp
 	ret	0
@@ -2811,42 +2696,42 @@ $LN20@get:
 ; 293  : 			p = transform * sc.PointTo(sc.P(),REF_WORLD);
 
 	mov	rbx, QWORD PTR [rdx]
-	mov	rcx, r14
-	lea	rdx, QWORD PTR $T25[rbp-112]
+	mov	rcx, r12
+	lea	rdx, QWORD PTR $T21[rbp-128]
 	call	QWORD PTR [rbx+208]
 	mov	r9d, 1
-	lea	rdx, QWORD PTR $T12[rbp-112]
+	lea	rdx, QWORD PTR $T11[rbp-128]
 	mov	r8, rax
-	mov	rcx, r14
+	mov	rcx, r12
 	call	QWORD PTR [rbx+416]
-	mov	rbx, QWORD PTR transform$[rbp-112]
-	lea	rcx, QWORD PTR $T2[rbp-112]
+	mov	rbx, QWORD PTR transform$[rbp-128]
+	lea	rcx, QWORD PTR $T4[rbp-128]
 	mov	r8, rax
 	mov	rdx, rbx
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 
 ; 294  : 			sc.DP(dpdx, dpdy);	
 
-	mov	r8, r13
-	mov	rdx, r15
-	mov	rcx, r14
+	mov	r8, r15
+	mov	rdx, r14
+	mov	rcx, r12
 	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR [rdi], xmm0
 	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR [rdi+8], eax
-	mov	rax, QWORD PTR [r14]
+	mov	rax, QWORD PTR [r12]
 	call	QWORD PTR [rax+216]
 
 ; 295  : 			dpdx = VectorTransform(transform, sc.VectorTo(dpdx, REF_WORLD));
 
-	mov	rax, QWORD PTR [r14]
-	lea	rdx, QWORD PTR $T24[rbp-112]
+	mov	rax, QWORD PTR [r12]
+	lea	rdx, QWORD PTR $T20[rbp-128]
 	mov	r9d, 1
-	mov	r8, r15
-	mov	rcx, r14
+	mov	r8, r14
+	mov	rcx, r12
 	call	QWORD PTR [rax+432]
 	mov	rdx, rbx
-	lea	rcx, QWORD PTR $T11[rbp-112]
+	lea	rcx, QWORD PTR $T10[rbp-128]
 	mov	r8, rax
 	call	QWORD PTR __imp_?VectorTransform@@YA?AVPoint3@@AEBVMatrix3@@AEBV1@@Z
 
@@ -2856,7 +2741,7 @@ $LN20@get:
 
 ; 297  : 			break;}
 
-	jmp	$LN63@get
+	jmp	$LN37@get
 $LN19@get:
 
 ; 285  : 			break;
@@ -2864,88 +2749,83 @@ $LN19@get:
 ; 287  : 			p = transform * sc.PointTo(sc.P(),REF_OBJECT);
 
 	mov	rbx, QWORD PTR [rdx]
-	mov	rcx, r14
-	lea	rdx, QWORD PTR $T28[rbp-112]
+	mov	rcx, r12
+	lea	rdx, QWORD PTR $T24[rbp-128]
 	call	QWORD PTR [rbx+208]
 	mov	r9d, 2
-	lea	rdx, QWORD PTR $T15[rbp-112]
+	lea	rdx, QWORD PTR $T14[rbp-128]
 	mov	r8, rax
-	mov	rcx, r14
+	mov	rcx, r12
 	call	QWORD PTR [rbx+416]
-	mov	rbx, QWORD PTR transform$[rbp-112]
-	lea	rcx, QWORD PTR $T3[rbp-112]
+	mov	rbx, QWORD PTR transform$[rbp-128]
+	lea	rcx, QWORD PTR $T5[rbp-128]
 	mov	r8, rax
 	mov	rdx, rbx
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 
 ; 288  : 			sc.DP(dpdx, dpdy);	
 
-	mov	r8, r13
-	mov	rdx, r15
-	mov	rcx, r14
+	mov	r8, r15
+	mov	rdx, r14
+	mov	rcx, r12
 	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR [rdi], xmm0
 	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR [rdi+8], eax
-	mov	rax, QWORD PTR [r14]
+	mov	rax, QWORD PTR [r12]
 	call	QWORD PTR [rax+216]
 
 ; 289  : 			dpdx = VectorTransform(transform, sc.VectorTo(dpdx, REF_OBJECT));
 
-	mov	rax, QWORD PTR [r14]
-	lea	rdx, QWORD PTR $T27[rbp-112]
+	mov	rax, QWORD PTR [r12]
+	lea	rdx, QWORD PTR $T23[rbp-128]
 	mov	r9d, 2
-	mov	r8, r15
-	mov	rcx, r14
+	mov	r8, r14
+	mov	rcx, r12
 	call	QWORD PTR [rax+432]
 	mov	rdx, rbx
-	lea	rcx, QWORD PTR $T14[rbp-112]
+	lea	rcx, QWORD PTR $T13[rbp-128]
 	mov	r8, rax
 	call	QWORD PTR __imp_?VectorTransform@@YA?AVPoint3@@AEBVMatrix3@@AEBV1@@Z
 
 ; 290  : 			dpdy = VectorTransform(transform, sc.VectorTo(dpdy, REF_OBJECT));
 
 	mov	r9d, 2
-$LN63@get:
+$LN37@get:
 
 ; 307  : 	dpdx = dpdx * filtering; dpdy = dpdy * filtering;
 
 	vmovsd	xmm0, QWORD PTR [rax]
-	vmovsd	QWORD PTR [r15], xmm0
+	vmovsd	QWORD PTR [r14], xmm0
 	mov	eax, DWORD PTR [rax+8]
-	lea	rdx, QWORD PTR $T26[rbp-112]
-	mov	DWORD PTR [r15+8], eax
-	mov	r8, r13
-	mov	rax, QWORD PTR [r14]
-	mov	rcx, r14
+	lea	rdx, QWORD PTR $T22[rbp-128]
+	mov	DWORD PTR [r14+8], eax
+	mov	r8, r15
+	mov	rax, QWORD PTR [r12]
+	mov	rcx, r12
 	call	QWORD PTR [rax+432]
-	mov	r8, rax
-	lea	rcx, QWORD PTR $T13[rbp-112]
-	jmp	$LN64@get
+	jmp	$LN36@get
 $LN4@get:
+	mov	QWORD PTR [rsp+184], r13
 
 ; 268  : 		case 0:
 ; 269  : 		case 1:
 ; 270  : 			if (mappingType)
 
-	mov	rax, QWORD PTR [rdx]
-	test	r8d, r8d
-	mov	ecx, DWORD PTR [rcx+4]
-	lea	rdx, QWORD PTR $T30[rbp-112]
-	vmovaps	XMMWORD PTR [rsp+80], xmm7
-	mov	r8d, ecx
-	vxorps	xmm7, xmm7, xmm7
-	mov	r9, QWORD PTR [rax+296]
-	mov	rcx, r14
+	test	eax, eax
 	je	SHORT $LN5@get
 
 ; 271  : 				p = transform * sc.UVW(mappingChannel);			
 
-	call	r9
-	mov	rbx, QWORD PTR transform$[rbp-112]
-	lea	rcx, QWORD PTR $T20[rbp-112]
-	mov	rdx, rbx
+	mov	rax, QWORD PTR [rdx]
+	lea	rdx, QWORD PTR $T26[rbp-128]
+	mov	r8d, DWORD PTR [rcx+4]
+	mov	rcx, r12
+	call	QWORD PTR [rax+296]
+	mov	r13, QWORD PTR transform$[rbp-128]
+	lea	rcx, QWORD PTR $T16[rbp-128]
 	mov	r8, rax
+	mov	rdx, r13
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR [rdi], xmm0
@@ -2953,129 +2833,117 @@ $LN4@get:
 
 ; 272  : 			else
 
-	jmp	SHORT $LN58@get
+	jmp	$LN32@get
 $LN5@get:
+	vmovaps	XMMWORD PTR [rsp+112], xmm6
 
 ; 273  : 				p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;
 
-	call	r9
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
-
+	lea	rcx, QWORD PTR $T25[rbp-128]
 	vmovss	xmm6, DWORD PTR __real@3f000000
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 273  : 				p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;
-
-	mov	rbx, QWORD PTR transform$[rbp-112]
-	lea	r8, QWORD PTR $T19[rbp-112]
-	mov	rdx, rbx
-	lea	rcx, QWORD PTR $T5[rbp-112]
+	vmovaps	xmm2, xmm6
+	vmovaps	xmm1, xmm6
+	vxorps	xmm3, xmm3, xmm3
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	r8d, DWORD PTR [rsi+4]
+	lea	rdx, QWORD PTR $T27[rbp-128]
+	mov	rbx, rax
+	mov	rcx, r12
+	mov	rax, QWORD PTR [r12]
+	call	QWORD PTR [rax+296]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 293  :    return(Point3(x-b.x,y-b.y,z-b.z));
 
+	lea	rcx, QWORD PTR $T15[rbp-128]
 	vmovss	xmm0, DWORD PTR [rax+8]
-	vmovss	xmm1, DWORD PTR [rax+4]
-	vsubss	xmm3, xmm0, xmm7
+	vsubss	xmm3, xmm0, DWORD PTR [rbx+8]
 	vmovss	xmm0, DWORD PTR [rax]
-	vsubss	xmm2, xmm1, xmm6
-	vsubss	xmm1, xmm0, xmm6
-	vmovss	DWORD PTR $T19[rbp-112], xmm1
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T19[rbp-108], xmm2
-	vmovss	DWORD PTR $T19[rbp-104], xmm3
+	vmovss	xmm2, DWORD PTR [rax+4]
+	vsubss	xmm1, xmm0, DWORD PTR [rbx]
+	vsubss	xmm2, xmm2, DWORD PTR [rbx+4]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vxorps	xmm3, xmm3, xmm3
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 273  : 				p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;
 
+	vmovaps	xmm2, xmm6
+	vmovaps	xmm1, xmm6
+	lea	rcx, QWORD PTR $T28[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	r13, QWORD PTR transform$[rbp-128]
+	lea	r8, QWORD PTR $T15[rbp-128]
+	mov	rdx, r13
+	lea	rcx, QWORD PTR $T32[rbp-128]
+	mov	rbx, rax
 	call	QWORD PTR __imp_??D@YA?AVPoint3@@AEBVMatrix3@@AEBV0@@Z
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm3, xmm6, DWORD PTR [rax]
-	vaddss	xmm2, xmm6, DWORD PTR [rax+4]
-	vaddss	xmm0, xmm7, DWORD PTR [rax+8]
+	vmovss	xmm0, DWORD PTR [rbx+8]
+	vmovss	xmm1, DWORD PTR [rbx+4]
+	lea	rcx, QWORD PTR $T7[rbp-128]
+	vaddss	xmm3, xmm0, DWORD PTR [rax+8]
+	vmovss	xmm0, DWORD PTR [rax]
+	vaddss	xmm2, xmm1, DWORD PTR [rax+4]
+	vaddss	xmm1, xmm0, DWORD PTR [rbx]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 273  : 				p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;
 
-	vunpcklps xmm1, xmm3, xmm2
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
-
-	vmovss	DWORD PTR $T18[rbp-104], xmm0
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 273  : 				p = transform * (sc.UVW(mappingChannel) - OFFSET_5) + OFFSET_5;
-
-	mov	eax, DWORD PTR $T18[rbp-104]
-	vmovsd	QWORD PTR [rdi], xmm1
-$LN58@get:
+	vmovsd	xmm0, QWORD PTR $T7[rbp-128]
+	mov	eax, DWORD PTR $T7[rbp-120]
+	vmovaps	xmm6, XMMWORD PTR [rsp+112]
+	vmovsd	QWORD PTR [rdi], xmm0
+$LN32@get:
 
 ; 274  : 			{
 ; 275  : 			Point3 duvw = VectorTransform(transform, sc.DUVW(mappingChannel));
 
 	mov	DWORD PTR [rdi+8], eax
-	lea	rdx, QWORD PTR $T29[rbp-112]
-	mov	rax, QWORD PTR [r14]
-	mov	rcx, r14
+	lea	rdx, QWORD PTR $T31[rbp-128]
+	mov	rax, QWORD PTR [r12]
+	mov	rcx, r12
 	mov	r8d, DWORD PTR [rsi+4]
 	call	QWORD PTR [rax+304]
-	mov	rdx, rbx
-	lea	rcx, QWORD PTR duvw$17[rbp-112]
+	mov	rdx, r13
+	lea	rcx, QWORD PTR duvw$6[rbp-128]
 	mov	r8, rax
 	call	QWORD PTR __imp_?VectorTransform@@YA?AVPoint3@@AEBVMatrix3@@AEBV1@@Z
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR duvw$17[rbp-112]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 279  : 			if (flips) { if (!tiling(tileX, p.x, flips[0])) return FALSE; }
-
-	mov	r9, QWORD PTR flips$[rbp-112]
-	mov	rdx, rdi
-	vunpcklps xmm0, xmm0, xmm7
-	vmovsd	QWORD PTR [r15], xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR duvw$17[rbp-108]
-	vmovss	DWORD PTR $T4[rbp-104], xmm7
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 276  : 			dpdx = Point3(duvw.x, 0.f, 0.f);
 
-	mov	eax, DWORD PTR $T4[rbp-104]
-	mov	DWORD PTR [r15+8], eax
+	vmovss	xmm1, DWORD PTR duvw$6[rbp-128]
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm2, xmm2, xmm2
+	lea	rcx, QWORD PTR $T30[rbp-128]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
 ; 277  : 			dpdy = Point3(0.f, duvw.y, 0.f);
 
-	vunpcklps xmm0, xmm7, xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovss	xmm2, DWORD PTR duvw$6[rbp-124]
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm1, xmm1, xmm1
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR [r14], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	lea	rcx, QWORD PTR $T29[rbp-128]
+	mov	DWORD PTR [r14+8], eax
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T16[rbp-104], xmm7
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 277  : 			dpdy = Point3(0.f, duvw.y, 0.f);
-
-	mov	eax, DWORD PTR $T16[rbp-104]
-
+; 278  : 			}
 ; 279  : 			if (flips) { if (!tiling(tileX, p.x, flips[0])) return FALSE; }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp+80]
-	vmovsd	QWORD PTR [r13], xmm0
-	mov	DWORD PTR [r13+8], eax
+	mov	r9, QWORD PTR flips$[rbp-128]
+	mov	rdx, rdi
+	mov	r13, QWORD PTR [rsp+184]
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR [r15], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR [r15+8], eax
 	mov	ecx, DWORD PTR [rsi+44]
 	test	r9, r9
 	je	SHORT $LN7@get
@@ -3093,7 +2961,7 @@ $LN7@get:
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
 	test	eax, eax
-	je	SHORT $LN57@get
+	je	SHORT $LN31@get
 $LN10@get:
 
 ; 281  : 			if (flips) { if (!tiling(tileY, p.y, flips[1])) return FALSE; }
@@ -3116,7 +2984,7 @@ $LN11@get:
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
 	test	eax, eax
-	je	SHORT $LN57@get
+	je	SHORT $LN31@get
 $LN14@get:
 
 ; 283  : 			if (flips) { if (!tiling(tileZ, p.z, flips[2])) return FALSE; }
@@ -3127,16 +2995,16 @@ $LN14@get:
 	je	SHORT $LN15@get
 	lea	r8, QWORD PTR [r9+8]
 	call	?tiling@@YAHHAEAMAEAH@Z			; tiling
-	jmp	SHORT $LN60@get
+	jmp	SHORT $LN34@get
 $LN15@get:
 
 ; 284  : 			else { if (!tiling(tileZ, p.z)) return FALSE; }
 
 	call	?tiling@@YAHHAEAM@Z			; tiling
-$LN60@get:
+$LN34@get:
 	test	eax, eax
 	jne	$LN18@get
-$LN57@get:
+$LN31@get:
 	xor	eax, eax
 	jmp	$LN1@get
 ?get@BerconXYZ@@AEAAHAEAVShadeContext@@AEAVPoint3@@11VMatrix3@@PEAH@Z ENDP ; BerconXYZ::get
@@ -4398,10 +4266,6 @@ $LN6@reset:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ;	COMDAT ?update@BerconXYZ@@QEAAXXZ
 _TEXT	SEGMENT
 $T1 = 32
@@ -4412,7 +4276,7 @@ this$ = 128
 
 ; 161  : void BerconXYZ::update() {
 
-$LN10:
+$LN6:
 	mov	QWORD PTR [rsp+8], rbx
 	push	rdi
 	sub	rsp, 112				; 00000070H
@@ -4423,30 +4287,16 @@ $LN10:
 	mov	rdi, rcx
 	mov	rcx, rbx
 	call	QWORD PTR __imp_?IdentityMatrix@Matrix3@@QEAAXXZ
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	xmm0, DWORD PTR [rdi+8]
-	vmovss	xmm1, DWORD PTR [rdi+12]
-	vmovss	DWORD PTR $T2[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [rdi+16]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 163  : 	tm.Translate(Point3(offX, offY, offZ));
 
-	lea	rdx, QWORD PTR $T2[rsp]
+	vmovss	xmm3, DWORD PTR [rdi+16]
+	vmovss	xmm2, DWORD PTR [rdi+12]
+	vmovss	xmm1, DWORD PTR [rdi+8]
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, rax
 	mov	rcx, rbx
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T2[rsp+8], xmm0
-	vmovss	DWORD PTR $T2[rsp+4], xmm1
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 163  : 	tm.Translate(Point3(offX, offY, offZ));
-
 	call	QWORD PTR __imp_?Translate@Matrix3@@QEAAXAEBVPoint3@@@Z
 
 ; 164  :  	tm.RotateX(angX);
@@ -4486,16 +4336,15 @@ $LN10:
 ; 170  : 
 ; 171  : 	tm.Scale(Point3(1.f/sizeX, 1.f/sizeY, 1.f/sizeZ));
 
-	vmovss	xmm2, DWORD PTR __real@3f800000
-	vdivss	xmm0, xmm2, DWORD PTR [rdi+20]
-	vdivss	xmm1, xmm2, DWORD PTR [rdi+24]
-	vmovss	DWORD PTR $T1[rsp], xmm0
-	vdivss	xmm0, xmm2, DWORD PTR [rdi+28]
+	vmovss	xmm0, DWORD PTR __real@3f800000
+	vdivss	xmm3, xmm0, DWORD PTR [rdi+28]
+	vdivss	xmm2, xmm0, DWORD PTR [rdi+24]
+	vdivss	xmm1, xmm0, DWORD PTR [rdi+20]
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 	xor	r8d, r8d
-	lea	rdx, QWORD PTR $T1[rsp]
 	mov	rcx, rbx
-	vmovss	DWORD PTR $T1[rsp+8], xmm0
-	vmovss	DWORD PTR $T1[rsp+4], xmm1
+	mov	rdx, rax
 	call	QWORD PTR __imp_?Scale@Matrix3@@QEAAXAEBVPoint3@@H@Z
 
 ; 172  : 
@@ -4562,34 +4411,28 @@ $LN3@update:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 ;	COMDAT ?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z
 _TEXT	SEGMENT
-tv310 = 48
-tv461 = 56
+tv456 = 48
+tv305 = 56
 $T1 = 56
 $T2 = 56
 $T3 = 80
-this$ = 224
-tv305 = 232
-pblock$ = 232
-t$ = 240
-ivalid$ = 248
+this$ = 240
+tv301 = 248
+pblock$ = 248
+t$ = 256
+ivalid$ = 264
 ?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z PROC ; BerconXYZ::update, COMDAT
 
 ; 68   : void BerconXYZ::update(IParamBlock2* pblock, TimeValue t, Interval& ivalid) {
 
-$LN14:
+$LN10:
 
 ; 69   : 	if (!pblock) return;
 
 	test	rdx, rdx
-	je	$LN12@update
+	je	$LN8@update
 
 ; 68   : void BerconXYZ::update(IParamBlock2* pblock, TimeValue t, Interval& ivalid) {
 
@@ -4601,7 +4444,7 @@ $LN14:
 	push	rsi
 	push	rdi
 	push	r14
-	sub	rsp, 184				; 000000b8H
+	sub	rsp, 200				; 000000c8H
 
 ; 70   : 	//if (!pblock->GetMap()) return;
 ; 71   : 
@@ -4615,13 +4458,14 @@ $LN14:
 	mov	rbx, rdx
 	mov	QWORD PTR [rax-64], r15
 	mov	r14, rcx
-	mov	rax, QWORD PTR [rdx]
+	vmovaps	XMMWORD PTR [rax-88], xmm6
 	xor	ebp, ebp
+	mov	rax, QWORD PTR [rdx]
+	mov	rcx, rbx
 	mov	edx, 2
 	mov	DWORD PTR [rsp+40], ebp
-	mov	rcx, rbx
-	mov	QWORD PTR [rsp+32], rsi
 	mov	edi, r8d
+	mov	QWORD PTR [rsp+32], rsi
 	call	QWORD PTR [rax+1712]
 
 ; 73   : 	pblockGetValue(xyz_offset_y, offY);	
@@ -4799,7 +4643,7 @@ $LN14:
 	mov	r8, QWORD PTR this$[rsp]
 	mov	rax, QWORD PTR [rbx]
 	add	r8, 80					; 00000050H
-	mov	QWORD PTR tv305[rsp], r8
+	mov	QWORD PTR tv301[rsp], r8
 	mov	r9, r8
 	mov	r8d, DWORD PTR t$[rsp]
 	mov	DWORD PTR [rsp+40], ebp
@@ -4814,12 +4658,12 @@ $LN14:
 	mov	rcx, QWORD PTR ivalid$[rsp]
 	add	r8, 84					; 00000054H
 	mov	rax, QWORD PTR [rbx]
-	mov	r9, r8
 	mov	DWORD PTR [rsp+40], ebp
-	mov	QWORD PTR tv310[rsp], r8
+	mov	QWORD PTR tv456[rsp], r8
 	mov	QWORD PTR [rsp+32], rcx
-	mov	r8d, DWORD PTR t$[rsp]
+	mov	r9, r8
 	mov	rcx, rbx
+	mov	r8d, DWORD PTR t$[rsp]
 	call	QWORD PTR [rax+1712]
 
 ; 90   : 	pblockGetValue(xyz_angle_z2, angZ2);
@@ -4829,7 +4673,7 @@ $LN14:
 	mov	r8, QWORD PTR this$[rsp]
 	mov	rax, QWORD PTR [rbx]
 	add	r8, 88					; 00000058H
-	mov	QWORD PTR tv461[rsp], r8
+	mov	QWORD PTR tv305[rsp], r8
 	mov	r9, r8
 	mov	r8d, DWORD PTR t$[rsp]
 	mov	DWORD PTR [rsp+40], ebp
@@ -4923,8 +4767,8 @@ $LN14:
 	lea	edx, QWORD PTR [rbp+26]
 	mov	rax, QWORD PTR [rbx]
 	add	r9, 104					; 00000068H
-	mov	rcx, QWORD PTR ivalid$[rsp]
 	mov	DWORD PTR [rsp+40], ebp
+	mov	rcx, QWORD PTR ivalid$[rsp]
 	mov	r8d, DWORD PTR t$[rsp]
 	mov	QWORD PTR [rsp+32], rcx
 	mov	rcx, rbx
@@ -4988,33 +4832,33 @@ $LN14:
 ; 108  : 
 ; 109  : 	angX *= DEG_TO_RAD; angY *= DEG_TO_RAD; angZ *= DEG_TO_RAD;
 
-	vmovss	xmm3, DWORD PTR __real@3c8efa35
+	vmovss	xmm6, DWORD PTR __real@3c8efa35
 
 ; 110  : 	angX2 *= DEG_TO_RAD; angY2 *= DEG_TO_RAD; angZ2 *= DEG_TO_RAD;
 
-	mov	rax, QWORD PTR tv305[rsp]
+	mov	rax, QWORD PTR tv301[rsp]
 
 ; 111  : 
 ; 112  : 	EnableStuff(pblock, t);
 
 	mov	rdx, rbx
-	vmulss	xmm0, xmm3, DWORD PTR [r14+32]
-	vmulss	xmm2, xmm3, DWORD PTR [r14+36]
-	vmulss	xmm1, xmm3, DWORD PTR [r14+40]
+	vmulss	xmm0, xmm6, DWORD PTR [r14+32]
+	vmulss	xmm2, xmm6, DWORD PTR [r14+36]
+	vmulss	xmm1, xmm6, DWORD PTR [r14+40]
 	mov	rbx, QWORD PTR this$[rsp]
 	mov	r8d, DWORD PTR t$[rsp]
 	mov	rcx, rbx
 	vmovss	DWORD PTR [r14+32], xmm0
-	vmulss	xmm0, xmm3, DWORD PTR [rax]
+	vmulss	xmm0, xmm6, DWORD PTR [rax]
 	vmovss	DWORD PTR [rax], xmm0
-	mov	rax, QWORD PTR tv310[rsp]
+	mov	rax, QWORD PTR tv456[rsp]
 	vmovss	DWORD PTR [r14+36], xmm2
 	vmovss	DWORD PTR [r14+40], xmm1
-	vmulss	xmm2, xmm3, DWORD PTR [rax]
-	vmovss	DWORD PTR [rax], xmm2
-	mov	rax, QWORD PTR tv461[rsp]
-	vmulss	xmm1, xmm3, DWORD PTR [rax]
-	vmovss	DWORD PTR [rax], xmm1
+	vmulss	xmm5, xmm6, DWORD PTR [rax]
+	vmovss	DWORD PTR [rax], xmm5
+	mov	rax, QWORD PTR tv305[rsp]
+	vmulss	xmm4, xmm6, DWORD PTR [rax]
+	vmovss	DWORD PTR [rax], xmm4
 	call	?EnableStuff@BerconXYZ@@AEAAXPEAVIParamBlock2@@H@Z ; BerconXYZ::EnableStuff
 
 ; 162  : 	tm.IdentityMatrix();
@@ -5022,39 +4866,17 @@ $LN14:
 	add	rbx, 156				; 0000009cH
 	mov	rcx, rbx
 	call	QWORD PTR __imp_?IdentityMatrix@Matrix3@@QEAAXXZ
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	mov	rax, QWORD PTR this$[rsp]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
 
 ; 163  : 	tm.Translate(Point3(offX, offY, offZ));
 
-	lea	rdx, QWORD PTR $T2[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
+	mov	r15, QWORD PTR this$[rsp]
+	lea	rcx, QWORD PTR $T2[rsp]
+	vmovss	xmm3, DWORD PTR [r14+16]
 	vmovss	xmm2, DWORD PTR [r14+12]
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 163  : 	tm.Translate(Point3(offX, offY, offZ));
-
+	vmovss	xmm1, DWORD PTR [r15+8]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rdx, rax
 	mov	rcx, rbx
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T2[rsp+4], xmm2
-	vmovss	xmm0, DWORD PTR [rax+8]
-	vmovss	DWORD PTR $T2[rsp], xmm0
-	vmovss	xmm0, DWORD PTR [r14+16]
-	vmovss	DWORD PTR $T2[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\berconcommon.cpp
-
-; 163  : 	tm.Translate(Point3(offX, offY, offZ));
-
 	call	QWORD PTR __imp_?Translate@Matrix3@@QEAAXAEBVPoint3@@@Z
 
 ; 164  :  	tm.RotateX(angX);
@@ -5080,9 +4902,8 @@ $LN14:
 
 	vmovups	ymm0, YMMWORD PTR [rbx]
 	vmovups	xmm1, XMMWORD PTR [rbx+32]
-	mov	rdi, QWORD PTR this$[rsp]
 	mov	eax, DWORD PTR [rbx+48]
-	lea	rcx, QWORD PTR [rdi+208]
+	lea	rcx, QWORD PTR [r15+208]
 	vmovups	YMMWORD PTR [rcx], ymm0
 	vmovups	XMMWORD PTR [rcx+32], xmm1
 	mov	DWORD PTR [rcx+48], eax
@@ -5095,16 +4916,15 @@ $LN14:
 ; 170  : 
 ; 171  : 	tm.Scale(Point3(1.f/sizeX, 1.f/sizeY, 1.f/sizeZ));
 
-	vmovss	xmm2, DWORD PTR __real@3f800000
-	vdivss	xmm0, xmm2, DWORD PTR [rdi+20]
-	vdivss	xmm1, xmm2, DWORD PTR [rdi+24]
-	vmovss	DWORD PTR $T1[rsp], xmm0
-	vdivss	xmm0, xmm2, DWORD PTR [r14+28]
+	vmovss	xmm0, DWORD PTR __real@3f800000
+	vdivss	xmm3, xmm0, DWORD PTR [r14+28]
+	vdivss	xmm2, xmm0, DWORD PTR [r15+24]
+	vdivss	xmm1, xmm0, DWORD PTR [r15+20]
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 	xor	r8d, r8d
-	lea	rdx, QWORD PTR $T1[rsp]
 	mov	rcx, rbx
-	vmovss	DWORD PTR $T1[rsp+8], xmm0
-	vmovss	DWORD PTR $T1[rsp+4], xmm1
+	mov	rdx, rax
 	call	QWORD PTR __imp_?Scale@Matrix3@@QEAAXAEBVPoint3@@H@Z
 
 ; 172  : 
@@ -5113,12 +4933,12 @@ $LN14:
 	vmovups	ymm0, YMMWORD PTR [rbx]
 	vmovups	xmm1, XMMWORD PTR [rbx+32]
 	mov	eax, DWORD PTR [rbx+48]
-	lea	r8, QWORD PTR [rdi+120]
+	lea	r8, QWORD PTR [r15+120]
 	vmovups	YMMWORD PTR $T3[rsp], ymm0
 	vmovups	XMMWORD PTR $T3[rsp+32], xmm1
 	mov	DWORD PTR $T3[rsp+48], eax
 	lea	rdx, QWORD PTR $T3[rsp]
-	mov	rcx, rdi
+	mov	rcx, r15
 	vzeroupper
 	call	?getBasis@BerconXYZ@@AEAAXVMatrix3@@PEAVPoint3@@@Z ; BerconXYZ::getBasis
 
@@ -5128,63 +4948,52 @@ $LN14:
 	vmovss	xmm0, DWORD PTR [r14+56]
 	vmovss	xmm1, DWORD PTR __real@38d1b717
 	vcomiss	xmm0, xmm1
-	mov	r15, QWORD PTR [rsp+152]
-	mov	r13, QWORD PTR [rsp+160]
-	mov	r12, QWORD PTR [rsp+168]
-	mov	rbp, QWORD PTR [rsp+176]
+	vmovaps	xmm6, XMMWORD PTR [rsp+144]
+	mov	r13, QWORD PTR [rsp+176]
+	mov	r12, QWORD PTR [rsp+184]
+	mov	rbp, QWORD PTR [rsp+192]
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+60]
+	vmovss	xmm0, DWORD PTR [r15+60]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+64]
+	vmovss	xmm0, DWORD PTR [r15+64]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+68]
+	vmovss	xmm0, DWORD PTR [r15+68]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+72]
+	vmovss	xmm0, DWORD PTR [r15+72]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+76]
+	vmovss	xmm0, DWORD PTR [r15+76]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+80]
+	vmovss	xmm0, DWORD PTR [r15+80]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+84]
+	vmovss	xmm0, DWORD PTR [r15+84]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
-	vmovss	xmm0, DWORD PTR [rdi+88]
+	vmovss	xmm0, DWORD PTR [r15+88]
 	vcomiss	xmm0, xmm1
 	ja	SHORT $LN6@update
 	xor	al, al
-	mov	BYTE PTR [rdi+116], al
-
-; 113  : 	update();
-; 114  : }
-
-	add	rsp, 184				; 000000b8H
-	pop	r14
-	pop	rdi
-	pop	rsi
-	pop	rbx
-	ret	0
+	jmp	SHORT $LN7@update
 $LN6@update:
-
-; 175  : 	variance = NZERO(offX2) || NZERO(offY2) || NZERO(offZ2) || NZERO(sizeX2) || NZERO(sizeY2) || NZERO(sizeZ2) || NZERO(angX2) || NZERO(angY2) || NZERO(angZ2);
-
 	mov	al, 1
-	mov	BYTE PTR [rdi+116], al
+$LN7@update:
+	mov	BYTE PTR [r15+116], al
+	mov	r15, QWORD PTR [rsp+168]
 
 ; 113  : 	update();
 ; 114  : }
 
-	add	rsp, 184				; 000000b8H
+	add	rsp, 200				; 000000c8H
 	pop	r14
 	pop	rdi
 	pop	rsi
 	pop	rbx
-$LN12@update:
+$LN8@update:
 	ret	0
 ?update@BerconXYZ@@QEAAXPEAVIParamBlock2@@HAEAVInterval@@@Z ENDP ; BerconXYZ::update
 _TEXT	ENDS
@@ -5414,34 +5223,33 @@ this$ = 8
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 ;	COMDAT ?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z
 _TEXT	SEGMENT
-this$ = 8
-__$ReturnUdt$ = 16
-i$ = 24
+this$ = 48
+__$ReturnUdt$ = 56
+i$ = 64
 ?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z PROC		; Matrix3::GetRow, COMDAT
+
+; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
+
+$LN6:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+	mov	rbx, rdx
 
 ; 118  :    const Point3& operator[](int i) const { return((Point3&)(*m[i])); }
 
 	movsxd	rax, r8d
 	lea	r8, QWORD PTR [rax+rax*2]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR [rcx+r8*4]
-	mov	DWORD PTR [rdx], eax
-	mov	eax, DWORD PTR [rcx+r8*4+4]
-	mov	DWORD PTR [rdx+4], eax
-	mov	eax, DWORD PTR [rcx+r8*4+8]
-	mov	DWORD PTR [rdx+8], eax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
+	lea	rdx, QWORD PTR [rcx+r8*4]
 
 ; 260  :    Point3 GetRow(int i) const { return (*this)[i]; }
 
-	mov	rax, rdx
+	mov	rcx, rbx
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rax, rbx
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ?GetRow@Matrix3@@QEBA?AVPoint3@@H@Z ENDP		; Matrix3::GetRow
 _TEXT	ENDS
@@ -5479,35 +5287,31 @@ _TEXT	ENDS
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
 _TEXT	SEGMENT
-__$ReturnUdt$ = 8
-a$ = 16
-f$ = 24
+__$ReturnUdt$ = 48
+a$ = 56
+f$ = 64
 ??D@YA?AVPoint3@@AEBV0@M@Z PROC				; operator*, COMDAT
 
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+; 326  : __forceinline Point3 operator*(const Point3& a, float f) {
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx]
-	vmulss	xmm1, xmm2, DWORD PTR [rdx+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm1
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
+	vmulss	xmm3, xmm2, DWORD PTR [rdx+8]
+	vmovaps	xmm0, xmm2
+	vmulss	xmm1, xmm0, DWORD PTR [rdx]
+	vmulss	xmm2, xmm2, DWORD PTR [rdx+4]
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rax, rbx
 
 ; 328  :    }
 
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS

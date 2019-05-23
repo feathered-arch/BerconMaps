@@ -784,7 +784,7 @@ void BerconGradient::gradMoveKey(int n, float pos) {
 void BerconGradient::gradAddKey(float pos) {
 	if (!pblock) return;
 	countKeys();
-	AColor* col = &gradient->getColor(pos);
+	auto col = &gradient->getColor(pos);
 	Texmap* sub = NULL;
 	pblock->Append(pb_submaps, 1, &sub);
 	pblock->Append(pb_colors, 1, &col);
@@ -1030,22 +1030,23 @@ RefResult BerconGradient::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {
 
 // Input: occ(0..1), val(0..1)
 // Output: -1..1
+/*
 static float occCurve(float occ, float val) {
 	if (occ < 0.00001) return -1.f;
 	if (occ > 0.99999) return 1.f;	
-	
+																					///Removed because it's never invoked
 	if (val < 1.f - occ)	
 		return ((occ / (1.f - occ)) * val) * 2.f - 1.f;
 	else		
 		return ((1.f - occ) * (val - 1.f) / occ + 1.f) * 2.f - 1.f;
 }
-
+*/
 // Random number (0..1)
 #define sfrand() ((double)rand() / (double)RAND_MAX)
 // Random number (-1..1)
 #define ufrand() ((double)rand() / (double)RAND_MAX * 2. - 1.)
 
-#define SQRT2 1.41421356 // sqrt(2);
+//#define SQRT2 1.41421356 // sqrt(2);						// never used
 
 //Point3 BerconGradient::getUVWPoint(ShadeContext& sc) {
 //}

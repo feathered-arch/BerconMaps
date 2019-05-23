@@ -5,11 +5,10 @@ include listing.inc
 INCLUDELIB MSVCRT
 INCLUDELIB OLDNAMES
 
-PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
-PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
-PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ ; `string'
-PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
-PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
+PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
+PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
+PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
+PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
 PUBLIC	?BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::BeginCreate
 PUBLIC	?EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::EndCreate
 PUBLIC	?OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z	; ClassDesc::OkToCreate
@@ -35,15 +34,65 @@ PUBLIC	?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z ; ClassDesc::GetInter
 PUBLIC	?ClearInterfaces@ClassDesc@@UEAAXXZ		; ClassDesc::ClearInterfaces
 PUBLIC	?SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ	; ClassDesc::SubClassID
 PUBLIC	?Execute@ClassDesc@@UEAA_JH_K00@Z		; ClassDesc::Execute
-PUBLIC	?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ ; MaxSDK::Util::TabOutOfRangeException::What
-PUBLIC	??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
-PUBLIC	??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException
-PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
-PUBLIC	??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor'
-PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ ; `string'
-PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
-PUBLIC	??_7XYZ_Desc@@6B@				; XYZ_Desc::`vftable'
+PUBLIC	?SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z ; ClassDesc2::SetUserDlgProc
+PUBLIC	?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z ; ClassDesc2::CreateQtWidget
 PUBLIC	??_GXYZ_Desc@@UEAAPEAXI@Z			; XYZ_Desc::`scalar deleting destructor'
+PUBLIC	?IsPublic@BerconWoodClassDesc@@UEAAHXZ		; BerconWoodClassDesc::IsPublic
+PUBLIC	?Create@BerconWoodClassDesc@@UEAAPEAXH@Z	; BerconWoodClassDesc::Create
+PUBLIC	?ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::ClassName
+PUBLIC	?SuperClassID@BerconWoodClassDesc@@UEAAKXZ	; BerconWoodClassDesc::SuperClassID
+PUBLIC	?ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ ; BerconWoodClassDesc::ClassID
+PUBLIC	?Category@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::Category
+PUBLIC	?InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::InternalName
+PUBLIC	?HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ ; BerconWoodClassDesc::HInstance
+PUBLIC	??_GBerconWoodClassDesc@@UEAAPEAXI@Z		; BerconWoodClassDesc::`scalar deleting destructor'
+PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
+PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
+PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
+PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	??_7TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`vftable'
+PUBLIC	?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA ; `MaxSDK::Util::TabOutOfRangeException::What'::`1'::__LINE__Var
+PUBLIC	??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ ; `string'
+PUBLIC	?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::BeginCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::EndCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA ; `ClassDesc::OkToCreate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::HasClassParams'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA ; `ClassDesc::EditClassParams'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NumActionTables'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA ; `ClassDesc::GetActionTable'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::IsManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA ; `ClassDesc::CanManipulate'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA ; `ClassDesc::CanManipulateNode'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NeedsToSave'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA ; `ClassDesc::Save'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA ; `ClassDesc::Load'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA ; `ClassDesc::InitialRollupPageState'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA ; `ClassDesc::UseOnlyInternalNameForMAXScriptExposure'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA ; `ClassDesc::GetParamMap'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA ; `ClassDesc::GetUserDlgProc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA ; `ClassDesc::DrawRepresentation'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA ; `ClassDesc::NumInterfaces'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA ; `ClassDesc::GetInterfaceAt'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA ; `ClassDesc::ClearInterfaces'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA ; `ClassDesc::SubClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA ; `ClassDesc::Execute'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA ; `ClassDesc2::SetUserDlgProc'::`1'::__LINE__Var
+PUBLIC	??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ ; `string'
+PUBLIC	?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA ; `ClassDesc2::CreateQtWidget'::`1'::__LINE__Var
+PUBLIC	??_R0?AVClassDesc2@@@8				; ClassDesc2 `RTTI Type Descriptor'
+PUBLIC	??_R0?AVMaxHeapOperators@@@8			; MaxHeapOperators `RTTI Type Descriptor'
+PUBLIC	_CT??_R0?AVMaxHeapOperators@@@818
+PUBLIC	??_7XYZ_Desc@@6B@				; XYZ_Desc::`vftable'
+PUBLIC	?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA ; `XYZ_Desc::XYZ_Desc'::`1'::__LINE__Var
 PUBLIC	??_C@_1BM@LCALCDFD@?$AAx?$AAy?$AAz?$AA_?$AAf?$AAi?$AAl?$AAt?$AAe?$AAr?$AAi?$AAn?$AAg@ ; `string'
 PUBLIC	??_C@_1BC@JCCAEAIN@?$AAx?$AAy?$AAz?$AA_?$AAl?$AAo?$AAc?$AAk@ ; `string'
 PUBLIC	??_C@_1BK@FLPLJMAJ@?$AAx?$AAy?$AAz?$AA_?$AAa?$AAn?$AAg?$AAl?$AAe?$AA_?$AAz?$AA2@ ; `string'
@@ -74,18 +123,22 @@ PUBLIC	??_C@_1BK@NFJCNAOI@?$AAx?$AAy?$AAz?$AA_?$AAo?$AAf?$AAf?$AAs?$AAe?$AAt?$AA
 PUBLIC	??_C@_1BC@BDPIEDCA@?$AAx?$AAy?$AAz?$AA_?$AAc?$AAh?$AAa?$AAn@ ; `string'
 PUBLIC	??_C@_1BA@JOBDKJKA@?$AAx?$AAy?$AAz?$AA_?$AAm?$AAa?$AAp@ ; `string'
 PUBLIC	??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@ ; `string'
+PUBLIC	?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA	; `XYZ_Desc::`scalar deleting destructor''::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA	; `XYZ_Desc::~XYZ_Desc'::`1'::__LINE__Var
 PUBLIC	?texoutDlg@BerconWood@@2PEAVParamDlg@@EA	; BerconWood::texoutDlg
-PUBLIC	?IsPublic@BerconWoodClassDesc@@UEAAHXZ		; BerconWoodClassDesc::IsPublic
-PUBLIC	?Create@BerconWoodClassDesc@@UEAAPEAXH@Z	; BerconWoodClassDesc::Create
-PUBLIC	?ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::ClassName
-PUBLIC	?SuperClassID@BerconWoodClassDesc@@UEAAKXZ	; BerconWoodClassDesc::SuperClassID
-PUBLIC	?ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ ; BerconWoodClassDesc::ClassID
-PUBLIC	?Category@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::Category
-PUBLIC	?InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ	; BerconWoodClassDesc::InternalName
-PUBLIC	?HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ ; BerconWoodClassDesc::HInstance
 PUBLIC	??_7BerconWoodClassDesc@@6B@			; BerconWoodClassDesc::`vftable'
-PUBLIC	??_GBerconWoodClassDesc@@UEAAPEAXI@Z		; BerconWoodClassDesc::`scalar deleting destructor'
+PUBLIC	?__LINE__Var@?0??IsPublic@BerconWoodClassDesc@@UEAAHXZ@4JA ; `BerconWoodClassDesc::IsPublic'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Create@BerconWoodClassDesc@@UEAAPEAXH@Z@4JA ; `BerconWoodClassDesc::Create'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA ; `BerconWoodClassDesc::ClassName'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??SuperClassID@BerconWoodClassDesc@@UEAAKXZ@4JA ; `BerconWoodClassDesc::SuperClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ@4JA ; `BerconWoodClassDesc::ClassID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Category@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA ; `BerconWoodClassDesc::Category'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA ; `BerconWoodClassDesc::InternalName'::`1'::__LINE__Var
 PUBLIC	??_C@_1BG@GPLMDENA@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAW?$AAo?$AAo?$AAd@ ; `string'
+PUBLIC	?__LINE__Var@?0??HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA ; `BerconWoodClassDesc::HInstance'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0BerconWoodClassDesc@@QEAA@XZ@4JA ; `BerconWoodClassDesc::BerconWoodClassDesc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???1BerconWoodClassDesc@@UEAA@XZ@4JA ; `BerconWoodClassDesc::~BerconWoodClassDesc'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???_GBerconWoodClassDesc@@UEAAPEAXI@Z@4JA ; `BerconWoodClassDesc::`scalar deleting destructor''::`1'::__LINE__Var
 PUBLIC	??_C@_1O@KEKEFEMI@?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt@ ; `string'
 PUBLIC	??_C@_1BM@HCNKLGAJ@?$AAu?$AAs?$AAe?$AAD?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn@ ; `string'
 PUBLIC	??_C@_1BM@DKGEJKPL@?$AAd?$AAi?$AAs?$AAt?$AAo?$AAr?$AAt?$AAi?$AAo?$AAn?$AAS?$AAt?$AAr@ ; `string'
@@ -165,7 +218,11 @@ PUBLIC	_CT??_R0?AVOutOfRangeException@Util@MaxSDK@@@8??0OutOfRangeException@Util
 PUBLIC	??_R0?AVException@Util@MaxSDK@@@8		; MaxSDK::Util::Exception `RTTI Type Descriptor'
 PUBLIC	_CT??_R0?AVException@Util@MaxSDK@@@8??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z16
 PUBLIC	??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@ ; `string'
+PUBLIC	?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA ; `Tab<FPInterface *>::operator[]'::`1'::__LINE__Var
 PUBLIC	??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@ ; `string'
+PUBLIC	?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA ; `Tab<FPInterface *>::ZeroCount'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA ; `Tab<FPInterface *>::Count'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
 PUBLIC	??_R4TabOutOfRangeException@Util@MaxSDK@@6B@	; MaxSDK::Util::TabOutOfRangeException::`RTTI Complete Object Locator'
 PUBLIC	??_R3TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2TabOutOfRangeException@Util@MaxSDK@@8	; MaxSDK::Util::TabOutOfRangeException::`RTTI Base Class Array'
@@ -192,11 +249,6 @@ PUBLIC	??_R0?AVClassDesc@@@8				; ClassDesc `RTTI Type Descriptor'
 PUBLIC	??_R3ClassDesc@@8				; ClassDesc::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2ClassDesc@@8				; ClassDesc::`RTTI Base Class Array'
 PUBLIC	??_R1A@?0A@EA@ClassDesc@@8			; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
-PUBLIC	WinbaseIsolationAwarePrivateT_UnPgpgk
-PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
-PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
-PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 PUBLIC	??_R4XYZ_Desc@@6B@				; XYZ_Desc::`RTTI Complete Object Locator'
 PUBLIC	??_R0?AVXYZ_Desc@@@8				; XYZ_Desc `RTTI Type Descriptor'
 PUBLIC	??_R3XYZ_Desc@@8				; XYZ_Desc::`RTTI Class Hierarchy Descriptor'
@@ -214,36 +266,33 @@ PUBLIC	??_R1A@?0A@EA@BerconWoodClassDesc@@8		; BerconWoodClassDesc::`RTTI Base C
 PUBLIC	??_R1A@?0A@EA@ClassDesc2@@8			; ClassDesc2::`RTTI Base Class Descriptor at (0,-1,0,64)'
 PUBLIC	??_R3ClassDesc2@@8				; ClassDesc2::`RTTI Class Hierarchy Descriptor'
 PUBLIC	??_R2ClassDesc2@@8				; ClassDesc2::`RTTI Base Class Array'
-EXTRN	?ResetClassParams@ClassDesc2@@UEAAXH@Z:PROC	; ClassDesc2::ResetClassParams
-EXTRN	?GetParamBlockDescByID@ClassDesc2@@UEAAPEAVParamBlockDesc2@@F@Z:PROC ; ClassDesc2::GetParamBlockDescByID
+EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
+EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
+EXTRN	??_EBerconWoodClassDesc@@UEAAPEAXI@Z:PROC	; BerconWoodClassDesc::`vector deleting destructor'
+EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
+EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
+EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
 EXTRN	?AddParamBlockDesc@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::AddParamBlockDesc
 EXTRN	?BeginEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAVAnimatable@@@Z:PROC ; ClassDesc2::BeginEditParams
 EXTRN	?EndEditParams@ClassDesc2@@UEAAXPEAVIObjParam@@PEAVReferenceMaker@@KPEAVAnimatable@@@Z:PROC ; ClassDesc2::EndEditParams
-EXTRN	?InvalidateUI@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::InvalidateUI
-EXTRN	?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC ; ClassDesc2::MakeAutoParamBlocks
 EXTRN	?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC ; BaseInterfaceServer::GetInterface
-EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
-EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
-EXTRN	??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z:PROC ; MaxSDK::Util::TabOutOfRangeException::`vector deleting destructor'
-EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
-EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
-EXTRN	??_EXYZ_Desc@@UEAAPEAXI@Z:PROC			; XYZ_Desc::`vector deleting destructor'
-EXTRN	GUID_NULL:BYTE
-EXTRN	??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC ; MaxSDK::Util::OutOfRangeException::OutOfRangeException
-EXTRN	??_EBerconWoodClassDesc@@UEAAPEAXI@Z:PROC	; BerconWoodClassDesc::`vector deleting destructor'
-EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
-EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
-EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
-EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
-EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
 EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@PEB_W@Z:PROC ; ClassDesc::GetInterface
 EXTRN	?GetInterface@ClassDesc@@UEAAPEAVFPInterface@@VInterface_ID@@@Z:PROC ; ClassDesc::GetInterface
-EXTRN	?AddInterface@ClassDesc@@UEAAXPEAVFPInterface@@@Z:PROC ; ClassDesc::AddInterface
-EXTRN	??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC	; MaxSDK::Util::Exception::Exception
+EXTRN	?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z:PROC ; BaseInterfaceServer::GetInterfaceAt
+EXTRN	?GetParamBlockDesc@ClassDesc2@@UEAAPEAVParamBlockDesc2@@H@Z:PROC ; ClassDesc2::GetParamBlockDesc
+EXTRN	?GetParamBlockDescByID@ClassDesc2@@UEAAPEAVParamBlockDesc2@@F@Z:PROC ; ClassDesc2::GetParamBlockDescByID
+EXTRN	?GetParamMap@ClassDesc2@@UEAAPEAVIParamMap2@@H@Z:PROC ; ClassDesc2::GetParamMap
+EXTRN	?GetRsrcString@ClassDesc@@UEAAPEB_W_J@Z:PROC	; ClassDesc::GetRsrcString
+EXTRN	?InvalidateUI@ClassDesc2@@UEAAXPEAVParamBlockDesc2@@@Z:PROC ; ClassDesc2::InvalidateUI
+EXTRN	?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC ; ClassDesc2::MakeAutoParamBlocks
+EXTRN	?NumInterfaces@BaseInterfaceServer@@UEBAHXZ:PROC ; BaseInterfaceServer::NumInterfaces
+EXTRN	?NumParamBlockDescs@ClassDesc2@@UEAAHXZ:PROC	; ClassDesc2::NumParamBlockDescs
+EXTRN	?NumParamMaps@ClassDesc2@@UEAAHXZ:PROC		; ClassDesc2::NumParamMaps
+EXTRN	?ResetClassParams@ClassDesc2@@UEAAXH@Z:PROC	; ClassDesc2::ResetClassParams
+EXTRN	GUID_NULL:BYTE
+EXTRN	??_7type_info@@6B@:BYTE				; type_info::`vftable'
+EXTRN	__imp_?TEXMAP_CAT_3D@@3PA_WA:BYTE
 EXTRN	?hInstance@@3PEAUHINSTANCE__@@EA:QWORD		; hInstance
-_BSS	SEGMENT
-?texoutDlg@BerconWood@@2PEAVParamDlg@@EA DQ 01H DUP (?)	; BerconWood::texoutDlg
-_BSS	ENDS
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
 IsolationAwarePrivateT_SqbjaYRiRY DD 01H DUP (?)
@@ -259,6 +308,9 @@ _BSS	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
+_BSS	ENDS
+_BSS	SEGMENT
+?texoutDlg@BerconWood@@2PEAVParamDlg@@EA DQ 01H DUP (?)	; BerconWood::texoutDlg
 _BSS	ENDS
 ;	COMDAT ??_R2ClassDesc2@@8
 rdata$r	SEGMENT
@@ -396,10 +448,6 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3XYZ_Desc@@8
 	DD	imagerel ??_R4XYZ_Desc@@6B@
 rdata$r	ENDS
-;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
-_DATA	SEGMENT
-WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
-_DATA	ENDS
 ;	COMDAT ??_R1A@?0A@EA@ClassDesc@@8
 rdata$r	SEGMENT
 ??_R1A@?0A@EA@ClassDesc@@8 DD imagerel ??_R0?AVClassDesc@@@8 ; ClassDesc::`RTTI Base Class Descriptor at (0,-1,0,64)'
@@ -601,6 +649,18 @@ rdata$r	SEGMENT
 	DD	imagerel ??_R3TabOutOfRangeException@Util@MaxSDK@@8
 	DD	imagerel ??_R4TabOutOfRangeException@Util@MaxSDK@@6B@
 rdata$r	ENDS
+;	COMDAT ?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV123@@Z@4JA DD 03a9H ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Count@?$Tab@PEAVFPInterface@@@@QEBAHXZ@4JA DD 0dcH ; `Tab<FPInterface *>::Count'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ZeroCount@?$Tab@PEAVFPInterface@@@@QEAAXXZ@4JA DD 0e8H ; `Tab<FPInterface *>::ZeroCount'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@
 CONST	SEGMENT
 ??_C@_1EM@PJAEPBLB@?$AAT?$AAa?$AAb?$AA?$DM?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAF?$AAP?$AAI?$AAn?$AAt@ DB 'T'
@@ -611,6 +671,10 @@ CONST	SEGMENT
 	DB	00H, 'p', 00H, 'e', 00H, 'r', 00H, 'a', 00H, 't', 00H, 'o', 00H
 	DB	'r', 00H, ' ', 00H, '[', 00H, ']', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???A?$Tab@PEAVFPInterface@@@@QEBAAEAPEAVFPInterface@@_J@Z@4JA DD 0165H ; `Tab<FPInterface *>::operator[]'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@
 CONST	SEGMENT
 ??_C@_1GI@NLEIFPEJ@?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAi?$AAn?$AAd?$AAe?$AAx?$AA?5?$AAp@ DB 'I'
@@ -1094,12 +1158,56 @@ CONST	SEGMENT
 ??_C@_1O@KEKEFEMI@?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt@ DB 'o', 00H, 'u', 00H, 't'
 	DB	00H, 'p', 00H, 'u', 00H, 't', 00H, 00H, 00H	; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???_GBerconWoodClassDesc@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GBerconWoodClassDesc@@UEAAPEAXI@Z@4JA DD 047H ; `BerconWoodClassDesc::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???1BerconWoodClassDesc@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1BerconWoodClassDesc@@UEAA@XZ@4JA DD 047H ; `BerconWoodClassDesc::~BerconWoodClassDesc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0BerconWoodClassDesc@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0BerconWoodClassDesc@@QEAA@XZ@4JA DD 047H ; `BerconWoodClassDesc::BerconWoodClassDesc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ@4JA DD 0b7H ; `BerconWoodClassDesc::HInstance'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1BG@GPLMDENA@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAW?$AAo?$AAo?$AAd@
 CONST	SEGMENT
 ??_C@_1BG@GPLMDENA@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAW?$AAo?$AAo?$AAd@ DB 'B'
 	DB	00H, 'e', 00H, 'r', 00H, 'c', 00H, 'o', 00H, 'n', 00H, 'W', 00H
 	DB	'o', 00H, 'o', 00H, 'd', 00H, 00H, 00H	; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA DD 0b6H ; `BerconWoodClassDesc::InternalName'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Category@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Category@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA DD 0b5H ; `BerconWoodClassDesc::Category'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ@4JA DD 0b4H ; `BerconWoodClassDesc::ClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??SuperClassID@BerconWoodClassDesc@@UEAAKXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SuperClassID@BerconWoodClassDesc@@UEAAKXZ@4JA DD 0b3H ; `BerconWoodClassDesc::SuperClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ@4JA DD 0b2H ; `BerconWoodClassDesc::ClassName'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Create@BerconWoodClassDesc@@UEAAPEAXH@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Create@BerconWoodClassDesc@@UEAAPEAXH@Z@4JA DD 0b1H ; `BerconWoodClassDesc::Create'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??IsPublic@BerconWoodClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??IsPublic@BerconWoodClassDesc@@UEAAHXZ@4JA DD 0b0H ; `BerconWoodClassDesc::IsPublic'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_7BerconWoodClassDesc@@6B@
 CONST	SEGMENT
 ??_7BerconWoodClassDesc@@6B@ DQ FLAT:??_R4BerconWoodClassDesc@@6B@ ; BerconWoodClassDesc::`vftable'
@@ -1155,6 +1263,14 @@ CONST	SEGMENT
 	DQ	FLAT:?Execute@ClassDesc@@UEAA_JH_K00@Z
 	DQ	FLAT:?CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1XYZ_Desc@@UEAA@XZ@4JA DD 0101H	; `XYZ_Desc::~XYZ_Desc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4JA DD 0101H	; `XYZ_Desc::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@
 CONST	SEGMENT
 ??_C@_1BA@KMAKHADK@?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg@ DB 'M', 00H, 'a', 00H
@@ -1336,6 +1452,10 @@ CONST	SEGMENT
 	DB	't', 00H, 'e', 00H, 'r', 00H, 'i', 00H, 'n', 00H, 'g', 00H, 00H
 	DB	00H						; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z@4JA DD 083H ; `XYZ_Desc::XYZ_Desc'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_7XYZ_Desc@@6B@
 CONST	SEGMENT
 ??_7XYZ_Desc@@6B@ DQ FLAT:??_R4XYZ_Desc@@6B@		; XYZ_Desc::`vftable'
@@ -1343,28 +1463,6 @@ CONST	SEGMENT
 	DQ	FLAT:?GetInterface@BaseInterfaceServer@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z
 	DQ	FLAT:?NumInterfaces@BaseInterfaceServer@@UEBAHXZ
 	DQ	FLAT:?GetInterfaceAt@BaseInterfaceServer@@UEBAPEAVBaseInterface@@H@Z
-CONST	ENDS
-;	COMDAT ??_R0?AVClassDesc2@@@8
-data$r	SEGMENT
-??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
-	DQ	0000000000000000H
-	DB	'.?AVClassDesc2@@', 00H
-data$r	ENDS
-;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@
-CONST	SEGMENT
-??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ DB 'M'
-	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
-	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
-	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
-	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
-	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
-	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
-CONST	ENDS
-;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
-CONST	SEGMENT
-??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
-	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
-	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
 CONST	ENDS
 ;	COMDAT _CT??_R0?AVMaxHeapOperators@@@818
 xdata$x	SEGMENT
@@ -1382,11 +1480,173 @@ data$r	SEGMENT
 	DQ	0000000000000000H
 	DB	'.?AVMaxHeapOperators@@', 00H
 data$r	ENDS
+;	COMDAT ??_R0?AVClassDesc2@@@8
+data$r	SEGMENT
+??_R0?AVClassDesc2@@@8 DQ FLAT:??_7type_info@@6B@	; ClassDesc2 `RTTI Type Descriptor'
+	DQ	0000000000000000H
+	DB	'.?AVClassDesc2@@', 00H
+data$r	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateQtWidget@ClassDesc2@@UEAAPEAVQMaxParamBlockWidget@MaxSDK@@AEAVReferenceMaker@@AEAVIParamBlock2@@FAEAVWStr@@AEAH3@Z@4JA DD 0122H ; `ClassDesc2::CreateQtWidget'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@
 CONST	SEGMENT
 ??_C@_1O@ILILCEBJ@?$AAi?$AA?5?$AA?$DO?$AA?$DN?$AA?5?$AA0@ DB 'i', 00H, ' '
 	DB	00H, '>', 00H, '=', 00H, ' ', 00H, '0', 00H, 00H, 00H ; `string'
 CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SetUserDlgProc@ClassDesc2@@UEAA_NPEAVParamBlockDesc2@@PEAVParamMap2UserDlgProc@@@Z@4JA DD 0a5eH ; `ClassDesc2::SetUserDlgProc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Execute@ClassDesc@@UEAA_JH_K00@Z@4JA DD 059aH ; `ClassDesc::Execute'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??SubClassID@ClassDesc@@UEAA?AVClass_ID@@XZ@4JA DD 058cH ; `ClassDesc::SubClassID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??ClearInterfaces@ClassDesc@@UEAAXXZ@4JA DD 0583H ; `ClassDesc::ClearInterfaces'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z@4JA DD 0572H ; `ClassDesc::GetInterfaceAt'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NumInterfaces@ClassDesc@@UEAAHXZ@4JA DD 056fH ; `ClassDesc::NumInterfaces'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??DrawRepresentation@ClassDesc@@UEAA_NKPEAUHDC__@@AEAVBox2@@@Z@4JA DD 0569H ; `ClassDesc::DrawRepresentation'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetUserDlgProc@ClassDesc@@UEAAPEAVParamMap2UserDlgProc@@PEAVParamBlockDesc2@@@Z@4JA DD 055dH ; `ClassDesc::GetUserDlgProc'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetParamMap@ClassDesc@@UEAAPEAVIParamMap2@@PEAVParamBlockDesc2@@@Z@4JA DD 054cH ; `ClassDesc::GetParamMap'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??UseOnlyInternalNameForMAXScriptExposure@ClassDesc@@UEAA_NXZ@4JA DD 04faH ; `ClassDesc::UseOnlyInternalNameForMAXScriptExposure'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??InitialRollupPageState@ClassDesc@@UEAAKXZ@4JA DD 04efH ; `ClassDesc::InitialRollupPageState'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Load@ClassDesc@@UEAA?AW4IOResult@@PEAVILoad@@@Z@4JA DD 04e0H ; `ClassDesc::Load'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??Save@ClassDesc@@UEAA?AW4IOResult@@PEAVISave@@@Z@4JA DD 04d9H ; `ClassDesc::Save'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NeedsToSave@ClassDesc@@UEAAHXZ@4JA DD 04d3H ; `ClassDesc::NeedsToSave'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVINode@@@Z@4JA DD 04caH ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CreateManipulator@ClassDesc@@UEAAPEAVManipulator@@PEAVReferenceTarget@@PEAVINode@@@Z@4JA DD 04c2H ; `ClassDesc::CreateManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CanManipulateNode@ClassDesc@@UEAAHPEAVINode@@@Z@4JA DD 04b0H ; `ClassDesc::CanManipulateNode'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??CanManipulate@ClassDesc@@UEAAHPEAVReferenceTarget@@@Z@4JA DD 04a9H ; `ClassDesc::CanManipulate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??IsManipulator@ClassDesc@@UEAAHXZ@4JA DD 04a0H ; `ClassDesc::IsManipulator'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??GetActionTable@ClassDesc@@UEAAPEAVActionTable@@H@Z@4JA DD 0499H ; `ClassDesc::GetActionTable'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??NumActionTables@ClassDesc@@UEAAHXZ@4JA DD 0492H ; `ClassDesc::NumActionTables'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??EditClassParams@ClassDesc@@UEAAXPEAUHWND__@@@Z@4JA DD 0479H ; `ClassDesc::EditClassParams'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??HasClassParams@ClassDesc@@UEAAHXZ@4JA DD 0472H ; `ClassDesc::HasClassParams'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??OkToCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 0426H ; `ClassDesc::OkToCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??EndCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 0405H ; `ClassDesc::EndCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??BeginCreate@ClassDesc@@UEAAHPEAVInterface@@@Z@4JA DD 03fbH ; `ClassDesc::BeginCreate'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4JA DD 066H ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4JA DD 066H ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@
+CONST	SEGMENT
+??_C@_1EK@FOLBONAG@?$AAM?$AAa?$AAx?$AAS?$AAD?$AAK?$AA?3?$AA?3?$AAU?$AAt?$AAi?$AAl?$AA?3?$AA?3?$AAT@ DB 'M'
+	DB	00H, 'a', 00H, 'x', 00H, 'S', 00H, 'D', 00H, 'K', 00H, ':', 00H
+	DB	':', 00H, 'U', 00H, 't', 00H, 'i', 00H, 'l', 00H, ':', 00H, ':'
+	DB	00H, 'T', 00H, 'a', 00H, 'b', 00H, 'O', 00H, 'u', 00H, 't', 00H
+	DB	'O', 00H, 'f', 00H, 'R', 00H, 'a', 00H, 'n', 00H, 'g', 00H, 'e'
+	DB	00H, 'E', 00H, 'x', 00H, 'c', 00H, 'e', 00H, 'p', 00H, 't', 00H
+	DB	'i', 00H, 'o', 00H, 'n', 00H, 00H, 00H	; `string'
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0??What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ@4JA DD 063H ; `MaxSDK::Util::TabOutOfRangeException::What'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4JA DD 05eH ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ??_7TabOutOfRangeException@Util@MaxSDK@@6B@
+CONST	SEGMENT
+??_7TabOutOfRangeException@Util@MaxSDK@@6B@ DQ FLAT:??_R4TabOutOfRangeException@Util@MaxSDK@@6B@ ; MaxSDK::Util::TabOutOfRangeException::`vftable'
+	DQ	FLAT:??_ETabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
+	DQ	FLAT:?What@TabOutOfRangeException@Util@MaxSDK@@UEBAPEB_WXZ
+CONST	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@XZ@4JA DD 091H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
+_DATA	SEGMENT
+WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
+_DATA	ENDS
 PUBLIC	??_H@YAXPEAX_K1P6APEAX0@Z@Z			; `vector constructor iterator'
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -1566,7 +1826,7 @@ PUBLIC	?SubAnim@BerconWood@@UEAAPEAVAnimatable@@H@Z	; BerconWood::SubAnim
 PUBLIC	?SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z	; BerconWood::SubAnimName
 PUBLIC	?NumRefs@BerconWood@@UEAAHXZ			; BerconWood::NumRefs
 PUBLIC	?GetReference@BerconWood@@UEAAPEAVReferenceTarget@@H@Z ; BerconWood::GetReference
-PUBLIC	?SetReference@BerconWood@@UEAAXHPEAVReferenceTarget@@@Z ; BerconWood::SetReference
+PUBLIC	?SetReference@BerconWood@@EEAAXHPEAVReferenceTarget@@@Z ; BerconWood::SetReference
 PUBLIC	?NumParamBlocks@BerconWood@@UEAAHXZ		; BerconWood::NumParamBlocks
 PUBLIC	?GetParamBlock@BerconWood@@UEAAPEAVIParamBlock2@@H@Z ; BerconWood::GetParamBlock
 PUBLIC	?GetParamBlockByID@BerconWood@@UEAAPEAVIParamBlock2@@F@Z ; BerconWood::GetParamBlockByID
@@ -1702,7 +1962,6 @@ PUBLIC	__real@4145851f
 PUBLIC	__real@41700000
 PUBLIC	__real@bff0000000000000
 PUBLIC	__real@c12e848000000000
-PUBLIC	__xmm@80000000800000008000000080000000
 EXTRN	_purecall:PROC
 EXTRN	?__global_delete@@YAXPEAX_K@Z:PROC		; __global_delete
 EXTRN	atexit:PROC
@@ -1710,10 +1969,9 @@ EXTRN	__imp_SendMessageW:PROC
 EXTRN	__imp_GetDlgItem:PROC
 EXTRN	__imp_??2MaxHeapOperators@@SAPEAX_K@Z:PROC
 EXTRN	__imp_??3MaxHeapOperators@@SAXPEAX@Z:PROC
-EXTRN	__imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC
-EXTRN	__imp_??1Exception@Util@MaxSDK@@UEAA@XZ:PROC
 EXTRN	__imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z:PROC
 EXTRN	__imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ:PROC
+EXTRN	__imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z:PROC
 EXTRN	__imp_?assert1@@YAHHPEB_W00@Z:PROC
 EXTRN	__imp_?zfree@@YAXPEAPEAX@Z:PROC
 EXTRN	__imp_??0WStr@@QEAA@PEB_W@Z:PROC
@@ -1727,7 +1985,11 @@ EXTRN	__imp_?DeleteReference@ReferenceMaker@@QEAA?AW4RefResult@@H@Z:PROC
 EXTRN	__imp_?GetInterface@ReferenceTarget@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z:PROC
 EXTRN	__imp_?GetCOREInterface@@YAPEAVInterface@@XZ:PROC
 EXTRN	__imp_??0Point3@@QEAA@XZ:PROC
+EXTRN	__imp_??0Point3@@QEAA@MMM@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@HHH@Z:PROC
+EXTRN	__imp_??0Point3@@QEAA@AEBV0@@Z:PROC
 EXTRN	__imp_??APoint3@@QEAAAEAMH@Z:PROC
+EXTRN	__imp_??GPoint3@@QEBA?AV0@XZ:PROC
 EXTRN	__imp_?IdentityMatrix@Matrix3@@QEAAXXZ:PROC
 EXTRN	__imp_?ClampMinMax@Color@@QEAAXXZ:PROC
 EXTRN	__imp_?GetSubTexmapTVName@ISubMap@@QEAA?AVWStr@@H@Z:PROC
@@ -1740,12 +2002,12 @@ EXTRN	__imp_??0Texmap@@QEAA@XZ:PROC
 EXTRN	__imp_?GetNewDefaultTextureOutput@@YAPEAVTextureOutput@@XZ:PROC
 EXTRN	__imp_??0ClassDesc2@@QEAA@XZ:PROC
 EXTRN	__imp_??1ClassDesc2@@UEAA@XZ:PROC
-EXTRN	__imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z:PROC
 EXTRN	__imp_?MakeAutoParamBlocks@ClassDesc2@@UEAAXPEAVReferenceMaker@@@Z:PROC
 EXTRN	__imp_?SetUserDlgProc@ClassDesc2@@QEAA_NPEAVParamBlockDesc2@@FPEAVParamMap2UserDlgProc@@@Z:PROC
 EXTRN	__imp_?CreateParamDlgs@ClassDesc2@@QEAAPEAVIAutoMParamDlg@@PEAUHWND__@@PEAVIMtlParams@@PEAVReferenceTarget@@@Z:PROC
 EXTRN	__imp_??0ParamBlockDesc2@@QEAA@FPEB_W_JPEAVClassDesc2@@GZZ:PROC
 EXTRN	__imp_??1ParamBlockDesc2@@UEAA@XZ:PROC
+EXTRN	__imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z:PROC
 EXTRN	__imp_?SetUserDlgProc@ParamBlockDesc2@@QEAAXFPEAVParamMap2UserDlgProc@@@Z:PROC
 EXTRN	??_EParamMap2UserDlgProc@@UEAAPEAXI@Z:PROC	; ParamMap2UserDlgProc::`vector deleting destructor'
 EXTRN	?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z:PROC ; Noise::wood
@@ -1821,7 +2083,6 @@ EXTRN	?SvTraverseAnimGraph@Texmap@@UEAA?AVSvGraphNodeReference@@PEAVIGraphObject
 EXTRN	_CxxThrowException:PROC
 EXTRN	__CxxFrameHandler3:PROC
 EXTRN	__chkstk:PROC
-EXTRN	__imp_??_7OutOfRangeException@Util@MaxSDK@@6B@:BYTE
 EXTRN	__imp_?defaultDim@@3PEAVParamDimension@@EA:QWORD
 EXTRN	__ImageBase:BYTE
 EXTRN	_fltused:DWORD
@@ -1847,20 +2108,20 @@ $pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z DD imagerel $LN6
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD imagerel $LN9
-	DD	imagerel $LN9+29
+$pdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD imagerel $LN6
+	DD	imagerel $LN6+29
 	DD	imagerel $unwind$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel $LN9
-	DD	imagerel $LN9+58
+$pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel $LN6
+	DD	imagerel $LN6+48
 	DD	imagerel $unwind$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD imagerel $LN16
-	DD	imagerel $LN16+97
+$pdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD imagerel $LN13
+	DD	imagerel $LN13+97
 	DD	imagerel $unwind$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -1898,6 +2159,18 @@ pdata	SEGMENT
 $pdata$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD imagerel $LN14
 	DD	imagerel $LN14+214
 	DD	imagerel $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??D@YA?AVPoint3@@MAEBV0@@Z DD imagerel $LN4
+	DD	imagerel $LN4+41
+	DD	imagerel $unwind$??D@YA?AVPoint3@@MAEBV0@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$??D@YA?AVPoint3@@AEBV0@M@Z DD imagerel $LN4
+	DD	imagerel $LN4+42
+	DD	imagerel $unwind$??D@YA?AVPoint3@@AEBV0@M@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -1986,38 +2259,26 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??0BerconXYZ@@QEAA@XZ DD imagerel $LN17
-	DD	imagerel $LN17+100
+	DD	imagerel $LN17+158
 	DD	imagerel $unwind$??0BerconXYZ@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24
-	DD	imagerel $LN24+59
+$pdata$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+59
-	DD	imagerel $LN24+82
+$pdata$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19+59
+	DD	imagerel $LN19+229
 	DD	imagerel $chain$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+82
-	DD	imagerel $LN24+209
-	DD	imagerel $chain$3$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$4$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+209
-	DD	imagerel $LN24+268
-	DD	imagerel $chain$4$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$5$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN24+268
-	DD	imagerel $LN24+286
-	DD	imagerel $chain$5$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
+$pdata$1$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD imagerel $LN19+229
+	DD	imagerel $LN19+245
+	DD	imagerel $chain$1$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2052,7 +2313,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$?EvalParameters@BerconWood@@QEAA?AVWoodParam@@AEAVShadeContext@@@Z DD imagerel $LN33
-	DD	imagerel $LN33+972
+	DD	imagerel $LN33+1001
 	DD	imagerel $unwind$?EvalParameters@BerconWood@@QEAA?AVWoodParam@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2147,8 +2408,8 @@ $pdata$?Validity@BerconWood@@UEAA?AVInterval@@H@Z DD imagerel $LN8
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z DD imagerel $LN40
-	DD	imagerel $LN40+227
+$pdata$?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z DD imagerel $LN28
+	DD	imagerel $LN28+179
 	DD	imagerel $unwind$?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2165,21 +2426,33 @@ $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA DD imag
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN121
-	DD	imagerel $LN121+155
+$pdata$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN103
+	DD	imagerel $LN103+115
 	DD	imagerel $unwind$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$8$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN121+155
-	DD	imagerel $LN121+1557
-	DD	imagerel $chain$8$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+$pdata$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN103+115
+	DD	imagerel $LN103+632
+	DD	imagerel $chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN121+1557
-	DD	imagerel $LN121+1595
-	DD	imagerel $chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+$pdata$11$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN103+632
+	DD	imagerel $LN103+757
+	DD	imagerel $chain$11$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$12$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN103+757
+	DD	imagerel $LN103+1566
+	DD	imagerel $chain$12$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$13$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD imagerel $LN103+1566
+	DD	imagerel $LN103+1594
+	DD	imagerel $chain$13$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2189,39 +2462,33 @@ $pdata$?EvalMono@BerconWood@@UEAAMAEAVShadeContext@@@Z DD imagerel $LN6
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189
-	DD	imagerel $LN189+119
+$pdata$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN103
+	DD	imagerel $LN103+114
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$7$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189+119
-	DD	imagerel $LN189+842
-	DD	imagerel $chain$7$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189+842
-	DD	imagerel $LN189+1453
+$pdata$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN103+114
+	DD	imagerel $LN103+814
 	DD	imagerel $chain$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189+1453
-	DD	imagerel $LN189+1704
+$pdata$9$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN103+814
+	DD	imagerel $LN103+1464
+	DD	imagerel $chain$9$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$10$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN103+1464
+	DD	imagerel $LN103+1717
+	DD	imagerel $chain$10$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+pdata	ENDS
+;	COMDAT pdata
+pdata	SEGMENT
+$pdata$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN103+1717
+	DD	imagerel $LN103+2616
 	DD	imagerel $chain$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$12$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189+1704
-	DD	imagerel $LN189+2382
-	DD	imagerel $chain$12$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-pdata	ENDS
-;	COMDAT pdata
-pdata	SEGMENT
-$pdata$13$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD imagerel $LN189+2382
-	DD	imagerel $LN189+2409
-	DD	imagerel $chain$13$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
@@ -2237,26 +2504,26 @@ $pdata$?Clone@BerconWood@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z DD imagerel 
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN27
-	DD	imagerel $LN27+47
+$pdata$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN23
+	DD	imagerel $LN23+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$0$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN27+47
-	DD	imagerel $LN27+150
+$pdata$0$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN23+47
+	DD	imagerel $LN23+142
 	DD	imagerel $chain$0$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$2$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN27+150
-	DD	imagerel $LN27+220
+$pdata$2$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN23+142
+	DD	imagerel $LN23+204
 	DD	imagerel $chain$2$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
-$pdata$3$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN27+220
-	DD	imagerel $LN27+231
+$pdata$3$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD imagerel $LN23+204
+	DD	imagerel $LN23+215
 	DD	imagerel $chain$3$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 pdata	ENDS
 ;	COMDAT pdata
@@ -2280,7 +2547,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??0BerconWood@@QEAA@XZ DD imagerel $LN69
-	DD	imagerel $LN69+416
+	DD	imagerel $LN69+468
 	DD	imagerel $unwind$??0BerconWood@@QEAA@XZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2346,7 +2613,7 @@ pdata	ENDS
 ;	COMDAT pdata
 pdata	SEGMENT
 $pdata$??__EBerconWood_param_blk@@YAXXZ DD imagerel ??__EBerconWood_param_blk@@YAXXZ
-	DD	imagerel ??__EBerconWood_param_blk@@YAXXZ+5607
+	DD	imagerel ??__EBerconWood_param_blk@@YAXXZ+5604
 	DD	imagerel $unwind$??__EBerconWood_param_blk@@YAXXZ
 pdata	ENDS
 ;	COMDAT pdata
@@ -2382,11 +2649,6 @@ pdata	ENDS
 CRT$XCU	SEGMENT
 ?kInvalidId$initializer$@AssetManagement@MaxSDK@@3P6AXXZEA DQ FLAT:??__EkInvalidId@AssetManagement@MaxSDK@@YAXXZ ; MaxSDK::AssetManagement::kInvalidId$initializer$
 CRT$XCU	ENDS
-;	COMDAT __xmm@80000000800000008000000080000000
-CONST	SEGMENT
-__xmm@80000000800000008000000080000000 DB 00H, 00H, 00H, 080H, 00H, 00H, 00H
-	DB	080H, 00H, 00H, 00H, 080H, 00H, 00H, 00H, 080H
-CONST	ENDS
 ;	COMDAT __real@c12e848000000000
 CONST	SEGMENT
 __real@c12e848000000000 DQ 0c12e848000000000r	; -1e+06
@@ -3252,7 +3514,7 @@ CONST	SEGMENT
 	DQ	FLAT:?CanTransferReference@ReferenceMaker@@UEAAHH@Z
 	DQ	FLAT:?NumRefs@BerconWood@@UEAAHXZ
 	DQ	FLAT:?GetReference@BerconWood@@UEAAPEAVReferenceTarget@@H@Z
-	DQ	FLAT:?SetReference@BerconWood@@UEAAXHPEAVReferenceTarget@@@Z
+	DQ	FLAT:?SetReference@BerconWood@@EEAAXHPEAVReferenceTarget@@@Z
 	DQ	FLAT:?Save@MtlBase@@UEAA?AW4IOResult@@PEAVISave@@@Z
 	DQ	FLAT:?Load@MtlBase@@UEAA?AW4IOResult@@PEAVILoad@@@Z
 	DQ	FLAT:?RemapRefOnLoad@ReferenceMaker@@UEAAHH@Z
@@ -3875,9 +4137,9 @@ xdata	ENDS
 xdata	SEGMENT
 $ip2state$??0BerconWood@@QEAA@XZ DD imagerel ??0BerconWood@@QEAA@XZ
 	DD	0ffffffffH
-	DD	imagerel ??0BerconWood@@QEAA@XZ+44
+	DD	imagerel ??0BerconWood@@QEAA@XZ+42
 	DD	00H
-	DD	imagerel ??0BerconWood@@QEAA@XZ+392
+	DD	imagerel ??0BerconWood@@QEAA@XZ+446
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
@@ -3900,11 +4162,11 @@ $cppxdata$??0BerconWood@@QEAA@XZ DD 019930522H
 CONST	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0BerconWood@@QEAA@XZ DD 082211H
-	DD	0b6422H
-	DD	0a541dH
-	DD	093418H
-	DD	07006520aH
+$unwind$??0BerconWood@@QEAA@XZ DD 082011H
+	DD	0c5420H
+	DD	0b341bH
+	DD	0e009520dH
+	DD	060067007H
 	DD	imagerel __CxxFrameHandler3
 	DD	imagerel $cppxdata$??0BerconWood@@QEAA@XZ
 xdata	ENDS
@@ -3958,24 +4220,24 @@ xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$3$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 021H
-	DD	imagerel $LN27
-	DD	imagerel $LN27+47
+	DD	imagerel $LN23
+	DD	imagerel $LN23+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$2$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 020021H
 	DD	063400H
-	DD	imagerel $LN27
-	DD	imagerel $LN27+47
+	DD	imagerel $LN23
+	DD	imagerel $LN23+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $chain$0$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z DD 020521H
 	DD	063405H
-	DD	imagerel $LN27
-	DD	imagerel $LN27+47
+	DD	imagerel $LN23
+	DD	imagerel $LN23+47
 	DD	imagerel $unwind$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 xdata	ENDS
 ;	COMDAT xdata
@@ -4028,66 +4290,56 @@ $unwind$?GetClassName@BerconWood@@UEAAXAEAVWStr@@@Z DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$13$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN189
-	DD	imagerel $LN189+119
+$chain$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 020921H
+	DD	01fb809H
+	DD	imagerel $LN103+1464
+	DD	imagerel $LN103+1717
+	DD	imagerel $chain$10$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$10$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 0e0021H
+	DD	01ec800H
+	DD	020a800H
+	DD	0219800H
+	DD	0228800H
+	DD	0237800H
+	DD	0246800H
+	DD	052c400H
+	DD	imagerel $LN103
+	DD	imagerel $LN103+114
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$12$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 020921H
-	DD	01ae809H
-	DD	imagerel $LN189+1453
-	DD	imagerel $LN189+1704
-	DD	imagerel $chain$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
+$chain$9$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 020921H
+	DD	01ec809H
+	DD	imagerel $LN103+114
+	DD	imagerel $LN103+814
+	DD	imagerel $chain$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$11$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 012f821H
-	DD	01bd8f8H
-	DD	01cc8efH
-	DD	019f800H
-	DD	01db800H
-	DD	01ea800H
-	DD	01f9800H
-	DD	0208800H
-	DD	0226800H
-	DD	04dd400H
-	DD	imagerel $LN189
-	DD	imagerel $LN189+119
+$chain$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 0109e21H
+	DD	022889eH
+	DD	021984fH
+	DD	020a833H
+	DD	023782aH
+	DD	0246821H
+	DD	04af418H
+	DD	052c410H
+	DD	0517408H
+	DD	imagerel $LN103
+	DD	imagerel $LN103+114
 	DD	imagerel $unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$8$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 020921H
-	DD	019f809H
-	DD	imagerel $LN189+119
-	DD	imagerel $LN189+842
-	DD	imagerel $chain$7$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$7$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 0109e21H
-	DD	01f989eH
-	DD	01ea84fH
-	DD	01db833H
-	DD	020882aH
-	DD	0226821H
-	DD	04ee418H
-	DD	04dd410H
-	DD	04c3408H
-	DD	imagerel $LN189
-	DD	imagerel $LN189+119
-	DD	imagerel $unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 092801H
-	DD	0217828H
-	DD	0460117H
-	DD	0c006f008H
-	DD	060037004H
-	DD	05002H
+$unwind$?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z DD 087201H
+	DD	0503472H
+	DD	04b0116H
+	DD	0d005e007H
+	DD	050026003H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4096,35 +4348,50 @@ $unwind$?EvalMono@BerconWood@@UEAAMAEAVShadeContext@@@Z DD 010401H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
-	DD	imagerel $LN121
-	DD	imagerel $LN121+155
+$chain$13$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN103
+	DD	imagerel $LN103+115
 	DD	imagerel $unwind$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$8$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 0125121H
-	DD	015f851H
-	DD	016e848H
-	DD	017d83fH
-	DD	018c836H
-	DD	019b82dH
-	DD	01aa824H
+$chain$12$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 021H
+	DD	imagerel $LN103+115
+	DD	imagerel $LN103+632
+	DD	imagerel $chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$11$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 041f21H
+	DD	03e741fH
+	DD	0443408H
+	DD	imagerel $LN103+115
+	DD	imagerel $LN103+632
+	DD	imagerel $chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$chain$9$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 0145a21H
+	DD	015f85aH
+	DD	016e851H
+	DD	017d848H
+	DD	018c83fH
+	DD	019b836H
+	DD	01aa82dH
+	DD	01b9824H
 	DD	01c881bH
 	DD	01d7812H
 	DD	01e6809H
-	DD	imagerel $LN121
-	DD	imagerel $LN121+155
+	DD	imagerel $LN103
+	DD	imagerel $LN103+115
 	DD	imagerel $unwind$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 092801H
-	DD	01b9828H
-	DD	0423417H
-	DD	03e0117H
-	DD	060077008H
-	DD	05006H
+$unwind$?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z DD 061601H
+	DD	03f0116H
+	DD	0e005f007H
+	DD	050026003H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4374,49 +4641,33 @@ $unwind$?EnableStuff@BerconWood@@QEAAXXZ DD 020601H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$5$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
-	DD	imagerel $LN24
-	DD	imagerel $LN24+59
+$chain$1$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
+	DD	imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$chain$4$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 021H
-	DD	imagerel $LN24+59
-	DD	imagerel $LN24+82
-	DD	imagerel $chain$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
-$chain$3$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 061221H
-	DD	048812H
-	DD	05780cH
-	DD	066806H
-	DD	imagerel $LN24+59
-	DD	imagerel $LN24+82
-	DD	imagerel $chain$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
-xdata	ENDS
-;	COMDAT xdata
-xdata	SEGMENT
 $chain$0$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 020621H
-	DD	039806H
-	DD	imagerel $LN24
-	DD	imagerel $LN24+59
+	DD	056806H
+	DD	imagerel $LN19
+	DD	imagerel $LN19+59
 	DD	imagerel $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z DD 060f01H
-	DD	011640fH
-	DD	010340fH
-	DD	0700bd20fH
+	DD	0f640fH
+	DD	0e340fH
+	DD	0700bb20fH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
-$unwind$??0BerconXYZ@@QEAA@XZ DD 060f01H
-	DD	07640fH
-	DD	06340fH
-	DD	0700b320fH
+$unwind$??0BerconXYZ@@QEAA@XZ DD 081401H
+	DD	086414H
+	DD	075414H
+	DD	063414H
+	DD	070103214H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
@@ -4727,6 +4978,16 @@ $unwind$?Set@BitArray@@QEAAXH@Z DD 040a01H
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
+$unwind$??D@YA?AVPoint3@@AEBV0@M@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
+$unwind$??D@YA?AVPoint3@@MAEBV0@@Z DD 020601H
+	DD	030023206H
+xdata	ENDS
+;	COMDAT xdata
+xdata	SEGMENT
 $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z DD 040a01H
 	DD	08340aH
 	DD	07006520aH
@@ -4767,13 +5028,11 @@ xdata	ENDS
 xdata	SEGMENT
 $stateUnwindMap$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD 0ffffffffH
 	DD	imagerel ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA
-	DD	0ffffffffH
-	DD	imagerel ?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z
 	DD	00H
 	DD	00H
@@ -4798,25 +5057,21 @@ $ip2state$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD imagerel ??0
 	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+29
 	DD	00H
 	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+39
-	DD	01H
-	DD	imagerel ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z+49
 	DD	0ffffffffH
 xdata	ENDS
 ;	COMDAT xdata
 xdata	SEGMENT
 $stateUnwindMap$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD 0ffffffffH
-	DD	imagerel ?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA
-	DD	0ffffffffH
 	DD	imagerel ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	DD	00H
 	DD	00H
-	DD	04H
+	DD	03H
 	DD	imagerel $ip2state$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	DD	020H
 	DD	00H
@@ -4838,13 +5093,11 @@ xdata	ENDS
 xdata	SEGMENT
 $stateUnwindMap$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD 0ffffffffH
 	DD	imagerel ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA
-	DD	0ffffffffH
-	DD	imagerel ?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA
 xdata	ENDS
 ;	COMDAT CONST
 CONST	SEGMENT
 $cppxdata$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ DD 019930522H
-	DD	02H
+	DD	01H
 	DD	imagerel $stateUnwindMap$??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ
 	DD	00H
 	DD	00H
@@ -5956,10 +6209,10 @@ $T6 = 4128
 	mov	QWORD PTR [rsp+3528], rcx
 	mov	QWORD PTR [rsp+3520], rcx
 	mov	DWORD PTR [rsp+3512], -1073741821	; ffffffffc0000003H
-	mov	DWORD PTR [rsp+3504], 1000000		; 000f4240H
+	mov	DWORD PTR [rsp+3504], 100000		; 000186a0H
 	mov	DWORD PTR [rsp+3496], r10d
 	mov	DWORD PTR [rsp+3488], -1073741822	; ffffffffc0000002H
-	mov	DWORD PTR [rsp+3480], 4
+	mov	DWORD PTR [rsp+3480], r10d
 	mov	DWORD PTR [rsp+3472], -1073741824	; ffffffffc0000000H
 	mov	DWORD PTR [rsp+3464], 215		; 000000d7H
 	mov	DWORD PTR [rsp+3456], r10d
@@ -6725,7 +6978,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?HInstance@BerconWoodClassDesc@@UEAAPEAUHINSTANCE__@@XZ PROC ; BerconWoodClassDesc::HInstance, COMDAT
 
-; 179  : 	virtual HINSTANCE HInstance() 					{ return hInstance; }
+; 183  : 	HINSTANCE HInstance() override { return hInstance; }
 
 	mov	rax, QWORD PTR ?hInstance@@3PEAUHINSTANCE__@@EA ; hInstance
 	ret	0
@@ -6738,7 +6991,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?InternalName@BerconWoodClassDesc@@UEAAPEB_WXZ PROC	; BerconWoodClassDesc::InternalName, COMDAT
 
-; 178  : 	virtual const TCHAR* InternalName() 			{ return _M("BerconWood"); } // returns fixed parsable name (scripter-visible name)
+; 182  : 	const TCHAR* InternalName() override { return _M("BerconWood"); } // returns fixed parsable name (scripter-visible name)
 
 	lea	rax, OFFSET FLAT:??_C@_1BG@GPLMDENA@?$AAB?$AAe?$AAr?$AAc?$AAo?$AAn?$AAW?$AAo?$AAo?$AAd@
 	ret	0
@@ -6751,7 +7004,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?Category@BerconWoodClassDesc@@UEAAPEB_WXZ PROC		; BerconWoodClassDesc::Category, COMDAT
 
-; 177  : 	virtual const TCHAR* Category() 				{ return TEXMAP_CAT_3D; }
+; 181  : 	const TCHAR* Category() override { return TEXMAP_CAT_3D; }
 
 	mov	rax, QWORD PTR __imp_?TEXMAP_CAT_3D@@3PA_WA
 	ret	0
@@ -6775,7 +7028,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx], 737622379		; 2bf7396bH
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 176  : 	virtual Class_ID ClassID() 						{ return BerconWood_CLASS_ID; }
+; 180  : 	Class_ID ClassID() override { return BerconWood_CLASS_ID; }
 
 	mov	rax, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
@@ -6785,7 +7038,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx+4], 2017300224		; 783d8f00H
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 176  : 	virtual Class_ID ClassID() 						{ return BerconWood_CLASS_ID; }
+; 180  : 	Class_ID ClassID() override { return BerconWood_CLASS_ID; }
 
 	ret	0
 ?ClassID@BerconWoodClassDesc@@UEAA?AVClass_ID@@XZ ENDP	; BerconWoodClassDesc::ClassID
@@ -6797,7 +7050,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?SuperClassID@BerconWoodClassDesc@@UEAAKXZ PROC		; BerconWoodClassDesc::SuperClassID, COMDAT
 
-; 175  : 	virtual SClass_ID SuperClassID() 				{ return TEXMAP_CLASS_ID; }
+; 179  : 	SClass_ID SuperClassID() override { return TEXMAP_CLASS_ID; }
 
 	mov	eax, 3088				; 00000c10H
 	ret	0
@@ -6810,7 +7063,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?ClassName@BerconWoodClassDesc@@UEAAPEB_WXZ PROC	; BerconWoodClassDesc::ClassName, COMDAT
 
-; 174  : 	virtual const TCHAR *	ClassName() 			{ return GetString(IDS_BERCON_WOOD); }
+; 178  : 	const TCHAR *	ClassName() override { return GetString(IDS_BERCON_WOOD); }
 
 	mov	ecx, 5
 	jmp	?GetString@@YAPEA_WH@Z			; GetString
@@ -6826,7 +7079,7 @@ __formal$ = 72
 $T2 = 80
 ?Create@BerconWoodClassDesc@@UEAAPEAXH@Z PROC		; BerconWoodClassDesc::Create, COMDAT
 
-; 173  : 	virtual void* Create(BOOL /*loading = FALSE*/) 	{ return new BerconWood(); }
+; 177  : 	void* Create(BOOL /*loading = FALSE*/) override { return new BerconWood(); }
 
 $LN8:
 	sub	rsp, 56					; 00000038H
@@ -6877,7 +7130,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?IsPublic@BerconWoodClassDesc@@UEAAHXZ PROC		; BerconWoodClassDesc::IsPublic, COMDAT
 
-; 172  : 	virtual int IsPublic() 							{ return TRUE; }
+; 176  : 	int IsPublic() override { return TRUE; }
 
 	mov	eax, 1
 	ret	0
@@ -6999,10 +7252,10 @@ this$ = 8
 id$ = 16
 ?GetInterface@BerconWood@@UEAAPEAXK@Z PROC		; BerconWood::GetInterface, COMDAT
 
-; 163  : 			/*	if(id == I_RESMAKER_INTERFACE)
-; 164  : 					return (void *) (ResourceMakerCallback*) this;
-; 165  : 				else*/
-; 166  : 			return Texmap::GetInterface(id);
+; 167  : 			/*	if(id == I_RESMAKER_INTERFACE)
+; 168  : 					return (void *) (ResourceMakerCallback*) this;
+; 169  : 				else*/
+; 170  : 			return Texmap::GetInterface(id);
 
 	rex_jmp	QWORD PTR __imp_?GetInterface@MtlBase@@UEAAPEAXK@Z
 ?GetInterface@BerconWood@@UEAAPEAXK@Z ENDP		; BerconWood::GetInterface
@@ -7102,19 +7355,20 @@ text$x	ENDS
 ;	COMDAT ??0BerconWood@@QEAA@XZ
 _TEXT	SEGMENT
 $T1 = 32
-this$ = 64
+this$ = 80
 ??0BerconWood@@QEAA@XZ PROC				; BerconWood::BerconWood, COMDAT
 
 ; 406  : BerconWood::BerconWood() {	
 
 $LN69:
 	mov	QWORD PTR [rsp+8], rcx
+	push	rsi
 	push	rdi
+	push	r14
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
-	mov	QWORD PTR [rsp+72], rbx
-	mov	QWORD PTR [rsp+80], rbp
-	mov	QWORD PTR [rsp+88], rsi
+	mov	QWORD PTR [rsp+88], rbx
+	mov	QWORD PTR [rsp+96], rbp
 	mov	rbx, rcx
 	call	QWORD PTR __imp_??0Texmap@@QEAA@XZ
 	npad	1
@@ -7124,38 +7378,82 @@ $LN69:
 	mov	QWORD PTR [rbx+64], rax
 	lea	rax, OFFSET FLAT:??_7BerconWood@@6B@
 	mov	QWORD PTR [rbx+144], rax
-	lea	rbp, QWORD PTR [rbx+240]
+	lea	rdi, QWORD PTR [rbx+240]
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
-; 341  : 	bool variance;
+; 328  : 	int mappingType{}, mappingChannel{};
 
-	lea	rdi, QWORD PTR [rbp+120]
+	xor	r14d, r14d
+	mov	QWORD PTR [rdi], r14
+
+; 329  : 	float offX, offY, offZ;
+; 330  : 	float sizeX{}, sizeY{}, sizeZ{};
+
+	mov	QWORD PTR [rdi+20], r14
+	mov	QWORD PTR [rdi+28], r14
+
+; 331  : 	float angX{}, angY{}, angZ{};
+
+	mov	QWORD PTR [rdi+36], r14
+
+; 332  : 	int tileX{}, tileY{}, tileZ{};
+
+	mov	QWORD PTR [rdi+44], r14
+	mov	QWORD PTR [rdi+52], r14
+
+; 333  : 	float offX2{}, offY2{}, offZ2{};
+
+	mov	QWORD PTR [rdi+60], r14
+
+; 334  : 	float sizeX2{}, sizeY2{}, sizeZ2{};
+
+	mov	QWORD PTR [rdi+68], r14
+	mov	QWORD PTR [rdi+76], r14
+
+; 335  : 	float angX2{}, angY2{}, angZ2{};
+
+	mov	QWORD PTR [rdi+84], r14
+
+; 336  : 	int p_seed{}, p_randObj{}, p_randMat{}, p_randPar{};
+
+	mov	QWORD PTR [rdi+92], r14
+	mov	QWORD PTR [rdi+100], r14
+
+; 337  : 	float filtering{};
+
+	mov	QWORD PTR [rdi+108], r14
+
+; 338  : 
+; 339  : 	BOOL lock{};
+; 340  : 
+; 341  : 	bool variance{};
+
+	mov	BYTE PTR [rdi+116], r14b
+	lea	rsi, QWORD PTR [rdi+120]
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 406  : BerconWood::BerconWood() {	
 
-	mov	esi, 3
-	npad	1
+	lea	ebp, QWORD PTR [r14+3]
 $LL12@BerconWood:
-	mov	rcx, rdi
+	mov	rcx, rsi
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
-	add	rdi, 12
-	sub	rsi, 1
+	add	rsi, 12
+	sub	rbp, 1
 	jne	SHORT $LL12@BerconWood
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	xor	edi, edi
-	mov	DWORD PTR [rbp+204], edi
-	mov	QWORD PTR [rbp+256], rdi
+	mov	DWORD PTR [rdi+204], r14d
+	mov	QWORD PTR [rdi+256], r14
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	QWORD PTR [rbp+8], rdi
-	mov	DWORD PTR [rbp+16], edi
-	mov	rcx, rbp
+	mov	QWORD PTR [rdi+8], r14
+	mov	DWORD PTR [rdi+16], r14d
+	mov	rcx, rdi
 	call	?update@BerconXYZ@@QEAAXXZ		; BerconXYZ::update
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
@@ -7169,44 +7467,44 @@ $LL12@BerconWood:
 
 ; 407  : 	for (int i=0; i<NSUBTEX; i++) subtex[i] = NULL;	
 
-	mov	QWORD PTR [rbx+568], rdi
-	mov	QWORD PTR [rbx+576], rdi
-	mov	QWORD PTR [rbx+584], rdi
-	mov	QWORD PTR [rbx+592], rdi
-	mov	QWORD PTR [rbx+600], rdi
-	mov	QWORD PTR [rbx+608], rdi
-	mov	QWORD PTR [rbx+616], rdi
-	mov	QWORD PTR [rbx+624], rdi
-	mov	QWORD PTR [rbx+632], rdi
-	mov	QWORD PTR [rbx+640], rdi
-	mov	QWORD PTR [rbx+648], rdi
-	mov	QWORD PTR [rbx+656], rdi
-	mov	QWORD PTR [rbx+664], rdi
-	mov	QWORD PTR [rbx+672], rdi
-	mov	QWORD PTR [rbx+680], rdi
-	mov	QWORD PTR [rbx+688], rdi
-	mov	QWORD PTR [rbx+696], rdi
-	mov	QWORD PTR [rbx+704], rdi
-	mov	QWORD PTR [rbx+712], rdi
-	mov	QWORD PTR [rbx+720], rdi
-	mov	QWORD PTR [rbx+728], rdi
+	mov	QWORD PTR [rbx+568], r14
+	mov	QWORD PTR [rbx+576], r14
+	mov	QWORD PTR [rbx+584], r14
+	mov	QWORD PTR [rbx+592], r14
+	mov	QWORD PTR [rbx+600], r14
+	mov	QWORD PTR [rbx+608], r14
+	mov	QWORD PTR [rbx+616], r14
+	mov	QWORD PTR [rbx+624], r14
+	mov	QWORD PTR [rbx+632], r14
+	mov	QWORD PTR [rbx+640], r14
+	mov	QWORD PTR [rbx+648], r14
+	mov	QWORD PTR [rbx+656], r14
+	mov	QWORD PTR [rbx+664], r14
+	mov	QWORD PTR [rbx+672], r14
+	mov	QWORD PTR [rbx+680], r14
+	mov	QWORD PTR [rbx+688], r14
+	mov	QWORD PTR [rbx+696], r14
+	mov	QWORD PTR [rbx+704], r14
+	mov	QWORD PTR [rbx+712], r14
+	mov	QWORD PTR [rbx+720], r14
+	mov	QWORD PTR [rbx+728], r14
 
 ; 408  : 	texHandle = NULL;
 
-	mov	QWORD PTR [rbx+848], rdi
+	mov	QWORD PTR [rbx+848], r14
 
 ; 409  : 	pblock = NULL;
 
-	mov	QWORD PTR [rbx+512], rdi
+	mov	QWORD PTR [rbx+512], r14
 
 ; 410  : //	pbCurve = NULL;
 ; 411  : 	pbMap = NULL;
 
-	mov	QWORD PTR [rbx+520], rdi
+	mov	QWORD PTR [rbx+520], r14
 
 ; 412  : 	pbXYZ = NULL;
 
-	mov	QWORD PTR [rbx+504], rdi
+	mov	QWORD PTR [rbx+504], r14
 
 ; 413  : 	BerconWoodDesc.MakeAutoParamBlocks(this);	
 
@@ -7216,7 +7514,7 @@ $LL12@BerconWood:
 
 ; 414  : 	texout = NULL;	
 
-	mov	QWORD PTR [rbx+824], rdi
+	mov	QWORD PTR [rbx+824], r14
 
 ; 415  : //	curve = NULL;	
 ; 416  : 	BerconWood::Reset();
@@ -7228,18 +7526,19 @@ $LL12@BerconWood:
 ; 417  : }
 
 	mov	rax, rbx
-	mov	rbx, QWORD PTR [rsp+72]
-	mov	rbp, QWORD PTR [rsp+80]
-	mov	rsi, QWORD PTR [rsp+88]
+	mov	rbx, QWORD PTR [rsp+88]
+	mov	rbp, QWORD PTR [rsp+96]
 	add	rsp, 48					; 00000030H
+	pop	r14
 	pop	rdi
+	pop	rsi
 	ret	0
 ??0BerconWood@@QEAA@XZ ENDP				; BerconWood::BerconWood
 _TEXT	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
-this$ = 64
+this$ = 80
 ?dtor$0@?0???0BerconWood@@QEAA@XZ@4HA PROC		; `BerconWood::BerconWood'::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
 	jmp	??1Texmap@@UEAA@XZ
@@ -7249,7 +7548,7 @@ text$x	ENDS
 ;	COMDAT text$x
 text$x	SEGMENT
 $T1 = 32
-this$ = 64
+this$ = 80
 ?dtor$0@?0???0BerconWood@@QEAA@XZ@4HA PROC		; `BerconWood::BerconWood'::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
 	jmp	??1Texmap@@UEAA@XZ
@@ -7262,7 +7561,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?DeleteThis@BerconWood@@UEAAXXZ PROC			; BerconWood::DeleteThis, COMDAT
 
-; 156  : 		void DeleteThis() { delete this; }		
+; 159  : 		void DeleteThis() override { delete this; }		
 
 	test	rcx, rcx
 	je	SHORT $LN3@DeleteThis
@@ -7281,7 +7580,7 @@ this$ = 48
 id$ = 56
 ?GetParamBlockByID@BerconWood@@UEAAPEAVIParamBlock2@@F@Z PROC ; BerconWood::GetParamBlockByID, COMDAT
 
-; 148  : 		IParamBlock2* GetParamBlockByID(BlockID id) { 
+; 151  : 		{ 
 
 $LN7:
 	mov	QWORD PTR [rsp+8], rbx
@@ -7290,7 +7589,7 @@ $LN7:
 	mov	rbx, rcx
 	movzx	edi, dx
 
-; 149  : 			if (pblock->ID() == id) return pblock;
+; 152  : 			if (pblock->ID() == id) return pblock;
 
 	mov	rcx, QWORD PTR [rcx+512]
 	mov	rax, QWORD PTR [rcx]
@@ -7299,8 +7598,8 @@ $LN7:
 	jne	SHORT $LN2@GetParamBl
 	mov	rax, QWORD PTR [rbx+512]
 
-; 153  : 			return NULL;			
-; 154  : 		}
+; 156  : 			return NULL;			
+; 157  : 		}
 
 	mov	rbx, QWORD PTR [rsp+48]
 	add	rsp, 32					; 00000020H
@@ -7308,8 +7607,8 @@ $LN7:
 	ret	0
 $LN2@GetParamBl:
 
-; 150  : 		//	if (pbCurve->ID() == id) return pbCurve;
-; 151  : 			if (pbMap->ID() == id) return pbMap;
+; 153  : 		//	if (pbCurve->ID() == id) return pbCurve;
+; 154  : 			if (pbMap->ID() == id) return pbMap;
 
 	mov	rcx, QWORD PTR [rbx+520]
 	mov	rax, QWORD PTR [rcx]
@@ -7318,8 +7617,8 @@ $LN2@GetParamBl:
 	jne	SHORT $LN3@GetParamBl
 	mov	rax, QWORD PTR [rbx+520]
 
-; 153  : 			return NULL;			
-; 154  : 		}
+; 156  : 			return NULL;			
+; 157  : 		}
 
 	mov	rbx, QWORD PTR [rsp+48]
 	add	rsp, 32					; 00000020H
@@ -7327,7 +7626,7 @@ $LN2@GetParamBl:
 	ret	0
 $LN3@GetParamBl:
 
-; 152  : 			if (pbXYZ->ID() == id) return pbXYZ;			
+; 155  : 			if (pbXYZ->ID() == id) return pbXYZ;			
 
 	mov	rcx, QWORD PTR [rbx+504]
 	mov	rax, QWORD PTR [rcx]
@@ -7336,8 +7635,8 @@ $LN3@GetParamBl:
 	jne	SHORT $LN4@GetParamBl
 	mov	rax, QWORD PTR [rbx+504]
 
-; 153  : 			return NULL;			
-; 154  : 		}
+; 156  : 			return NULL;			
+; 157  : 		}
 
 	mov	rbx, QWORD PTR [rsp+48]
 	add	rsp, 32					; 00000020H
@@ -7359,7 +7658,7 @@ this$ = 8
 i$ = 16
 ?GetParamBlock@BerconWood@@UEAAPEAVIParamBlock2@@H@Z PROC ; BerconWood::GetParamBlock, COMDAT
 
-; 147  : 		IParamBlock2* GetParamBlock(int i) { switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
+; 149  : 		{ switch (i) { case 0: return pblock; /*case 1: return pbCurve;*/ case 2: return pbMap; case 3: return pbXYZ; } return NULL; }
 
 	test	edx, edx
 	je	SHORT $LN4@GetParamBl
@@ -7387,7 +7686,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?NumParamBlocks@BerconWood@@UEAAHXZ PROC		; BerconWood::NumParamBlocks, COMDAT
 
-; 146  : 		int	NumParamBlocks() { return 3; }
+; 147  : 		int	NumParamBlocks() override { return 3; }
 
 	mov	eax, 3
 	ret	0
@@ -7395,12 +7694,12 @@ this$ = 8
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-;	COMDAT ?SetReference@BerconWood@@UEAAXHPEAVReferenceTarget@@@Z
+;	COMDAT ?SetReference@BerconWood@@EEAAXHPEAVReferenceTarget@@@Z
 _TEXT	SEGMENT
 this$ = 8
 i$ = 16
 rtarg$ = 24
-?SetReference@BerconWood@@UEAAXHPEAVReferenceTarget@@@Z PROC ; BerconWood::SetReference, COMDAT
+?SetReference@BerconWood@@EEAAXHPEAVReferenceTarget@@@Z PROC ; BerconWood::SetReference, COMDAT
 
 ; 676  : 	switch(i) {
 
@@ -7465,7 +7764,7 @@ $LN4@SetReferen:
 ; 685  : }
 
 	ret	0
-?SetReference@BerconWood@@UEAAXHPEAVReferenceTarget@@@Z ENDP ; BerconWood::SetReference
+?SetReference@BerconWood@@EEAAXHPEAVReferenceTarget@@@Z ENDP ; BerconWood::SetReference
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
@@ -7547,7 +7846,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?NumRefs@BerconWood@@UEAAHXZ PROC			; BerconWood::NumRefs, COMDAT
 
-; 142  : 		int NumRefs() { return NUMREF-2; }			// Minus two for custom curve being gone
+; 142  : 		int NumRefs() override { return NUMREF-2; }			// Minus two for custom curve being gone
 
 	mov	eax, 23
 	ret	0
@@ -7820,7 +8119,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?NumSubs@BerconWood@@UEAAHXZ PROC			; BerconWood::NumSubs, COMDAT
 
-; 138  : 		int NumSubs() { return 1; }					// We return one when paramblocks are in use
+; 138  : 		int NumSubs() override { return 1; }					// We return one when paramblocks are in use
 
 	mov	eax, 1
 	ret	0
@@ -7832,17 +8131,9 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ;	COMDAT ?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z
 _TEXT	SEGMENT
@@ -7856,7 +8147,7 @@ propagate$ = 88
 
 ; 731  : RefResult BerconWood::NotifyRefChanged(NOTIFY_REF_CHANGED_ARGS) {
 
-$LN27:
+$LN23:
 	push	rdi
 	sub	rsp, 32					; 00000020H
 
@@ -7864,7 +8155,7 @@ $LN27:
 
 	cmp	DWORD PTR message$[rsp], 80		; 00000050H
 	mov	rdi, rcx
-	jne	$LN22@NotifyRefC
+	jne	$LN18@NotifyRefC
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
@@ -7892,37 +8183,26 @@ $LN27:
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 737  : 				BerconWood_param_blk.InvalidateUI(changing_param);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
-	movzx	r8d, ax
-	mov	r9d, -1
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 736  : 				ParamID changing_param = pblock->LastNotifyParamID();
-
+	mov	r8d, -1
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
+	movzx	edx, ax
 	movzx	ebx, ax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 
 ; 738  : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
-	je	SHORT $LN21@NotifyRefC
+	je	SHORT $LN17@NotifyRefC
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
 ; 102  : 		void DiscardTexHandle() { if (texHandle) { texHandle->DeleteThis(); texHandle = NULL; } }
 
 	mov	rcx, QWORD PTR [rdi+848]
 	test	rcx, rcx
-	je	SHORT $LN21@NotifyRefC
+	je	SHORT $LN17@NotifyRefC
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+16]
 	mov	rbx, QWORD PTR [rsp+48]
@@ -7948,41 +8228,30 @@ $LN5@NotifyRefC:
 ; 739  : 			}  else if (hTarget == pbXYZ) {
 
 	cmp	r8, QWORD PTR [rdi+504]
-	jne	SHORT $LN21@NotifyRefC
+	jne	SHORT $LN17@NotifyRefC
 
 ; 740  : 				ParamID changing_param = pblock->LastNotifyParamID();
 
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+2288]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 741  : 				xyz_blk.InvalidateUI(changing_param);
 
-	mov	rcx, QWORD PTR ?xyz_blk@@3VXYZ_Desc@@A+24
-	lea	rdx, OFFSET FLAT:?xyz_blk@@3VXYZ_Desc@@A
-	movzx	r8d, ax
-	mov	r9d, -1
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 740  : 				ParamID changing_param = pblock->LastNotifyParamID();
-
+	mov	r8d, -1
+	lea	rcx, OFFSET FLAT:?xyz_blk@@3VXYZ_Desc@@A
+	movzx	edx, ax
 	movzx	ebx, ax
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 
 ; 742  : 				if (changing_param != -1) DiscardTexHandle();
 
 	cmp	bx, -1
-	je	SHORT $LN21@NotifyRefC
+	je	SHORT $LN17@NotifyRefC
 	mov	rcx, rdi
 	call	?DiscardTexHandle@BerconWood@@QEAAXXZ	; BerconWood::DiscardTexHandle
-$LN21@NotifyRefC:
+$LN17@NotifyRefC:
 	mov	rbx, QWORD PTR [rsp+48]
-$LN22@NotifyRefC:
+$LN18@NotifyRefC:
 
 ; 747  : }
 
@@ -8196,7 +8465,7 @@ this$ = 48
 s$ = 56
 ?GetClassName@BerconWood@@UEAAXAEAVWStr@@@Z PROC	; BerconWood::GetClassName, COMDAT
 
-; 133  : 		void GetClassName(TSTR& s) {s = GetString(IDS_BERCON_WOOD);}
+; 133  : 		void GetClassName(TSTR& s) override {s = GetString(IDS_BERCON_WOOD);}
 
 $LN4:
 	push	rbx
@@ -8218,7 +8487,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?SuperClassID@BerconWood@@UEAAKXZ PROC			; BerconWood::SuperClassID, COMDAT
 
-; 132  : 		SClass_ID SuperClassID() { return TEXMAP_CLASS_ID; }
+; 132  : 		SClass_ID SuperClassID() override { return TEXMAP_CLASS_ID; }
 
 	mov	eax, 3088				; 00000c10H
 	ret	0
@@ -8242,7 +8511,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx], 737622379		; 2bf7396bH
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 131  : 		Class_ID ClassID() {return BerconWood_CLASS_ID;}		
+; 131  : 		Class_ID ClassID() override {return BerconWood_CLASS_ID;}		
 
 	mov	rax, rdx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\maxtypes.h
@@ -8252,7 +8521,7 @@ __$ReturnUdt$ = 16
 	mov	DWORD PTR [rdx+4], 2017300224		; 783d8f00H
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 131  : 		Class_ID ClassID() {return BerconWood_CLASS_ID;}		
+; 131  : 		Class_ID ClassID() override {return BerconWood_CLASS_ID;}		
 
 	ret	0
 ?ClassID@BerconWood@@UEAA?AVClass_ID@@XZ ENDP		; BerconWood::ClassID
@@ -8265,7 +8534,7 @@ this$ = 8
 subNum$ = 16
 ?SubNumToRefNum@BerconWood@@UEAAHH@Z PROC		; BerconWood::SubNumToRefNum, COMDAT
 
-; 126  : 		int SubNumToRefNum(int subNum) { return subNum; }
+; 126  : 		int SubNumToRefNum(int subNum) override { return subNum; }
 
 	mov	eax, edx
 	ret	0
@@ -8291,72 +8560,11 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
@@ -8374,115 +8582,118 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ;	COMDAT ?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z
 _TEXT	SEGMENT
-$T1 = 48
-$T2 = 48
-$T3 = 48
-$T4 = 48
-$T5 = 48
-$T6 = 48
-$T7 = 48
-$T8 = 48
-$T9 = 48
-$T10 = 48
-$T11 = 48
-$T12 = 48
-$T13 = 48
-$T14 = 48
-$T15 = 48
-np$ = 64
-p$ = 80
-v3$ = 96
-$T16 = 96
-$T17 = 96
-dpdy$ = 112
-dpdx$ = 128
-v1$ = 144
-$T18 = 144
+np$ = 48
+p$ = 64
+$T1 = 80
+$T2 = 80
+$T3 = 80
+$T4 = 80
+$T5 = 80
+$T6 = 80
+$T7 = 96
+$T8 = 96
+$T9 = 96
+$T10 = 96
+$T11 = 96
+$T12 = 112
+$T13 = 112
+$T14 = 112
+$T15 = 128
+$T16 = 128
+$T17 = 128
+$T18 = 128
 $T19 = 144
+$T20 = 144
+$T21 = 144
+$T22 = 144
+$T23 = 144
 nG$ = 160
-v2$ = 176
-$T20 = 176
-$T21 = 176
-gP$ = 192
-$T22 = 208
-$T23 = 208
+dpdy$ = 176
+dpdx$ = 192
 $T24 = 208
-wp$ = 224
-$T25 = 288
-$T26 = 288
-M$ = 352
-this$ = 608
-__$ReturnUdt$ = 616
-sc$ = 624
+$T25 = 208
+$T26 = 208
+$T27 = 208
+$T28 = 208
+$T29 = 208
+$T30 = 208
+$T31 = 208
+$T32 = 208
+$T33 = 208
+v1$ = 224
+v2$ = 240
+v3$ = 256
+gP$ = 272
+$T34 = 288
+$T35 = 288
+$T36 = 288
+wp$ = 304
+$T37 = 368
+$T38 = 368
+M$ = 432
+this$ = 640
+__$ReturnUdt$ = 648
+sc$ = 656
 ?EvalNormalPerturb@BerconWood@@UEAA?AVPoint3@@AEAVShadeContext@@@Z PROC ; BerconWood::EvalNormalPerturb, COMDAT
 
 ; 852  : Point3 BerconWood::EvalNormalPerturb(ShadeContext& sc) {	
 
-$LN189:
+$LN103:
 	push	rbp
 	push	rsi
-	push	rdi
-	push	r12
-	push	r15
-	lea	rbp, QWORD PTR [rsp-304]
-	sub	rsp, 560				; 00000230H
+	push	r13
+	push	r14
+	lea	rbp, QWORD PTR [rsp-344]
+	sub	rsp, 600				; 00000258H
+	mov	rsi, rcx
+	mov	r14, r8
 
+; 853  : 	Point3 p,dpdx,dpdy;
+
+	lea	rcx, QWORD PTR p$[rsp]
+	mov	r13, rdx
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdx$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdy$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
+; 854  : 	
 ; 855  : 	if (!sc.doMaps) return Point3(0,0,0);
 
-	cmp	DWORD PTR [r8+12], 0
-	mov	r15, r8
-	vmovaps	XMMWORD PTR [rsp+528], xmm7
-	mov	r12, rdx
-	vxorps	xmm7, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR p$[rsp], xmm7
-	vmovss	DWORD PTR p$[rsp+4], xmm7
-	vmovss	DWORD PTR p$[rsp+8], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-256], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-252], xmm7
-	vmovss	DWORD PTR dpdx$[rbp-248], xmm7
-	vmovss	DWORD PTR dpdy$[rsp], xmm7
-	vmovss	DWORD PTR dpdy$[rsp+4], xmm7
-	vmovss	DWORD PTR dpdy$[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 852  : Point3 BerconWood::EvalNormalPerturb(ShadeContext& sc) {	
-
-	mov	rdi, rcx
-
-; 855  : 	if (!sc.doMaps) return Point3(0,0,0);
-
+	cmp	DWORD PTR [r14+12], 0
 	jne	SHORT $LN5@EvalNormal
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	xor	r9d, r9d
+	xor	r8d, r8d
+	xor	edx, edx
+	mov	rcx, r13
+	call	QWORD PTR __imp_??0Point3@@QEAA@HHH@Z
 
-; 69   : 		 x = (float)X; y = (float)Y; z = (float)Z; 
+; 936  : }
 
-	xor	esi, esi
-	mov	QWORD PTR [rdx], rsi
-	mov	DWORD PTR [rdx+8], esi
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 855  : 	if (!sc.doMaps) return Point3(0,0,0);
-
-	jmp	$LN183@EvalNormal
+	mov	rax, r13
+	add	rsp, 600				; 00000258H
+	pop	r14
+	pop	r13
+	pop	rsi
+	pop	rbp
+	ret	0
 $LN5@EvalNormal:
 
 ; 856  : 	if (gbufID) sc.SetGBufferID(gbufID);
 
-	mov	edx, DWORD PTR [rcx+120]
-	mov	QWORD PTR [rsp+608], rbx
-	mov	QWORD PTR [rsp+616], r13
-	mov	QWORD PTR [rsp+624], r14
-	vmovaps	XMMWORD PTR [rsp+544], xmm6
-	vmovaps	XMMWORD PTR [rsp+512], xmm8
-	vmovaps	XMMWORD PTR [rsp+464], xmm11
+	mov	edx, DWORD PTR [rsi+120]
+	mov	QWORD PTR [rsp+640], rbx
+	mov	QWORD PTR [rsp+648], rdi
+	mov	QWORD PTR [rsp+656], r12
+	mov	QWORD PTR [rsp+592], r15
+	vmovaps	XMMWORD PTR [rsp+576], xmm6
+	vmovaps	XMMWORD PTR [rsp+560], xmm7
+	vmovaps	XMMWORD PTR [rsp+512], xmm10
 	test	edx, edx
 	je	SHORT $LN6@EvalNormal
-	mov	rax, QWORD PTR [r8]
-	mov	rcx, r15
+	mov	rax, QWORD PTR [r14]
+	mov	rcx, r14
 	call	QWORD PTR [rax+464]
 $LN6@EvalNormal:
 
@@ -8490,43 +8701,43 @@ $LN6@EvalNormal:
 ; 858  : 	// Evaluate parameters
 ; 859  : 	WoodParam wp = EvalParameters(sc);
 
-	mov	r8, r15
-	vmovaps	XMMWORD PTR [rsp+480], xmm10
+	mov	r8, r14
+	vmovaps	XMMWORD PTR [rsp+528], xmm9
 	lea	rdx, QWORD PTR wp$[rbp-256]
-	mov	rcx, rdi
+	mov	rcx, rsi
 	call	?EvalParameters@BerconWood@@QEAA?AVWoodParam@@AEAVShadeContext@@@Z ; BerconWood::EvalParameters
 
 ; 860  : 	float grainA = mapOn[19]&&subtex[19]?subtex[19]->EvalMono(sc)*grainAmount:grainAmount;
 
-	cmp	DWORD PTR [rdi+812], 0
+	cmp	DWORD PTR [rsi+812], 0
 	je	SHORT $LN20@EvalNormal
-	mov	rcx, QWORD PTR [rdi+720]
+	mov	rcx, QWORD PTR [rsi+720]
 	test	rcx, rcx
 	je	SHORT $LN20@EvalNormal
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm10, xmm0, DWORD PTR [rdi+164]
+	vmulss	xmm9, xmm0, DWORD PTR [rsi+164]
 	jmp	SHORT $LN21@EvalNormal
 $LN20@EvalNormal:
-	vmovss	xmm10, DWORD PTR [rdi+164]
+	vmovss	xmm9, DWORD PTR [rsi+164]
 $LN21@EvalNormal:
 
 ; 861  : 	float grainF = mapOn[20]&&subtex[20]?subtex[20]->EvalMono(sc)*grainFreq:grainFreq;
 
-	cmp	DWORD PTR [rdi+816], 0
-	vmovaps	XMMWORD PTR [rsp+496], xmm9
-	je	SHORT $LN181@EvalNormal
-	mov	rcx, QWORD PTR [rdi+728]
+	cmp	DWORD PTR [rsi+816], 0
+	vmovaps	XMMWORD PTR [rsp+544], xmm8
+	je	SHORT $LN95@EvalNormal
+	mov	rcx, QWORD PTR [rsi+728]
 	test	rcx, rcx
-	je	SHORT $LN181@EvalNormal
+	je	SHORT $LN95@EvalNormal
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm9, xmm0, DWORD PTR [rdi+168]
+	vmulss	xmm8, xmm0, DWORD PTR [rsi+168]
 	jmp	SHORT $LN23@EvalNormal
-$LN181@EvalNormal:
-	vmovss	xmm9, DWORD PTR [rdi+168]
+$LN95@EvalNormal:
+	vmovss	xmm8, DWORD PTR [rsi+168]
 $LN23@EvalNormal:
 
 ; 862  : 
@@ -8534,22 +8745,22 @@ $LN23@EvalNormal:
 ; 864  : 	Point3 M[3];
 
 	lea	rbx, QWORD PTR M$[rbp-256]
-	mov	esi, 3
-	npad	6
-$LL41@EvalNormal:
+	mov	edi, 3
+	npad	8
+$LL33@EvalNormal:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 	add	rbx, 12
-	sub	rsi, 1
-	jne	SHORT $LL41@EvalNormal
+	sub	rdi, 1
+	jne	SHORT $LL33@EvalNormal
 
 ; 865  : 	berconXYZ.get(sc, p, dpdx, dpdy, M);
 
 	lea	rax, QWORD PTR M$[rbp-256]
-	mov	rdx, r15
+	mov	rdx, r14
 	mov	QWORD PTR [rsp+40], rax
-	lea	rcx, QWORD PTR [rdi+240]
-	lea	rax, QWORD PTR dpdy$[rsp]
+	lea	rcx, QWORD PTR [rsi+240]
+	lea	rax, QWORD PTR dpdy$[rbp-256]
 	lea	r9, QWORD PTR dpdx$[rbp-256]
 	mov	QWORD PTR [rsp+32], rax
 	lea	r8, QWORD PTR p$[rsp]
@@ -8558,363 +8769,273 @@ $LL41@EvalNormal:
 ; 866  : 
 ; 867  : 	if (useDistortion)
 
-	cmp	DWORD PTR [rdi+152], esi
+	cmp	DWORD PTR [rsi+152], edi
 	je	SHORT $LN7@EvalNormal
 
 ; 868  : 		applyDistortion(sc,p);	
 
 	lea	r8, QWORD PTR p$[rsp]
-	mov	rdx, r15
-	mov	rcx, rdi
+	mov	rdx, r14
+	mov	rcx, rsi
 	call	?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ; BerconWood::applyDistortion
 $LN7@EvalNormal:
 
 ; 869  : 	float wSize = mapOn[5]&&subtex[5]?subtex[5]->EvalMono(sc)*woodSize:woodSize;
 
-	cmp	DWORD PTR [rdi+756], 0
+	cmp	DWORD PTR [rsi+756], 0
 	je	SHORT $LN24@EvalNormal
-	mov	rcx, QWORD PTR [rdi+608]
+	mov	rcx, QWORD PTR [rsi+608]
 	test	rcx, rcx
 	je	SHORT $LN24@EvalNormal
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm1, xmm0, DWORD PTR [rdi+160]
+	vmulss	xmm3, xmm0, DWORD PTR [rsi+160]
 	jmp	SHORT $LN25@EvalNormal
 $LN24@EvalNormal:
-	vmovss	xmm1, DWORD PTR [rdi+160]
+	vmovss	xmm3, DWORD PTR [rsi+160]
 $LN25@EvalNormal:
-
-; 870  : 	p /= wSize; dpdx /= (wSize / 2.f); dpdy /= (wSize / 2.f);
-
-	vmulss	xmm3, xmm1, DWORD PTR __real@3f000000
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 276  :    x /= f;  y /= f;  z /= f;  
 
 	vmovss	xmm0, DWORD PTR p$[rsp]
-	vmovss	xmm2, DWORD PTR dpdx$[rbp-252]
+	vmovss	xmm2, DWORD PTR p$[rsp+4]
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 873  : 	bool grainON = (grainAmount > .001f); 
 
-	vmovss	xmm8, DWORD PTR __real@3a83126f
+	vmovss	xmm7, DWORD PTR __real@3a83126f
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 276  :    x /= f;  y /= f;  z /= f;  
 
-	vdivss	xmm4, xmm0, xmm1
-	vmovss	xmm0, DWORD PTR p$[rsp+4]
-	vdivss	xmm5, xmm0, xmm1
-	vmovss	xmm0, DWORD PTR p$[rsp+8]
-	vdivss	xmm6, xmm0, xmm1
+	vdivss	xmm1, xmm0, xmm3
+	vdivss	xmm0, xmm2, xmm3
+	vmovss	DWORD PTR p$[rsp], xmm1
+	vmovss	xmm1, DWORD PTR p$[rsp+8]
+	vdivss	xmm2, xmm1, xmm3
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 870  : 	p /= wSize; dpdx /= (wSize / 2.f); dpdy /= (wSize / 2.f);
+
+	vmulss	xmm3, xmm3, DWORD PTR __real@3f000000
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 276  :    x /= f;  y /= f;  z /= f;  
+
+	vmovss	DWORD PTR p$[rsp+4], xmm0
 	vmovss	xmm0, DWORD PTR dpdx$[rbp-256]
 	vdivss	xmm1, xmm0, xmm3
+	vmovss	DWORD PTR p$[rsp+8], xmm2
+	vmovss	xmm2, DWORD PTR dpdx$[rbp-252]
 	vdivss	xmm0, xmm2, xmm3
 	vmovss	DWORD PTR dpdx$[rbp-256], xmm1
 	vmovss	xmm1, DWORD PTR dpdx$[rbp-248]
 	vdivss	xmm2, xmm1, xmm3
 	vmovss	DWORD PTR dpdx$[rbp-252], xmm0
-	vmovss	xmm0, DWORD PTR dpdy$[rsp]
+	vmovss	xmm0, DWORD PTR dpdy$[rbp-256]
 	vdivss	xmm1, xmm0, xmm3
 	vmovss	DWORD PTR dpdx$[rbp-248], xmm2
-	vmovss	xmm2, DWORD PTR dpdy$[rsp+4]
+	vmovss	xmm2, DWORD PTR dpdy$[rbp-252]
 	vdivss	xmm0, xmm2, xmm3
-	vmovss	DWORD PTR dpdy$[rsp+4], xmm0
+	vmovss	DWORD PTR dpdy$[rbp-252], xmm0
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 873  : 	bool grainON = (grainAmount > .001f); 
 
-	vmovss	xmm0, DWORD PTR [rdi+164]
-	vcomiss	xmm0, xmm8
+	vmovss	xmm0, DWORD PTR [rsi+164]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 276  :    x /= f;  y /= f;  z /= f;  
 
-	vmovss	DWORD PTR dpdy$[rsp], xmm1
-	vmovss	xmm1, DWORD PTR dpdy$[rsp+8]
+	vmovss	DWORD PTR dpdy$[rbp-256], xmm1
+	vmovss	xmm1, DWORD PTR dpdy$[rbp-248]
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 873  : 	bool grainON = (grainAmount > .001f); 
 
-	seta	r13b
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	cmp	DWORD PTR [r15+16], 0
+	vcomiss	xmm0, xmm7
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 276  :    x /= f;  y /= f;  z /= f;  
 
 	vdivss	xmm2, xmm1, xmm3
-	vmovss	DWORD PTR p$[rsp], xmm4
-	vmovss	DWORD PTR p$[rsp+4], xmm5
-	vmovss	DWORD PTR p$[rsp+8], xmm6
-	vmovss	DWORD PTR dpdy$[rsp+8], xmm2
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR np$[rsp], xmm7
-	vmovss	DWORD PTR np$[rsp+4], xmm7
-	vmovss	DWORD PTR np$[rsp+8], xmm7
-	vmovss	DWORD PTR nG$[rbp-256], xmm7
-	vmovss	DWORD PTR nG$[rbp-252], xmm7
-	vmovss	DWORD PTR nG$[rbp-248], xmm7
-	vmovss	DWORD PTR gP$[rbp-256], xmm7
-	vmovss	DWORD PTR gP$[rbp-252], xmm7
-	vmovss	DWORD PTR gP$[rbp-248], xmm7
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
+; 874  : 	Point3 np, nG, gP;
+
+	lea	rcx, QWORD PTR np$[rsp]
+	seta	r12b
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 276  :    x /= f;  y /= f;  z /= f;  
+
+	vmovss	DWORD PTR dpdy$[rbp-248], xmm2
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 874  : 	Point3 np, nG, gP;
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR nG$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR gP$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
+; 875  : 	
 ; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
 
+	cmp	DWORD PTR [r14+16], 0
 	je	SHORT $LN26@EvalNormal
 	vmovups	ymm0, YMMWORD PTR wp$[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdy$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	r9, QWORD PTR gP$[rbp-256]
 	vmovups	ymm1, YMMWORD PTR wp$[rbp-224]
-	vmovups	YMMWORD PTR $T26[rbp-256], ymm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR dpdy$[rsp]
-	mov	DWORD PTR $T19[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	r8, QWORD PTR $T19[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdx$[rbp-248]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rdx, QWORD PTR $T21[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T19[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR dpdx$[rbp-256]
-	mov	DWORD PTR $T21[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rcx, QWORD PTR $T24[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR p$[rsp+8]
-	vmovsd	QWORD PTR $T21[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR p$[rsp]
-	mov	DWORD PTR $T24[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rax, QWORD PTR $T26[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T24[rbp-256], xmm0
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	vmovups	YMMWORD PTR $T26[rbp-224], ymm1
-	mov	QWORD PTR [rsp+32], rax
+	vmovups	YMMWORD PTR $T38[rbp-256], ymm0
+	vmovups	YMMWORD PTR $T38[rbp-224], ymm1
+	lea	rdx, QWORD PTR dpdy$[rbp-256]
+	lea	rcx, QWORD PTR $T6[rsp]
 	vzeroupper
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR dpdx$[rbp-256]
+	mov	rdi, rax
+	lea	rcx, QWORD PTR $T11[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR p$[rsp]
+	mov	rbx, rax
+	lea	rcx, QWORD PTR $T23[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	r9, QWORD PTR gP$[rbp-256]
+	mov	r8, rdi
+	mov	rcx, rax
+	mov	rdx, rbx
+	lea	rax, QWORD PTR $T38[rbp-256]
+	mov	QWORD PTR [rsp+32], rax
 	call	?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z ; Noise::wood
-	jmp	SHORT $LN184@EvalNormal
+	jmp	SHORT $LN97@EvalNormal
 $LN26@EvalNormal:
+	lea	rdx, QWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T18[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
 	lea	r8, QWORD PTR wp$[rbp-256]
 	lea	rdx, QWORD PTR gP$[rbp-256]
-	lea	rcx, QWORD PTR $T17[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T17[rsp], xmm4
-	vmovss	DWORD PTR $T17[rsp+4], xmm5
-	vmovss	DWORD PTR $T17[rsp+8], xmm6
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 876  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
 	call	?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z ; Noise::wood
-$LN184@EvalNormal:
+$LN97@EvalNormal:
 
+; 877  : //	if (useCurve) d = curve->GetControlCurve(0)->GetValue(sc.CurTime(), d);
+; 878  : 	
 ; 879  : 	float g = grainON ? Fractal::grain(gP, grainA, grainF): 0.f;	
 
-	vmovaps	XMMWORD PTR [rsp+400], xmm15
-	vmovaps	xmm11, xmm0
-	test	r13b, r13b
+	vmovaps	XMMWORD PTR [rsp+480], xmm12
+	vmovaps	xmm10, xmm0
+	test	r12b, r12b
 	je	SHORT $LN28@EvalNormal
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR gP$[rbp-256]
-	mov	eax, DWORD PTR gP$[rbp-248]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 879  : 	float g = grainON ? Fractal::grain(gP, grainA, grainF): 0.f;	
-
-	lea	rcx, QWORD PTR $T23[rbp-256]
-	vmovaps	xmm2, xmm9
-	vmovaps	xmm1, xmm10
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T23[rbp-256], xmm0
-	mov	DWORD PTR $T23[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 879  : 	float g = grainON ? Fractal::grain(gP, grainA, grainF): 0.f;	
-
+	lea	rdx, QWORD PTR gP$[rbp-256]
+	lea	rcx, QWORD PTR $T5[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
+	vmovaps	xmm2, xmm8
+	vmovaps	xmm1, xmm9
 	call	?grain@Fractal@@SAMVPoint3@@MM@Z	; Fractal::grain
-	vmovaps	xmm15, xmm0
+	vmovaps	xmm12, xmm0
 	jmp	SHORT $LN29@EvalNormal
 $LN28@EvalNormal:
-	vmovaps	xmm15, xmm7
+	vxorps	xmm12, xmm12, xmm12
 $LN29@EvalNormal:
 
 ; 880  : 	
 ; 881  : 	for (int i=0; i<3; i++) {		
 
-	xor	esi, esi
-	lea	r14, QWORD PTR M$[rbp-248]
-	npad	1
+	xor	edi, edi
+	lea	r15, QWORD PTR M$[rbp-252]
+	npad	11
 $LL4@EvalNormal:
 
 ; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
 
-	cmp	DWORD PTR [r15+16], 0
-	vmulss	xmm2, xmm8, DWORD PTR [r14-8]
-	vmulss	xmm3, xmm8, DWORD PTR [r14-4]
-	vmulss	xmm4, xmm8, DWORD PTR [r14]
-	je	SHORT $LN30@EvalNormal
-	vmovups	ymm0, YMMWORD PTR wp$[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdy$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-
-	lea	r9, QWORD PTR gP$[rbp-256]
+	cmp	DWORD PTR [r14+16], 0
+	vmulss	xmm3, xmm7, DWORD PTR [r15+4]
+	vmulss	xmm2, xmm7, DWORD PTR [r15]
+	vmulss	xmm4, xmm7, DWORD PTR [r15-4]
+	je	$LN30@EvalNormal
 	vmovups	ymm1, YMMWORD PTR wp$[rbp-224]
-	vmovups	YMMWORD PTR $T25[rbp-256], ymm0
+	vmovups	ymm0, YMMWORD PTR wp$[rbp-256]
+	vmovups	YMMWORD PTR $T37[rbp-224], ymm1
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmovsd	xmm0, QWORD PTR dpdy$[rsp]
-	vmovsd	QWORD PTR $T22[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR dpdx$[rbp-256]
-	vmovsd	QWORD PTR $T20[rbp-256], xmm0
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm0, xmm2, DWORD PTR p$[rsp]
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	DWORD PTR $T22[rbp-248], eax
+	vmovaps	xmm1, xmm4
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
 
-	lea	r8, QWORD PTR $T22[rbp-256]
+	vmovups	YMMWORD PTR $T37[rbp-256], ymm0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	mov	eax, DWORD PTR dpdx$[rbp-248]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-
-	lea	rdx, QWORD PTR $T20[rbp-256]
-	vmovups	YMMWORD PTR $T25[rbp-224], ymm1
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm1, xmm3, DWORD PTR p$[rsp+4]
-	vmovss	DWORD PTR $T16[rsp], xmm0
-	vaddss	xmm0, xmm4, DWORD PTR p$[rsp+8]
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	DWORD PTR $T20[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-
-	lea	rcx, QWORD PTR $T16[rsp]
-	lea	rax, QWORD PTR $T25[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T16[rsp+8], xmm0
-	vmovss	DWORD PTR $T16[rsp+4], xmm1
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-
-	mov	QWORD PTR [rsp+32], rax
+	lea	rcx, QWORD PTR $T14[rsp]
 	vzeroupper
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
+
+	vmovss	xmm0, DWORD PTR $T14[rsp+8]
+	vmovss	xmm1, DWORD PTR $T14[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR p$[rsp+8]
+	vmovss	xmm0, DWORD PTR $T14[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR p$[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T4[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
+
+	lea	rdx, QWORD PTR dpdy$[rbp-256]
+	lea	rcx, QWORD PTR $T22[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR dpdx$[rbp-256]
+	mov	rbx, rax
+	lea	rcx, QWORD PTR $T36[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	r9, QWORD PTR gP$[rbp-256]
+	mov	r8, rbx
+	mov	rdx, rax
+	lea	rcx, QWORD PTR $T4[rsp]
+	lea	rax, QWORD PTR $T37[rbp-256]
+	mov	QWORD PTR [rsp+32], rax
 	call	?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z ; Noise::wood
-	jmp	SHORT $LN185@EvalNormal
+	jmp	SHORT $LN98@EvalNormal
 $LN30@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vaddss	xmm0, xmm2, DWORD PTR p$[rsp]
-	vaddss	xmm1, xmm3, DWORD PTR p$[rsp+4]
-	vmovss	DWORD PTR $T18[rbp-256], xmm0
-	vaddss	xmm0, xmm4, DWORD PTR p$[rsp+8]
+	vmovaps	xmm1, xmm4
+	lea	rcx, QWORD PTR $T17[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
+
+	vmovss	xmm0, DWORD PTR $T17[rbp-248]
+	vmovss	xmm1, DWORD PTR $T17[rbp-252]
+	vaddss	xmm3, xmm0, DWORD PTR p$[rsp+8]
+	vmovss	xmm0, DWORD PTR $T17[rbp-256]
+	vaddss	xmm2, xmm1, DWORD PTR p$[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T10[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
 
 	lea	r8, QWORD PTR wp$[rbp-256]
 	lea	rdx, QWORD PTR gP$[rbp-256]
-	lea	rcx, QWORD PTR $T18[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T18[rbp-248], xmm0
-	vmovss	DWORD PTR $T18[rbp-252], xmm1
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 882  : 		np[i] = sc.filterMaps? Noise::wood(p + DELTA * M[i], dpdx, dpdy, gP, wp) : Noise::wood(p + DELTA * M[i], gP, wp);
-
+	lea	rcx, QWORD PTR $T10[rsp]
 	call	?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z ; Noise::wood
-$LN185@EvalNormal:
-	mov	edx, esi
+$LN98@EvalNormal:
+	mov	edx, edi
 	lea	rcx, QWORD PTR np$[rsp]
 	vmovaps	xmm6, xmm0
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
@@ -8922,49 +9043,32 @@ $LN185@EvalNormal:
 ; 883  : 	//	if (useCurve) np[i] = curve->GetControlCurve(0)->GetValue(sc.CurTime(), np[i]);	
 ; 884  : 		np[i] = (np[i] - d) / DELTA;
 
-	mov	edx, esi
+	mov	edx, edi
 	lea	rcx, QWORD PTR np$[rsp]
 	vmovss	DWORD PTR [rax], xmm6
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
-	mov	edx, esi
+	mov	edx, edi
 	lea	rcx, QWORD PTR np$[rsp]
 	vmovss	xmm6, DWORD PTR [rax]
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
-	vsubss	xmm0, xmm6, xmm11
-	vdivss	xmm1, xmm0, xmm8
+	vsubss	xmm0, xmm6, xmm10
+	vdivss	xmm1, xmm0, xmm7
 	vmovss	DWORD PTR [rax], xmm1
 
 ; 885  : 		if (grainON) nG[i] = Fractal::grain(gP, grainA, grainF); // gP is updated by wood()
 
-	test	r13b, r13b
+	test	r12b, r12b
 	je	SHORT $LN2@EvalNormal
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR gP$[rbp-256]
-	mov	eax, DWORD PTR gP$[rbp-248]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 885  : 		if (grainON) nG[i] = Fractal::grain(gP, grainA, grainF); // gP is updated by wood()
-
+	mov	edx, edi
 	lea	rcx, QWORD PTR nG$[rbp-256]
-	mov	edx, esi
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	DWORD PTR $T15[rsp+8], eax
-	vmovsd	QWORD PTR $T15[rsp], xmm0
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 885  : 		if (grainON) nG[i] = Fractal::grain(gP, grainA, grainF); // gP is updated by wood()
-
 	call	QWORD PTR __imp_??APoint3@@QEAAAEAMH@Z
-	vmovaps	xmm2, xmm9
-	vmovaps	xmm1, xmm10
-	lea	rcx, QWORD PTR $T15[rsp]
+	lea	rdx, QWORD PTR gP$[rbp-256]
 	mov	rbx, rax
+	lea	rcx, QWORD PTR $T33[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
+	vmovaps	xmm2, xmm8
+	vmovaps	xmm1, xmm9
 	call	?grain@Fractal@@SAMVPoint3@@MM@Z	; Fractal::grain
 	vmovss	DWORD PTR [rbx], xmm0
 $LN2@EvalNormal:
@@ -8972,172 +9076,119 @@ $LN2@EvalNormal:
 ; 880  : 	
 ; 881  : 	for (int i=0; i<3; i++) {		
 
-	inc	esi
-	add	r14, 12
-	cmp	esi, 3
+	inc	edi
+	add	r15, 12
+	cmp	edi, 3
 	jl	$LL4@EvalNormal
 
+; 886  : 	}
+; 887  : 
 ; 888  : 	np = -sc.VectorFromNoScale(np, REF_OBJECT);
 
-	mov	rax, QWORD PTR [r15]
+	mov	rax, QWORD PTR [r14]
 	lea	r8, QWORD PTR np$[rsp]
 	mov	r9d, 2
-	lea	rdx, QWORD PTR $T14[rsp]
-	mov	rcx, r15
+	lea	rdx, QWORD PTR $T32[rbp-256]
+	mov	rcx, r14
 	call	QWORD PTR [rax+456]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vmovss	xmm6, DWORD PTR __xmm@80000000800000008000000080000000
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+	mov	rcx, rax
+	lea	rdx, QWORD PTR $T35[rbp-256]
+	call	QWORD PTR __imp_??GPoint3@@QEBA?AV0@XZ
 
 ; 889  : 	nG = -sc.VectorFromNoScale(nG, REF_OBJECT);
 
 	mov	r9d, 2
 	lea	r8, QWORD PTR nG$[rbp-256]
-	lea	rdx, QWORD PTR $T12[rsp]
-	mov	rcx, r15
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vmovss	xmm0, DWORD PTR [rax]
-	vmovss	xmm1, DWORD PTR [rax+8]
-	vxorps	xmm4, xmm0, xmm6
-	vmovss	xmm0, DWORD PTR [rax+4]
-	vxorps	xmm2, xmm1, xmm6
-	vmovss	DWORD PTR $T13[rsp+8], xmm2
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 888  : 	np = -sc.VectorFromNoScale(np, REF_OBJECT);
-
-	mov	eax, DWORD PTR $T13[rsp+8]
-	mov	DWORD PTR np$[rsp+8], eax
-
-; 889  : 	nG = -sc.VectorFromNoScale(nG, REF_OBJECT);
-
-	mov	rax, QWORD PTR [r15]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vxorps	xmm3, xmm0, xmm6
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 888  : 	np = -sc.VectorFromNoScale(np, REF_OBJECT);
-
-	vunpcklps xmm0, xmm4, xmm3
+	lea	rdx, QWORD PTR $T31[rbp-256]
+	mov	rcx, r14
+	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR np$[rsp], xmm0
-
-; 889  : 	nG = -sc.VectorFromNoScale(nG, REF_OBJECT);
-
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR np$[rsp+8], eax
+	mov	rax, QWORD PTR [r14]
 	call	QWORD PTR [rax+456]
+	mov	rcx, rax
+	lea	rdx, QWORD PTR $T34[rbp-256]
+	call	QWORD PTR __imp_??GPoint3@@QEBA?AV0@XZ
 
-; 895  : 	if (subtex[0]) {
+; 890  : 
+; 891  : 	// Eval sub maps
+; 892  : 	float f1, f2, f3;
+; 893  : 	Point3 v1, v2, v3;
 
-	mov	rcx, QWORD PTR [rdi+568]
-	xor	dl, dl
-	mov	r14, QWORD PTR [rsp+624]
-	mov	rbx, QWORD PTR [rsp+608]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vmovss	xmm0, DWORD PTR [rax]
-	vmovss	xmm1, DWORD PTR [rax+4]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 895  : 	if (subtex[0]) {
-
-	vmovss	xmm8, DWORD PTR __real@40400000
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 111  : 		 return(Point3(-x,-y,-z)); 
-
-	vxorps	xmm4, xmm0, xmm6
-	vmovss	xmm0, DWORD PTR [rax+8]
-	vxorps	xmm2, xmm0, xmm6
-	vxorps	xmm3, xmm1, xmm6
-	vmovss	DWORD PTR $T11[rsp+8], xmm2
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 889  : 	nG = -sc.VectorFromNoScale(nG, REF_OBJECT);
-
-	mov	eax, DWORD PTR $T11[rsp+8]
+	lea	rcx, QWORD PTR v1$[rbp-256]
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR nG$[rbp-256], xmm0
+	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR nG$[rbp-248], eax
-	vunpcklps xmm1, xmm4, xmm3
-	vmovsd	QWORD PTR nG$[rbp-256], xmm1
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR v2$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR v3$[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 
+; 894  : 	bool maps = false;
 ; 895  : 	if (subtex[0]) {
 
+	mov	rcx, QWORD PTR [rsi+568]
+	xor	bl, bl
+	mov	r15, QWORD PTR [rsp+592]
+	mov	rdi, QWORD PTR [rsp+648]
+	vmovss	xmm6, DWORD PTR __real@40400000
 	test	rcx, rcx
 	je	SHORT $LN9@EvalNormal
 
 ; 896  : 		f1 = subtex[0]->EvalMono(sc);
 
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
 
 ; 897  : 		v1 = subtex[0]->EvalNormalPerturb(sc);
 
-	mov	rcx, QWORD PTR [rdi+568]
-	lea	rdx, QWORD PTR $T10[rsp]
-	mov	r8, r15
-	vmovaps	xmm9, xmm0
+	mov	rcx, QWORD PTR [rsi+568]
+	lea	rdx, QWORD PTR $T30[rbp-256]
+	mov	r8, r14
+	vmovaps	xmm8, xmm0
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 
 ; 898  : 		maps = true;
 
-	mov	dl, 1
+	mov	bl, 1
 	vmovsd	xmm1, QWORD PTR [rax]
-	mov	eax, DWORD PTR [rax+8]
 	vmovsd	QWORD PTR v1$[rbp-256], xmm1
 
 ; 899  : 	} else {
 
-	jmp	SHORT $LN186@EvalNormal
+	jmp	SHORT $LN99@EvalNormal
 $LN9@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 
 ; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
 
-	vmovss	xmm0, DWORD PTR [rdi+532]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+528]
-	vaddss	xmm2, xmm1, DWORD PTR [rdi+536]
+	vmovss	xmm0, DWORD PTR [rsi+532]
+	vaddss	xmm1, xmm0, DWORD PTR [rsi+528]
+	vaddss	xmm2, xmm1, DWORD PTR [rsi+536]
+	vdivss	xmm8, xmm2, xmm6
+	vxorps	xmm2, xmm2, xmm2
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 901  : 		v1 = Point3(0.f, 0.f, 0.f);
 
-	vunpcklps xmm0, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T9[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 901  : 		v1 = Point3(0.f, 0.f, 0.f);
-
-	mov	eax, DWORD PTR $T9[rsp+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-
-; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
-
-	vdivss	xmm9, xmm2, xmm8
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 901  : 		v1 = Point3(0.f, 0.f, 0.f);
-
+	lea	rcx, QWORD PTR $T29[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR v1$[rbp-256], xmm0
-$LN186@EvalNormal:
+$LN99@EvalNormal:
 
 ; 902  : 	}
 ; 903  : 	if (subtex[1]) {
 
-	mov	rcx, QWORD PTR [rdi+576]
+	mov	rcx, QWORD PTR [rsi+576]
+	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR v1$[rbp-248], eax
 	test	rcx, rcx
 	je	SHORT $LN11@EvalNormal
@@ -9145,428 +9196,354 @@ $LN186@EvalNormal:
 ; 904  : 		f2 = subtex[1]->EvalMono(sc);
 
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
 
 ; 905  : 		v2 = subtex[1]->EvalNormalPerturb(sc);
 
-	mov	rcx, QWORD PTR [rdi+576]
-	lea	rdx, QWORD PTR $T8[rsp]
-	mov	r8, r15
-	vmovaps	xmm6, xmm0
+	mov	rcx, QWORD PTR [rsi+576]
+	lea	rdx, QWORD PTR $T28[rbp-256]
+	mov	r8, r14
+	vmovaps	xmm7, xmm0
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
 
 ; 906  : 		maps = true;
 
-	mov	dl, 1
+	mov	bl, 1
 	vmovsd	xmm1, QWORD PTR [rax]
-	mov	eax, DWORD PTR [rax+8]
 	vmovsd	QWORD PTR v2$[rbp-256], xmm1
 
 ; 907  : 	} else {
 
-	jmp	SHORT $LN187@EvalNormal
+	jmp	SHORT $LN100@EvalNormal
 $LN11@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 
 ; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
 
-	vmovss	xmm0, DWORD PTR [rdi+544]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+540]
-	vaddss	xmm2, xmm1, DWORD PTR [rdi+548]
+	vmovss	xmm0, DWORD PTR [rsi+544]
+	vaddss	xmm1, xmm0, DWORD PTR [rsi+540]
+	vaddss	xmm2, xmm1, DWORD PTR [rsi+548]
+	vdivss	xmm7, xmm2, xmm6
+	vxorps	xmm2, xmm2, xmm2
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 909  : 		v2 = Point3(0.f, 0.f, 0.f);
 
-	vunpcklps xmm0, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T7[rsp+8], xmm7
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 909  : 		v2 = Point3(0.f, 0.f, 0.f);
-
-	mov	eax, DWORD PTR $T7[rsp+8]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-
-; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
-
-	vdivss	xmm6, xmm2, xmm8
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 909  : 		v2 = Point3(0.f, 0.f, 0.f);
-
+	lea	rcx, QWORD PTR $T27[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
 	vmovsd	QWORD PTR v2$[rbp-256], xmm0
-$LN187@EvalNormal:
+$LN100@EvalNormal:
 
 ; 910  : 	}
 ; 911  : 	if (subtex[2]) {
 
-	mov	rcx, QWORD PTR [rdi+584]
-	vmovaps	XMMWORD PTR [rsp+448], xmm12
-	vmovaps	XMMWORD PTR [rsp+432], xmm13
+	mov	rcx, QWORD PTR [rsi+584]
+	mov	eax, DWORD PTR [rax+8]
 	mov	DWORD PTR v2$[rbp-248], eax
-	vmovaps	XMMWORD PTR [rsp+416], xmm14
+	vmovaps	XMMWORD PTR [rsp+496], xmm11
 	test	rcx, rcx
 	je	SHORT $LN13@EvalNormal
 
 ; 912  : 		f3 = subtex[2]->EvalMono(sc);
 
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, r15
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
 
 ; 913  : 		v3 = subtex[2]->EvalNormalPerturb(sc);
 
-	mov	rcx, QWORD PTR [rdi+584]
-	lea	rdx, QWORD PTR $T6[rsp]
-	mov	r8, r15
-	vmovaps	xmm10, xmm0
+	mov	rcx, QWORD PTR [rsi+584]
+	lea	rdx, QWORD PTR $T26[rbp-256]
+	mov	r8, r14
+	vmovaps	xmm9, xmm0
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1520]
-
-; 918  : 	}
-; 919  : 	
-; 920  : 	// Calculate vector	
-; 921  : 	if (maps) {
-
-	vsubss	xmm5, xmm6, xmm9
 	vmovsd	xmm1, QWORD PTR [rax]
+	vmovsd	QWORD PTR v3$[rbp-256], xmm1
 	mov	eax, DWORD PTR [rax+8]
-	vmovsd	QWORD PTR v3$[rsp], xmm1
-	mov	DWORD PTR v3$[rsp+8], eax
-	jmp	SHORT $LN180@EvalNormal
+	mov	DWORD PTR v3$[rbp-248], eax
+
+; 914  : 		maps = true;
+; 915  : 	} else {
+
+	jmp	SHORT $LN94@EvalNormal
 $LN13@EvalNormal:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
 
 ; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
 
-	vmovss	xmm0, DWORD PTR [rdi+556]
-	vaddss	xmm1, xmm0, DWORD PTR [rdi+552]
-	vaddss	xmm2, xmm1, DWORD PTR [rdi+560]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR $T5[rsp+8], xmm7
+	vmovss	xmm0, DWORD PTR [rsi+556]
+	vaddss	xmm2, xmm0, DWORD PTR [rsi+552]
+	vaddss	xmm3, xmm2, DWORD PTR [rsi+560]
+	vdivss	xmm9, xmm3, xmm6
+	vxorps	xmm3, xmm3, xmm3
+	vxorps	xmm2, xmm2, xmm2
+	vxorps	xmm1, xmm1, xmm1
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 917  : 		v3 = Point3(0.f, 0.f, 0.f);
 
-	mov	eax, DWORD PTR $T5[rsp+8]
-	mov	DWORD PTR v3$[rsp+8], eax
-	vunpcklps xmm0, xmm7, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\color.h
-
-; 580  : static inline float Intens(const Color& c) { return (c.r+c.g+c.b)/3.0f; }
-
-	vdivss	xmm10, xmm2, xmm8
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 917  : 		v3 = Point3(0.f, 0.f, 0.f);
-
-	vmovsd	QWORD PTR v3$[rsp], xmm0
+	lea	rcx, QWORD PTR $T25[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovsd	xmm0, QWORD PTR [rax]
+	vmovsd	QWORD PTR v3$[rbp-256], xmm0
+	mov	eax, DWORD PTR [rax+8]
+	mov	DWORD PTR v3$[rbp-248], eax
 
 ; 918  : 	}
 ; 919  : 	
 ; 920  : 	// Calculate vector	
 ; 921  : 	if (maps) {
 
-	vsubss	xmm5, xmm6, xmm9
-	test	dl, dl
+	test	bl, bl
 	je	$LN15@EvalNormal
-$LN180@EvalNormal:
+$LN94@EvalNormal:
+
+; 922  : 		np = (f2-f1)*np + d*v2 + (1.f-d)*v1;
+
+	vmovss	xmm11, DWORD PTR __real@3f800000
+	vsubss	xmm6, xmm11, xmm10
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm2, xmm5, DWORD PTR np$[rsp]
-	vmovss	xmm0, DWORD PTR v2$[rbp-248]
-	vmulss	xmm3, xmm11, DWORD PTR v2$[rbp-256]
+	vmulss	xmm3, xmm6, DWORD PTR v1$[rbp-248]
+	vmulss	xmm2, xmm6, DWORD PTR v1$[rbp-252]
+	vmulss	xmm1, xmm6, DWORD PTR v1$[rbp-256]
+	lea	rcx, QWORD PTR $T9[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmulss	xmm3, xmm10, DWORD PTR v2$[rbp-248]
+	vmulss	xmm2, xmm10, DWORD PTR v2$[rbp-252]
+	vmulss	xmm1, xmm10, DWORD PTR v2$[rbp-256]
+	lea	rcx, QWORD PTR $T16[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 922  : 		np = (f2-f1)*np + d*v2 + (1.f-d)*v1;
 
-	vmovss	xmm8, DWORD PTR __real@3f800000
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm4, xmm3, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm2, xmm5, DWORD PTR np$[rsp+4]
-	vmulss	xmm3, xmm11, DWORD PTR v2$[rbp-252]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 922  : 		np = (f2-f1)*np + d*v2 + (1.f-d)*v1;
-
-	vsubss	xmm7, xmm8, xmm11
+	vsubss	xmm4, xmm7, xmm8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm1, xmm7, DWORD PTR v1$[rbp-256]
+	vmulss	xmm3, xmm4, DWORD PTR np$[rsp+8]
+	vmulss	xmm2, xmm4, DWORD PTR np$[rsp+4]
+	vmulss	xmm1, xmm4, DWORD PTR np$[rsp]
+	lea	rcx, QWORD PTR $T21[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm12, xmm4, xmm1
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm7, DWORD PTR v1$[rbp-252]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm4, xmm3, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm2, xmm5, DWORD PTR np$[rsp+8]
-	vmulss	xmm3, xmm0, xmm11
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm13, xmm4, xmm1
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm7, DWORD PTR v1$[rbp-248]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm4, xmm3, xmm2
+	vmovss	xmm0, DWORD PTR $T16[rbp-248]
+	vmovss	xmm1, DWORD PTR $T16[rbp-252]
+	vaddss	xmm3, xmm0, DWORD PTR $T21[rbp-248]
+	vmovss	xmm0, DWORD PTR $T16[rbp-256]
+	vaddss	xmm2, xmm1, DWORD PTR $T21[rbp-252]
+	vaddss	xmm1, xmm0, DWORD PTR $T21[rbp-256]
+	lea	rcx, QWORD PTR $T3[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovss	xmm0, DWORD PTR $T9[rsp+8]
+	vmovss	xmm1, DWORD PTR $T9[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR $T3[rsp+8]
+	vmovss	xmm0, DWORD PTR $T9[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR $T3[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR $T3[rsp]
+	lea	rcx, QWORD PTR $T13[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 922  : 		np = (f2-f1)*np + d*v2 + (1.f-d)*v1;
 
-	vunpcklps xmm0, xmm12, xmm13
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm14, xmm4, xmm1
-	vmovss	DWORD PTR $T4[rsp+8], xmm14
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 922  : 		np = (f2-f1)*np + d*v2 + (1.f-d)*v1;
-
-	mov	eax, DWORD PTR $T4[rsp+8]
+	mov	eax, DWORD PTR $T13[rsp+8]
 	mov	DWORD PTR np$[rsp+8], eax
-	vmovaps	xmm3, xmm0
+	vmovsd	xmm0, QWORD PTR $T13[rsp]
 	vmovsd	QWORD PTR np$[rsp], xmm0
 
 ; 923  : 		if (grainON) {
 
-	test	r13b, r13b
+	test	r12b, r12b
 	je	$LN18@EvalNormal
+
+; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
+
+	vsubss	xmm4, xmm11, xmm12
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm3, xmm15, DWORD PTR v3$[rsp]
-	vmulss	xmm4, xmm15, DWORD PTR v3$[rsp+4]
+	vmulss	xmm3, xmm4, DWORD PTR $T13[rsp+8]
+	vmulss	xmm2, xmm4, DWORD PTR $T13[rsp+4]
+	vmulss	xmm1, xmm4, DWORD PTR $T13[rsp]
+	lea	rcx, QWORD PTR $T20[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmulss	xmm3, xmm12, DWORD PTR v3$[rbp-248]
+	vmulss	xmm2, xmm12, DWORD PTR v3$[rbp-252]
+	vmulss	xmm1, xmm12, DWORD PTR v3$[rbp-256]
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 924  : 			float val = d*f1 + (1.f-d)*f2;
 
 	vmulss	xmm1, xmm7, xmm6
-
-; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
-
-	vsubss	xmm8, xmm8, xmm15
-	vmulss	xmm0, xmm9, xmm11
+	vmulss	xmm0, xmm8, xmm10
 	vaddss	xmm1, xmm1, xmm0
-	vsubss	xmm7, xmm10, xmm1
+
+; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
+
+	vsubss	xmm4, xmm9, xmm1
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm1, xmm7, DWORD PTR nG$[rbp-256]
+	vmulss	xmm3, xmm4, DWORD PTR nG$[rbp-248]
+	vmulss	xmm2, xmm4, DWORD PTR nG$[rbp-252]
+	vmulss	xmm1, xmm4, DWORD PTR nG$[rbp-256]
+	lea	rcx, QWORD PTR $T8[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm3, xmm3, xmm1
+	vmovss	xmm0, DWORD PTR $T2[rsp+8]
+	vmovss	xmm1, DWORD PTR $T2[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR $T8[rsp+8]
+	vmovss	xmm0, DWORD PTR $T2[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR $T8[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR $T8[rsp]
+	lea	rcx, QWORD PTR $T15[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	vmovss	xmm0, DWORD PTR $T20[rbp-248]
+	vmovss	xmm1, DWORD PTR $T20[rbp-252]
+	vaddss	xmm3, xmm0, DWORD PTR $T15[rbp-248]
+	vmovss	xmm0, DWORD PTR $T20[rbp-256]
+	vaddss	xmm2, xmm1, DWORD PTR $T15[rbp-252]
+	vaddss	xmm1, xmm0, DWORD PTR $T15[rbp-256]
+	lea	rcx, QWORD PTR $T12[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
 
-	vmulss	xmm2, xmm8, xmm12
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm6, xmm3, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm2, xmm7, DWORD PTR nG$[rbp-252]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm3, xmm4, xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm2, xmm7, DWORD PTR nG$[rbp-248]
-	vmulss	xmm4, xmm15, DWORD PTR v3$[rsp+8]
-	vmulss	xmm0, xmm13, xmm8
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm5, xmm3, xmm0
-	vaddss	xmm3, xmm4, xmm2
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
-
-	vunpcklps xmm2, xmm6, xmm5
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm14, xmm8
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vaddss	xmm0, xmm3, xmm1
-	vmovss	DWORD PTR $T3[rsp+8], xmm0
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 925  : 			np = (f3-val)*nG + g*v3 + (1.f-g)*np;
-
-	mov	eax, DWORD PTR $T3[rsp+8]
-	mov	DWORD PTR np$[rsp+8], eax
-	vmovaps	xmm3, xmm2
-	vmovsd	QWORD PTR np$[rsp], xmm2
+	vmovsd	xmm0, QWORD PTR $T12[rsp]
+	mov	eax, DWORD PTR $T12[rsp+8]
 
 ; 926  : 		}
 ; 927  : 	} else {
 
-	jmp	$LN18@EvalNormal
+	jmp	$LN101@EvalNormal
 $LN15@EvalNormal:
+
+; 928  : 		np *= f2 - f1;
+
+	vsubss	xmm1, xmm7, xmm8
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 271  :    x *= f;   y *= f; z *= f;
 
-	vmulss	xmm3, xmm5, DWORD PTR np$[rsp]
-	vmulss	xmm4, xmm5, DWORD PTR np$[rsp+4]
-	vmulss	xmm8, xmm5, DWORD PTR np$[rsp+8]
-	vmovss	DWORD PTR np$[rsp], xmm3
-	vmovss	DWORD PTR np$[rsp+4], xmm4
-	vmovss	DWORD PTR np$[rsp+8], xmm8
+	vmulss	xmm4, xmm1, DWORD PTR np$[rsp]
+	vmulss	xmm2, xmm1, DWORD PTR np$[rsp+4]
+	vmulss	xmm3, xmm1, DWORD PTR np$[rsp+8]
+	vmovss	DWORD PTR np$[rsp], xmm4
+	vmovss	DWORD PTR np$[rsp+4], xmm2
+	vmovss	DWORD PTR np$[rsp+8], xmm3
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 929  : 		if (grainON) {
 
-	test	r13b, r13b
-	je	SHORT $LN182@EvalNormal
+	test	r12b, r12b
+	je	$LN18@EvalNormal
 
 ; 931  : 			np = (f3-val)*nG + (1.f-g)*np;
 
-	vmovss	xmm0, DWORD PTR __real@3f800000
-	vsubss	xmm7, xmm0, xmm15
-	vsubss	xmm0, xmm0, xmm11
-	vmulss	xmm2, xmm0, xmm6
-	vmulss	xmm3, xmm3, xmm7
-	vmulss	xmm1, xmm9, xmm11
+	vmovss	xmm6, DWORD PTR __real@3f800000
+	vsubss	xmm0, xmm6, xmm12
+	vmulss	xmm3, xmm3, xmm0
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
+
+	vmulss	xmm2, xmm2, xmm0
+	vmulss	xmm1, xmm4, xmm0
+	lea	rcx, QWORD PTR $T1[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 930  : 			float val = d*f1 + (1.f-d)*f2;
+
+	vmulss	xmm1, xmm8, xmm10
+	vsubss	xmm0, xmm6, xmm10
+	vmulss	xmm2, xmm0, xmm7
 	vaddss	xmm2, xmm2, xmm1
-	vsubss	xmm6, xmm10, xmm2
+
+; 931  : 			np = (f3-val)*nG + (1.f-g)*np;
+
+	vsubss	xmm4, xmm9, xmm2
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm1, xmm6, DWORD PTR nG$[rbp-256]
+	vmulss	xmm3, xmm4, DWORD PTR nG$[rbp-248]
+	vmulss	xmm2, xmm4, DWORD PTR nG$[rbp-252]
+	vmulss	xmm1, xmm4, DWORD PTR nG$[rbp-256]
+	lea	rcx, QWORD PTR $T7[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 297  :    return(Point3(x+b.x,y+b.y,z+b.z));
 
-	vaddss	xmm5, xmm3, xmm1
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm6, DWORD PTR nG$[rbp-252]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm2, xmm7, xmm4
-	vaddss	xmm4, xmm2, xmm1
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm6, DWORD PTR nG$[rbp-248]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm3, xmm7, xmm8
-	vaddss	xmm2, xmm3, xmm1
+	vmovss	xmm0, DWORD PTR $T1[rsp+8]
+	vmovss	xmm1, DWORD PTR $T1[rsp+4]
+	vaddss	xmm3, xmm0, DWORD PTR $T7[rsp+8]
+	vmovss	xmm0, DWORD PTR $T1[rsp]
+	vaddss	xmm2, xmm1, DWORD PTR $T7[rsp+4]
+	vaddss	xmm1, xmm0, DWORD PTR $T7[rsp]
+	lea	rcx, QWORD PTR $T19[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 931  : 			np = (f3-val)*nG + (1.f-g)*np;
 
-	vunpcklps xmm0, xmm5, xmm4
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+	vmovsd	xmm0, QWORD PTR $T19[rbp-256]
+	mov	eax, DWORD PTR $T19[rbp-248]
+$LN101@EvalNormal:
 
-; 61   : 		 x = X; y = Y; z = Z; 
+; 932  : 		}
+; 933  : 	}	
+; 934  : 
+; 935  : 	return texout->Filter(np); // Does this filter actually do something?
 
-	vmovss	DWORD PTR $T2[rsp+8], xmm2
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 931  : 			np = (f3-val)*nG + (1.f-g)*np;
-
-	mov	eax, DWORD PTR $T2[rsp+8]
 	mov	DWORD PTR np$[rsp+8], eax
-	vmovaps	xmm3, xmm0
 	vmovsd	QWORD PTR np$[rsp], xmm0
-	jmp	SHORT $LN18@EvalNormal
-$LN182@EvalNormal:
-
-; 929  : 		if (grainON) {
-
-	mov	eax, DWORD PTR np$[rsp+8]
-	vmovsd	xmm3, QWORD PTR np$[rsp]
 $LN18@EvalNormal:
-
-; 935  : 	return texout->Filter(np); // Does this filter actually do something?
-
-	mov	rcx, QWORD PTR [rdi+824]
-	lea	r8, QWORD PTR $T1[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T1[rsp], xmm3
-	mov	DWORD PTR $T1[rsp+8], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 935  : 	return texout->Filter(np); // Does this filter actually do something?
-
-	mov	rdx, r12
-	mov	rax, QWORD PTR [rcx]
-	call	QWORD PTR [rax+1504]
-	vmovaps	xmm15, XMMWORD PTR [rsp+400]
-	vmovaps	xmm14, XMMWORD PTR [rsp+416]
-	vmovaps	xmm13, XMMWORD PTR [rsp+432]
-	vmovaps	xmm12, XMMWORD PTR [rsp+448]
-	vmovaps	xmm11, XMMWORD PTR [rsp+464]
-	vmovaps	xmm10, XMMWORD PTR [rsp+480]
-	vmovaps	xmm9, XMMWORD PTR [rsp+496]
-	vmovaps	xmm8, XMMWORD PTR [rsp+512]
-	vmovaps	xmm6, XMMWORD PTR [rsp+544]
-	mov	r13, QWORD PTR [rsp+616]
-$LN183@EvalNormal:
+	mov	rax, QWORD PTR [rsi+824]
+	lea	rdx, QWORD PTR np$[rsp]
+	lea	rcx, QWORD PTR $T24[rbp-256]
+	mov	rbx, QWORD PTR [rax]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, QWORD PTR [rsi+824]
+	mov	rdx, r13
+	mov	r8, rax
+	call	QWORD PTR [rbx+1504]
+	vmovaps	xmm12, XMMWORD PTR [rsp+480]
 
 ; 936  : }
 
-	vmovaps	xmm7, XMMWORD PTR [rsp+528]
-	mov	rax, r12
-	add	rsp, 560				; 00000230H
-	pop	r15
-	pop	r12
-	pop	rdi
+	mov	rax, r13
+	vmovaps	xmm11, XMMWORD PTR [rsp+496]
+	vmovaps	xmm10, XMMWORD PTR [rsp+512]
+	vmovaps	xmm9, XMMWORD PTR [rsp+528]
+	vmovaps	xmm8, XMMWORD PTR [rsp+544]
+	vmovaps	xmm7, XMMWORD PTR [rsp+560]
+	vmovaps	xmm6, XMMWORD PTR [rsp+576]
+	mov	r12, QWORD PTR [rsp+656]
+	mov	rbx, QWORD PTR [rsp+640]
+	add	rsp, 600				; 00000258H
+	pop	r14
+	pop	r13
 	pop	rsi
 	pop	rbp
 	ret	0
@@ -9612,23 +9589,7 @@ $LN6:
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
@@ -9673,78 +9634,64 @@ $T8 = 48
 $T9 = 48
 $T10 = 48
 $T11 = 48
-p$ = 64
-dpdy$ = 80
-dpdx$ = 96
-$T12 = 112
-c$ = 112
-gP$ = 128
-c1$$sroa$1094$1$ = 144
-tv1898 = 148
-c1$$sroa$1098$1$ = 152
+$T12 = 64
+c$ = 64
+p$ = 80
+dpdy$ = 96
+dpdx$ = 112
+tv1865 = 128
+c1$$sroa$1054$1$ = 132
+tv1864 = 136
+gP$ = 144
 $T13 = 160
-$T14 = 176
-$T15 = 192
+$T14 = 160
+$T15 = 176
 $T16 = 192
 wp$ = 208
 $T17 = 272
-this$ = 528
-__$ReturnUdt$ = 536
-tv1911 = 544
-sc$ = 544
-tv1899 = 552
+this$ = 544
+__$ReturnUdt$ = 552
+d$1$ = 560
+sc$ = 560
+tv1866 = 568
 ?EvalColor@BerconWood@@UEAA?AVAColor@@AEAVShadeContext@@@Z PROC ; BerconWood::EvalColor, COMDAT
 
 ; 799  : AColor BerconWood::EvalColor(ShadeContext& sc) {
 
-$LN121:
-	mov	QWORD PTR [rsp+8], rbx
+$LN103:
 	push	rbp
 	push	rsi
-	push	rdi
-	lea	rbp, QWORD PTR [rsp-240]
-	sub	rsp, 496				; 000001f0H
+	push	r14
+	push	r15
+	lea	rbp, QWORD PTR [rsp-248]
+	sub	rsp, 504				; 000001f8H
+	mov	rsi, rcx
+	mov	r14, r8
+
+; 800  : 	Point3 p,dpdx,dpdy;
+
+	lea	rcx, QWORD PTR p$[rsp]
+	mov	r15, rdx
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdx$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+	lea	rcx, QWORD PTR dpdy$[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
 
 ; 801  : 	if (!sc.doMaps) return black;
 
-	cmp	DWORD PTR [r8+12], 0
-	mov	rdi, r8
-	vmovaps	XMMWORD PTR [rsp+432], xmm9
-	mov	rsi, rdx
-	vxorps	xmm9, xmm9, xmm9
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR p$[rsp], xmm9
-	vmovss	DWORD PTR p$[rsp+4], xmm9
-	vmovss	DWORD PTR p$[rsp+8], xmm9
-	vmovss	DWORD PTR dpdx$[rsp], xmm9
-	vmovss	DWORD PTR dpdx$[rsp+4], xmm9
-	vmovss	DWORD PTR dpdx$[rsp+8], xmm9
-	vmovss	DWORD PTR dpdy$[rsp], xmm9
-	vmovss	DWORD PTR dpdy$[rsp+4], xmm9
-	vmovss	DWORD PTR dpdy$[rsp+8], xmm9
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 799  : AColor BerconWood::EvalColor(ShadeContext& sc) {
-
-	mov	rbx, rcx
-
-; 801  : 	if (!sc.doMaps) return black;
-
+	cmp	DWORD PTR [r14+12], 0
 	jne	SHORT $LN2@EvalColor
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 54   : 	AColor(const AColor& c) { r = c.r; g = c.g; b = c.b; a = c.a; } 
 
 	vmovups	xmm0, XMMWORD PTR ?black@@3VAColor@@A
-	vmovups	XMMWORD PTR [rdx], xmm0
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 801  : 	if (!sc.doMaps) return black;
 
-	jmp	$LN117@EvalColor
+	jmp	$LN99@EvalColor
 $LN2@EvalColor:
 
 ; 802  : 
@@ -9752,21 +9699,22 @@ $LN2@EvalColor:
 ; 804  : 	AColor c;
 ; 805  : 	if (sc.GetCache(this,c)) 
 
-	mov	rax, QWORD PTR [r8]
-	mov	rdx, rbx
+	mov	rax, QWORD PTR [r14]
 	lea	r8, QWORD PTR c$[rsp]
-	mov	rcx, rdi
+	mov	rdx, rsi
+	mov	rcx, r14
 	call	QWORD PTR [rax+504]
 	test	eax, eax
-	jne	$LN118@EvalColor
+	jne	$LN100@EvalColor
 
 ; 806  : 		return c; 	
 ; 807  : 	if (gbufID) sc.SetGBufferID(gbufID);
 
-	mov	edx, DWORD PTR [rbx+120]
+	mov	edx, DWORD PTR [rsi+120]
 	vmovaps	XMMWORD PTR [rsp+480], xmm6
 	vmovaps	XMMWORD PTR [rsp+464], xmm7
 	vmovaps	XMMWORD PTR [rsp+448], xmm8
+	vmovaps	XMMWORD PTR [rsp+432], xmm9
 	vmovaps	XMMWORD PTR [rsp+416], xmm10
 	vmovaps	XMMWORD PTR [rsp+400], xmm11
 	vmovaps	XMMWORD PTR [rsp+384], xmm12
@@ -9775,8 +9723,8 @@ $LN2@EvalColor:
 	vmovaps	XMMWORD PTR [rsp+336], xmm15
 	test	edx, edx
 	je	SHORT $LN4@EvalColor
-	mov	rax, QWORD PTR [rdi]
-	mov	rcx, rdi
+	mov	rax, QWORD PTR [r14]
+	mov	rcx, r14
 	call	QWORD PTR [rax+464]
 $LN4@EvalColor:
 
@@ -9784,41 +9732,41 @@ $LN4@EvalColor:
 ; 809  : 	// Evaluate parameters
 ; 810  : 	WoodParam wp = EvalParameters(sc);
 
-	mov	r8, rdi
+	mov	r8, r14
 	lea	rdx, QWORD PTR wp$[rbp-256]
-	mov	rcx, rbx
+	mov	rcx, rsi
 	call	?EvalParameters@BerconWood@@QEAA?AVWoodParam@@AEAVShadeContext@@@Z ; BerconWood::EvalParameters
 
 ; 811  : 	float grainA = mapOn[19]&&subtex[19]?subtex[19]->EvalMono(sc)*grainAmount:grainAmount;
 
-	cmp	DWORD PTR [rbx+812], 0
+	cmp	DWORD PTR [rsi+812], 0
 	je	SHORT $LN7@EvalColor
-	mov	rcx, QWORD PTR [rbx+720]
+	mov	rcx, QWORD PTR [rsi+720]
 	test	rcx, rcx
 	je	SHORT $LN7@EvalColor
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, rdi
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm7, xmm0, DWORD PTR [rbx+164]
+	vmulss	xmm7, xmm0, DWORD PTR [rsi+164]
 	jmp	SHORT $LN8@EvalColor
 $LN7@EvalColor:
-	vmovss	xmm7, DWORD PTR [rbx+164]
+	vmovss	xmm7, DWORD PTR [rsi+164]
 $LN8@EvalColor:
 
 ; 812  : 	float grainF = mapOn[20]&&subtex[20]?subtex[20]->EvalMono(sc)*grainFreq:grainFreq;
 
-	cmp	DWORD PTR [rbx+816], 0
-	je	SHORT $LN116@EvalColor
-	mov	rcx, QWORD PTR [rbx+728]
+	cmp	DWORD PTR [rsi+816], 0
+	je	SHORT $LN98@EvalColor
+	mov	rcx, QWORD PTR [rsi+728]
 	test	rcx, rcx
-	je	SHORT $LN116@EvalColor
+	je	SHORT $LN98@EvalColor
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, rdi
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm6, xmm0, DWORD PTR [rbx+168]
+	vmulss	xmm6, xmm0, DWORD PTR [rsi+168]
 	jmp	SHORT $LN10@EvalColor
-$LN116@EvalColor:
-	vmovss	xmm6, DWORD PTR [rbx+168]
+$LN98@EvalColor:
+	vmovss	xmm6, DWORD PTR [rsi+168]
 $LN10@EvalColor:
 
 ; 813  : 
@@ -9826,8 +9774,8 @@ $LN10@EvalColor:
 ; 815  : 	berconXYZ.get(sc,p,dpdx,dpdy);
 
 	lea	rax, QWORD PTR dpdy$[rsp]
-	mov	rdx, rdi
-	lea	rcx, QWORD PTR [rbx+240]
+	mov	rdx, r14
+	lea	rcx, QWORD PTR [rsi+240]
 	mov	QWORD PTR [rsp+32], rax
 	lea	r9, QWORD PTR dpdx$[rsp]
 	lea	r8, QWORD PTR p$[rsp]
@@ -9835,50 +9783,57 @@ $LN10@EvalColor:
 
 ; 816  : 	if (useDistortion)
 
-	cmp	DWORD PTR [rbx+152], 0
+	cmp	DWORD PTR [rsi+152], 0
 	je	SHORT $LN5@EvalColor
 
 ; 817  : 		applyDistortion(sc,p);	
 
 	lea	r8, QWORD PTR p$[rsp]
-	mov	rdx, rdi
-	mov	rcx, rbx
+	mov	rdx, r14
+	mov	rcx, rsi
 	call	?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ; BerconWood::applyDistortion
 $LN5@EvalColor:
 
 ; 818  : 	float wSize = mapOn[5]&&subtex[5]?subtex[5]->EvalMono(sc)*woodSize:woodSize;
 
-	cmp	DWORD PTR [rbx+756], 0
+	cmp	DWORD PTR [rsi+756], 0
 	je	SHORT $LN11@EvalColor
-	mov	rcx, QWORD PTR [rbx+608]
+	mov	rcx, QWORD PTR [rsi+608]
 	test	rcx, rcx
 	je	SHORT $LN11@EvalColor
 	mov	rax, QWORD PTR [rcx]
-	mov	rdx, rdi
+	mov	rdx, r14
 	call	QWORD PTR [rax+1512]
-	vmulss	xmm1, xmm0, DWORD PTR [rbx+160]
+	vmulss	xmm3, xmm0, DWORD PTR [rsi+160]
 	jmp	SHORT $LN12@EvalColor
 $LN11@EvalColor:
-	vmovss	xmm1, DWORD PTR [rbx+160]
+	vmovss	xmm3, DWORD PTR [rsi+160]
 $LN12@EvalColor:
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	cmp	DWORD PTR [rdi+16], 0
-	vmulss	xmm3, xmm1, DWORD PTR __real@3f000000
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 276  :    x /= f;  y /= f;  z /= f;  
 
 	vmovss	xmm0, DWORD PTR p$[rsp]
-	vmovss	xmm2, DWORD PTR dpdx$[rsp+4]
-	vdivss	xmm4, xmm0, xmm1
-	vmovss	xmm0, DWORD PTR p$[rsp+4]
-	vdivss	xmm5, xmm0, xmm1
-	vmovss	xmm0, DWORD PTR p$[rsp+8]
-	vdivss	xmm8, xmm0, xmm1
+	vmovss	xmm2, DWORD PTR p$[rsp+4]
+	vdivss	xmm1, xmm0, xmm3
+	vdivss	xmm0, xmm2, xmm3
+	vmovss	DWORD PTR p$[rsp], xmm1
+	vmovss	xmm1, DWORD PTR p$[rsp+8]
+	vdivss	xmm2, xmm1, xmm3
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 819  : 	p /= wSize; dpdx /= (wSize / 2.f); dpdy /= (wSize / 2.f);
+
+	vmulss	xmm3, xmm3, DWORD PTR __real@3f000000
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 276  :    x /= f;  y /= f;  z /= f;  
+
+	vmovss	DWORD PTR p$[rsp+4], xmm0
 	vmovss	xmm0, DWORD PTR dpdx$[rsp]
 	vdivss	xmm1, xmm0, xmm3
+	vmovss	DWORD PTR p$[rsp+8], xmm2
+	vmovss	xmm2, DWORD PTR dpdx$[rsp+4]
 	vdivss	xmm0, xmm2, xmm3
 	vmovss	DWORD PTR dpdx$[rsp], xmm1
 	vmovss	xmm1, DWORD PTR dpdx$[rsp+8]
@@ -9892,157 +9847,97 @@ $LN12@EvalColor:
 	vmovss	DWORD PTR dpdy$[rsp], xmm1
 	vmovss	xmm1, DWORD PTR dpdy$[rsp+8]
 	vdivss	xmm2, xmm1, xmm3
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 822  : 	Point3 gP;
+
+	lea	rcx, QWORD PTR gP$[rbp-256]
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
+
+; 276  :    x /= f;  y /= f;  z /= f;  
+
 	vmovss	DWORD PTR dpdy$[rsp+8], xmm2
-	vmovss	DWORD PTR p$[rsp], xmm4
-	vmovss	DWORD PTR p$[rsp+4], xmm5
-	vmovss	DWORD PTR p$[rsp+8], xmm8
 	vmovss	DWORD PTR dpdy$[rsp+4], xmm0
-
-; 58   :    Point3() : x(0.0f), y(0.0f), z(0.0f) {  }
-
-	vmovss	DWORD PTR gP$[rbp-256], xmm9
-	vmovss	DWORD PTR gP$[rbp-252], xmm9
-	vmovss	DWORD PTR gP$[rbp-248], xmm9
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
+; 822  : 	Point3 gP;
+
+	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
+
+; 823  : 	
 ; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
 
-	je	SHORT $LN13@EvalColor
+	cmp	DWORD PTR [r14+16], 0
+	je	$LN13@EvalColor
 	vmovups	ymm0, YMMWORD PTR wp$[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdy$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	r9, QWORD PTR gP$[rbp-256]
 	vmovups	ymm1, YMMWORD PTR wp$[rbp-224]
+	mov	QWORD PTR [rsp+544], rbx
+	lea	rdx, QWORD PTR dpdy$[rsp]
 	vmovups	YMMWORD PTR $T17[rbp-256], ymm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR dpdy$[rsp]
-	mov	DWORD PTR $T14[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	r8, QWORD PTR $T14[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR dpdx$[rsp+8]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rdx, QWORD PTR $T16[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T14[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR dpdx$[rsp]
-	mov	DWORD PTR $T16[rbp-248], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rcx, QWORD PTR $T11[rsp]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	mov	eax, DWORD PTR p$[rsp+8]
-	vmovsd	QWORD PTR $T16[rbp-256], xmm0
-	vmovsd	xmm0, QWORD PTR p$[rsp]
-	mov	DWORD PTR $T11[rsp+8], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
-	lea	rax, QWORD PTR $T17[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T11[rsp], xmm0
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
 	vmovups	YMMWORD PTR $T17[rbp-224], ymm1
-	mov	QWORD PTR [rsp+32], rax
+	mov	QWORD PTR [rsp+496], rdi
+	lea	rcx, QWORD PTR $T15[rbp-256]
 	vzeroupper
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR dpdx$[rsp]
+	mov	rdi, rax
+	lea	rcx, QWORD PTR $T16[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	rdx, QWORD PTR p$[rsp]
+	mov	rbx, rax
+	lea	rcx, QWORD PTR $T14[rbp-256]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	lea	r9, QWORD PTR gP$[rbp-256]
+	mov	r8, rdi
+	mov	rcx, rax
+	mov	rdx, rbx
+	lea	rax, QWORD PTR $T17[rbp-256]
+	mov	QWORD PTR [rsp+32], rax
 	call	?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z ; Noise::wood
-	jmp	SHORT $LN119@EvalColor
+	mov	rdi, QWORD PTR [rsp+496]
+	mov	rbx, QWORD PTR [rsp+544]
+	jmp	SHORT $LN101@EvalColor
 $LN13@EvalColor:
+	lea	rdx, QWORD PTR p$[rsp]
+	lea	rcx, QWORD PTR $T11[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
 	lea	r8, QWORD PTR wp$[rbp-256]
 	lea	rdx, QWORD PTR gP$[rbp-256]
-	lea	rcx, QWORD PTR $T13[rbp-256]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovss	DWORD PTR $T13[rbp-256], xmm4
-	vmovss	DWORD PTR $T13[rbp-252], xmm5
-	vmovss	DWORD PTR $T13[rbp-248], xmm8
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 824  : 	float d = sc.filterMaps? Noise::wood(p, dpdx, dpdy, gP, wp) : Noise::wood(p, gP, wp);
-
 	call	?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z ; Noise::wood
-$LN119@EvalColor:
+$LN101@EvalColor:
 
+; 825  : 
 ; 826  : 	float g = (grainAmount > .001f) ? Fractal::grain(gP, grainA, grainF): 0.f;	
 
-	vmovaps	xmm14, xmm0
-	vmovss	xmm0, DWORD PTR [rbx+164]
+	vmovss	DWORD PTR d$1$[rbp-256], xmm0
+	vmovss	xmm0, DWORD PTR [rsi+164]
 	vcomiss	xmm0, DWORD PTR __real@3a83126f
 	jbe	SHORT $LN15@EvalColor
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	xmm0, QWORD PTR gP$[rbp-256]
-	mov	eax, DWORD PTR gP$[rbp-248]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 826  : 	float g = (grainAmount > .001f) ? Fractal::grain(gP, grainA, grainF): 0.f;	
-
+	lea	rdx, QWORD PTR gP$[rbp-256]
 	lea	rcx, QWORD PTR $T10[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@AEBV0@@Z
+	mov	rcx, rax
 	vmovaps	xmm2, xmm6
 	vmovaps	xmm1, xmm7
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 73   : 		 x = a.x; y = a.y; z = a.z; 
-
-	vmovsd	QWORD PTR $T10[rsp], xmm0
-	mov	DWORD PTR $T10[rsp+8], eax
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 826  : 	float g = (grainAmount > .001f) ? Fractal::grain(gP, grainA, grainF): 0.f;	
-
 	call	?grain@Fractal@@SAMVPoint3@@MM@Z	; Fractal::grain
-	vmovaps	xmm9, xmm0
+	vmovaps	xmm10, xmm0
+	jmp	SHORT $LN16@EvalColor
 $LN15@EvalColor:
+	vxorps	xmm10, xmm10, xmm10
+$LN16@EvalColor:
 
 ; 829  : 	RGBA c0 = mapOn[0]&&subtex[0] ? subtex[0]->EvalColor(sc): col[0];
 
-	cmp	DWORD PTR [rbx+736], 0
+	cmp	DWORD PTR [rsi+736], 0
 	vmovss	xmm8, DWORD PTR __real@3f800000
 	je	SHORT $LN17@EvalColor
-	mov	rcx, QWORD PTR [rbx+568]
+	mov	rcx, QWORD PTR [rsi+568]
 	test	rcx, rcx
 	je	SHORT $LN17@EvalColor
 	mov	rax, QWORD PTR [rcx]
 	lea	rdx, QWORD PTR $T9[rsp]
-	mov	r8, rdi
+	mov	r8, r14
 	call	QWORD PTR [rax+1504]
 	vmovss	xmm7, DWORD PTR [rax]
 	jmp	SHORT $LN18@EvalColor
@@ -10051,9 +9946,9 @@ $LN17@EvalColor:
 
 ; 57   : 	AColor(const Color& c, float alph=1.0f) { r = c.r; g = c.g; b = c.b; a = alph; } 
 
-	vmovss	xmm7, DWORD PTR [rbx+528]
-	vmovss	xmm0, DWORD PTR [rbx+532]
-	vmovss	xmm1, DWORD PTR [rbx+536]
+	vmovss	xmm7, DWORD PTR [rsi+528]
+	vmovss	xmm0, DWORD PTR [rsi+532]
+	vmovss	xmm1, DWORD PTR [rsi+536]
 	vmovss	DWORD PTR $T8[rsp], xmm7
 	vmovss	DWORD PTR $T8[rsp+4], xmm0
 	vmovss	DWORD PTR $T8[rsp+8], xmm1
@@ -10067,28 +9962,28 @@ $LN18@EvalColor:
 
 ; 830  : 	RGBA c1 = mapOn[1]&&subtex[1] ? subtex[1]->EvalColor(sc): col[1];
 
-	cmp	DWORD PTR [rbx+740], 0
+	cmp	DWORD PTR [rsi+740], 0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 54   : 	AColor(const AColor& c) { r = c.r; g = c.g; b = c.b; a = c.a; } 
 
 	vmovss	xmm0, DWORD PTR [rax+4]
-	vmovss	DWORD PTR tv1911[rbp-256], xmm0
+	vmovss	DWORD PTR tv1866[rbp-256], xmm0
 	vmovss	xmm0, DWORD PTR [rax+8]
-	vmovss	DWORD PTR tv1899[rbp-256], xmm0
+	vmovss	DWORD PTR tv1865[rbp-256], xmm0
 	vmovss	xmm0, DWORD PTR [rax+12]
-	vmovss	DWORD PTR tv1898[rbp-256], xmm0
+	vmovss	DWORD PTR tv1864[rbp-256], xmm0
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 830  : 	RGBA c1 = mapOn[1]&&subtex[1] ? subtex[1]->EvalColor(sc): col[1];
 
 	je	SHORT $LN19@EvalColor
-	mov	rcx, QWORD PTR [rbx+576]
+	mov	rcx, QWORD PTR [rsi+576]
 	test	rcx, rcx
 	je	SHORT $LN19@EvalColor
 	mov	rax, QWORD PTR [rcx]
 	lea	rdx, QWORD PTR $T7[rsp]
-	mov	r8, rdi
+	mov	r8, r14
 	call	QWORD PTR [rax+1504]
 	vmovss	xmm6, DWORD PTR [rax]
 	jmp	SHORT $LN20@EvalColor
@@ -10097,9 +9992,9 @@ $LN19@EvalColor:
 
 ; 57   : 	AColor(const Color& c, float alph=1.0f) { r = c.r; g = c.g; b = c.b; a = alph; } 
 
-	vmovss	xmm6, DWORD PTR [rbx+540]
-	vmovss	xmm0, DWORD PTR [rbx+544]
-	vmovss	xmm1, DWORD PTR [rbx+548]
+	vmovss	xmm6, DWORD PTR [rsi+540]
+	vmovss	xmm0, DWORD PTR [rsi+544]
+	vmovss	xmm1, DWORD PTR [rsi+548]
 	vmovss	DWORD PTR $T6[rsp], xmm6
 	vmovss	DWORD PTR $T6[rsp+4], xmm0
 	vmovss	DWORD PTR $T6[rsp+8], xmm1
@@ -10113,47 +10008,46 @@ $LN20@EvalColor:
 
 ; 831  : 	RGBA c2 = lockGrain ? c1: (mapOn[2]&&subtex[2] ? subtex[2]->EvalColor(sc): col[2]);
 
-	cmp	DWORD PTR [rbx+156], 0
+	cmp	DWORD PTR [rsi+156], 0
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 54   : 	AColor(const AColor& c) { r = c.r; g = c.g; b = c.b; a = c.a; } 
 
-	vmovss	xmm0, DWORD PTR [rax+8]
-	vmovss	xmm1, DWORD PTR [rax+12]
-	vmovss	xmm15, DWORD PTR [rax+4]
-	vmovss	DWORD PTR c1$$sroa$1094$1$[rbp-256], xmm0
-	vmovss	DWORD PTR c1$$sroa$1098$1$[rbp-256], xmm1
+	vmovss	xmm0, DWORD PTR [rax+12]
+	vmovss	xmm14, DWORD PTR [rax+4]
+	vmovss	xmm15, DWORD PTR [rax+8]
+	vmovss	DWORD PTR c1$$sroa$1054$1$[rbp-256], xmm0
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 831  : 	RGBA c2 = lockGrain ? c1: (mapOn[2]&&subtex[2] ? subtex[2]->EvalColor(sc): col[2]);
 
 	je	SHORT $LN23@EvalColor
-	vmovaps	xmm10, xmm6
-	vmovaps	xmm11, xmm15
-	vmovaps	xmm12, xmm0
-	vmovaps	xmm13, xmm1
+	vmovaps	xmm9, xmm6
+	vmovaps	xmm11, xmm14
+	vmovaps	xmm12, xmm15
+	vmovaps	xmm13, xmm0
 	jmp	SHORT $LN24@EvalColor
 $LN23@EvalColor:
-	cmp	DWORD PTR [rbx+744], 0
+	cmp	DWORD PTR [rsi+744], 0
 	je	SHORT $LN21@EvalColor
-	mov	rcx, QWORD PTR [rbx+584]
+	mov	rcx, QWORD PTR [rsi+584]
 	test	rcx, rcx
 	je	SHORT $LN21@EvalColor
 	mov	rax, QWORD PTR [rcx]
 	lea	rdx, QWORD PTR $T5[rsp]
-	mov	r8, rdi
+	mov	r8, r14
 	call	QWORD PTR [rax+1504]
-	vmovss	xmm10, DWORD PTR [rax]
+	vmovss	xmm9, DWORD PTR [rax]
 	jmp	SHORT $LN22@EvalColor
 $LN21@EvalColor:
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 57   : 	AColor(const Color& c, float alph=1.0f) { r = c.r; g = c.g; b = c.b; a = alph; } 
 
-	vmovss	xmm10, DWORD PTR [rbx+552]
-	vmovss	xmm0, DWORD PTR [rbx+556]
-	vmovss	xmm1, DWORD PTR [rbx+560]
-	vmovss	DWORD PTR $T4[rsp], xmm10
+	vmovss	xmm9, DWORD PTR [rsi+552]
+	vmovss	xmm0, DWORD PTR [rsi+556]
+	vmovss	xmm1, DWORD PTR [rsi+560]
+	vmovss	DWORD PTR $T4[rsp], xmm9
 	vmovss	DWORD PTR $T4[rsp+4], xmm0
 	vmovss	DWORD PTR $T4[rsp+8], xmm1
 	vmovss	DWORD PTR $T4[rsp+12], xmm8
@@ -10173,47 +10067,52 @@ $LN22@EvalColor:
 $LN24@EvalColor:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
-; 840  : 	c = texout->Filter(c);
-
-	mov	rcx, QWORD PTR [rbx+824]
-	lea	r8, QWORD PTR $T3[rsp]
-	vsubss	xmm4, xmm8, xmm14
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
-
-; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
-
-	vmulss	xmm2, xmm4, DWORD PTR tv1911[rbp-256]
-	vmulss	xmm3, xmm4, DWORD PTR tv1899[rbp-256]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
 ; 838  : 	c = (1.0f-d)*c0 + d*c1;
 
-	vmulss	xmm0, xmm7, xmm4
+	vmovss	xmm3, DWORD PTR d$1$[rbp-256]
+
+; 840  : 	c = texout->Filter(c);
+
+	mov	rcx, QWORD PTR [rsi+824]
+	lea	r8, QWORD PTR $T3[rsp]
+	vsubss	xmm4, xmm8, xmm3
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 54   : 	AColor(const AColor& c) { r = c.r; g = c.g; b = c.b; a = c.a; } 
 
-	vmulss	xmm1, xmm6, xmm14
+	vmulss	xmm0, xmm6, xmm3
+
+; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
+
+	vmulss	xmm2, xmm14, xmm3
+; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+
+; 838  : 	c = (1.0f-d)*c0 + d*c1;
+
+	vmulss	xmm1, xmm7, xmm4
+; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
 
 	vaddss	xmm5, xmm1, xmm0
-	vmulss	xmm0, xmm14, DWORD PTR c1$$sroa$1094$1$[rbp-256]
-	vaddss	xmm3, xmm3, xmm0
-	vmulss	xmm1, xmm15, xmm14
+	vmulss	xmm1, xmm4, DWORD PTR tv1866[rbp-256]
+	vmulss	xmm0, xmm4, DWORD PTR tv1865[rbp-256]
 	vaddss	xmm6, xmm2, xmm1
-	vmulss	xmm2, xmm4, DWORD PTR tv1898[rbp-256]
-	vmulss	xmm1, xmm14, DWORD PTR c1$$sroa$1098$1$[rbp-256]
+	vmovss	xmm1, DWORD PTR c1$$sroa$1054$1$[rbp-256]
+	vmulss	xmm2, xmm1, DWORD PTR d$1$[rbp-256]
+	vmulss	xmm1, xmm4, DWORD PTR tv1864[rbp-256]
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 839  : 	c = (1.0f-g)*c + g*c2;
 
-	vsubss	xmm4, xmm8, xmm9
+	vsubss	xmm4, xmm8, xmm10
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\acolor.h
 
 ; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
 
 	vaddss	xmm7, xmm2, xmm1
+	vmulss	xmm3, xmm15, xmm3
+	vaddss	xmm3, xmm3, xmm0
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 839  : 	c = (1.0f-g)*c + g*c2;
@@ -10223,7 +10122,7 @@ $LN24@EvalColor:
 
 ; 309  : 	return(AColor(a.r*f, a.g*f, a.b*f, a.a*f));
 
-	vmulss	xmm0, xmm10, xmm9
+	vmulss	xmm0, xmm9, xmm10
 
 ; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
 
@@ -10231,7 +10130,7 @@ $LN24@EvalColor:
 
 ; 309  : 	return(AColor(a.r*f, a.g*f, a.b*f, a.a*f));
 
-	vmulss	xmm1, xmm11, xmm9
+	vmulss	xmm1, xmm11, xmm10
 	vmulss	xmm2, xmm6, xmm4
 
 ; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
@@ -10250,7 +10149,7 @@ $LN24@EvalColor:
 
 ; 309  : 	return(AColor(a.r*f, a.g*f, a.b*f, a.a*f));
 
-	vmulss	xmm0, xmm12, xmm9
+	vmulss	xmm0, xmm12, xmm10
 
 ; 44   : 	AColor(float R, float G, float B, float A=1.0f)  { r = R; g = G; b = B; a = A; }
 
@@ -10259,7 +10158,7 @@ $LN24@EvalColor:
 ; 309  : 	return(AColor(a.r*f, a.g*f, a.b*f, a.a*f));
 
 	vmulss	xmm2, xmm7, xmm4
-	vmulss	xmm1, xmm13, xmm9
+	vmulss	xmm1, xmm13, xmm10
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 839  : 	c = (1.0f-g)*c + g*c2;
@@ -10287,7 +10186,7 @@ $LN24@EvalColor:
 ; 840  : 	c = texout->Filter(c);
 
 	mov	rax, QWORD PTR [rcx]
-	lea	rdx, QWORD PTR $T15[rbp-256]
+	lea	rdx, QWORD PTR $T13[rbp-256]
 	call	QWORD PTR [rax+1520]
 
 ; 841  : 
@@ -10295,10 +10194,10 @@ $LN24@EvalColor:
 ; 843  : 	sc.PutCache(this,c); 
 
 	lea	r8, QWORD PTR c$[rsp]
-	mov	rdx, rbx
-	mov	rcx, rdi
+	mov	rdx, rsi
+	mov	rcx, r14
 	vmovups	xmm0, XMMWORD PTR [rax]
-	mov	rax, QWORD PTR [rdi]
+	mov	rax, QWORD PTR [r14]
 	vmovups	XMMWORD PTR c$[rsp], xmm0
 	call	QWORD PTR [rax+528]
 
@@ -10310,22 +10209,21 @@ $LN24@EvalColor:
 	vmovaps	xmm12, XMMWORD PTR [rsp+384]
 	vmovaps	xmm11, XMMWORD PTR [rsp+400]
 	vmovaps	xmm10, XMMWORD PTR [rsp+416]
+	vmovaps	xmm9, XMMWORD PTR [rsp+432]
 	vmovaps	xmm8, XMMWORD PTR [rsp+448]
 	vmovaps	xmm7, XMMWORD PTR [rsp+464]
 	vmovaps	xmm6, XMMWORD PTR [rsp+480]
-$LN118@EvalColor:
+$LN100@EvalColor:
 
 ; 845  : }
 
 	vmovaps	xmm0, XMMWORD PTR c$[rsp]
-	vmovups	XMMWORD PTR [rsi], xmm0
-$LN117@EvalColor:
-	lea	r11, QWORD PTR [rsp+496]
-	mov	rax, rsi
-	mov	rbx, QWORD PTR [r11+32]
-	vmovaps	xmm9, XMMWORD PTR [r11-64]
-	mov	rsp, r11
-	pop	rdi
+$LN99@EvalColor:
+	vmovups	XMMWORD PTR [r15], xmm0
+	mov	rax, r15
+	add	rsp, 504				; 000001f8H
+	pop	r15
+	pop	r14
 	pop	rsi
 	pop	rbp
 	ret	0
@@ -10632,23 +10530,13 @@ $LN28@dtor$0:
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ;	COMDAT ?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z
 _TEXT	SEGMENT
@@ -10659,7 +10547,7 @@ m$ = 64
 
 ; 609  : void BerconWood::SetSubTexmap(int i, Texmap *m)  {
 
-$LN40:
+$LN28:
 	mov	QWORD PTR [rsp+8], rbx
 	push	rdi
 	sub	rsp, 32					; 00000020H
@@ -10677,18 +10565,16 @@ $LN40:
 
 	test	ebx, ebx
 	jne	SHORT $LN2@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 612  : 		BerconWood_param_blk.InvalidateUI(noise_map1);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+26]
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+26]
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN38@SetSubTexm
+	jmp	SHORT $LN26@SetSubTexm
 $LN2@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
@@ -10696,18 +10582,16 @@ $LN2@SetSubTexm:
 
 	cmp	ebx, 1
 	jne	SHORT $LN4@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 615  : 		BerconWood_param_blk.InvalidateUI(noise_map2);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+26]
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+26]
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN38@SetSubTexm
+	jmp	SHORT $LN26@SetSubTexm
 $LN4@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
@@ -10715,18 +10599,16 @@ $LN4@SetSubTexm:
 
 	cmp	ebx, 2
 	jne	SHORT $LN6@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 618  : 		BerconWood_param_blk.InvalidateUI(noise_map3);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+26]
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+26]
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN38@SetSubTexm
+	jmp	SHORT $LN26@SetSubTexm
 $LN6@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
@@ -10734,18 +10616,16 @@ $LN6@SetSubTexm:
 
 	cmp	ebx, 3
 	jne	SHORT $LN8@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 621  : 		BerconWood_param_blk.InvalidateUI(distortion_map);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+16]
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
+	lea	edx, QWORD PTR [rbx+16]
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\interval.h
 
 ; 118  : 		void SetEmpty() { start = TIME_NegInfinity; end = TIME_NegInfinity; }
 
-	jmp	SHORT $LN38@SetSubTexm
+	jmp	SHORT $LN26@SetSubTexm
 $LN8@SetSubTexm:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
@@ -10753,44 +10633,35 @@ $LN8@SetSubTexm:
 
 	cmp	ebx, 4
 	jne	SHORT $LN10@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
+; 624  : 		BerconWood_param_blk.InvalidateUI(distortion_map2);
 
-	mov	rcx, QWORD PTR ?BerconWood_param_blk@@3VParamBlockDesc2@@A+24
-	lea	r8d, QWORD PTR [rbx+16]
-	lea	rdx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
+	lea	edx, QWORD PTR [rbx+16]
+	lea	rcx, OFFSET FLAT:?BerconWood_param_blk@@3VParamBlockDesc2@@A
 
+; 625  : 		ivalid.SetEmpty();
+; 626  : 	}
+; 627  : 
 ; 628  : 	if (BMAP1_NUM <= i && i <= BMAP16_NUM) {  // TODO: Make range is correct
 
-	jmp	SHORT $LN38@SetSubTexm
+	jmp	SHORT $LN26@SetSubTexm
 $LN10@SetSubTexm:
 	lea	eax, DWORD PTR [rbx-5]
 	cmp	eax, 15
 	ja	SHORT $LN11@SetSubTexm
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
-
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	mov	rcx, QWORD PTR ?BerconMap_param_blk@@3VParamBlockDesc2@@A+24
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 629  : 		BerconMap_param_blk.InvalidateUI(i-BMAP1_NUM);
 
-	lea	r8d, DWORD PTR [rbx-5]
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\iparamb2.h
+	lea	edx, DWORD PTR [rbx-5]
+	lea	rcx, OFFSET FLAT:?BerconMap_param_blk@@3VParamBlockDesc2@@A
+$LN26@SetSubTexm:
 
-; 4022 : 	PB2Export void InvalidateUI(ParamID id, int tabIndex=-1) { cd->InvalidateUI(this, id, tabIndex); } // nominated param
-
-	lea	rdx, OFFSET FLAT:?BerconMap_param_blk@@3VParamBlockDesc2@@A
-$LN38@SetSubTexm:
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
+; 630  : 		ivalid.SetEmpty();
+; 631  : 	}
 ; 632  : }
 
-	mov	r9d, -1
-	call	QWORD PTR __imp_?InvalidateUI@ClassDesc2@@QEAAXPEAVParamBlockDesc2@@FH@Z
+	mov	r8d, -1
+	call	QWORD PTR __imp_?InvalidateUI@ParamBlockDesc2@@QEAAXFH@Z
 	mov	DWORD PTR [rdi+772], -2147483648	; ffffffff80000000H
 	mov	DWORD PTR [rdi+768], -2147483648	; ffffffff80000000H
 $LN11@SetSubTexm:
@@ -10808,7 +10679,7 @@ this$ = 8
 i$ = 16
 ?GetSubTexmap@BerconWood@@UEAAPEAVTexmap@@H@Z PROC	; BerconWood::GetSubTexmap, COMDAT
 
-; 117  : 		Texmap* GetSubTexmap(int i) { return subtex[i]; }
+; 117  : 		Texmap* GetSubTexmap(int i) override { return subtex[i]; }
 
 	movsxd	rax, edx
 	mov	rax, QWORD PTR [rcx+rax*8+504]
@@ -10822,7 +10693,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?NumSubTexmaps@BerconWood@@UEAAHXZ PROC			; BerconWood::NumSubTexmaps, COMDAT
 
-; 116  : 		int NumSubTexmaps() { return NSUBTEX; }
+; 116  : 		int NumSubTexmaps() override { return NSUBTEX; }
 
 	mov	eax, 21
 	ret	0
@@ -10851,7 +10722,7 @@ bumpreq$ = 32
 $LN4@MappingsRe:
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 114  : 		void MappingsRequired(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) { berconXYZ.map(subMtlNum, mapreq, bumpreq); }
+; 114  : 		void MappingsRequired(int subMtlNum, BitArray& mapreq, BitArray& bumpreq) override { berconXYZ.map(subMtlNum, mapreq, bumpreq); }
 
 	ret	0
 ?MappingsRequired@BerconWood@@UEAAXHAEAVBitArray@@0@Z ENDP ; BerconWood::MappingsRequired
@@ -10875,7 +10746,7 @@ subMtlNum$ = 16
 	cmova	eax, edx
 ; File g:\dropbox\github\berconmaps\src\berconwood.h
 
-; 113  : 		ULONG LocalRequirements(int subMtlNum) { return berconXYZ.req(); }
+; 113  : 		ULONG LocalRequirements(int subMtlNum) override { return berconXYZ.req(); }
 
 	ret	0
 ?LocalRequirements@BerconWood@@UEAAKH@Z ENDP		; BerconWood::LocalRequirements
@@ -11342,11 +11213,11 @@ $LL4@Reset:
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1584]
 
-; 469  : 	pblock->SetValue( pb_samples, t,			4	);
+; 469  : 	pblock->SetValue( pb_samples, t,			1	);
 
 	mov	rcx, QWORD PTR [rdi+512]
 	lea	edx, QWORD PTR [rbx+17]
-	lea	r9d, QWORD PTR [rbx-12]
+	lea	r9d, QWORD PTR [rbx-15]
 	mov	DWORD PTR [rsp+32], ebp
 	mov	r8d, esi
 	mov	rax, QWORD PTR [rcx]
@@ -12398,7 +12269,7 @@ this$ = 48
 onoff$ = 56
 ?ActivateTexDisplay@BerconWood@@UEAAXH@Z PROC		; BerconWood::ActivateTexDisplay, COMDAT
 
-; 104  : 		void ActivateTexDisplay(BOOL onoff) { if (!onoff) DiscardTexHandle(); }
+; 104  : 		void ActivateTexDisplay(BOOL onoff) override { if (!onoff) DiscardTexHandle(); }
 
 $LN9:
 	test	edx, edx
@@ -12417,7 +12288,7 @@ $LN9:
 	mov	QWORD PTR [rbx+848], 0
 $LN5@ActivateTe:
 
-; 104  : 		void ActivateTexDisplay(BOOL onoff) { if (!onoff) DiscardTexHandle(); }
+; 104  : 		void ActivateTexDisplay(BOOL onoff) override { if (!onoff) DiscardTexHandle(); }
 
 	add	rsp, 32					; 00000020H
 	pop	rbx
@@ -12432,7 +12303,7 @@ _TEXT	SEGMENT
 this$ = 8
 ?SupportTexDisplay@BerconWood@@UEAAHXZ PROC		; BerconWood::SupportTexDisplay, COMDAT
 
-; 103  : 		BOOL SupportTexDisplay() { return TRUE; }
+; 103  : 		BOOL SupportTexDisplay() override { return TRUE; }
 
 	mov	eax, 1
 	ret	0
@@ -12480,7 +12351,20 @@ $LN33:
 	push	rdi
 	sub	rsp, 32					; 00000020H
 
-; 762  : 	WoodParam wp;
+; 762  : 	WoodParam wp{};
+
+	xor	eax, eax
+	mov	rsi, r8
+	mov	QWORD PTR [rdx+12], rax
+	mov	rdi, rdx
+	mov	QWORD PTR [rdx+20], rax
+	mov	rbx, rcx
+	mov	QWORD PTR [rdx+28], rax
+	mov	QWORD PTR [rdx+36], rax
+	mov	QWORD PTR [rdx+44], rax
+	mov	QWORD PTR [rdx+52], rax
+	mov	DWORD PTR [rdx+60], eax
+
 ; 763  : 	wp.woodType = woodType;
 ; 764  : 	wp.randSeed = randSeed;
 ; 765  : 	wp.samples = samples;
@@ -12488,11 +12372,8 @@ $LN33:
 ; 767  : 	if (mappedParameters) {	
 
 	cmp	BYTE PTR [rcx+840], 0
-	mov	rsi, r8
 	mov	eax, DWORD PTR [rcx+172]
-	mov	rdi, rdx
 	mov	DWORD PTR [rdx], eax
-	mov	rbx, rcx
 	mov	eax, DWORD PTR [rcx+176]
 	mov	DWORD PTR [rdx+4], eax
 	mov	eax, DWORD PTR [rcx+180]
@@ -12963,23 +12844,23 @@ _TEXT	ENDS
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 ;	COMDAT ?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z
 _TEXT	SEGMENT
 $T1 = 32
-this$ = 128
-sc$ = 136
-p$ = 144
+$T2 = 44
+$T3 = 56
+this$ = 112
+sc$ = 120
+p$ = 128
 ?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z PROC ; BerconWood::applyDistortion, COMDAT
 
 ; 753  : void BerconWood::applyDistortion(ShadeContext& sc, Point3& p) {
 
-$LN24:
+$LN19:
 	mov	QWORD PTR [rsp+8], rbx
 	mov	QWORD PTR [rsp+16], rsi
 	push	rdi
-	sub	rsp, 112				; 00000070H
+	sub	rsp, 96					; 00000060H
 	mov	rdi, rcx
 	mov	rbx, r8
 
@@ -12995,89 +12876,44 @@ $LN24:
 	cmp	QWORD PTR [rdi+600], 0
 	mov	r8, rdx
 	mov	rax, QWORD PTR [rcx]
-	lea	rdx, QWORD PTR $T1[rsp]
-	vmovaps	XMMWORD PTR [rsp+48], xmm9
-	vmovss	xmm9, DWORD PTR [rdi+236]
+	lea	rdx, QWORD PTR $T3[rsp]
+	vmovaps	XMMWORD PTR [rsp+80], xmm6
+	vmovss	xmm6, DWORD PTR [rdi+236]
 	mov	r9, QWORD PTR [rax+1520]
 	je	SHORT $LN3@applyDisto
 
 ; 756  : 			p += subtex[3]->EvalNormalPerturb(sc)*distortionStr*subtex[4]->EvalMono(sc);
 
-	vmovaps	XMMWORD PTR [rsp+96], xmm6
-	vmovaps	XMMWORD PTR [rsp+80], xmm7
-	vmovaps	XMMWORD PTR [rsp+64], xmm8
 	call	r9
-	mov	rcx, QWORD PTR [rdi+600]
-	mov	rdx, rsi
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmovss	xmm6, DWORD PTR [rax]
-	vmovss	xmm7, DWORD PTR [rax+4]
-	vmovss	xmm8, DWORD PTR [rax+8]
+	lea	rcx, QWORD PTR $T1[rsp]
+	vmulss	xmm3, xmm6, DWORD PTR [rax+8]
+	vmulss	xmm2, xmm6, DWORD PTR [rax+4]
+	vmulss	xmm1, xmm6, DWORD PTR [rax]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 756  : 			p += subtex[3]->EvalNormalPerturb(sc)*distortionStr*subtex[4]->EvalMono(sc);
 
+	mov	rcx, QWORD PTR [rdi+600]
+	mov	rdx, rsi
 	mov	rax, QWORD PTR [rcx]
 	call	QWORD PTR [rax+1512]
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm1, xmm9, xmm6
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm6, XMMWORD PTR [rsp+96]
-; File g:\dropbox\github\berconmaps\src\berconwood.cpp
-
-; 756  : 			p += subtex[3]->EvalNormalPerturb(sc)*distortionStr*subtex[4]->EvalMono(sc);
-
-	vmulss	xmm2, xmm1, xmm0
-; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vaddss	xmm3, xmm2, DWORD PTR [rbx]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm9, xmm7
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm7, XMMWORD PTR [rsp+80]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm2, xmm1, xmm0
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm1, xmm9, xmm8
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovaps	xmm8, XMMWORD PTR [rsp+64]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmulss	xmm0, xmm1, xmm0
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
-	vmovss	DWORD PTR [rbx], xmm3
-	vaddss	xmm3, xmm2, DWORD PTR [rbx+4]
-	vaddss	xmm2, xmm0, DWORD PTR [rbx+8]
-	vmovss	DWORD PTR [rbx+8], xmm2
-	vmovss	DWORD PTR [rbx+4], xmm3
+	vmulss	xmm3, xmm0, DWORD PTR $T1[rsp+8]
+	vmulss	xmm2, xmm0, DWORD PTR $T1[rsp+4]
+	vmulss	xmm1, xmm0, DWORD PTR $T1[rsp]
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 757  : 		else					
 
-	jmp	SHORT $LN22@applyDisto
+	jmp	SHORT $LN17@applyDisto
 $LN3@applyDisto:
 
 ; 758  : 			p += subtex[3]->EvalNormalPerturb(sc)*distortionStr;
@@ -13087,43 +12923,33 @@ $LN3@applyDisto:
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm9, DWORD PTR [rax]
-	vmovss	xmm2, DWORD PTR [rax+4]
+	vmulss	xmm3, xmm6, DWORD PTR [rax+8]
+	vmulss	xmm2, xmm6, DWORD PTR [rax+4]
+	vmulss	xmm1, xmm6, DWORD PTR [rax]
+$LN17@applyDisto:
+	lea	rcx, QWORD PTR $T2[rsp]
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
 
 ; 266  :    x += a.x;   y += a.y;   z += a.z;
 
+	vmovss	xmm0, DWORD PTR $T2[rsp]
 	vaddss	xmm1, xmm0, DWORD PTR [rbx]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmovss	xmm3, DWORD PTR [rax+8]
-	vmulss	xmm0, xmm9, xmm2
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
+	vmovss	xmm0, DWORD PTR $T2[rsp+4]
+	vmovaps	xmm6, XMMWORD PTR [rsp+80]
 	vmovss	DWORD PTR [rbx], xmm1
 	vaddss	xmm1, xmm0, DWORD PTR [rbx+4]
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm9, xmm3
-
-; 266  :    x += a.x;   y += a.y;   z += a.z;
-
+	vmovss	xmm0, DWORD PTR $T2[rsp+8]
 	vmovss	DWORD PTR [rbx+4], xmm1
 	vaddss	xmm1, xmm0, DWORD PTR [rbx+8]
 	vmovss	DWORD PTR [rbx+8], xmm1
-$LN22@applyDisto:
-	vmovaps	xmm9, XMMWORD PTR [rsp+48]
 $LN4@applyDisto:
 ; File g:\dropbox\github\berconmaps\src\berconwood.cpp
 
 ; 759  : }
 
-	lea	r11, QWORD PTR [rsp+112]
-	mov	rbx, QWORD PTR [r11+16]
-	mov	rsi, QWORD PTR [r11+24]
-	mov	rsp, r11
+	mov	rbx, QWORD PTR [rsp+112]
+	mov	rsi, QWORD PTR [rsp+120]
+	add	rsp, 96					; 00000060H
 	pop	rdi
 	ret	0
 ?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z ENDP ; BerconWood::applyDistortion
@@ -13192,48 +13018,78 @@ this$ = 48
 
 $LN17:
 	mov	QWORD PTR [rsp+8], rbx
-	mov	QWORD PTR [rsp+16], rsi
+	mov	QWORD PTR [rsp+16], rbp
+	mov	QWORD PTR [rsp+24], rsi
 	push	rdi
 	sub	rsp, 32					; 00000020H
-	mov	rsi, rcx
 
-; 341  : 	bool variance;
+; 328  : 	int mappingType{}, mappingChannel{};
 
-	lea	rbx, QWORD PTR [rcx+120]
-	mov	edi, 3
-	npad	5
+	xor	ebp, ebp
+
+; 329  : 	float offX, offY, offZ;
+; 330  : 	float sizeX{}, sizeY{}, sizeZ{};
+; 331  : 	float angX{}, angY{}, angZ{};
+; 332  : 	int tileX{}, tileY{}, tileZ{};
+; 333  : 	float offX2{}, offY2{}, offZ2{};
+; 334  : 	float sizeX2{}, sizeY2{}, sizeZ2{};
+; 335  : 	float angX2{}, angY2{}, angZ2{};
+; 336  : 	int p_seed{}, p_randObj{}, p_randMat{}, p_randPar{};
+; 337  : 	float filtering{};
+; 338  : 
+; 339  : 	BOOL lock{};
+; 340  : 
+; 341  : 	bool variance{};
+
+	lea	rdi, QWORD PTR [rcx+120]
+	mov	rbx, rcx
+	mov	QWORD PTR [rcx], rbp
+	mov	QWORD PTR [rcx+20], rbp
+	mov	QWORD PTR [rcx+28], rbp
+	lea	esi, QWORD PTR [rbp+3]
+	mov	QWORD PTR [rcx+36], rbp
+	mov	QWORD PTR [rcx+44], rbp
+	mov	QWORD PTR [rcx+52], rbp
+	mov	QWORD PTR [rcx+60], rbp
+	mov	QWORD PTR [rcx+68], rbp
+	mov	QWORD PTR [rcx+76], rbp
+	mov	QWORD PTR [rcx+84], rbp
+	mov	QWORD PTR [rcx+92], rbp
+	mov	QWORD PTR [rcx+100], rbp
+	mov	QWORD PTR [rcx+108], rbp
+	mov	BYTE PTR [rcx+116], bpl
 $LL4@BerconXYZ:
-	mov	rcx, rbx
+	mov	rcx, rdi
 	call	QWORD PTR __imp_??0Point3@@QEAA@XZ
-	add	rbx, 12
-	sub	rdi, 1
+	add	rdi, 12
+	sub	rsi, 1
 	jne	SHORT $LL4@BerconXYZ
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	xor	eax, eax
+	mov	DWORD PTR [rbx+204], ebp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	rcx, rsi
+	mov	rcx, rbx
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\matrix3.h
 
 ; 172  :    Matrix3(){ flags = 0; }
 
-	mov	DWORD PTR [rsi+204], eax
-	mov	QWORD PTR [rsi+256], rax
+	mov	QWORD PTR [rbx+256], rbp
 ; File g:\dropbox\github\berconmaps\src\berconcommon.h
 
 ; 350  : 	BerconXYZ() {offX=0; offY=0; offZ=0; mode2D = FALSE; update();}
 
-	mov	QWORD PTR [rsi+8], rax
-	mov	DWORD PTR [rsi+16], eax
+	mov	QWORD PTR [rbx+8], rbp
+	mov	DWORD PTR [rbx+16], ebp
 	call	?update@BerconXYZ@@QEAAXXZ		; BerconXYZ::update
+	mov	rbp, QWORD PTR [rsp+56]
+	mov	rax, rbx
 	mov	rbx, QWORD PTR [rsp+48]
-	mov	rax, rsi
-	mov	rsi, QWORD PTR [rsp+56]
+	mov	rsi, QWORD PTR [rsp+64]
 	add	rsp, 32					; 00000020H
 	pop	rdi
 	ret	0
@@ -13457,7 +13313,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW));
+; 277  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW)));
 
 	mov	ecx, 217				; 000000d9H
 	mov	rbx, rax
@@ -13468,7 +13324,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 278  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW2));
+; 278  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW2)));
 
 	mov	ecx, 222				; 000000deH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13478,7 +13334,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 279  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_OBJ));
+; 279  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_OBJ)));
 
 	mov	ecx, 218				; 000000daH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13488,7 +13344,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_WOR));
+; 280  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_WOR)));
 
 	mov	ecx, 219				; 000000dbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13498,7 +13354,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_SCR));
+; 281  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_SCR)));
 
 	mov	ecx, 220				; 000000dcH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13515,7 +13371,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 284  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -13526,7 +13382,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 285  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 285  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13536,7 +13392,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 286  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 286  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13546,7 +13402,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 287  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13556,7 +13412,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 288  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13573,7 +13429,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 291  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -13584,7 +13440,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 292  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 292  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13594,7 +13450,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 293  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 293  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13604,7 +13460,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 294  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13614,7 +13470,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 295  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13631,7 +13487,7 @@ $LN4@DlgProc:
 	mov	rcx, rbp
 	call	QWORD PTR __imp_GetDlgItem
 
-; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
+; 298  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
 
 	mov	ecx, 221				; 000000ddH
 	mov	rbx, rax
@@ -13642,7 +13498,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 299  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
+; 299  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
 
 	mov	ecx, 184				; 000000b8H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13652,7 +13508,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 300  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
+; 300  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
 
 	mov	ecx, 185				; 000000b9H
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13662,7 +13518,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 301  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
+; 301  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
 
 	mov	ecx, 186				; 000000baH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13672,7 +13528,7 @@ $LN4@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR __imp_SendMessageW
 
-; 302  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+; 302  : 					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 	mov	ecx, 187				; 000000bbH
 	call	?GetString@@YAPEA_WH@Z			; GetString
@@ -13710,7 +13566,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 309  : 					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1018				; 000003faH
@@ -13741,7 +13597,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 311  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1065				; 00000429H
@@ -13772,7 +13628,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 313  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 313  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1066				; 0000042aH
@@ -13803,7 +13659,7 @@ $LN5@DlgProc:
 	mov	rcx, rbx
 	call	QWORD PTR [rdi+1704]
 
-; 315  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, (WPARAM)curIndex, 0);
+; 315  : 					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, WPARAM(curIndex), 0);
 
 	movsxd	rbx, DWORD PTR curIndex$5[rsp]
 	mov	edx, 1071				; 0000042fH
@@ -15607,35 +15463,31 @@ _TEXT	ENDS
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@AEBV0@M@Z
 _TEXT	SEGMENT
-__$ReturnUdt$ = 8
-a$ = 16
-f$ = 24
+__$ReturnUdt$ = 48
+a$ = 56
+f$ = 64
 ??D@YA?AVPoint3@@AEBV0@M@Z PROC				; operator*, COMDAT
 
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
+; 326  : __forceinline Point3 operator*(const Point3& a, float f) {
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx]
-	vmulss	xmm1, xmm2, DWORD PTR [rdx+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
 
 ; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm2, DWORD PTR [rdx+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm1
-
-; 327  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
+	vmulss	xmm3, xmm2, DWORD PTR [rdx+8]
+	vmovaps	xmm0, xmm2
+	vmulss	xmm1, xmm0, DWORD PTR [rdx]
+	vmulss	xmm2, xmm2, DWORD PTR [rdx+4]
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rax, rbx
 
 ; 328  :    }
 
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??D@YA?AVPoint3@@AEBV0@M@Z ENDP				; operator*
 _TEXT	ENDS
@@ -15643,35 +15495,30 @@ _TEXT	ENDS
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\point3.h
 ;	COMDAT ??D@YA?AVPoint3@@MAEBV0@@Z
 _TEXT	SEGMENT
-__$ReturnUdt$ = 8
-f$ = 16
-a$ = 24
+__$ReturnUdt$ = 48
+f$ = 56
+a$ = 64
 ??D@YA?AVPoint3@@MAEBV0@@Z PROC				; operator*, COMDAT
 
+; 320  : __forceinline Point3 operator*(float f, const Point3& a) {
+
+$LN4:
+	push	rbx
+	sub	rsp, 32					; 00000020H
+
 ; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
 
-	vmulss	xmm0, xmm1, DWORD PTR [r8]
+	vmulss	xmm3, xmm1, DWORD PTR [r8+8]
 	vmulss	xmm2, xmm1, DWORD PTR [r8+4]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx], xmm0
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	vmulss	xmm0, xmm1, DWORD PTR [r8+8]
-
-; 61   : 		 x = X; y = Y; z = Z; 
-
-	vmovss	DWORD PTR [rcx+8], xmm0
-	vmovss	DWORD PTR [rcx+4], xmm2
-
-; 321  :    return(Point3(a.x*f, a.y*f, a.z*f));
-
-	mov	rax, rcx
+	vmulss	xmm1, xmm1, DWORD PTR [r8]
+	mov	rbx, rcx
+	call	QWORD PTR __imp_??0Point3@@QEAA@MMM@Z
+	mov	rax, rbx
 
 ; 322  :    }
 
+	add	rsp, 32					; 00000020H
+	pop	rbx
 	ret	0
 ??D@YA?AVPoint3@@MAEBV0@@Z ENDP				; operator*
 _TEXT	ENDS
@@ -17978,7 +17825,7 @@ $T1 = 32
 this$ = 64
 __flags$ = 72
 ??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z PROC ; MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor', COMDAT
-$LN16:
+$LN13:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rdi
 	sub	rsp, 48					; 00000030H
@@ -17986,10 +17833,10 @@ $LN16:
 	mov	QWORD PTR [rsp+72], rbx
 	mov	edi, edx
 	mov	rbx, rcx
-	call	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
+	call	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 	npad	1
 	test	dil, 1
-	je	SHORT $LN13@scalar
+	je	SHORT $LN10@scalar
 	mov	rcx, rbx
 	test	dil, 4
 	jne	SHORT $LN3@scalar
@@ -18004,7 +17851,7 @@ $LN3@scalar:
 	mov	edx, 16
 	call	?__global_delete@@YAXPEAX_K@Z		; __global_delete
 	npad	1
-$LN13@scalar:
+$LN10@scalar:
 	mov	rax, rbx
 	mov	rbx, QWORD PTR [rsp+72]
 	add	rsp, 48					; 00000030H
@@ -18022,16 +17869,6 @@ __flags$ = 72
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__flags$ = 72
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -18044,33 +17881,20 @@ __flags$ = 72
 ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$0
 text$x	ENDS
 ; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__flags$ = 72
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::`scalar deleting destructor''::`1'::dtor$1
-text$x	ENDS
-; Function compile flags: /Ogtp
 ;	COMDAT ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 _TEXT	SEGMENT
 $T1 = 32
 this$ = 64
 __that$ = 72
 ??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z PROC ; MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException, COMDAT
-$LN9:
+$LN6:
 	mov	QWORD PTR [rsp+8], rcx
 	push	rbx
 	sub	rsp, 48					; 00000030H
 	mov	QWORD PTR $T1[rsp], -2
 	mov	rbx, rcx
-	call	QWORD PTR __imp_??0Exception@Util@MaxSDK@@QEAA@AEBV012@@Z
+	call	QWORD PTR __imp_??0OutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z
 	npad	1
-	mov	rax, QWORD PTR __imp_??_7OutOfRangeException@Util@MaxSDK@@6B@
-	mov	QWORD PTR [rbx], rax
 	lea	rax, OFFSET FLAT:??_7TabOutOfRangeException@Util@MaxSDK@@6B@
 	mov	QWORD PTR [rbx], rax
 	mov	rax, rbx
@@ -18084,31 +17908,10 @@ text$x	SEGMENT
 $T1 = 32
 this$ = 64
 __that$ = 72
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__that$ = 72
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-__that$ = 72
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
@@ -18127,12 +17930,12 @@ _TEXT	SEGMENT
 $T1 = 32
 this$ = 64
 ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ PROC	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException, COMDAT
-$LN9:
+$LN6:
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
 	mov	QWORD PTR $T1[rsp], -2
 	add	rsp, 56					; 00000038H
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
+	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ??1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ ENDP	; MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException
 _TEXT	ENDS
 ;	COMDAT text$x
@@ -18144,15 +17947,6 @@ this$ = 64
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$0
 text$x	ENDS
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-text$x	ENDS
 ; Function compile flags: /Ogtp
 ;	COMDAT text$x
 text$x	SEGMENT
@@ -18162,16 +17956,6 @@ this$ = 64
 	mov	rcx, QWORD PTR this$[rdx]
 	rex_jmp	QWORD PTR __imp_??1OutOfRangeException@Util@MaxSDK@@UEAA@XZ
 ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$0
-text$x	ENDS
-; Function compile flags: /Ogtp
-;	COMDAT text$x
-text$x	SEGMENT
-$T1 = 32
-this$ = 64
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA PROC ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
-	mov	rcx, QWORD PTR this$[rdx]
-	rex_jmp	QWORD PTR __imp_??1Exception@Util@MaxSDK@@UEAA@XZ
-?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA ENDP ; `MaxSDK::Util::TabOutOfRangeException::~TabOutOfRangeException'::`1'::dtor$1
 text$x	ENDS
 ; Function compile flags: /Ogtp
 ; File c:\program files\autodesk\3ds max 2019 sdk\maxsdk\include\tab.h

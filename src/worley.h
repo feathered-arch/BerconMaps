@@ -17,13 +17,14 @@ under the License.
 
 // Based on Steven Worley's cellular noise
 
+
 class Worley {
 public:
     Worley() {}
     ~Worley() {}
 
-	static void noise(double at[3], int order, double* F, int function);
+	static void noise(const double at[3], int order, double* F, int function);
 
 private:
-	static void add(long xi, long yi, long zi, double at[3], int order, double *F, int function);
+	static void add(long xi, long yi, long zi, const double at[3], int order, double *F, int function);
 };

@@ -80,9 +80,9 @@ under the License.
 #define URANDF() ((float)rand() / (float)RAND_MAX * 2.f - 1.f)
 
 // Some macros for U/V/W/Range looping/mirroring etc.
-#define D_LOOP(x) x = x - (float)((int)x); if (x<0) x = 1.f + x;
-#define D_MIRR(x) if (x<0) x = -x; int ix = (int)x; if (ix%2==0) x = x - ix; else x = 1.f - x + ix;
-#define D_STRE(x) if (x<0) x = 0.f; else if (x>1) x = 1.f;
+#define D_LOOP(x) x = (x) - (float)((int)(x)); if ((x)<0) (x) = 1.f + (x);
+#define D_MIRR(x) if ((x)<0) (x) = -(x); int ix = (int)(x); if (ix%2==0) (x) = (x) - ix; else (x) = 1.f - (x) + ix;
+#define D_STRE(x) if ((x)<0) (x) = 0.f; else if ((x)>1) (x) = 1.f;
 
 MCHAR *GetString(int id);
 
@@ -104,7 +104,7 @@ MCHAR *GetString(int id);
 	ReleaseISpinner(spin);
 }
 
-enum {
+enum xyz {
 	xyz_map, xyz_chan,
 
 	xyz_offset_x, xyz_offset_y, xyz_offset_z,
@@ -123,7 +123,7 @@ enum {
 	xyz_filtering,
 };
 
-//25 MAR 2018 -- REPLACED STRING LITERALS WITH RESOURCE IDs AS REQUIRED BY MAX 2019. REPLACED _T WITH _M.
+//25 MAR 2018 -- REPLACED STRING LITERALS WITH RESOURCE IDs AS REQUIRED BY MAX 2019. REPLACED _T WITH _M. (--kentebird)
 class XYZ_Desc : public ParamBlockDesc2 {
 
 public:
@@ -274,45 +274,45 @@ class BerconXYZDlgProc : public ParamMap2UserDlgProc {
 
 					// UVW
 					hwndMap = GetDlgItem(hWnd, IDC_TYPE);  
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_UVW2));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_OBJ));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_WOR));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_XYZ_SCR));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_UVW2)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_OBJ)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_WOR)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_XYZ_SCR)));
 
 					hwndMap = GetDlgItem(hWnd, IDC_TIL_X);  
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Y);  
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 					hwndMap = GetDlgItem(hWnd, IDC_TIL_Z);
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_CONT));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_STRETCH));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_TILE));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_MIRROR));
-					SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_LOOP_NONE));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_CONT)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_STRETCH)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_TILE)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_MIRROR)));
+					SendMessage(hwndMap, CB_ADDSTRING, 0, LPARAM(GetString(IDS_LOOP_NONE)));
 
 					// NO BREAK HERE, WE WANT TO UPDATE DROPDOWN VALUES TOO
 				case WM_SHOWWINDOW: 
 					// Set correct dropdown value
 					int curIndex;
 					map->GetParamBlock()->GetValue(xyz_map, t, curIndex, FOREVER);
-					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, (WPARAM)curIndex, 0);
+					SendMessage(GetDlgItem(hWnd, IDC_TYPE), CB_SETCURSEL, WPARAM(curIndex), 0);
 					map->GetParamBlock()->GetValue(xyz_tile_x, t, curIndex, FOREVER);
-					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, (WPARAM)curIndex, 0);
+					SendMessage(GetDlgItem(hWnd, IDC_TIL_X), CB_SETCURSEL, WPARAM(curIndex), 0);
 					map->GetParamBlock()->GetValue(xyz_tile_y, t, curIndex, FOREVER);
-					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, (WPARAM)curIndex, 0);
+					SendMessage(GetDlgItem(hWnd, IDC_TIL_Y), CB_SETCURSEL, WPARAM(curIndex), 0);
 					map->GetParamBlock()->GetValue(xyz_tile_z, t, curIndex, FOREVER);
-					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, (WPARAM)curIndex, 0);
+					SendMessage(GetDlgItem(hWnd, IDC_TIL_Z), CB_SETCURSEL, WPARAM(curIndex), 0);
 					break;
 				case WM_DESTROY:			
 				default: return FALSE;
@@ -325,20 +325,20 @@ class BerconXYZDlgProc : public ParamMap2UserDlgProc {
 
 class BerconXYZ {
 private:		
-	int mappingType, mappingChannel;
+	int mappingType{}, mappingChannel{};
 	float offX, offY, offZ;
-	float sizeX, sizeY, sizeZ;
-	float angX, angY, angZ;
-	int tileX, tileY, tileZ;
-	float offX2, offY2, offZ2;
-	float sizeX2, sizeY2, sizeZ2;
-	float angX2, angY2, angZ2;
-	int p_seed, p_randObj, p_randMat, p_randPar;
-	float filtering;
+	float sizeX{}, sizeY{}, sizeZ{};
+	float angX{}, angY{}, angZ{};
+	int tileX{}, tileY{}, tileZ{};
+	float offX2{}, offY2{}, offZ2{};
+	float sizeX2{}, sizeY2{}, sizeZ2{};
+	float angX2{}, angY2{}, angZ2{};
+	int p_seed{}, p_randObj{}, p_randMat{}, p_randPar{};
+	float filtering{};
 
-	BOOL lock;
+	BOOL lock{};
 
-	bool variance;
+	bool variance{};
 
 	Point3 b[3];
 

@@ -10,6 +10,8 @@ PUBLIC	IsolationAwarePrivateT_SqbjaYRiRY
 PUBLIC	IsolationAwarePrivateT_SAbnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpeRNgRQnPgpgk
 PUBLIC	WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ
+PUBLIC	?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA	; `Class_ID::Class_ID'::`1'::__LINE__Var
+PUBLIC	?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
 EXTRN	GUID_NULL:BYTE
 ;	COMDAT IsolationAwarePrivateT_SqbjaYRiRY
 _BSS	SEGMENT
@@ -27,6 +29,14 @@ _BSS	ENDS
 _BSS	SEGMENT
 WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ DD 01H DUP (?)
 _BSS	ENDS
+;	COMDAT ?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0AssetId@AssetManagement@MaxSDK@@QEAA@XZ@4JA DD 01dH ; `MaxSDK::AssetManagement::AssetId::AssetId'::`1'::__LINE__Var
+_DATA	ENDS
+;	COMDAT ?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA
+_DATA	SEGMENT
+?__LINE__Var@?0???0Class_ID@@QEAA@KK@Z@4JA DD 0a0H	; `Class_ID::Class_ID'::`1'::__LINE__Var
+_DATA	ENDS
 ;	COMDAT WinbaseIsolationAwarePrivateT_UnPgpgk
 _DATA	SEGMENT
 WinbaseIsolationAwarePrivateT_UnPgpgk DQ ffffffffffffffffH
@@ -246,7 +256,7 @@ $LN4:
 	mov	QWORD PTR wc$[rsp+16], rbx
 
 ; 188  : 	wc.cbWndExtra = 0;
-; 189  : 	wc.hbrBackground = (HBRUSH)GetStockObject(NULL_BRUSH);
+; 189  : 	wc.hbrBackground = HBRUSH(GetStockObject(NULL_BRUSH));
 
 	lea	ecx, QWORD PTR [rbx+5]
 	call	QWORD PTR __imp_GetStockObject
@@ -416,8 +426,8 @@ $LN4@GradientPr:
 	test	bl, 1
 	je	$LN2@GradientPr
 
-; 62   : 				int mouse_x = (int)LOWORD(lParam);
-; 63   : 				int mouse_y = (int)HIWORD(lParam); 
+; 62   : 				int mouse_x = int(LOWORD(lParam));
+; 63   : 				int mouse_y = int(HIWORD(lParam)); 
 ; 64   : 				grad->gradient->dragging(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 
 	mov	ecx, 18
@@ -544,9 +554,9 @@ $LN8@GradientPr:
 	call	QWORD PTR __imp_TlsGetValue
 
 ; 73   : 			
-; 74   : 			int buttons = (int)wParam; 
-; 75   : 			int mouse_x = (int)LOWORD(lParam);
-; 76   : 			int mouse_y = (int)HIWORD(lParam); 
+; 74   : 			int buttons = int(wParam); 
+; 75   : 			int mouse_x = int(LOWORD(lParam));
+; 76   : 			int mouse_y = int(HIWORD(lParam)); 
 ; 77   : 
 ; 78   : 			grad->gradient->leftDown(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 
@@ -660,8 +670,8 @@ $LN10@GradientPr:
 	test	eax, eax
 	jle	SHORT $LN2@GradientPr
 
-; 119  : 				int mouse_x = (int)LOWORD(lParam);
-; 120  : 				int mouse_y = (int)HIWORD(lParam); 
+; 119  : 				int mouse_x = int(LOWORD(lParam));
+; 120  : 				int mouse_y = int(HIWORD(lParam)); 
 
 	mov	rcx, rsi
 	movzx	edx, si
@@ -690,9 +700,9 @@ $LN9@GradientPr:
 	call	QWORD PTR __imp_TlsGetValue
 
 ; 94   : 			
-; 95   : 			int buttons = (int)wParam; 
-; 96   : 			int mouse_x = (int)LOWORD(lParam);
-; 97   : 			int mouse_y = (int)HIWORD(lParam); 
+; 95   : 			int buttons = int(wParam); 
+; 96   : 			int mouse_x = int(LOWORD(lParam));
+; 97   : 			int mouse_y = int(HIWORD(lParam)); 
 ; 98   : 			grad->gradient->leftUp(mouse_x, mouse_y, buttons&MK_CONTROL, buttons&MK_SHIFT, GetKeyState(VK_MENU) < 0);
 
 	mov	ecx, 18
@@ -783,13 +793,13 @@ bb$ = 24
 ??0Class_ID@@QEAA@KK@Z ENDP				; Class_ID::Class_ID
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 ;	COMDAT IsolationAwareRegisterClassExW
 _TEXT	SEGMENT
 result$ = 32
@@ -824,7 +834,7 @@ $LN44:
 	mov	eax, DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY
 	test	eax, eax
 	jne	$LN2@IsolationA
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 585  :     if (WinbaseIsolationAwarePrivateT_SpYRNahcpNYYRQ)
 
@@ -905,7 +915,7 @@ $Exit$45:
 	je	SHORT $LN33@IsolationA
 	cmp	eax, 50					; 00000032H
 	je	SHORT $LN33@IsolationA
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 
 ; 326  :         return result;
 
@@ -919,13 +929,13 @@ $Exit$45:
 	pop	rdi
 	ret	0
 $LN33@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 618  :             IsolationAwarePrivateT_SqbjaYRiRY = TRUE;
 
 	mov	DWORD PTR IsolationAwarePrivateT_SqbjaYRiRY, 1
 $LN2@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 
 ; 329  :         result = RegisterClassExW(unnamed1);
 
@@ -962,14 +972,14 @@ $LN12@IsolationA:
 	call	QWORD PTR __imp_GetLastError
 	mov	ebx, eax
 $LN14@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rsp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 
 ; 340  :             if (fPreserveLastError)
 
@@ -1049,14 +1059,14 @@ $LN5@IsolationA:
 $LN10@IsolationA:
 	xor	edi, edi
 $LN11@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rbp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 
 ; 340  :             if (fPreserveLastError)
 
@@ -1078,8 +1088,8 @@ $LN19@IsolationA:
 IsolationAwareRegisterClassExW$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 ;	COMDAT text$x
 text$x	SEGMENT
 result$ = 32
@@ -1125,14 +1135,14 @@ $LN5@IsolationA:
 $LN10@IsolationA:
 	xor	edi, edi
 $LN11@IsolationA:
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 
 ; 167  :     return DeactivateActCtx(dwFlags,ulCookie);
 
 	mov	rdx, QWORD PTR ulpCookie$[rbp]
 	xor	ecx, ecx
 	call	QWORD PTR __imp_DeactivateActCtx
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winuser.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winuser.inl
 
 ; 340  :             if (fPreserveLastError)
 
@@ -1154,7 +1164,7 @@ $LN19@IsolationA:
 IsolationAwareRegisterClassExW$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT WinbaseIsolationAwarePrivatetRgzlnPgpgk
 _TEXT	SEGMENT
 actCtxBasicInfo$ = 64
@@ -1883,7 +1893,7 @@ $LN24@WinbaseIso:
 WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 ENDP
 text$x	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareQueryActCtxW
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -1902,7 +1912,7 @@ IsolationAwareQueryActCtxW PROC				; COMDAT
 IsolationAwareQueryActCtxW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareFindActCtxSectionStringW
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -1919,7 +1929,7 @@ IsolationAwareFindActCtxSectionStringW PROC		; COMDAT
 IsolationAwareFindActCtxSectionStringW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareDeactivateActCtx
 _TEXT	SEGMENT
 dwFlags$ = 8
@@ -1933,7 +1943,7 @@ IsolationAwareDeactivateActCtx PROC			; COMDAT
 IsolationAwareDeactivateActCtx ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareActivateActCtx
 _TEXT	SEGMENT
 hActCtx$ = 8
@@ -1947,7 +1957,7 @@ IsolationAwareActivateActCtx PROC			; COMDAT
 IsolationAwareActivateActCtx ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwareCreateActCtxW
 _TEXT	SEGMENT
 pActCtx$ = 8
@@ -1960,7 +1970,7 @@ IsolationAwareCreateActCtxW PROC			; COMDAT
 IsolationAwareCreateActCtxW ENDP
 _TEXT	ENDS
 ; Function compile flags: /Ogtp
-; File c:\program files (x86)\windows kits\10\include\10.0.10586.0\um\winbase.inl
+; File c:\program files (x86)\windows kits\10\include\10.0.17134.0\um\winbase.inl
 ;	COMDAT IsolationAwarePrivatenPgViNgRzlnPgpgk
 _TEXT	SEGMENT
 pulpCookie$ = 48

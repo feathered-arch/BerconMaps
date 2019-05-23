@@ -21,6 +21,7 @@ under the License.
 #pragma once
 
 #include "commonMath.h"
+#include <cmath>
 
 class Perlin {
 public:

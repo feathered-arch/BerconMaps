@@ -847,7 +847,7 @@ AColor BerconNoise::EvalColor(ShadeContext& sc) {
 	if (gbufID) sc.SetGBufferID(gbufID);
 
 	// UVW and Distortion
-	Point3 p, dpdx, dpdy, dp;	
+	Point3 p, dpdx, dpdy;	
 	if(!berconXYZ.get(sc, p, dpdx, dpdy)) return AColor(0,0,0,0);
 
 	if (useDistortion)

@@ -52,7 +52,7 @@ float Fractal::fBm(Point3 p, NoiseParams& np) {
 		p *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * Noise::noise(p, np) * pwr;
 
 	return (sum+1.f)*.5f;
@@ -69,14 +69,14 @@ float Fractal::fBmTurb(Point3 p, NoiseParams& np) {
 		p *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * fabs(Noise::noise(p, np)) * pwr;
 
 	return sum;
 }
 
 float Fractal::heteroTerrain(Point3 p, NoiseParams& np) {
-	float sum = 0.0f;
+	float sum;
 	float pwHL = pow(np.lacunarity, -np.H);	
 	float pwr = pwHL;
 
@@ -89,7 +89,7 @@ float Fractal::heteroTerrain(Point3 p, NoiseParams& np) {
 		p *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * (Noise::noise(p, np) + np.offset) * pwr * sum;
 
 	return (sum+1.f)*.5f;
@@ -115,7 +115,7 @@ float Fractal::hybridMultiFractal(Point3 p, NoiseParams& np) {
 		p *= np.lacunarity;
 	}
 
-	rmd = np.levels - FASTFLOOR(np.levels);
+	rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * (Noise::noise(p, np) + np.offset) * pwr;	
 													
 	return (sum+1.f)*.5f;
@@ -126,16 +126,13 @@ float Fractal::ridgedMultiFractal(Point3 p, NoiseParams& np) {
 	float pwHL = pow(np.lacunarity, -np.H);	
 	float pwr = pwHL;
 
-	float signal, weight;	
-
-	signal = np.offset - fabs(Noise::noise(p, np));
+	float signal = np.offset - fabs(Noise::noise(p, np));
 	signal *= signal;
 	sum = signal;
-	weight = 1.f;
 
 	for(int i=1; i<(int)np.levels; i++ ) {
 		p *= np.lacunarity;
-		weight = signal * np.gain;
+		float weight = signal * np.gain;
 		if (weight>1.0) weight=1.0; else if (weight<0.0) weight=0.0;
 		signal = np.offset - fabs(Noise::noise(p, np));
 		signal *= signal;
@@ -185,7 +182,7 @@ float Fractal::fBm(Point3 p, float d, NoiseParams& np) {
 		d *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * Noise::noise(p, d, np) * pwr;
 
 	return (sum+1.f)*.5f;
@@ -203,18 +200,17 @@ float Fractal::fBmTurb(Point3 p, float d, NoiseParams& np) {
 		d *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * fabs(Noise::noise(p, d, np)) * pwr;
 
 	return sum;
 }
 
 float Fractal::heteroTerrain(Point3 p, float d, NoiseParams& np) {
-	float sum = 0.0f;
 	float pwHL = pow(np.lacunarity, -np.H);	
 	float pwr = pwHL;
 
-	sum = Noise::noise(p, np) + np.offset;
+	float sum = Noise::noise(p, np) + np.offset;
 	p *= np.lacunarity;
 	d *= np.lacunarity;
 
@@ -225,7 +221,7 @@ float Fractal::heteroTerrain(Point3 p, float d, NoiseParams& np) {
 		d *= np.lacunarity;
 	}
 
-	float rmd = np.levels - FASTFLOOR(np.levels);
+	float rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * (Noise::noise(p, d, np) + np.offset) * pwr * sum;
 
 	return (sum+1.f)*.5f;
@@ -253,7 +249,7 @@ float Fractal::hybridMultiFractal(Point3 p, float d, NoiseParams& np) {
 		d *= np.lacunarity;
 	}
 
-	rmd = np.levels - FASTFLOOR(np.levels);
+	rmd = np.levels - floor(np.levels);
 	if (rmd!=0.f) sum += rmd * (Noise::noise(p, d, np) + np.offset) * pwr;	
 													
 	return (sum+1.f)*.5f;
@@ -264,17 +260,16 @@ float Fractal::ridgedMultiFractal(Point3 p, float d, NoiseParams& np) {
 	float pwHL = pow(np.lacunarity, -np.H);	
 	float pwr = pwHL;
 
-	float signal, weight;	
+	float signal;	
 
 	signal = np.offset - fabs(Noise::noise(p, d, np));
 	signal *= signal;
 	sum = signal;
-	weight = 1.f;
 
 	for(int i=1; i<(int)np.levels; i++ ) {
 		p *= np.lacunarity;
 		d *= np.lacunarity;
-		weight = signal * np.gain;
+		float weight = signal * np.gain;
 		if (weight>1.0) weight=1.0; else if (weight<0.0) weight=0.0;
 		signal = np.offset - fabs(Noise::noise(p, d, np));
 		signal *= signal;
@@ -298,7 +293,7 @@ float Fractal::fBm(Point3 p, float levels, float lacunarity, float H) {
 		p *= lacunarity;
 	}
 
-	float rmd = levels - FASTFLOOR(levels);
+	float rmd = levels - floor(levels);
 	if (rmd!=0.f) sum += rmd * Perlin::noise(p.x, p.y, p.z) * pwr;
 
 	return (sum+1.f)*.5f;
