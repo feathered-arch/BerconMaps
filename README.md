@@ -7,7 +7,13 @@ For more information, pictures and binaries go to http://www.ylilammi.com/2013/0
 
 RELEASE NOTES
 =============
-Version 3.04.1kf: The AVX binaries are experimental. They may perform more slowly if your system is configured to clock down the CPU when AVX instructions are in use. See https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/performance-xeon-e5-v3-advanced-vector-extensions-paper.pdf for information.
+Version 3.04 (kentebird fork 0.9b):
+
+-- Fix Crash on Save
+
+-- Removed outdated custom control curve (not the gradient -- the other one...)
+
+-- Cleaned up the code a little bit.. very slight performance gain (almost not noticeable, lol)
 
 FORK INFORMATION
 ================
