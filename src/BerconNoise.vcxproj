@@ -62,19 +62,15 @@
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2017|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2017 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2018|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2018 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2019|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'" Label="PropertySheets">
     <Import Project="C:\Program Files\Autodesk\3ds Max 2020 SDK\maxsdk\ProjectSettings\propertySheets\3dsmax.cpp.props" />
-    <Import Project="PropertySheet2.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
@@ -314,7 +310,7 @@
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerOutput>All</AssemblerOutput>
       <FloatingPointModel>Precise</FloatingPointModel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -327,6 +323,7 @@
       <StringPooling>true</StringPooling>
       <AdditionalOptions>/LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
       <SDLCheck>false</SDLCheck>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
     </ClCompile>
     <ResourceCompile />
     <Link>
