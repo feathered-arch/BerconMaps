@@ -109,16 +109,16 @@ float Perlin::noise(float x) {
 }
 
 float Perlin::noise(float x, float y) {    
-    int xi = floor(x);
-	int yi = floor(y);
+    auto xi = FASTFLOOR(x);
+	auto yi = FASTFLOOR(y);		//we need xi + yi to be INT for binary operator below
     float xf0 = x - xi;
     float yf0 = y - yi;
     float xf1 = xf0 - 1.0f;
     float yf1 = yf0 - 1.0f;
     xi = xi & 255;
     yi = yi & 255;       
-    float i = FADE(xf0);
-	float j = FADE(yf0);
+    auto i = FADE(xf0);
+	auto j = FADE(yf0);
 	int A = perm[xi  ] + yi;
 	int B = perm[xi+1] + yi;
 
@@ -129,9 +129,9 @@ float Perlin::noise(float x, float y) {
 }
 
 float Perlin::noise(float x, float y, float z) {
-	int xi = floor(x);
-	int yi = floor(y);
-	int zi = floor(z);
+	int xi = FASTFLOOR(x);
+	int yi = FASTFLOOR(y);
+	int zi = FASTFLOOR(z);
 	float xf = x - float(xi);
 	float yf = y - float(yi);
 	float zf = z - float(zi);
@@ -155,10 +155,10 @@ float Perlin::noise(float x, float y, float z) {
 }
 
 float Perlin::noise(float x, float y, float z, float w) {
-    int xi = floor(x);
-	int yi = floor(y);
-	int zi = floor(z);
-	int wi = floor(w);
+    int xi = FASTFLOOR(x);
+	int yi = FASTFLOOR(y);
+	int zi = FASTFLOOR(z);
+	int wi = FASTFLOOR(w);
     float xf0 = x - xi;
     float yf0 = y - yi;
 	float zf0 = z - zi;
@@ -241,7 +241,7 @@ inline float Perlin::point(float x, float y, float z, float w, int i, int j, int
 // #################### // Simplex \\ ####################
 
 float Perlin::snoise(float x) {
-	int i0 = floor(x);
+	int i0 = FASTFLOOR(x);
 	int i1 = i0 + 1;
 	float x0 = x - i0;
 	float x1 = x0 - 1.0f;
@@ -256,10 +256,10 @@ float Perlin::snoise(float x, float y) {
     float s = (x+y)*F2;
     float xs = x + s;
     float ys = y + s;
-    int i = floor(xs);
-    int j = floor(ys);
+    int i = FASTFLOOR(xs);
+    int j = FASTFLOOR(ys);
 
-    float t = (float)(i+j)*G2;
+    float t = float(i + j)*G2;
     float X0 = i-t;
     float Y0 = j-t;
     float x0 = x-X0;
@@ -291,11 +291,11 @@ float Perlin::snoise(float x, float y, float z) {
     float xs = x+s;
     float ys = y+s;
     float zs = z+s;
-    int i = floor(xs);
-    int j = floor(ys);
-    int k = floor(zs);
+    int i = FASTFLOOR(xs);
+    int j = FASTFLOOR(ys);
+    int k = FASTFLOOR(zs);
 
-    float t = (float)(i+j+k)*G3; 
+    float t = float(i + j + k)*G3; 
     float X0 = i-t;
     float Y0 = j-t;
     float Z0 = k-t;
@@ -343,10 +343,10 @@ float Perlin::snoise(float x, float y, float z, float w) {
     float ys = y + s;
     float zs = z + s;
     float ws = w + s;
-    int i = floor(xs);
-    int j = floor(ys);
-    int k = floor(zs);
-    int l = floor(ws);
+    int i = FASTFLOOR(xs);
+    int j = FASTFLOOR(ys);
+    int k = FASTFLOOR(zs);
+    int l = FASTFLOOR(ws);
 
     float t = (i + j + k + l) * G4;
     float X0 = i - t; 
@@ -403,7 +403,7 @@ float Perlin::snoise(float x, float y, float z, float w) {
 #define FILTEND		2.2f
 
 #define FILTER(d) d = smooth(d / FILTDIV, FILTSTART, FILTEND); \
-				  if (d >= .9999f) return 0.f;
+				  if (d >= .9999f) return 0.f;					//basically, values less than .0001 in the "size" function will return 0
 
 float Perlin::fnoise2D(float x, float y, float d) {
 	FILTER(d)

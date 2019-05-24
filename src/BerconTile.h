@@ -28,7 +28,7 @@ extern HINSTANCE hInstance;
 
 class BerconTile;
 
-class BerconTile : public Texmap, public ResourceMakerCallback {
+class BerconTile final : public Texmap, public ResourceMakerCallback {
 	public:
 		// Tiling parameters
 		float tileSize{};	
@@ -59,10 +59,10 @@ class BerconTile : public Texmap, public ResourceMakerCallback {
 
 		Color			 col[3];
 		Texmap			*subtex[TILE_NSUBTEX]{}; //array of sub-materials
-		BOOL			mapOn[TILE_NSUBTEX]{};
+		BOOL			 mapOn[TILE_NSUBTEX]{};
 		static ParamDlg* texoutDlg;
-		TextureOutput   *texout;
-		Interval		ivalid;
+		TextureOutput    *texout;
+		Interval		 ivalid;
 		//bool viewportPreview;
 
 		inline AColor BerconTile::getColor(ShadeContext &sc, int i)  { return mapOn[i]&&subtex[i] ? subtex[i]->EvalColor(sc): col[i]; }

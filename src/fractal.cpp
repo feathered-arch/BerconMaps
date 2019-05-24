@@ -106,7 +106,7 @@ float Fractal::hybridMultiFractal(Point3 p, NoiseParams& np) {
 	weight = np.gain * sum;
 	p *= np.lacunarity;
 
-	for (int i=1; (weight>0.001) && (i<(int)np.levels); i++) {
+	for (auto i=1; (weight>0.001) && (i<int(np.levels)); i++) {
 		if (weight>1.0)  weight=1.0;
 		signal = (Noise::noise(p, np) + np.offset) * pwr;
 		pwr *= pwHL;
@@ -130,7 +130,7 @@ float Fractal::ridgedMultiFractal(Point3 p, NoiseParams& np) {
 	signal *= signal;
 	sum = signal;
 
-	for(int i=1; i<(int)np.levels; i++ ) {
+	for(auto i=1; i<int(np.levels); i++ ) {
 		p *= np.lacunarity;
 		float weight = signal * np.gain;
 		if (weight>1.0) weight=1.0; else if (weight<0.0) weight=0.0;
@@ -175,7 +175,7 @@ float Fractal::fBm(Point3 p, float d, NoiseParams& np) {
 	float pwr = 1.0f;
 	float pwHL = pow(np.lacunarity, -np.H);	
 
-	for (int i=0; i<(int)np.levels; i++) {
+	for (int i=0; i<int(np.levels); i++) {
 		sum += Noise::noise(p, d, np) * pwr;
 		pwr *= pwHL;
 		p *= np.lacunarity;
@@ -193,7 +193,7 @@ float Fractal::fBmTurb(Point3 p, float d, NoiseParams& np) {
 	float pwr = 1.0f;
 	float pwHL = pow(np.lacunarity, -np.H);	
 
-	for (int i=0; i<(int)np.levels; i++) {
+	for (int i=0; i<int(np.levels); i++) {
 		sum += fabs(Noise::noise(p, d, np)) * pwr;
 		pwr *= pwHL;
 		p *= np.lacunarity;
@@ -214,7 +214,7 @@ float Fractal::heteroTerrain(Point3 p, float d, NoiseParams& np) {
 	p *= np.lacunarity;
 	d *= np.lacunarity;
 
-	for (int i=0; i<(int)np.levels; i++) {
+	for (int i=0; i<int(np.levels); i++) {
 		sum += (Noise::noise(p, d, np) + np.offset) * pwr * sum;
 		pwr *= pwHL;
 		p *= np.lacunarity;
@@ -239,7 +239,7 @@ float Fractal::hybridMultiFractal(Point3 p, float d, NoiseParams& np) {
 	p *= np.lacunarity;
 	d *= np.lacunarity;
 
-	for (int i=1; (weight>0.001) && (i<(int)np.levels); i++) {
+	for (int i=1; (weight>0.001) && (i<int(np.levels)); i++) {
 		if (weight>1.0)  weight=1.0;
 		signal = (Noise::noise(p, d, np) + np.offset) * pwr;
 		pwr *= pwHL;
@@ -266,7 +266,7 @@ float Fractal::ridgedMultiFractal(Point3 p, float d, NoiseParams& np) {
 	signal *= signal;
 	sum = signal;
 
-	for(int i=1; i<(int)np.levels; i++ ) {
+	for(int i=1; i<int(np.levels); i++ ) {
 		p *= np.lacunarity;
 		d *= np.lacunarity;
 		float weight = signal * np.gain;
@@ -287,7 +287,7 @@ float Fractal::fBm(Point3 p, float levels, float lacunarity, float H) {
 	float pwr = 1.0f;
 	float pwHL = pow(lacunarity, -H);	
 
-	for (int i=0; i<(int)levels; i++) {
+	for (int i=0; i<int(levels); i++) {
 		sum += Perlin::noise(p.x, p.y, p.z) * pwr;
 		pwr *= pwHL;
 		p *= lacunarity;

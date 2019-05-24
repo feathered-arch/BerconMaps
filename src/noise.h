@@ -92,15 +92,16 @@ public:
 
 	// Cell noise
 	static float cellNoise(float x, float y, float z) {
-		int xi = FASTFLOOR(x);
-		int yi = FASTFLOOR(y);
-		int zi = FASTFLOOR(z);
+		auto xi = floor(x);
+		auto yi = floor(y);								// no reason to convert from float to int here. Changed to floor for float.
+		auto zi = floor(z);
 		unsigned int n = xi + yi*1301 + zi*314159;
 		n ^= (n<<13);
-		return ((float)(n*(n*n*15731 + 789221) + 1376312589) / 4294967296.0f);
+		return (float(n * (n * n * 15731 + 789221) + 1376312589) / 4294967296.0f);
 	}
 
 	static float limitedNoise(Point3 p, NoiseParams &np);
 	static float limitedNoise(Point3 p, Point3 dpdx, Point3 dpdy, NoiseParams &np);
 };
+
 

@@ -430,7 +430,7 @@ INT_PTR BerconTileDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT ms
 
 //--- BerconTile -------------------------------------------------------
 BerconTile::BerconTile() {	
-	for (auto i=0; i<TILE_NSUBTEX; i++) subtex[i] = NULL;
+	for (auto& i : subtex) i = NULL;				//	for (auto i=0; i<TILE_NSUBTEX; i++) subtex[i] = NULL;
 	texHandle = NULL;
 	pblock = NULL;
 	pbMap = NULL;
@@ -525,9 +525,9 @@ void BerconTile::Update(TimeValue t, Interval& valid) {
 		pblock->GetValue( noise_color3, t, col[2], ivalid );
 		col[2].ClampMinMax();
 
-		for (int i=0; i<TILE_NSUBTEX; i++)
-			if (subtex[i]) 
-				subtex[i]->Update(t,ivalid);
+		for (auto& i : subtex)			//	for (int i=0; i<TILE_NSUBTEX; i++)
+			if (i)
+				i->Update(t,ivalid);
 
 		pblock->GetValue( noise_map1_on, t, mapOn[0], ivalid);
 		pblock->GetValue( noise_map2_on, t, mapOn[1], ivalid);		
@@ -583,12 +583,12 @@ void BerconTile::Update(TimeValue t, Interval& valid) {
 		pblock->GetValue( use_distortion, t, useDistortion, ivalid);			
 
 		// Update maps
-		for (int i = 0; i<2; i++)
+		for (auto i = 0; i<2; i++)
 			pbMap->GetValue((i+2), t, mapOn[i+5], ivalid);		
 
 		// Slight optimization
 		mappedParameters = false;
-		for (int i=5;i<=6;i++)
+		for (auto i=5;i<=6;i++)
 			if (mapOn[i] && subtex[i])
 				mappedParameters = true;	
 
@@ -782,7 +782,7 @@ RefTargetHandle BerconTile::Clone(RemapDir &remap) {
 			mnew->ReplaceReference(i+2,remap.CloneRef(subtex[i]));		
 	}
 	BaseClone(this, mnew, remap);
-	return (RefTargetHandle)mnew;
+	return RefTargetHandle(mnew);
 }
 
 Animatable* BerconTile::SubAnim(int i) {
@@ -961,7 +961,7 @@ Point3 BerconTile::EvalNormalPerturb(ShadeContext& sc) {
 		if (tileParam.center)
 			bsc.setUV2(tp.center, uvChan2);
 		if (tileParam.tileID)
-			bsc.setMultiTexture((float)tp.id);
+			bsc.setMultiTexture(float(tp.id));
 
 		              f1 = getFloat(bsc, 0);
 		if (lockEdge) f2 = getFloat(bsc, 1);
@@ -982,5 +982,5 @@ Point3 BerconTile::EvalNormalPerturb(ShadeContext& sc) {
 
 	np = (f2-f1)*np + tp.d*v2 + (1.f-tp.d)*v1;
 	
-	return texout->Filter(np); // Does this filter actually do something?*/
+	return texout->Filter(np); 
 }

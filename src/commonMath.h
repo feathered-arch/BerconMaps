@@ -27,11 +27,11 @@ typedef double ireal;
 
 float smooth(float d);											//noise @ line 112
 
-float smooth(float d, float low, float high);
+float smooth(float d, float low, float high);					//? cubic smoothing
 #if MAX_RELEASE >= 20900
-constexpr float linear(float d, float low, float high);
+constexpr float linear(float d, float low, float high);			
 
-constexpr float lerp(float a, float b, float blend);
+constexpr float lerp(float a, float b, float blend);			// linear interpolation
 #else
 float linear(float d, float low, float high);
 
@@ -61,7 +61,7 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 //#define FASTFLOORL(x) ((x) < 0 ? ((long)(x)-1) : ((long)(x)) )		// used in Worley (but redefined there, so not used HERE)
 
-#define FADE(t) ( (t) * (t) * (t) * ( (t) * ( (t) * 6 - 15 ) + 10 ) )		// used in Perlin
+#define FADE(t) ( (t) * (t) * (t) * ( (t) * ( (t) * 6.f - 15.f ) + 10.f ) )		// used in Perlin
 
 //#define LERP(t, a, b) ((a) + (t)*((b)-(a)))
 
@@ -75,4 +75,4 @@ inline float length(float a, float b, float c) { return sqrt(a*a + b*b + c*c); }
 
 //#define SQRT2 1.41421356 // sqrt(2);							
 
-#define DEG2RAD 0.0174532925f									// Tile
+#define DEG2RAD 0.0174535f									// Tile

@@ -24,7 +24,7 @@ under the License.
 
 #define BERCON_SHADE_CONTEXT_CLASS_ID Class_ID(0x7c0a38f1, 0x2f1a67f2)
 
-class BerconSC : public ShadeContext, public RenderGlobalContext {
+class BerconSC final : public ShadeContext, public RenderGlobalContext {
 private:
 	ShadeContext* const sc;			
 
@@ -139,7 +139,7 @@ public:
 	Point3 VectorFromNoScale(const Point3& p, RefFrame ifrom) override { return sc->VectorFromNoScale(p, ifrom); }
 	void SetGBufferID(int gbid) override { sc->SetGBufferID(gbid); }
 	FILE* DebugFile() override { return 0; }																//	This is only used internally by ShadeContext anyway. But virtualize this because SC is virtual.
-	virtual AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
+	AColor EvalGlobalEnvironMap(Point3 dir) override { return sc->EvalGlobalEnvironMap(dir); }
 	BOOL GetCache(Texmap* map, AColor& c) override { return sc->GetCache(map, c); }
 	BOOL GetCache(Texmap* map, float& f) override { return sc->GetCache(map, f); }
 	BOOL GetCache(Texmap* map, Point3& p) override { return sc->GetCache(map, p); }
@@ -162,19 +162,19 @@ public:
 	// REVISED METHODS OF CALLING GLOBCONTEXT AND TONEOPERATOR FOR THESE FUNCTIONS
 
 	
-		virtual ToneOperator* IsPhysicalSpace() const
+		ToneOperator* IsPhysicalSpace() const
 		{
 			if (globContext != NULL && globContext->pToneOp !=NULL) return sc->globContext->pToneOp;			// Always check globContext and pToneOp for null
 			else return NULL;
 		}
 
-			virtual ToneOperator* ScaledToRGB(float /*energy*/) const
+		ToneOperator* ScaledToRGB(float /*energy*/) const
 		{
 			if (globContext != NULL && globContext->pToneOp != NULL) return sc->globContext->pToneOp;
 			else return NULL;
 		}
 
-		virtual ToneOperator* ScaledToRGB() const
+		ToneOperator* ScaledToRGB() const
 		{
 			if (globContext != NULL && globContext->pToneOp != NULL) return sc->globContext->pToneOp;
 			else return NULL;
@@ -188,7 +188,7 @@ public:
 		}
 
 
-		virtual ToneOperator* ScaleRGB(float /*energy*/) const
+		ToneOperator* ScaleRGB(float /*energy*/) const
 		{
 			if (globContext != NULL && globContext->pToneOp != NULL) return sc->globContext->pToneOp;
 			else return NULL;
