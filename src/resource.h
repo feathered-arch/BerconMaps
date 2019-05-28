@@ -505,6 +505,8 @@
 #define IDC_RANGELOOP                   1077
 #define IDC_UVCHAN_SPIN3                1078
 #define IDC_FLIPX                       1078
+#define IDC_BUTTON1                     1079
+#define IDC_N_SWAP                      1079
 #define IDC_RADIALSTR_EDIT              1080
 #define IDC_RADIALSTR_SPIN              1081
 #define IDC_RADIALFREQ_EDIT             1082
@@ -620,9 +622,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        250
+#define _APS_NEXT_RESOURCE_VALUE        253
 #define _APS_NEXT_COMMAND_VALUE         40010
-#define _APS_NEXT_CONTROL_VALUE         1079
+#define _APS_NEXT_CONTROL_VALUE         1080
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

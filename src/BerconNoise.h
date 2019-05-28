@@ -30,9 +30,9 @@ extern HINSTANCE hInstance;
 
 #define NOISE_NSUBTEX		18  // Number of subtextures
 
-class BerconNoise; // why is this here?
+class BerconNoise; 
 
-class BerconNoise : public Texmap, public ResourceMakerCallback/*, public imrShaderTranslation*/
+class BerconNoise final : public Texmap, public ResourceMakerCallback/*, public imrShaderTranslation*/
 {
 public:
 
@@ -69,6 +69,7 @@ public:
 
 	// User Interface
 	void EnableStuff();
+	void SwapInputs();
 
 	// Parameter block
 	IParamBlock2* pbXYZ;

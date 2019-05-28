@@ -21,7 +21,7 @@ under the License.
 
 #pragma once
 
-#include <immintrin.h>
+#include <emmintrin.h>
 #include <3dsmaxdlport.h>
 #include "resource.h"
 #include <istdplug.h>
@@ -32,7 +32,7 @@ under the License.
 #include <shaders.h>
 #include <macrorec.h>
 #include <gport.h>
-#include <stdmat.h>
+//#include <stdmat.h>
 #include <imtl.h>
 #include <plugapi.h>
 //#include <icurvctl.h>
@@ -42,7 +42,7 @@ under the License.
 #include "fractal.h"
 
 #include "curvectrl.h"
-#include "BerconSC.h"
+//#include "BerconSC.h"
 
 
   
@@ -124,7 +124,7 @@ enum xyz {
 };
 
 //25 MAR 2018 -- REPLACED STRING LITERALS WITH RESOURCE IDs AS REQUIRED BY MAX 2019. REPLACED _T WITH _M. (--kentebird)
-class XYZ_Desc : public ParamBlockDesc2 {
+class XYZ_Desc final : public ParamBlockDesc2 {
 
 public:
 
@@ -259,7 +259,7 @@ public:
 
 
 
-class BerconXYZDlgProc : public ParamMap2UserDlgProc {
+class BerconXYZDlgProc final : public ParamMap2UserDlgProc {
 	public:
 		ReferenceTarget *reftarg;		
 		BerconXYZDlgProc(ReferenceTarget *m) {reftarg = m;}		

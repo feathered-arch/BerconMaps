@@ -128,7 +128,7 @@ void Worley::add(long xi, long yi, long zi, const double at[3], int order, doubl
 			case 2: // Manhattan
 				d = fabs(d3[0])+fabs(d3[1])+fabs(d3[2]);
 				break;			
-			case 3: {// Chebychev				
+			case 3: {// Chebyshev				
 				double x = fabs(d3[0]);
 				double y = fabs(d3[1]);
 				double z = fabs(d3[2]);

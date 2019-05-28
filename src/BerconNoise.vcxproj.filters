@@ -75,9 +75,6 @@
     <ClCompile Include="tile.cpp">
       <Filter>Source Files\Patterns</Filter>
     </ClCompile>
-    <ClCompile Include="BerconGradient.cpp">
-      <Filter>Source Files\Gradient</Filter>
-    </ClCompile>
     <ClCompile Include="GradientRamp.cpp">
       <Filter>Source Files\Gradient</Filter>
     </ClCompile>
@@ -91,6 +88,9 @@
       <Filter>Source Files\Main</Filter>
     </ClCompile>
     <ClCompile Include="BerconWood.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="BerconGradient.cpp">
       <Filter>Source Files\Main</Filter>
     </ClCompile>
   </ItemGroup>
@@ -125,9 +125,6 @@
     <ClInclude Include="BerconSC.h">
       <Filter>Header Files\Misc</Filter>
     </ClInclude>
-    <ClInclude Include="BerconGradient.h">
-      <Filter>Header Files\Gradient</Filter>
-    </ClInclude>
     <ClInclude Include="GradientRamp.h">
       <Filter>Header Files\Gradient</Filter>
     </ClInclude>
@@ -141,6 +138,9 @@
       <Filter>Header Files\Main</Filter>
     </ClInclude>
     <ClInclude Include="BerconWood.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="BerconGradient.h">
       <Filter>Header Files\Main</Filter>
     </ClInclude>
   </ItemGroup>

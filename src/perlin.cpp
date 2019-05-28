@@ -19,7 +19,7 @@ under the License.
 // implementation of perlin/simplex noise, (Simplex)Noise1234
 
 #include	"perlin.h"
-#include <immintrin.h>
+
 
 
 // Chart given by Ken Perlin, using the same to get identical results
@@ -309,11 +309,11 @@ float Perlin::snoise(float x, float y, float z) {
     if(x0>=y0) {
 		if(y0>=z0)		{ i1=1; j1=0; k1=0; i2=1; j2=1; k2=0; }
         else if(x0>=z0) { i1=1; j1=0; k1=0; i2=1; j2=0; k2=1; }
-        else			{ i1=0; j1=0; k1=1; i2=1; j2=0; k2=1; }
+			 else		{ i1=0; j1=0; k1=1; i2=1; j2=0; k2=1; }
 	} else {
 		if(y0<z0)		{ i1=0; j1=0; k1=1; i2=0; j2=1; k2=1; }
 		else if(x0<z0)	{ i1=0; j1=1; k1=0; i2=0; j2=1; k2=1; }
-		else			{ i1=0; j1=1; k1=0; i2=1; j2=1; k2=0; }
+			else		{ i1=0; j1=1; k1=0; i2=1; j2=1; k2=0; }
     }
 
     float x1 = x0 - i1 + G3,  x2 = x0 - i2 + G3a,  x3 = x0 + G3b;
@@ -398,12 +398,12 @@ float Perlin::snoise(float x, float y, float z, float w) {
 	area becomes larger than the details.
 */
 
-#define FILTDIV		1.2f
-#define FILTSTART	1.2f
-#define FILTEND		2.2f
+constexpr auto FILTDIV = 1.2f;
+constexpr auto FILTSTART = 1.2f;
+constexpr auto FILTEND = 2.2f;
 
-#define FILTER(d) d = smooth(d / FILTDIV, FILTSTART, FILTEND); \
-				  if (d >= .9999f) return 0.f;					//basically, values less than .0001 in the "size" function will return 0
+#define FILTER(d) d = smooth((d) / FILTDIV, FILTSTART, FILTEND); \
+				  if ((d) >= .9999f) return 0.f;					//basically, values less than .0001 in the "size" function will return 0
 
 float Perlin::fnoise2D(float x, float y, float d) {
 	FILTER(d)

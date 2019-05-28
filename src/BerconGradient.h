@@ -28,7 +28,7 @@ extern HINSTANCE hInstance;
 
 //#define GRADIENT3D
 
-class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCallback {
+class BerconGradient final : public Texmap, public GradientMap, public ResourceMakerCallback {
 	public:
 		// Parameter block
 		IParamBlock2	*pblock;
@@ -155,7 +155,7 @@ class BerconGradient : public Texmap, public GradientMap, public ResourceMakerCa
 		Animatable* SubAnim(int i) override; 
 		TSTR SubAnimName(int i) override;
 
-		virtual int NumRefs() override; // !! Update submap count !!		// This was 7+gradient
+		int NumRefs() override; // !! Update submap count !!		// This was 7+gradient
 		RefTargetHandle GetReference(int i) override;
 private:
 		void SetReference(int i, RefTargetHandle rtarg) override;

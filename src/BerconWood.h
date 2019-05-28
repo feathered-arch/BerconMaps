@@ -25,7 +25,7 @@ extern HINSTANCE hInstance;
 
 #define WOOD_NSUBTEX = 21
 
-class BerconWood : public Texmap, public ResourceMakerCallback {
+class BerconWood final : public Texmap, public ResourceMakerCallback {
 	private:
 		static const int NSUBTEX = 21;
 		static const int NCOLS = 3;

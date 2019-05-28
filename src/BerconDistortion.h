@@ -18,6 +18,7 @@ under the License.
 #pragma once
 
 #include "BerconCommon.h"
+#include "BerconSC.h"
 
 extern MCHAR *GetString(int id);
 

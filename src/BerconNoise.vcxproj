@@ -105,7 +105,7 @@
     <IncludePath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Autodesk\3ds Max 2019 SDK\maxsdk\lib\x64\Release;$(LibraryPath)</LibraryPath>
     <CustomBuildAfterTargets />
-    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
     <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
     <TargetExt>.dlt</TargetExt>
     <ExcludePath>$(ExcludePath)</ExcludePath>
@@ -310,20 +310,22 @@
       <WarningLevel>Level3</WarningLevel>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerOutput>AssemblyAndMachineCode</AssemblerOutput>
       <FloatingPointModel>Precise</FloatingPointModel>
       <TreatWarningAsError>false</TreatWarningAsError>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <OmitFramePointers>false</OmitFramePointers>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <StringPooling>true</StringPooling>
       <AdditionalOptions>/LD /GR /we4002 /we4706 /we4390 /we4557 /we4546 /we4545 /we4295 /we4310 /we4130 /we4611 /we4213 /we4121 /we4715 /we4701 /w34265 /wd4244 /wd4018 /wd4819 /wd4456 /wd4457 /wd4458 /wd4459 /wd4589 /wd4702 %(AdditionalOptions)</AdditionalOptions>
       <SDLCheck>false</SDLCheck>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <ResourceCompile />
     <Link>
@@ -347,7 +349,7 @@
       <MapExports>true</MapExports>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Xdcmake />
     <Bscmake />
@@ -358,8 +360,7 @@
     </ResourceCompile>
     <ProjectReference />
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>"G:\Dropbox\GitHub\BerconMaps\src\updatetomax_debug.bat"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Max2020|x64'">

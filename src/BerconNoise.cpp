@@ -81,6 +81,11 @@ enum { xyz_params, berconnoise_params, BerconCurve_params, BerconMap_params };
 static XYZ_Desc xyz_blk(&BerconNoiseDesc, COORD_REF, xyz_params, 2, 0, 0, 0);
 
 enum { 
+	// Standard noise controls
+	noise_color1, noise_color2,
+	noise_map1, noise_map2,
+	noise_map1_on, noise_map2_on,
+	noise_size, noise_phase,
 	// Fractal
 	fractal_type,
 	fractal_gain, fractal_offset, fractal_h, fractal_lacunarity, fractal_levels,
@@ -94,11 +99,6 @@ enum {
 	worley_distance,	
 	worley_spread,
 	worley_F1, worley_F2, worley_F3, worley_F4,		
-	// Standard noise controls
-	noise_color1, noise_color2,
-	noise_map1, noise_map2,		
-	noise_map1_on, noise_map2_on, 
-	noise_size, noise_phase,	
 	// Output
 	pb_output,
 };
@@ -332,8 +332,8 @@ class BerconNoiseDlgProc : public ParamMap2UserDlgProc {
 public:
 	BerconNoise *berconNoise;		
 	BerconNoiseDlgProc(BerconNoise *m) {berconNoise = m;}
-	virtual INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam);
-	virtual void DeleteThis() {delete this;}
+	INT_PTR DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam) override;
+	void DeleteThis() override {delete this;}
 
 	virtual void SetThing(ReferenceTarget *m) {
 		berconNoise = (BerconNoise*)m;
@@ -343,7 +343,8 @@ public:
 
 INT_PTR BerconNoiseDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT msg,WPARAM wParam,LPARAM lParam)	{	
 	switch (msg) {	
-		case WM_INITDIALOG:	{			
+
+	case WM_INITDIALOG:	{			
 			// UVW
 			HWND hwndMap = GetDlgItem(hWnd, IDC_DIST_UVW);  
 			SendMessage(hwndMap, CB_ADDSTRING, 0, (LPARAM)GetString(IDS_UVW_NORMAL));
@@ -405,6 +406,15 @@ INT_PTR BerconNoiseDlgProc::DlgProc(TimeValue t,IParamMap2 *map,HWND hWnd,UINT m
 			SendMessage(GetDlgItem(hWnd, IDC_DIST_UVW), CB_SETCURSEL, (WPARAM)curIndex, 0);
 			break;
 		}
+		case WM_COMMAND:
+			switch (LOWORD(wParam))
+			{
+			case IDC_N_SWAP:
+			{
+				berconNoise->SwapInputs();
+			}
+			break;
+			}
 		default: return FALSE;
 	}
 	return TRUE;
@@ -482,6 +492,21 @@ void BerconNoise::Reset() {
 //	CurveCtrl::init(curve);											//#d# Access violation C05 if commented out at line 862; not called prior to abort
 
 }
+
+// SWAP BUTTON
+void BerconNoise::SwapInputs()
+{
+	Color t = col[0]; col[0] = col[1]; col[1] = t;
+	Texmap *x = subtex[0];  subtex[0] = subtex[1];  subtex[1] = x;
+	pblock->SwapControllers(noise_color1, 0, noise_color2, 0);
+	berconnoise_param_blk.InvalidateUI(noise_color1);
+	berconnoise_param_blk.InvalidateUI(noise_color2);
+	berconnoise_param_blk.InvalidateUI(noise_map1);
+	berconnoise_param_blk.InvalidateUI(noise_map2);
+	macroRecorder->FunctionCall(_T("swap"), 2, 0, mr_prop, _T("color1"), mr_reftarg, this, mr_prop, _T("color2"), mr_reftarg, this);
+	macroRecorder->FunctionCall(_T("swap"), 2, 0, mr_prop, _T("map1"), mr_reftarg, this, mr_prop, _T("map2"), mr_reftarg, this);
+}
+
 
 void BerconNoise::Update(TimeValue t, Interval& valid) {	
 	if (pblock == NULL) return;
@@ -622,6 +647,7 @@ ParamDlg* BerconNoise::CreateParamDlg(HWND hwMtlEdit, IMtlParams *imp) {
 //	BerconCurve_param_blk.SetUserDlgProc(new BerconCurveDlgProcNOISE(this));				//ddd Responsible for drawing the user interface for the custom curve. Does not affect crash.
 	xyz_blk.SetUserDlgProc(new BerconXYZDlgProc(this));	
 	EnableStuff();
+
 	return masterDlg;	
 }
 
