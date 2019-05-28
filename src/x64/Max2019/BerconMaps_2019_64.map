@@ -1,6 +1,6 @@
  BerconMaps_2019_64
 
- Timestamp is 5ced5cf9 (Tue May 28 12:08:25 2019)
+ Timestamp is 5ced5e46 (Tue May 28 12:13:58 2019)
 
  Preferred load address is 0000000180000000
 
@@ -40,8 +40,8 @@
  0003:00000730 000009f0H .data$r                 DATA
  0003:00001120 00000b68H .bss                    DATA
  0004:00000000 00001d64H .pdata                  DATA
- 0005:00000000 000009e0H .rsrc$01                DATA
- 0005:000009e0 00019b18H .rsrc$02                DATA
+ 0005:00000000 00000a10H .rsrc$01                DATA
+ 0005:00000a10 00019b20H .rsrc$02                DATA
 
   Address         Publics by Value              Rva+Base               Lib:Object
 
@@ -2062,12 +2062,13 @@
 
  Static symbols
 
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
  0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
@@ -2205,7 +2206,6 @@
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
- 0000:fffa1000       .debug$S                   0000000180000000     core:core.dll
  0000:fffa1000       .debug$S                   0000000180000000     geom:geom.dll
  0000:fffa1000       .debug$S                   0000000180000000     geom:geom.dll
  0000:fffa1000       .debug$S                   0000000180000000     geom:geom.dll
@@ -2257,62 +2257,62 @@
  0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
  0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
  0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
- 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
  0000:fffa1000       .debug$S                   0000000180000000     user32:USER32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     Paramblk2:ParamBlk2.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     msvcprt:MSVCP140.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     gdi32:GDI32.dll
+ 0000:fffa1000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
  0000:fffa1000       .debug$S                   0000000180000000     user32:USER32.dll
  0000:fffa1000       .debug$S                   0000000180000000     user32:USER32.dll
  0000:fffa1000       .debug$S                   0000000180000000     user32:USER32.dll
@@ -2407,12 +2407,12 @@
  0001:0002a570       ?dtor$7@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b570 f   BerconDistortion.obj
  0001:0002a580       ?dtor$5@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b580 f   BerconDistortion.obj
  0001:0002a580       ?dtor$8@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b580 f   BerconDistortion.obj
- 0001:0002a590       ?dtor$6@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b590 f   BerconDistortion.obj
  0001:0002a590       ?dtor$9@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b590 f   BerconDistortion.obj
- 0001:0002a5a0       ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA 000000018002b5a0 f   BerconDistortion.obj
+ 0001:0002a590       ?dtor$6@?0???0BerconSC@@QEAA@QEAVShadeContext@@@Z@4HA 000000018002b590 f   BerconDistortion.obj
  0001:0002a5a0       ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z@4HA 000000018002b5a0 f   BerconDistortion.obj
- 0001:0002a5a0       ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA 000000018002b5a0 f   BerconDistortion.obj
  0001:0002a5a0       ?dtor$0@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA 000000018002b5a0 f   BerconDistortion.obj
+ 0001:0002a5a0       ?dtor$0@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA 000000018002b5a0 f   BerconDistortion.obj
+ 0001:0002a5a0       ?dtor$0@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA 000000018002b5a0 f   BerconDistortion.obj
  0001:0002a5b0       ?dtor$1@?0???0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z@4HA 000000018002b5b0 f   BerconDistortion.obj
  0001:0002a5b0       ?dtor$1@?0???1TabOutOfRangeException@Util@MaxSDK@@UEAA@XZ@4HA 000000018002b5b0 f   BerconDistortion.obj
  0001:0002a5b0       ?dtor$1@?0???_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z@4HA 000000018002b5b0 f   BerconDistortion.obj
@@ -2422,147 +2422,147 @@
  0001:0002a5e0       ?dtor$0@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b5e0 f   BerconDistortion.obj
  0001:0002a5f0       ?dtor$1@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b5f0 f   BerconDistortion.obj
  0001:0002a5f0       ?dtor$1@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b5f0 f   BerconDistortion.obj
- 0001:0002a610       ?dtor$2@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b610 f   BerconDistortion.obj
  0001:0002a610       ?dtor$5@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b610 f   BerconDistortion.obj
+ 0001:0002a610       ?dtor$2@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b610 f   BerconDistortion.obj
  0001:0002a610       ?dtor$2@?0???1ShadeContext@@UEAA@XZ@4HA 000000018002b610 f   BerconDistortion.obj
- 0001:0002a620       ?dtor$0@?0???1ShadeContext@@UEAA@XZ@4HA 000000018002b620 f   BerconDistortion.obj
- 0001:0002a620       ?dtor$0@?0???1ICustomControl@@UEAA@XZ@4HA 000000018002b620 f   BerconGradient.obj
+ 0001:0002a620       ?dtor$0@?0???_GICustomControl@@UEAAPEAXI@Z@4HA 000000018002b620 f   BerconGradient.obj
  0001:0002a620       ?dtor$3@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b620 f   BerconDistortion.obj
  0001:0002a620       ?dtor$0@?0???_GShadeContext@@UEAAPEAXI@Z@4HA 000000018002b620 f   BerconDistortion.obj
+ 0001:0002a620       ?dtor$0@?0???1ICustomControl@@UEAA@XZ@4HA 000000018002b620 f   BerconGradient.obj
+ 0001:0002a620       ?dtor$0@?0???1ShadeContext@@UEAA@XZ@4HA 000000018002b620 f   BerconDistortion.obj
  0001:0002a620       ?dtor$3@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b620 f   BerconDistortion.obj
- 0001:0002a620       ?dtor$0@?0???_GICustomControl@@UEAAPEAXI@Z@4HA 000000018002b620 f   BerconGradient.obj
  0001:0002a620       ?dtor$1@?0???_GIGradient@@UEAAPEAXI@Z@4HA 000000018002b620 f   BerconGradient.obj
  0001:0002a630       ?dtor$1@?0???1ShadeContext@@UEAA@XZ@4HA 000000018002b630 f   BerconDistortion.obj
  0001:0002a630       ?dtor$4@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b630 f   BerconDistortion.obj
  0001:0002a630       ?dtor$4@?0???1BerconSC@@UEAA@XZ@4HA 000000018002b630 f   BerconDistortion.obj
  0001:0002a630       ?dtor$1@?0???_GShadeContext@@UEAAPEAXI@Z@4HA 000000018002b630 f   BerconDistortion.obj
- 0001:0002a640       ?dtor$0@?0???_GRenderGlobalContext@@UEAAPEAXI@Z@4HA 000000018002b640 f   BerconDistortion.obj
+ 0001:0002a640       ?dtor$0@?0???_GShadeOutput@@UEAAPEAXI@Z@4HA 000000018002b640 f   BerconDistortion.obj
  0001:0002a640       ?dtor$0@?0???1RenderGlobalContext@@UEAA@XZ@4HA 000000018002b640 f   BerconDistortion.obj
  0001:0002a640       ?dtor$0@?0???1ShadeOutput@@UEAA@XZ@4HA 000000018002b640 f   BerconDistortion.obj
- 0001:0002a640       ?dtor$0@?0???_GShadeOutput@@UEAAPEAXI@Z@4HA 000000018002b640 f   BerconDistortion.obj
- 0001:0002a650       ?dtor$1@?0???_GBerconNoise@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconNoise.obj
- 0001:0002a650       ?dtor$1@?0???_GBerconWood@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconWood.obj
- 0001:0002a650       ?dtor$1@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconDistortion.obj
- 0001:0002a650       ?dtor$1@?0???_GBerconGradient@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconGradient.obj
- 0001:0002a650       ?dtor$4@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconTile.obj
+ 0001:0002a640       ?dtor$0@?0???_GRenderGlobalContext@@UEAAPEAXI@Z@4HA 000000018002b640 f   BerconDistortion.obj
  0001:0002a650       ?dtor$4@?0??DeleteThis@BerconTile@@UEAAXXZ@4HA 000000018002b650 f   BerconTile.obj
+ 0001:0002a650       ?dtor$4@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconTile.obj
+ 0001:0002a650       ?dtor$1@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconDistortion.obj
+ 0001:0002a650       ?dtor$1@?0??DeleteThis@BerconNoise@@UEAAXXZ@4HA 000000018002b650 f   BerconNoise.obj
+ 0001:0002a650       ?dtor$1@?0???_GBerconGradient@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconGradient.obj
+ 0001:0002a650       ?dtor$0@?0???1Texmap@@UEAA@XZ@4HA 000000018002b650 f   BerconDistortion.obj
+ 0001:0002a650       ?dtor$1@?0???_GBerconNoise@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconNoise.obj
  0001:0002a650       ?dtor$1@?0??DeleteThis@BerconWood@@UEAAXXZ@4HA 000000018002b650 f   BerconWood.obj
  0001:0002a650       ?dtor$1@?0??DeleteThis@BerconGradient@@UEAAXXZ@4HA 000000018002b650 f   BerconGradient.obj
- 0001:0002a650       ?dtor$1@?0??DeleteThis@BerconNoise@@UEAAXXZ@4HA 000000018002b650 f   BerconNoise.obj
- 0001:0002a650       ?dtor$0@?0???1Texmap@@UEAA@XZ@4HA 000000018002b650 f   BerconDistortion.obj
- 0001:0002a660       ?dtor$0@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconDistortion.obj
- 0001:0002a660       ?dtor$0@?0???_GBerconNoise@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconNoise.obj
- 0001:0002a660       ?dtor$0@?0???_GBerconGradient@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconGradient.obj
- 0001:0002a660       ?dtor$0@?0??DeleteThis@BerconWood@@UEAAXXZ@4HA 000000018002b660 f   BerconWood.obj
- 0001:0002a660       ?dtor$0@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconTile.obj
+ 0001:0002a650       ?dtor$1@?0???_GBerconWood@@UEAAPEAXI@Z@4HA 000000018002b650 f   BerconWood.obj
  0001:0002a660       ?dtor$0@?0??DeleteThis@BerconGradient@@UEAAXXZ@4HA 000000018002b660 f   BerconGradient.obj
+ 0001:0002a660       ?dtor$0@?0???_GBerconGradient@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconGradient.obj
+ 0001:0002a660       ?dtor$0@?0???_GBerconDistortion@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconDistortion.obj
  0001:0002a660       ?dtor$0@?0??DeleteThis@BerconTile@@UEAAXXZ@4HA 000000018002b660 f   BerconTile.obj
- 0001:0002a660       ?dtor$0@?0???_GBerconWood@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconWood.obj
  0001:0002a660       ?dtor$0@?0??DeleteThis@BerconNoise@@UEAAXXZ@4HA 000000018002b660 f   BerconNoise.obj
- 0001:0002a670       ?dtor$0@?0???_GBerconTileClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconTile.obj
- 0001:0002a670       ?dtor$0@?0???_GBerconWoodClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconWood.obj
- 0001:0002a670       ?dtor$0@?0???_GBerconDistortionClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconDistortion.obj
- 0001:0002a670       ?dtor$0@?0???_GBerconGradientClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconGradient.obj
+ 0001:0002a660       ?dtor$0@?0???_GBerconNoise@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconNoise.obj
+ 0001:0002a660       ?dtor$0@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconTile.obj
+ 0001:0002a660       ?dtor$0@?0??DeleteThis@BerconWood@@UEAAXXZ@4HA 000000018002b660 f   BerconWood.obj
+ 0001:0002a660       ?dtor$0@?0???_GBerconWood@@UEAAPEAXI@Z@4HA 000000018002b660 f   BerconWood.obj
  0001:0002a670       ?dtor$0@?0???_GBerconNoiseClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconNoise.obj
- 0001:0002a680       ?dtor$2@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b680 f   BerconDistortion.obj
+ 0001:0002a670       ?dtor$0@?0???_GBerconWoodClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconWood.obj
+ 0001:0002a670       ?dtor$0@?0???_GBerconGradientClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconGradient.obj
+ 0001:0002a670       ?dtor$0@?0???_GBerconDistortionClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconDistortion.obj
+ 0001:0002a670       ?dtor$0@?0???_GBerconTileClassDesc@@UEAAPEAXI@Z@4HA 000000018002b670 f   BerconTile.obj
  0001:0002a680       ?dtor$2@?0???_GShadeContext@@UEAAPEAXI@Z@4HA 000000018002b680 f   BerconDistortion.obj
+ 0001:0002a680       ?dtor$2@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b680 f   BerconDistortion.obj
  0001:0002a680       ?dtor$5@?0???_GBerconSC@@UEAAPEAXI@Z@4HA 000000018002b680 f   BerconDistortion.obj
- 0001:0002a690       ?dtor$0@?0???_GBerconNoiseDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconNoise.obj
- 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconGradient.obj
- 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconGradient.obj
+ 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconTile.obj
  0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconTile.obj
+ 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconNoise.obj
+ 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconGradient.obj
+ 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconNoise.obj
+ 0001:0002a690       ?dtor$0@?0???_GBerconNoiseDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconNoise.obj
+ 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconWood.obj
+ 0001:0002a690       ?dtor$0@?0???_GBerconGradientDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconGradient.obj
+ 0001:0002a690       ?dtor$0@?0???_GBerconXYZDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconDistortion.obj
+ 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconWood.obj
+ 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconGradient.obj
  0001:0002a690       ?dtor$0@?0??DeleteThis@BerconXYZDlgProc@@UEAAXXZ@4HA 000000018002b690 f   BerconDistortion.obj
  0001:0002a690       ?dtor$0@?0???_GBerconTileDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconTile.obj
- 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconNoise.obj
- 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconNoise.obj
- 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconWood.obj
- 0001:0002a690       ?dtor$0@?0???_GBerconGradientDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconGradient.obj
  0001:0002a690       ?dtor$0@?0???_GBerconWoodDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconWood.obj
- 0001:0002a690       ?dtor$2@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconWood.obj
- 0001:0002a690       ?dtor$3@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b690 f   BerconTile.obj
- 0001:0002a690       ?dtor$0@?0???_GBerconXYZDlgProc@@UEAAPEAXI@Z@4HA 000000018002b690 f   BerconDistortion.obj
  0001:0002a6a0       ?dtor$0@?0???_GXYZ_Desc@@UEAAPEAXI@Z@4HA 000000018002b6a0 f   BerconDistortion.obj
- 0001:0002a6b0       ?dtor$0@?0???__FBerconDistortionDesc@@YAXXZ@4HA 000000018002b6b0 f   BerconDistortion.obj
  0001:0002a6b0       ?dtor$0@?0???__EBerconDistortionDesc@@YAXXZ@4HA 000000018002b6b0 f   BerconDistortion.obj
+ 0001:0002a6b0       ?dtor$0@?0???__FBerconDistortionDesc@@YAXXZ@4HA 000000018002b6b0 f   BerconDistortion.obj
  0001:0002a6c0       ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA 000000018002b6c0 f   BerconDistortion.obj
- 0001:0002a6d0       ?dtor$0@?0??Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconDistortion.obj
- 0001:0002a6d0       ?dtor$0@?0??Clone@BerconWood@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconWood.obj
- 0001:0002a6d0       ?dtor$0@?0??Clone@BerconTile@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconTile.obj
  0001:0002a6d0       ?dtor$0@?0??Clone@BerconNoise@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconNoise.obj
- 0001:0002a6e0       ?dtor$0@?0??Create@BerconTileClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconTile.obj
- 0001:0002a6e0       ?dtor$0@?0??Create@BerconGradientClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconGradient.obj
+ 0001:0002a6d0       ?dtor$0@?0??Clone@BerconTile@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconTile.obj
+ 0001:0002a6d0       ?dtor$0@?0??Clone@BerconWood@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconWood.obj
+ 0001:0002a6d0       ?dtor$0@?0??Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6d0 f   BerconDistortion.obj
  0001:0002a6e0       ?dtor$0@?0??Clone@BerconGradient@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z@4HA 000000018002b6e0 f   BerconGradient.obj
- 0001:0002a6e0       ?dtor$0@?0??Create@BerconDistortionClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconDistortion.obj
  0001:0002a6e0       ?dtor$0@?0??Create@BerconWoodClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconWood.obj
+ 0001:0002a6e0       ?dtor$0@?0??Create@BerconTileClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconTile.obj
  0001:0002a6e0       ?dtor$0@?0??Create@BerconNoiseClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconNoise.obj
+ 0001:0002a6e0       ?dtor$0@?0??Create@BerconGradientClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconGradient.obj
+ 0001:0002a6e0       ?dtor$0@?0??Create@BerconDistortionClassDesc@@UEAAPEAXH@Z@4HA 000000018002b6e0 f   BerconDistortion.obj
  0001:0002a6f0       ?dtor$0@?0??CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b6f0 f   BerconDistortion.obj
  0001:0002a700       ?dtor$1@?0??CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b700 f   BerconDistortion.obj
- 0001:0002a710       ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b710 f   BerconDistortion.obj
- 0001:0002a710       ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b710 f   BerconDistortion.obj
  0001:0002a710       ?dtor$0@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b710 f   BerconDistortion.obj
- 0001:0002a720       ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b720 f   BerconDistortion.obj
- 0001:0002a720       ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b720 f   BerconDistortion.obj
+ 0001:0002a710       ?dtor$0@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b710 f   BerconDistortion.obj
+ 0001:0002a710       ?dtor$0@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b710 f   BerconDistortion.obj
  0001:0002a720       ?dtor$1@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b720 f   BerconDistortion.obj
- 0001:0002a730       ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b730 f   BerconDistortion.obj
- 0001:0002a730       ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b730 f   BerconDistortion.obj
+ 0001:0002a720       ?dtor$1@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b720 f   BerconDistortion.obj
+ 0001:0002a720       ?dtor$1@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b720 f   BerconDistortion.obj
  0001:0002a730       ?dtor$2@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b730 f   BerconDistortion.obj
+ 0001:0002a730       ?dtor$2@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b730 f   BerconDistortion.obj
+ 0001:0002a730       ?dtor$2@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b730 f   BerconDistortion.obj
  0001:0002a750       ?dtor$6@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
- 0001:0002a750       ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
  0001:0002a750       ?dtor$6@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
- 0001:0002a750       ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
  0001:0002a750       ?dtor$3@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
  0001:0002a750       ?dtor$3@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
+ 0001:0002a750       ?dtor$3@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
+ 0001:0002a750       ?dtor$6@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b750 f   BerconDistortion.obj
  0001:0002a760       ?dtor$4@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b760 f   BerconDistortion.obj
  0001:0002a760       ?dtor$4@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b760 f   BerconDistortion.obj
  0001:0002a760       ?dtor$4@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b760 f   BerconDistortion.obj
  0001:0002a770       ?dtor$5@?0??EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b770 f   BerconDistortion.obj
- 0001:0002a770       ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b770 f   BerconDistortion.obj
  0001:0002a770       ?dtor$5@?0??EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b770 f   BerconDistortion.obj
+ 0001:0002a770       ?dtor$5@?0??EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z@4HA 000000018002b770 f   BerconDistortion.obj
+ 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconNoise.obj
  0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconTile.obj
- 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconDistortion.obj
- 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconDistortion.obj
+ 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconNoise.obj
+ 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconTile.obj
  0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconGradient.obj
  0001:0002a780       ?dtor$0@?0??SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconGradient.obj
- 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconWood.obj
- 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconNoise.obj
  0001:0002a780       ?dtor$0@?0??SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconWood.obj
- 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconTile.obj
- 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconNoise.obj
+ 0001:0002a780       ?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconDistortion.obj
+ 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconDistortion.obj
+ 0001:0002a780       ?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 000000018002b780 f   BerconWood.obj
  0001:0002a7b0       ?dtor$0@?0???0BerconGradient@@QEAA@XZ@4HA 000000018002b7b0 f   BerconGradient.obj
  0001:0002a7c0       ?dtor$1@?0???0BerconGradient@@QEAA@XZ@4HA 000000018002b7c0 f   BerconGradient.obj
  0001:0002a7e0       ?dtor$0@?0???_GIGradient@@UEAAPEAXI@Z@4HA 000000018002b7e0 f   BerconGradient.obj
- 0001:0002a7f0       ?dtor$0@?0???__EBerconGradientDesc@@YAXXZ@4HA 000000018002b7f0 f   BerconGradient.obj
  0001:0002a7f0       ?dtor$0@?0???__FBerconGradientDesc@@YAXXZ@4HA 000000018002b7f0 f   BerconGradient.obj
+ 0001:0002a7f0       ?dtor$0@?0???__EBerconGradientDesc@@YAXXZ@4HA 000000018002b7f0 f   BerconGradient.obj
  0001:0002a800       ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA 000000018002b800 f   BerconGradient.obj
  0001:0002a810       ?dtor$0@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconNoise.obj
- 0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconTile.obj
- 0001:0002a810       ?dtor$0@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconWood.obj
  0001:0002a810       ?dtor$0@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconGradient.obj
+ 0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconGradient.obj
+ 0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconTile.obj
  0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconWood.obj
+ 0001:0002a810       ?dtor$0@?0??CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconWood.obj
  0001:0002a810       ?dtor$0@?0??CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconTile.obj
  0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconNoise.obj
- 0001:0002a810       ?dtor$1@?0??CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z@4HA 000000018002b810 f   BerconGradient.obj
  0001:0002a820       ?dtor$0@?0??DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z@4HA 000000018002b820 f   BerconGradient.obj
  0001:0002a830       ?dtor$1@?0??DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z@4HA 000000018002b830 f   BerconGradient.obj
  0001:0002a840       ?dtor$2@?0??DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z@4HA 000000018002b840 f   BerconGradient.obj
  0001:0002a850       ?dtor$1@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 000000018002b850 f   BerconGradient.obj
+ 0001:0002a860       ?dtor$0@?0???0BerconWood@@QEAA@XZ@4HA 000000018002b860 f   BerconWood.obj
  0001:0002a860       ?dtor$0@?0???0BerconTile@@QEAA@XZ@4HA 000000018002b860 f   BerconTile.obj
  0001:0002a860       ?dtor$0@?0???0BerconNoise@@QEAA@XZ@4HA 000000018002b860 f   BerconNoise.obj
- 0001:0002a860       ?dtor$0@?0???0BerconWood@@QEAA@XZ@4HA 000000018002b860 f   BerconWood.obj
  0001:0002a870       ?dtor$1@?0???0BerconTile@@QEAA@XZ@4HA 000000018002b870 f   BerconTile.obj
  0001:0002a890       ?dtor$2@?0???0BerconTile@@QEAA@XZ@4HA 000000018002b890 f   BerconTile.obj
  0001:0002a8a0       ?dtor$3@?0???0BerconTile@@QEAA@XZ@4HA 000000018002b8a0 f   BerconTile.obj
+ 0001:0002a8b0       ?dtor$0@?0???1?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ@4HA 000000018002b8b0 f   BerconTile.obj
  0001:0002a8b0       ?dtor$0@?0???1TileRow@@QEAA@XZ@4HA 000000018002b8b0 f   tile.obj
  0001:0002a8b0       ?dtor$0@?0???1TilePattern@@QEAA@XZ@4HA 000000018002b8b0 f   BerconTile.obj
- 0001:0002a8b0       ?dtor$0@?0???1?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ@4HA 000000018002b8b0 f   BerconTile.obj
  0001:0002a8b0       ?dtor$0@?0???1?$_Uninitialized_backout_al@PEAVTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ@4HA 000000018002b8b0 f   tile.obj
  0001:0002a8c0       ?dtor$1@?0???1TilePattern@@QEAA@XZ@4HA 000000018002b8c0 f   BerconTile.obj
  0001:0002a8d0       ?dtor$1@?0??DeleteThis@BerconTile@@UEAAXXZ@4HA 000000018002b8d0 f   BerconTile.obj
  0001:0002a8d0       ?dtor$1@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b8d0 f   BerconTile.obj
  0001:0002a8f0       ?dtor$2@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b8f0 f   BerconTile.obj
  0001:0002a900       ?dtor$3@?0???_GBerconTile@@UEAAPEAXI@Z@4HA 000000018002b900 f   BerconTile.obj
- 0001:0002a910       ?dtor$0@?0???__FBerconTileDesc@@YAXXZ@4HA 000000018002b910 f   BerconTile.obj
  0001:0002a910       ?dtor$0@?0???__EBerconTileDesc@@YAXXZ@4HA 000000018002b910 f   BerconTile.obj
+ 0001:0002a910       ?dtor$0@?0???__FBerconTileDesc@@YAXXZ@4HA 000000018002b910 f   BerconTile.obj
  0001:0002a920       ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA 000000018002b920 f   BerconTile.obj
  0001:0002a930       ?dtor$0@?0??_Destroy@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXPEAVTileRow@@0@Z@4HA 000000018002b930 f   tile.obj
  0001:0002a930       ?dtor$2@?0??DeleteThis@BerconTile@@UEAAXXZ@4HA 000000018002b930 f   BerconTile.obj
@@ -2570,31 +2570,31 @@
  0001:0002a950       ?dtor$0@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b950 f   BerconTile.obj
  0001:0002a960       ?dtor$1@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b960 f   BerconTile.obj
  0001:0002a970       ?dtor$2@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b970 f   BerconTile.obj
- 0001:0002a990       ?dtor$3@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b990 f   BerconTile.obj
  0001:0002a990       ?dtor$6@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b990 f   BerconTile.obj
+ 0001:0002a990       ?dtor$3@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b990 f   BerconTile.obj
  0001:0002a9a0       ?dtor$4@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b9a0 f   BerconTile.obj
  0001:0002a9b0       ?dtor$5@?0??EvalColor@BerconTile@@UEAA?AVAColor@@AEAVShadeContext@@@Z@4HA 000000018002b9b0 f   BerconTile.obj
  0001:0002a9c0       ?dtor$0@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b9c0 f   BerconTile.obj
  0001:0002a9d0       ?dtor$1@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b9d0 f   BerconTile.obj
  0001:0002a9e0       ?dtor$2@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002b9e0 f   BerconTile.obj
- 0001:0002aa00       ?dtor$3@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002ba00 f   BerconTile.obj
  0001:0002aa00       ?dtor$6@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002ba00 f   BerconTile.obj
+ 0001:0002aa00       ?dtor$3@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002ba00 f   BerconTile.obj
  0001:0002aa10       ?dtor$4@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002ba10 f   BerconTile.obj
  0001:0002aa20       ?dtor$5@?0??EvalNormalPerturb@BerconTile@@UEAA?AVPoint3@@AEAVShadeContext@@@Z@4HA 000000018002ba20 f   BerconTile.obj
  0001:0002aa30       ?dtor$0@?0??Update@BerconTile@@UEAAXHAEAVInterval@@@Z@4HA 000000018002ba30 f   BerconTile.obj
- 0001:0002aa40       ?dtor$0@?0???__FBerconWoodDesc@@YAXXZ@4HA 000000018002ba40 f   BerconWood.obj
  0001:0002aa40       ?dtor$0@?0???__EBerconWoodDesc@@YAXXZ@4HA 000000018002ba40 f   BerconWood.obj
+ 0001:0002aa40       ?dtor$0@?0???__FBerconWoodDesc@@YAXXZ@4HA 000000018002ba40 f   BerconWood.obj
  0001:0002aa50       ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA 000000018002ba50 f   BerconWood.obj
  0001:0002aa60       CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 000000018002ba60 f   DllEntry.obj
  0001:0002aac0       IsolationAwareInitCommonControls$fin$0 000000018002bac0 f   DllEntry.obj
  0001:0002aaf0       WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 000000018002baf0 f   DllEntry.obj
- 0001:0002ab10       ?dtor$0@?0???__EBerconNoiseDesc@@YAXXZ@4HA 000000018002bb10 f   BerconNoise.obj
  0001:0002ab10       ?dtor$0@?0???__FBerconNoiseDesc@@YAXXZ@4HA 000000018002bb10 f   BerconNoise.obj
+ 0001:0002ab10       ?dtor$0@?0???__EBerconNoiseDesc@@YAXXZ@4HA 000000018002bb10 f   BerconNoise.obj
  0001:0002ab20       ?dtor$0@?0???__Fxyz_blk@@YAXXZ@4HA 000000018002bb20 f   BerconNoise.obj
  0001:0002ab30       ?dtor$0@?0??addKey@GradientRamp@@QEAAXHMVAColor@@PEAVTexmap@@@Z@4HA 000000018002bb30 f   GradientRamp.obj
  0001:0002ab40       IsolationAwareRegisterClassExW$fin$0 000000018002bb40 f   IGradient.obj
- 0001:0002aba0       ?catch$0@?0???$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z@4HA 000000018002bba0 f   tile.obj
  0001:0002aba0       ?catch$0@?0???$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z@4HA 000000018002bba0 f   tile.obj
+ 0001:0002aba0       ?catch$0@?0???$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z@4HA 000000018002bba0 f   tile.obj
  0001:0002abad       __catch$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z$0 000000018002bbad f   tile.obj
  0001:0002abad       __catch$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z$0 000000018002bbad f   tile.obj
  0001:0002abd0       ?catch$2@?0???$_Emplace_reallocate@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAPEAVTileRow@@QEAV2@AEBV2@@Z@4HA 000000018002bbd0 f   tile.obj
@@ -2615,47 +2615,47 @@
  0001:0002ad40       ?dtor$4@?0???_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ@4HA 000000018002bd40 f   tile.obj
  0001:0002ad50       ?dtor$0@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd50 f   tile.obj
  0001:0002ad60       ?dtor$1@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd60 f   tile.obj
- 0001:0002ad70       ?dtor$2@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd70 f   tile.obj
  0001:0002ad70       ?dtor$4@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd70 f   tile.obj
+ 0001:0002ad70       ?dtor$2@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd70 f   tile.obj
  0001:0002ad80       ?dtor$3@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd80 f   tile.obj
  0001:0002ad90       ?dtor$5@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bd90 f   tile.obj
  0001:0002ada0       ?dtor$6@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bda0 f   tile.obj
  0001:0002adb0       ?dtor$7@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bdb0 f   tile.obj
  0001:0002adc0       ?dtor$8@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bdc0 f   tile.obj
- 0001:0002add0       ?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bdd0 f   tile.obj
  0001:0002add0       ?dtor$9@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bdd0 f   tile.obj
+ 0001:0002add0       ?dtor$23@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bdd0 f   tile.obj
  0001:0002ade0       ?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bde0 f   tile.obj
  0001:0002ae20       ?dtor$11@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002be20 f   tile.obj
  0001:0002ae40       ?dtor$12@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002be40 f   tile.obj
  0001:0002ae50       ?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002be50 f   tile.obj
  0001:0002ae90       ?dtor$14@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002be90 f   tile.obj
  0001:0002aeb0       ?dtor$15@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002beb0 f   tile.obj
- 0001:0002aec0       ?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bec0 f   tile.obj
  0001:0002aec0       ?dtor$24@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bec0 f   tile.obj
+ 0001:0002aec0       ?dtor$16@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bec0 f   tile.obj
  0001:0002aed0       ?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bed0 f   tile.obj
  0001:0002af10       ?dtor$18@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf10 f   tile.obj
  0001:0002af30       ?dtor$19@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf30 f   tile.obj
+ 0001:0002af40       ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf40 f   tile.obj
  0001:0002af40       ?dtor$20@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf40 f   tile.obj
  0001:0002af40       ?dtor$28@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf40 f   tile.obj
- 0001:0002af40       ?dtor$25@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf40 f   tile.obj
- 0001:0002af60       ?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf60 f   tile.obj
  0001:0002af60       ?dtor$29@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf60 f   tile.obj
+ 0001:0002af60       ?dtor$21@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf60 f   tile.obj
  0001:0002af60       ?dtor$26@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf60 f   tile.obj
- 0001:0002af80       ?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf80 f   tile.obj
  0001:0002af80       ?dtor$30@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf80 f   tile.obj
  0001:0002af80       ?dtor$27@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf80 f   tile.obj
+ 0001:0002af80       ?dtor$22@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 000000018002bf80 f   tile.obj
  0001:0002af90       ?dtor$0@?0??setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z@4HA 000000018002bf90 f   tile.obj
  0001:0002afa0       ?dtor$1@?0??setPattern@TilePattern@@QEAAXV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z@4HA 000000018002bfa0 f   tile.obj
- 0001:0002afb0       ?dtor$0@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$2@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$8@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$7@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$6@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$5@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
  0001:0002afb0       ?dtor$4@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$1@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
+ 0001:0002afb0       ?dtor$0@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
  0001:0002afb0       ?dtor$9@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
  0001:0002afb0       ?dtor$3@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$5@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$6@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$7@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$8@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$2@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
- 0001:0002afb0       ?dtor$1@?0??setPreset@TilePattern@@QEAAXH@Z@4HA 000000018002bfb0 f   tile.obj
  0001:0002afc0       ?dtor$1@?0??tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z@4HA 000000018002bfc0 f   tile.obj
  0001:0002afe6       __scrt_is_nonwritable_in_current_image$filt$0 000000018002bfe6 f   MSVCRT:utility.obj
  0001:0002affe       ?fin$0@?0??dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z@4HA 000000018002bffe f   MSVCRT:dll_dllmain.obj
@@ -2716,8 +2716,8 @@
  0002:000011e8       $cppxdata$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z 000000018002e1e8     BerconDistortion.obj
  0002:00001210       $cppxdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 000000018002e210     BerconDistortion.obj
  0002:00001210       $cppxdata$??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ 000000018002e210     BerconDistortion.obj
- 0002:00001238       $cppxdata$??1RenderGlobalContext@@UEAA@XZ 000000018002e238     BerconDistortion.obj
  0002:00001238       $cppxdata$??1ShadeOutput@@UEAA@XZ 000000018002e238     BerconDistortion.obj
+ 0002:00001238       $cppxdata$??1RenderGlobalContext@@UEAA@XZ 000000018002e238     BerconDistortion.obj
  0002:00001260       $cppxdata$??_GRenderGlobalContext@@UEAAPEAXI@Z 000000018002e260     BerconDistortion.obj
  0002:00001288       $cppxdata$??_GShadeOutput@@UEAAPEAXI@Z 000000018002e288     BerconDistortion.obj
  0002:000012b0       $cppxdata$??1ShadeContext@@UEAA@XZ 000000018002e2b0     BerconDistortion.obj
@@ -2727,10 +2727,10 @@
  0002:00001350       $cppxdata$??0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z 000000018002e350     BerconDistortion.obj
  0002:00001378       $cppxdata$??_GXYZ_Desc@@UEAAPEAXI@Z 000000018002e378     BerconDistortion.obj
  0002:000013a0       $cppxdata$?DeleteThis@BerconXYZDlgProc@@UEAAXXZ 000000018002e3a0     BerconDistortion.obj
+ 0002:000013c8       $cppxdata$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 000000018002e3c8     BerconDistortion.obj
  0002:000013c8       $cppxdata$??_GBerconWoodDlgProc@@UEAAPEAXI@Z 000000018002e3c8     BerconWood.obj
  0002:000013c8       $cppxdata$??_GBerconTileDlgProc@@UEAAPEAXI@Z 000000018002e3c8     BerconTile.obj
  0002:000013c8       $cppxdata$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 000000018002e3c8     BerconNoise.obj
- 0002:000013c8       $cppxdata$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 000000018002e3c8     BerconDistortion.obj
  0002:000013f0       $cppxdata$??0BerconSC@@QEAA@QEAVShadeContext@@@Z 000000018002e3f0     BerconDistortion.obj
  0002:00001418       $cppxdata$??1BerconSC@@UEAA@XZ 000000018002e418     BerconDistortion.obj
  0002:00001440       $cppxdata$??_GBerconSC@@UEAAPEAXI@Z 000000018002e440     BerconDistortion.obj
@@ -2759,9 +2759,9 @@
  0002:00002b68       $cppxdata$??0BerconGradient@@QEAA@XZ 000000018002fb68     BerconGradient.obj
  0002:00002b90       $cppxdata$??_GBerconGradient@@UEAAPEAXI@Z 000000018002fb90     BerconGradient.obj
  0002:00002bb8       $cppxdata$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 000000018002fbb8     BerconGradient.obj
- 0002:00002be0       $cppxdata$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 000000018002fbe0     BerconWood.obj
- 0002:00002be0       $cppxdata$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 000000018002fbe0     BerconNoise.obj
  0002:00002be0       $cppxdata$??_GBerconGradientClassDesc@@UEAAPEAXI@Z 000000018002fbe0     BerconGradient.obj
+ 0002:00002be0       $cppxdata$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 000000018002fbe0     BerconNoise.obj
+ 0002:00002be0       $cppxdata$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 000000018002fbe0     BerconWood.obj
  0002:00002c08       $cppxdata$??__EBerconGradientDesc@@YAXXZ 000000018002fc08     BerconGradient.obj
  0002:00002c30       $cppxdata$??__FBerconGradientDesc@@YAXXZ 000000018002fc30     BerconGradient.obj
  0002:00002c58       $cppxdata$??__Fxyz_blk@@YAXXZ 000000018002fc58     BerconGradient.obj
@@ -2822,8 +2822,8 @@
  0002:000065c0       $cppxdata$??_D?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ 00000001800335c0     tile.obj
  0002:000065e8       $cppxdata$??$_Emplace_reallocate@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@QEAV21@$$QEAV21@@Z 00000001800335e8     tile.obj
  0002:00006610       $cppxdata$??$_Emplace_reallocate@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAPEAVTileRow@@QEAV2@AEBV2@@Z 0000000180033610     tile.obj
- 0002:00006638       $cppxdata$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180033638     tile.obj
  0002:00006638       $cppxdata$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180033638     tile.obj
+ 0002:00006638       $cppxdata$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180033638     tile.obj
  0002:00006660       $cppxdata$??$_Uninitialized_move@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV12@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@YAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@QEAV10@0PEAV10@AEAV?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@0@@Z 0000000180033660     tile.obj
  0002:00006688       $cppxdata$??$_Uninitialized_move@PEAVTileRow@@PEAV1@V?$allocator@VTileRow@@@std@@@std@@YAPEAVTileRow@@QEAV1@0PEAV1@AEAV?$allocator@VTileRow@@@0@@Z 0000000180033688     tile.obj
  0002:000066b0       $cppxdata$??1?$_Uninitialized_backout_al@PEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAA@XZ 00000001800336b0     tile.obj
@@ -2840,139 +2840,139 @@
  0002:00009208       $ip2state$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@AEBV012@@Z 0000000180036208     BerconDistortion.obj
  0002:00009228       $unwind$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z 0000000180036228     BerconDistortion.obj
  0002:00009240       $ip2state$??_GTabOutOfRangeException@Util@MaxSDK@@UEAAPEAXI@Z 0000000180036240     BerconDistortion.obj
- 0002:00009248       $unwind$??_GBaseInterfaceServer@@UEAAPEAXI@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$?GetParamBlockByID@BerconWood@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconWood.obj
- 0002:00009248       $unwind$??_Gexception@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
- 0002:00009248       $unwind$?SetSubTexmap@BerconGradient@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconGradient.obj
- 0002:00009248       $unwind$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
- 0002:00009248       $unwind$?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconNoise.obj
- 0002:00009248       $unwind$??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
- 0002:00009248       $unwind$?SetSubTexmap@BerconDistortion@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$?GetParamBlockByID@BerconTile@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconTile.obj
- 0002:00009248       $unwind$??_G?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAAPEAXI@Z 0000000180036248     tile.obj
- 0002:00009248       $unwind$??_G?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAAPEAXI@Z 0000000180036248     tile.obj
  0002:00009248       $unwind$??_GInterfaceServer@@UEAAPEAXI@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconWood.obj
- 0002:00009248       $unwind$?GetParamBlockByID@BerconNoise@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconNoise.obj
- 0002:00009248       $unwind$?Set@BitArray@@QEAAXH@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$?SetSubTexmap@BerconTile@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconTile.obj
+ 0002:00009248       $unwind$??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
+ 0002:00009248       $unwind$?SetSubTexmap@BerconGradient@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconGradient.obj
+ 0002:00009248       $unwind$?GetParamBlockByID@BerconGradient@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconGradient.obj
  0002:00009248       $unwind$_RTC_Initialize    0000000180036248     MSVCRT:initsect.obj
  0002:00009248       $unwind$?ScreenUV@BerconSC@@UEAAXAEAVPoint2@@0@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$_RTC_Terminate     0000000180036248     MSVCRT:initsect.obj
+ 0002:00009248       $unwind$?SetSubTexmap@BerconWood@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconWood.obj
+ 0002:00009248       $unwind$??_G?$basic_stringstream@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAAPEAXI@Z 0000000180036248     tile.obj
  0002:00009248       $unwind$?GetParamBlockByID@BerconDistortion@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconDistortion.obj
- 0002:00009248       $unwind$?GetParamBlockByID@BerconGradient@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconGradient.obj
- 0002:00009254       $unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 0000000180036254     BerconDistortion.obj
+ 0002:00009248       $unwind$?GetParamBlockByID@BerconNoise@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconNoise.obj
+ 0002:00009248       $unwind$?GetParamBlockByID@BerconWood@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconWood.obj
+ 0002:00009248       $unwind$??_GBaseInterfaceServer@@UEAAPEAXI@Z 0000000180036248     BerconDistortion.obj
+ 0002:00009248       $unwind$??_G?$basic_stringbuf@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@UEAAPEAXI@Z 0000000180036248     tile.obj
+ 0002:00009248       $unwind$?GetParamBlockByID@BerconTile@@UEAAPEAVIParamBlock2@@F@Z 0000000180036248     BerconTile.obj
+ 0002:00009248       $unwind$?Set@BitArray@@QEAAXH@Z 0000000180036248     BerconDistortion.obj
+ 0002:00009248       $unwind$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
+ 0002:00009248       $unwind$?SetSubTexmap@BerconNoise@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconNoise.obj
+ 0002:00009248       $unwind$??_Gexception@std@@UEAAPEAXI@Z 0000000180036248     MSVCRT:throw_bad_alloc.obj
+ 0002:00009248       $unwind$?SetSubTexmap@BerconTile@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconTile.obj
+ 0002:00009248       $unwind$_RTC_Terminate     0000000180036248     MSVCRT:initsect.obj
+ 0002:00009248       $unwind$?SetSubTexmap@BerconDistortion@@UEAAXHPEAVTexmap@@@Z 0000000180036248     BerconDistortion.obj
  0002:00009254       $unwind$??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ 0000000180036254     BerconDistortion.obj
+ 0002:00009254       $unwind$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 0000000180036254     BerconDistortion.obj
  0002:00009268       $ip2state$??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ 0000000180036268     BerconDistortion.obj
  0002:00009268       $ip2state$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 0000000180036268     BerconDistortion.obj
- 0002:00009270       $unwind$?RefractVector@BerconSC@@UEAA?AVPoint3@@M@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?UVWNormal@BerconSC@@UEAA?AVPoint3@@H@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$_onexit            0000000180036270     MSVCRT:utility.obj
- 0002:00009270       $unwind$??_Gtype_info@@UEAAPEAXI@Z 0000000180036270     MSVCRT:std_type_info_static.obj
- 0002:00009270       $unwind$?ScreenCoord@BerconSC@@UEAA?AVIPoint2@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?DPObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?OrigNormal@ShadeContext@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?OrigView@ShadeContext@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?PointTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?ReflectVector@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?PointFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$??2@YAPEAX_K@Z     0000000180036270     MSVCRT:new_scalar.obj
- 0002:00009270       $unwind$?VectorTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?_Tidy@?$vector@MV?$allocator@M@std@@@std@@AEAAXXZ 0000000180036270     tile.obj
- 0002:00009270       $unwind$?gradSelKey@BerconGradient@@UEAAXXZ 0000000180036270     BerconGradient.obj
- 0002:00009270       $unwind$?PObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?VectorFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z 0000000180036270     noise.obj
- 0002:00009270       $unwind$?SurfacePtScreen@BerconSC@@UEAA?AVPoint2@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?GetClassName@BerconDistortion@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?GetClassName@BerconTile@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconTile.obj
- 0002:00009270       $unwind$?CamPos@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
  0002:00009270       $unwind$?UVW@BerconSC@@UEAA?AVPoint3@@H@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?ObjectBox@BerconSC@@UEAA?AVBox3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?DPObj@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$IsolationAwarePrivatenPgViNgRzlnPgpgk 0000000180036270     DllEntry.obj
- 0002:00009270       $unwind$??0exception@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
- 0002:00009270       $unwind$?VectorToNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?GNormal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?SetThing@BerconTileDlgProc@@UEAAXPEAVReferenceTarget@@@Z 0000000180036270     BerconTile.obj
- 0002:00009270       $unwind$?GetClassName@BerconNoise@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconNoise.obj
- 0002:00009270       $unwind$?V@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$??0bad_array_new_length@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
- 0002:00009270       $unwind$?OrigNormal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$??0bad_alloc@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
- 0002:00009270       $unwind$?DiscardTexHandle@BerconWood@@QEAAXXZ 0000000180036270     BerconWood.obj
- 0002:00009270       $unwind$?leftUp@GradientRamp@@QEAAXHH_N00@Z 0000000180036270     GradientRamp.obj
- 0002:00009270       $unwind$?BarycentricCoords@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?DP@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?_Tidy_deallocate@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ 0000000180036270     BerconTile.obj
  0002:00009270       $unwind$?DUVW@BerconSC@@UEAA?AVPoint3@@H@Z 0000000180036270     BerconDistortion.obj
  0002:00009270       $unwind$DllMain            0000000180036270     DllEntry.obj
- 0002:00009270       $unwind$?VectorFromNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$__scrt_uninitialize_crt 0000000180036270     MSVCRT:utility.obj
- 0002:00009270       $unwind$??_GParamMap2UserDlgProc@@UEAAPEAXI@Z 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$?_Tidy_deallocate@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAXXZ 0000000180036270     BerconTile.obj
- 0002:00009270       $unwind$?DiffuseIllum@BerconSC@@UEAA?AVColor@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$__scrt_initialize_crt 0000000180036270     MSVCRT:utility.obj
- 0002:00009270       $unwind$?DiscardTexHandle@BerconTile@@QEAAXXZ 0000000180036270     BerconTile.obj
- 0002:00009270       $unwind$?popup@GradientRamp@@QEAAXHHH@Z 0000000180036270     GradientRamp.obj
- 0002:00009270       $unwind$?DiscardTexHandle@BerconGradient@@QEAAXXZ 0000000180036270     BerconGradient.obj
- 0002:00009270       $unwind$?DiscardTexHandle@BerconNoise@@QEAAXXZ 0000000180036270     BerconNoise.obj
- 0002:00009270       $unwind$?Normal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009270       $unwind$__scrt_release_startup_lock 0000000180036270     MSVCRT:utility.obj
- 0002:00009270       $unwind$?GetClassName@BerconWood@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconWood.obj
- 0002:00009270       $unwind$?GetClassName@BerconGradient@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconGradient.obj
  0002:00009270       $unwind$?OrigView@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
- 0002:00009278       $unwind$?LibClassDesc@@YAPEAVClassDesc@@H@Z 0000000180036278     DllEntry.obj
- 0002:00009278       $unwind$?GetString@@YAPEA_WH@Z 0000000180036278     DllEntry.obj
- 0002:00009278       $unwind$__scrt_initialize_default_local_stdio_options 0000000180036278     MSVCRT:default_local_stdio_options.obj
- 0002:00009278       $unwind$?deallocate@?$allocator@_W@std@@QEAAXQEA_W_K@Z 0000000180036278     tile.obj
- 0002:00009278       $unwind$__scrt_dllmain_before_initialize_c 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?_Xlength@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@CAXXZ 0000000180036278     tile.obj
+ 0002:00009270       $unwind$?GetClassName@BerconNoise@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconNoise.obj
+ 0002:00009270       $unwind$?V@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?ReflectVector@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?_Tidy@?$vector@MV?$allocator@M@std@@@std@@AEAAXXZ 0000000180036270     tile.obj
+ 0002:00009270       $unwind$?UVWNormal@BerconSC@@UEAA?AVPoint3@@H@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?DP@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$__scrt_uninitialize_crt 0000000180036270     MSVCRT:utility.obj
+ 0002:00009270       $unwind$??0exception@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
+ 0002:00009270       $unwind$__scrt_release_startup_lock 0000000180036270     MSVCRT:utility.obj
+ 0002:00009270       $unwind$?gradSelKey@BerconGradient@@UEAAXXZ 0000000180036270     BerconGradient.obj
+ 0002:00009270       $unwind$?DiscardTexHandle@BerconTile@@QEAAXXZ 0000000180036270     BerconTile.obj
+ 0002:00009270       $unwind$??0bad_alloc@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
+ 0002:00009270       $unwind$?PointTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?DiscardTexHandle@BerconWood@@QEAAXXZ 0000000180036270     BerconWood.obj
+ 0002:00009270       $unwind$?SetThing@BerconTileDlgProc@@UEAAXPEAVReferenceTarget@@@Z 0000000180036270     BerconTile.obj
+ 0002:00009270       $unwind$?GNormal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?alterUVW@Noise@@SAXAEAVPoint3@@H@Z 0000000180036270     noise.obj
+ 0002:00009270       $unwind$?DPObj@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?PointFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?ScreenCoord@BerconSC@@UEAA?AVIPoint2@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?VectorTo@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?OrigNormal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?leftUp@GradientRamp@@QEAAXHH_N00@Z 0000000180036270     GradientRamp.obj
+ 0002:00009270       $unwind$?VectorFrom@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?VectorToNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?popup@GradientRamp@@QEAAXHHH@Z 0000000180036270     GradientRamp.obj
+ 0002:00009270       $unwind$?VectorFromNoScale@BerconSC@@UEAA?AVPoint3@@AEBV2@W4RefFrame@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?GetClassName@BerconTile@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconTile.obj
+ 0002:00009270       $unwind$_onexit            0000000180036270     MSVCRT:utility.obj
+ 0002:00009270       $unwind$IsolationAwarePrivatenPgViNgRzlnPgpgk 0000000180036270     DllEntry.obj
+ 0002:00009270       $unwind$?GetClassName@BerconWood@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconWood.obj
+ 0002:00009270       $unwind$?BarycentricCoords@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?DiffuseIllum@BerconSC@@UEAA?AVColor@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?GetClassName@BerconDistortion@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$??2@YAPEAX_K@Z     0000000180036270     MSVCRT:new_scalar.obj
+ 0002:00009270       $unwind$??_Gtype_info@@UEAAPEAXI@Z 0000000180036270     MSVCRT:std_type_info_static.obj
+ 0002:00009270       $unwind$??0bad_array_new_length@std@@QEAA@AEBV01@@Z 0000000180036270     MSVCRT:throw_bad_alloc.obj
+ 0002:00009270       $unwind$?DPObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$__scrt_initialize_crt 0000000180036270     MSVCRT:utility.obj
+ 0002:00009270       $unwind$?OrigNormal@ShadeContext@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?DiscardTexHandle@BerconNoise@@QEAAXXZ 0000000180036270     BerconNoise.obj
+ 0002:00009270       $unwind$??_GParamMap2UserDlgProc@@UEAAPEAXI@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?RefractVector@BerconSC@@UEAA?AVPoint3@@M@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?ObjectBox@BerconSC@@UEAA?AVBox3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?IsSubClassOf@Animatable@@UEAAHVClass_ID@@@Z 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?DiscardTexHandle@BerconGradient@@QEAAXXZ 0000000180036270     BerconGradient.obj
+ 0002:00009270       $unwind$?OrigView@ShadeContext@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?Normal@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?SurfacePtScreen@BerconSC@@UEAA?AVPoint2@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?PObjRelBox@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
+ 0002:00009270       $unwind$?GetClassName@BerconGradient@@UEAAXAEAVWStr@@@Z 0000000180036270     BerconGradient.obj
+ 0002:00009270       $unwind$?CamPos@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036270     BerconDistortion.obj
  0002:00009278       $unwind$?GetInterface@MtlBase@@UEAAPEAVBaseInterface@@VInterface_ID@@@Z 0000000180036278     BerconDistortion.obj
+ 0002:00009278       $unwind$__scrt_initialize_default_local_stdio_options 0000000180036278     MSVCRT:default_local_stdio_options.obj
  0002:00009278       $unwind$__scrt_dllmain_after_initialize_c 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?_Xran@?$_String_val@U?$_Simple_types@_W@std@@@std@@SAXXZ 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?allocate@?$allocator@M@std@@QEAAPEAM_K@Z 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?_Xlength@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@CAXXZ 0000000180036278     tile.obj
+ 0002:00009278       $unwind$__scrt_dllmain_before_initialize_c 0000000180036278     MSVCRT:utility.obj
  0002:00009278       $unwind$?NotifyDependents@ReferenceMaker@@EEAA?AW4RefResult@@AEBVInterval@@_KIKHPEAVReferenceTarget@@@Z 0000000180036278     BerconDistortion.obj
- 0002:00009278       $unwind$__scrt_dllmain_uninitialize_c 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?deallocate@?$allocator@VTileRow@@@std@@QEAAXQEAVTileRow@@_K@Z 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?SetDlgThing@BerconWood@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconWood.obj
  0002:00009278       $unwind$__scrt_dllmain_uninitialize_critical 0000000180036278     MSVCRT:utility.obj
  0002:00009278       $unwind$__scrt_dllmain_crt_thread_attach 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$__scrt_dllmain_crt_thread_detach 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?SetDlgThing@BerconGradient@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconGradient.obj
- 0002:00009278       $unwind$atexit             0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?_Xlength@?$vector@MV?$allocator@M@std@@@std@@CAXXZ 0000000180036278     tile.obj
- 0002:00009278       $unwind$__scrt_acquire_startup_lock 0000000180036278     MSVCRT:utility.obj
- 0002:00009278       $unwind$?dllmain_crt_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 0000000180036278     MSVCRT:dll_dllmain.obj
- 0002:00009278       $unwind$?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z 0000000180036278     BerconTile.obj
  0002:00009278       $unwind$?deallocate@?$allocator@M@std@@QEAAXQEAM_K@Z 0000000180036278     tile.obj
- 0002:00009278       $unwind$?deallocate@?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@QEAAXQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@_K@Z 0000000180036278     tile.obj
- 0002:00009278       $unwind$?SetDlgThing@BerconWood@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconWood.obj
- 0002:00009278       $unwind$?allocate@?$allocator@M@std@@QEAAPEAM_K@Z 0000000180036278     tile.obj
- 0002:00009278       $unwind$?SetDlgThing@BerconNoise@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconNoise.obj
- 0002:00009278       $unwind$?_Xlen@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@SAXXZ 0000000180036278     BerconTile.obj
+ 0002:00009278       $unwind$__scrt_dllmain_crt_thread_detach 0000000180036278     MSVCRT:utility.obj
  0002:00009278       $unwind$?SetDlgThing@BerconTile@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconTile.obj
+ 0002:00009278       $unwind$atexit             0000000180036278     MSVCRT:utility.obj
+ 0002:00009278       $unwind$__scrt_acquire_startup_lock 0000000180036278     MSVCRT:utility.obj
+ 0002:00009278       $unwind$?_Xran@?$_String_val@U?$_Simple_types@_W@std@@@std@@SAXXZ 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?SetDlgThing@BerconGradient@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconGradient.obj
+ 0002:00009278       $unwind$?deallocate@?$allocator@_W@std@@QEAAXQEA_W_K@Z 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?dllmain_crt_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 0000000180036278     MSVCRT:dll_dllmain.obj
+ 0002:00009278       $unwind$?deallocate@?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@QEAAXQEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@2@_K@Z 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?_Xlength@?$vector@MV?$allocator@M@std@@@std@@CAXXZ 0000000180036278     tile.obj
  0002:00009278       $unwind$?_Xlength@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@CAXXZ 0000000180036278     tile.obj
+ 0002:00009278       $unwind$?SetDlgThing@BerconNoise@@UEAAHPEAVParamDlg@@@Z 0000000180036278     BerconNoise.obj
+ 0002:00009278       $unwind$?GetString@@YAPEA_WH@Z 0000000180036278     DllEntry.obj
+ 0002:00009278       $unwind$?allocate@?$allocator@_W@std@@QEAAPEA_W_K@Z 0000000180036278     BerconTile.obj
+ 0002:00009278       $unwind$?LibClassDesc@@YAPEAVClassDesc@@H@Z 0000000180036278     DllEntry.obj
  0002:00009278       $unwind$?LibDescription@@YAPEB_WXZ 0000000180036278     DllEntry.obj
+ 0002:00009278       $unwind$?_Xlen@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@SAXXZ 0000000180036278     BerconTile.obj
+ 0002:00009278       $unwind$?deallocate@?$allocator@VTileRow@@@std@@QEAAXQEAVTileRow@@_K@Z 0000000180036278     tile.obj
+ 0002:00009278       $unwind$__scrt_dllmain_uninitialize_c 0000000180036278     MSVCRT:utility.obj
  0002:00009280       $unwind$?NotifyForeground@ReferenceTarget@@UEAAXH@Z 0000000180036280     BerconDistortion.obj
  0002:0000928c       $unwind$?GetInterfaceAt@ClassDesc@@UEAAPEAVFPInterface@@H@Z 000000018003628c     BerconDistortion.obj
- 0002:00009298       $unwind$??1RenderGlobalContext@@UEAA@XZ 0000000180036298     BerconDistortion.obj
  0002:00009298       $unwind$??1ShadeOutput@@UEAA@XZ 0000000180036298     BerconDistortion.obj
- 0002:000092a8       $stateUnwindMap$??_GShadeOutput@@UEAAPEAXI@Z 00000001800362a8     BerconDistortion.obj
- 0002:000092a8       $stateUnwindMap$??_GRenderGlobalContext@@UEAAPEAXI@Z 00000001800362a8     BerconDistortion.obj
- 0002:000092a8       $stateUnwindMap$??1RenderGlobalContext@@UEAA@XZ 00000001800362a8     BerconDistortion.obj
+ 0002:00009298       $unwind$??1RenderGlobalContext@@UEAA@XZ 0000000180036298     BerconDistortion.obj
  0002:000092a8       $stateUnwindMap$??1ShadeOutput@@UEAA@XZ 00000001800362a8     BerconDistortion.obj
- 0002:000092b0       $ip2state$??1ShadeOutput@@UEAA@XZ 00000001800362b0     BerconDistortion.obj
+ 0002:000092a8       $stateUnwindMap$??1RenderGlobalContext@@UEAA@XZ 00000001800362a8     BerconDistortion.obj
+ 0002:000092a8       $stateUnwindMap$??_GRenderGlobalContext@@UEAAPEAXI@Z 00000001800362a8     BerconDistortion.obj
+ 0002:000092a8       $stateUnwindMap$??_GShadeOutput@@UEAAPEAXI@Z 00000001800362a8     BerconDistortion.obj
  0002:000092b0       $ip2state$??1RenderGlobalContext@@UEAA@XZ 00000001800362b0     BerconDistortion.obj
+ 0002:000092b0       $ip2state$??1ShadeOutput@@UEAA@XZ 00000001800362b0     BerconDistortion.obj
  0002:000092b8       $unwind$??_GRenderGlobalContext@@UEAAPEAXI@Z 00000001800362b8     BerconDistortion.obj
  0002:000092d0       $ip2state$??_GRenderGlobalContext@@UEAAPEAXI@Z 00000001800362d0     BerconDistortion.obj
  0002:000092d8       $unwind$??_GShadeOutput@@UEAAPEAXI@Z 00000001800362d8     BerconDistortion.obj
  0002:000092f0       $ip2state$??_GShadeOutput@@UEAAPEAXI@Z 00000001800362f0     BerconDistortion.obj
  0002:000092f8       $unwind$?EvalMono@BerconTile@@UEAAMAEAVShadeContext@@@Z 00000001800362f8     BerconTile.obj
+ 0002:000092f8       $unwind$?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z 00000001800362f8     noise.obj
+ 0002:000092f8       $unwind$?SetView@BerconSC@@UEAAXVPoint3@@@Z 00000001800362f8     BerconDistortion.obj
  0002:000092f8       $unwind$?EvalMono@BerconWood@@UEAAMAEAVShadeContext@@@Z 00000001800362f8     BerconWood.obj
  0002:000092f8       $unwind$?RayDiam@ShadeContext@@UEAAMXZ 00000001800362f8     BerconDistortion.obj
  0002:000092f8       $unwind$?SetNormal@BerconSC@@UEAAXVPoint3@@@Z 00000001800362f8     BerconDistortion.obj
  0002:000092f8       $unwind$?EvalMono@BerconNoise@@UEAAMAEAVShadeContext@@@Z 00000001800362f8     BerconNoise.obj
- 0002:000092f8       $unwind$?SetView@BerconSC@@UEAAXVPoint3@@@Z 00000001800362f8     BerconDistortion.obj
- 0002:000092f8       $unwind$?noise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z 00000001800362f8     noise.obj
  0002:00009300       $unwind$??1ShadeContext@@UEAA@XZ 0000000180036300     BerconDistortion.obj
  0002:00009310       $stateUnwindMap$??1ShadeContext@@UEAA@XZ 0000000180036310     BerconDistortion.obj
  0002:00009328       $ip2state$??1ShadeContext@@UEAA@XZ 0000000180036328     BerconDistortion.obj
@@ -2994,32 +2994,32 @@
  0002:00009428       $unwind$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 0000000180036428     BerconDistortion.obj
  0002:00009438       $chain$1$?DlgProc@BerconXYZDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 0000000180036438     BerconDistortion.obj
  0002:00009450       $unwind$?DeleteThis@BerconXYZDlgProc@@UEAAXXZ 0000000180036450     BerconDistortion.obj
- 0002:00009460       $stateUnwindMap$??_GBerconGradientDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconGradient.obj
- 0002:00009460       $stateUnwindMap$?DeleteThis@BerconXYZDlgProc@@UEAAXXZ 0000000180036460     BerconDistortion.obj
- 0002:00009460       $stateUnwindMap$??_GBerconWoodDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconWood.obj
  0002:00009460       $stateUnwindMap$??_GBerconTileDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconTile.obj
- 0002:00009460       $stateUnwindMap$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconNoise.obj
+ 0002:00009460       $stateUnwindMap$??_GBerconGradientDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconGradient.obj
+ 0002:00009460       $stateUnwindMap$??_GBerconWoodDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconWood.obj
+ 0002:00009460       $stateUnwindMap$?DeleteThis@BerconXYZDlgProc@@UEAAXXZ 0000000180036460     BerconDistortion.obj
  0002:00009460       $stateUnwindMap$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconDistortion.obj
+ 0002:00009460       $stateUnwindMap$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 0000000180036460     BerconNoise.obj
  0002:00009468       $ip2state$?DeleteThis@BerconXYZDlgProc@@UEAAXXZ 0000000180036468     BerconDistortion.obj
  0002:00009470       $unwind$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 0000000180036470     BerconDistortion.obj
  0002:00009470       $unwind$??_GBerconWoodDlgProc@@UEAAPEAXI@Z 0000000180036470     BerconWood.obj
- 0002:00009470       $unwind$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 0000000180036470     BerconNoise.obj
  0002:00009470       $unwind$??_GBerconTileDlgProc@@UEAAPEAXI@Z 0000000180036470     BerconTile.obj
+ 0002:00009470       $unwind$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 0000000180036470     BerconNoise.obj
  0002:00009480       $ip2state$??_GBerconTileDlgProc@@UEAAPEAXI@Z 0000000180036480     BerconTile.obj
  0002:00009480       $ip2state$??_GBerconWoodDlgProc@@UEAAPEAXI@Z 0000000180036480     BerconWood.obj
- 0002:00009480       $ip2state$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 0000000180036480     BerconDistortion.obj
  0002:00009480       $ip2state$??_GBerconNoiseDlgProc@@UEAAPEAXI@Z 0000000180036480     BerconNoise.obj
+ 0002:00009480       $ip2state$??_GBerconXYZDlgProc@@UEAAPEAXI@Z 0000000180036480     BerconDistortion.obj
  0002:00009488       $unwind$??0BerconSC@@QEAA@QEAVShadeContext@@@Z 0000000180036488     BerconDistortion.obj
  0002:00009498       $stateUnwindMap$??0BerconSC@@QEAA@QEAVShadeContext@@@Z 0000000180036498     BerconDistortion.obj
  0002:000094f0       $ip2state$??0BerconSC@@QEAA@QEAVShadeContext@@@Z 00000001800364f0     BerconDistortion.obj
+ 0002:00009540       $unwind$?getNormal@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@H@Z 0000000180036540     BerconTile.obj
+ 0002:00009540       $unwind$?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z 0000000180036540     BerconDistortion.obj
+ 0002:00009540       $unwind$?getColor@BerconTile@@QEAA?AVAColor@@AEAVShadeContext@@H@Z 0000000180036540     BerconTile.obj
  0002:00009540       $unwind$?limitedNoise@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z 0000000180036540     noise.obj
  0002:00009540       $unwind$?setHWND@GradientRamp@@QEAAXPEAUHWND__@@@Z 0000000180036540     GradientRamp.obj
- 0002:00009540       $unwind$?P@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036540     BerconDistortion.obj
  0002:00009540       $unwind$?EvalEnvironMap@BerconSC@@UEAA?AVAColor@@PEAVTexmap@@VPoint3@@@Z 0000000180036540     BerconDistortion.obj
- 0002:00009540       $unwind$?EvalGlobalEnvironMap@BerconSC@@UEAA?AVAColor@@VPoint3@@@Z 0000000180036540     BerconDistortion.obj
- 0002:00009540       $unwind$?getNormal@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@H@Z 0000000180036540     BerconTile.obj
- 0002:00009540       $unwind$?getColor@BerconTile@@QEAA?AVAColor@@AEAVShadeContext@@H@Z 0000000180036540     BerconTile.obj
  0002:00009540       $unwind$?PObj@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036540     BerconDistortion.obj
+ 0002:00009540       $unwind$?P@BerconSC@@UEAA?AVPoint3@@XZ 0000000180036540     BerconDistortion.obj
  0002:00009548       $unwind$??1BerconSC@@UEAA@XZ 0000000180036548     BerconDistortion.obj
  0002:00009558       $stateUnwindMap$??1BerconSC@@UEAA@XZ 0000000180036558     BerconDistortion.obj
  0002:00009588       $ip2state$??1BerconSC@@UEAA@XZ 0000000180036588     BerconDistortion.obj
@@ -3030,15 +3030,15 @@
  0002:00009624       $chain$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036624     BerconDistortion.obj
  0002:00009640       $chain$3$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036640     BerconDistortion.obj
  0002:00009650       $unwind$?ActivateTexDisplay@BerconGradient@@UEAAXH@Z 0000000180036650     BerconGradient.obj
- 0002:00009650       $unwind$?ActivateTexDisplay@BerconNoise@@UEAAXH@Z 0000000180036650     BerconNoise.obj
  0002:00009650       $unwind$?ActivateTexDisplay@BerconDistortion@@UEAAXH@Z 0000000180036650     BerconDistortion.obj
- 0002:00009650       $unwind$?ActivateTexDisplay@BerconTile@@UEAAXH@Z 0000000180036650     BerconTile.obj
  0002:00009650       $unwind$?ActivateTexDisplay@BerconWood@@UEAAXH@Z 0000000180036650     BerconWood.obj
+ 0002:00009650       $unwind$?ActivateTexDisplay@BerconNoise@@UEAAXH@Z 0000000180036650     BerconNoise.obj
+ 0002:00009650       $unwind$?ActivateTexDisplay@BerconTile@@UEAAXH@Z 0000000180036650     BerconTile.obj
  0002:00009658       $unwind$?GetActiveTexHandle@BerconWood@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconWood.obj
- 0002:00009658       $unwind$?GetActiveTexHandle@BerconTile@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconTile.obj
+ 0002:00009658       $unwind$?GetActiveTexHandle@BerconNoise@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconNoise.obj
  0002:00009658       $unwind$?GetActiveTexHandle@BerconGradient@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconGradient.obj
  0002:00009658       $unwind$?GetActiveTexHandle@BerconDistortion@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconDistortion.obj
- 0002:00009658       $unwind$?GetActiveTexHandle@BerconNoise@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconNoise.obj
+ 0002:00009658       $unwind$?GetActiveTexHandle@BerconTile@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036658     BerconTile.obj
  0002:0000966c       $chain$0$?GetActiveTexHandle@BerconDistortion@@UEAA_KHAEAVTexHandleMaker@@@Z 000000018003666c     BerconDistortion.obj
  0002:00009680       $chain$1$?GetActiveTexHandle@BerconDistortion@@UEAA_KHAEAVTexHandleMaker@@@Z 0000000180036680     BerconDistortion.obj
  0002:00009690       $unwind$?CreateParamDlg@BerconDistortion@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036690     BerconDistortion.obj
@@ -3051,61 +3051,61 @@
  0002:00009720       $chain$4$?Update@BerconDistortion@@UEAAXHAEAVInterval@@@Z 0000000180036720     BerconDistortion.obj
  0002:00009730       $unwind$?Reset@BerconDistortion@@UEAAXXZ 0000000180036730     BerconDistortion.obj
  0002:00009730       $unwind$?reset@GradientRamp@@QEAAXXZ 0000000180036730     GradientRamp.obj
- 0002:0000973c       $unwind$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z 000000018003673c     BerconDistortion.obj
- 0002:0000973c       $unwind$?Validity@BerconWood@@UEAA?AVInterval@@H@Z 000000018003673c     BerconWood.obj
  0002:0000973c       $unwind$?Validity@BerconGradient@@UEAA?AVInterval@@H@Z 000000018003673c     BerconGradient.obj
+ 0002:0000973c       $unwind$?Validity@BerconDistortion@@UEAA?AVInterval@@H@Z 000000018003673c     BerconDistortion.obj
+ 0002:0000973c       $unwind$?Validity@BerconTile@@UEAA?AVInterval@@H@Z 000000018003673c     BerconTile.obj
+ 0002:0000973c       $unwind$?Validity@BerconWood@@UEAA?AVInterval@@H@Z 000000018003673c     BerconWood.obj
  0002:0000973c       $unwind$?Validity@BerconNoise@@UEAA?AVInterval@@H@Z 000000018003673c     BerconNoise.obj
  0002:0000973c       $unwind$?keyNumChanged@BerconGradient@@QEAAXH@Z 000000018003673c     BerconGradient.obj
- 0002:0000973c       $unwind$?Validity@BerconTile@@UEAA?AVInterval@@H@Z 000000018003673c     BerconTile.obj
  0002:00009748       $unwind$?GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036748     BerconDistortion.obj
- 0002:00009758       $stateUnwindMap$?SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z 0000000180036758     BerconGradient.obj
  0002:00009758       $stateUnwindMap$?SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z 0000000180036758     BerconTile.obj
- 0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z 0000000180036758     BerconTile.obj
+ 0002:00009758       $stateUnwindMap$?SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036758     BerconDistortion.obj
  0002:00009758       $stateUnwindMap$?SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z 0000000180036758     BerconNoise.obj
  0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z 0000000180036758     BerconNoise.obj
- 0002:00009758       $stateUnwindMap$?SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036758     BerconDistortion.obj
- 0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036758     BerconDistortion.obj
- 0002:00009758       $stateUnwindMap$?SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z 0000000180036758     BerconWood.obj
+ 0002:00009758       $stateUnwindMap$?SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z 0000000180036758     BerconGradient.obj
  0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z 0000000180036758     BerconWood.obj
+ 0002:00009758       $stateUnwindMap$?SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z 0000000180036758     BerconWood.obj
+ 0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036758     BerconDistortion.obj
+ 0002:00009758       $stateUnwindMap$?GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z 0000000180036758     BerconTile.obj
  0002:00009760       $ip2state$?GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z 0000000180036760     BerconDistortion.obj
- 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconDistortion.obj
- 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconWood.obj
- 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconNoise.obj
- 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconTile.obj
- 0002:00009770       $unwind$?dtor$1@?0??tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z@4HA 0000000180036770     tile.obj
- 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconGradient.obj
- 0002:00009770       $unwind$?fin$0@?0??dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z@4HA 0000000180036770     MSVCRT:dll_dllmain.obj
+ 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconGradient.obj
+ 0002:00009770       $unwind$?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
+ 0002:00009770       $unwind$?fin$0@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 0000000180036770     MSVCRT:dll_dllmain.obj
  0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconDistortion.obj
+ 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconWood.obj
+ 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconNoise.obj
+ 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconNoise.obj
+ 0002:00009770       $unwind$?dtor$1@?0??tokenize@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@2@0@Z@4HA 0000000180036770     tile.obj
  0002:00009770       $unwind$?dtor$1@?0???0BerconGradient@@QEAA@XZ@4HA 0000000180036770     BerconGradient.obj
  0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconTile.obj
- 0002:00009770       $unwind$?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
- 0002:00009770       $unwind$?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
- 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconGradient.obj
- 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconNoise.obj
- 0002:00009770       $unwind$?dtor$10@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
+ 0002:00009770       $unwind$?fin$0@?0??dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z@4HA 0000000180036770     MSVCRT:dll_dllmain.obj
+ 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconGradient.obj
  0002:00009770       $unwind$IsolationAwareInitCommonControls$fin$0 0000000180036770     DllEntry.obj
- 0002:00009770       $unwind$?dtor$0@?0??SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconWood.obj
- 0002:00009770       $unwind$?fin$0@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 0000000180036770     MSVCRT:dll_dllmain.obj
+ 0002:00009770       $unwind$?dtor$13@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
+ 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconTile.obj
+ 0002:00009770       $unwind$?dtor$17@?0??parsePattern@@YAHV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAVTilePattern@@@Z@4HA 0000000180036770     tile.obj
+ 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconDistortion.obj
+ 0002:00009770       $unwind$?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180036770     BerconWood.obj
  0002:00009778       $unwind$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z 0000000180036778     BerconDistortion.obj
  0002:00009798       $stateUnwindMap$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z 0000000180036798     BerconDistortion.obj
- 0002:00009798       $stateUnwindMap$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036798     BerconDistortion.obj
  0002:00009798       $stateUnwindMap$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z 0000000180036798     BerconDistortion.obj
+ 0002:00009798       $stateUnwindMap$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036798     BerconDistortion.obj
  0002:000097d0       $ip2state$?EvalColor@BerconDistortion@@UEAA?AVAColor@@AEAVShadeContext@@@Z 00000001800367d0     BerconDistortion.obj
  0002:000097f8       $unwind$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z 00000001800367f8     BerconDistortion.obj
  0002:00009820       $ip2state$?EvalMono@BerconDistortion@@UEAAMAEAVShadeContext@@@Z 0000000180036820     BerconDistortion.obj
  0002:00009848       $unwind$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036848     BerconDistortion.obj
  0002:00009868       $ip2state$?EvalNormalPerturb@BerconDistortion@@UEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180036868     BerconDistortion.obj
  0002:00009890       $unwind$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 0000000180036890     BerconDistortion.obj
+ 0002:000098b0       $stateUnwindMap$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconDistortion.obj
+ 0002:000098b0       $stateUnwindMap$?Clone@BerconTile@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconTile.obj
  0002:000098b0       $stateUnwindMap$?Clone@BerconWood@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconWood.obj
  0002:000098b0       $stateUnwindMap$?Clone@BerconNoise@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconNoise.obj
- 0002:000098b0       $stateUnwindMap$?Clone@BerconTile@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconTile.obj
- 0002:000098b0       $stateUnwindMap$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b0     BerconDistortion.obj
  0002:000098b8       $ip2state$?Clone@BerconDistortion@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800368b8     BerconDistortion.obj
- 0002:000098d0       $unwind$?NotifyRefChanged@BerconTile@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconTile.obj
  0002:000098d0       $unwind$?NotifyRefChanged@BerconWood@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconWood.obj
- 0002:000098d0       $unwind$?NotifyRefChanged@BerconDistortion@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconDistortion.obj
  0002:000098d0       $unwind$?NotifyRefChanged@BerconNoise@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconNoise.obj
+ 0002:000098d0       $unwind$?NotifyRefChanged@BerconTile@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconTile.obj
  0002:000098d0       $unwind$?NotifyRefChanged@BerconGradient@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconGradient.obj
+ 0002:000098d0       $unwind$?NotifyRefChanged@BerconDistortion@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d0     BerconDistortion.obj
  0002:000098d8       $chain$0$?NotifyRefChanged@BerconDistortion@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368d8     BerconDistortion.obj
  0002:000098ec       $chain$1$?NotifyRefChanged@BerconDistortion@@UEAA?AW4RefResult@@AEBVInterval@@PEAVReferenceTarget@@AEA_KIH@Z 00000001800368ec     BerconDistortion.obj
  0002:000098fc       $unwind$?SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z 00000001800368fc     BerconDistortion.obj
@@ -3114,47 +3114,47 @@
  0002:00009940       $stateUnwindMap$??0BerconDistortion@@QEAA@XZ 0000000180036940     BerconDistortion.obj
  0002:00009948       $ip2state$??0BerconDistortion@@QEAA@XZ 0000000180036948     BerconDistortion.obj
  0002:00009960       $unwind$??_GBerconDistortion@@UEAAPEAXI@Z 0000000180036960     BerconDistortion.obj
- 0002:00009974       $stateUnwindMap$?DeleteThis@BerconNoise@@UEAAXXZ 0000000180036974     BerconNoise.obj
- 0002:00009974       $stateUnwindMap$??_GBerconNoise@@UEAAPEAXI@Z 0000000180036974     BerconNoise.obj
- 0002:00009974       $stateUnwindMap$?DeleteThis@BerconWood@@UEAAXXZ 0000000180036974     BerconWood.obj
- 0002:00009974       $stateUnwindMap$??_GBerconDistortion@@UEAAPEAXI@Z 0000000180036974     BerconDistortion.obj
  0002:00009974       $stateUnwindMap$??_GBerconGradient@@UEAAPEAXI@Z 0000000180036974     BerconGradient.obj
- 0002:00009974       $stateUnwindMap$??_GBerconWood@@UEAAPEAXI@Z 0000000180036974     BerconWood.obj
+ 0002:00009974       $stateUnwindMap$?DeleteThis@BerconWood@@UEAAXXZ 0000000180036974     BerconWood.obj
+ 0002:00009974       $stateUnwindMap$?DeleteThis@BerconNoise@@UEAAXXZ 0000000180036974     BerconNoise.obj
  0002:00009974       $stateUnwindMap$?DeleteThis@BerconGradient@@UEAAXXZ 0000000180036974     BerconGradient.obj
+ 0002:00009974       $stateUnwindMap$??_GBerconNoise@@UEAAPEAXI@Z 0000000180036974     BerconNoise.obj
+ 0002:00009974       $stateUnwindMap$??_GBerconDistortion@@UEAAPEAXI@Z 0000000180036974     BerconDistortion.obj
+ 0002:00009974       $stateUnwindMap$??_GBerconWood@@UEAAPEAXI@Z 0000000180036974     BerconWood.obj
  0002:00009988       $ip2state$??_GBerconDistortion@@UEAAPEAXI@Z 0000000180036988     BerconDistortion.obj
  0002:000099a0       $unwind$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z 00000001800369a0     BerconDistortion.obj
- 0002:000099b0       $stateUnwindMap$?Create@BerconTileClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconTile.obj
  0002:000099b0       $stateUnwindMap$?Create@BerconWoodClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconWood.obj
  0002:000099b0       $stateUnwindMap$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconDistortion.obj
- 0002:000099b0       $stateUnwindMap$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconGradient.obj
  0002:000099b0       $stateUnwindMap$?Clone@BerconGradient@@UEAAPEAVReferenceTarget@@AEAVRemapDir@@@Z 00000001800369b0     BerconGradient.obj
+ 0002:000099b0       $stateUnwindMap$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconGradient.obj
+ 0002:000099b0       $stateUnwindMap$?Create@BerconTileClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconTile.obj
  0002:000099b0       $stateUnwindMap$?Create@BerconNoiseClassDesc@@UEAAPEAXH@Z 00000001800369b0     BerconNoise.obj
  0002:000099b8       $ip2state$?Create@BerconDistortionClassDesc@@UEAAPEAXH@Z 00000001800369b8     BerconDistortion.obj
  0002:000099d0       $unwind$??_GBerconDistortionClassDesc@@UEAAPEAXI@Z 00000001800369d0     BerconDistortion.obj
  0002:000099e4       $stateUnwindMap$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconNoise.obj
+ 0002:000099e4       $stateUnwindMap$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconWood.obj
+ 0002:000099e4       $stateUnwindMap$??_GBerconTileClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconTile.obj
  0002:000099e4       $stateUnwindMap$??_GBerconDistortionClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconDistortion.obj
  0002:000099e4       $stateUnwindMap$??_GBerconGradientClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconGradient.obj
- 0002:000099e4       $stateUnwindMap$??_GBerconTileClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconTile.obj
- 0002:000099e4       $stateUnwindMap$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 00000001800369e4     BerconWood.obj
  0002:000099f0       $ip2state$??_GBerconDistortionClassDesc@@UEAAPEAXI@Z 00000001800369f0     BerconDistortion.obj
  0002:000099f8       $unwind$??__EBerconDistortionDesc@@YAXXZ 00000001800369f8     BerconDistortion.obj
- 0002:00009a08       $stateUnwindMap$??__EBerconDistortionDesc@@YAXXZ 0000000180036a08     BerconDistortion.obj
  0002:00009a08       $stateUnwindMap$??__FBerconDistortionDesc@@YAXXZ 0000000180036a08     BerconDistortion.obj
+ 0002:00009a08       $stateUnwindMap$??__EBerconDistortionDesc@@YAXXZ 0000000180036a08     BerconDistortion.obj
  0002:00009a10       $ip2state$??__EBerconDistortionDesc@@YAXXZ 0000000180036a10     BerconDistortion.obj
  0002:00009a28       $unwind$??__FBerconDistortionDesc@@YAXXZ 0000000180036a28     BerconDistortion.obj
  0002:00009a38       $ip2state$??__FBerconDistortionDesc@@YAXXZ 0000000180036a38     BerconDistortion.obj
- 0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconNoise.obj
  0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconWood.obj
- 0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconTile.obj
+ 0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconNoise.obj
  0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconDistortion.obj
+ 0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconTile.obj
  0002:00009a40       $unwind$??__Exyz_blk@@YAXXZ 0000000180036a40     BerconGradient.obj
  0002:00009a48       $unwind$??__Fxyz_blk@@YAXXZ 0000000180036a48     BerconDistortion.obj
  0002:00009a58       $stateUnwindMap$??__Fxyz_blk@@YAXXZ 0000000180036a58     BerconDistortion.obj
  0002:00009a60       $ip2state$??__Fxyz_blk@@YAXXZ 0000000180036a60     BerconDistortion.obj
  0002:00009a68       $unwind$??__EBerconDistortion_param_blk@@YAXXZ 0000000180036a68     BerconDistortion.obj
  0002:00009a70       $unwind$??1ICustomControl@@UEAA@XZ 0000000180036a70     BerconGradient.obj
- 0002:00009a80       $stateUnwindMap$??_GICustomControl@@UEAAPEAXI@Z 0000000180036a80     BerconGradient.obj
  0002:00009a80       $stateUnwindMap$??1ICustomControl@@UEAA@XZ 0000000180036a80     BerconGradient.obj
+ 0002:00009a80       $stateUnwindMap$??_GICustomControl@@UEAAPEAXI@Z 0000000180036a80     BerconGradient.obj
  0002:00009a88       $ip2state$??1ICustomControl@@UEAA@XZ 0000000180036a88     BerconGradient.obj
  0002:00009a90       $unwind$??_GICustomControl@@UEAAPEAXI@Z 0000000180036a90     BerconGradient.obj
  0002:00009aa8       $ip2state$??_GICustomControl@@UEAAPEAXI@Z 0000000180036aa8     BerconGradient.obj
@@ -3169,8 +3169,8 @@
  0002:00009b5c       $chain$8$?EnableStuff@BerconGradient@@QEAAXXZ 0000000180036b5c     BerconGradient.obj
  0002:00009b70       $chain$9$?EnableStuff@BerconGradient@@QEAAXXZ 0000000180036b70     BerconGradient.obj
  0002:00009b80       $chain$10$?EnableStuff@BerconGradient@@QEAAXXZ 0000000180036b80     BerconGradient.obj
- 0002:00009b90       $unwind$?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z 0000000180036b90     BerconGradient.obj
  0002:00009b90       $unwind$__scrt_initialize_onexit_tables 0000000180036b90     MSVCRT:utility.obj
+ 0002:00009b90       $unwind$?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z 0000000180036b90     BerconGradient.obj
  0002:00009b98       $chain$0$?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z 0000000180036b98     BerconGradient.obj
  0002:00009bac       $chain$2$?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z 0000000180036bac     BerconGradient.obj
  0002:00009bc0       $chain$3$?getGradientValueUVW@BerconGradient@@QEAAMVPoint3@@@Z 0000000180036bc0     BerconGradient.obj
@@ -3195,9 +3195,9 @@
  0002:00009d08       $chain$0$?gradDelKey@BerconGradient@@UEAAXH@Z 0000000180036d08     BerconGradient.obj
  0002:00009d1c       $chain$1$?gradDelKey@BerconGradient@@UEAAXH@Z 0000000180036d1c     BerconGradient.obj
  0002:00009d2c       $unwind$?CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d2c     BerconGradient.obj
- 0002:00009d48       $stateUnwindMap$?CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d48     BerconGradient.obj
  0002:00009d48       $stateUnwindMap$?CreateParamDlg@BerconTile@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d48     BerconTile.obj
  0002:00009d48       $stateUnwindMap$?CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d48     BerconWood.obj
+ 0002:00009d48       $stateUnwindMap$?CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d48     BerconGradient.obj
  0002:00009d48       $stateUnwindMap$?CreateParamDlg@BerconNoise@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d48     BerconNoise.obj
  0002:00009d68       $ip2state$?CreateParamDlg@BerconGradient@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 0000000180036d68     BerconGradient.obj
  0002:00009da0       $unwind$?Update@BerconGradient@@UEAAXHAEAVInterval@@@Z 0000000180036da0     BerconGradient.obj
@@ -3240,12 +3240,12 @@
  0002:0000a0d0       $ip2state$??_GBerconGradient@@UEAAPEAXI@Z 00000001800370d0     BerconGradient.obj
  0002:0000a0e8       $unwind$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 00000001800370e8     BerconGradient.obj
  0002:0000a0f8       $ip2state$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 00000001800370f8     BerconGradient.obj
- 0002:0000a110       $unwind$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 0000000180037110     BerconWood.obj
- 0002:0000a110       $unwind$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180037110     BerconNoise.obj
  0002:0000a110       $unwind$??_GBerconGradientClassDesc@@UEAAPEAXI@Z 0000000180037110     BerconGradient.obj
+ 0002:0000a110       $unwind$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180037110     BerconNoise.obj
+ 0002:0000a110       $unwind$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 0000000180037110     BerconWood.obj
  0002:0000a128       $ip2state$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 0000000180037128     BerconWood.obj
- 0002:0000a128       $ip2state$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180037128     BerconNoise.obj
  0002:0000a128       $ip2state$??_GBerconGradientClassDesc@@UEAAPEAXI@Z 0000000180037128     BerconGradient.obj
+ 0002:0000a128       $ip2state$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180037128     BerconNoise.obj
  0002:0000a130       $unwind$??__EBerconGradientDesc@@YAXXZ 0000000180037130     BerconGradient.obj
  0002:0000a140       $stateUnwindMap$??__FBerconGradientDesc@@YAXXZ 0000000180037140     BerconGradient.obj
  0002:0000a140       $stateUnwindMap$??__EBerconGradientDesc@@YAXXZ 0000000180037140     BerconGradient.obj
@@ -3259,10 +3259,10 @@
  0002:0000a1a0       $unwind$?DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 00000001800371a0     BerconGradient.obj
  0002:0000a1c4       $stateUnwindMap$?DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 00000001800371c4     BerconGradient.obj
  0002:0000a1e0       $ip2state$?DlgProc@BerconGradientDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 00000001800371e0     BerconGradient.obj
- 0002:0000a210       $unwind$?EvalParameters@BerconTile@@QEAA?AVTileParam@@AEAVShadeContext@@@Z 0000000180037210     BerconTile.obj
  0002:0000a210       $unwind$?SetThing@BerconGradientDlgProc@@UEAAXPEAVReferenceTarget@@@Z 0000000180037210     BerconGradient.obj
- 0002:0000a210       $unwind$?EvalParameters@BerconNoise@@QEAA?AVNoiseParams@@PEAVShadeContext@@@Z 0000000180037210     BerconNoise.obj
  0002:0000a210       $unwind$?EvalParameters@BerconWood@@QEAA?AVWoodParam@@AEAVShadeContext@@@Z 0000000180037210     BerconWood.obj
+ 0002:0000a210       $unwind$?EvalParameters@BerconNoise@@QEAA?AVNoiseParams@@PEAVShadeContext@@@Z 0000000180037210     BerconNoise.obj
+ 0002:0000a210       $unwind$?EvalParameters@BerconTile@@QEAA?AVTileParam@@AEAVShadeContext@@@Z 0000000180037210     BerconTile.obj
  0002:0000a210       $unwind$_DllMainCRTStartup 0000000180037210     MSVCRT:dll_dllmain.obj
  0002:0000a220       $unwind$??_GBerconGradientDlgProc@@UEAAPEAXI@Z 0000000180037220     BerconGradient.obj
  0002:0000a230       $ip2state$??_GBerconGradientDlgProc@@UEAAPEAXI@Z 0000000180037230     BerconGradient.obj
@@ -3270,8 +3270,8 @@
  0002:0000a238       $unwind$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180037238     BerconCommon.obj
  0002:0000a24c       $chain$0$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 000000018003724c     BerconTile.obj
  0002:0000a24c       $chain$0$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 000000018003724c     BerconCommon.obj
- 0002:0000a260       $chain$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180037260     BerconCommon.obj
  0002:0000a260       $chain$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180037260     BerconTile.obj
+ 0002:0000a260       $chain$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180037260     BerconCommon.obj
  0002:0000a270       $unwind$??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ 0000000180037270     BerconTile.obj
  0002:0000a280       $ip2state$??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAA@XZ 0000000180037280     BerconTile.obj
  0002:0000a288       $unwind$?assign@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEAAAEAV12@QEB_W_K@Z 0000000180037288     BerconTile.obj
@@ -3281,13 +3281,13 @@
  0002:0000a2c8       $stateUnwindMap$??1TilePattern@@QEAA@XZ 00000001800372c8     BerconTile.obj
  0002:0000a2d8       $ip2state$??1TilePattern@@QEAA@XZ 00000001800372d8     BerconTile.obj
  0002:0000a2f0       $unwind$??1?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ 00000001800372f0     BerconTile.obj
- 0002:0000a308       $stateUnwindMap$??1?$_Uninitialized_backout_al@PEAVTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ 0000000180037308     tile.obj
  0002:0000a308       $stateUnwindMap$??1?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ 0000000180037308     BerconTile.obj
+ 0002:0000a308       $stateUnwindMap$??1?$_Uninitialized_backout_al@PEAVTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ 0000000180037308     tile.obj
  0002:0000a308       $stateUnwindMap$??1TileRow@@QEAA@XZ 0000000180037308     tile.obj
  0002:0000a310       $ip2state$??1?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAA@XZ 0000000180037310     BerconTile.obj
  0002:0000a318       $unwind$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180037318     BerconTile.obj
- 0002:0000a318       $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037318     BerconWood.obj
  0002:0000a318       $unwind$?applyDistortion@BerconNoise@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037318     BerconNoise.obj
+ 0002:0000a318       $unwind$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037318     BerconWood.obj
  0002:0000a328       $chain$0$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180037328     BerconTile.obj
  0002:0000a33c       $chain$3$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 000000018003733c     BerconTile.obj
  0002:0000a358       $chain$4$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180037358     BerconTile.obj
@@ -3336,8 +3336,8 @@
  0002:0000a840       $unwind$??_GBerconTileClassDesc@@UEAAPEAXI@Z 0000000180037840     BerconTile.obj
  0002:0000a858       $ip2state$??_GBerconTileClassDesc@@UEAAPEAXI@Z 0000000180037858     BerconTile.obj
  0002:0000a860       $unwind$??__EBerconTileDesc@@YAXXZ 0000000180037860     BerconTile.obj
- 0002:0000a870       $stateUnwindMap$??__EBerconTileDesc@@YAXXZ 0000000180037870     BerconTile.obj
  0002:0000a870       $stateUnwindMap$??__FBerconTileDesc@@YAXXZ 0000000180037870     BerconTile.obj
+ 0002:0000a870       $stateUnwindMap$??__EBerconTileDesc@@YAXXZ 0000000180037870     BerconTile.obj
  0002:0000a878       $ip2state$??__EBerconTileDesc@@YAXXZ 0000000180037878     BerconTile.obj
  0002:0000a890       $unwind$??__FBerconTileDesc@@YAXXZ 0000000180037890     BerconTile.obj
  0002:0000a8a0       $ip2state$??__FBerconTileDesc@@YAXXZ 00000001800378a0     BerconTile.obj
@@ -3351,8 +3351,8 @@
  0002:0000a908       $chain$3$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037908     BerconWood.obj
  0002:0000a924       $chain$4$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037924     BerconWood.obj
  0002:0000a934       $chain$5$?applyDistortion@BerconWood@@QEAAXAEAVShadeContext@@AEAVPoint3@@@Z 0000000180037934     BerconWood.obj
- 0002:0000a944       $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 0000000180037944     DllEntry.obj
  0002:0000a944       $unwind$?EnableStuff@BerconWood@@QEAAXXZ 0000000180037944     BerconWood.obj
+ 0002:0000a944       $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk$fin$0 0000000180037944     DllEntry.obj
  0002:0000a94c       $chain$0$?EnableStuff@BerconWood@@QEAAXXZ 000000018003794c     BerconWood.obj
  0002:0000a960       $chain$4$?EnableStuff@BerconWood@@QEAAXXZ 0000000180037960     BerconWood.obj
  0002:0000a980       $chain$5$?EnableStuff@BerconWood@@QEAAXXZ 0000000180037980     BerconWood.obj
@@ -3361,8 +3361,8 @@
  0002:0000a9b4       $chain$1$?GetActiveTexHandle@BerconWood@@UEAA_KHAEAVTexHandleMaker@@@Z 00000001800379b4     BerconWood.obj
  0002:0000a9c4       $unwind$?CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 00000001800379c4     BerconWood.obj
  0002:0000a9e0       $ip2state$?CreateParamDlg@BerconWood@@UEAAPEAVParamDlg@@PEAUHWND__@@PEAVIMtlParams@@@Z 00000001800379e0     BerconWood.obj
- 0002:0000aa18       $unwind$?Update@BerconWood@@UEAAXHAEAVInterval@@@Z 0000000180037a18     BerconWood.obj
  0002:0000aa18       $unwind$?Update@BerconNoise@@UEAAXHAEAVInterval@@@Z 0000000180037a18     BerconNoise.obj
+ 0002:0000aa18       $unwind$?Update@BerconWood@@UEAAXHAEAVInterval@@@Z 0000000180037a18     BerconWood.obj
  0002:0000aa24       $chain$0$?Update@BerconWood@@UEAAXHAEAVInterval@@@Z 0000000180037a24     BerconWood.obj
  0002:0000aa38       $chain$4$?Update@BerconWood@@UEAAXHAEAVInterval@@@Z 0000000180037a38     BerconWood.obj
  0002:0000aa58       $chain$5$?Update@BerconWood@@UEAAXHAEAVInterval@@@Z 0000000180037a58     BerconWood.obj
@@ -3396,8 +3396,8 @@
  0002:0000acf8       $unwind$?Create@BerconWoodClassDesc@@UEAAPEAXH@Z 0000000180037cf8     BerconWood.obj
  0002:0000ad08       $ip2state$?Create@BerconWoodClassDesc@@UEAAPEAXH@Z 0000000180037d08     BerconWood.obj
  0002:0000ad20       $unwind$??__EBerconWoodDesc@@YAXXZ 0000000180037d20     BerconWood.obj
- 0002:0000ad30       $stateUnwindMap$??__FBerconWoodDesc@@YAXXZ 0000000180037d30     BerconWood.obj
  0002:0000ad30       $stateUnwindMap$??__EBerconWoodDesc@@YAXXZ 0000000180037d30     BerconWood.obj
+ 0002:0000ad30       $stateUnwindMap$??__FBerconWoodDesc@@YAXXZ 0000000180037d30     BerconWood.obj
  0002:0000ad38       $ip2state$??__EBerconWoodDesc@@YAXXZ 0000000180037d38     BerconWood.obj
  0002:0000ad50       $unwind$??__FBerconWoodDesc@@YAXXZ 0000000180037d50     BerconWood.obj
  0002:0000ad60       $ip2state$??__FBerconWoodDesc@@YAXXZ 0000000180037d60     BerconWood.obj
@@ -3409,8 +3409,8 @@
  0002:0000ad9c       $unwind$?DlgProc@BerconWoodDlgProc@@UEAA_JHPEAVIParamMap2@@PEAUHWND__@@I_K_J@Z 0000000180037d9c     BerconWood.obj
  0002:0000adb0       $unwind$WinbaseIsolationAwarePrivatetRgzlnPgpgk 0000000180037db0     DllEntry.obj
  0002:0000add4       $unwind$CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY 0000000180037dd4     DllEntry.obj
- 0002:0000ae00       $unwind$IsolationAwareRegisterClassExW$fin$0 0000000180037e00     IGradient.obj
  0002:0000ae00       $unwind$CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 0000000180037e00     DllEntry.obj
+ 0002:0000ae00       $unwind$IsolationAwareRegisterClassExW$fin$0 0000000180037e00     IGradient.obj
  0002:0000ae0c       $unwind$IsolationAwareInitCommonControls 0000000180037e0c     DllEntry.obj
  0002:0000ae2c       $chain$0$?GetString@@YAPEA_WH@Z 0000000180037e2c     DllEntry.obj
  0002:0000ae40       $chain$1$?GetString@@YAPEA_WH@Z 0000000180037e40     DllEntry.obj
@@ -3578,9 +3578,9 @@
  0002:0000bc30       $chain$4$?getBump@GradientRamp@@QEAA?AVPoint3@@MV2@AEAVShadeContext@@@Z 0000000180038c30     GradientRamp.obj
  0002:0000bc40       $unwind$IsolationAwareRegisterClassExW 0000000180038c40     IGradient.obj
  0002:0000bc68       $unwind$?GradientProc@IGradient@@SA_JPEAUHWND__@@I_K_J@Z 0000000180038c68     IGradient.obj
- 0002:0000bc84       $unwind$?__scrt_throw_std_bad_alloc@@YAXXZ 0000000180038c84     MSVCRT:throw_bad_alloc.obj
  0002:0000bc84       $unwind$?__scrt_throw_std_bad_array_new_length@@YAXXZ 0000000180038c84     MSVCRT:throw_bad_alloc.obj
  0002:0000bc84       $unwind$?noise@Noise@@SAMVPoint3@@MAEAVNoiseParams@@@Z 0000000180038c84     noise.obj
+ 0002:0000bc84       $unwind$?__scrt_throw_std_bad_alloc@@YAXXZ 0000000180038c84     MSVCRT:throw_bad_alloc.obj
  0002:0000bc8c       $unwind$?worleyWrapper@Noise@@SAMVPoint3@@AEAVNoiseParams@@@Z 0000000180038c8c     noise.obj
  0002:0000bc98       $unwind$?wood@Noise@@SAMVPoint3@@AEAV2@AEAVWoodParam@@@Z 0000000180038c98     noise.obj
  0002:0000bcc4       $unwind$?wood@Noise@@SAMVPoint3@@00AEAV2@VWoodParam@@@Z 0000000180038cc4     noise.obj
@@ -3599,8 +3599,8 @@
  0002:0000be60       $unwind$?fnoise2D@Perlin@@SAMMMM@Z 0000000180038e60     perlin.obj
  0002:0000be74       $unwind$?fnoise3D@Perlin@@SAMMMMM@Z 0000000180038e74     perlin.obj
  0002:0000be74       $unwind$?fsnoise3D@Perlin@@SAMMMMM@Z 0000000180038e74     perlin.obj
- 0002:0000be8c       $unwind$?fsnoise4D@Perlin@@SAMMMMMM@Z 0000000180038e8c     perlin.obj
  0002:0000be8c       $unwind$?fnoise4D@Perlin@@SAMMMMMM@Z 0000000180038e8c     perlin.obj
+ 0002:0000be8c       $unwind$?fsnoise4D@Perlin@@SAMMMMMM@Z 0000000180038e8c     perlin.obj
  0002:0000bea8       $unwind$?fsnoise2D@Perlin@@SAMMMM@Z 0000000180038ea8     perlin.obj
  0002:0000bebc       $chain$3$?fsnoise2D@Perlin@@SAMMMM@Z 0000000180038ebc     perlin.obj
  0002:0000bedc       $chain$4$?fsnoise2D@Perlin@@SAMMMM@Z 0000000180038edc     perlin.obj
@@ -3609,16 +3609,16 @@
  0002:0000bf04       $unwind$?find_first_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z 0000000180038f04     tile.obj
  0002:0000bf04       $unwind$?find_first_not_of@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QEBA_KAEBV12@_K@Z 0000000180038f04     tile.obj
  0002:0000bf20       $unwind$??0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z 0000000180038f20     tile.obj
- 0002:0000bf3c       $stateUnwindMap$??$_Emplace_reallocate@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@QEAV21@$$QEAV21@@Z 0000000180038f3c     tile.obj
+ 0002:0000bf3c       $stateUnwindMap$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180038f3c     tile.obj
  0002:0000bf3c       $stateUnwindMap$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180038f3c     tile.obj
  0002:0000bf3c       $stateUnwindMap$??0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z 0000000180038f3c     tile.obj
- 0002:0000bf3c       $stateUnwindMap$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180038f3c     tile.obj
+ 0002:0000bf3c       $stateUnwindMap$??$_Emplace_reallocate@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@?$vector@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@V?$allocator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@2@@std@@QEAAPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@1@QEAV21@$$QEAV21@@Z 0000000180038f3c     tile.obj
  0002:0000bf4c       $tryMap$??0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z 0000000180038f4c     tile.obj
  0002:0000bf60       $handlerMap$0$??0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z 0000000180038f60     tile.obj
  0002:0000bf78       $ip2state$??0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z 0000000180038f78     tile.obj
  0002:0000bfa0       $unwind$?catch$0@?0???0?$vector@MV?$allocator@M@std@@@std@@QEAA@AEBV01@@Z@4HA 0000000180038fa0     tile.obj
- 0002:0000bfb0       $unwind$__scrt_dllmain_exception_filter 0000000180038fb0     MSVCRT:utility.obj
  0002:0000bfb0       $unwind$?_Change_array@?$vector@MV?$allocator@M@std@@@std@@AEAAXQEAM_K1@Z 0000000180038fb0     tile.obj
+ 0002:0000bfb0       $unwind$__scrt_dllmain_exception_filter 0000000180038fb0     MSVCRT:utility.obj
  0002:0000bfc4       $unwind$??1TileRow@@QEAA@XZ 0000000180038fc4     tile.obj
  0002:0000bfd8       $ip2state$??1TileRow@@QEAA@XZ 0000000180038fd8     tile.obj
  0002:0000bfe0       $unwind$?_Destroy@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@AEAAXPEAVTileRow@@0@Z 0000000180038fe0     tile.obj
@@ -3687,8 +3687,8 @@
  0002:0000c8d0       $unwind$?catch$2@?0???$_Emplace_reallocate@AEBVTileRow@@@?$vector@VTileRow@@V?$allocator@VTileRow@@@std@@@std@@QEAAPEAVTileRow@@QEAV2@AEBV2@@Z@4HA 00000001800398d0     tile.obj
  0002:0000c8e4       $unwind$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 00000001800398e4     tile.obj
  0002:0000c8e4       $unwind$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 00000001800398e4     tile.obj
- 0002:0000c900       $tryMap$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180039900     tile.obj
  0002:0000c900       $tryMap$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180039900     tile.obj
+ 0002:0000c900       $tryMap$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180039900     tile.obj
  0002:0000c914       $handlerMap$0$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180039914     tile.obj
  0002:0000c914       $handlerMap$0$??$_Emplace_reallocate@M@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAM$$QEAM@Z 0000000180039914     tile.obj
  0002:0000c928       $ip2state$??$_Emplace_reallocate@AEBM@?$vector@MV?$allocator@M@std@@@std@@QEAAPEAMQEAMAEBM@Z 0000000180039928     tile.obj
@@ -3890,8 +3890,8 @@
  0004:00000144       $pdata$??0TabOutOfRangeException@Util@MaxSDK@@QEAA@PEB_W@Z 0000000180040144     BerconDistortion.obj
  0004:00000150       $pdata$??0VertexNormalsControl@@QEAA@XZ 0000000180040150     BerconDistortion.obj
  0004:0000015c       $pdata$??0XYZ_Desc@@QEAA@PEAVClassDesc2@@HHHHHHH@Z 000000018004015c     BerconDistortion.obj
- 0004:00000168       $pdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 0000000180040168     BerconDistortion.obj
  0004:00000168       $pdata$??1?$Tab@PEAVBaseInterface@@@@QEAA@XZ 0000000180040168     BerconDistortion.obj
+ 0004:00000168       $pdata$??1?$Tab@PEAVVertexNormalsCallback@@@@QEAA@XZ 0000000180040168     BerconDistortion.obj
  0004:00000174       $pdata$??1BerconSC@@UEAA@XZ 0000000180040174     BerconDistortion.obj
  0004:00000180       $pdata$??1ShadeOutput@@UEAA@XZ 0000000180040180     BerconDistortion.obj
  0004:00000180       $pdata$??1RenderGlobalContext@@UEAA@XZ 0000000180040180     BerconDistortion.obj
@@ -3981,9 +3981,9 @@
  0004:0000054c       $pdata$2$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 000000018004054c     BerconDistortion.obj
  0004:00000558       $pdata$3$?getDistVector@BerconDistortion@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180040558     BerconDistortion.obj
  0004:00000564       $pdata$?Create@BerconGradientClassDesc@@UEAAPEAXH@Z 0000000180040564     BerconGradient.obj
- 0004:00000570       $pdata$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180040570     BerconNoise.obj
  0004:00000570       $pdata$??_GBerconGradientClassDesc@@UEAAPEAXI@Z 0000000180040570     BerconGradient.obj
  0004:00000570       $pdata$??_GBerconWoodClassDesc@@UEAAPEAXI@Z 0000000180040570     BerconWood.obj
+ 0004:00000570       $pdata$??_GBerconNoiseClassDesc@@UEAAPEAXI@Z 0000000180040570     BerconNoise.obj
  0004:0000057c       $pdata$??0BerconGradient@@QEAA@XZ 000000018004057c     BerconGradient.obj
  0004:00000588       $pdata$??1ICustomControl@@UEAA@XZ 0000000180040588     BerconGradient.obj
  0004:00000594       $pdata$??_GBerconGradient@@UEAAPEAXI@Z 0000000180040594     BerconGradient.obj
@@ -4115,12 +4115,12 @@
  0004:00000b7c       $pdata$6$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180040b7c     BerconTile.obj
  0004:00000b88       $pdata$7$?getDistVector@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@@Z 0000000180040b88     BerconTile.obj
  0004:00000b94       $pdata$?getNormal@BerconTile@@QEAA?AVPoint3@@AEAVShadeContext@@H@Z 0000000180040b94     BerconTile.obj
- 0004:00000ba0       $pdata$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040ba0     BerconTile.obj
  0004:00000ba0       $pdata$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040ba0     BerconCommon.obj
+ 0004:00000ba0       $pdata$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040ba0     BerconTile.obj
  0004:00000bac       $pdata$0$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040bac     BerconTile.obj
  0004:00000bac       $pdata$0$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040bac     BerconCommon.obj
- 0004:00000bb8       $pdata$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040bb8     BerconCommon.obj
  0004:00000bb8       $pdata$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040bb8     BerconTile.obj
+ 0004:00000bb8       $pdata$1$?setSpinnerType@@YAXPEAVIParamMap2@@HHHHH_N@Z 0000000180040bb8     BerconCommon.obj
  0004:00000bc4       $pdata$?Create@BerconWoodClassDesc@@UEAAPEAXH@Z 0000000180040bc4     BerconWood.obj
  0004:00000bd0       $pdata$??0BerconWood@@QEAA@XZ 0000000180040bd0     BerconWood.obj
  0004:00000bdc       $pdata$??_GBerconWood@@UEAAPEAXI@Z 0000000180040bdc     BerconWood.obj
@@ -4464,25 +4464,25 @@
  0004:00001b90       $pdata$??0bad_alloc@std@@QEAA@AEBV01@@Z 0000000180041b90     MSVCRT:throw_bad_alloc.obj
  0004:00001b9c       $pdata$??0bad_array_new_length@std@@QEAA@AEBV01@@Z 0000000180041b9c     MSVCRT:throw_bad_alloc.obj
  0004:00001ba8       $pdata$??0exception@std@@QEAA@AEBV01@@Z 0000000180041ba8     MSVCRT:throw_bad_alloc.obj
- 0004:00001bb4       $pdata$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000180041bb4     MSVCRT:throw_bad_alloc.obj
  0004:00001bb4       $pdata$??_Gbad_array_new_length@std@@UEAAPEAXI@Z 0000000180041bb4     MSVCRT:throw_bad_alloc.obj
  0004:00001bb4       $pdata$??_Gexception@std@@UEAAPEAXI@Z 0000000180041bb4     MSVCRT:throw_bad_alloc.obj
+ 0004:00001bb4       $pdata$??_Gbad_alloc@std@@UEAAPEAXI@Z 0000000180041bb4     MSVCRT:throw_bad_alloc.obj
  0004:00001bc0       $pdata$?__scrt_throw_std_bad_alloc@@YAXXZ 0000000180041bc0     MSVCRT:throw_bad_alloc.obj
  0004:00001bcc       $pdata$?__scrt_throw_std_bad_array_new_length@@YAXXZ 0000000180041bcc     MSVCRT:throw_bad_alloc.obj
  0004:00001bd8       $pdata$__security_init_cookie 0000000180041bd8     MSVCRT:gs_support.obj
  0004:00001be4       $pdata$__scrt_initialize_default_local_stdio_options 0000000180041be4     MSVCRT:default_local_stdio_options.obj
  0004:00001bf0       $pdata$_RTC_Initialize     0000000180041bf0     MSVCRT:initsect.obj
  0004:00001bfc       $pdata$_RTC_Terminate      0000000180041bfc     MSVCRT:initsect.obj
- 0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconGradient.obj
- 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconWood.obj
- 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconNoise.obj
- 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconDistortion.obj
- 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconGradient.obj
- 0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconNoise.obj
- 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconTile.obj
  0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconTile.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconNoise.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconWood.obj
  0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconDistortion.obj
  0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconWood@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconWood.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconNoise@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconNoise.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconDistortion@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconDistortion.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconGradient.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??GetSubTexmapSlotName@BerconGradient@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconGradient.obj
+ 0004:00001c14       $pdata$?dtor$0@?0??SubAnimName@BerconTile@@UEAA?AVWStr@@H@Z@4HA 0000000180041c14     BerconTile.obj
  0004:00001c20       $pdata$?dtor$1@?0???0BerconGradient@@QEAA@XZ@4HA 0000000180041c20     BerconGradient.obj
  0004:00001c2c       $pdata$CommctrlIsolationAwarePrivatetRgCebPnQQeRff_pbZPgYQP_QYY$fin$0 0000000180041c2c     DllEntry.obj
  0004:00001c38       $pdata$IsolationAwareInitCommonControls$fin$0 0000000180041c38     DllEntry.obj
@@ -4511,54 +4511,55 @@
  0004:00001d40       $pdata$??__Fxyz_blk@@YAXXZ 0000000180041d40     BerconWood.obj
  0004:00001d4c       $pdata$??__FBerconNoiseDesc@@YAXXZ 0000000180041d4c     BerconNoise.obj
  0004:00001d58       $pdata$??__Fxyz_blk@@YAXXZ 0000000180041d58     BerconNoise.obj
- 0005:000009e0       $R000000                   00000001800429e0     BerconNoise.res
- 0005:00000a98       $R0000B8                   0000000180042a98     BerconNoise.res
- 0005:00000ac8       $R0000E8                   0000000180042ac8     BerconNoise.res
- 0005:00000b70       $R000190                   0000000180042b70     BerconNoise.res
- 0005:00000d00       $R000320                   0000000180042d00     BerconNoise.res
- 0005:00000da8       $R0003C8                   0000000180042da8     BerconNoise.res
- 0005:00000e50       $R000470                   0000000180042e50     BerconNoise.res
- 0005:00000f40       $R000560                   0000000180042f40     BerconNoise.res
- 0005:00000fe8       $R000608                   0000000180042fe8     BerconNoise.res
- 0005:00001e78       $R001498                   0000000180043e78     BerconNoise.res
- 0005:00003108       $R002728                   0000000180045108     BerconNoise.res
- 0005:000048e0       $R003F00                   00000001800468e0     BerconNoise.res
- 0005:000052e8       $R004908                   00000001800472e8     BerconNoise.res
- 0005:00005530       $R004B50                   0000000180047530     BerconNoise.res
- 0005:000056a8       $R004CC8                   00000001800476a8     BerconNoise.res
- 0005:00005e98       $R0054B8                   0000000180047e98     BerconNoise.res
- 0005:00006a98       $R0060B8                   0000000180048a98     BerconNoise.res
- 0005:00007bf0       $R007210                   0000000180049bf0     BerconNoise.res
- 0005:00008d58       $R008378                   000000018004ad58     BerconNoise.res
- 0005:00009d10       $R009330                   000000018004bd10     BerconNoise.res
- 0005:0000ada8       $R00A3C8                   000000018004cda8     BerconNoise.res
- 0005:0000b728       $R00AD48                   000000018004d728     BerconNoise.res
- 0005:0000b730       $R00AD50                   000000018004d730     BerconNoise.res
- 0005:0000b738       $R00AD58                   000000018004d738     BerconNoise.res
- 0005:0000b740       $R00AD60                   000000018004d740     BerconNoise.res
- 0005:0000b748       $R00AD68                   000000018004d748     BerconNoise.res
- 0005:0000b808       $R00AE28                   000000018004d808     BerconNoise.res
- 0005:00018950       $R017F70                   000000018005a950     BerconNoise.res
- 0005:00018ac8       $R0180E8                   000000018005aac8     BerconNoise.res
- 0005:00018b30       $R018150                   000000018005ab30     BerconNoise.res
- 0005:00018c98       $R0182B8                   000000018005ac98     BerconNoise.res
- 0005:00018ce8       $R018308                   000000018005ace8     BerconNoise.res
- 0005:00018eb0       $R0184D0                   000000018005aeb0     BerconNoise.res
- 0005:00019088       $R0186A8                   000000018005b088     BerconNoise.res
- 0005:00019260       $R018880                   000000018005b260     BerconNoise.res
- 0005:00019360       $R018980                   000000018005b360     BerconNoise.res
- 0005:00019430       $R018A50                   000000018005b430     BerconNoise.res
- 0005:00019558       $R018B78                   000000018005b558     BerconNoise.res
- 0005:00019658       $R018C78                   000000018005b658     BerconNoise.res
- 0005:000197d0       $R018DF0                   000000018005b7d0     BerconNoise.res
- 0005:00019950       $R018F70                   000000018005b950     BerconNoise.res
- 0005:00019b00       $R019120                   000000018005bb00     BerconNoise.res
- 0005:00019be0       $R019200                   000000018005bbe0     BerconNoise.res
- 0005:00019d20       $R019340                   000000018005bd20     BerconNoise.res
- 0005:00019e98       $R0194B8                   000000018005be98     BerconNoise.res
- 0005:0001a0a8       $R0196C8                   000000018005c0a8     BerconNoise.res
- 0005:0001a260       $R019880                   000000018005c260     BerconNoise.res
- 0005:0001a378       $R019998                   000000018005c378     BerconNoise.res
+ 0005:00000a10       $R000000                   0000000180042a10     BerconNoise.res
+ 0005:00000ac8       $R0000B8                   0000000180042ac8     BerconNoise.res
+ 0005:00000af8       $R0000E8                   0000000180042af8     BerconNoise.res
+ 0005:00000ba0       $R000190                   0000000180042ba0     BerconNoise.res
+ 0005:00000d30       $R000320                   0000000180042d30     BerconNoise.res
+ 0005:00000dd8       $R0003C8                   0000000180042dd8     BerconNoise.res
+ 0005:00000e80       $R000470                   0000000180042e80     BerconNoise.res
+ 0005:00000f70       $R000560                   0000000180042f70     BerconNoise.res
+ 0005:00001018       $R000608                   0000000180043018     BerconNoise.res
+ 0005:00001ea8       $R001498                   0000000180043ea8     BerconNoise.res
+ 0005:00003138       $R002728                   0000000180045138     BerconNoise.res
+ 0005:00004910       $R003F00                   0000000180046910     BerconNoise.res
+ 0005:00005318       $R004908                   0000000180047318     BerconNoise.res
+ 0005:00005560       $R004B50                   0000000180047560     BerconNoise.res
+ 0005:000056d8       $R004CC8                   00000001800476d8     BerconNoise.res
+ 0005:00005ec8       $R0054B8                   0000000180047ec8     BerconNoise.res
+ 0005:00006ac8       $R0060B8                   0000000180048ac8     BerconNoise.res
+ 0005:00007c20       $R007210                   0000000180049c20     BerconNoise.res
+ 0005:00008d88       $R008378                   000000018004ad88     BerconNoise.res
+ 0005:00009d40       $R009330                   000000018004bd40     BerconNoise.res
+ 0005:0000add8       $R00A3C8                   000000018004cdd8     BerconNoise.res
+ 0005:0000b758       $R00AD48                   000000018004d758     BerconNoise.res
+ 0005:0000b760       $R00AD50                   000000018004d760     BerconNoise.res
+ 0005:0000b768       $R00AD58                   000000018004d768     BerconNoise.res
+ 0005:0000b770       $R00AD60                   000000018004d770     BerconNoise.res
+ 0005:0000b778       $R00AD68                   000000018004d778     BerconNoise.res
+ 0005:0000b780       $R00AD70                   000000018004d780     BerconNoise.res
+ 0005:0000b840       $R00AE30                   000000018004d840     BerconNoise.res
+ 0005:00018988       $R017F78                   000000018005a988     BerconNoise.res
+ 0005:00018b00       $R0180F0                   000000018005ab00     BerconNoise.res
+ 0005:00018b68       $R018158                   000000018005ab68     BerconNoise.res
+ 0005:00018cd0       $R0182C0                   000000018005acd0     BerconNoise.res
+ 0005:00018d20       $R018310                   000000018005ad20     BerconNoise.res
+ 0005:00018ee8       $R0184D8                   000000018005aee8     BerconNoise.res
+ 0005:000190c0       $R0186B0                   000000018005b0c0     BerconNoise.res
+ 0005:00019298       $R018888                   000000018005b298     BerconNoise.res
+ 0005:00019398       $R018988                   000000018005b398     BerconNoise.res
+ 0005:00019468       $R018A58                   000000018005b468     BerconNoise.res
+ 0005:00019590       $R018B80                   000000018005b590     BerconNoise.res
+ 0005:00019690       $R018C80                   000000018005b690     BerconNoise.res
+ 0005:00019808       $R018DF8                   000000018005b808     BerconNoise.res
+ 0005:00019988       $R018F78                   000000018005b988     BerconNoise.res
+ 0005:00019b38       $R019128                   000000018005bb38     BerconNoise.res
+ 0005:00019c18       $R019208                   000000018005bc18     BerconNoise.res
+ 0005:00019d58       $R019348                   000000018005bd58     BerconNoise.res
+ 0005:00019ed0       $R0194C0                   000000018005bed0     BerconNoise.res
+ 0005:0001a0e0       $R0196D0                   000000018005c0e0     BerconNoise.res
+ 0005:0001a298       $R019888                   000000018005c298     BerconNoise.res
+ 0005:0001a3b0       $R0199A0                   000000018005c3b0     BerconNoise.res
 
  Exports
 

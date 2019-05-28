@@ -1027,7 +1027,7 @@ BEGIN
     CONTROL         "0,255,0",IDC_FILTER_SPIN,"SpinnerControl",0x0,204,154,7,10
     RTEXT           "Filtering strength;",IDC_STATIC,102,154,59,8
     LTEXT           "BerconMaps 3.04",IDC_STATIC,4,153,79,8,0,WS_EX_RTLREADING
-    LTEXT           "Kentebird Fork 0.9b - May 23 2019",IDC_STATIC,4,166,131,8,0,WS_EX_RTLREADING
+    LTEXT           "Kentebird Fork 0.91 - May 28 2019",IDC_STATIC,4,166,131,8,0,WS_EX_RTLREADING
 END
 
 IDD_PANEL_TILE3 DIALOGEX 0, 0, 217, 457
